@@ -1,0 +1,1419 @@
+[
+  {
+    "id": "59fe96f",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 40,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "28db409",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "width": {
+            "unit": "%",
+            "size": 55,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "53555fd",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "CAMBIO EXPRESS DE BAÑERA · REFORMAS MADRID",
+              "header_size": "span",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 13,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 1,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "e220f26",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Cambio de Bañera por Plato de Ducha en Madrid: Rápido, Seguro y en Solo 24 Horas",
+              "header_size": "h1",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.75,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c610433",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:19px; line-height:1.65em; color:#5A6B82;'>Gana espacio, comodidad y seguridad en tu hogar cambiando tu antigua bañera por un plato de ducha antideslizante extraplano en tan solo un día. Obra rápida, limpia y sin complicaciones con retirada de escombros, mampara de seguridad y garantía por escrito de 2 años con Reformas Madrid.</p>",
+              "text_color": "#5A6B82"
+            },
+            "elements": []
+          },
+          {
+            "id": "ac2ef49",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<ul style='list-style:none; padding:0; margin:0; font-size:17px; font-weight:600; color:#0E1B2E;'><li style='margin-bottom:8px;'>✓ Instalación completa terminada en 24 horas hábiles.</li><li style='margin-bottom:8px;'>✓ Plato de carga mineral antideslizante C3 extraplano (máxima seguridad).</li><li style='margin-bottom:8px;'>✓ Presupuesto cerrado sin sorpresas desde 890€ con materiales incluidos.</li></ul>"
+            },
+            "elements": []
+          },
+          {
+            "id": "36fd0e5",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "8ca9596",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Calcular Presupuesto Online",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "#A87E34",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "dcb64a0",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "WhatsApp con Reformas Madrid",
+                  "link": {
+                    "url": "https://wa.me/34600000000",
+                    "is_external": true,
+                    "nofollow": false
+                  },
+                  "background_color": "#25D366",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ccf84a3",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+            "unit": "%",
+            "size": 45,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "0019ee9",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-bano-spa-despues.webp",
+                "id": 227
+              },
+              "image_size": "full",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 16,
+                "blur": 35,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.12)"
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0d484fd",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "3",
+        "right": "4",
+        "bottom": "3",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "8a5e1b1",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "fa67bb4",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "+350",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "9af2b33",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Duchas Instaladas",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "9d695b6",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Cambios express ejecutados en Madrid.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "a31f9ae",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "35c1935",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "24 Horas",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "5b4be1f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Tiempo de Instalación",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "2a4c607",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Tu nueva ducha lista para usar en un día.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "cdb0af9",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "0174ee3",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Antideslizante",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "fe93713",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Certificación C3",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "562b7a9",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Máxima seguridad para niños y personas mayores.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "c9beb00",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "b78148e",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "2 Años",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "0ac2b12",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Garantía Total",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "3829ad5",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Sellado e impermeabilización certificada.</p>"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e3d344f",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 28,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "65a3f9c",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Qué Incluye Nuestro Servicio Express en Madrid",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.25,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "f67955d",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:18px; color:#5A6B82; text-align:center; max-width:800px; margin:0 auto;'>Todo lo necesario para sustituir tu bañera sin complicaciones ni obras traumáticas.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "fb71697",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_wrap": "wrap",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "a1d3d77",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "c69c542",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🚛 Desescombro y Retirada de la Bañera",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "2f010b0",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Desmontaje cuidadoso de la bañera antigua, picado de alicatado perimetral y traslado de escombros a punto limpio autorizado.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "545ea11",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "38db16e",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "fa36538",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🚿 Plato de Carga Mineral Textura Pizarra",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "49c3b3a",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Platos macizos de resina y cargas minerales coloreados en masa, extraplanos (3 cm), antibacterianos y resistentes al impacto.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "6df8b2e",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "0dfd043",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "b2bf754",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🧱 Impermeabilización y Nuevo Alicatado",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "142bd94",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Aplicación de mortero hidrófugo y sellado elástico en las paredes descubiertas con azulejo a juego o de contraste moderno.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "336871f",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "13c71e2",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "ab842fc",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🛡️ Mampara de Vidrio Templado Antical",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "12db779",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Mamparas correderas o frontales fijos de 6 a 8 mm de grosor con tratamiento antical duradero y perfilería en aluminio o cromo.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "af77a8d",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1191866",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "12f3c82",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Preguntas Frecuentes",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "5260e1b",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "accordion",
+        "settings": {
+          "tabs": [
+            {
+              "_id": "83bd5b3",
+              "tab_title": "¿Cuánto tiempo se tarda en cambiar la bañera por un plato de ducha?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>La obra física se realiza en un solo día (entre 6 y 8 horas de trabajo continuado). Solo es necesario esperar 24 horas adicionales para el secado óptimo del sellado de estanqueidad antes de ducharse.</p>"
+            },
+            {
+              "_id": "c1c543e",
+              "tab_title": "¿Qué precio tiene el cambio de bañera por ducha en Madrid?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Un cambio completo estándar oscila entre 890€ y 1.750€, incluyendo demolición, plato de resina C3 de hasta 140 cm, grifería, azulejos perimetrales, mampara de vidrio y retirada de escombros.</p>"
+            },
+            {
+              "_id": "b729f41",
+              "tab_title": "¿Cómo se resuelve la pared que queda al descubierto?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Revestimos la zona descubierta con azulejos similares a los existentes o aplicamos un alicatado moderno de contraste (por ejemplo, imitación piedra o hidráulico) que embellece el baño.</p>"
+            },
+            {
+              "_id": "74cee39",
+              "tab_title": "¿Los platos son realmente antideslizantes?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí. Todos nuestros platos cuentan con la máxima certificación europea de antideslizamiento (Clase 3 / R11) con textura pizarra, ideales para evitar caídas de niños o personas mayores.</p>"
+            },
+            {
+              "_id": "38cd7c1",
+              "tab_title": "¿Ofrecéis garantía contra fugas de agua?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí. Ofrecemos 2 años de garantía por escrito respaldada por seguro de responsabilidad civil y sellado con materiales impermeabilizantes de primera calidad.</p>"
+            }
+          ],
+          "border_width": {
+            "unit": "px",
+            "top": 1,
+            "right": 1,
+            "bottom": 1,
+            "left": 1,
+            "isLinked": true
+          },
+          "border_color": "#E4DCCB",
+          "title_color": "#0E1B2E",
+          "active_first": "no",
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "title_typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "a0d8fab",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "align_items": "center",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#0E1B2E",
+      "border_radius": {
+        "unit": "px",
+        "top": 24,
+        "right": 24,
+        "bottom": 24,
+        "left": 24,
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "6cd7c22",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Listo para Empezar tu Reforma con Reformas Madrid?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#E2C48F",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.4,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "21f9816",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:19px; line-height:1.65em; color:#CBD5E1; text-align:center; max-width:800px; margin:0 auto;'>Solicita hoy tu visita técnica gratuita. Nuestro equipo colegiado evaluará tu vivienda o local y te entregaremos un presupuesto cerrado sin sorpresas.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "3aa6c6c",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "button",
+        "settings": {
+          "text": "Pedir Presupuesto Gratuito",
+          "link": {
+            "url": "/pedir-presupuesto/",
+            "is_external": false,
+            "nofollow": false
+          },
+          "background_color": "#A87E34",
+          "button_text_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12,
+            "isLinked": true
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  }
+]

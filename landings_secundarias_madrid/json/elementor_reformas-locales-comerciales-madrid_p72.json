@@ -1,0 +1,1419 @@
+[
+  {
+    "id": "9953041",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 40,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "a6b0bee",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "width": {
+            "unit": "%",
+            "size": 55,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "4eac980",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "LOCALES Y ESPACIOS RETAIL · REFORMAS MADRID",
+              "header_size": "span",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 13,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 1,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "bd41056",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas de Locales Comerciales en Madrid: Espacios Retail de Alto Impacto y Licencias de Apertura",
+              "header_size": "h1",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.75,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "2876f5a",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:19px; line-height:1.65em; color:#5A6B82;'>Adecuamos tu local comercial en Madrid para maximizar las ventas y proyectar la identidad de tu marca. Reformas de tiendas de moda, clínicas, cafeterías y espacios retail con cumplimiento riguroso de normativas de accesibilidad, insonorización y licencias municipales de actividad con Reformas Madrid.</p>",
+              "text_color": "#5A6B82"
+            },
+            "elements": []
+          },
+          {
+            "id": "c983e46",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<ul style='list-style:none; padding:0; margin:0; font-size:17px; font-weight:600; color:#0E1B2E;'><li style='margin-bottom:8px;'>✓ Proyectos llave en mano con tramitación de licencia de actividad.</li><li style='margin-bottom:8px;'>✓ Cumplimiento estricto de plazos para acelerar la fecha de apertura.</li><li style='margin-bottom:8px;'>✓ Materiales de alto tránsito, iluminación comercial y escaparates de seguridad.</li></ul>"
+            },
+            "elements": []
+          },
+          {
+            "id": "8809068",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "b37f554",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Calcular Presupuesto Online",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "#A87E34",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "c2df7df",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "WhatsApp con Reformas Madrid",
+                  "link": {
+                    "url": "https://wa.me/34600000000",
+                    "is_external": true,
+                    "nofollow": false
+                  },
+                  "background_color": "#25D366",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "827cc75",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+            "unit": "%",
+            "size": 45,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "a2f1865",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-locales-comerciales.webp",
+                "id": 211
+              },
+              "image_size": "full",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 16,
+                "blur": 35,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.12)"
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e6eb9f6",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "3",
+        "right": "4",
+        "bottom": "3",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "8212085",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "9465165",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "+65",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "1e32d4e",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Locales Reformados",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "97a0bbe",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Negocios y franquicias abiertas en Madrid.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "c86ae89",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "f8a7d51",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "100%",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "fec905b",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Puntualidad en Apertura",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "130ea80",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Fechas blindadas para evitar pérdidas comerciales.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "21a7a03",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "e49ebf0",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Incluida",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "497245d",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Gestión de Licencias",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "c9b865e",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Ingeniería y trámites ante el Ayuntamiento.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "9ec1389",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "7c61fb5",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Diaria",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "b2dbc04",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Supervisión de Obra",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "fbbf6ef",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Control presencial y comunicación constante.</p>"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "52e782e",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 28,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "a01bfca",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Especialidades en Reforma de Locales en Madrid",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.25,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "05f5d10",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:18px; color:#5A6B82; text-align:center; max-width:800px; margin:0 auto;'>Soluciones arquitectónicas y técnicas diseñadas para atraer clientes y optimizar la operativa de tu negocio.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "5cb5b2a",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_wrap": "wrap",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "889c46c",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "2b35fd2",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "📄 Adecuación Comercial y Licencias",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "11dc007",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Redacción de proyecto técnico por arquitecto o ingeniero y tramitación de declaración responsable o licencia ordinaria en el Ayuntamiento de Madrid.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "2c0b0b0",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "18a1302",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "d0dcdbf",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🏪 Escaparates y Fachadas Comerciales",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "a0b1139",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Vidrios de seguridad laminados, carpintería de aluminio o acero y rotulación corporativa para captar la atención de los transeúntes.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "580a44b",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "85f1d5c",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "88e85a1",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "💡 Iluminación Retail y Climatización",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "fd749e8",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Instalación de carriles LED orientables con alto índice de reproducción cromática (CRI>90) y climatización eficiente para clientes.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "2c9cdaa",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "77560dd",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "5c564d9",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🚶 Suelos de Alto Tránsito e Insonorización",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "c4ed865",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Pavimentos porcelánicos antideslizantes C2/C3 o microcemento pulido, con aislamiento acústico homologado según la ordenanza municipal.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "4a3044c",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "83917b6",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "14ec3dd",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Preguntas Frecuentes",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "3029abd",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "accordion",
+        "settings": {
+          "tabs": [
+            {
+              "_id": "e8f26cf",
+              "tab_title": "¿Os encargáis del proyecto y de la licencia de apertura?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí. Contamos con ingenieros y arquitectos colegiados que elaboran el proyecto técnico de actividad, certificados de instalaciones y gestionan la tramitación ante el Ayuntamiento de Madrid o la ECLU.</p>"
+            },
+            {
+              "_id": "3eb8d3e",
+              "tab_title": "¿Qué pasa si la obra se retrasa?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Firmamos un contrato con fecha de finalización vinculante y cláusula de penalización económica diaria. Sabemos que cada día de retraso supone alquiler y facturación perdida.</p>"
+            },
+            {
+              "_id": "3cfb510",
+              "tab_title": "¿Podéis trabajar en horarios especiales o nocturnos?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>En centros comerciales o zonas con restricciones de ruido en comunidades de propietarios adaptamos los horarios de trabajo para minimizar molestias y acelerar la obra.</p>"
+            },
+            {
+              "_id": "7a7336b",
+              "tab_title": "¿Qué tipo de suelos recomendáis para un local comercial?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Recomendamos gres porcelánico de masa continua rectificado o microcemento epoxídico de alta resistencia al desgaste y fácil limpieza diaria.</p>"
+            },
+            {
+              "_id": "4eb1a54",
+              "tab_title": "¿Emitís boletines de electricidad y climatización?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí. Entregamos el Boletín Eléctrico (CIE) y la legalización de climatización (RITE) sellados por instaladores autorizados.</p>"
+            }
+          ],
+          "border_width": {
+            "unit": "px",
+            "top": 1,
+            "right": 1,
+            "bottom": 1,
+            "left": 1,
+            "isLinked": true
+          },
+          "border_color": "#E4DCCB",
+          "title_color": "#0E1B2E",
+          "active_first": "no",
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "title_typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "effb2c7",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "align_items": "center",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#0E1B2E",
+      "border_radius": {
+        "unit": "px",
+        "top": 24,
+        "right": 24,
+        "bottom": 24,
+        "left": 24,
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "66023a7",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Listo para Empezar tu Reforma con Reformas Madrid?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#E2C48F",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.4,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "11aaab7",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:19px; line-height:1.65em; color:#CBD5E1; text-align:center; max-width:800px; margin:0 auto;'>Solicita hoy tu visita técnica gratuita. Nuestro equipo colegiado evaluará tu vivienda o local y te entregaremos un presupuesto cerrado sin sorpresas.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "b6fe11f",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "button",
+        "settings": {
+          "text": "Pedir Presupuesto Gratuito",
+          "link": {
+            "url": "/pedir-presupuesto/",
+            "is_external": false,
+            "nofollow": false
+          },
+          "background_color": "#A87E34",
+          "button_text_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12,
+            "isLinked": true
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  }
+]

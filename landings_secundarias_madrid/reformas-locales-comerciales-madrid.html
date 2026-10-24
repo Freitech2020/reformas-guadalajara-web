@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+
+<html lang="es" translate="no">
+<head>
+<meta charset="utf-8"/>
+<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reformas de Locales Comerciales en Madrid | Reformas Madrid | Licencia de Apertura</title>
+<meta content="Especialistas en reformas de locales comerciales y retail en Madrid. Proyecto técnico, gestión de licencia de apertura y Declaración Responsable ECLU. Plazo cerrado por contrato." name="description"/>
+<meta content="reformas locales comerciales madrid, reforma local madrid, licencia apertura local madrid, reformas hosteleria madrid, retail madrid" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="assets/remixicon.min.css" rel="stylesheet"/>
+<link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
+<style>
+  [style*="opacity: 0"]:not(.estancia-mobile-panel):not(.fase-mobile-panel):not(#btn-scroll-top), .reveal {
+    opacity: 1 !important; transform: none !important;
+  }
+  @media (min-width: 1024px) {
+    #estancias .grid { align-items: stretch !important; }
+    #estancias .lg\:col-span-7 { display: flex !important; height: 100% !important; }
+    #estancias .lg\:col-span-7 > div { height: 100% !important; min-height: 520px !important; }
+    #estancias .lg\:col-span-7 .estancia-glass-wrapper {
+      opacity: 0 !important;
+      transform: translateY(16px) !important;
+      pointer-events: none !important;
+      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    #estancias .lg\:col-span-7:hover .estancia-glass-wrapper,
+    #estancias .lg\:col-span-7 > div:hover .estancia-glass-wrapper {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      pointer-events: auto !important;
+    }
+    #estancias .lg\:col-span-7:hover .estancia-glass-card {
+      border-color: rgba(168, 126, 52, 0.45) !important;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65) !important;
+    }
+  }
+  #estancia-cta-btn, .estancia-mobile-panel a[href="#tarifas"] {
+    background-color: #a87e34 !important; color: #ffffff !important;
+    transition: background-color 0.25s ease, transform 0.25s ease !important;
+  }
+  #estancia-cta-btn:hover, .estancia-mobile-panel a[href="#tarifas"]:hover {
+    background-color: #8f6a29 !important;
+  }
+  .estancia-glass-card {
+    background: rgba(10, 20, 36, 0.92) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55) !important;
+  }
+  .estancia-item .estancia-header-btn > div:first-child { display: flex !important; align-items: center !important; gap: 0 !important; }
+
+  /* FASES STEP TITLES RESPONSIVE TYPOGRAPHY (22px BOLD ON DESKTOP, SCALED DOWN ON MOBILE & BREAKPOINTS) */
+  .fase-tab-title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+  }
+  @media (min-width: 640px) {
+    .fase-tab-title { font-size: 18px !important; }
+  }
+  @media (min-width: 1024px) {
+    .fase-tab-title { font-size: 19px !important; }
+  }
+  @media (min-width: 1280px) {
+    .fase-tab-title { font-size: 22px !important; }
+  }
+
+  /* ESTANCIAS DUAL RESPONSIVE ARROWS (MOBILE: DOWN, DESKTOP: LEFT) */
+  .estancia-arrow .arrow-mobile { display: inline-flex !important; }
+  .estancia-arrow .arrow-desktop { display: none !important; }
+  @media (min-width: 1024px) {
+    .estancia-arrow { transform: none !important; }
+    .estancia-arrow .arrow-mobile { display: none !important; }
+    .estancia-arrow .arrow-desktop { display: inline-flex !important; }
+  }
+  .estancia-item .tabular-nums, .estancia-item .estancia-num {
+    display: inline-flex !important; align-items: center !important; justify-content: flex-start !important;
+    min-width: 26px !important; width: 26px !important; margin-right: 14px !important; font-size: 15px !important;
+    font-weight: 700 !important; line-height: 1 !important; flex-shrink: 0 !important; letter-spacing: -0.01em !important;
+  }
+  @media (max-width: 1023px) {
+    .estancia-mobile-panel, .fase-mobile-panel {
+      display: none !important; height: 0 !important; max-height: 0 !important; opacity: 0 !important;
+      visibility: hidden !important; overflow: hidden !important; padding: 0 !important; margin: 0 !important;
+    }
+    .estancia-mobile-panel.is-open, .fase-mobile-panel.is-open, .fase-mobile-card.is-open .fase-mobile-panel {
+      display: block !important; height: auto !important; max-height: none !important; opacity: 1 !important;
+      visibility: visible !important; overflow: visible !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    .estancia-mobile-panel, .fase-mobile-panel, #fases-mobile-accordion {
+      display: none !important; height: 0 !important; max-height: 0 !important; opacity: 0 !important;
+      visibility: hidden !important; overflow: hidden !important;
+    }
+  }
+  .grid-cols-5, #fases-desktop-tabs { display: grid !important; grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+  @media (min-width: 1024px) {
+    .lg\:col-span-1 { grid-column: span 1 / span 1 !important; }
+    .lg\:col-span-2 { grid-column: span 2 / span 2 !important; }
+    .lg\:col-span-3 { grid-column: span 3 / span 3 !important; }
+    .lg\:col-span-4 { grid-column: span 4 / span 4 !important; }
+    .lg\:col-span-5 { grid-column: span 5 / span 5 !important; }
+    .lg\:col-span-6 { grid-column: span 6 / span 6 !important; }
+    .lg\:col-span-7 { grid-column: span 7 / span 7 !important; }
+    .lg\:col-span-8 { grid-column: span 8 / span 8 !important; }
+    .lg\:col-span-9 { grid-column: span 9 / span 9 !important; }
+    .lg\:col-span-10 { grid-column: span 10 / span 10 !important; }
+    .lg\:col-span-11 { grid-column: span 11 / span 11 !important; }
+    .lg\:col-span-12 { grid-column: span 12 / span 12 !important; }
+  }
+  .ba-slider { position: relative; width: 100%; overflow: hidden; cursor: ew-resize; user-select: none; -webkit-user-select: none; touch-action: pan-y; }
+  .ba-slider .ba-divider {
+    position: absolute; top: 0; bottom: 0; width: 2px; background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); pointer-events: none; z-index: 25; transform: translateX(-50%);
+    opacity: 0; transition: opacity 200ms ease;
+  }
+  .ba-slider:hover .ba-divider, .ba-slider.is-hovering .ba-divider { opacity: 1 !important; }
+  .ba-slider:hover [class*="group-hover/ba:opacity-100"], .ba-slider.is-hovering [class*="group-hover/ba:opacity-100"] { opacity: 1 !important; }
+  .ba-slider .ba-overlay { transition: clip-path 0.04s ease-out; }
+  #btn-scroll-top {
+    position: fixed !important; bottom: 80px !important; right: 16px !important; z-index: 9999 !important;
+    width: 44px !important; height: 44px !important; display: flex !important; align-items: center !important; justify-content: center !important;
+    border-radius: 9999px !important; background-color: #EFE8DE !important; border: 1px solid #D8CBB7 !important; color: #0E1B2E !important;
+    box-shadow: 0 4px 16px rgba(14, 27, 46, 0.16) !important; cursor: pointer !important; transition: opacity 0.3s ease, transform 0.3s ease !important;
+  }
+  #btn-scroll-top.is-hidden { opacity: 0 !important; pointer-events: none !important; transform: translateY(12px) !important; }
+  #btn-scroll-top.is-visible { opacity: 1 !important; pointer-events: auto !important; transform: translateY(0) !important; }
+  :root { --hero-darkness: 0.72; }
+  .hero-master-scrim { position: absolute; inset: 0; background-color: rgba(0, 0, 0, var(--hero-darkness)) !important; pointer-events: none; z-index: 1; }
+  header.header-scrim:not(.scrolled) { background: linear-gradient(180deg, rgba(8, 15, 26, 0.8) 0%, rgba(8, 15, 26, 0.4) 65%, transparent 100%) !important; }
+  header.scrolled {
+    background-color: rgba(255, 255, 255, 0.96) !important; backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06) !important;
+  }
+  header.scrolled nav ul a { color: #0E1B2E !important; }
+  header.scrolled nav a[href="#inicio"] span:first-child { color: #0E1B2E !important; }
+  header.scrolled nav a[href="#inicio"] span:last-child { color: #8C6424 !important; }
+  @keyframes radarPulse { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.75); opacity: 0.9; } 70% { transform: scale(1.85); box-shadow: 0 0 0 7px rgba(52, 211, 153, 0); opacity: 0; } 100% { transform: scale(2.2); box-shadow: 0 0 0 9px rgba(52, 211, 153, 0); opacity: 0; } }
+  .live-status-dot { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 14px; height: 14px; flex-shrink: 0; }
+  .live-status-pulse { position: absolute; width: 100%; height: 100%; border-radius: 9999px; background-color: #34d399; animation: radarPulse 2s infinite; }
+  .live-status-core { position: relative; width: 10px; height: 10px; border-radius: 9999px; background-color: #10b981; }
+  #tarifas, section#tarifas { background-color: #0E1B2E !important; }
+  #tarifas h2 { color: #FFFFFF !important; }
+  #tarifas p.tarifas-subtitle { color: #FFFFFF !important; }
+  .jefe-obra-img-box { width: 100%; min-height: 280px; overflow: hidden; background-color: #F8FAFC; }
+  .jefe-obra-img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+  a.bg-teal, button.bg-teal { background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; }
+  a.bg-teal:hover, button.bg-teal:hover { background-color: #8F6A29 !important; }
+
+  /* DROPDOWN NAVIGATION */
+  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
+  .nav-dropdown-toggle { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; text-decoration: none; }
+  .nav-dropdown-toggle svg { transition: transform 0.2s ease; }
+  .nav-dropdown:hover .nav-dropdown-toggle svg { transform: rotate(180deg); }
+  .nav-dropdown-menu {
+    position: absolute; top: 100%; left: 0; min-width: 280px; padding: 8px 0; margin-top: 8px;
+    background: #0E1B2E; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); opacity: 0; visibility: hidden; transform: translateY(8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease; z-index: 1000; pointer-events: none;
+  }
+  header.scrolled .nav-dropdown-menu, header.bg-white\/95 .nav-dropdown-menu {
+    background: #FFFFFF !important; border: 1px solid rgba(14, 27, 46, 0.08) !important;
+    box-shadow: 0 12px 32px rgba(14, 27, 46, 0.12) !important;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); pointer-events: auto; }
+  .nav-dropdown-menu li { list-style: none; margin: 0; padding: 0; }
+  .nav-dropdown-menu a {
+    display: block !important; padding: 10px 18px !important; font-size: 13.5px !important; font-weight: 500 !important;
+    color: #E2E8F0 !important; text-decoration: none !important; transition: background 0.15s ease, color 0.15s ease, padding-left 0.15s ease !important;
+    text-shadow: none !important;
+  }
+  .nav-dropdown-menu a:hover {
+    background: rgba(226, 196, 143, 0.12) !important; color: #E2C48F !important; padding-left: 22px !important;
+  }
+  header.scrolled .nav-dropdown-menu a, header.bg-white\/95 .nav-dropdown-menu a {
+    color: #0E1B2E !important;
+  }
+  header.scrolled .nav-dropdown-menu a:hover, header.bg-white\/95 .nav-dropdown-menu a:hover {
+    background: #F8FAFC !important; color: #8C6424 !important; padding-left: 22px !important;
+  }
+  .nav-dropdown::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 12px; }
+</style>
+<style id="freitech-token-design-2026">
+  /* --- 3. PÁRRAFOS Y TEXTOS EN COLOR NEGRO (#000000) SOBRE FONDOS CLAROS (CERO GRIS) --- */
+  section:not(#inicio):not(#tarifas) p:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  section:not(#inicio):not(#tarifas) li:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  section:not(#inicio):not(#tarifas) dd:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  section:not(#inicio):not(#tarifas) .text-muted:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  #tarifas .bg-white *,
+  #tarifas .bg-card *,
+  #faq-accordion *,
+  .bg-card *,
+  footer,
+  footer * {
+    color: #000000 !important;
+    opacity: 1 !important;
+  }
+  footer a:hover {
+    color: #8C6424 !important;
+  }
+  footer .text-teal {
+    color: #8C6424 !important;
+  }
+  #tarifas .bg-card p {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 1.6 !important;
+    color: #000000 !important;
+  }
+  @media (max-width: 767px) {
+    #tarifas .bg-card p {
+      font-size: 16px !important;
+      line-height: 1.55 !important;
+    }
+  }
+  #tarifas .bg-card span {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #000000 !important;
+  }
+  #tarifas .bg-white li div.text-muted {
+    font-size: 14px !important;
+    color: #000000 !important;
+  }
+
+  /* --- 4. ESCALA DE LEGIBILIDAD ESTRICTA (TOKEN DESIGN 2026: >= 18px Desktop, >= 16px Mobile) --- */
+  @media (min-width: 768px) {
+    p,
+    section p,
+    main p,
+    aside p,
+    footer p,
+    form p,
+    #estancias-desktop-desc,
+    #faq-accordion p {
+      font-size: 18px !important;
+      line-height: 1.65 !important;
+    }
+    section#inicio p {
+      font-size: 19px !important;
+      line-height: 1.65 !important;
+    }
+  }
+  @media (max-width: 767px) {
+    p,
+    section p,
+    main p,
+    aside p,
+    footer p,
+    form p,
+    #estancias-desktop-desc,
+    #faq-accordion p {
+      font-size: 16px !important;
+      line-height: 1.55 !important;
+    }
+  }
+
+  /* --- OFICIOS CAROUSEL MULTI-BREAKPOINT SHIELD --- */
+  #oficios-carousel-track {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  .oficios-card {
+    flex-shrink: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  @media (min-width: 768px) {
+    .oficios-card {
+      width: calc(50% - 12px) !important;
+      min-width: calc(50% - 12px) !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    .oficios-card {
+      width: calc(33.333% - 16px) !important;
+      min-width: calc(33.333% - 16px) !important;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="root">
+<div class="page-enter">
+<div class="min-h-screen bg-white text-ink">
+<!-- HEADER -->
+<header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-transparent">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-6">
+<a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
+<span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
+<span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-teal-light [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
+</a>
+<ul class="hidden lg:flex items-center gap-7">
+  <li class="nav-dropdown">
+    <a class="nav-dropdown-toggle text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light" href="../readdy_captured_complete/index.html">
+      <span>REFORMAS EN GUADALAJARA</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </a>
+    <ul class="nav-dropdown-menu">
+      <li><a href="../readdy_captured_complete/index.html#estancias">Reformas integrales en Guadalajara</a></li>
+      <li><a href="../readdy_captured_complete/index.html#oficios">Instalación de aire acondicionado en Guadalajara</a></li>
+    </ul>
+  </li>
+  <li class="nav-dropdown">
+    <a class="nav-dropdown-toggle text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light" href="../reformas_madrid/index.html">
+      <span>REFORMAS EN MADRID</span>
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+    </a>
+    <ul class="nav-dropdown-menu">
+      <li><a href="reformas-cocinas-madrid.html">Reformas de cocinas en Madrid</a></li>
+      <li><a href="reformas-banos-madrid.html">Reformas de baños en Madrid</a></li>
+      <li><a href="reformas-locales-comerciales-madrid.html">Reformas de locales comerciales en Madrid</a></li>
+      <li><a href="reformas-oficinas-madrid.html">Reformas de oficinas en Madrid</a></li>
+      <li><a href="cambio-banera-por-plato-ducha-madrid.html">Cambio de bañera por plato de ducha en Madrid</a></li>
+      <li><a href="instalacion-aire-acondicionado-madrid.html">Instalación de aire acondicionado en Madrid</a></li>
+    </ul>
+  </li>
+  <li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light" href="https://reformasmadrid.seolifeteam.com/quienes-somos/">NOSOTROS</a></li>
+  <li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light" href="#contacto">CONTACTO</a></li>
+  <li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light" href="https://reformasmadrid.seolifeteam.com/blog/">BLOG</a></li>
+</ul>
+<div class="flex items-center gap-2">
+<a class="hidden sm:inline-flex items-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap shadow-md" href="#contacto">
+          <span>PEDIR PRESUPUESTO</span>
+          <i class="ri-arrow-right-line text-[15px]"></i>
+</a>
+<button id="btn-mobile-menu" aria-label="Abrir menú" class="lg:hidden flex items-center justify-center w-10 h-10 rounded-md border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer" type="button">
+  <i class="ri-menu-line text-[22px]"></i>
+</button>
+</div>
+</nav>
+</div>
+</header>
+<div id="mobile-menu-drawer" class="fixed inset-0 z-[100] transition-all duration-300 pointer-events-none opacity-0" aria-hidden="true">
+  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-ink/60 backdrop-blur-sm transition-opacity duration-300"></div>
+  <nav class="absolute top-0 right-0 bottom-0 w-full max-w-[360px] bg-white shadow-2xl flex flex-col transition-transform duration-300 translate-x-full overflow-y-auto" aria-label="Menú móvil">
+    <div class="flex items-center justify-between p-5 border-b border-line bg-ice/40">
+      <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
+        <span class="text-[17px] font-bold tracking-tight text-ink">REFORMAS</span>
+        <span class="text-[17px] font-bold tracking-tight text-[#8C6424]">MADRID</span>
+      </a>
+      <button id="btn-close-mobile-menu" aria-label="Cerrar menú" class="w-10 h-10 flex items-center justify-center rounded-md border border-line text-ink hover:text-teal hover:border-teal transition-colors cursor-pointer" type="button">
+        <i class="ri-close-line text-[22px]"></i>
+      </button>
+    </div>
+    <div class="flex-1 px-5 py-6 flex flex-col gap-3">
+      <div class="mobile-nav-item border-b border-line/60 pb-3">
+        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors cursor-pointer" type="button" aria-expanded="false">
+          <span>REFORMAS EN GUADALAJARA</span>
+          <i class="ri-arrow-down-s-line text-[18px] transition-transform duration-300"></i>
+        </button>
+        <div class="mobile-accordion-panel hidden pl-3 pt-2 flex-col gap-2">
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../readdy_captured_complete/index.html#estancias">
+            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+            <span>Reformas integrales en Guadalajara</span>
+          </a>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../readdy_captured_complete/index.html#oficios">
+            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+            <span>Instalación de aire acondicionado en Guadalajara</span>
+          </a>
+        </div>
+      </div>
+      <div class="mobile-nav-item border-b border-line/60 pb-3">
+        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors cursor-pointer" type="button" aria-expanded="false">
+          <span>REFORMAS EN MADRID</span>
+          <i class="ri-arrow-down-s-line text-[18px] transition-transform duration-300"></i>
+        </button>
+        <div class="mobile-accordion-panel hidden pl-3 pt-2 flex-col gap-2">
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">
+            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+            <span>Reformas de cocinas en Madrid</span>
+          </a>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">
+            <i class="ri-drop-line text-[16px] shrink-0"></i>
+            <span>Reformas de baños en Madrid</span>
+          </a>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">
+            <i class="ri-store-2-line text-[16px] shrink-0"></i>
+            <span>Reformas de locales comerciales en Madrid</span>
+          </a>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">
+            <i class="ri-building-line text-[16px] shrink-0"></i>
+            <span>Reformas de oficinas en Madrid</span>
+          </a>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">
+            <i class="ri-contrast-drop-line text-[16px] shrink-0"></i>
+            <span>Cambio de bañera por plato de ducha en Madrid</span>
+          </a>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="instalacion-aire-acondicionado-madrid.html">
+            <i class="ri-temp-cold-line text-[16px] shrink-0"></i>
+            <span>Instalación de aire acondicionado en Madrid</span>
+          </a>
+        </div>
+      </div>
+      <div class="border-b border-line/60 pb-3">
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="https://reformasmadrid.seolifeteam.com/quienes-somos/">NOSOTROS</a>
+      </div>
+      <div class="border-b border-line/60 pb-3">
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="#contacto">CONTACTO</a>
+      </div>
+      <div class="border-b border-line/60 pb-3">
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="https://reformasmadrid.seolifeteam.com/blog/">BLOG</a>
+      </div>
+      <div class="pt-4">
+        <a class="w-full flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white hover:bg-teal-hover transition-colors shadow-md text-center" href="#contacto">
+          <span>PEDIR PRESUPUESTO</span>
+          <i class="ri-arrow-right-line text-[16px]"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+<!-- OLD_HEADER_START
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-6">
+<a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="#inicio">
+<span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
+<span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-teal-light [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
+</a>
+<ul class="hidden lg:flex items-center gap-8">
+<li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/85 hover:text-teal-light" href="#estancias">Modelos de Negocio</a></li>
+<li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/85 hover:text-teal-light" href="#fases">Fases y Licencias</a></li>
+<li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/85 hover:text-teal-light" href="#proyectos">Antes y Después</a></li>
+<li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/85 hover:text-teal-light" href="#oficios">Especialidades</a></li>
+<li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/85 hover:text-teal-light" href="#tarifas">Tarifas</a></li>
+<li><a class="text-[13.5px] font-medium transition-colors cursor-pointer whitespace-nowrap text-white/85 hover:text-teal-light" href="#contacto">Contacto</a></li>
+</ul>
+<div class="flex items-center gap-2">
+<a class="hidden sm:inline-flex items-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap shadow-md" href="#contacto">
+          Presupuesto Local Comercial
+          <i class="ri-arrow-right-line text-[15px]"></i>
+</a>
+</div>
+</nav>
+</div>
+-->
+<main>
+<!-- HERO -->
+<section class="relative w-full isolate overflow-hidden bg-ink" id="inicio">
+<img alt="Reforma integral de local comercial boutique en Madrid" class="absolute inset-0 h-full w-full object-cover object-center" src="images/locales-hero.webp"/>
+<div aria-hidden="true" class="hero-master-scrim"></div>
+<div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div>
+<div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-end px-4 pb-12 pt-[112px] md:px-8 md:pb-20 md:pt-[150px] lg:min-h-[90vh] lg:px-12 lg:pb-24">
+<div class="grid grid-cols-1 items-end gap-10 lg:grid-cols-12 lg:gap-12">
+<div class="lg:col-span-7">
+<div style="opacity: 1;">
+<h1 class="font-editorial max-w-[720px] text-[34px] leading-[1.06] tracking-[-0.022em] text-white [text-shadow:0_2px_6px_rgba(14,27,46,0.55),0_4px_32px_rgba(14,27,46,0.7)] sm:text-[44px] md:text-[52px] lg:text-[60px]">
+            Reformas de Locales en Madrid<span class="mt-1 block italic text-teal-light">espacios comerciales que venden y fidelizan.</span>
+</h1>
+</div>
+<div style="opacity: 1;">
+<p class="mt-5 max-w-[540px] text-[15px] leading-[1.65] text-white/90 [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)] md:mt-6 md:text-[18px]">
+            Diseño arquitectónico para retail, hostelería y centros sanitarios. Redacción de proyecto de actividad, tramitación de Declaración Responsable y ejecución técnica ágil con penalización contractual por día de retraso.
+          </p>
+</div>
+<div style="opacity: 1;">
+<div class="mt-7 flex w-full justify-center sm:justify-start gap-4">
+<a class="inline-flex items-center justify-center gap-2.5 rounded-md bg-teal text-[16px] font-semibold text-white transition-all hover:bg-teal-hover cursor-pointer whitespace-nowrap shadow-md text-center" href="#contacto" style="padding: 18px 40px !important;">
+              Consultar Proyecto y Licencia
+              <i class="ri-arrow-right-line text-[18px]"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div style="opacity: 1;">
+<div class="rounded-xl border border-white/20 bg-white/10 p-5 backdrop-blur-md text-white shadow-2xl">
+<div class="flex items-center justify-between border-b border-white/15 pb-4">
+<div class="flex items-center gap-2">
+<span class="live-status-dot">
+<span class="live-status-pulse"></span>
+<span class="live-status-core"></span>
+</span>
+<span class="text-[13px] font-semibold tracking-wide uppercase text-white/90">Área Urbanística Activa en Madrid</span>
+</div>
+<span class="text-[11px] font-bold text-teal-light bg-black/40 px-2 py-0.5 rounded">Visita en 24h</span>
+</div>
+<div class="mt-4 grid grid-cols-2 gap-4">
+<div>
+<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Apertura Rápida</p>
+<p class="text-[20px] font-bold text-white mt-0.5">3 a 5 Semanas</p>
+</div>
+<div>
+<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Tramitación</p>
+<p class="text-[20px] font-bold text-teal-light mt-0.5">ECLU / Ayto</p>
+</div>
+<div>
+<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Presupuesto</p>
+<p class="text-[20px] font-bold text-white mt-0.5">Sin Desvíos</p>
+</div>
+<div>
+<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Normativa CTE</p>
+<p class="text-[20px] font-bold text-teal-light mt-0.5">100% Homologado</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECCIÓN 6 TIPOLOGÍAS DE LOCALES COMERCIALES -->
+<section class="relative bg-surface-warm py-16 md:py-24 scroll-mt-20 md:scroll-mt-24" id="estancias">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<div class="mb-10 md:mb-14">
+<span class="text-[12px] font-bold uppercase tracking-widest text-teal">Tipologías de Negocio</span>
+<h2 class="font-editorial text-[28px] md:text-[40px] text-ink mt-1">
+        6 Proyectos de Locales Comerciales ejecutados en Madrid
+      </h2>
+<p class="mt-2 text-[15px] md:text-[18px] text-muted max-w-[760px]">
+        Optimizamos el flujo de clientes, la visibilidad de escaparate y la eficiencia energética adaptándonos a la normativa municipal específica de cada distrito madrileño.
+      </p>
+</div>
+<!-- VISOR INTERACTIVO ESCRITORIO + ACORDEÓN MÓVIL -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- COLUMNA VISOR IZQUIERDA -->
+<div class="hidden lg:block lg:col-span-7">
+<div class="group relative w-full h-[540px] rounded-2xl overflow-hidden shadow-2xl border border-sand/40">
+<img alt="Proyecto seleccionado de reforma de local comercial en Madrid" class="w-full h-full object-cover transition-all duration-700" id="estancia-desktop-img" onerror="this.onerror=null; this.src='images/locales-despues.webp';" src="images/locales-cafeteria-bakery.webp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"></div>
+<div class="estancia-glass-wrapper absolute inset-x-6 bottom-6">
+<div class="estancia-glass-card rounded-xl p-6 text-white">
+<div class="flex items-center justify-between mb-2">
+<span class="text-[11px] font-bold uppercase tracking-widest text-teal-light bg-teal/30 px-3 py-1 rounded-full border border-teal/40" id="estancia-desktop-badge">
+                  Tipología 01 · Malasaña
+                </span>
+<span class="text-[12px] font-semibold text-white/80" id="estancia-desktop-time">
+<i class="ri-time-line text-teal-light mr-1"></i> Plazo: 25 Días
+                </span>
+</div>
+<h4 class="text-[22px] font-bold text-white mb-2 font-editorial" id="estancia-desktop-title">
+                Cafetería de Especialidad &amp; Bakery
+              </h4>
+<p class="text-[14px] text-white/90 leading-relaxed mb-4" id="estancia-desktop-desc">
+                Mostrador continuo en microcemento gris con vitrinas encastradas a ras, suelo continuo pulido de alta resistencia al tráfico peatonal, iluminación decorativa 2700K y renovación de aire con recuperador entálpico.
+              </p>
+<div class="flex items-center justify-between pt-3 border-t border-white/15">
+<div class="flex items-center gap-4 text-[13px] text-white/80">
+<span><i class="ri-check-line text-teal-light mr-1"></i>Licencia Declaración Responsable</span>
+<span><i class="ri-check-line text-teal-light mr-1"></i>Aseos PMR</span>
+<span><i class="ri-check-line text-teal-light mr-1"></i>Extinción Incendios</span>
+</div>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded text-[13px] font-bold bg-teal text-white hover:bg-teal-hover transition-colors" href="#contacto" id="estancia-cta-btn">
+                  Consultar Proyecto <i class="ri-arrow-right-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMNA LISTA DERECHA -->
+<div class="lg:col-span-5 space-y-3" id="estancias-list">
+<!-- ITEM 1: CAFETERÍA BOUTIQUE MALASAÑA -->
+<div class="estancia-item rounded-xl border border-sand bg-white transition-all duration-300 shadow-sm overflow-hidden" data-estancia="0">
+<button aria-expanded="true" class="estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm" type="button">
+<span class="estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 border-teal bg-teal text-white">
+<i class="ri-arrow-down-s-line text-[18px] arrow-mobile"></i>
+<i class="ri-arrow-left-line text-[16px] arrow-desktop"></i>
+</span>
+<div class="min-w-0 flex-1">
+<span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-teal">Cafetería de Especialidad &amp; Bakery</span>
+<span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Malasaña · Microcemento, Barra Artesanal e Iluminación Cálida</span>
+</div>
+</button>
+<div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
+<img alt="Cafetería boutique reformada en Malasaña Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/locales-despues.webp';" src="images/locales-cafeteria-bakery.webp"/>
+<p class="text-[14px] text-muted leading-relaxed">
+              Mostrador continuo en microcemento gris con vitrinas encastradas a ras, suelo continuo pulido de alta resistencia al tráfico peatonal, iluminación decorativa 2700K y renovación de aire con recuperador entálpico.
+            </p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-[12px] font-bold text-teal">Plazo: 25 Días</span>
+<a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+</div>
+</div>
+</div>
+<!-- ITEM 2: BOUTIQUE RETAIL MODA SALAMANCA -->
+<div class="estancia-item rounded-xl border border-sand bg-white transition-all duration-300 shadow-sm overflow-hidden" data-estancia="1">
+<button aria-expanded="false" class="estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm" type="button">
+<span class="estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 border-line text-ink">
+<i class="ri-arrow-down-s-line text-[18px] arrow-mobile"></i>
+<i class="ri-arrow-left-line text-[16px] arrow-desktop"></i>
+</span>
+<div class="min-w-0 flex-1">
+<span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Boutique Retail Moda &amp; Concept Store</span>
+<span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Barrio de Salamanca · Escaparate Gran Formato y Focos CRI&gt;95</span>
+</div>
+</button>
+<div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
+<img alt="Boutique de moda moderna en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/locales-despues.webp"/>
+<p class="text-[14px] text-muted leading-relaxed">
+              Escaparate sin perfilería con vidrio laminar antirreflejo 6+6, carriles trifásicos con proyectores LED de alto índice de reproducción cromática para respetar los tonos textiles, probadores confortables y climatización oculta.
+            </p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-[12px] font-bold text-teal">Plazo: 21 Días</span>
+<a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+</div>
+</div>
+</div>
+<!-- ITEM 3: CLÍNICA DENTAL Y ESTÉTICA CHAMBERÍ -->
+<div class="estancia-item rounded-xl border border-sand bg-white transition-all duration-300 shadow-sm overflow-hidden" data-estancia="2">
+<button aria-expanded="false" class="estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm" type="button">
+<span class="estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 border-line text-ink">
+<i class="ri-arrow-down-s-line text-[18px] arrow-mobile"></i>
+<i class="ri-arrow-left-line text-[16px] arrow-desktop"></i>
+</span>
+<div class="min-w-0 flex-1">
+<span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Clínica Dental &amp; Centro Médico Estético</span>
+<span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Chamberí · Pavimento Sanitario Antibacteriano y Filtrado HEPA</span>
+</div>
+</button>
+<div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
+<img alt="Reforma de clínica dental y estética en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/locales-hero.webp"/>
+<p class="text-[14px] text-muted leading-relaxed">
+              Cumplimiento riguroso de la Consejería de Sanidad de la Comunidad de Madrid. Boxes con suelo vinílico remontado en media caña sin ángulos vivos, tomas de aspiración y aire comprimido bajo suelo técnico y sala de plomos para rayos X.
+            </p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-[12px] font-bold text-teal">Plazo: 35 Días</span>
+<a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+</div>
+</div>
+</div>
+<!-- ITEM 4: RESTAURANTE GASTROBAR CHUECA -->
+<div class="estancia-item rounded-xl border border-sand bg-white transition-all duration-300 shadow-sm overflow-hidden" data-estancia="3">
+<button aria-expanded="false" class="estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm" type="button">
+<span class="estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 border-line text-ink">
+<i class="ri-arrow-down-s-line text-[18px] arrow-mobile"></i>
+<i class="ri-arrow-left-line text-[16px] arrow-desktop"></i>
+</span>
+<div class="min-w-0 flex-1">
+<span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Restaurante &amp; Gastrobar con Cocina Vista</span>
+<span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Chueca / La Latina · Salida de Humos EI-30 y Extinción Automática</span>
+</div>
+</button>
+<div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
+<img alt="Restaurante gastronómico en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/locales-fase-02-3d.webp"/>
+<p class="text-[14px] text-muted leading-relaxed">
+              Chimenea industrial de acero inoxidable 316 con aislamiento térmico hasta cubierta conforme al CTE DB-SI. Campana con aporte compensado de aire, paneles fonoabsorbentes en sala para evitar el efecto taberna y aseos dobles PMR.
+            </p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-[12px] font-bold text-teal">Plazo: 30 Días</span>
+<a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+</div>
+</div>
+</div>
+<!-- ITEM 5: ACADEMIA Y FORMACIÓN MONCLOA -->
+<div class="estancia-item rounded-xl border border-sand bg-white transition-all duration-300 shadow-sm overflow-hidden" data-estancia="4">
+<button aria-expanded="false" class="estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm" type="button">
+<span class="estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 border-line text-ink">
+<i class="ri-arrow-down-s-line text-[18px] arrow-mobile"></i>
+<i class="ri-arrow-left-line text-[16px] arrow-desktop"></i>
+</span>
+<div class="min-w-0 flex-1">
+<span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Centro de Formación &amp; Academia de Idiomas</span>
+<span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Moncloa / Chamartín · Tabiquería Acústica y Aseos Adaptados PMR</span>
+</div>
+</button>
+<div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
+<img alt="Centro de formación y academia en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/estancia-integral.webp"/>
+<p class="text-[14px] text-muted leading-relaxed">
+              Distribución modular mediante paneles de cartón-yeso con doble placa y lana mineral interior (aislamiento acústico Rw &gt; 45 dBA). Puertas acústicas con guillotina inferior y rampa de acceso suave sin desnivel según DB-SUA.
+            </p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-[12px] font-bold text-teal">Plazo: 20 Días</span>
+<a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+</div>
+</div>
+</div>
+<!-- ITEM 6: FRANQUICIA RETAIL CORPORATIVA -->
+<div class="estancia-item rounded-xl border border-sand bg-white transition-all duration-300 shadow-sm overflow-hidden" data-estancia="5">
+<button aria-expanded="false" class="estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm" type="button">
+<span class="estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-300 border-line text-ink">
+<i class="ri-arrow-down-s-line text-[18px] arrow-mobile"></i>
+<i class="ri-arrow-left-line text-[16px] arrow-desktop"></i>
+</span>
+<div class="min-w-0 flex-1">
+<span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Franquicia Retail &amp; Imagen Estandarizada</span>
+<span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Callao / Gran Vía · Replicación Fidedigna de Manual de Marca</span>
+</div>
+</button>
+<div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
+<img alt="Franquicia retail en Gran Vía Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/locales-fase-05-entrega.webp"/>
+<p class="text-[14px] text-muted leading-relaxed">
+              Implantación exprés llave en mano. Coordinación con la central franquiciadora para integrar tótems publicitarios, pantallas digitales LED sincronizadas, racks de servidores para TPVs y cierre de persiana motorizada con bloqueo de seguridad.
+            </p>
+<div class="mt-3 flex items-center justify-between">
+<span class="text-[12px] font-bold text-teal">Plazo: 18 Días</span>
+<a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECCIÓN FASES DE LA OBRA Y LICENCIAS URBANÍSTICAS (5 FASES) -->
+<section class="w-full border-t border-line bg-ice py-16 md:py-24" id="fases">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+<div>
+<span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-2">Metodología Comprobada</span>
+<h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">
+          Cómo ejecutamos la reforma y apertura de tu local comercial paso a paso.
+        </h2>
+</div>
+<span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">
+        Cinco fases técnicas desde el estudio de viabilidad hasta la apertura con licencia ECLU.
+      </span>
+</div>
+<!-- FASES MOBILE (ACCORDION CARDS) -->
+<div class="block lg:hidden mt-8 space-y-4">
+<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 01</span>
+<span class="text-[11.5px] font-semibold text-muted">Estudio previo gratuito · 24-48h</span>
+</div>
+<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Estudio de ordenanzas zonales, aforo y levantamiento de planos</h3>
+<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Comprobamos la compatibilidad urbanística con el PGOU de Madrid, alturas mínimas libres, recorridos de evacuación, salidas de humos y accesibilidad PMR antes de firmar el alquiler o iniciar la obra.</p>
+</div>
+<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 02</span>
+<span class="text-[11.5px] font-semibold text-muted">Proyecto de diseño · 3 a 5 días</span>
+</div>
+<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Interiorismo comercial enfocado a la conversión y venta</h3>
+<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Diseñamos el recorrido del cliente (customer journey), iluminación técnica focalizada sobre el producto, escaparates de alto impacto y materiales de alta durabilidad para tráfico intenso.</p>
+</div>
+<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 03</span>
+<span class="text-[11.5px] font-semibold text-muted">Gestión administrativa · 1 a 2 semanas</span>
+</div>
+<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Redacción de memoria técnica visada y Declaración Responsable</h3>
+<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Nuestros arquitectos redactan el proyecto de actividad e instalaciones visado por colegio oficial, gestionando el certificado de conformidad ante ECLU para apertura legal inmediata.</p>
+</div>
+<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 04</span>
+<span class="text-[11.5px] font-semibold text-muted">Ejecución continua · 2 a 4 semanas</span>
+</div>
+<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Turnos intensivos de albañilería, pladur y climatización</h3>
+<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Ejecutamos la obra con calendario estricto para reducir el periodo de carencia de alquiler. Instalación de pladur ignífugo EI-120, climatización comercial por conductos e insonorización certificada.</p>
+</div>
+<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 05</span>
+<span class="text-[11.5px] font-semibold text-muted">Entrega llave en mano · 48 horas</span>
+</div>
+<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Certificado final de obra, pruebas de carga y local listo para abrir</h3>
+<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Entregamos el Certificado Final de Obra visado, realizamos pruebas de alumbrado de emergencia y entregamos el local limpio y reluciente para colocar género y recibir clientes.</p>
+</div>
+</div>
+<!-- FASES DESKTOP MASTER VIEW -->
+<div class="hidden lg:block mt-10">
+<div class="overflow-hidden rounded-[20px] border border-line bg-white shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="reveal flex flex-col justify-between p-6 md:p-9 order-2 lg:order-1">
+<div>
+<span class="inline-flex items-center gap-2 rounded-full bg-teal/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-teal" id="fases-desktop-badge">Fase 01 · Viabilidad Urbanística y Planos</span>
+<h3 class="font-editorial mt-4 text-[24px] leading-[1.18] text-ink md:text-[30px] font-bold" id="fases-desktop-title">Estudio de ordenanzas zonales, aforo y levantamiento de planos</h3>
+<p class="mt-3 text-[15px] leading-[1.65] text-ink/90" id="fases-desktop-desc">Comprobamos la compatibilidad urbanística con el PGOU de Madrid, alturas mínimas libres, recorridos de evacuación, salidas de humos y accesibilidad PMR antes de firmar el alquiler o iniciar la obra.</p>
+<ul class="mt-5 flex flex-col gap-2.5" id="fases-desktop-protocols">
+<li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Comprobación de viabilidad ante la ECLU de Madrid</li>
+<li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Medición láser 3D de cota de acerado y acceso sin barreras</li>
+<li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Inspección de acometidas eléctricas (potencia contratada y trifásica)</li>
+</ul>
+</div>
+<div class="mt-7 flex flex-col gap-3 border-t border-line pt-5 sm:flex-row sm:items-center sm:justify-between">
+<span class="text-[13px] font-semibold text-ink/80" id="fases-desktop-duration">Estudio previo gratuito · 24-48h</span>
+<a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap" href="#contacto" id="fases-desktop-cta">Solicitar Visita en Madrid <i class="ri-arrow-right-line text-[14px]"></i></a>
+</div>
+</div>
+<div class="w-full bg-ice order-1 lg:order-2" style="aspect-ratio: 4 / 3;">
+<img alt="Estudio de ordenanzas zonales, aforo y levantamiento de planos" class="reveal h-full w-full object-cover object-top" id="fases-desktop-img" src="images/locales-fase-01-medicion.webp"/>
+</div>
+</div>
+</div>
+<!-- 5-COLUMN STEPPER TABS (CLEAN 3-ROW LAYOUT BUTTONS) -->
+<div class="mt-5 grid grid-cols-5 gap-3.5" id="fases-desktop-tabs">
+    <!-- TAB 1 (ACTIVA) -->
+    <button aria-pressed="true" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border-2 border-teal bg-white p-4 text-left transition-all duration-300 cursor-pointer shadow-sm min-h-[135px] h-full" data-index="0" type="button">
+      <div class="flex items-center justify-between w-full">
+        <span class="text-[12px] font-bold uppercase tracking-wider text-teal tabular-nums">Paso 01</span>
+        <i class="ri-check-line text-teal text-[16px] font-bold"></i>
+      </div>
+      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-teal leading-snug my-auto">Viabilidad ECLU</span>
+      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
+        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 100%;"></span>
+      </div>
+    </button>
+    <!-- TAB 2 -->
+    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="1" type="button">
+      <div class="flex items-center justify-between w-full">
+        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 02</span>
+        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+      </div>
+      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Proyecto y Licencia</span>
+      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
+        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      </div>
+    </button>
+    <!-- TAB 3 -->
+    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="2" type="button">
+      <div class="flex items-center justify-between w-full">
+        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 03</span>
+        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+      </div>
+      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Contrato Llave en Mano</span>
+      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
+        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      </div>
+    </button>
+    <!-- TAB 4 -->
+    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="3" type="button">
+      <div class="flex items-center justify-between w-full">
+        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 04</span>
+        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+      </div>
+      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Ejecución Rápida</span>
+      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
+        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      </div>
+    </button>
+    <!-- TAB 5 -->
+    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="4" type="button">
+      <div class="flex items-center justify-between w-full">
+        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 05</span>
+        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+      </div>
+      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Licencia de Apertura</span>
+      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
+        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      </div>
+    </button>
+</div>
+</div>
+<!-- BANNER DIRECCIÓN TÉCNICA -->
+<div class="mt-8 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
+<div class="flex flex-col justify-center gap-4 p-6 order-2 lg:order-1 lg:col-span-8 xl:col-span-9 md:p-8">
+<div class="flex flex-wrap items-center gap-3">
+<span class="text-[11px] font-bold uppercase tracking-[0.18em] text-teal">Dirección Técnica Colegiada</span>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[11px] font-bold text-okgreen"><i class="ri-shield-check-line text-[13px]"></i>2 Años de Garantía Escrita</span>
+</div>
+<blockquote class="font-editorial text-[19px] leading-[1.45] text-ink md:text-[22px]">
+          «En un local comercial cada día de obra con persiana bajada es una pérdida directa de facturación y alquiler. Por eso asumimos compromisos de entrega con penalización por día de demora firmada en contrato y resolvemos las exigencias de la ECLU antes de colocar el primer ladrillo.»
+        </blockquote>
+<div>
+<div class="text-[14px] font-bold text-ink">Dirección Facultativa Propia</div>
+<div class="text-[12.5px] font-medium text-ink/75">Arquitecto Técnico Colegiado · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
+</div>
+</div>
+<div class="order-1 lg:order-2 lg:col-span-4 xl:col-span-3">
+<div class="jefe-obra-img-box w-full overflow-hidden bg-ice">
+<img alt="Dirección técnica colegiada en Madrid" class="jefe-obra-img h-full w-full object-cover" src="images/madrid-director-tecnico.webp"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECCIÓN ANTES Y DESPUÉS INTERACTIVA (SLIDER FÍSICO) -->
+<section class="w-full border-t border-line bg-white py-16 md:py-24" id="proyectos">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+<div>
+<span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-2">Casos Reales en Madrid</span>
+<h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">
+          Transformaciones reales: de local en bruto a negocio rentable.
+        </h2>
+</div>
+<span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">
+</span>
+</div>
+<div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<!-- PROYECTO 1 -->
+<div class="h-full">
+<article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white">
+<div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
+<img alt="Gastrobar en Calle Fuencarral antes" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/locales-antes.webp"/>
+<span class="absolute top-3 right-3 z-10 rounded-md bg-black/70 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Antes</span>
+<div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
+<img alt="Gastrobar en Calle Fuencarral después" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/locales-despues.webp"/>
+<span class="absolute top-3 left-3 z-10 rounded-md bg-teal/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none">Después</span>
+</div>
+<div class="ba-divider absolute top-0 bottom-0 w-[2px] bg-white pointer-events-none opacity-100 z-20" style="left: var(--split, 100%); transform: translateX(-50%);">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white shadow-xl flex items-center justify-center border border-black/10">
+<i class="ri-arrow-left-right-line text-[14px] text-ink font-bold"></i>
+</div>
+</div>
+</div>
+<div class="flex flex-1 flex-col p-5 md:p-6">
+<div class="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wider text-teal">
+<span>Hostelería &amp; Insonorización</span>
+<span class="h-1 w-1 rounded-full bg-teal"></span>
+<span class="normal-case font-medium text-ink">Malasaña · Madrid</span>
+</div>
+<h3 class="font-editorial mt-2 text-[20px] font-bold text-ink leading-tight">Gastrobar en Calle Fuencarral</h3>
+<p class="mt-2 text-[14px] leading-[1.6] text-ink/80 flex-1">Adecuación integral de local antiguo para gastrobar con salida de humos homologada, insonorización acústica de 65 dB y barra de microcemento.</p>
+</div>
+</article>
+</div>
+<!-- PROYECTO 2 -->
+<div class="h-full">
+<article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white">
+<div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
+<img alt="Boutique en Calle Ponzano antes" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/locales-chamberi-antes.webp"/>
+<span class="absolute top-3 right-3 z-10 rounded-md bg-black/70 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Antes</span>
+<div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
+<img alt="Boutique en Calle Ponzano después" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/locales-chamberi-despues.webp"/>
+<span class="absolute top-3 left-3 z-10 rounded-md bg-teal/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none">Después</span>
+</div>
+<div class="ba-divider absolute top-0 bottom-0 w-[2px] bg-white pointer-events-none opacity-100 z-20" style="left: var(--split, 100%); transform: translateX(-50%);">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white shadow-xl flex items-center justify-center border border-black/10">
+<i class="ri-arrow-left-right-line text-[14px] text-ink font-bold"></i>
+</div>
+</div>
+</div>
+<div class="flex flex-1 flex-col p-5 md:p-6">
+<div class="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wider text-teal">
+<span>Retail Moda &amp; Iluminación</span>
+<span class="h-1 w-1 rounded-full bg-teal"></span>
+<span class="normal-case font-medium text-ink">Chamberí · Madrid</span>
+</div>
+<h3 class="font-editorial mt-2 text-[20px] font-bold text-ink leading-tight">Boutique en Calle Ponzano</h3>
+<p class="mt-2 text-[14px] leading-[1.6] text-ink/80 flex-1">Transformación de bajo comercial oscuro en una exclusiva boutique con parquet espigado, probadores confortables y escaparate panorámico sin perfilería.</p>
+</div>
+</article>
+</div>
+<!-- TARJETA CERTIFICACIONES -->
+<div class="h-full">
+<article class="flex h-full flex-col justify-between rounded-[20px] bg-ink p-6 text-white md:p-7">
+<div>
+<div class="flex items-center gap-2">
+<span class="flex h-2 w-2 items-center justify-center rounded-full bg-okgreen"></span>
+<span class="obras-badge text-[14px] font-bold uppercase tracking-[0.18em] text-white/85">Garantía por Contrato</span>
+</div>
+<h3 class="font-editorial mt-5 text-[24px] leading-[1.16] md:text-[27px]">Más de 95 locales transformados en Madrid.</h3>
+<p class="mt-4 text-[16px] leading-[1.65] text-white/90">Especialistas en licencias de actividad por Declaración Responsable y procedimiento ordinario. Contrato formal con penalización diaria por demora para asegurar tu fecha de apertura.</p>
+<ul class="mt-5 flex flex-col gap-2.5">
+<li class="flex items-center gap-2.5 text-[15.5px] text-white"><i class="ri-check-line text-[18px] text-okgreen"></i> Tramitación integral ante ECLU y Ayuntamiento de Madrid</li>
+<li class="flex items-center gap-2.5 text-[15.5px] text-white"><i class="ri-check-line text-[18px] text-okgreen"></i> Insonorización y protección contra incendios certificada</li>
+<li class="flex items-center gap-2.5 text-[15.5px] text-white"><i class="ri-check-line text-[18px] text-okgreen"></i> Cláusula de penalización económica por día de retraso</li>
+</ul>
+</div>
+<a class="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-md bg-teal px-6 py-3.5 text-[15px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer shadow-md" href="#contacto">
+            Pedir Estudio de Viabilidad Comercial <i class="ri-arrow-right-line text-[15px]"></i>
+</a>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECCIÓN ESPECIALIDADES Y OFICIOS EN ACORDEÓN -->
+<section class="w-full border-t border-line bg-white py-16 md:py-24" id="oficios">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+<div>
+<span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-2">Coordinación Total Sin Subcontratas Opacas</span>
+<h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">
+          Oficios propios integrados: control absoluto de cada detalle.
+        </h2>
+</div>
+<p class="mt-3 text-[15px] md:text-[17px] text-muted leading-relaxed">
+          Un local comercial exige rigurosas medidas de seguridad contra incendios, ventilación mecánica y accesibilidad universal para superar la inspección técnica municipal.
+        </p>
+<div class="mt-6 p-4 rounded-xl bg-sand/30 border border-sand">
+<div class="flex items-center gap-3">
+<i class="ri-checkbox-circle-line text-[28px] text-teal"></i>
+<div>
+<p class="text-[14px] font-bold text-ink">Aprobación Técnica Garantizada</p>
+<p class="text-[12px] text-muted">Todos nuestros proyectos cumplen al 100% las ordenanzas municipales de Madrid y la Ley de Accesibilidad de la CAM.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-3 mt-10" id="oficios-accordion">
+<!-- OFICIO 1 -->
+<div class="oficio-item rounded-xl border border-sand bg-surface-warm p-4 md:p-5 is-open">
+<button class="oficio-btn w-full flex items-center justify-between text-left cursor-pointer">
+<div class="flex items-center gap-3">
+<i class="ri-fire-line text-teal text-[20px]"></i>
+<span class="text-[16px] font-bold text-ink">Protección Pasiva contra Incendios y Sectorización (EI-60/EI-120)</span>
+</div>
+<i class="ri-arrow-down-s-line text-teal text-[20px] transition-transform"></i>
+</button>
+<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3">
+            Aplicación de pinturas intumescentes o morteros proyectados en vigas de acero para alcanzar la resistencia al fuego requerida por el CTE DB-SI. Instalación de puertas cortafuegos homologadas EI2-60-C5 con antipánico y sellado cortafuego en pasos de cables.
+          </div>
+</div>
+<!-- OFICIO 2 -->
+<div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
+<button class="oficio-btn w-full flex items-center justify-between text-left cursor-pointer">
+<div class="flex items-center gap-3">
+<i class="ri-wind-line text-teal text-[20px]"></i>
+<span class="text-[16px] font-bold text-ink">Climatización Comercial, Conductos y Calidad de Aire (RITE)</span>
+</div>
+<i class="ri-arrow-down-s-line text-muted text-[20px] transition-transform"></i>
+</button>
+<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+            Sistemas VRF de caudal variable de refrigerante, bombas de calor inverter de alta eficiencia energética y ventilación mecánica con recuperador de calor de alta eficiencia según norma RITE (caudales IDA 2 para locales comerciales).
+          </div>
+</div>
+<!-- OFICIO 3 -->
+<div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
+<button class="oficio-btn w-full flex items-center justify-between text-left cursor-pointer">
+<div class="flex items-center gap-3">
+<i class="ri-lightbulb-flash-line text-teal text-[20px]"></i>
+<span class="text-[16px] font-bold text-ink">Electricidad de Pública Concurrencia y Alumbrado de Emergencia</span>
+</div>
+<i class="ri-arrow-down-s-line text-muted text-[20px] transition-transform"></i>
+</button>
+<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+            Instalación con cables libres de halógenos y baja emisión de humos (AS) conforme a la ITC-BT-28. Bloques autónomos de alumbrado de emergencia LED en rutas de evacuación y cuadros de mando con fuentes de alimentación redundantes.
+          </div>
+</div>
+<!-- OFICIO 4 -->
+<div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
+<button class="oficio-btn w-full flex items-center justify-between text-left cursor-pointer">
+<div class="flex items-center gap-3">
+<i class="ri-wheelchair-line text-teal text-[20px]"></i>
+<span class="text-[16px] font-bold text-ink">Accesibilidad Universal y Aseos Adaptados PMR (DB-SUA)</span>
+</div>
+<i class="ri-arrow-down-s-line text-muted text-[20px] transition-transform"></i>
+</button>
+<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+            Diseño de aseos accesibles con círculo de giro libre de 1,50 m de diámetro, inodoros suspendidos a cota de 45-50 cm con barras de transferencia abatibles, lavabos sin pedestal y timbre de llamada de asistencia con señal acústica y visual.
+          </div>
+</div>
+<!-- OFICIO 5 -->
+<div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
+<button class="oficio-btn w-full flex items-center justify-between text-left cursor-pointer">
+<div class="flex items-center gap-3">
+<i class="ri-volume-down-line text-teal text-[20px]"></i>
+<span class="text-[16px] font-bold text-ink">Insonorización Acústica y Ensayos de Aislamiento Acústico</span>
+</div>
+<i class="ri-arrow-down-s-line text-muted text-[20px] transition-transform"></i>
+</button>
+<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+            Aislamiento de techos y paredes con amortiguadores acústicos de caucho y suelo flotante continuo para evitar transmisión de vibraciones a viviendas superiores. Emisión de informe de ensayo acústico in situ visado para la licencia municipal.
+          </div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECCIÓN TARIFAS ORIENTATIVAS Y FAQ (FONDO OSCURO ALTO CONTRASTE #0E1B2E) -->
+<section class="w-full border-t border-line py-16 md:py-24" id="tarifas" style="background-color: #0E1B2E !important;">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+<div>
+<h2 class="font-editorial max-w-[720px] text-[30px] leading-[1.1] text-white md:text-[40px] lg:text-[44px]">
+  Tarifas Orientativas de Reformas de Locales en Madrid.
+</h2>
+</div>
+
+</div>
+<div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">
+<!-- TABLA PRECIOS -->
+<div class="lg:col-span-6">
+<div class="flex h-full flex-col rounded-[20px] border border-line bg-white p-5 md:p-7">
+<div class="flex items-center justify-between gap-4 border-b border-line pb-4">
+<h3 class="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink">Tarifas Madrid 2026</h3>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-2.5 py-1 text-[10.5px] font-semibold text-okgreen">
+<span class="h-1.5 w-1.5 rounded-full bg-okgreen"></span>Plazas disponibles
+</span>
+</div>
+<ul class="mt-2 flex-1">
+<li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
+<div>
+<div class="text-[15px] font-semibold text-ink">Visita Técnica y Estudio de Viabilidad</div>
+<div class="text-[12px] text-muted">Inspección urbanística previa, comprobación de aforos y asesoramiento ECLU</div>
+</div>
+<span class="text-[16px] font-bold text-okgreen">0 €</span>
+</li>
+<li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
+<div>
+<div class="text-[15px] font-semibold text-ink">Rebranding Exprés y Puesta a Punto</div>
+<div class="text-[12px] text-muted">Pintura comercial lavable, iluminación LED, escaparate y renovación estética</div>
+</div>
+<span class="text-[16px] font-bold text-teal">desde 8.900 €</span>
+</li>
+<li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
+<div>
+<div class="text-[15px] font-semibold text-ink">Reforma Integral Retail &amp; Concept Store</div>
+<div class="text-[12px] text-muted">Hasta 80 m²: pavimentos alto tránsito, clima por conductos, aseo PMR y escaparate</div>
+</div>
+<span class="text-[16px] font-bold text-teal">desde 19.500 €</span>
+</li>
+<li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
+<div>
+<div class="text-[15px] font-semibold text-ink">Adecuación Hostelería / Bar-Restaurante</div>
+<div class="text-[12px] text-muted">Salida de humos EI-120, aislamiento acústico certificado y cocina industrial</div>
+</div>
+<span class="text-[16px] font-bold text-teal">desde 32.000 €</span>
+</li>
+</ul>
+<div class="mt-5 flex flex-col gap-3 rounded-lg bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
+<span class="text-[13px] font-medium text-black">Presupuestos cerrados con penalización contractual por retraso.</span>
+<a class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-teal px-4 py-2.5 text-[12.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm" href="#contacto">
+Calcular presupuesto de local <i class="ri-arrow-right-line text-[14px]"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- FAQ ACCORDION (MADRID GOLD STANDARD SANS-SERIF UPPERCASE) -->
+<div class="lg:col-span-6">
+<div class="flex h-full flex-col rounded-[20px] border border-line bg-white p-5 md:p-7">
+<h3 class="border-b border-line pb-4 text-[20px] md:text-[23px] font-bold uppercase tracking-[0.06em] text-ink">Preguntas Frecuentes sobre Locales Comerciales</h3>
+<div class="flex-1" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="border-b border-line/70">
+<button aria-expanded="false" class="faq-btn group flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button">
+<span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink group-hover:text-teal transition-colors">¿Qué es una Declaración Responsable y cuánto tarda en Madrid?</span>
+<i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
+<div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">La Declaración Responsable permite iniciar obras y abrir la actividad de forma inmediata desde el mismo día del registro telemático ante una Entidad Colaboradora Urbanística (ECLU) o la Agencia de Actividades, adjuntando el proyecto técnico visado y certificado de conformidad.</p></div>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="border-b border-line/70">
+<button aria-expanded="false" class="faq-btn group flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button">
+<span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink group-hover:text-teal transition-colors">¿Podéis revisar un local antes de que firme el contrato de alquiler?</span>
+<i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
+<div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">Totalmente. Uno de nuestros aparejadores o arquitectos te acompaña a la visita para verificar in situ que la altura libre entre forjados cumpla con la normativa mínima (2,50 m), si la salida de humos está legalizada y si la fachada permite el rótulo comercial deseado.</p></div>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="border-b border-line/70">
+<button aria-expanded="false" class="faq-btn group flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button">
+<span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink group-hover:text-teal transition-colors">¿Qué ocurre si hay retrasos en la fecha de finalización?</span>
+<i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
+<div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">Sabemos que cada día de demora representa un mes más de alquiler y lucro cesante. Por ello, establecemos en el contrato mercantil una penalización económica diaria a nuestro cargo por cada día de retraso imputable a la obra.</p></div>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="border-b border-line/70">
+<button aria-expanded="false" class="faq-btn group flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button">
+<span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink group-hover:text-teal transition-colors">¿Es obligatorio adaptar el aseo para personas con movilidad reducida (PMR)?</span>
+<i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
+<div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">En prácticamente todas las nuevas actividades comerciales con atención al público en Madrid, el Código Técnico (DB-SUA) exige al menos un aseo adaptado con radio de giro de 1,50 m. En locales históricos donde sea inviable, tramitamos la justificación técnica de exención.</p></div>
+</div>
+</div>
+<!-- FAQ 5 -->
+<div class="border-b border-line/70">
+<button aria-expanded="false" class="faq-btn group flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button">
+<span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink group-hover:text-teal transition-colors">¿Gestionáis también la rotulación de fachada y veladores?</span>
+<i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
+</button>
+<div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
+<div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">Sí. Incluimos en el proyecto la memoria técnica de rotulación exterior conforme a la Ordenanza Reguladora de Publicidad Exterior de Madrid y preparamos la documentación para la solicitud de licencia de terraza y veladores en hostelería.</p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECCIÓN CONTACTO -->
+<section class="w-full border-t border-line bg-white py-16 md:py-24" id="contacto">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<div class="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-12 lg:gap-10">
+<div class="flex flex-col justify-between lg:col-span-6">
+<div>
+<span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-2">Respuesta en menos de 24 horas</span>
+<h2 class="font-editorial text-[28px] sm:text-[36px] md:text-[42px] leading-[1.15] text-ink">
+            Solicita tu estudio técnico y presupuesto de local en Madrid.
+          </h2>
+<p class="mt-4 max-w-[520px] text-[15px] leading-[1.65] text-muted md:text-[16px]">
+            Un arquitecto técnico especialista en licencias comerciales visitará tu local sin coste ni compromiso para evaluar la normativa y redactar una propuesta económica detallada.
+          </p>
+</div>
+<div class="mt-8 flex flex-col gap-3 sm:flex-row">
+<a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-6 py-3.5 text-[15px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-md text-center" href="#contacto-form">
+            Pedir Visita Gratuita <i class="ri-arrow-right-line text-[16px]"></i>
+</a>
+<a class="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-white px-6 py-3.5 text-[15px] font-semibold text-ink hover:border-teal hover:text-teal transition-colors text-center" href="https://wa.me/34600000000?text=Hola,%20necesito%20presupuesto%20y%20asesoramiento%20para%20la%20reforma%20de%20un%20local%20comercial%20en%20Madrid" rel="noopener noreferrer" target="_blank">
+<i class="ri-whatsapp-line text-[18px] text-okgreen"></i> WhatsApp Directo
+</a>
+</div>
+<dl class="mt-9 grid grid-cols-1 gap-5 border-t border-line pt-6 sm:grid-cols-2">
+<div>
+<dt class="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted">Teléfono de atención empresas</dt>
+<dd class="mt-1"><a class="text-[16px] font-bold text-ink hover:text-teal" href="tel:+34910000000">+34 910 00 00 00</a></dd>
+</div>
+<div>
+<dt class="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted">Zonas de actuación</dt>
+<dd class="mt-1 text-[13.5px] text-ink">Todos los distritos de Madrid capital y centros comerciales de la CAM</dd>
+</div>
+</dl>
+</div>
+<!-- FORMULARIO -->
+<div class="lg:col-span-6" id="contacto-form">
+<div class="rounded-[20px] border border-line bg-card p-6 md:p-8 shadow-sm">
+<h3 class="font-editorial text-[22px] font-bold text-ink mb-2">Formulario de Presupuesto para Locales</h3>
+<p class="text-[13.5px] text-muted mb-5">Déjanos los datos de tu inmueble y te contactará un técnico de licencias.</p>
+<form class="flex flex-col gap-4" onsubmit="event.preventDefault(); alert('¡Gracias! Tu solicitud ha sido recibida. Un arquitecto comercial te contactará en menos de 24 horas.');">
+<div>
+<label class="block text-[12px] font-bold uppercase tracking-wider text-ink mb-1">Nombre y Empresa *</label>
+<input class="w-full rounded-lg border border-line bg-white px-4 py-3 text-[15px] text-ink focus:border-teal focus:outline-none" placeholder="Ej. Javier Soto · Soto Retail SL" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-[12px] font-bold uppercase tracking-wider text-ink mb-1">Teléfono Directo *</label>
+<input class="w-full rounded-lg border border-line bg-white px-4 py-3 text-[15px] text-ink focus:border-teal focus:outline-none" placeholder="622 000 000" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-[12px] font-bold uppercase tracking-wider text-ink mb-1">Ubicación en Madrid *</label>
+<input class="w-full rounded-lg border border-line bg-white px-4 py-3 text-[15px] text-ink focus:border-teal focus:outline-none" placeholder="Ej. Malasaña / Chamberí" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-[12px] font-bold uppercase tracking-wider text-ink mb-1">Tipo de Actividad Prevista *</label>
+<select class="w-full rounded-lg border border-line bg-white px-4 py-3 text-[15px] text-ink focus:border-teal focus:outline-none" required="">
+<option value="">Selecciona el sector comercial...</option>
+<option>Comercio Retail / Moda / Tienda</option>
+<option>Hostelería / Cafetería / Restaurante</option>
+<option>Clínica Dental / Sanitario / Estética</option>
+<option>Centro de Formación / Gimnasio</option>
+<option>Implantación de Franquicia</option>
+<option>Otro tipo de negocio</option>
+</select>
+</div>
+<button class="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-teal px-6 py-3.5 text-[15px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-md cursor-pointer" type="submit">
+              Solicitar Estudio de Viabilidad y Presupuesto <i class="ri-arrow-right-line text-[15px]"></i>
+</button>
+<p class="text-[11px] text-muted text-center">Tus datos están protegidos conforme a la LOPD. Sin spam ni compromiso.</p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-ice border-t border-line/60">
+<div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10">
+<div class="md:col-span-5">
+<div class="flex items-center gap-1.5">
+<span class="text-[18px] font-bold tracking-[-0.01em] text-black">REFORMAS</span>
+<span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span>
+</div>
+<p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-black font-normal">
+Reformas integrales, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.
+</p>
+<div class="mt-5 flex flex-col gap-2 text-[15px] text-black font-medium">
+<a class="hover:text-[#8C6424] transition-colors cursor-pointer whitespace-nowrap text-black font-semibold" href="tel:+34910000000">+34 910 00 00 00</a>
+<span class="text-black">Calle Mayor 42, 28013 Madrid</span>
+</div>
+</div>
+<div class="md:col-span-3">
+<h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black">Servicios en Madrid</h4>
+<ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-black font-medium">
+<li><a class="hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">Reformas de Cocinas</a></li>
+<li><a class="hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">Reformas de Baños</a></li>
+<li><a class="hover:text-[#8C6424] transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">Cambio de Bañera por Ducha</a></li>
+<li><a class="hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">Locales Comerciales</a></li>
+<li><a class="hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">Reformas de Oficinas</a></li>
+<li><a class="hover:text-[#8C6424] transition-colors" href="instalacion-aire-acondicionado-madrid.html">Aire Acondicionado</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black">Contacto Directo</h4>
+<ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-black font-medium">
+<li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="https://wa.me/34600000000" rel="noopener noreferrer" target="_blank"><i class="ri-whatsapp-line text-[17px] text-okgreen mr-1.5 inline-block"></i>WhatsApp · respuesta en 24 h</a></li>
+<li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="mailto:contacto@reformasmadrid.es"><i class="ri-mail-line text-[16px] text-teal mr-1.5 inline-block"></i>contacto@reformasmadrid.es</a></li>
+<li class="text-black"><i class="ri-time-line text-[16px] text-muted mr-1.5 inline-block"></i>Lun–Vie 8:30–19:00 · Sábado con cita previa</li>
+<li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black font-semibold underline underline-offset-2" href="#contacto">Formulario de contacto</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-black/15 py-6">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-black font-medium text-center md:text-left">
+    <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+      <span class="text-black font-medium">Reformas Madrid · © 2026 Todos los derechos reservados.</span>
+      <span class="hidden sm:inline text-black/30">|</span>
+      <span class="text-black/80 font-medium">Diseñado por <strong class="text-black font-semibold">SEOLife</strong></span>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-y-2 text-[13px]">
+      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/aviso-legal/">Aviso Legal</a>
+      <span class="text-black/40 select-none px-2 sm:px-3">·</span>
+      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-privacidad/">Política de Privacidad</a>
+      <span class="text-black/40 select-none px-2 sm:px-3">·</span>
+      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-cookies/">Política de Cookies</a>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+<button aria-label="Volver arriba" class="is-hidden" id="btn-scroll-top" title="Volver al inicio" type="button">
+<i class="ri-arrow-up-line text-[19px] font-bold text-ink"></i>
+</button>
+</div>
+</div>
+</div>
+
+<!-- SCRIPTS INTERACTIVOS (ESTANCIAS ENGINE, SLIDERS ANTES/DESPUÉS, TABS Y ACCORDEONES) -->
+<script>
+window.__DATA_LOCALES__ = {
+  estancias: [
+    {
+      title: "Cafetería de Especialidad & Bakery",
+      badge: "Tipología 01 · Malasaña",
+      time: "Plazo: 25 Días",
+      desc: "Mostrador continuo en microcemento gris con vitrinas encastradas a ras, suelo continuo pulido de alta resistencia al tráfico peatonal, iluminación decorativa 2700K y renovación de aire con recuperador entálpico.",
+      image: "images/locales-cafeteria-bakery.webp",
+      protocols: ["Licencia Declaración Responsable", "Aseos PMR", "Extinción Incendios"]
+    },
+    {
+      title: "Boutique Retail Moda & Concept Store",
+      badge: "Tipología 02 · Salamanca",
+      time: "Plazo: 21 Días",
+      desc: "Escaparate sin perfilería con vidrio laminar antirreflejo 6+6, carriles trifásicos con proyectores LED de alto índice de reproducción cromática para respetar los tonos textiles, probadores confortables y climatización oculta.",
+      image: "images/locales-despues.webp",
+      protocols: ["Escaparate sin perfil", "Focos CRI>95", "Probadores accesibles"]
+    },
+    {
+      title: "Clínica Dental & Centro Médico Estético",
+      badge: "Tipología 03 · Chamberí",
+      time: "Plazo: 35 Días",
+      desc: "Cumplimiento riguroso de la Consejería de Sanidad de la Comunidad de Madrid. Boxes con suelo vinílico remontado en media caña sin ángulos vivos, tomas de aspiración y aire comprimido bajo suelo técnico y sala de plomos para rayos X.",
+      image: "images/locales-hero.webp",
+      protocols: ["Suelo vinílico sanitario", "Filtrado HEPA", "Aprobación Sanidad"]
+    },
+    {
+      title: "Restaurante & Gastrobar con Cocina Vista",
+      badge: "Tipología 04 · Chueca",
+      time: "Plazo: 30 Días",
+      desc: "Chimenea industrial de acero inoxidable 316 con aislamiento térmico hasta cubierta conforme al CTE DB-SI. Campana con aporte compensado de aire, paneles fonoabsorbentes en sala para evitar el efecto taberna y aseos dobles PMR.",
+      image: "images/locales-fase-02-3d.webp",
+      protocols: ["Salida de humos EI-30", "Extinción automática", "Aislamiento acústico 65dB"]
+    },
+    {
+      title: "Centro de Formación & Academia de Idiomas",
+      badge: "Tipología 05 · Moncloa",
+      time: "Plazo: 20 Días",
+      desc: "Distribución modular mediante paneles de cartón-yeso con doble placa y lana mineral interior (aislamiento acústico Rw > 45 dBA). Puertas acústicas con guillotina inferior y rampa de acceso suave sin desnivel según DB-SUA.",
+      image: "images/estancia-integral.webp",
+      protocols: ["Tabiquería acústica 45dBA", "Rampa acceso PMR", "Clima sectorizado"]
+    },
+    {
+      title: "Franquicia Retail & Imagen Estandarizada",
+      badge: "Tipología 06 · Gran Vía",
+      time: "Plazo: 18 Días",
+      desc: "Implantación exprés llave en mano. Coordinación con la central franquiciadora para integrar tótems publicitarios, pantallas digitales LED sincronizadas, racks de servidores para TPVs y cierre de persiana motorizada con bloqueo de seguridad.",
+      image: "images/locales-fase-05-entrega.webp",
+      protocols: ["Manual de marca corporativo", "Persiana de seguridad", "Red de datos Cat 6A"]
+    }
+  ],
+  fases: [
+    {
+      badge: "Fase 01 · Viabilidad Urbanística y Planos",
+      title: "Estudio de ordenanzas zonales, aforo y levantamiento de planos",
+      desc: "Comprobamos la compatibilidad urbanística con el PGOU de Madrid, alturas mínimas libres, recorridos de evacuación, salidas de humos y accesibilidad PMR antes de firmar el alquiler o iniciar la obra.",
+      duration: "Estudio previo gratuito · 24-48h",
+      image: "images/locales-fase-01-medicion.webp",
+      protocols: [
+        "Comprobación de viabilidad ante la ECLU de Madrid",
+        "Medición láser 3D de cota de acerado y acceso sin barreras",
+        "Inspección de acometidas eléctricas (potencia contratada y trifásica)"
+      ]
+    },
+    {
+      badge: "Fase 02 · Arquitectura Comercial e Infografía 3D",
+      title: "Interiorismo comercial enfocado a la conversión y venta",
+      desc: "Diseñamos el recorrido del cliente (customer journey), iluminación técnica focalizada sobre el producto, escaparates de alto impacto y materiales de alta durabilidad para tráfico intenso.",
+      duration: "Proyecto de diseño · 3 a 5 días",
+      image: "images/locales-fase-02-3d.webp",
+      protocols: [
+        "Renders 3D fotorrealistas de fachada, escaparate y zona de venta",
+        "Proyecto luminotécnico con índice CRI>90 para fidelidad de color",
+        "Selección de pavimentos comerciales clase 3 antideslizantes"
+      ]
+    },
+    {
+      badge: "Fase 03 · Proyecto Técnico y Licencia de Actividad",
+      title: "Redacción de memoria técnica visada y Declaración Responsable",
+      desc: "Nuestros arquitectos redactan el proyecto de actividad e instalaciones visado por colegio oficial, gestionando el certificado de conformidad ante ECLU para apertura legal inmediata.",
+      duration: "Gestión administrativa · 1 a 2 semanas",
+      image: "images/locales-fase-03-contrato.webp",
+      protocols: [
+        "Proyecto visado por el Colegio Oficial de Aparejadores de Madrid",
+        "Gestión de Declaración Responsable para inicio de obras sin esperas",
+        "Plan de autoprotección y cálculo de extinción de incendios"
+      ]
+    },
+    {
+      badge: "Fase 04 · Ejecución de Obra Intensiva",
+      title: "Turnos intensivos de albañilería, pladur y climatización",
+      desc: "Ejecutamos la obra con calendario estricto para reducir el periodo de carencia de alquiler. Instalación de pladur ignífugo EI-120, climatización comercial por conductos e insonorización certificada.",
+      duration: "Ejecución continua · 2 a 4 semanas",
+      image: "images/locales-fase-04-ejecucion.webp",
+      protocols: [
+        "Tabiquería seca acústica e ignífuga con ensayo de laboratorio",
+        "Climatización industrial de alto rendimiento con renovación de aire RITE",
+        "Instalación eléctrica en bandeja metálica con cuadro general normalizado"
+      ]
+    },
+    {
+      badge: "Fase 05 · Recepción y Apertura Inmediata",
+      title: "Certificado final de obra, pruebas de carga y local listo para abrir",
+      desc: "Entregamos el Certificado Final de Obra visado, realizamos pruebas de alumbrado de emergencia y entregamos el local limpio y reluciente para colocar género y recibir clientes.",
+      duration: "Entrega llave en mano · 48 horas",
+      image: "images/locales-fase-05-entrega.webp",
+      protocols: [
+        "Emisión del Certificado Final de Dirección de Obra (CFO)",
+        "Pruebas acústicas in situ y balance de caudales de aire",
+        "Limpieza profunda de fin de obra para inauguración inmediata"
+      ]
+    }
+  ],
+  estancias: [
+    {
+      title: "Cafetería de Especialidad & Bakery",
+      badge: "Tipología 01 · Malasaña",
+      time: "Plazo: 25 Días",
+      desc: "Mostrador continuo en microcemento gris con vitrinas encastradas a ras, suelo continuo pulido de alta resistencia al tráfico peatonal, iluminación decorativa 2700K y renovación de aire con recuperador entálpico.",
+      image: "images/locales-cafeteria-bakery.webp"
+    },
+    {
+      title: "Boutique Retail Moda & Concept Store",
+      badge: "Tipología 02 · Salamanca",
+      time: "Plazo: 21 Días",
+      desc: "Escaparate sin perfilería con vidrio laminar antirreflejo 6+6, carriles trifásicos con proyectores LED de alto índice de reproducción cromática para respetar los tonos textiles, probadores confortables y climatización oculta.",
+      image: "images/locales-despues.webp"
+    },
+    {
+      title: "Clínica Dental & Centro Médico Estético",
+      badge: "Tipología 03 · Chamberí",
+      time: "Plazo: 35 Días",
+      desc: "Cumplimiento riguroso de la Consejería de Sanidad de la Comunidad de Madrid. Boxes con suelo vinílico remontado en media caña sin ángulos vivos, tomas de aspiración y aire comprimido bajo suelo técnico y sala de plomos para rayos X.",
+      image: "images/locales-hero.webp"
+    },
+    {
+      title: "Restaurante & Gastrobar con Cocina Vista",
+      badge: "Tipología 04 · Chueca / La Latina",
+      time: "Plazo: 30 Días",
+      desc: "Chimenea industrial de acero inoxidable 316 con aislamiento térmico hasta cubierta conforme al CTE DB-SI. Campana con aporte compensado de aire, paneles fonoabsorbentes en sala para evitar el efecto taberna y aseos dobles PMR.",
+      image: "images/locales-fase-02-3d.webp"
+    },
+    {
+      title: "Centro de Formación & Academia de Idiomas",
+      badge: "Tipología 05 · Moncloa / Chamartín",
+      time: "Plazo: 20 Días",
+      desc: "Distribución modular mediante paneles de cartón-yeso con doble placa y lana mineral interior (aislamiento acústico Rw > 45 dBA). Puertas acústicas con guillotina inferior y rampa de acceso suave sin desnivel según DB-SUA.",
+      image: "images/estancia-integral.webp"
+    },
+    {
+      title: "Franquicia Retail & Imagen Estandarizada",
+      badge: "Tipología 06 · Callao / Gran Vía",
+      time: "Plazo: 18 Días",
+      desc: "Implantación exprés llave en mano. Coordinación con la central franquiciadora para integrar tótems publicitarios, pantallas digitales LED sincronizadas, racks de servidores para TPVs y cierre de persiana motorizada con bloqueo de seguridad.",
+      image: "images/locales-fase-05-entrega.webp"
+    }
+  ]
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  // 1. ESTANCIAS ENGINE
+  const estanciasList = document.getElementById('estancias-list');
+  const desktopImg = document.getElementById('estancia-desktop-img') || document.getElementById('estancias-desktop-img');
+  const desktopBadge = document.getElementById('estancia-desktop-badge') || document.getElementById('estancias-desktop-badge');
+  const desktopTime = document.getElementById('estancia-desktop-time');
+  const desktopTitle = document.getElementById('estancia-desktop-title') || document.getElementById('estancias-desktop-title');
+  const desktopDesc = document.getElementById('estancia-desktop-desc') || document.getElementById('estancias-desktop-desc');
+
+  if (estanciasList) {
+    const items = estanciasList.querySelectorAll('.estancia-item');
+    items.forEach((itemEl, idx) => {
+      const btn = itemEl.querySelector('.estancia-header-btn');
+      if (btn) {
+        btn.addEventListener('click', function() {
+          const item = window.__DATA_LOCALES__.estancias ? window.__DATA_LOCALES__.estancias[idx] : null;
+          if (!item) return;
+
+          items.forEach((otherEl, otherIdx) => {
+            const otherBtn = otherEl.querySelector('.estancia-header-btn');
+            const otherPanel = otherEl.querySelector('.estancia-mobile-panel');
+            const otherArrow = otherEl.querySelector('.estancia-arrow');
+            const otherTitle = otherBtn ? otherBtn.querySelector('.estancia-item-title') : null;
+
+            if (otherIdx === idx) {
+              if (otherBtn) {
+                otherBtn.setAttribute('aria-expanded', 'true');
+                otherBtn.className = 'estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm';
+              }
+              if (otherTitle) otherTitle.className = 'estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-teal';
+              if (otherArrow) {
+                otherArrow.className = 'estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-teal bg-teal text-white transition-all duration-300 rotate-180 lg:rotate-0';
+              }
+              if (otherPanel) {
+                otherPanel.classList.add('is-open');
+                otherPanel.style.display = 'block';
+              }
+            } else {
+              if (otherBtn) {
+                otherBtn.setAttribute('aria-expanded', 'false');
+                otherBtn.className = 'estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-transparent hover:bg-ice/60';
+              }
+              if (otherTitle) otherTitle.className = 'estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink';
+              if (otherArrow) {
+                otherArrow.className = 'estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-ink bg-transparent transition-all duration-300';
+              }
+              if (otherPanel) {
+                otherPanel.classList.remove('is-open');
+                otherPanel.style.display = 'none';
+              }
+            }
+          });
+
+          if (desktopImg) {
+            desktopImg.style.opacity = '0.3';
+            setTimeout(() => {
+              desktopImg.src = item.image;
+              desktopImg.style.opacity = '1';
+            }, 80);
+          }
+          if (desktopBadge) desktopBadge.textContent = item.badge;
+          if (desktopTitle) desktopTitle.textContent = item.title;
+          if (desktopDesc) desktopDesc.textContent = item.desc;
+          if (desktopTime && item.time) desktopTime.innerHTML = '<i class="ri-time-line text-teal-light mr-1"></i> ' + item.time;
+        });
+      }
+    });
+    if (items.length > 0 && items[0].querySelector('.estancia-header-btn')) {
+      items[0].querySelector('.estancia-header-btn').click();
+    }
+  }
+
+  // 2. FASES DESKTOP ENGINE (TOKEN DESIGN FREITECH 2026 GOLD STANDARD)
+  const faseTabs = document.querySelectorAll('.fase-tab-btn');
+  const fasesDesktopBadge = document.getElementById('fases-desktop-badge');
+  const fasesDesktopTitle = document.getElementById('fases-desktop-title');
+  const fasesDesktopDesc = document.getElementById('fases-desktop-desc');
+  const fasesDesktopProtocols = document.getElementById('fases-desktop-protocols');
+  const fasesDesktopDuration = document.getElementById('fases-desktop-duration');
+  const fasesDesktopImg = document.getElementById('fases-desktop-img');
+
+  function activateFaseTab(index) {
+    const data = window.__DATA_LOCALES__.fases[index];
+
+    faseTabs.forEach((btn, i) => {
+      const isSelected = (i === index);
+      btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+      const stepSpan = btn.querySelector('.tabular-nums');
+      const titleSpan = btn.querySelector('.fase-tab-title');
+      const icon = btn.querySelector('i');
+      const progressSpan = btn.querySelector('.fase-tab-progress');
+
+      if (isSelected) {
+        btn.className = 'fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border-2 border-teal bg-white p-4 text-left transition-all duration-300 cursor-pointer shadow-sm min-h-[135px] h-full';
+        if (stepSpan) stepSpan.className = 'text-[12px] font-bold uppercase tracking-wider text-teal tabular-nums';
+        if (titleSpan) titleSpan.className = 'fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-teal leading-snug my-auto';
+        if (icon) icon.className = 'ri-check-line text-teal text-[16px] font-bold';
+        if (progressSpan) progressSpan.style.width = '100%';
+      } else {
+        btn.className = 'fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full';
+        if (stepSpan) stepSpan.className = 'text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums';
+        if (titleSpan) titleSpan.className = 'fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto';
+        if (icon) icon.className = 'ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity';
+        if (progressSpan) progressSpan.style.width = '0%';
+      }
+    });
+
+    if (data) {
+      if (fasesDesktopImg) {
+        fasesDesktopImg.style.opacity = '0.35';
+        setTimeout(() => {
+          fasesDesktopImg.src = data.image;
+          fasesDesktopImg.style.opacity = '1';
+        }, 80);
+      }
+      if (fasesDesktopBadge) fasesDesktopBadge.textContent = data.badge;
+      if (fasesDesktopTitle) fasesDesktopTitle.textContent = data.title;
+      if (fasesDesktopDesc) fasesDesktopDesc.textContent = data.desc;
+      if (fasesDesktopDuration) fasesDesktopDuration.textContent = data.duration;
+      if (fasesDesktopProtocols && data.protocols) {
+        fasesDesktopProtocols.innerHTML = data.protocols.map(p => `
+          <li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium">
+            <i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5 shrink-0"></i><span>${p}</span>
+          </li>
+        `).join('');
+      }
+    }
+  }
+
+  if (faseTabs.length > 0) {
+    faseTabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activateFaseTab(index));
+    });
+  }
+
+  // 3. BEFORE / AFTER SLIDERS
+  const sliders = document.querySelectorAll('.ba-slider');
+  sliders.forEach(slider => {
+    let isTracking = false;
+    function updateSplit(clientX) {
+      const rect = slider.getBoundingClientRect();
+      const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
+      const pct = (x / rect.width) * 100;
+      slider.style.setProperty('--split', pct + '%');
+    }
+    slider.addEventListener('mousemove', e => {
+      slider.classList.add('is-hovering');
+      updateSplit(e.clientX);
+    });
+    slider.addEventListener('mouseleave', () => {
+      slider.classList.remove('is-hovering');
+      slider.style.setProperty('--split', '50%');
+    });
+    slider.addEventListener('touchstart', e => {
+      isTracking = true;
+      slider.classList.add('is-hovering');
+      if (e.touches[0]) updateSplit(e.touches[0].clientX);
+    }, { passive: true });
+    slider.addEventListener('touchmove', e => {
+      if (isTracking && e.touches[0]) updateSplit(e.touches[0].clientX);
+    }, { passive: true });
+    slider.addEventListener('touchend', () => {
+      isTracking = false;
+      slider.classList.remove('is-hovering');
+    });
+  });
+
+  // 4. OFICIOS ACCORDION
+  const oficioHeaders = document.querySelectorAll('.oficio-header, .oficio-btn');
+  oficioHeaders.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.oficio-item');
+      const panel = item ? item.querySelector('.oficio-panel') : btn.nextElementSibling;
+      const icon = btn.querySelector('i:last-child');
+      const isExpanded = item ? item.classList.contains('is-open') : !panel.classList.contains('hidden');
+
+      oficioHeaders.forEach(otherBtn => {
+        if (otherBtn !== btn) {
+          const otherItem = otherBtn.closest('.oficio-item');
+          const otherPanel = otherItem ? otherItem.querySelector('.oficio-panel') : otherBtn.nextElementSibling;
+          const otherIcon = otherBtn.querySelector('i:last-child');
+          if (otherItem) otherItem.classList.remove('is-open');
+          if (otherPanel) otherPanel.classList.add('hidden');
+          if (otherIcon) {
+            otherIcon.classList.remove('rotate-180', 'text-teal');
+            otherIcon.classList.add('text-muted');
+          }
+        }
+      });
+
+      if (isExpanded) {
+        if (item) item.classList.remove('is-open');
+        if (panel) panel.classList.add('hidden');
+        if (icon) {
+          icon.classList.remove('rotate-180', 'text-teal');
+          icon.classList.add('text-muted');
+        }
+      } else {
+        if (item) item.classList.add('is-open');
+        if (panel) panel.classList.remove('hidden');
+        if (icon) {
+          icon.classList.add('rotate-180', 'text-teal');
+          icon.classList.remove('text-muted');
+        }
+      }
+    });
+  });
+
+  // 5. FAQ ACCORDION ENGINE (MADRID GOLD STANDARD)
+  const faqAccordion = document.getElementById('faq-accordion');
+  if (faqAccordion) {
+    const faqItems = faqAccordion.querySelectorAll(':scope > div, :scope > .faq-item');
+    faqItems.forEach(item => {
+      const btn = item.querySelector('.faq-btn') || item.querySelector('button');
+      const panel = item.querySelector('.faq-panel') || item.querySelector('.grid[style*="grid-template-rows"]');
+      const icon = item.querySelector('i');
+      const titleSpan = btn ? btn.querySelector('span') : null;
+
+      if (btn && panel) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+
+          faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              const otherBtn = otherItem.querySelector('.faq-btn') || otherItem.querySelector('button');
+              const otherPanel = otherItem.querySelector('.faq-panel') || otherItem.querySelector('.grid[style*="grid-template-rows"]');
+              const otherIcon = otherItem.querySelector('i');
+              const otherTitle = otherBtn ? otherBtn.querySelector('span') : null;
+
+              if (otherBtn && otherPanel) {
+                otherBtn.setAttribute('aria-expanded', 'false');
+                otherPanel.style.gridTemplateRows = '0fr';
+                otherPanel.style.opacity = '0';
+                if (otherIcon) {
+                  otherIcon.classList.remove('rotate-180', 'text-teal');
+                  otherIcon.classList.add('text-muted');
+                }
+                if (otherTitle) {
+                  otherTitle.classList.remove('text-teal');
+                  otherTitle.classList.add('text-ink');
+                }
+              }
+            }
+          });
+
+          if (isExpanded) {
+            btn.setAttribute('aria-expanded', 'false');
+            panel.style.gridTemplateRows = '0fr';
+            panel.style.opacity = '0';
+            if (icon) {
+              icon.classList.remove('rotate-180', 'text-teal');
+              icon.classList.add('text-muted');
+            }
+            if (titleSpan) {
+              titleSpan.classList.remove('text-teal');
+              titleSpan.classList.add('text-ink');
+            }
+          } else {
+            btn.setAttribute('aria-expanded', 'true');
+            panel.style.gridTemplateRows = '1fr';
+            panel.style.opacity = '1';
+            if (icon) {
+              icon.classList.add('rotate-180', 'text-teal');
+              icon.classList.remove('text-muted');
+            }
+            if (titleSpan) {
+              titleSpan.classList.add('text-teal');
+              titleSpan.classList.remove('text-ink');
+            }
+          }
+        });
+      }
+    });
+  }
+
+  // --- MOBILE NAVIGATION DRAWER & DROPDOWN ENGINE ---
+  const mobileMenuBtn = document.getElementById('btn-mobile-menu');
+  const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
+  const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+  const btnCloseMobileMenu = document.getElementById('btn-close-mobile-menu');
+
+  function openMobileMenu() {
+    if (!mobileMenuDrawer) return;
+    mobileMenuDrawer.classList.remove('pointer-events-none', 'opacity-0');
+    mobileMenuDrawer.classList.add('opacity-100');
+    const panel = mobileMenuDrawer.querySelector('nav');
+    if (panel) panel.classList.remove('translate-x-full');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMobileMenu() {
+    if (!mobileMenuDrawer) return;
+    const panel = mobileMenuDrawer.querySelector('nav');
+    if (panel) panel.classList.add('translate-x-full');
+    mobileMenuDrawer.classList.remove('opacity-100');
+    mobileMenuDrawer.classList.add('opacity-0');
+    setTimeout(() => {
+      mobileMenuDrawer.classList.add('pointer-events-none');
+      document.body.style.removeProperty('overflow');
+    }, 300);
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
+  }
+  if (btnCloseMobileMenu) {
+    btnCloseMobileMenu.addEventListener('click', closeMobileMenu);
+  }
+  if (mobileMenuBackdrop) {
+    mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+  }
+
+  // Mobile accordion submenus toggle
+  document.querySelectorAll('.mobile-accordion-btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      const panel = this.nextElementSibling;
+      const icon = this.querySelector('i');
+      if (isExpanded) {
+        this.setAttribute('aria-expanded', 'false');
+        if (panel) { panel.classList.add('hidden'); panel.classList.remove('flex'); }
+        if (icon) icon.classList.remove('rotate-180');
+      } else {
+        this.setAttribute('aria-expanded', 'true');
+        if (panel) { panel.classList.remove('hidden'); panel.classList.add('flex'); }
+        if (icon) icon.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Close mobile drawer when clicking anchor links
+  if (mobileMenuDrawer) {
+    mobileMenuDrawer.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', closeMobileMenu);
+    });
+  }
+
+  // 6. SCROLL TO TOP BUTTON & HEADER SCROLL
+  const scrollTopBtn = document.getElementById('btn-scroll-top');
+  const header = document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (scrollTopBtn) {
+      if (y > 400) {
+        scrollTopBtn.classList.remove('is-hidden');
+        scrollTopBtn.classList.add('is-visible');
+      } else {
+        scrollTopBtn.classList.remove('is-visible');
+        scrollTopBtn.classList.add('is-hidden');
+      }
+    }
+    if (header) {
+      if (y > 30) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    }
+  });
+  if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+});
+</script>
+</body>
+</html>

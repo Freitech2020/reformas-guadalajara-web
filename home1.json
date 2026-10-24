@@ -1,0 +1,3025 @@
+[
+  {
+    "id": "596e729",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 16,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "px",
+        "top": "12",
+        "right": "24",
+        "bottom": "12",
+        "left": "24",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#0B2545"
+    },
+    "elements": [
+      {
+        "id": "fad0d16",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<div style='display:flex; justify-content:space-between; align-items:center; width:100%; color:#FFFFFF; font-size:16px;'><span>📍 <strong>Florin Reformas</strong> · Sede Principal en <strong>Guadalajara</strong> | Cobertura en Guadalajara y Madrid | 📞 <strong>910 000 000</strong></span><span><a href='#madrid' style='color:#FBBF24; text-decoration:none;'>Ver Silo Reformas en Madrid →</a></span></div>",
+          "text_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 1.0,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.6,
+            "sizes": []
+          }
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "62a73c2",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 48,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8FAFC"
+    },
+    "elements": [
+      {
+        "id": "b15c4a0",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "6d4ffc0",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='display:inline-block; background:#FEF3C7; color:#92400E; font-weight:700; font-size:14px; padding:6px 14px; border-radius:20px; text-transform:uppercase; letter-spacing:1px;'>★ Empresa Líder de Reformas en Guadalajara y Madrid · +15 Años</span>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "77092ce",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas en Guadalajara: Calidad, Plazos y Presupuesto Cerrado por Contrato",
+              "header_size": "h1",
+              "align": "left",
+              "title_color": "#0B2545",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.9,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "5df292c",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:18px; line-height:1.65em; color:#334155;'>En <strong>Florin Reformas</strong> convertimos tu vivienda, chalet, baño, cocina o local comercial en Guadalajara en el espacio que siempre soñaste. Proyecto técnico personalizado, gestión íntegra de licencias y <strong>garantía por escrito de 5 años</strong>. También prestamos servicio integral en toda la Comunidad de Madrid.</p>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "4bb4037",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": true
+              }
+            },
+            "elements": [
+              {
+                "id": "5dcb6cb",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Presupuesto en Guadalajara",
+                  "link": {
+                    "url": "#presupuesto",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "size": "lg",
+                  "align": "left",
+                  "background_color": "#D97706",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 14,
+                    "right": 14,
+                    "bottom": 14,
+                    "left": 14,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 18,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "600"
+                },
+                "elements": []
+              },
+              {
+                "id": "cb38c41",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Explorar Reformas en Madrid",
+                  "link": {
+                    "url": "#madrid",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "size": "lg",
+                  "align": "left",
+                  "background_color": "#0B2545",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 14,
+                    "right": 14,
+                    "bottom": 14,
+                    "left": 14,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 18,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "600"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "944ff77",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style='display:flex; gap:20px; color:#475569; font-size:16px; margin-top:10px;'><span>✔ <strong>Presupuesto sin sorpresas</strong></span><span>✔ <strong>Seguro RC 1.000.000€</strong></span><span>✔ <strong>Visita técnica gratuita</strong></span></div>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "346ca08",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 0,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "e678f58",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/hero-reformas-madrid-1.webp",
+                "id": 12
+              },
+              "image_size": "full",
+              "caption": "Empresa de reformas en Guadalajara y Madrid",
+              "border_radius": {
+                "unit": "px",
+                "top": 24,
+                "right": 24,
+                "bottom": 24,
+                "left": 24,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3267a0d",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 32,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "4",
+        "right": "6",
+        "bottom": "4",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#0B2545",
+      "border_radius": {
+        "unit": "px",
+        "top": 24,
+        "right": 24,
+        "bottom": 24,
+        "left": 24,
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "7b4dc13",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "4c7ff4e",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='color:#FBBF24; font-weight:700; font-size:14px; text-transform:uppercase;'>Área de Actuación Especial</span>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "ca57303",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "¿Tu proyecto está en Madrid? Descubre Nuestro Silo de Reformas en Madrid",
+              "header_size": "h2",
+              "align": "left",
+              "title_color": "#FFFFFF",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.2,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "8eb0846",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:18px; color:#E2E8F0; line-height:1.6em;'>Contamos con cuadrillas dedicadas y dirección facultativa en Madrid capital y municipios (Alcobendas, Las Rozas, Pozuelo, etc.). Ofrecemos reformas integrales, cocinas, baños, locales, oficinas, cambio de bañera a ducha y climatización.</p>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "868d624",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 0,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "85c8f55",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Ver Reformas en Madrid →",
+              "link": {
+                "url": "#servicios",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "lg",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 14,
+                "right": 14,
+                "bottom": 14,
+                "left": 14,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ebe19e1",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 16,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "1",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "266ae48",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<span style='color:#D97706; font-weight:700; font-size:15px; letter-spacing:1px; text-transform:uppercase;'>Especialidades Florin</span>",
+          "text_color": "#334155",
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 1.125,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.6,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "d8b56ea",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Nuestros Servicios de Reformas en Guadalajara y Madrid",
+          "header_size": "h2",
+          "align": "left",
+          "title_color": "#0B2545",
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.4,
+            "sizes": []
+          },
+          "typography_font_weight": "800",
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.25,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "346359b",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:18px; line-height:1.6em; color:#475569; max-width:850px;'>Soluciones integrales de construcción y rehabilitación con equipo propio, sin intermediarios y con materiales de las mejores firmas.</p>",
+          "text_color": "#334155",
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 1.125,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.6,
+            "sizes": []
+          }
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "8b1f302",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "1",
+        "right": "6",
+        "bottom": "2",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "16cd2b6",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 10,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.06)"
+          }
+        },
+        "elements": [
+          {
+            "id": "06d0c28",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-integrales.webp",
+                "id": 15
+              },
+              "image_size": "full",
+              "caption": "",
+              "border_radius": {
+                "unit": "px",
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "aeb3f88",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas Integrales",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#0F172A",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.35,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "a94159f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Rehabilitación completa de viviendas y chalets en Guadalajara y Madrid con redistribución de espacios y llaves en mano.</p>",
+              "text_color": "#475569",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "0ff4ca7",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Saber más",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "sm",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 10,
+                "right": 10,
+                "bottom": 10,
+                "left": 10,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "df2e0f9",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 10,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.06)"
+          }
+        },
+        "elements": [
+          {
+            "id": "83adb97",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-banos.webp",
+                "id": 17
+              },
+              "image_size": "full",
+              "caption": "",
+              "border_radius": {
+                "unit": "px",
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "fbe2291",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas de Baños",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#0F172A",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.35,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "95f0050",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Renovación total de baños: fontanería oculta, platos de ducha antideslizantes, alicatados porcelánicos y sanitarios suspendidos.</p>",
+              "text_color": "#475569",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "6aa8429",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Saber más",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "sm",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 10,
+                "right": 10,
+                "bottom": 10,
+                "left": 10,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "bd37a49",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 10,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.06)"
+          }
+        },
+        "elements": [
+          {
+            "id": "da2cf2e",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-cocinas.webp",
+                "id": 16
+              },
+              "image_size": "full",
+              "caption": "",
+              "border_radius": {
+                "unit": "px",
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "870f5a6",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas de Cocinas",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#0F172A",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.35,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "0aac48b",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Cocinas abiertas al salón, islas de piedra natural, iluminación técnica y máxima ergonomía de almacenamiento.</p>",
+              "text_color": "#475569",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c33d072",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Saber más",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "sm",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 10,
+                "right": 10,
+                "bottom": 10,
+                "left": 10,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0099dcf",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "1",
+        "right": "6",
+        "bottom": "4",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "c9f408a",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 10,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.06)"
+          }
+        },
+        "elements": [
+          {
+            "id": "1a975e9",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-locales.webp",
+                "id": 19
+              },
+              "image_size": "full",
+              "caption": "",
+              "border_radius": {
+                "unit": "px",
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "7c94de0",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Locales Comerciales",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#0F172A",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.35,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c85706f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Adecuación integral de locales y negocios conforme a normativas de apertura en Guadalajara y Madrid.</p>",
+              "text_color": "#475569",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "78ce8a8",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Saber más",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "sm",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 10,
+                "right": 10,
+                "bottom": 10,
+                "left": 10,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "230e517",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 10,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.06)"
+          }
+        },
+        "elements": [
+          {
+            "id": "fa7f9ab",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-oficinas.webp",
+                "id": 20
+              },
+              "image_size": "full",
+              "caption": "",
+              "border_radius": {
+                "unit": "px",
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "df9be02",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas de Oficinas",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#0F172A",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.35,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "3f63b1f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Espacios de trabajo ergonómicos, mamparas de vidrio templado, acústica cuidada y cableado estructurado.</p>",
+              "text_color": "#475569",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "e9d66be",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Saber más",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "sm",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 10,
+                "right": 10,
+                "bottom": 10,
+                "left": 10,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "a290816",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 10,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.06)"
+          }
+        },
+        "elements": [
+          {
+            "id": "31ed494",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-ducha.webp",
+                "id": 21
+              },
+              "image_size": "full",
+              "caption": "",
+              "border_radius": {
+                "unit": "px",
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "337aa39",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Cambio de Bañera por Ducha",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#0F172A",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.35,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "ae7c1c0",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Sustitución exprés en 24-48 horas. Eliminación de barreras arquitectónicas con plato antideslizante a ras.</p>",
+              "text_color": "#475569",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "2aa60ae",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Saber más",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "sm",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 10,
+                "right": 10,
+                "bottom": 10,
+                "left": 10,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "34e400d",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 10,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.06)"
+          }
+        },
+        "elements": [
+          {
+            "id": "37229f6",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/climatizacion-aire.webp",
+                "id": 22
+              },
+              "image_size": "full",
+              "caption": "",
+              "border_radius": {
+                "unit": "px",
+                "top": 16,
+                "right": 16,
+                "bottom": 16,
+                "left": 16,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "16760eb",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Instalación de Aire Acondicionado",
+              "header_size": "h3",
+              "align": "left",
+              "title_color": "#0F172A",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.35,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "296a44b",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p>Climatización invisible por conductos o splits de alta eficiencia (bomba de calor) para todo el año.</p>",
+              "text_color": "#475569",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "0e734c7",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Saber más",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "sm",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 10,
+                "right": 10,
+                "bottom": 10,
+                "left": 10,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8cac210",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 36,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F1F5F9"
+    },
+    "elements": [
+      {
+        "id": "95e55ec",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "9114cc7",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='color:#D97706; font-weight:700; font-size:15px; letter-spacing:1px; text-transform:uppercase;'>Metodología Garantizada</span>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c09c9e1",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Cómo Trabajamos: De la Idea a la Entrega de Llaves",
+              "header_size": "h2",
+              "align": "left",
+              "title_color": "#0B2545",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.4,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "c25c43e",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:18px; line-height:1.6em; color:#475569;'>Un proceso transparente en 4 etapas que asegura el cumplimiento estricto de fechas y presupuestos.</p>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "6a30299",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "1ab84b8",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-clipboard-check",
+                "library": "fa-solid"
+              },
+              "title_text": "1. Visita y Asesoramiento",
+              "description_text": "Acudimos a tu inmueble en Guadalajara o Madrid gratis. Analizamos tus necesidades y tomamos medidas exactas.",
+              "title_size": "h3",
+              "icon_color": "#D97706",
+              "title_color": "#0F172A",
+              "description_color": "#475569",
+              "title_typography_typography": "custom",
+              "title_typography_font_size": {
+                "unit": "rem",
+                "size": 1.25,
+                "sizes": []
+              },
+              "title_typography_font_weight": "700",
+              "description_typography_typography": "custom",
+              "description_typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "description_typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "aaeef64",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-pencil-ruler",
+                "library": "fa-solid"
+              },
+              "title_text": "2. Proyecto 3D y Presupuesto",
+              "description_text": "Elaboramos planos de distribución 3D y presupuesto desglosado partida por partida sin letra pequeña.",
+              "title_size": "h3",
+              "icon_color": "#D97706",
+              "title_color": "#0F172A",
+              "description_color": "#475569",
+              "title_typography_typography": "custom",
+              "title_typography_font_size": {
+                "unit": "rem",
+                "size": 1.25,
+                "sizes": []
+              },
+              "title_typography_font_weight": "700",
+              "description_typography_typography": "custom",
+              "description_typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "description_typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "0821e23",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-hard-hat",
+                "library": "fa-solid"
+              },
+              "title_text": "3. Ejecución y Dirección",
+              "description_text": "Inicio de obra con jefe de obra exclusivo. Informes semanales de progreso y control riguroso de calidad.",
+              "title_size": "h3",
+              "icon_color": "#D97706",
+              "title_color": "#0F172A",
+              "description_color": "#475569",
+              "title_typography_typography": "custom",
+              "title_typography_font_size": {
+                "unit": "rem",
+                "size": 1.25,
+                "sizes": []
+              },
+              "title_typography_font_weight": "700",
+              "description_typography_typography": "custom",
+              "description_typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "description_typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "43510f4",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "icon-box",
+            "settings": {
+              "selected_icon": {
+                "value": "fas fa-key",
+                "library": "fa-solid"
+              },
+              "title_text": "4. Entrega Impecable",
+              "description_text": "Revisión final conjunta, limpieza profesional y entrega formal del certificado de garantía por 5 años.",
+              "title_size": "h3",
+              "icon_color": "#D97706",
+              "title_color": "#0F172A",
+              "description_color": "#475569",
+              "title_typography_typography": "custom",
+              "title_typography_font_size": {
+                "unit": "rem",
+                "size": 1.25,
+                "sizes": []
+              },
+              "title_typography_font_weight": "700",
+              "description_typography_typography": "custom",
+              "description_typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "description_typography_line_height": {
+                "unit": "em",
+                "size": 1.55,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "34d5f99",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_gap": {
+        "unit": "px",
+        "size": 48,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "c7bd3d8",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 0,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "f909a55",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/garantia-calidad.webp",
+                "id": 25
+              },
+              "image_size": "full",
+              "caption": "Calidad y garantía en reformas Guadalajara",
+              "border_radius": {
+                "unit": "px",
+                "top": 24,
+                "right": 24,
+                "bottom": 24,
+                "left": 24,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 12,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.08)"
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "6dbdf4c",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 20,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "a0665bb",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='color:#D97706; font-weight:700; font-size:15px; letter-spacing:1px; text-transform:uppercase;'>Compromiso Escrito</span>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "83a4539",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "3 Garantías Irrevocables por Contrato",
+              "header_size": "h2",
+              "align": "left",
+              "title_color": "#0B2545",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.3,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "1ecff28",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<ul style='font-size:18px; line-height:1.75em; color:#334155; padding-left:20px;'><li><strong>Presupuesto Cerrado al 100%:</strong> Si surge cualquier imprevisto técnico de nuestra responsabilidad, el coste lo asumimos nosotros. Tu precio pactado no subirá ni un euro.</li><li><strong>Compromiso de Fechas con Penalización:</strong> Fijamos la fecha de entrega por contrato. Si nos retrasamos, te indemnizamos por cada día de demora.</li><li><strong>5 Años de Garantía Escrita:</strong> Todos los materiales e instalaciones de albañilería, fontanería y electricidad cuentan con cobertura prolongada.</li></ul>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "57633d0",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Conoce Nuestras Garantías",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "md",
+              "align": "left",
+              "background_color": "#0B2545",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 12,
+                "right": 12,
+                "bottom": 12,
+                "left": 12,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cb41f11",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 32,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8FAFC"
+    },
+    "elements": [
+      {
+        "id": "c71327f",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "c80cefd",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='color:#D97706; font-weight:700; font-size:15px; letter-spacing:1px; text-transform:uppercase;'>Opiniones Reales</span>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "30c8778",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Opiniones de Clientes en Guadalajara y Madrid",
+              "header_size": "h2",
+              "align": "left",
+              "title_color": "#0B2545",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.4,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "d43995f",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "67cc40f",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.06)"
+              }
+            },
+            "elements": [
+              {
+                "id": "5b7c657",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='color:#F59E0B; font-size:20px;'>★★★★★</div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "78a9998",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:18px; line-height:1.6em; color:#334155;'><em>\"Reformamos nuestro chalet en Guadalajara con Florin. Cumplieron exactamente el plazo y la cocina quedó espectacular. Recomendados 100%.\"</em></p>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "806767a",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<strong>Raúl y Laura M.</strong><br><span style='color:#64748B; font-size:15px;'>Reforma Integral en Guadalajara</span>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "cb28f9c",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.06)"
+              }
+            },
+            "elements": [
+              {
+                "id": "bebbeb0",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='color:#F59E0B; font-size:20px;'>★★★★★</div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "464e4ee",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:18px; line-height:1.6em; color:#334155;'><em>\"Cambiamos bañera por ducha en Azuqueca de Henares y en 2 días estaba listo. Máxima limpieza y seriedad.\"</em></p>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "710d939",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<strong>Javier R.</strong><br><span style='color:#64748B; font-size:15px;'>Cambio de Bañera en Corredor del Henares</span>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "51d8448",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 30,
+                "spread": 0,
+                "color": "rgba(0,0,0,0.06)"
+              }
+            },
+            "elements": [
+              {
+                "id": "83c9342",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='color:#F59E0B; font-size:20px;'>★★★★★</div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "709bfe8",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:18px; line-height:1.6em; color:#334155;'><em>\"Coordinaron la reforma de nuestro local comercial en Madrid con total fluidez. Gestionaron la licencia de actividad y nos ahorraron semanas de trámites.\"</em></p>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "6f80e44",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<strong>Carlos M.</strong><br><span style='color:#64748B; font-size:15px;'>Reforma de Local Comercial</span>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "850e970",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 32,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "89bc40b",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "a508e9c",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='color:#D97706; font-weight:700; font-size:15px; letter-spacing:1px; text-transform:uppercase;'>Resolvemos tus Dudas</span>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "6247547",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Preguntas Frecuentes sobre Reformas en Guadalajara",
+              "header_size": "h2",
+              "align": "left",
+              "title_color": "#0B2545",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.4,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.25,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "9e7f68b",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "accordion",
+        "settings": {
+          "tabs": [
+            {
+              "_id": "1d2e3ea",
+              "tab_title": "¿Cuánto cuesta una reforma integral en Guadalajara?",
+              "tab_content": "<p style='font-size:18px; line-height:1.6em; color:#475569;'>El coste medio de una reforma integral en Guadalajara se sitúa entre los 420€ y 680€ por metro cuadrado, variando según calidades de acabados, redistribución de tabiques y renovación de instalaciones. Te entregamos un presupuesto cerrado al detalle tras la visita técnica gratuita.</p>"
+            },
+            {
+              "_id": "7a51a56",
+              "tab_title": "¿Atendéis tanto en Guadalajara como en la Comunidad de Madrid?",
+              "tab_content": "<p style='font-size:18px; line-height:1.6em; color:#475569;'>Sí. Nuestra sede principal y talleres están en Guadalajara, y disponemos de cuadrillas permanentes operando en Madrid capital y municipios del Corredor del Henares y zona norte.</p>"
+            },
+            {
+              "_id": "825b00d",
+              "tab_title": "¿Quién gestiona la licencia de obra en el Ayuntamiento de Guadalajara?",
+              "tab_content": "<p style='font-size:18px; line-height:1.6em; color:#475569;'>Nos encargamos de toda la tramitación técnica y administrativa ante el Ayuntamiento de Guadalajara o el consistorio correspondiente para que no tengas que preocuparte de nada.</p>"
+            },
+            {
+              "_id": "3ff778c",
+              "tab_title": "¿Qué garantía tienen los trabajos de reforma?",
+              "tab_content": "<p style='font-size:18px; line-height:1.6em; color:#475569;'>Ofrecemos 5 años de garantía oficial por escrito en todas nuestras obras integrales, cubriendo instalaciones y mano de obra.</p>"
+            }
+          ],
+          "title_color": "#0F172A",
+          "title_active_color": "#D97706",
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+            "unit": "px",
+            "size": 20,
+            "sizes": []
+          },
+          "title_typography_font_weight": "600",
+          "border_color": "#E2E8F0",
+          "border_width": {
+            "unit": "px",
+            "top": "1",
+            "right": "1",
+            "bottom": "1",
+            "left": "1",
+            "isLinked": true
+          }
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "88f47e0",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#0B2545",
+      "border_radius": {
+        "unit": "px",
+        "top": 24,
+        "right": 24,
+        "bottom": 24,
+        "left": 24,
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "e8563ee",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Pensando en Reformar tu Hogar en Guadalajara?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#FFFFFF",
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.5,
+            "sizes": []
+          },
+          "typography_font_weight": "800",
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.25,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "2da734d",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:19px; line-height:1.6em; color:#CBD5E1; text-align:center; max-width:800px; margin:0 auto;'>Pide tu visita técnica sin coste en Guadalajara o Madrid y recibe tu presupuesto cerrado en menos de 48 horas.</p>",
+          "text_color": "#334155",
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 1.125,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.6,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "411e368",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "10",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "8b4e2a2",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Pedir Presupuesto en Guadalajara",
+              "link": {
+                "url": "#presupuesto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "size": "lg",
+              "align": "left",
+              "background_color": "#D97706",
+              "button_text_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 14,
+                "right": 14,
+                "bottom": 14,
+                "left": 14,
+                "isLinked": true
+              },
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_weight": "600"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2b85cf8",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 16,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "px",
+        "top": "24",
+        "right": "32",
+        "bottom": "24",
+        "left": "32",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#07172C"
+    },
+    "elements": [
+      {
+        "id": "d879e36",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<div style='display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; color:#94A3B8; font-size:16px; width:100%;'><div><strong>Florin Reformas en Guadalajara y Madrid</strong> | Todos los Derechos Reservados. Diseñado por Freitech</div><div><a href='#' style='color:#94A3B8; text-decoration:none;'>Aviso Legal</a> | <a href='#' style='color:#94A3B8; text-decoration:none;'>Política de Privacidad</a> | <a href='#' style='color:#94A3B8; text-decoration:none;'>Política de Cookies</a> | <a href='#' style='color:#94A3B8; text-decoration:none;'>Configurar Cookies</a></div></div>",
+          "text_color": "#334155",
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 1.125,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.6,
+            "sizes": []
+          }
+        },
+        "elements": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,1419 @@
+[
+  {
+    "id": "ac6c3e4",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 40,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "a21697a",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "width": {
+            "unit": "%",
+            "size": 55,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "cfaf3b5",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "COCINAS DE DISEÑO · REFORMAS MADRID",
+              "header_size": "span",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 13,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 1,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "23c47ee",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas de Cocinas en Madrid: Diseño Funcional, Islas Modernas y Máxima Calidad",
+              "header_size": "h1",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.75,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "380f820",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:19px; line-height:1.65em; color:#5A6B82;'>Diseñamos y reformamos cocinas a medida pensadas para vivir y compartir. Apertura de cocinas al salón con concepto open-space, islas centrales, muebles hidrófugos antihuella y encimeras porcelánicas de máxima resistencia. Presupuesto cerrado garantizado por contrato con el equipo de Reformas Madrid a pie de obra.</p>",
+              "text_color": "#5A6B82"
+            },
+            "elements": []
+          },
+          {
+            "id": "a151820",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<ul style='list-style:none; padding:0; margin:0; font-size:17px; font-weight:600; color:#0E1B2E;'><li style='margin-bottom:8px;'>✓ Proyectos a medida en 3D para visualizar la distribución y capacidad.</li><li style='margin-bottom:8px;'>✓ Encimeras porcelánicas (Dekton, Neolith, Silestone) de máxima durabilidad.</li><li style='margin-bottom:8px;'>✓ Gestión integral: albañilería, electricidad, fontanería y montaje de mobiliario.</li></ul>"
+            },
+            "elements": []
+          },
+          {
+            "id": "66d912a",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "22fc43d",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Calcular Presupuesto Online",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "#A87E34",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "f38bfa5",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "WhatsApp con Reformas Madrid",
+                  "link": {
+                    "url": "https://wa.me/34600000000",
+                    "is_external": true,
+                    "nofollow": false
+                  },
+                  "background_color": "#25D366",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "e38f0c1",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+            "unit": "%",
+            "size": 45,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "9b62cfb",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-cocina-con-isla-guadalajara.webp",
+                "id": 229
+              },
+              "image_size": "full",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 16,
+                "blur": 35,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.12)"
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "421a8dc",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "3",
+        "right": "4",
+        "bottom": "3",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "9d6d02a",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "2448a2b",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "+140",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "684e23d",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Cocinas Montadas",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "decc432",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Espacios culinarios transformados en Madrid.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "b4433a4",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "efd4cd6",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "10-14 Días",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "2fdcd7c",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Plazo Promedio",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "0484fea",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Compromiso de entrega fijado por escrito.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "741982a",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "54675f9",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "2 Años",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "14a824c",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Garantía Total",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "e0c709d",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Cobertura completa en obra y mobiliario.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "c0f649a",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "607ccbe",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "100% Presencial",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "a9d5187",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Dirección Diaria",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "718ddc0",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Supervisión técnica de arquitectos colegiados.</p>"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd5c96a",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 28,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "186335f",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Especialidades en Reforma de Cocinas en Madrid",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.25,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "25f47a5",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:18px; color:#5A6B82; text-align:center; max-width:800px; margin:0 auto;'>La combinación perfecta entre estética de vanguardia y ergonomía de almacenaje para tu cocina.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "e742ab4",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_wrap": "wrap",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "5850764",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "7724e33",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🍳 Concepto Abierto con Isla o Península",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "d01d9e8",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Derribo de tabiques y unificación visual con el salón para multiplicar la luz natural y el espacio de convivencia familiar.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "be856c1",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "d340426",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "692350c",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🗄️ Mobiliario a Medida con Cierre Amortiguado",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "0b980aa",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Módulos altos hasta el techo con herrajes Blum de alta resistencia, cajones caceroleros de extracción total y frentes antihuella.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "3619f70",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "9dcdca7",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "a6c648c",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "✨ Encimeras Porcelánicas y Cuarzo",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "c80cb02",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Suministro e instalación de encimeras resistentes a rayaduras, calor directo y manchas con fregaderos bajo encimera integrados.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "21721e4",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "735b8bd",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "6f5b6b7",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "⚡ Instalación Eléctrica y Fontanería Nueva",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "a6b98b1",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Circuitos independientes para horno, placa de inducción, lavavajillas y pequeños electrodomésticos según REBT.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "6a6363e",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "55d46be",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "a03868c",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Preguntas Frecuentes",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "2269083",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "accordion",
+        "settings": {
+          "tabs": [
+            {
+              "_id": "f8fbb82",
+              "tab_title": "¿Cuánto cuesta reformar una cocina en Madrid?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Una reforma integral de cocina (obra civil completa + fontanería + electricidad + muebles + encimera porcelánica) suele situarse entre 8.500€ y 15.000€ según dimensiones y calidades elegidas.</p>"
+            },
+            {
+              "_id": "c40f477",
+              "tab_title": "¿Se puede tirar el tabique para unir la cocina con el salón?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí, siempre que no sea un muro de carga o afecte a elementos estructurales del edificio. En Reformas Madrid evaluamos la estructura antes de cualquier demolición para garantizar total seguridad.</p>"
+            },
+            {
+              "_id": "b569e2f",
+              "tab_title": "¿Incluís los electrodomésticos en el presupuesto?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Podemos suministrarlos e instalarlos a precios competitivos o adaptar la carpintería e instalaciones para los electrodomésticos que tú adquieras por tu cuenta.</p>"
+            },
+            {
+              "_id": "48fae4a",
+              "tab_title": "¿Cuánto dura la reforma de una cocina completa?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>El plazo de obra suele ser de 10 a 14 días laborables desde la demolición hasta el remate de pintura y colocación de encimera.</p>"
+            },
+            {
+              "_id": "a7e9488",
+              "tab_title": "¿Ofrecéis garantía por escrito?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí, emitimos 2 años de garantía legal certificada por escrito en contrato tanto en las instalaciones como en el montaje del mobiliario.</p>"
+            }
+          ],
+          "border_width": {
+            "unit": "px",
+            "top": 1,
+            "right": 1,
+            "bottom": 1,
+            "left": 1,
+            "isLinked": true
+          },
+          "border_color": "#E4DCCB",
+          "title_color": "#0E1B2E",
+          "active_first": "no",
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "title_typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "bb29f82",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "align_items": "center",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#0E1B2E",
+      "border_radius": {
+        "unit": "px",
+        "top": 24,
+        "right": 24,
+        "bottom": 24,
+        "left": 24,
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "8dab336",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Listo para Empezar tu Reforma con Reformas Madrid?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#E2C48F",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.4,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "739bac5",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:19px; line-height:1.65em; color:#CBD5E1; text-align:center; max-width:800px; margin:0 auto;'>Solicita hoy tu visita técnica gratuita. Nuestro equipo colegiado evaluará tu vivienda o local y te entregaremos un presupuesto cerrado sin sorpresas.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "7e38e73",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "button",
+        "settings": {
+          "text": "Pedir Presupuesto Gratuito",
+          "link": {
+            "url": "/pedir-presupuesto/",
+            "is_external": false,
+            "nofollow": false
+          },
+          "background_color": "#A87E34",
+          "button_text_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12,
+            "isLinked": true
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,1419 @@
+[
+  {
+    "id": "4b6d8bc",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 40,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "5fb09df",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "width": {
+            "unit": "%",
+            "size": 55,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "d729576",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "OFICINAS Y ESPACIOS CORPORATIVOS · REFORMAS MADRID",
+              "header_size": "span",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 13,
+                "sizes": []
+              },
+              "typography_font_weight": "800",
+              "typography_letter_spacing": {
+                "unit": "px",
+                "size": 1,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "d8223b5",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Reformas de Oficinas en Madrid: Espacios Corporativos Eficientes, Acústica y Diseño Diáfano",
+              "header_size": "h1",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 2.75,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "3090420",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:19px; line-height:1.65em; color:#5A6B82;'>Modernizamos sedes corporativas y oficinas en Madrid para potenciar el talento, la productividad y el confort acústico de tu equipo. Mamparas divisorias de vidrio, techos técnicos desmontables, cableado de datos estructurado y climatización inteligente con dirección presencial directa de Reformas Madrid.</p>",
+              "text_color": "#5A6B82"
+            },
+            "elements": []
+          },
+          {
+            "id": "6cb508a",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<ul style='list-style:none; padding:0; margin:0; font-size:17px; font-weight:600; color:#0E1B2E;'><li style='margin-bottom:8px;'>✓ Espacios abiertos, salas de reuniones insonorizadas y cabinas de llamadas.</li><li style='margin-bottom:8px;'>✓ Instalación de telecomunicaciones y cableado estructurado Cat 6A / Fibra.</li><li style='margin-bottom:8px;'>✓ Optimización del confort acústico y eficiencia energética en iluminación.</li></ul>"
+            },
+            "elements": []
+          },
+          {
+            "id": "74691bb",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "row",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "dc008ee",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Calcular Presupuesto Online",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "#A87E34",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "44a92af",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "WhatsApp con Reformas Madrid",
+                  "link": {
+                    "url": "https://wa.me/34600000000",
+                    "is_external": true,
+                    "nofollow": false
+                  },
+                  "background_color": "#25D366",
+                  "button_text_color": "#FFFFFF",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 12,
+                    "right": 12,
+                    "bottom": 12,
+                    "left": 12,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 17,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bc9e7a7",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "width": {
+            "unit": "%",
+            "size": 45,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "adc0c70",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "image",
+            "settings": {
+              "image": {
+                "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-oficinas-corporativas.webp",
+                "id": 212
+              },
+              "image_size": "full",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 16,
+                "blur": 35,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.12)"
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "d35c932",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "row",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "3",
+        "right": "4",
+        "bottom": "3",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "3a3a315",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "894bc0d",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "+50",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "22521dc",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Oficinas Reformadas",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "d5ef586",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Centros de trabajo y despachos en Madrid.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "3ccf8fd",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "dc233a7",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "100%",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "810d71d",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Plazo Garantizado",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "24e6761",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Planificación por fases sin interrumpir la actividad.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "ecd0d07",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "075276a",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Norma ISO",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "5d31c5a",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Confort Acústico",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "f40e837",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Aislamiento certificado en salas de reuniones.</p>"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "46e03d6",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 4,
+            "sizes": []
+          },
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "24",
+            "bottom": "24",
+            "left": "24",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 18,
+            "right": 18,
+            "bottom": 18,
+            "left": 18,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 8,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(14,27,46,0.04)"
+          },
+          "width": {
+            "unit": "%",
+            "size": 23,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "ab11a05",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Diaria",
+              "header_size": "div",
+              "title_color": "#A87E34",
+              "typography_typography": "custom",
+              "typography_font_family": "Playfair Display",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 32,
+                "sizes": []
+              },
+              "typography_font_weight": "800"
+            },
+            "elements": []
+          },
+          {
+            "id": "6479da1",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Supervisión de Obra",
+              "header_size": "h4",
+              "title_color": "#0E1B2E",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          },
+          {
+            "id": "ecc7959",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='font-size:14px; color:#5A6B82; margin:0;'>Coordinación experta presencial.</p>"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9f03ee1",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 28,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#F8F2E5"
+    },
+    "elements": [
+      {
+        "id": "b7659c2",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Especialidades en Reforma de Oficinas en Madrid",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700",
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.25,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "456b7b9",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:18px; color:#5A6B82; text-align:center; max-width:800px; margin:0 auto;'>Diseño ergonómico y soluciones técnicas de alta gama para empresas y despachos profesionales.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "6404687",
+        "elType": "container",
+        "isInner": true,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_mobile": "column",
+          "flex_wrap": "wrap",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "812f2e7",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "08a09dd",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🏢 Mamparas de Cristal y Divisiones Acústicas",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "09c1cd2",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Particiones de vidrio laminado acústico con puertas enrasadas y perfilería minimalista para aportar luz y privacidad a las salas.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "e0a76c9",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "9cf6cbc",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "f8b9d7f",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "🔌 Suelo Técnico Elevado y Falsos Techos",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "975d9b5",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Pavimento registrable para canalización oculta de cableado eléctrico y datos, combinado con techos acústicos de fibra mineral.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "a8ae6ef",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "a1fa162",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "48823ec",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "💻 Cableado de Red y Racks de Comunicaciones",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "1bd238a",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Instalación de puestos de trabajo electrificados, tomas RJ45 certificadas y armario rack centralizado para máxima velocidad.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "a989f76",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "132c9b1",
+            "elType": "container",
+            "isInner": true,
+            "settings": {
+              "content_width": "full",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 10,
+                "sizes": []
+              },
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "28",
+                "bottom": "28",
+                "left": "28",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "box_shadow_box_shadow_type": "yes",
+              "box_shadow_box_shadow": {
+                "horizontal": 0,
+                "vertical": 10,
+                "blur": 26,
+                "spread": 0,
+                "color": "rgba(14,27,46,0.05)"
+              },
+              "width": {
+                "unit": "%",
+                "size": 48,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "06830d2",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "❄️ Climatización Zonificada e Iluminación DALI",
+                  "header_size": "h3",
+                  "title_color": "#0E1B2E",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              },
+              {
+                "id": "2a8dea2",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:16px; color:#5A6B82; line-height:1.6em; margin:0;'>Sistemas de renovación de aire con recuperador de calor y luminarias LED inteligentes de bajo consumo con sensores de presencia.</p>"
+                },
+                "elements": []
+              },
+              {
+                "id": "1d46ce0",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Información →",
+                  "link": {
+                    "url": "/pedir-presupuesto/",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "background_color": "rgba(226, 196, 143, 0.18)",
+                  "button_text_color": "#A87E34",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 10,
+                    "right": 10,
+                    "bottom": 10,
+                    "left": 10,
+                    "isLinked": true
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "43c1795",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "4",
+        "bottom": "5",
+        "left": "4",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#FFFFFF"
+    },
+    "elements": [
+      {
+        "id": "521c834",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "Preguntas Frecuentes",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#0E1B2E",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.35,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "9956064",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "accordion",
+        "settings": {
+          "tabs": [
+            {
+              "_id": "f76e5d2",
+              "tab_title": "¿Podéis hacer la reforma sin que la empresa deje de operar?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí. Diseñamos planes de obra por fases sectorizadas o turnos nocturnos y de fin de semana para que tu equipo continúe trabajando sin interferencias graves.</p>"
+            },
+            {
+              "_id": "4ac01c7",
+              "tab_title": "¿Qué nivel de aislamiento acústico ofrecen vuestras mamparas?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Instalamos mamparas de doble vidrio laminar acústico capaces de atenuar entre 42 dB y 48 dB, garantizando total confidencialidad en salas de juntas y reuniones ejecutivas.</p>"
+            },
+            {
+              "_id": "4d859cb",
+              "tab_title": "¿Entregáis la certificación del cableado de datos?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí. Certificamos cada punto de red Cat 6A o fibra óptica con reflectómetro/fluke para asegurar velocidad gigabit sin pérdidas de señal.</p>"
+            },
+            {
+              "_id": "3857da7",
+              "tab_title": "¿Cuánto tiempo dura la reforma de una oficina de 200 m²?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Un proyecto integral de esas dimensiones suele ejecutarse en un plazo de 3 a 5 semanas, dependiendo de si requiere cambio de climatización completa.</p>"
+            },
+            {
+              "_id": "5fe2443",
+              "tab_title": "¿Tenéis seguro de responsabilidad civil?",
+              "tab_content": "<p style='font-size:18px; line-height:1.65em; color:#5A6B82; margin:0;'>Sí. Reformas Madrid cuenta con un seguro de Responsabilidad Civil de alta cobertura para responder con total solvencia ante cualquier eventualidad durante la obra.</p>"
+            }
+          ],
+          "border_width": {
+            "unit": "px",
+            "top": 1,
+            "right": 1,
+            "bottom": 1,
+            "left": 1,
+            "isLinked": true
+          },
+          "border_color": "#E4DCCB",
+          "title_color": "#0E1B2E",
+          "active_first": "no",
+          "title_typography_typography": "custom",
+          "title_typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "title_typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "0164296",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "boxed",
+      "flex_direction": "column",
+      "align_items": "center",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "padding": {
+        "unit": "%",
+        "top": "5",
+        "right": "6",
+        "bottom": "5",
+        "left": "6",
+        "isLinked": true
+      },
+      "background_background": "classic",
+      "background_color": "#0E1B2E",
+      "border_radius": {
+        "unit": "px",
+        "top": 24,
+        "right": 24,
+        "bottom": 24,
+        "left": 24,
+        "isLinked": true
+      }
+    },
+    "elements": [
+      {
+        "id": "dd7280e",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "heading",
+        "settings": {
+          "title": "¿Listo para Empezar tu Reforma con Reformas Madrid?",
+          "header_size": "h2",
+          "align": "center",
+          "title_color": "#E2C48F",
+          "typography_typography": "custom",
+          "typography_font_family": "Playfair Display",
+          "typography_font_size": {
+            "unit": "rem",
+            "size": 2.4,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      },
+      {
+        "id": "39d3acb",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<p style='font-size:19px; line-height:1.65em; color:#CBD5E1; text-align:center; max-width:800px; margin:0 auto;'>Solicita hoy tu visita técnica gratuita. Nuestro equipo colegiado evaluará tu vivienda o local y te entregaremos un presupuesto cerrado sin sorpresas.</p>"
+        },
+        "elements": []
+      },
+      {
+        "id": "3c70415",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "button",
+        "settings": {
+          "text": "Pedir Presupuesto Gratuito",
+          "link": {
+            "url": "/pedir-presupuesto/",
+            "is_external": false,
+            "nofollow": false
+          },
+          "background_color": "#A87E34",
+          "button_text_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 12,
+            "right": 12,
+            "bottom": 12,
+            "left": 12,
+            "isLinked": true
+          },
+          "typography_typography": "custom",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 18,
+            "sizes": []
+          },
+          "typography_font_weight": "700"
+        },
+        "elements": []
+      }
+    ]
+  }
+]

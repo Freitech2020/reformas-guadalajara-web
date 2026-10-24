@@ -1,0 +1,3429 @@
+[
+  {
+    "id": "af72e3a",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 0,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "0",
+        "right": "0",
+        "bottom": "0",
+        "left": "0",
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "9588366",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "html",
+        "settings": {
+          "html": "\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap\" rel=\"stylesheet\">\n\n<style>\n/* --- BASE ATELIER DARK STYLING --- */\nbody, html {\n    background-color: #121316 !important;\n    color: #F8FAFB !important;\n    font-family: 'Plus Jakarta Sans', sans-serif !important;\n    scroll-behavior: smooth;\n}\n\n/* --- FX-01: AMBIENT GOLD PARTICLES DRIFT --- */\n.hero-atelier-container {\n    position: relative;\n    overflow: hidden;\n    background: radial-gradient(circle at 80% 20%, rgba(191, 151, 84, 0.12) 0%, rgba(18, 19, 22, 1) 75%);\n}\n.hero-gold-bokeh {\n    position: absolute;\n    top: 0; left: 0; width: 100%; height: 100%;\n    pointer-events: none;\n    z-index: 1;\n}\n.bokeh-gold-dot {\n    position: absolute;\n    border-radius: 50%;\n    background: radial-gradient(circle, rgba(191, 151, 84, 0.28) 0%, rgba(191, 151, 84, 0.03) 70%, transparent 100%);\n    filter: blur(14px);\n    animation: floatGoldBokeh 11s ease-in-out infinite alternate;\n}\n.bg-gold-1 { width: 380px; height: 380px; top: -60px; right: 10%; animation-duration: 13s; }\n.bg-gold-2 { width: 280px; height: 280px; top: 180px; left: 5%; animation-duration: 9s; animation-delay: -4s; }\n\n@keyframes floatGoldBokeh {\n    0% { transform: translateY(0px) scale(1); opacity: 0.3; }\n    50% { transform: translateY(-26px) scale(1.12); opacity: 0.65; }\n    100% { transform: translateY(14px) scale(0.95); opacity: 0.35; }\n}\n\n/* --- FX-02: ATELIER ROOM FINDER SELECTOR --- */\n.atelier-finder-item {\n    border-bottom: 1px solid rgba(255, 255, 255, 0.08);\n    padding: 18px 20px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    cursor: pointer;\n    border-radius: 14px;\n    background: transparent;\n    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);\n}\n.atelier-finder-item:hover, .atelier-finder-item.active {\n    background: #1A1C20;\n    border-color: #BF9754;\n    padding-left: 24px;\n    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);\n}\n.atelier-finder-item .num {\n    font-family: 'Cinzel', serif;\n    color: #BF9754;\n    margin-right: 14px;\n    font-size: 15px;\n    font-weight: 700;\n}\n.atelier-finder-item .title {\n    font-size: 18px;\n    font-weight: 600;\n    color: #F8FAFB;\n    transition: color 0.25s ease;\n}\n.atelier-finder-item.active .title {\n    color: #BF9754;\n}\n.atelier-finder-item .arrow {\n    color: #BF9754;\n    font-size: 20px;\n    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);\n}\n.atelier-finder-item:hover .arrow, .atelier-finder-item.active .arrow {\n    transform: translateX(6px);\n}\n\n/* --- FX-04: STEPPER 5 FASES PROGRESS BARS --- */\n.step-gold-bar {\n    display: flex;\n    justify-content: space-between;\n    gap: 12px;\n    margin-top: 24px;\n    flex-wrap: wrap;\n}\n.step-gold-btn {\n    flex: 1 1 18%;\n    background: #1A1C20;\n    border: 1px solid rgba(191, 151, 84, 0.2);\n    border-radius: 12px;\n    padding: 16px;\n    cursor: pointer;\n    position: relative;\n    overflow: hidden;\n    transition: all 0.25s ease;\n}\n.step-gold-btn:hover, .step-gold-btn.active {\n    border-color: #BF9754;\n    box-shadow: 0 6px 20px rgba(191, 151, 84, 0.12);\n}\n.step-gold-btn .step-progress {\n    position: absolute;\n    bottom: 0; left: 0;\n    height: 3px;\n    background: #BF9754;\n    width: 0%;\n    transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);\n}\n.step-gold-btn.active .step-progress {\n    width: 100%;\n}\n.step-gold-btn .step-label {\n    font-family: 'Cinzel', serif;\n    font-size: 13px;\n    font-weight: 700;\n    color: #BF9754;\n    letter-spacing: 0.15em;\n    text-transform: uppercase;\n}\n.step-gold-btn .step-title {\n    font-size: 16px;\n    font-weight: 600;\n    color: #F8FAFB;\n    margin-top: 4px;\n}\n\n/* --- FX-05: TRADE ACCORDION IN GOLD / DARK LUXURY --- */\n.atelier-accordion-item {\n    border: 1px solid rgba(255, 255, 255, 0.08);\n    border-radius: 16px;\n    margin-bottom: 14px;\n    background: #1A1C20;\n    overflow: hidden;\n    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);\n}\n.atelier-accordion-item.active {\n    background: #202329;\n    border-color: #BF9754;\n    border-radius: 20px;\n    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4);\n}\n.atelier-header {\n    padding: 22px 24px;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    cursor: pointer;\n}\n.atelier-header .trade-name {\n    font-size: 20px;\n    font-weight: 600;\n    color: #F8FAFB;\n    display: flex;\n    align-items: center;\n    gap: 14px;\n}\n.atelier-header .trade-toggle-icon {\n    font-size: 20px;\n    color: #BF9754;\n    transition: transform 0.3s ease;\n    width: 34px;\n    height: 34px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 50%;\n    border: 1px solid rgba(191, 151, 84, 0.3);\n    background: rgba(191, 151, 84, 0.06);\n}\n.atelier-accordion-item.active .trade-toggle-icon {\n    transform: rotate(45deg);\n    background: #BF9754;\n    color: #121316;\n}\n.atelier-body {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.45s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s ease;\n    padding: 0 24px;\n}\n.atelier-accordion-item.active .atelier-body {\n    max-height: 500px;\n    padding: 0 24px 24px 24px;\n}\n\n/* --- FX-06: FAB ATELIER CONSULTATION & DRAWER --- */\n.fab-atelier-btn {\n    position: fixed;\n    bottom: 28px;\n    right: 28px;\n    background: #1A1C20;\n    color: #BF9754;\n    border: 1px solid #BF9754;\n    padding: 14px 24px;\n    border-radius: 9999px;\n    font-family: 'Cinzel', serif;\n    font-size: 14px;\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);\n    z-index: 99999;\n    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);\n}\n.fab-atelier-btn:hover {\n    background: #BF9754;\n    color: #121316;\n    transform: translateY(-3px) scale(1.02);\n    box-shadow: 0 16px 36px rgba(191, 151, 84, 0.3);\n}\n.fab-gold-dot {\n    width: 10px;\n    height: 10px;\n    background: #BF9754;\n    border-radius: 50%;\n    box-shadow: 0 0 10px #BF9754;\n}\n\n/* DRAWER OVERLAY & PANEL */\n.drawer-atelier-backdrop {\n    position: fixed;\n    top: 0; left: 0; width: 100vw; height: 100vh;\n    background: rgba(10, 11, 13, 0.75);\n    backdrop-filter: blur(10px);\n    z-index: 100000;\n    opacity: 0;\n    pointer-events: none;\n    transition: opacity 0.35s ease;\n}\n.drawer-atelier-backdrop.open {\n    opacity: 1;\n    pointer-events: auto;\n}\n.drawer-atelier-panel {\n    position: fixed;\n    top: 0; right: 0;\n    width: 100%;\n    max-width: 480px;\n    height: 100vh;\n    background: #16181C;\n    border-left: 1px solid rgba(191, 151, 84, 0.3);\n    z-index: 100001;\n    box-shadow: -16px 0 50px rgba(0, 0, 0, 0.6);\n    transform: translateX(100%);\n    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);\n    display: flex;\n    flex-direction: column;\n    overflow-y: auto;\n}\n.drawer-atelier-panel.open {\n    transform: translateX(0);\n}\n.drawer-atelier-header {\n    padding: 24px 28px;\n    border-bottom: 1px solid rgba(191, 151, 84, 0.2);\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n.drawer-atelier-header h3 {\n    margin: 0;\n    font-family: 'Cinzel', serif;\n    font-size: 20px;\n    font-weight: 700;\n    color: #F8FAFB;\n    letter-spacing: 0.05em;\n}\n.drawer-atelier-close {\n    background: none;\n    border: none;\n    font-size: 24px;\n    cursor: pointer;\n    color: #BF9754;\n    padding: 6px;\n    line-height: 1;\n}\n.drawer-atelier-content {\n    padding: 28px;\n    display: flex;\n    flex-direction: column;\n    gap: 20px;\n}\n.chip-atelier-grid {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n}\n.chip-atelier-option {\n    padding: 10px 16px;\n    border: 1px solid rgba(191, 151, 84, 0.25);\n    border-radius: 9999px;\n    font-size: 14px;\n    font-weight: 500;\n    color: #F8FAFB;\n    background: #1A1C20;\n    cursor: pointer;\n    transition: all 0.2s ease;\n}\n.chip-atelier-option.selected, .chip-atelier-option:hover {\n    background: #BF9754;\n    border-color: #BF9754;\n    color: #121316;\n    font-weight: 700;\n}\n\n/* --- FX-03: PROJECT EXPANSION MODAL --- */\n.atelier-modal-backdrop {\n    position: fixed;\n    top: 0; left: 0; width: 100vw; height: 100vh;\n    background: rgba(10, 11, 13, 0.85);\n    backdrop-filter: blur(14px);\n    z-index: 100000;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    opacity: 0;\n    pointer-events: none;\n    transition: opacity 0.3s ease;\n    padding: 20px;\n}\n.atelier-modal-backdrop.open {\n    opacity: 1;\n    pointer-events: auto;\n}\n.atelier-modal-card {\n    background: #1A1C20;\n    border: 1px solid #BF9754;\n    border-radius: 24px;\n    max-width: 800px;\n    width: 100%;\n    max-height: 90vh;\n    overflow-y: auto;\n    position: relative;\n    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);\n    transform: scale(0.94);\n    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);\n    padding: 34px;\n}\n.atelier-modal-backdrop.open .atelier-modal-card {\n    transform: scale(1);\n}\n</style>\n\n<div class=\"fab-atelier-btn\" id=\"openAtelierDrawerBtn\" onclick=\"toggleAtelierDrawer(true)\">\n    <span class=\"fab-gold-dot\"></span>\n    <span>💬 Cita Privada Atelier</span>\n</div>\n\n<!-- OFF-CANVAS ATELIER DRAWER -->\n<div class=\"drawer-atelier-backdrop\" id=\"atelierDrawerBackdrop\" onclick=\"toggleAtelierDrawer(false)\"></div>\n<div class=\"drawer-atelier-panel\" id=\"atelierDrawerPanel\">\n    <div class=\"drawer-atelier-header\">\n        <div>\n            <span style=\"font-family:'Cinzel',serif; font-size:12px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">FLORIN REFORMAS · ATELIER</span>\n            <h3>Consulta de Arquitectura & Obra</h3>\n        </div>\n        <button class=\"drawer-atelier-close\" onclick=\"toggleAtelierDrawer(false)\">✕</button>\n    </div>\n    <div class=\"drawer-atelier-content\">\n        <div>\n            <label style=\"font-family:'Cinzel',serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.1em; margin-bottom:8px; display:block;\">ESTANCIA O PROYECTO SINGULAR</label>\n            <div class=\"chip-atelier-grid\">\n                <span class=\"chip-atelier-option selected\" onclick=\"selectAtelierChip(this)\">Reforma Integral</span>\n                <span class=\"chip-atelier-option\" onclick=\"selectAtelierChip(this)\">Cocina con Isla</span>\n                <span class=\"chip-atelier-option\" onclick=\"selectAtelierChip(this)\">Baño Suite & Spa</span>\n                <span class=\"chip-atelier-option\" onclick=\"selectAtelierChip(this)\">Chalet / Fachada</span>\n                <span class=\"chip-atelier-option\" onclick=\"selectAtelierChip(this)\">Climatización Aerotermia</span>\n                <span class=\"chip-atelier-option\" onclick=\"selectAtelierChip(this)\">Proyecto Arquitectónico</span>\n            </div>\n        </div>\n        <div>\n            <label style=\"font-family:'Cinzel',serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.1em; margin-bottom:8px; display:block;\">DETALLES DEL INMUEBLE</label>\n            <textarea id=\"drawerAtelierNotes\" rows=\"3\" placeholder=\"Metros cuadrados aproximados, zona de Guadalajara o especificaciones deseadas...\" style=\"width:100%; border:1px solid rgba(191,151,84,0.3); background:#121316; color:#F8FAFB; border-radius:10px; padding:12px; font-family:'Plus Jakarta Sans',sans-serif; font-size:15px; resize:none;\"></textarea>\n        </div>\n        <div>\n            <label style=\"font-family:'Cinzel',serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.1em; margin-bottom:8px; display:block;\">DATOS DE CONTACTO CONFIDENCIAL</label>\n            <input type=\"text\" id=\"drawerAtelierName\" placeholder=\"Tu nombre y apellidos\" style=\"width:100%; border:1px solid rgba(191,151,84,0.3); background:#121316; color:#F8FAFB; border-radius:8px; padding:12px; margin-bottom:10px; font-family:'Plus Jakarta Sans',sans-serif; font-size:15px;\">\n            <input type=\"tel\" id=\"drawerAtelierPhone\" placeholder=\"Teléfono directo o WhatsApp\" style=\"width:100%; border:1px solid rgba(191,151,84,0.3); background:#121316; color:#F8FAFB; border-radius:8px; padding:12px; font-family:'Plus Jakarta Sans',sans-serif; font-size:15px;\">\n        </div>\n        <button onclick=\"submitAtelierConsultation()\" style=\"background:#BF9754; color:#121316; border:none; border-radius:8px; padding:16px; font-family:'Cinzel',serif; font-size:15px; font-weight:700; letter-spacing:0.1em; cursor:pointer; width:100%; transition:background 0.2s;\">\n            Solicitar Visita Técnica Sin Compromiso →\n        </button>\n        <span style=\"font-size:13px; color:#64748B; text-align:center;\">Atención personalizada por Florin y dirección técnica colegiada en Guadalajara.</span>\n    </div>\n</div>\n\n<!-- PROJECT DETAIL LIGHTBOX MODAL -->\n<div class=\"atelier-modal-backdrop\" id=\"atelierModalBackdrop\" onclick=\"closeAtelierModal(event)\">\n    <div class=\"atelier-modal-card\" id=\"atelierModalCard\">\n        <button onclick=\"closeAtelierModalDirect()\" style=\"position:absolute; top:20px; right:20px; background:#121316; border:1px solid #BF9754; width:36px; height:36px; border-radius:50%; font-size:18px; cursor:pointer; color:#BF9754; font-weight:700;\">✕</button>\n        <div id=\"atelierModalTarget\"></div>\n    </div>\n</div>\n\n<script>\n// --- FX-06: DRAWER CONTROLLER ---\nfunction toggleAtelierDrawer(open) {\n    const backdrop = document.getElementById('atelierDrawerBackdrop');\n    const panel = document.getElementById('atelierDrawerPanel');\n    if (open) {\n        backdrop.classList.add('open');\n        panel.classList.add('open');\n        document.body.style.overflow = 'hidden';\n    } else {\n        backdrop.classList.remove('open');\n        panel.classList.remove('open');\n        document.body.style.overflow = '';\n    }\n}\nfunction selectAtelierChip(el) {\n    el.parentElement.querySelectorAll('.chip-atelier-option').forEach(c => c.classList.remove('selected'));\n    el.classList.add('selected');\n}\nfunction submitAtelierConsultation() {\n    const name = document.getElementById('drawerAtelierName').value.trim() || 'Cliente';\n    const phone = document.getElementById('drawerAtelierPhone').value.trim();\n    const type = document.querySelector('.chip-atelier-option.selected')?.innerText || 'Reforma';\n    const text = `Hola Florin, soy ${name}. Deseo solicitar asesoramiento para ${type} en Guadalajara (Tlf: ${phone}).`;\n    window.open(`https://wa.me/34600000000?text=${encodeURIComponent(text)}`, '_blank');\n    toggleAtelierDrawer(false);\n}\n\n// --- FX-02: ROOM FINDER DYNAMIC SELECTOR ---\nconst atelierRooms = {\n    1: {\n        title: \"Piso Completo en Guadalajara\",\n        desc: \"Reforma integral con redistribución diáfana, iluminación lineal LED cálida, aislamiento acústico y suelos laminados AC5 de máxima resistencia.\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-despues.webp\",\n        tag: \"Reforma Integral de Lujo\",\n        location: \"Av. del Ejército · Guadalajara\"\n    },\n    2: {\n        title: \"Cocina Abierta de Diseño con Isla\",\n        desc: \"Apertura completa de cocina al salón, encimera porcelánica Calacatta, electrodomésticos integrados y módulos en columna de suelo a techo.\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-cocina-isla-guadalajara.webp\",\n        tag: \"Cocina de Autor\",\n        location: \"Aguas Vivas · Guadalajara\"\n    },\n    3: {\n        title: \"Baño Suite con Ducha a Ras de Suelo\",\n        desc: \"Transformación con plato de ducha extraplano antideslizante, grifería empotrada negro mate, nicho iluminado y porcelánico rectificado.\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-bano-moderno-guadalajara.webp\",\n        tag: \"Baño Suite & Spa\",\n        location: \"Plaza Mayor · Guadalajara\"\n    },\n    4: {\n        title: \"Chalet Unifamiliar con Cerramientos\",\n        desc: \"Renovación de fachada, carpintería de PVC con rotura de puente térmico triple vidrio y aislamiento continuo SATE para máxima eficiencia.\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-chalet-cabanillas-guadalajara.webp\",\n        tag: \"Chalet & Envolvente SATE\",\n        location: \"Cabanillas del Campo · Guadalajara\"\n    },\n    5: {\n        title: \"Climatización Aerotermia & Suelo Radiante\",\n        desc: \"Instalación de sistema completo de aerotermia con suelo radiante refrescante, máxima eficiencia energética clase A y termostatos por estancia.\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/detalle-acabados-obra-guadalajara.webp\",\n        tag: \"Eficiencia Energética\",\n        location: \"Marchamalo · Guadalajara\"\n    },\n    6: {\n        title: \"Dirección Facultativa & Gestión Técnica\",\n        desc: \"Supervisión técnica presencial diaria por Florin y arquitecto técnico colegiado. Tramitación íntegra de licencias en el Ayuntamiento de Guadalajara.\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/florin-director-tecnico.webp\",\n        tag: \"Rigor Técnico Colegiado\",\n        location: \"Estudio Guadalajara\"\n    }\n};\n\nfunction activateAtelierFinder(index, el) {\n    document.querySelectorAll('.atelier-finder-item').forEach(item => item.classList.remove('active'));\n    el.classList.add('active');\n    \n    const card = document.getElementById('atelierPreviewTarget');\n    if (!card) return;\n    \n    card.style.opacity = '0';\n    card.style.transform = 'translateY(6px)';\n    \n    setTimeout(() => {\n        const d = atelierRooms[index] || atelierRooms[1];\n        card.innerHTML = `\n            <img src=\"${d.img}\" style=\"width:100%; height:260px; object-fit:cover; border-radius:16px; margin-bottom:16px; box-shadow:0 12px 30px rgba(0,0,0,0.5);\" alt=\"${d.title}\">\n            <span style=\"font-family:'Cinzel',serif; font-size:12px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">${d.tag} · ${d.location}</span>\n            <h3 style=\"font-family:'Cinzel', serif; font-size:24px; font-weight:700; color:#F8FAFB; margin:8px 0 10px 0;\">${d.title}</h3>\n            <p style=\"font-size:16px; line-height:1.6em; color:#94A3B8; margin-bottom:18px;\">${d.desc}</p>\n            <a href=\"javascript:void(0)\" onclick=\"openAtelierModal(${index})\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:12px 24px; border-radius:8px; font-family:'Cinzel',serif; font-weight:700; text-decoration:none; font-size:14px; letter-spacing:0.1em;\">Ver Expediente de Obra →</a>\n        `;\n        card.style.opacity = '1';\n        card.style.transform = 'translateY(0)';\n    }, 200);\n}\n\n// --- FX-04: STEPPER CONTROLLER ---\nconst atelierSteps = {\n    1: {\n        title: \"Medición Técnica y Escucha en Guadalajara\",\n        desc: \"Visitamos tu vivienda sin compromiso. Levantamos planos con distanciómetro láser e inspeccionamos muros de carga, bajantes y acometidas.\",\n        badge: \"FASE 01 · MEDICIÓN\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/estudio-reformas-guadalajara.webp\"\n    },\n    2: {\n        title: \"Modelado Tridimensional y Calidades\",\n        desc: \"Proyectamos la distribución espacial con renderizado 3D de alta fidelidad. Seleccionamos pavimentos Porcelanosa, griferías y maderas nobles.\",\n        badge: \"FASE 02 · DISEÑO 3D\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-cocina-isla-guadalajara.webp\"\n    },\n    3: {\n        title: \"Presupuesto Vinculante Partida por Partida\",\n        desc: \"Firmamos un contrato cerrado con penalizaciones por retraso injustificado, desglose por gremios y calendario exacto de finalización.\",\n        badge: \"FASE 03 · CONTRATO CERRADO\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/florin-director-tecnico.webp\"\n    },\n    4: {\n        title: \"Ejecución con Presencia Diaria Facultativa\",\n        desc: \"Protección rigurosa de accesos y zonas comunes. Coordinamos gremios propios con supervisión presencial en Guadalajara.\",\n        badge: \"FASE 04 · EJECUCIÓN\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-despues.webp\"\n    },\n    5: {\n        title: \"Entrega Impecable y Certificado de Garantía\",\n        desc: \"Limpieza profesional de fin de obra. Auditoría conjunta de remates y expedición de la garantía contractual de 2 años.\",\n        badge: \"FASE 05 · ENTREGA\",\n        img: \"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-salon-diafano-guadalajara.webp\"\n    }\n};\n\nfunction activateAtelierStep(index, el) {\n    document.querySelectorAll('.step-gold-btn').forEach(b => b.classList.remove('active'));\n    el.classList.add('active');\n    \n    const card = document.getElementById('atelierStepTarget');\n    if (!card) return;\n    \n    card.style.opacity = '0';\n    setTimeout(() => {\n        const s = atelierSteps[index] || atelierSteps[1];\n        card.innerHTML = `\n            <div style=\"display:flex; gap:28px; align-items:center; flex-wrap:wrap;\">\n                <div style=\"flex:1 1 50%; min-width:280px;\">\n                    <img src=\"${s.img}\" style=\"width:100%; height:320px; object-fit:cover; border-radius:18px; box-shadow:0 16px 40px rgba(0,0,0,0.6);\" alt=\"${s.title}\">\n                </div>\n                <div style=\"flex:1 1 45%; min-width:260px;\">\n                    <span style=\"font-family:'Cinzel',serif; font-size:12px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">${s.badge}</span>\n                    <h3 style=\"font-family:'Cinzel', serif; font-size:28px; font-weight:700; color:#F8FAFB; margin:10px 0 14px 0;\">${s.title}</h3>\n                    <p style=\"font-size:18px; line-height:1.65em; color:#94A3B8; margin-bottom:24px;\">${s.desc}</p>\n                    <a href=\"#contacto\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:14px 28px; border-radius:8px; font-family:'Cinzel',serif; font-weight:700; text-decoration:none; font-size:14px; letter-spacing:0.1em;\">Iniciar este paso →</a>\n                </div>\n            </div>\n        `;\n        card.style.opacity = '1';\n    }, 200);\n}\n\n// --- FX-05: TRADE ACCORDION TOGGLE ---\nfunction toggleAtelierAccordion(el) {\n    const parent = el.closest('.atelier-accordion-item');\n    const wasActive = parent.classList.contains('active');\n    \n    document.querySelectorAll('.atelier-accordion-item').forEach(item => {\n        item.classList.remove('active');\n    });\n    \n    if (!wasActive) {\n        parent.classList.add('active');\n    }\n}\n\n// --- FX-03: PROJECT DETAIL MODAL ---\nfunction openAtelierModal(index) {\n    const d = atelierRooms[index] || atelierRooms[1];\n    const target = document.getElementById('atelierModalTarget');\n    target.innerHTML = `\n        <span style=\"font-family:'Cinzel',serif; font-size:12px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">EXPEDIENTE DE OBRA SINGULAR · GUADALAJARA</span>\n        <h2 style=\"font-family:'Cinzel', serif; font-size:32px; font-weight:700; color:#F8FAFB; margin:8px 0 16px 0;\">${d.title}</h2>\n        <div style=\"display:flex; gap:20px; margin-bottom:20px; flex-wrap:wrap;\">\n            <div style=\"flex:1 1 55%; min-width:280px;\">\n                <img src=\"${d.img}\" style=\"width:100%; height:300px; object-fit:cover; border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,0.6);\" alt=\"${d.title}\">\n            </div>\n            <div style=\"flex:1 1 40%; min-width:240px; background:#121316; border:1px solid rgba(191,151,84,0.3); padding:20px; border-radius:16px;\">\n                <h4 style=\"margin:0 0 12px 0; font-family:'Cinzel',serif; color:#BF9754; font-size:16px; font-weight:700; letter-spacing:0.1em;\">DATOS CONSTRUCTIVOS</h4>\n                <div style=\"font-size:14px; color:#94A3B8; line-height:1.8em;\">\n                    <div><strong style=\"color:#F8FAFB;\">Ubicación:</strong> ${d.location}</div>\n                    <div><strong style=\"color:#F8FAFB;\">Plazo ejecutado:</strong> 7 semanas</div>\n                    <div><strong style=\"color:#F8FAFB;\">Garantía:</strong> 2 años legal por escrito</div>\n                    <div><strong style=\"color:#F8FAFB;\">Calidades:</strong> Porcelanosa & Roca</div>\n                    <div><strong style=\"color:#F8FAFB;\">Dirección:</strong> Florin</div>\n                </div>\n            </div>\n        </div>\n        <p style=\"font-size:17px; line-height:1.65em; color:#94A3B8; margin-bottom:24px;\">${d.desc}</p>\n        <div style=\"display:flex; gap:16px; align-items:center;\">\n            <a href=\"https://wa.me/34600000000\" target=\"_blank\" style=\"background:#BF9754; color:#121316; padding:14px 28px; border-radius:8px; font-family:'Cinzel',serif; font-weight:700; text-decoration:none; letter-spacing:0.08em;\">Quiero una reforma similar →</a>\n            <button onclick=\"closeAtelierModalDirect()\" style=\"background:transparent; border:1px solid rgba(255,255,255,0.2); padding:14px 24px; border-radius:8px; color:#F8FAFB; font-weight:600; cursor:pointer;\">Cerrar Ficha</button>\n        </div>\n    `;\n    const backdrop = document.getElementById('atelierModalBackdrop');\n    backdrop.classList.add('open');\n    document.body.style.overflow = 'hidden';\n}\nfunction closeAtelierModal(e) {\n    if (e.target.id === 'atelierModalBackdrop') {\n        closeAtelierModalDirect();\n    }\n}\nfunction closeAtelierModalDirect() {\n    const backdrop = document.getElementById('atelierModalBackdrop');\n    backdrop.classList.remove('open');\n    document.body.style.overflow = '';\n}\n</script>\n"
+        },
+        "elements": []
+      }
+    ]
+  },
+  {
+    "id": "9444afa",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "padding": {
+        "unit": "px",
+        "top": "22",
+        "right": "32",
+        "bottom": "22",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#121316",
+      "border_border": "solid",
+      "border_color": "rgba(191, 151, 84, 0.22)",
+      "border_width": {
+        "unit": "px",
+        "top": 0,
+        "right": 0,
+        "bottom": 1,
+        "left": 0,
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "739410d",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 10,
+            "sizes": []
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "width": {
+            "unit": "%",
+            "size": 30,
+            "sizes": []
+          },
+          "width_tablet": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "84c294c",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "FLORIN REFORMAS",
+              "header_size": "h4",
+              "align": "left",
+              "align_mobile": "left",
+              "title_color": "#F8FAFB",
+              "typography_typography": "custom",
+              "typography_font_family": "Cinzel, Georgia, serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 17,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              },
+              "typography_letter_spacing": {
+                "unit": "em",
+                "size": 0.1,
+                "sizes": []
+              },
+              "typography_font_style": "normal"
+            },
+            "elements": []
+          },
+          {
+            "id": "c0e7941",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "· ATELIER",
+              "header_size": "span",
+              "align": "left",
+              "align_mobile": "left",
+              "title_color": "#BF9754",
+              "typography_typography": "custom",
+              "typography_font_family": "Cinzel, Georgia, serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 13,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 11,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              },
+              "typography_letter_spacing": {
+                "unit": "em",
+                "size": 0.15,
+                "sizes": []
+              },
+              "typography_font_style": "normal"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "a6545db",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "width": {
+            "unit": "%",
+            "size": 40,
+            "sizes": []
+          },
+          "width_tablet": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "hide_mobile": "hidden",
+          "hide_tablet": "hidden"
+        },
+        "elements": [
+          {
+            "id": "49caf6c",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<style>@media(max-width:900px){.atelier-nav-menu{display:none !important;}}</style><div class='atelier-nav-menu' style='display:flex; gap:22px; font-weight:600; font-size:14px; font-family:Cinzel,serif; letter-spacing:0.08em; color:#94A3B8;'><a href='#estancias' style='color:#94A3B8; text-decoration:none; transition:color 0.2s;'>Estancias</a><a href='#proyectos' style='color:#94A3B8; text-decoration:none; transition:color 0.2s;'>Proyectos</a><a href='#fases' style='color:#94A3B8; text-decoration:none; transition:color 0.2s;'>Protocolo</a><a href='#oficios' style='color:#94A3B8; text-decoration:none; transition:color 0.2s;'>Gremios</a><a href='#tarifas' style='color:#94A3B8; text-decoration:none; transition:color 0.2s;'>Inversión</a><a href='#contacto' style='color:#94A3B8; text-decoration:none; transition:color 0.2s;'>Contacto</a></div>",
+              "text_color": "#94A3B8",
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 14,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "a86d7ba",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "boxed",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "flex-end",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          },
+          "width": {
+            "unit": "%",
+            "size": 30,
+            "sizes": []
+          },
+          "width_tablet": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          },
+          "width_mobile": {
+            "unit": "%",
+            "size": 100,
+            "sizes": []
+          }
+        },
+        "elements": [
+          {
+            "id": "099450f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "button",
+            "settings": {
+              "text": "Cita Privada →",
+              "link": {
+                "url": "#contacto",
+                "is_external": false,
+                "nofollow": false
+              },
+              "align": "left",
+              "align_mobile": "left",
+              "background_color": "#BF9754",
+              "button_text_color": "#121316",
+              "border_radius": {
+                "unit": "px",
+                "top": 8,
+                "right": 8,
+                "bottom": 8,
+                "left": 8,
+                "isLinked": true
+              },
+              "button_padding": {
+                "unit": "px",
+                "top": "15",
+                "right": "30",
+                "bottom": "15",
+                "left": "30",
+                "isLinked": false
+              },
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 14,
+                "sizes": []
+              },
+              "typography_font_weight": "700"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "43c327a",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 16,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "50",
+        "right": "32",
+        "bottom": "60",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#121316",
+      "css_classes": "hero-atelier-container",
+      "_element_id": "inicio"
+    },
+    "elements": [
+      {
+        "id": "e2cd32e",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "html",
+        "settings": {
+          "html": "<div class='hero-gold-bokeh'><div class='bokeh-gold-dot bg-gold-1'></div><div class='bokeh-gold-dot bg-gold-2'></div></div>"
+        },
+        "elements": []
+      },
+      {
+        "id": "470ec9b",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "30",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "ea9e4e7",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "24",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 60,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "762a122",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">01 ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">ATELIER DE REFORMAS INTEGRALES</span>\n    </div>\n    "
+                },
+                "elements": []
+              },
+              {
+                "id": "a713185",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Reformas Integrales de Alto Nivel,<br><span style='color:#BF9754; font-style:italic;'>diseñadas a tu medida.</span>",
+                  "header_size": "h1",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#F8FAFB",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 54,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 36,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.15,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.03,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "ad2366f",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='margin:0 0 16px 0; font-size:18px; line-height:1.65em; color:#CBD5E1; font-family:\"Plus Jakarta Sans\", sans-serif;'>Materiales nobles, dirección facultativa continua y presupuestos vinculantes. Transformamos viviendas singulares y chalets en Guadalajara con un estándar constructivo irrepetible, sin imprevistos ni costes ocultos.</p>",
+                  "text_color": "#CBD5E1",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 18,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "31d07f5",
+                "elType": "container",
+                "isInner": false,
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "row",
+                  "flex_direction_tablet": "column",
+                  "flex_direction_mobile": "column",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "flex_align_items": "stretch",
+                  "flex_justify_content": "flex-start",
+                  "padding": {
+                    "unit": "px",
+                    "top": "12",
+                    "right": "0",
+                    "bottom": "0",
+                    "left": "0",
+                    "isLinked": false
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "f94a484",
+                    "elType": "widget",
+                    "isInner": false,
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Solicitar Cita Privada →",
+                      "link": {
+                        "url": "#contacto",
+                        "is_external": false,
+                        "nofollow": false
+                      },
+                      "align": "left",
+                      "align_mobile": "left",
+                      "background_color": "#BF9754",
+                      "button_text_color": "#121316",
+                      "border_radius": {
+                        "unit": "px",
+                        "top": 8,
+                        "right": 8,
+                        "bottom": 8,
+                        "left": 8,
+                        "isLinked": true
+                      },
+                      "button_padding": {
+                        "unit": "px",
+                        "top": "15",
+                        "right": "30",
+                        "bottom": "15",
+                        "left": "30",
+                        "isLinked": false
+                      },
+                      "typography_typography": "custom",
+                      "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "700"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "efd152c",
+                    "elType": "widget",
+                    "isInner": false,
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Ver Portfolio Singular",
+                      "link": {
+                        "url": "#proyectos",
+                        "is_external": false,
+                        "nofollow": false
+                      },
+                      "align": "left",
+                      "align_mobile": "left",
+                      "background_color": "transparent",
+                      "button_text_color": "#BF9754",
+                      "border_radius": {
+                        "unit": "px",
+                        "top": 8,
+                        "right": 8,
+                        "bottom": 8,
+                        "left": 8,
+                        "isLinked": true
+                      },
+                      "button_padding": {
+                        "unit": "px",
+                        "top": "15",
+                        "right": "30",
+                        "bottom": "15",
+                        "left": "30",
+                        "isLinked": false
+                      },
+                      "typography_typography": "custom",
+                      "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "700",
+                      "border_border": "solid",
+                      "border_color": "#BF9754",
+                      "border_width": {
+                        "unit": "px",
+                        "top": 1,
+                        "right": 1,
+                        "bottom": 1,
+                        "left": 1,
+                        "isLinked": true
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "4f93ef4",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 12,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "28",
+                "right": "26",
+                "bottom": "28",
+                "left": "26",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 40,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "background_background": "classic",
+              "background_color": "#1A1C20",
+              "border_radius": {
+                "unit": "px",
+                "top": 18,
+                "right": 18,
+                "bottom": 18,
+                "left": 18,
+                "isLinked": true
+              },
+              "border_border": "solid",
+              "border_color": "rgba(191, 151, 84, 0.22)",
+              "border_width": {
+                "unit": "px",
+                "top": 1,
+                "right": 1,
+                "bottom": 1,
+                "left": 1,
+                "isLinked": false
+              }
+            },
+            "elements": [
+              {
+                "id": "e3f1e6f",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "COMPROMISO ATELIER",
+                  "header_size": "h4",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#BF9754",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 14,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.15,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "fe087f8",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<ul style='margin:0; padding-left:18px; color:#CBD5E1; line-height:1.75em; font-size:15px; font-family:\"Plus Jakarta Sans\", sans-serif;'><li>Viviendas exclusivas en Guadalajara y Madrid</li><li>Chalets de autor en Cabanillas y Marchamalo</li><li>Cocinas porcelánicas Calacatta e iluminación de diseño</li><li>Supervisión diaria presencial por Florin</li></ul>",
+                  "text_color": "#94A3B8",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "16859ad",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "image",
+        "settings": {
+          "image": {
+            "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-despues.webp",
+            "id": 49
+          },
+          "image_size": "full",
+          "caption": "Obra de lujo residencial ejecutada en Guadalajara",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 16,
+            "blur": 40,
+            "spread": 0,
+            "color": "rgba(0,0,0,0.5)"
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "fa809c9",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "space-between",
+          "padding": {
+            "unit": "px",
+            "top": "14",
+            "right": "4",
+            "bottom": "0",
+            "left": "4",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "c6194bb",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='color:#64748B; font-size:14px; font-weight:600; font-family:Cinzel,serif; letter-spacing:0.08em;'>FLORIN REFORMAS · ALTA REFORMA RESIDENCIAL EN GUADALAJARA</span>",
+              "text_color": "#94A3B8",
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 14,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          },
+          {
+            "id": "3e1884f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<span style='color:#BF9754; font-size:14px; font-weight:700; font-family:Cinzel,serif; letter-spacing:0.08em;'>DESLIZA PARA CONOCER NUESTRAS OBRAS ↓</span>",
+              "text_color": "#94A3B8",
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 14,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bf1365b",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "70",
+        "right": "32",
+        "bottom": "70",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#121316",
+      "border_border": "solid",
+      "border_color": "rgba(255, 255, 255, 0.08)",
+      "border_width": {
+        "unit": "px",
+        "top": 1,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "isLinked": false
+      },
+      "_element_id": "estancias"
+    },
+    "elements": [
+      {
+        "id": "9f29a17",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "20",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "04539ac",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "html",
+            "settings": {
+              "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">02 ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">BUSCADOR DE ESPACIOS SINGULARES</span>\n    </div>\n    "
+            },
+            "elements": []
+          },
+          {
+            "id": "ad0733f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "¿Qué espacio deseas transformar en Guadalajara?",
+              "header_size": "h2",
+              "align": "left",
+              "align_mobile": "left",
+              "title_color": "#F8FAFB",
+              "typography_typography": "custom",
+              "typography_font_family": "Cinzel, Georgia, serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 42,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              },
+              "typography_letter_spacing": {
+                "unit": "em",
+                "size": 0.04,
+                "sizes": []
+              },
+              "typography_font_style": "normal"
+            },
+            "elements": []
+          },
+          {
+            "id": "4ee07f6",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='margin:0 0 16px 0; font-size:18px; line-height:1.65em; color:#94A3B8; font-family:\"Plus Jakarta Sans\", sans-serif;'>Selecciona el tipo de intervención que requiere tu inmueble. Visualiza al instante el alcance arquitectónico y los acabados aplicados.</p>",
+              "text_color": "#94A3B8",
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "6b445f7",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 32,
+            "sizes": []
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "space-between",
+          "padding": {
+            "unit": "px",
+            "top": "20",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "b99ef75",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 8,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "20",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 55,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "0a97797",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n<div style=\"display:flex; flex-direction:column; gap:8px;\">\n    <div class=\"atelier-finder-item active\" onclick=\"activateAtelierFinder(1, this)\">\n        <div><span class=\"num\">01</span><span class=\"title\">Reforma Integral de Vivienda (Pisos y Chalets)</span></div>\n        <span class=\"arrow\">→</span>\n    </div>\n    <div class=\"atelier-finder-item\" onclick=\"activateAtelierFinder(2, this)\">\n        <div><span class=\"num\">02</span><span class=\"title\">Cocina Abierta de Diseño con Isla y Muebles a Medida</span></div>\n        <span class=\"arrow\">→</span>\n    </div>\n    <div class=\"atelier-finder-item\" onclick=\"activateAtelierFinder(3, this)\">\n        <div><span class=\"num\">03</span><span class=\"title\">Reforma de Baños Suite & Sustitución de Bañera</span></div>\n        <span class=\"arrow\">→</span>\n    </div>\n    <div class=\"atelier-finder-item\" onclick=\"activateAtelierFinder(4, this)\">\n        <div><span class=\"num\">04</span><span class=\"title\">Chalet Unifamiliar, Fachada SATE y Aislamiento</span></div>\n        <span class=\"arrow\">→</span>\n    </div>\n    <div class=\"atelier-finder-item\" onclick=\"activateAtelierFinder(5, this)\">\n        <div><span class=\"num\">05</span><span class=\"title\">Climatización Eficiente, Aerotermia y Suelo Radiante</span></div>\n        <span class=\"arrow\">→</span>\n    </div>\n    <div class=\"atelier-finder-item\" onclick=\"activateAtelierFinder(6, this)\">\n        <div><span class=\"num\">06</span><span class=\"title\">Asesoramiento Técnico, Licencias y Presupuesto Vinculante</span></div>\n        <span class=\"arrow\">→</span>\n    </div>\n</div>\n"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "b7c9f98",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 45,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "56b94ec",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n<div class=\"atelier-preview-card\" id=\"atelierPreviewTarget\" style=\"background:#1A1C20; border:1px solid #BF9754; border-radius:20px; padding:28px; box-shadow:0 12px 36px rgba(0,0,0,0.4); transition:all 0.35s ease;\">\n    <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-despues.webp\" style=\"width:100%; height:260px; object-fit:cover; border-radius:16px; margin-bottom:16px; box-shadow:0 10px 24px rgba(0,0,0,0.5);\" alt=\"Piso singular en Guadalajara\">\n    <span style=\"font-family:'Cinzel',serif; font-size:12px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">Reforma Integral · Av. del Ejército</span>\n    <h3 style=\"font-family:'Cinzel', serif; font-size:24px; font-weight:700; color:#F8FAFB; margin:8px 0 10px 0;\">Piso Completo en Guadalajara</h3>\n    <p style=\"font-size:16px; line-height:1.6em; color:#94A3B8; margin-bottom:18px;\">Reforma integral con derribo de tabiques, iluminación lineal LED cálida, falso techo acústico y suelos laminados AC5 de máxima resistencia.</p>\n    <a href=\"javascript:void(0)\" onclick=\"openAtelierModal(1)\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:12px 24px; border-radius:8px; font-family:'Cinzel',serif; font-weight:700; text-decoration:none; font-size:14px; letter-spacing:0.1em;\">Ver Ficha de Caso →</a>\n</div>\n"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e410f5f",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "70",
+        "right": "32",
+        "bottom": "70",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#16181C",
+      "border_border": "solid",
+      "border_color": "rgba(255, 255, 255, 0.08)",
+      "border_width": {
+        "unit": "px",
+        "top": 1,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "isLinked": false
+      },
+      "_element_id": "proyectos"
+    },
+    "elements": [
+      {
+        "id": "348d0c4",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "24",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "05ca0b1",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "html",
+            "settings": {
+              "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">03 ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">PORTFOLIO DE OBRAS SINGULARES</span>\n    </div>\n    "
+            },
+            "elements": []
+          },
+          {
+            "id": "0772518",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Transformaciones que redefinen la arquitectura de tu hogar.",
+              "header_size": "h2",
+              "align": "left",
+              "align_mobile": "left",
+              "title_color": "#F8FAFB",
+              "typography_typography": "custom",
+              "typography_font_family": "Cinzel, Georgia, serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 42,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              },
+              "typography_letter_spacing": {
+                "unit": "em",
+                "size": 0.04,
+                "sizes": []
+              },
+              "typography_font_style": "normal"
+            },
+            "elements": []
+          },
+          {
+            "id": "dc13a5f",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='margin:0 0 16px 0; font-size:18px; line-height:1.65em; color:#94A3B8; font-family:\"Plus Jakarta Sans\", sans-serif;'>Un atelier constructivo basado en ejecuciones singulares. Clica en cualquier obra para desplegar el expediente técnico con planos y materiales.</p>",
+              "text_color": "#94A3B8",
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "848b503",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "space-between",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "12",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "c38055f",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 24,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 31,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "97eb573",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div onclick=\"openAtelierModal(4)\" style=\"background:#1A1C20; border:1px solid rgba(191,151,84,0.22); border-radius:20px; padding:20px; cursor:pointer; transition:all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow:0 8px 24px rgba(0,0,0,0.4);\" onmouseover=\"this.style.transform='translateY(-6px)'; this.style.boxShadow='0 18px 40px rgba(191,151,84,0.18)'; this.style.borderColor='#BF9754';\" onmouseout=\"this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.4)'; this.style.borderColor='rgba(191,151,84,0.22)';\">\n        <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-chalet-cabanillas-guadalajara.webp\" style=\"width:100%; height:220px; object-fit:cover; border-radius:14px; margin-bottom:14px;\" alt=\"Chalet en Cabanillas del Campo\">\n        <span style=\"font-family:'Cinzel',serif; color:#BF9754; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:6px;\">Reforma Integral</span>\n        <h3 style=\"font-family:'Cinzel', serif; font-size:20px; font-weight:700; color:#F8FAFB; margin:0 0 8px 0;\">Chalet en Cabanillas del Campo</h3>\n        <p style=\"font-size:15px; line-height:1.55em; color:#94A3B8; margin:0 0 14px 0;\">Reforma integral con fachada ventilada y distribución diáfana.</p>\n        <span style=\"font-family:'Cinzel',serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.1em;\">Expediente de Obra +</span>\n    </div>\n    "
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "ee0eb56",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 24,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 31,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "5cb4605",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div onclick=\"openAtelierModal(2)\" style=\"background:#1A1C20; border:1px solid rgba(191,151,84,0.22); border-radius:20px; padding:20px; cursor:pointer; transition:all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow:0 8px 24px rgba(0,0,0,0.4);\" onmouseover=\"this.style.transform='translateY(-6px)'; this.style.boxShadow='0 18px 40px rgba(191,151,84,0.18)'; this.style.borderColor='#BF9754';\" onmouseout=\"this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.4)'; this.style.borderColor='rgba(191,151,84,0.22)';\">\n        <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-cocina-isla-guadalajara.webp\" style=\"width:100%; height:220px; object-fit:cover; border-radius:14px; margin-bottom:14px;\" alt=\"Ático en Aguas Vivas\">\n        <span style=\"font-family:'Cinzel',serif; color:#BF9754; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:6px;\">Cocina de Autor</span>\n        <h3 style=\"font-family:'Cinzel', serif; font-size:20px; font-weight:700; color:#F8FAFB; margin:0 0 8px 0;\">Ático en Aguas Vivas</h3>\n        <p style=\"font-size:15px; line-height:1.55em; color:#94A3B8; margin:0 0 14px 0;\">Cocina abierta con isla porcelánica y acabados cepillados.</p>\n        <span style=\"font-family:'Cinzel',serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.1em;\">Expediente de Obra +</span>\n    </div>\n    "
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "a664edf",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 24,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 31,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "52e104f",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div onclick=\"openAtelierModal(3)\" style=\"background:#1A1C20; border:1px solid rgba(191,151,84,0.22); border-radius:20px; padding:20px; cursor:pointer; transition:all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow:0 8px 24px rgba(0,0,0,0.4);\" onmouseover=\"this.style.transform='translateY(-6px)'; this.style.boxShadow='0 18px 40px rgba(191,151,84,0.18)'; this.style.borderColor='#BF9754';\" onmouseout=\"this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.4)'; this.style.borderColor='rgba(191,151,84,0.22)';\">\n        <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-bano-moderno-guadalajara.webp\" style=\"width:100%; height:220px; object-fit:cover; border-radius:14px; margin-bottom:14px;\" alt=\"Piso en Centro de Guadalajara\">\n        <span style=\"font-family:'Cinzel',serif; color:#BF9754; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:6px;\">Baño Suite & Spa</span>\n        <h3 style=\"font-family:'Cinzel', serif; font-size:20px; font-weight:700; color:#F8FAFB; margin:0 0 8px 0;\">Piso en Centro de Guadalajara</h3>\n        <p style=\"font-size:15px; line-height:1.55em; color:#94A3B8; margin:0 0 14px 0;\">Baño principal con ducha a ras de suelo y grifería empotrada.</p>\n        <span style=\"font-family:'Cinzel',serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.1em;\">Expediente de Obra +</span>\n    </div>\n    "
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "7d5b652",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "space-between",
+          "padding": {
+            "unit": "px",
+            "top": "12",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "674d66c",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 24,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 31,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "0a9bd38",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div onclick=\"openAtelierModal(1)\" style=\"background:#1A1C20; border:1px solid rgba(191,151,84,0.22); border-radius:20px; padding:20px; cursor:pointer; transition:all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow:0 8px 24px rgba(0,0,0,0.4);\" onmouseover=\"this.style.transform='translateY(-6px)'; this.style.boxShadow='0 18px 40px rgba(191,151,84,0.18)'; this.style.borderColor='#BF9754';\" onmouseout=\"this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.4)'; this.style.borderColor='rgba(191,151,84,0.22)';\">\n        <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-salon-diafano-guadalajara.webp\" style=\"width:100%; height:220px; object-fit:cover; border-radius:14px; margin-bottom:14px;\" alt=\"Vivienda en Marchamalo\">\n        <span style=\"font-family:'Cinzel',serif; color:#BF9754; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:6px;\">Salón Diáfano</span>\n        <h3 style=\"font-family:'Cinzel', serif; font-size:20px; font-weight:700; color:#F8FAFB; margin:0 0 8px 0;\">Vivienda en Marchamalo</h3>\n        <p style=\"font-size:15px; line-height:1.55em; color:#94A3B8; margin:0 0 14px 0;\">Reforma de salón con tarima AC5 y cerramiento acristalado.</p>\n        <span style=\"font-family:'Cinzel',serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.1em;\">Expediente de Obra +</span>\n    </div>\n    "
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "accce76",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "flex_align_items": "center",
+              "flex_justify_content": "center",
+              "padding": {
+                "unit": "px",
+                "top": "36",
+                "right": "24",
+                "bottom": "36",
+                "left": "24",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 31,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "background_background": "classic",
+              "background_color": "#121316",
+              "border_radius": {
+                "unit": "px",
+                "top": 20,
+                "right": 20,
+                "bottom": 20,
+                "left": 20,
+                "isLinked": true
+              },
+              "border_border": "solid",
+              "border_color": "#BF9754",
+              "border_width": {
+                "unit": "px",
+                "top": 1,
+                "right": 1,
+                "bottom": 1,
+                "left": 1,
+                "isLinked": false
+              }
+            },
+            "elements": [
+              {
+                "id": "29ef0f2",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "OBRAS CERTIFICADAS",
+                  "header_size": "h5",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#BF9754",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 13,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.18,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "a8628ad",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Más de 15 años liderando reformas en Guadalajara.",
+                  "header_size": "h3",
+                  "align": "center",
+                  "align_mobile": "left",
+                  "title_color": "#F8FAFB",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 22,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 18,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.04,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "c675261",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='text-align:center; color:#CBD5E1; margin:0; font-size:18px; line-height:1.6em;'>Calidades Porcelanosa, contratos cerrados sin letra pequeña y supervisión técnica diaria.</p>",
+                  "text_color": "#CBD5E1",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 18,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "8b4571e",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Presupuesto →",
+                  "link": {
+                    "url": "#contacto",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "align": "left",
+                  "align_mobile": "left",
+                  "background_color": "#BF9754",
+                  "button_text_color": "#121316",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 8,
+                    "right": 8,
+                    "bottom": 8,
+                    "left": 8,
+                    "isLinked": true
+                  },
+                  "button_padding": {
+                    "unit": "px",
+                    "top": "15",
+                    "right": "30",
+                    "bottom": "15",
+                    "left": "30",
+                    "isLinked": false
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 14,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "df6bb5c",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 24,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 31,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "b57c8ff",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div onclick=\"openAtelierModal(5)\" style=\"background:#1A1C20; border:1px solid rgba(191,151,84,0.22); border-radius:20px; padding:20px; cursor:pointer; transition:all 0.3s cubic-bezier(0.16, 1, 0.3, 1); box-shadow:0 8px 24px rgba(0,0,0,0.4);\" onmouseover=\"this.style.transform='translateY(-6px)'; this.style.boxShadow='0 18px 40px rgba(191,151,84,0.18)'; this.style.borderColor='#BF9754';\" onmouseout=\"this.style.transform='none'; this.style.boxShadow='0 8px 24px rgba(0,0,0,0.4)'; this.style.borderColor='rgba(191,151,84,0.22)';\">\n        <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/detalle-acabados-obra-guadalajara.webp\" style=\"width:100%; height:220px; object-fit:cover; border-radius:14px; margin-bottom:14px;\" alt=\"Residencial en Alovera\">\n        <span style=\"font-family:'Cinzel',serif; color:#BF9754; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; display:block; margin-bottom:6px;\">Detalles de Obra</span>\n        <h3 style=\"font-family:'Cinzel', serif; font-size:20px; font-weight:700; color:#F8FAFB; margin:0 0 8px 0;\">Residencial en Alovera</h3>\n        <p style=\"font-size:15px; line-height:1.55em; color:#94A3B8; margin:0 0 14px 0;\">Detalles de carpintería a medida e iluminación indirecta cálida.</p>\n        <span style=\"font-family:'Cinzel',serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.1em;\">Expediente de Obra +</span>\n    </div>\n    "
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11b63e5",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 28,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "70",
+        "right": "32",
+        "bottom": "70",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#121316",
+      "border_border": "solid",
+      "border_color": "rgba(255, 255, 255, 0.08)",
+      "border_width": {
+        "unit": "px",
+        "top": 1,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "isLinked": false
+      },
+      "_element_id": "fases"
+    },
+    "elements": [
+      {
+        "id": "336bbc7",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "16",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "1f9b05d",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "html",
+            "settings": {
+              "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">04 ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">PROTOCOLO CONSTRUCTIVO DE ATELIER</span>\n    </div>\n    "
+            },
+            "elements": []
+          },
+          {
+            "id": "b0b0ed2",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Un proceso riguroso y transparente desde la primera visita.",
+              "header_size": "h2",
+              "align": "left",
+              "align_mobile": "left",
+              "title_color": "#F8FAFB",
+              "typography_typography": "custom",
+              "typography_font_family": "Cinzel, Georgia, serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 42,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              },
+              "typography_letter_spacing": {
+                "unit": "em",
+                "size": 0.04,
+                "sizes": []
+              },
+              "typography_font_style": "normal"
+            },
+            "elements": []
+          },
+          {
+            "id": "839f572",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='margin:0 0 16px 0; font-size:18px; line-height:1.65em; color:#94A3B8; font-family:\"Plus Jakarta Sans\", sans-serif;'>Coordinar gremios de élite exige metodología. Clica en cada fase para conocer el protocolo de supervisión técnica sobre el terreno.</p>",
+              "text_color": "#94A3B8",
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "84e50d3",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 10,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "16",
+            "right": "0",
+            "bottom": "24",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "4584b03",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "html",
+            "settings": {
+              "html": "\n<div>\n    <!-- Interactive Detail Container -->\n    <div id=\"atelierStepTarget\" style=\"background:#1A1C20; border:1px solid #BF9754; border-radius:24px; padding:36px; margin-bottom:24px; transition:opacity 0.3s ease; box-shadow:0 16px 40px rgba(0,0,0,0.5);\">\n        <div style=\"display:flex; gap:28px; align-items:center; flex-wrap:wrap;\">\n            <div style=\"flex:1 1 50%; min-width:280px;\">\n                <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/estudio-reformas-guadalajara.webp\" style=\"width:100%; height:320px; object-fit:cover; border-radius:18px; box-shadow:0 12px 32px rgba(0,0,0,0.6);\" alt=\"Medición técnica en Guadalajara\">\n            </div>\n            <div style=\"flex:1 1 45%; min-width:260px;\">\n                <span style=\"font-family:'Cinzel',serif; font-size:12px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">FASE 01 · MEDICIÓN TÉCNICA</span>\n                <h3 style=\"font-family:'Cinzel', serif; font-size:28px; font-weight:700; color:#F8FAFB; margin:10px 0 14px 0;\">Medición Técnica y Escucha en Guadalajara</h3>\n                <p style=\"font-size:18px; line-height:1.65em; color:#94A3B8; margin-bottom:24px;\">Visitamos tu piso o chalet sin compromiso. Levantamos cotas milimétricas con láser, inspeccionamos muros de carga, bajantes y red eléctrica.</p>\n                <a href=\"#contacto\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:14px 28px; border-radius:8px; font-family:'Cinzel',serif; font-weight:700; text-decoration:none; font-size:14px; letter-spacing:0.1em;\">Pedir Visita Gratuita →</a>\n            </div>\n        </div>\n    </div>\n\n    <!-- Stepper Navigation Underline Bar -->\n    <div class=\"step-gold-bar\">\n        <div class=\"step-gold-btn active\" onclick=\"activateAtelierStep(1, this)\">\n            <span class=\"step-label\">Fase 01</span>\n            <div class=\"step-title\">01 · Medición</div>\n            <div class=\"step-progress\"></div>\n        </div>\n        <div class=\"step-gold-btn\" onclick=\"activateAtelierStep(2, this)\">\n            <span class=\"step-label\">Fase 02</span>\n            <div class=\"step-title\">02 · Diseño 3D</div>\n            <div class=\"step-progress\"></div>\n        </div>\n        <div class=\"step-gold-btn\" onclick=\"activateAtelierStep(3, this)\">\n            <span class=\"step-label\">Fase 03</span>\n            <div class=\"step-title\">03 · Contrato</div>\n            <div class=\"step-progress\"></div>\n        </div>\n        <div class=\"step-gold-btn\" onclick=\"activateAtelierStep(4, this)\">\n            <span class=\"step-label\">Fase 04</span>\n            <div class=\"step-title\">04 · Ejecución</div>\n            <div class=\"step-progress\"></div>\n        </div>\n        <div class=\"step-gold-btn\" onclick=\"activateAtelierStep(5, this)\">\n            <span class=\"step-label\">Fase 05</span>\n            <div class=\"step-title\">05 · Entrega</div>\n            <div class=\"step-progress\"></div>\n        </div>\n    </div>\n</div>\n"
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "4673fe6",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 24,
+            "sizes": []
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "32",
+            "right": "32",
+            "bottom": "32",
+            "left": "32",
+            "isLinked": false
+          },
+          "background_background": "classic",
+          "background_color": "#1A1C20",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "border_border": "solid",
+          "border_color": "rgba(191, 151, 84, 0.22)",
+          "border_width": {
+            "unit": "px",
+            "top": 1,
+            "right": 1,
+            "bottom": 1,
+            "left": 1,
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "cfb34e4",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 24,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "16",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 35,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "eaed82a",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "image",
+                "settings": {
+                  "image": {
+                    "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/florin-director-tecnico.webp",
+                    "id": 57
+                  },
+                  "image_size": "full",
+                  "caption": "Florin y dirección técnica colegiada de reformas en Guadalajara",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 16,
+                    "right": 16,
+                    "bottom": 16,
+                    "left": 16,
+                    "isLinked": true
+                  },
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 16,
+                    "blur": 40,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.5)"
+                  }
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "1c72443",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "16",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 65,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "3ce34b1",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "DIRECCIÓN FACULTATIVA · FLORIN REFORMAS",
+                  "header_size": "h5",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#BF9754",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 13,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.18,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "5ad20e8",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Florin & Equipo de Arquitectura Técnica",
+                  "header_size": "h3",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#F8FAFB",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 22,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.04,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "f53c5f6",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:20px; font-style:italic; color:#CBD5E1; line-height:1.45em; margin:0;'>«El mejor resultado no debe parecer una obra improvisada, sino un hogar armónico y noble donde cada oficio ha trabajado con maestría.»</p>",
+                  "text_color": "#94A3B8",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 20,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "3811497",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='display:flex; gap:24px; flex-wrap:wrap; margin-top:10px; border-top:1px solid rgba(255,255,255,0.08); padding-top:16px;'><div><strong style='font-family:Cinzel,serif; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#BF9754;'>Especialidad</strong><br><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Alta Reforma & Dirección de Obra</span></div><div><strong style='font-family:Cinzel,serif; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#BF9754;'>Zona</strong><br><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Guadalajara y Corredor del Henares</span></div><div><strong style='font-family:Cinzel,serif; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#BF9754;'>Garantía</strong><br><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Contrato Vinculante 2 Años</span></div></div>",
+                  "text_color": "#94A3B8",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "218cc0d",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "70",
+        "right": "32",
+        "bottom": "70",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#16181C",
+      "border_border": "solid",
+      "border_color": "rgba(255, 255, 255, 0.08)",
+      "border_width": {
+        "unit": "px",
+        "top": 1,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "isLinked": false
+      },
+      "_element_id": "oficios"
+    },
+    "elements": [
+      {
+        "id": "cb7803f",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 12,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "20",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "cbd8b7b",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "html",
+            "settings": {
+              "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">05 ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">DISCIPLINAS Y GREMIOS PROPIOS</span>\n    </div>\n    "
+            },
+            "elements": []
+          },
+          {
+            "id": "21f3759",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "heading",
+            "settings": {
+              "title": "Cada partida ejecutada por maestros artesanos y técnicos colegiados.",
+              "header_size": "h2",
+              "align": "left",
+              "align_mobile": "left",
+              "title_color": "#F8FAFB",
+              "typography_typography": "custom",
+              "typography_font_family": "Cinzel, Georgia, serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 42,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 30,
+                "sizes": []
+              },
+              "typography_font_weight": "700",
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.2,
+                "sizes": []
+              },
+              "typography_letter_spacing": {
+                "unit": "em",
+                "size": 0.04,
+                "sizes": []
+              },
+              "typography_font_style": "normal"
+            },
+            "elements": []
+          },
+          {
+            "id": "b620226",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<p style='margin:0 0 16px 0; font-size:18px; line-height:1.65em; color:#94A3B8; font-family:\"Plus Jakarta Sans\", sans-serif;'>Sin subcontratas rotativas. Nuestro equipo propio asume la responsabilidad civil y constructiva de principio a fin.</p>",
+              "text_color": "#94A3B8",
+              "typography_typography": "custom",
+              "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+              "typography_font_size": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      },
+      {
+        "id": "370ad40",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "flex-start",
+          "padding": {
+            "unit": "px",
+            "top": "16",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "a3ce0f8",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "html",
+            "settings": {
+              "html": "\n<div>\n    <!-- Item 1: Albañilería & Derribos (Expanded by default) -->\n    <div class=\"atelier-accordion-item active\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\">\n            <div class=\"trade-name\">\n                <span style=\"color:#BF9754; font-family:'Cinzel',serif; font-weight:700;\">01</span>\n                <span>Albañilería Integral, Tabiquería & Pladur</span>\n            </div>\n            <div class=\"trade-toggle-icon\">+</div>\n        </div>\n        <div class=\"atelier-body\">\n            <div style=\"display:flex; gap:24px; align-items:center; flex-wrap:wrap;\">\n                <div style=\"flex:1 1 30%; min-width:200px;\">\n                    <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-despues.webp\" style=\"width:100%; height:160px; object-fit:cover; border-radius:12px;\" alt=\"Albañilería de autor en Guadalajara\">\n                </div>\n                <div style=\"flex:1 1 40%; min-width:240px;\">\n                    <h4 style=\"margin:0 0 8px 0; font-family:'Cinzel',serif; color:#F8FAFB; font-size:18px;\">Estructuras y Redistribución</h4>\n                    <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0 0 10px 0;\">Demoliciones selectivas con evacuación a planta autorizada, refuerzos metálicos, trasdosados acústicos y falsos techos con fosa perimetral.</p>\n                    <span style=\"font-size:13px; font-weight:700; color:#BF9754; font-family:Cinzel,serif; letter-spacing:0.08em;\">Plazo medio: 1 a 3 semanas.</span>\n                </div>\n                <div style=\"flex:1 1 20%; min-width:160px; text-align:right;\">\n                    <a href=\"#contacto\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:10px 20px; border-radius:6px; font-size:13px; font-family:Cinzel,serif; font-weight:700; text-decoration:none; letter-spacing:0.08em;\">Consultar Partida →</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <!-- Item 2: Fontanería & Saneamiento -->\n    <div class=\"atelier-accordion-item\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\">\n            <div class=\"trade-name\">\n                <span style=\"color:#BF9754; font-family:'Cinzel',serif; font-weight:700;\">02</span>\n                <span>Fontanería, Bajantes & Grifería Empotrada</span>\n            </div>\n            <div class=\"trade-toggle-icon\">+</div>\n        </div>\n        <div class=\"atelier-body\">\n            <div style=\"display:flex; gap:24px; align-items:center; flex-wrap:wrap;\">\n                <div style=\"flex:1 1 30%; min-width:200px;\">\n                    <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-bano-moderno-guadalajara.webp\" style=\"width:100%; height:160px; object-fit:cover; border-radius:12px;\" alt=\"Fontanería de autor Guadalajara\">\n                </div>\n                <div style=\"flex:1 1 40%; min-width:240px;\">\n                    <h4 style=\"margin:0 0 8px 0; font-family:'Cinzel',serif; color:#F8FAFB; font-size:18px;\">Redes Nuevas y Pruebas de Presión</h4>\n                    <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0 0 10px 0;\">Sustitución de tuberías por multicapa y polietileno reticulado, botes sifónicos y desagües insonorizados con estanqueidad certificada.</p>\n                    <span style=\"font-size:13px; font-weight:700; color:#BF9754; font-family:Cinzel,serif; letter-spacing:0.08em;\">Garantía certificada de presión.</span>\n                </div>\n                <div style=\"flex:1 1 20%; min-width:160px; text-align:right;\">\n                    <a href=\"#contacto\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:10px 20px; border-radius:6px; font-size:13px; font-family:Cinzel,serif; font-weight:700; text-decoration:none; letter-spacing:0.08em;\">Consultar Partida →</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <!-- Item 3: Electricidad & Domótica -->\n    <div class=\"atelier-accordion-item\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\">\n            <div class=\"trade-name\">\n                <span style=\"color:#BF9754; font-family:'Cinzel',serif; font-weight:700;\">03</span>\n                <span>Electricidad, Iluminación LED & Boletín Oficial</span>\n            </div>\n            <div class=\"trade-toggle-icon\">+</div>\n        </div>\n        <div class=\"atelier-body\">\n            <div style=\"display:flex; gap:24px; align-items:center; flex-wrap:wrap;\">\n                <div style=\"flex:1 1 30%; min-width:200px;\">\n                    <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/detalle-acabados-obra-guadalajara.webp\" style=\"width:100%; height:160px; object-fit:cover; border-radius:12px;\" alt=\"Electricidad autorizada Guadalajara\">\n                </div>\n                <div style=\"flex:1 1 40%; min-width:240px;\">\n                    <h4 style=\"margin:0 0 8px 0; font-family:'Cinzel',serif; color:#F8FAFB; font-size:18px;\">Cuadros Eléctricos y Confort Lumínico</h4>\n                    <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0 0 10px 0;\">Nueva instalación bajo normativa REBT con emisión de Certificado de Instalación Eléctrica oficial y líneas independientes protegidas.</p>\n                    <span style=\"font-size:13px; font-weight:700; color:#BF9754; font-family:Cinzel,serif; letter-spacing:0.08em;\">Instalador oficial colegiado.</span>\n                </div>\n                <div style=\"flex:1 1 20%; min-width:160px; text-align:right;\">\n                    <a href=\"#contacto\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:10px 20px; border-radius:6px; font-size:13px; font-family:Cinzel,serif; font-weight:700; text-decoration:none; letter-spacing:0.08em;\">Consultar Partida →</a>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <!-- Item 4: Aerotermia & Suelo Radiante -->\n    <div class=\"atelier-accordion-item\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\">\n            <div class=\"trade-name\">\n                <span style=\"color:#BF9754; font-family:'Cinzel',serif; font-weight:700;\">04</span>\n                <span>Aerotermia, Aire Acondicionado & Suelo Radiante</span>\n            </div>\n            <div class=\"trade-toggle-icon\">+</div>\n        </div>\n        <div class=\"atelier-body\">\n            <div style=\"display:flex; gap:24px; align-items:center; flex-wrap:wrap;\">\n                <div style=\"flex:1 1 30%; min-width:200px;\">\n                    <img src=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-chalet-cabanillas-guadalajara.webp\" style=\"width:100%; height:160px; object-fit:cover; border-radius:12px;\" alt=\"Aerotermia Guadalajara\">\n                </div>\n                <div style=\"flex:1 1 40%; min-width:240px;\">\n                    <h4 style=\"margin:0 0 8px 0; font-family:'Cinzel',serif; color:#F8FAFB; font-size:18px;\">Eficiencia Energética y Confort Integral</h4>\n                    <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0 0 10px 0;\">Bombas de calor Daikin / Mitsubishi con control inteligente por estancia y tramitación de ayudas Next Generation en Guadalajara.</p>\n                    <span style=\"font-size:13px; font-weight:700; color:#BF9754; font-family:Cinzel,serif; letter-spacing:0.08em;\">Ahorro de hasta el 70% en climatización.</span>\n                </div>\n                <div style=\"flex:1 1 20%; min-width:160px; text-align:right;\">\n                    <a href=\"#contacto\" style=\"display:inline-block; background:#BF9754; color:#121316; padding:10px 20px; border-radius:6px; font-size:13px; font-family:Cinzel,serif; font-weight:700; text-decoration:none; letter-spacing:0.08em;\">Consultar Partida →</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n"
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f84147d",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "70",
+        "right": "32",
+        "bottom": "70",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#121316",
+      "border_border": "solid",
+      "border_color": "rgba(255, 255, 255, 0.08)",
+      "border_width": {
+        "unit": "px",
+        "top": 1,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "isLinked": false
+      },
+      "_element_id": "tarifas"
+    },
+    "elements": [
+      {
+        "id": "b4b0fa6",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 32,
+            "sizes": []
+          },
+          "flex_align_items": "stretch",
+          "flex_justify_content": "space-between",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "2c0f51a",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "24",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 50,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "96bc266",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">06 ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">HONORARIOS Y PRECIOS 2026</span>\n    </div>\n    "
+                },
+                "elements": []
+              },
+              {
+                "id": "54c50d6",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Lo que cuesta, dicho antes de empezar.",
+                  "header_size": "h2",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#F8FAFB",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 38,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.04,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "8361650",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='border-top:1px solid rgba(191,151,84,0.25); border-bottom:1px solid rgba(191,151,84,0.25); padding:14px 0; display:flex; justify-content:space-between;'><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Visita Técnica y Asesoramiento en Guadalajara</span><span style='font-family:Cinzel,serif; font-size:16px; font-weight:700; color:#BF9754;'>0 € (Gratis)</span></div><div style='border-bottom:1px solid rgba(191,151,84,0.25); padding:14px 0; display:flex; justify-content:space-between;'><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Reforma de Baño Completo con Materiales Nobles</span><span style='font-family:Cinzel,serif; font-size:16px; font-weight:700; color:#BF9754;'>desde 3.800 €</span></div><div style='border-bottom:1px solid rgba(191,151,84,0.25); padding:14px 0; display:flex; justify-content:space-between;'><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Reforma de Cocina de Autor con Muebles a Medida</span><span style='font-family:Cinzel,serif; font-size:16px; font-weight:700; color:#BF9754;'>desde 6.500 €</span></div><div style='border-bottom:1px solid rgba(191,151,84,0.25); padding:14px 0; display:flex; justify-content:space-between;'><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Reforma Integral Singular (hasta 80 m²)</span><span style='font-family:Cinzel,serif; font-size:16px; font-weight:700; color:#BF9754;'>desde 28.500 €</span></div><div style='border-bottom:1px solid rgba(191,151,84,0.25); padding:14px 0; display:flex; justify-content:space-between;'><span style='font-size:16px; font-weight:600; color:#F8FAFB;'>Climatización por Aerotermia & Suelo Radiante</span><span style='font-family:Cinzel,serif; font-size:16px; font-weight:700; color:#BF9754;'>desde 7.200 €</span></div>",
+                  "text_color": "#94A3B8",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "0d661ea",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:13px; color:#64748B; margin:0;'>*Los presupuestos definitivos se calculan partida por partida tras la visita técnica presencial en tu vivienda de Guadalajara.</p>",
+                  "text_color": "#94A3B8",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 13,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "245bd0d",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "button",
+                "settings": {
+                  "text": "Pedir Presupuesto Detallado →",
+                  "link": {
+                    "url": "#contacto",
+                    "is_external": false,
+                    "nofollow": false
+                  },
+                  "align": "left",
+                  "align_mobile": "left",
+                  "background_color": "#BF9754",
+                  "button_text_color": "#121316",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 8,
+                    "right": 8,
+                    "bottom": 8,
+                    "left": 8,
+                    "isLinked": true
+                  },
+                  "button_padding": {
+                    "unit": "px",
+                    "top": "15",
+                    "right": "30",
+                    "bottom": "15",
+                    "left": "30",
+                    "isLinked": false
+                  },
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700"
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "8ad940f",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "24",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 50,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "58e423b",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">FAQ ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">PREGUNTAS FRECUENTES</span>\n    </div>\n    "
+                },
+                "elements": []
+              },
+              {
+                "id": "fadb37d",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Lo que nuestros clientes suelen consultarnos.",
+                  "header_size": "h2",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#F8FAFB",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 38,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 28,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.04,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "1c342da",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n<div style=\"display:flex; flex-direction:column; gap:12px;\">\n    <div class=\"atelier-accordion-item active\" style=\"margin:0;\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\" style=\"padding:16px 20px;\">\n            <span style=\"font-weight:600; color:#F8FAFB; font-size:16px;\">¿Cuánto tiempo suele tardar una reforma integral?</span>\n            <span class=\"trade-toggle-icon\" style=\"width:28px; height:28px; font-size:16px;\">+</span>\n        </div>\n        <div class=\"atelier-body\" style=\"padding:0 20px 18px 20px;\">\n            <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0;\">Para una vivienda estándar de entre 70 y 110 m², el plazo habitual es de 6 a 9 semanas. Establecemos este calendario por escrito en el contrato, con penalizaciones económicas por cada día de retraso injustificado.</p>\n        </div>\n    </div>\n    <div class=\"atelier-accordion-item\" style=\"margin:0;\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\" style=\"padding:16px 20px;\">\n            <span style=\"font-weight:600; color:#F8FAFB; font-size:16px;\">¿El presupuesto es realmente cerrado o habrá imprevistos?</span>\n            <span class=\"trade-toggle-icon\" style=\"width:28px; height:28px; font-size:16px;\">+</span>\n        </div>\n        <div class=\"atelier-body\" style=\"padding:0 20px 18px 20px;\">\n            <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0;\">El presupuesto que firmas es 100% cerrado y vinculante. Desglosamos cada partida y mecanismo. Salvo que tú solicites modificaciones o ampliaciones durante la obra, el precio final no varía ni un céntimo.</p>\n        </div>\n    </div>\n    <div class=\"atelier-accordion-item\" style=\"margin:0;\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\" style=\"padding:16px 20px;\">\n            <span style=\"font-weight:600; color:#F8FAFB; font-size:16px;\">¿Gestionáis las licencias en el Ayuntamiento de Guadalajara?</span>\n            <span class=\"trade-toggle-icon\" style=\"width:28px; height:28px; font-size:16px;\">+</span>\n        </div>\n        <div class=\"atelier-body\" style=\"padding:0 20px 18px 20px;\">\n            <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0;\">Sí. Nuestro arquitecto técnico colegiado prepara la memoria, planos visados y tramita la declaración responsable o licencia de obra mayor/menor, ahorrándote trámites administrativos.</p>\n        </div>\n    </div>\n    <div class=\"atelier-accordion-item\" style=\"margin:0;\">\n        <div class=\"atelier-header\" onclick=\"toggleAtelierAccordion(this)\" style=\"padding:16px 20px;\">\n            <span style=\"font-weight:600; color:#F8FAFB; font-size:16px;\">¿Puedo elegir los materiales en persona?</span>\n            <span class=\"trade-toggle-icon\" style=\"width:28px; height:28px; font-size:16px;\">+</span>\n        </div>\n        <div class=\"atelier-body\" style=\"padding:0 20px 18px 20px;\">\n            <p style=\"font-size:15px; color:#94A3B8; line-height:1.6em; margin:0;\">Por supuesto. Te acompañamos a los showrooms colaboradores en Guadalajara y Madrid para que toques las texturas, compares porcelánicos y elijas la cocina con muestras físicas.</p>\n        </div>\n    </div>\n</div>\n"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5b2873f",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 24,
+        "sizes": []
+      },
+      "flex_align_items": "stretch",
+      "flex_justify_content": "flex-start",
+      "padding": {
+        "unit": "px",
+        "top": "70",
+        "right": "32",
+        "bottom": "70",
+        "left": "32",
+        "isLinked": false
+      },
+      "background_background": "classic",
+      "background_color": "#16181C",
+      "border_border": "solid",
+      "border_color": "rgba(255, 255, 255, 0.08)",
+      "border_width": {
+        "unit": "px",
+        "top": 1,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "isLinked": false
+      },
+      "_element_id": "contacto"
+    },
+    "elements": [
+      {
+        "id": "d801596",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_direction_tablet": "column",
+          "flex_direction_mobile": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 32,
+            "sizes": []
+          },
+          "flex_align_items": "center",
+          "flex_justify_content": "space-between",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": false
+          }
+        },
+        "elements": [
+          {
+            "id": "71e16f3",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "24",
+                "bottom": "0",
+                "left": "0",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 50,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "13bb621",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "\n    <div style=\"display:inline-flex; align-items:center; gap:8px; margin-bottom:12px;\">\n        <span style=\"font-family:'Cinzel', serif; font-size:13px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">07 ·</span>\n        <span style=\"font-family:'Cinzel', serif; font-size:14px; font-weight:700; color:#BF9754; letter-spacing:0.18em; text-transform:uppercase;\">ATENCIÓN EXCLUSIVA Y RESERVA</span>\n    </div>\n    "
+                },
+                "elements": []
+              },
+              {
+                "id": "d89c21b",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Empecemos a diseñar cuando tú decidas.",
+                  "header_size": "h2",
+                  "align": "left",
+                  "align_mobile": "left",
+                  "title_color": "#F8FAFB",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Cinzel, Georgia, serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 44,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 32,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "700",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "typography_letter_spacing": {
+                    "unit": "em",
+                    "size": 0.04,
+                    "sizes": []
+                  },
+                  "typography_font_style": "normal"
+                },
+                "elements": []
+              },
+              {
+                "id": "0ea7e14",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='margin:0 0 16px 0; font-size:18px; line-height:1.65em; color:#94A3B8; font-family:\"Plus Jakarta Sans\", sans-serif;'>Solicita tu visita técnica sin compromiso en Guadalajara o concierta una cita privada directa por teléfono o WhatsApp.</p>",
+                  "text_color": "#94A3B8",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 18,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "77d1483",
+                "elType": "container",
+                "isInner": false,
+                "settings": {
+                  "content_width": "full",
+                  "flex_direction": "row",
+                  "flex_direction_tablet": "column",
+                  "flex_direction_mobile": "column",
+                  "flex_gap": {
+                    "unit": "px",
+                    "size": 14,
+                    "sizes": []
+                  },
+                  "flex_align_items": "stretch",
+                  "flex_justify_content": "flex-start",
+                  "padding": {
+                    "unit": "px",
+                    "top": "8",
+                    "right": "0",
+                    "bottom": "16",
+                    "left": "0",
+                    "isLinked": false
+                  }
+                },
+                "elements": [
+                  {
+                    "id": "cc91465",
+                    "elType": "widget",
+                    "isInner": false,
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "Pedir Visita Gratuita →",
+                      "link": {
+                        "url": "#contacto",
+                        "is_external": false,
+                        "nofollow": false
+                      },
+                      "align": "left",
+                      "align_mobile": "left",
+                      "background_color": "#BF9754",
+                      "button_text_color": "#121316",
+                      "border_radius": {
+                        "unit": "px",
+                        "top": 8,
+                        "right": 8,
+                        "bottom": 8,
+                        "left": 8,
+                        "isLinked": true
+                      },
+                      "button_padding": {
+                        "unit": "px",
+                        "top": "15",
+                        "right": "30",
+                        "bottom": "15",
+                        "left": "30",
+                        "isLinked": false
+                      },
+                      "typography_typography": "custom",
+                      "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "700"
+                    },
+                    "elements": []
+                  },
+                  {
+                    "id": "a9ba9c5",
+                    "elType": "widget",
+                    "isInner": false,
+                    "widgetType": "button",
+                    "settings": {
+                      "text": "WhatsApp Directo",
+                      "link": {
+                        "url": "https://wa.me/34600000000",
+                        "is_external": false,
+                        "nofollow": false
+                      },
+                      "align": "left",
+                      "align_mobile": "left",
+                      "background_color": "transparent",
+                      "button_text_color": "#BF9754",
+                      "border_radius": {
+                        "unit": "px",
+                        "top": 8,
+                        "right": 8,
+                        "bottom": 8,
+                        "left": 8,
+                        "isLinked": true
+                      },
+                      "button_padding": {
+                        "unit": "px",
+                        "top": "15",
+                        "right": "30",
+                        "bottom": "15",
+                        "left": "30",
+                        "isLinked": false
+                      },
+                      "typography_typography": "custom",
+                      "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                      "typography_font_size": {
+                        "unit": "px",
+                        "size": 15,
+                        "sizes": []
+                      },
+                      "typography_font_weight": "700",
+                      "border_border": "solid",
+                      "border_color": "#BF9754",
+                      "border_width": {
+                        "unit": "px",
+                        "top": 1,
+                        "right": 1,
+                        "bottom": 1,
+                        "left": 1,
+                        "isLinked": true
+                      }
+                    },
+                    "elements": []
+                  }
+                ]
+              },
+              {
+                "id": "00d2ea1",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='display:flex; gap:20px; flex-wrap:wrap; margin-top:16px;'><div style='flex:1 1 180px;'><strong style='font-family:Cinzel,serif; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#BF9754;'>Teléfono Directo</strong><br><span style='font-size:17px; font-weight:700; color:#F8FAFB;'>+34 949 00 00 00</span></div><div style='flex:1 1 180px;'><strong style='font-family:Cinzel,serif; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#BF9754;'>Zona de Actuación</strong><br><span style='font-size:15px; font-weight:600; color:#F8FAFB;'>Guadalajara y Corredor</span></div><div style='flex:1 1 180px;'><strong style='font-family:Cinzel,serif; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#BF9754;'>Horario de Atención</strong><br><span style='font-size:15px; font-weight:600; color:#F8FAFB;'>Lun - Vie 08:30 a 19:00</span></div><div style='flex:1 1 180px;'><strong style='font-family:Cinzel,serif; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#BF9754;'>Urgencias Obra</strong><br><span style='font-size:15px; font-weight:600; color:#BF9754;'>Clientes en Obra 24/7</span></div></div>",
+                  "text_color": "#94A3B8",
+                  "typography_typography": "custom",
+                  "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+                  "typography_font_size": {
+                    "unit": "px",
+                    "size": 15,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "64e744d",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_direction_tablet": "column",
+              "flex_direction_mobile": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 24,
+                "sizes": []
+              },
+              "flex_align_items": "stretch",
+              "flex_justify_content": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "0",
+                "right": "0",
+                "bottom": "0",
+                "left": "16",
+                "isLinked": false
+              },
+              "width": {
+                "unit": "%",
+                "size": 50,
+                "sizes": []
+              },
+              "width_tablet": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              },
+              "width_mobile": {
+                "unit": "%",
+                "size": 100,
+                "sizes": []
+              }
+            },
+            "elements": [
+              {
+                "id": "9e5ba1d",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "image",
+                "settings": {
+                  "image": {
+                    "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/estudio-reformas-guadalajara.webp",
+                    "id": 58
+                  },
+                  "image_size": "full",
+                  "caption": "Estudio técnico de Florin Reformas en Guadalajara",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 20,
+                    "right": 20,
+                    "bottom": 20,
+                    "left": 20,
+                    "isLinked": true
+                  },
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 16,
+                    "blur": 40,
+                    "spread": 0,
+                    "color": "rgba(0,0,0,0.5)"
+                  }
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6e59ff4",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "row",
+      "flex_direction_tablet": "column",
+      "flex_direction_mobile": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 20,
+        "sizes": []
+      },
+      "flex_align_items": "center",
+      "flex_justify_content": "space-between",
+      "padding": {
+        "unit": "px",
+        "top": "32",
+        "right": "32",
+        "bottom": "32",
+        "left": "32",
+        "isLinked": false
+      },
+      "border_border": "solid",
+      "border_color": "rgba(255, 255, 255, 0.08)",
+      "border_width": {
+        "unit": "px",
+        "top": 1,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "isLinked": false
+      }
+    },
+    "elements": [
+      {
+        "id": "3afe70f",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<span style='color:#64748B; font-size:14px; font-family:Cinzel,serif; letter-spacing:0.05em;'>Florin Reformas Guadalajara · © 2026 Atelier de Reformas Integrales.</span>",
+          "text_color": "#94A3B8",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+          },
+          "typography_font_size_mobile": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.65,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "e54bc6f",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<span style='color:#BF9754; font-size:14px; font-family:Cinzel,serif; letter-spacing:0.05em;'>Diseñado por SEOLife · Propuesta 3</span>",
+          "text_color": "#94A3B8",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+          },
+          "typography_font_size_mobile": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.65,
+            "sizes": []
+          }
+        },
+        "elements": []
+      },
+      {
+        "id": "4b8137f",
+        "elType": "widget",
+        "isInner": false,
+        "widgetType": "text-editor",
+        "settings": {
+          "editor": "<span style='color:#64748B; font-size:14px;'><a href='#' style='color:#64748B; text-decoration:none;'>Aviso Legal</a> · <a href='#' style='color:#64748B; text-decoration:none;'>Privacidad</a> · <a href='#' style='color:#64748B; text-decoration:none;'>Cookies</a></span>",
+          "text_color": "#94A3B8",
+          "typography_typography": "custom",
+          "typography_font_family": "Plus Jakarta Sans, system-ui, sans-serif",
+          "typography_font_size": {
+            "unit": "px",
+            "size": 14,
+            "sizes": []
+          },
+          "typography_font_size_mobile": {
+            "unit": "px",
+            "size": 16,
+            "sizes": []
+          },
+          "typography_line_height": {
+            "unit": "em",
+            "size": 1.65,
+            "sizes": []
+          }
+        },
+        "elements": []
+      }
+    ]
+  }
+]

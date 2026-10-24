@@ -1,0 +1,340 @@
+[
+  {
+    "id": "566ef4b",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 16,
+        "sizes": []
+      },
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+        "unit": "px",
+        "top": "40",
+        "right": "24",
+        "bottom": "30",
+        "left": "24",
+        "isLinked": true
+      },
+      "min_height": {
+        "unit": "vh",
+        "size": 100,
+        "sizes": []
+      },
+      "background_background": "classic",
+      "background_color": "#07172C",
+      "custom_css": "selector {\n            min-height: 100vh;\n            background: radial-gradient(circle at 50% 20%, #0F2E59 0%, #07172C 70%);\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            box-sizing: border-box;\n            padding: 40px 20px 30px 20px;\n        }\n        @media (max-width: 1024px) {\n            selector {\n                min-height: 100vh;\n                padding: 30px 16px 24px 16px !important;\n                justify-content: flex-start !important;\n            }\n        }\n        @media (max-width: 768px) {\n            selector {\n                padding: 20px 10px 20px 10px !important;\n            }\n        }"
+    },
+    "elements": [
+      {
+        "id": "dbb28dc",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_gap": {
+            "unit": "px",
+            "size": 0,
+            "sizes": []
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "stretch",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 20,
+            "right": 20,
+            "bottom": 20,
+            "left": 20,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 24,
+            "blur": 50,
+            "spread": -8,
+            "color": "rgba(0,0,0,0.30)"
+          },
+          "custom_css": "selector {\n            max-width: 1160px;\n            margin: 0 auto;\n            overflow: hidden;\n            border-radius: 20px !important;\n            border: 1px solid rgba(255, 255, 255, 0.15);\n            box-shadow: 0 24px 50px -8px rgba(0, 0, 0, 0.3);\n        }\n        @media (max-width: 1024px) {\n            selector {\n                flex-direction: column !important;\n                width: 92% !important;\n                margin: 20px auto !important;\n                border-radius: 20px !important;\n            }\n        }\n        @media (max-width: 768px) {\n            selector {\n                width: 95% !important;\n                margin: 12px auto !important;\n            }\n        }"
+        },
+        "elements": [
+          {
+            "id": "d729e2e",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 20,
+                "sizes": []
+              },
+              "flex_justify_content": "center",
+              "flex_align_items": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "48",
+                "right": "44",
+                "bottom": "48",
+                "left": "44",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "custom_css": "selector {\n            flex: 1 1 56% !important;\n            width: 56% !important;\n            box-sizing: border-box !important;\n        }\n        @media (max-width: 1024px) {\n            selector {\n                flex: 1 1 100% !important;\n                width: 100% !important;\n                padding: 36px 30px 24px 30px !important;\n            }\n        }\n        @media (max-width: 768px) {\n            selector {\n                padding: 26px 18px 20px 18px !important;\n            }\n        }"
+            },
+            "elements": [
+              {
+                "id": "afc7722",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div class='florin-badge' style='display:inline-flex; align-items:center; justify-content:center; gap:8px; background:#EFF6FF; border:1px solid #BFDBFE; color:#1E40AF; padding:6px 14px; border-radius:9999px; font-weight:700; font-size:clamp(10.5px, 3.1vw, 13px); text-transform:uppercase; letter-spacing:0.03em; max-width:100%; box-sizing:border-box; word-break:break-word; text-align:center;'><span>📍</span><span>Florin Reformas · Guadalajara y Madrid</span></div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "afb7e7e",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Próximamente: Nueva Plataforma Web",
+                  "header_size": "h1",
+                  "align": "left",
+                  "title_color": "#0F172A",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 2.5,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "rem",
+                    "size": 1.75,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "800",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "36b65d6",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:clamp(16px, 1.8vw, 18px); line-height:1.6em; color:#334155; margin:0;'>Gracias por visitarnos. Estamos construyendo una <strong>experiencia digital renovada</strong> para tus reformas integrales, cocinas y baños.</p>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "6c0a2b8",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='background:#FFFBEB; border-left:4px solid #D97706; border-radius:0 12px 12px 0; padding:14px 18px; margin:4px 0; width:100%; box-sizing:border-box;'><div style='font-size:16px; font-weight:700; color:#92400E; margin-bottom:6px; line-height:1.35em;'>Manténganse atentos · Mientras tanto, seguimos atendiendo tus proyectos.</div><div style='font-size:16px; color:#78350F; line-height:1.6em;'>Mientras finalizamos nuestra nueva plataforma web, nuestro equipo técnico y de diseño continúa realizando visitas técnicas y presupuestos cerrados sin coste.</div></div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "7d7886e",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='display:flex; flex-wrap:wrap; gap:14px; align-items:center; color:#64748B; font-size:14px; margin-top:4px; font-weight:500; line-height:1.4em;'><span>✓ Presupuesto cerrado garantizado</span><span>✓ Visita técnica sin coste</span><span>✓ Cobertura Guadalajara y Madrid</span></div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.6,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "30c875e",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#F8FAFC",
+              "custom_css": "selector {\n            flex: 1 1 44% !important;\n            width: 44% !important;\n            box-sizing: border-box !important;\n        }\n        @media (max-width: 1024px) {\n            selector {\n                flex: 1 1 100% !important;\n                width: 100% !important;\n                padding: 20px 30px 28px 30px !important;\n            }\n        }\n        @media (max-width: 768px) {\n            selector {\n                padding: 14px 18px 24px 18px !important;\n            }\n        }"
+            },
+            "elements": [
+              {
+                "id": "98eff51",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "html",
+                "settings": {
+                  "html": "<div class=\"florin-svg-wrapper\" style=\"width:100%; max-width:480px; margin:0 auto; box-sizing:border-box;\">\n  <div style=\"border-radius:20px; overflow:hidden; box-shadow:0 20px 40px rgba(0,0,0,0.22); border:1px solid rgba(15,23,42,0.12); background:#0F172A; aspect-ratio:16/9; width:100%;\">\n    <svg viewBox=\"0 0 480 270\" xmlns=\"http://www.w3.org/2000/svg\" style=\"width:100%; height:100%; display:block;\">\n      <defs>\n        <clipPath id=\"split-clip\">\n          <rect x=\"0\" y=\"0\" width=\"240\" height=\"270\">\n            <animate attributeName=\"width\" values=\"45;435;45\" dur=\"5.5s\" keyTimes=\"0;0.5;1\" calcMode=\"spline\" keySplines=\"0.45 0 0.25 1; 0.45 0 0.25 1\" repeatCount=\"indefinite\" />\n          </rect>\n        </clipPath>\n        <filter id=\"svg-glow\" x=\"-20%\" y=\"-20%\" width=\"140%\" height=\"140%\">\n          <feGaussianBlur stdDeviation=\"3\" result=\"blur\" />\n          <feComposite in=\"SourceGraphic\" in2=\"blur\" operator=\"over\" />\n        </filter>\n      </defs>\n\n      <!-- CAPA ANTES (Foto Real Estado Previo) -->\n      <g id=\"layer-before\">\n        <image href=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-antes.webp\" x=\"0\" y=\"0\" width=\"480\" height=\"270\" preserveAspectRatio=\"xMidYMid slice\" />\n        <!-- Badge ANTES fijo a la derecha -->\n        <rect x=\"366\" y=\"14\" width=\"100\" height=\"26\" rx=\"13\" fill=\"rgba(15,23,42,0.85)\" stroke=\"#64748B\" stroke-width=\"1\" />\n        <text x=\"416\" y=\"31\" fill=\"#F8FAFC\" font-size=\"11\" font-weight=\"bold\" font-family=\"sans-serif\" text-anchor=\"middle\">🏷️ ANTES</text>\n      </g>\n\n      <!-- CAPA DESPUÉS (Foto Real Reforma Acabada) -->\n      <g id=\"layer-after\" clip-path=\"url(#split-clip)\">\n        <image href=\"https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/reforma-despues.webp\" x=\"0\" y=\"0\" width=\"480\" height=\"270\" preserveAspectRatio=\"xMidYMid slice\" />\n        <!-- Badge DESPUÉS integrado en la capa revelada -->\n        <rect x=\"14\" y=\"14\" width=\"112\" height=\"26\" rx=\"13\" fill=\"rgba(15,23,42,0.85)\" stroke=\"#10B981\" stroke-width=\"1.5\" />\n        <text x=\"70\" y=\"31\" fill=\"#34D399\" font-size=\"11\" font-weight=\"bold\" font-family=\"sans-serif\" text-anchor=\"middle\">✨ DESPUÉS</text>\n      </g>\n\n      <!-- DIVISOR DINÁMICO CON MICROINTERACCIÓN -->\n      <g id=\"slider-handle\">\n        <animateTransform attributeName=\"transform\" type=\"translate\" values=\"45 0; 435 0; 45 0\" dur=\"5.5s\" keyTimes=\"0;0.5;1\" calcMode=\"spline\" keySplines=\"0.45 0 0.25 1; 0.45 0 0.25 1\" repeatCount=\"indefinite\" />\n        <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"270\" stroke=\"#FFFFFF\" stroke-width=\"3\" filter=\"url(#svg-glow)\" />\n        <line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"270\" stroke=\"#2563EB\" stroke-width=\"1.5\" />\n        \n        <circle cx=\"0\" cy=\"135\" r=\"18\" fill=\"#0F172A\" stroke=\"#FFFFFF\" stroke-width=\"2.5\" filter=\"url(#svg-glow)\" />\n        <circle cx=\"0\" cy=\"135\" r=\"14\" fill=\"#2563EB\" />\n        <path d=\"M -7 135 L -3 131 L -3 139 Z M 7 135 L 3 131 L 3 139 Z\" fill=\"#FFFFFF\" />\n      </g>\n    </svg>\n  </div>\n  <div style=\"text-align:center; color:#64748B; font-size:12.5px; font-weight:600; margin-top:10px;\">\n    ✨ Desliza automáticamente · Transformación de espacios en Guadalajara y Madrid\n  </div>\n</div>"
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "174af33",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 6,
+            "sizes": []
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "center",
+          "padding": {
+            "unit": "px",
+            "top": "28",
+            "right": "0",
+            "bottom": "16",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "ca43987",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style='text-align:center; color:#E2E8F0; font-size:14px; font-weight:600; line-height:1.6em; padding:0 12px;'>© 2026 <strong>Florin Reformas Integrales</strong> · Especialistas en Reformas en Guadalajara y Madrid<br><span style='font-size:13px; font-weight:400; color:#94A3B8;'>Todos los derechos reservados · Plataforma Web en desarrollo con rigor técnico y diseño arquitectónico</span></div>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.6,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  }
+]

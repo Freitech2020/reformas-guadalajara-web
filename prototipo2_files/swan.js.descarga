@@ -1,0 +1,27 @@
+  (function () {
+    var w = window;
+    var swan = (w.swan = w.swan || []);
+    if (swan.isLoaded) return;
+    swan.isLoaded = true;
+    swan.pk = 'cmsnkvumw00050jl2b95ekkrs';
+    var sidKey = 'swan.sid';
+    var sid;
+    try {
+      sid = w.localStorage.getItem(sidKey);
+      if (!sid) {
+        sid = w.crypto && w.crypto.randomUUID
+          ? w.crypto.randomUUID()
+          : Date.now().toString(36) + Math.random().toString(36).slice(2);
+        w.localStorage.setItem(sidKey, sid);
+      }
+    } catch (e) {
+      sid = Date.now().toString(36) + Math.random().toString(36).slice(2);
+    }
+    swan.sid = sid;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = "https://script.getswan.com?pk=cmsnkvumw00050jl2b95ekkrs&sid=" + encodeURIComponent(sid);
+    var head = document.getElementsByTagName('head')[0];
+    head.appendChild(script);
+  })();

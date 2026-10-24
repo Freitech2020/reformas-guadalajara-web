@@ -1,0 +1,444 @@
+[
+  {
+    "id": "e215b41",
+    "elType": "container",
+    "isInner": false,
+    "settings": {
+      "content_width": "full",
+      "flex_direction": "column",
+      "flex_gap": {
+        "unit": "px",
+        "size": 16,
+        "sizes": []
+      },
+      "flex_justify_content": "center",
+      "flex_align_items": "center",
+      "padding": {
+        "unit": "px",
+        "top": "40",
+        "right": "24",
+        "bottom": "28",
+        "left": "24",
+        "isLinked": true
+      },
+      "min_height": {
+        "unit": "vh",
+        "size": 100,
+        "sizes": []
+      },
+      "background_background": "classic",
+      "background_color": "#060D17",
+      "custom_css": "selector { min-height: 100vh; background: radial-gradient(circle at 50% 15%, #10223D 0%, #060D17 75%); display: flex; flex-direction: column; justify-content: center; align-items: center; box-sizing: border-box; overflow-x: hidden; } @media (max-width: 768px) { selector { padding: 20px 12px !important; min-height: 100vh; } }"
+    },
+    "elements": [
+      {
+        "id": "3938bb9",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "row",
+          "flex_gap": {
+            "unit": "px",
+            "size": 0,
+            "sizes": []
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "stretch",
+          "padding": {
+            "unit": "px",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+            "isLinked": true
+          },
+          "background_background": "classic",
+          "background_color": "#FFFFFF",
+          "border_radius": {
+            "unit": "px",
+            "top": 24,
+            "right": 24,
+            "bottom": 24,
+            "left": 24,
+            "isLinked": true
+          },
+          "box_shadow_box_shadow_type": "yes",
+          "box_shadow_box_shadow": {
+            "horizontal": 0,
+            "vertical": 30,
+            "blur": 60,
+            "spread": -15,
+            "color": "rgba(0,0,0,0.45)"
+          },
+          "custom_css": "selector { max-width: 1140px; margin: 0 auto; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.45); } @media (max-width: 768px) { selector { flex-direction: column !important; width: 92% !important; margin: 24px auto !important; border-radius: 20px !important; } }"
+        },
+        "elements": [
+          {
+            "id": "fb89420",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 18,
+                "sizes": []
+              },
+              "flex_justify_content": "center",
+              "flex_align_items": "flex-start",
+              "padding": {
+                "unit": "px",
+                "top": "44",
+                "right": "40",
+                "bottom": "44",
+                "left": "40",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#FFFFFF",
+              "custom_css": "selector { box-sizing: border-box; } @media (max-width: 768px) { selector { width: 100% !important; padding: 32px 24px !important; } }"
+            },
+            "elements": [
+              {
+                "id": "893a7d7",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='display:inline-flex; align-items:center; gap:10px; background:#F1F5F9; border:1px solid #E2E8F0; padding:6px 14px; border-radius:9999px; box-shadow:0 1px 3px rgba(0,0,0,0.04);'><span style='display:inline-block; width:8px; height:8px; border-radius:50%; background:#10B981; box-shadow:0 0 8px #10B981;'></span><span style='font-size:13px; font-weight:700; color:#0F172A; letter-spacing:0.04em; text-transform:uppercase;'>Reformas Madrid · Nueva Plataforma Web</span></div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "f5f5fbb",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "heading",
+                "settings": {
+                  "title": "Construyendo una Nueva Experiencia Digital",
+                  "header_size": "h1",
+                  "align": "left",
+                  "title_color": "#0F172A",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 2.45,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "rem",
+                    "size": 1.75,
+                    "sizes": []
+                  },
+                  "typography_font_weight": "800",
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.2,
+                    "sizes": []
+                  },
+                  "custom_css": "selector h1 { letter-spacing: -0.02em; margin-bottom: 2px; } @media (max-width: 768px) { selector h1 { font-size: 1.85rem !important; } }"
+                },
+                "elements": []
+              },
+              {
+                "id": "5786730",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='font-size:16px; font-weight:600; color:#D97706; text-transform:uppercase; letter-spacing:0.06em; margin-top:-6px;'>Arquitectura · Reformas Integrales · Cocinas & Baños de Diseño</div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "a97ff25",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<p style='font-size:18px; line-height:1.65em; color:#334155; margin:0;'>Gracias por visitarnos. Estamos desarrollando una <strong>plataforma web completamente renovada</strong> para transformar la manera en que planificas, cotizas y vives tu próxima reforma en toda la <strong>Comunidad de Madrid</strong>.</p>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "87b7b05",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='background:linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%); border-left:4px solid #0F172A; border-radius:0 12px 12px 0; padding:16px 20px; width:100%; box-sizing:border-box; box-shadow:inset 0 1px 2px rgba(0,0,0,0.02);'><div style='font-size:15px; font-weight:700; color:#0F172A; display:flex; align-items:center; gap:8px; margin-bottom:4px;'><span>🚀</span><span>Lanzamiento Oficial Próximamente</span></div><div style='font-size:14.5px; color:#475569; line-height:1.55em; margin:0;'>Nuestro equipo técnico y de interiorismo está implementando herramientas visuales interactivas, presupuestos transparentes con desglose por partidas y asesoramiento técnico directo para cada estancia de tu vivienda o local.</div></div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "39375de",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='width:100%; margin-top:2px;'><div style='font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#64748B; margin-bottom:8px;'>Áreas de Especialización:</div><div style='display:flex; flex-wrap:wrap; gap:8px;'><span style='background:#F8FAFC; border:1px solid #E2E8F0; color:#334155; font-size:13.5px; font-weight:600; padding:6px 12px; border-radius:8px;'>🏠 Reformas Integrales</span><span style='background:#F8FAFC; border:1px solid #E2E8F0; color:#334155; font-size:13.5px; font-weight:600; padding:6px 12px; border-radius:8px;'>🍳 Cocinas de Autor</span><span style='background:#F8FAFC; border:1px solid #E2E8F0; color:#334155; font-size:13.5px; font-weight:600; padding:6px 12px; border-radius:8px;'>🚿 Baños de Vanguardia</span><span style='background:#F8FAFC; border:1px solid #E2E8F0; color:#334155; font-size:13.5px; font-weight:600; padding:6px 12px; border-radius:8px;'>🏢 Locales Comerciales</span><span style='background:#F8FAFC; border:1px solid #E2E8F0; color:#334155; font-size:13.5px; font-weight:600; padding:6px 12px; border-radius:8px;'>📐 Infografía 3D & Planos</span></div></div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              },
+              {
+                "id": "9276e58",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='display:flex; flex-wrap:wrap; gap:16px; align-items:center; color:#64748B; font-size:13.5px; margin-top:6px; font-weight:500; border-top:1px solid #F1F5F9; padding-top:12px; width:100%;'><span>✓ Presupuestos Cerrados por Partida</span><span>✓ Garantía Oficial por Escrito</span><span>✓ Proyectos Llave en Mano</span></div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          },
+          {
+            "id": "367f60d",
+            "elType": "container",
+            "isInner": false,
+            "settings": {
+              "content_width": "boxed",
+              "flex_direction": "column",
+              "flex_gap": {
+                "unit": "px",
+                "size": 14,
+                "sizes": []
+              },
+              "flex_justify_content": "center",
+              "flex_align_items": "center",
+              "padding": {
+                "unit": "px",
+                "top": "24",
+                "right": "24",
+                "bottom": "24",
+                "left": "24",
+                "isLinked": true
+              },
+              "background_background": "classic",
+              "background_color": "#0B1320",
+              "custom_css": "selector { box-sizing: border-box; background: linear-gradient(145deg, #0C1A30 0%, #060D17 100%); } @media (max-width: 768px) { selector { width: 100% !important; padding: 20px !important; } }"
+            },
+            "elements": [
+              {
+                "id": "e3ee478",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "image",
+                "settings": {
+                  "image": {
+                    "url": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/proximamente-reformas-madrid.webp",
+                    "id": 43
+                  },
+                  "image_size": "full",
+                  "caption": "",
+                  "border_radius": {
+                    "unit": "px",
+                    "top": 20,
+                    "right": 20,
+                    "bottom": 20,
+                    "left": 20,
+                    "isLinked": true
+                  },
+                  "box_shadow_box_shadow_type": "yes",
+                  "box_shadow_box_shadow": {
+                    "horizontal": 0,
+                    "vertical": 16,
+                    "blur": 36,
+                    "spread": -8,
+                    "color": "rgba(2, 6, 23, 0.22)"
+                  },
+                  "custom_css": "selector img { transition: transform 0.4s ease; border-radius: 20px; box-shadow: 0 16px 36px -8px rgba(0,0,0,0.35); } selector:hover img { transform: scale(1.02); }"
+                },
+                "elements": []
+              },
+              {
+                "id": "ac24855",
+                "elType": "widget",
+                "isInner": false,
+                "widgetType": "text-editor",
+                "settings": {
+                  "editor": "<div style='background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); backdrop-filter:blur(10px); padding:8px 16px; border-radius:12px; text-align:center; color:#E2E8F0; font-size:13px; font-weight:600; letter-spacing:0.02em;'>✨ <strong>Calidad Constructiva & Precisión de Diseño</strong> · Comunidad de Madrid</div>",
+                  "text_color": "#334155",
+                  "typography_typography": "custom",
+                  "typography_font_size": {
+                    "unit": "rem",
+                    "size": 1.125,
+                    "sizes": []
+                  },
+                  "typography_font_size_mobile": {
+                    "unit": "px",
+                    "size": 16,
+                    "sizes": []
+                  },
+                  "typography_line_height": {
+                    "unit": "em",
+                    "size": 1.65,
+                    "sizes": []
+                  }
+                },
+                "elements": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1b5c338",
+        "elType": "container",
+        "isInner": false,
+        "settings": {
+          "content_width": "full",
+          "flex_direction": "column",
+          "flex_gap": {
+            "unit": "px",
+            "size": 6,
+            "sizes": []
+          },
+          "flex_justify_content": "center",
+          "flex_align_items": "center",
+          "padding": {
+            "unit": "px",
+            "top": "24",
+            "right": "0",
+            "bottom": "12",
+            "left": "0",
+            "isLinked": true
+          }
+        },
+        "elements": [
+          {
+            "id": "ad73a57",
+            "elType": "widget",
+            "isInner": false,
+            "widgetType": "text-editor",
+            "settings": {
+              "editor": "<div style='text-align:center; color:#94A3B8; font-size:14.5px; font-weight:500; letter-spacing:0.01em;'>© 2026 <strong>Reformas Madrid</strong> · Hecha por <strong>SEOLIFE</strong> <span style='color:#EF4444; font-size:15px;'>❤️</span> · Todos los derechos reservados</div>",
+              "text_color": "#334155",
+              "typography_typography": "custom",
+              "typography_font_size": {
+                "unit": "rem",
+                "size": 1.125,
+                "sizes": []
+              },
+              "typography_font_size_mobile": {
+                "unit": "px",
+                "size": 16,
+                "sizes": []
+              },
+              "typography_line_height": {
+                "unit": "em",
+                "size": 1.65,
+                "sizes": []
+              }
+            },
+            "elements": []
+          }
+        ]
+      }
+    ]
+  }
+]
