@@ -4,20 +4,20 @@
 <meta charset="utf-8"/>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Reformas en Madrid | Empresa de Reformas Integrales en Madrid</title>
+<title>Reformas en Madrid | Empresa de Reformas en Madrid</title>
 <meta content="Empresa de reformas en Madrid con presupuesto cerrado por contrato, dirección técnica colegiada y garantía de 2 años. Chamberí, Retiro, Arganzuela, Tetuán y toda la Comunidad de Madrid." name="description"/>
-<meta content="reformas Madrid, reforma integral Madrid, reformas en Madrid, presupuesto reformas Madrid, empresa de reformas Madrid" name="keywords"/>
+<meta content="reformas Madrid, reformas en Madrid, presupuesto reformas Madrid, empresa de reformas Madrid" name="keywords"/>
 <meta content="index, follow" name="robots"/>
 <link href="https://florinreformas.es/" rel="canonical"/>
 <meta content="website" property="og:type"/>
 <meta content="es_ES" property="og:locale"/>
 <meta content="Reformas Madrid" property="og:site_name"/>
-<meta content="Reformas Integrales en Madrid | Reformas Madrid" property="og:title"/>
-<meta content="Acabados de alta gama, presupuestos cerrados y gestión técnica integral para renovar tu piso o chalet en Madrid sin sorpresas." property="og:description"/>
+<meta content="Reformas en Madrid | Reformas Madrid" property="og:title"/>
+<meta content="Acabados de alta gama, presupuestos cerrados y gestión técnica especializada para renovar tu piso o chalet en Madrid sin sorpresas." property="og:description"/>
 <meta content="https://florinreformas.es/" property="og:url"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Reformas Integrales en Madrid | Reformas Madrid" name="twitter:title"/>
-<meta content="Reformas integrales en Madrid con presupuesto cerrado por contrato, dirección facultativa y 2 años de garantía." name="twitter:description"/>
+<meta content="Reformas en Madrid | Reformas Madrid" name="twitter:title"/>
+<meta content="Reformas en Madrid con presupuesto cerrado por contrato, dirección facultativa y 2 años de garantía." name="twitter:description"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet"/>
@@ -93,28 +93,92 @@
     .estancia-arrow .arrow-desktop { display: inline-flex !important; }
   }
 
-  /* ESTANCIAS DESKTOP GLASS CARD HOVER REVEAL & GOLD BUTTON */
+  /* ESTANCIAS DESKTOP GLASS CARD - VISIBLE SOLO AL HOVER */
   @media (min-width: 1024px) {
     #estancias .lg\:col-span-7 .estancia-glass-wrapper {
+
+
       opacity: 0 !important;
       transform: translateY(16px) !important;
       pointer-events: none !important;
-      transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      transition: opacity 0.3s ease, transform 0.3s ease !important;
     }
-    #estancias .lg\:col-span-7:hover .estancia-glass-wrapper,
-    #estancias .lg\:col-span-7 > div:hover .estancia-glass-wrapper {
+    #estancias .lg\:col-span-7 .estancia-glass-card {
+
+      border-color: rgba(168, 126, 52, 0.45) !important;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.65) !important;
+    }
+    #estancias .lg\:col-span-7 .group:hover .estancia-glass-wrapper,
+    #estancias .lg\:col-span-7:hover .estancia-glass-wrapper {
       opacity: 1 !important;
       transform: translateY(0) !important;
       pointer-events: auto !important;
     }
-    #estancias .lg\:col-span-7:hover .estancia-glass-card {
+  }
+
+  /* ROGUE_START
+    #estancias .lg\:col-span-7:hover .estancia-glass-wrapper {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      pointer-events: auto !important;
+    }
+
+
+      opacity: 0 !important;
+      transform: translateY(0) !important;
+      pointer-events: auto !important;
+
+    }
+
+
+      opacity: 0 !important;
+      transform: translateY(0) !important;
+      pointer-events: auto !important;
+    }
+
       border-color: rgba(168, 126, 52, 0.45) !important;
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.65) !important;
+
     }
   }
 
+  ROGUE_END */
+
   /* Gold Luxury Buttons (#a87e34 matching user token) */
   #estancia-cta-btn,
+  a#estancia-cta-btn,
+  .estancia-mobile-panel a[href*="landings_secundarias_madrid"],
+  .estancia-mobile-panel a[href="#tarifas"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    background-color: #a87e34 !important;
+    color: #ffffff !important;
+    padding: 10px 22px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 14px rgba(168, 126, 52, 0.35) !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+  }
+  #estancia-cta-btn:hover,
+  a#estancia-cta-btn:hover,
+  .estancia-mobile-panel a[href*="landings_secundarias_madrid"]:hover,
+  .estancia-mobile-panel a[href="#tarifas"]:hover {
+    background-color: #8c6424 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 18px rgba(140, 100, 36, 0.5) !important;
+    transform: translateY(-1px) !important;
+  }
+  #estancia-cta-btn i,
+  a#estancia-cta-btn i {
+    color: #ffffff !important;
+    font-size: 15px !important;
+  }
+  /* base legacy override */
+  #estancia-cta-legacy-btn,
   .estancia-mobile-panel a[href="#tarifas"] {
     background-color: #a87e34 !important;
     color: #ffffff !important;
@@ -199,7 +263,7 @@
       display: block !important;
       height: auto !important;
       max-height: none !important;
-      opacity: 1 !important;
+      opacity: 0 !important;
       visibility: visible !important;
       overflow: visible !important;
     }
@@ -239,6 +303,59 @@
 
 
   /* OFICIOS CAROUSEL FLANKING NAV BUTTONS */
+  #oficios-carousel-prev,
+  #oficios-carousel-next {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    z-index: 30 !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    border-radius: 9999px !important;
+    background-color: #ffffff !important;
+    border: 1.5px solid #a87e34 !important;
+    color: #0e1b2e !important;
+    box-shadow: 0 4px 14px rgba(14, 27, 46, 0.12) !important;
+    transition: all 0.25s ease !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #oficios-carousel-prev {
+    left: -20px !important;
+  }
+  #oficios-carousel-next {
+    right: -20px !important;
+  }
+  #oficios-carousel-prev i,
+  #oficios-carousel-next i {
+    color: #0e1b2e !important;
+    font-size: 26px !important;
+    transition: color 0.25s ease !important;
+  }
+  #oficios-carousel-prev:hover,
+  #oficios-carousel-next:hover {
+    background-color: #a87e34 !important;
+    border-color: #8c6424 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 18px rgba(168, 126, 52, 0.4) !important;
+    transform: translateY(-50%) scale(1.08) !important;
+  }
+  #oficios-carousel-prev:hover i,
+  #oficios-carousel-next:hover i {
+    color: #ffffff !important;
+  }
+  #oficios-carousel-prev:disabled,
+  #oficios-carousel-next:disabled {
+    opacity: 0.25 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+  }
+  /* CAROUSEL BUTTONS LEGACY OVERRIDE */
+  /* legacy override */
   #oficios-carousel-prev {
     position: absolute !important;
     left: -20px !important;
@@ -288,7 +405,7 @@
       display: block !important;
       height: auto !important;
       max-height: none !important;
-      opacity: 1 !important;
+      opacity: 0 !important;
       visibility: visible !important;
       overflow: visible !important;
     }
@@ -503,6 +620,7 @@
   }
 
   /* Capa de oscurecimiento maestro del Hero vinculada a la variable */
+  @media (max-width: 1023px) { .estancia-mobile-panel.is-open, .fase-mobile-panel.is-open, .fase-mobile-card.is-open .fase-mobile-panel { opacity: 1 !important; visibility: visible !important; display: block !important; max-height: none !important; height: auto !important; } }
   .hero-master-scrim {
     position: absolute;
     inset: 0;
@@ -1364,13 +1482,13 @@
           </div>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="#" onclick="event.preventDefault();">NOSOTROS</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="nosotros.html">NOSOTROS</a>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="#contacto">CONTACTO</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="contacto.html">CONTACTO</a>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="#" onclick="event.preventDefault();">BLOG</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="blog.html">BLOG</a>
         </li>
       </ul>
       <div class="flex items-center gap-2">
@@ -1447,13 +1565,13 @@
         </div>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="#" onclick="event.preventDefault();">NOSOTROS</a>
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="nosotros.html">NOSOTROS</a>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="#contacto">CONTACTO</a>
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="contacto.html">CONTACTO</a>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="#" onclick="event.preventDefault();">BLOG</a>
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="blog.html">BLOG</a>
       </div>
       <div class="pt-4">
         <a class="w-full flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white hover:bg-teal-hover transition-colors shadow-md text-center" href="#contacto">
@@ -1472,7 +1590,7 @@
 <source src="video/videomadrid.mp4" type="video/mp4"/>
 </video><!-- CAPA DE OSCURECIMIENTO MAESTRA DEL HERO (CONTROLADA POR --hero-darkness EN CSS) -->
 <div aria-hidden="true" class="hero-master-scrim"></div>
-<div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div><div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-end px-4 pb-12 pt-[112px] md:px-8 md:pb-20 md:pt-[150px] lg:min-h-[90vh] lg:px-12 lg:pb-24"><div class="grid grid-cols-1 items-end gap-10 lg:grid-cols-12 lg:gap-12"><div class="lg:col-span-7"><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><h1 class="hero-h1-title font-editorial text-[44px] leading-[1.04] tracking-tight text-white sm:text-[60px] md:text-[72px] lg:text-[84px] xl:text-[92px]">Reformas integrales<br><span class="italic font-light text-teal-light">en Madrid</span> a su medida.</h1></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 90ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 90ms; will-change: transform, opacity;"><p class="hero-subtitle mt-5 max-w-[560px] text-[15px] leading-[1.65] text-white/90 [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)] md:mt-6 md:text-[18px]">Acabados de alta gama, presupuesto cerrado y dirección técnica diaria para renovar tu piso o chalet en Madrid sin sorpresas.</p></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 170ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 170ms; will-change: transform, opacity;"><div class="mt-7 flex w-full justify-center sm:justify-start"><a class="inline-flex items-center justify-center gap-2.5 rounded-md bg-teal text-[16px] font-semibold text-white transition-all hover:bg-teal-hover cursor-pointer whitespace-nowrap shadow-md text-center" style="padding: 18px 44px !important;" href="#contacto">Pedir Visita Gratuita</a></div></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 240ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 240ms; will-change: transform, opacity;"><dl class="mt-9 grid max-w-[460px] grid-cols-3 gap-4 border-t border-white/20 pt-6"><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">15+</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">años en Madrid</dd></div><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">280</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">viviendas entregadas</dd></div><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">2 años</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">garantía legal</dd></div></dl></div></div><div class="hidden lg:col-span-5 lg:block"><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 150ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 150ms; will-change: transform, opacity;"><div class="hero-zonas-card ml-auto w-full max-w-[440px] rounded-2xl border border-white/25 bg-ink/45 p-6 md:p-7 backdrop-blur-md"><div class="zonas-header flex items-center gap-2.5 mb-4"><i class="ri-shield-check-line text-[20px] w-5 h-5 flex items-center justify-center text-teal-light"></i><span class="zonas-header-title text-[17px] font-bold uppercase tracking-[0.14em] text-white/90">Zonas de actuación</span></div><ul class="flex flex-col gap-4"><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-building-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Pisos céntricos</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Casco histórico y Arganzuela</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-home-4-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Chalets</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Chamberí y Tetuán</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-restaurant-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Cocinas con isla</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Muebles a medida</div></div></li></ul><div class="mt-6 flex items-center gap-3 border-t border-white/15 pt-4"><span class="live-status-dot"><span class="live-status-pulse"></span><span class="live-status-core"></span></span><span class="zonas-footer text-[17px] font-medium text-white/90">Equipo disponible esta semana</span></div></div></div></div></div><div class="hero-zonas-card mt-8 rounded-2xl border border-white/25 bg-ink/45 p-6 backdrop-blur-md lg:hidden"><div class="zonas-header flex items-center gap-2.5 mb-4"><i class="ri-shield-check-line text-[20px] w-5 h-5 flex items-center justify-center text-teal-light"></i><span class="zonas-header-title text-[17px] font-bold uppercase tracking-[0.14em] text-white/90">Zonas de actuación</span></div><ul class="flex flex-col gap-4"><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-building-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Pisos céntricos</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Casco histórico y Arganzuela</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-home-4-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Chalets</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Chamberí y Tetuán</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-restaurant-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Cocinas con isla</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Muebles a medida</div></div></li></ul><div class="mt-5 flex items-center gap-3 border-t border-white/15 pt-4"><span class="live-status-dot"><span class="live-status-pulse"></span><span class="live-status-core"></span></span><span class="zonas-footer text-[17px] font-medium text-white/90">Equipo disponible esta semana</span></div></div></div></section><section class="w-full border-t border-line bg-white py-16 md:py-24" id="estancias"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"><div><h2 class="font-editorial max-w-[720px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">¿Qué espacio deseas transformar en Madrid?</h2></div><p class="max-w-[320px] text-[14.5px] leading-[1.6] text-ink/80">Selecciona una estancia y verás el alcance técnico, el plazo real y un caso ejecutado.</p></div></div><div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch lg:gap-12"><div class="hidden lg:flex min-w-0 lg:col-span-7 h-full">
+<div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div><div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-end px-4 pb-12 pt-[112px] md:px-8 md:pb-20 md:pt-[150px] lg:min-h-[90vh] lg:px-12 lg:pb-24"><div class="grid grid-cols-1 items-end gap-10 lg:grid-cols-12 lg:gap-12"><div class="lg:col-span-7"><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><h1 class="hero-h1-title font-editorial text-[44px] leading-[1.04] tracking-tight text-white sm:text-[60px] md:text-[72px] lg:text-[84px] xl:text-[92px]">Reformas en Madrid<br><span class="italic font-light text-teal-light">a su medida.</span></h1></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 90ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 90ms; will-change: transform, opacity;"><p class="hero-subtitle mt-5 max-w-[560px] text-[15px] leading-[1.65] text-white/90 [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)] md:mt-6 md:text-[18px]">Acabados de alta gama, presupuesto cerrado y dirección técnica diaria para renovar tu piso o chalet en Madrid sin sorpresas.</p></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 170ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 170ms; will-change: transform, opacity;"><div class="mt-7 flex w-full justify-center sm:justify-start"><a class="inline-flex items-center justify-center gap-2.5 rounded-md bg-teal text-[16px] font-semibold text-white transition-all hover:bg-teal-hover cursor-pointer whitespace-nowrap shadow-md text-center" style="padding: 18px 44px !important;" href="#contacto">Pedir Visita Gratuita</a></div></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 240ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 240ms; will-change: transform, opacity;"><dl class="mt-9 grid max-w-[460px] grid-cols-3 gap-4 border-t border-white/20 pt-6"><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">15+</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">años en Madrid</dd></div><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">280</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">viviendas entregadas</dd></div><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">2 años</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">garantía legal</dd></div></dl></div></div><div class="hidden lg:col-span-5 lg:block"><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 150ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 150ms; will-change: transform, opacity;"><div class="hero-zonas-card ml-auto w-full max-w-[440px] rounded-2xl border border-white/25 bg-ink/45 p-6 md:p-7 backdrop-blur-md"><div class="zonas-header flex items-center gap-2.5 mb-4"><i class="ri-shield-check-line text-[20px] w-5 h-5 flex items-center justify-center text-teal-light"></i><span class="zonas-header-title text-[17px] font-bold uppercase tracking-[0.14em] text-white/90">Zonas de actuación</span></div><ul class="flex flex-col gap-4"><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-building-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Pisos céntricos</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Casco histórico y Arganzuela</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-home-4-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Chalets</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Chamberí y Tetuán</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-restaurant-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Cocinas con isla</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Muebles a medida</div></div></li></ul><div class="mt-6 flex items-center gap-3 border-t border-white/15 pt-4"><span class="live-status-dot"><span class="live-status-pulse"></span><span class="live-status-core"></span></span><span class="zonas-footer text-[17px] font-medium text-white/90">Equipo disponible esta semana</span></div></div></div></div></div><div class="hero-zonas-card mt-8 rounded-2xl border border-white/25 bg-ink/45 p-6 backdrop-blur-md lg:hidden"><div class="zonas-header flex items-center gap-2.5 mb-4"><i class="ri-shield-check-line text-[20px] w-5 h-5 flex items-center justify-center text-teal-light"></i><span class="zonas-header-title text-[17px] font-bold uppercase tracking-[0.14em] text-white/90">Zonas de actuación</span></div><ul class="flex flex-col gap-4"><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-building-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Pisos céntricos</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Casco histórico y Arganzuela</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-home-4-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Chalets</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Chamberí y Tetuán</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-restaurant-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Cocinas con isla</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Muebles a medida</div></div></li></ul><div class="mt-5 flex items-center gap-3 border-t border-white/15 pt-4"><span class="live-status-dot"><span class="live-status-pulse"></span><span class="live-status-core"></span></span><span class="zonas-footer text-[17px] font-medium text-white/90">Equipo disponible esta semana</span></div></div></div></section><section class="w-full border-t border-line bg-white py-16 md:py-24" id="estancias"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"><div><h2 class="font-editorial max-w-[720px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">¿Qué espacio deseas transformar en Madrid?</h2></div><p class="max-w-[320px] text-[14.5px] leading-[1.6] text-ink/80">Selecciona una estancia y verás el alcance técnico, el plazo real y un caso ejecutado.</p></div></div><div class="mt-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-stretch lg:gap-12"><div class="hidden lg:flex min-w-0 lg:col-span-7 h-full">
   <div class="reveal group relative w-full h-full min-h-[520px] overflow-hidden rounded-[20px] border border-line bg-ink shadow-sm flex flex-col justify-end">
     <!-- Master Desktop Image -->
     <img id="estancias-desktop-img" alt="Reformas de Cocinas en Madrid" class="absolute inset-0 h-full w-full object-cover object-top transition-all duration-500 ease-out group-hover:scale-[1.03]" src="images/madrid-cluster-01-cocinas.webp" title="Reformas de Cocinas en Madrid"/><!-- live-img -->
@@ -1488,9 +1606,9 @@
           <span id="estancias-desktop-location" class="normal-case font-medium text-white/90">Chamberí, Madrid</span>
         </div>
         <h3 id="estancias-desktop-title" class="font-editorial text-[22px] lg:text-[25px] font-bold text-white leading-tight mt-2">Reforma de Cocina</h3>
-        <p id="estancias-desktop-desc" class="text-[14px] leading-[1.6] text-white/90 mt-2">Diseño y reforma integral de cocinas con encimeras porcelánicas antibacterianas, mobiliario hidrófugo de alta durabilidad y renovación total de fontanería y electricidad con boletín oficial.</p>
+        <p id="estancias-desktop-desc" class="text-[14px] leading-[1.6] text-white/90 mt-2">Diseño y reforma completa de cocinas con encimeras porcelánicas antibacterianas, mobiliario hidrófugo de alta durabilidad y renovación total de fontanería y electricidad con boletín oficial.</p>
         <div class="mt-4 flex items-center justify-end" id="estancia-cta-container">
-          <a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-[#926b2b] transition-colors cursor-pointer shadow-md" href="https://reformasmadrid.seolifeteam.com/reformas-cocinas-madrid/" id="estancia-cta-btn">
+          <a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-[#926b2b] transition-colors cursor-pointer shadow-md" href="../landings_secundarias_madrid/reformas-cocinas-madrid.html" id="estancia-cta-btn">
             <span id="estancia-cta-text">Ver reformas de cocinas</span>
             <i class="ri-arrow-right-line text-[15px]"></i>
           </a>
@@ -1524,9 +1642,9 @@
 <span class="normal-case font-medium text-ink">Chamberí, Madrid</span>
 </div>
 <h4 class="font-editorial text-[21px] font-bold text-ink leading-tight">Reformas de Cocinas en Madrid</h4>
-<p class="text-[14.5px] leading-[1.6] text-ink">Diseño y reforma integral de cocinas con encimeras porcelánicas antibacterianas, mobiliario hidrófugo de alta durabilidad y renovación total de fontanería y electricidad con boletín oficial.</p>
+<p class="text-[14.5px] leading-[1.6] text-ink">Diseño y reforma completa de cocinas con encimeras porcelánicas antibacterianas, mobiliario hidrófugo de alta durabilidad y renovación total de fontanería y electricidad con boletín oficial.</p>
 <div class="pt-2 flex justify-end">
-<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="https://reformasmadrid.seolifeteam.com/reformas-cocinas-madrid/">
+<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="../landings_secundarias_madrid/reformas-cocinas-madrid.html">
 Ver reformas de cocinas
 <i class="ri-arrow-right-line text-[14px]"></i>
 </a>
@@ -1562,7 +1680,7 @@ Ver reformas de cocinas
 <h4 class="font-editorial text-[21px] font-bold text-ink leading-tight">Reformas de Baños en Madrid</h4>
 <p class="text-[14.5px] leading-[1.6] text-ink">Sustitución de bañera por ducha con impermeabilización bicapa garantizada, alicatados porcelánicos de gran formato rectificado y griferías termostáticas empotradas de bajo consumo.</p>
 <div class="pt-2 flex justify-end">
-<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="https://reformasmadrid.seolifeteam.com/reformas-banos-madrid/">
+<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="../landings_secundarias_madrid/reformas-banos-madrid.html">
 Ver reformas de baños
 <i class="ri-arrow-right-line text-[14px]"></i>
 </a>
@@ -1598,7 +1716,7 @@ Ver reformas de baños
 <h4 class="font-editorial text-[21px] font-bold text-ink leading-tight">Reformas de Locales Comerciales en Madrid</h4>
 <p class="text-[14.5px] leading-[1.6] text-ink">Transformación de locales para hostelería, clínicas y retail. Tramitación completa de Licencia Urbanística y Declaración Responsable ante la Agencia de Actividades del Ayuntamiento de Madrid.</p>
 <div class="pt-2 flex justify-end">
-<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="https://reformasmadrid.seolifeteam.com/reformas-locales-comerciales-madrid/">
+<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="../landings_secundarias_madrid/reformas-locales-comerciales-madrid.html">
 Ver locales comerciales
 <i class="ri-arrow-right-line text-[14px]"></i>
 </a>
@@ -1634,7 +1752,7 @@ Ver locales comerciales
 <h4 class="font-editorial text-[21px] font-bold text-ink leading-tight">Reformas de Oficinas en Madrid</h4>
 <p class="text-[14.5px] leading-[1.6] text-ink">Modernización de espacios corporativos con climatización inteligente, techos fonoabsorbentes y redes de telecomunicaciones categoría 6A/7 certificadas para empresas en Madrid.</p>
 <div class="pt-2 flex justify-end">
-<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="https://reformasmadrid.seolifeteam.com/reformas-oficinas-madrid/">
+<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="../landings_secundarias_madrid/reformas-oficinas-madrid.html">
 Ver reformas de oficinas
 <i class="ri-arrow-right-line text-[14px]"></i>
 </a>
@@ -1670,7 +1788,7 @@ Ver reformas de oficinas
 <h4 class="font-editorial text-[21px] font-bold text-ink leading-tight">Cambio de Bañera por Plato de Ducha en Madrid</h4>
 <p class="text-[14.5px] leading-[1.6] text-ink">Transformamos tu baño antiguo en un espacio 100% accesible y seguro en 48 horas sin obras molestas, con plato de resina mineral al ras, tratamiento antibacteriano y mampara de seguridad.</p>
 <div class="pt-2 flex justify-end">
-<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="https://reformasmadrid.seolifeteam.com/cambio-banera-por-plato-ducha-madrid/">
+<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="../landings_secundarias_madrid/cambio-banera-por-plato-ducha-madrid.html">
 Ver cambio de bañera
 <i class="ri-arrow-right-line text-[14px]"></i>
 </a>
@@ -1695,7 +1813,7 @@ Ver cambio de bañera
 <div class="min-h-0 pt-2 pb-4">
 <div class="rounded-2xl border border-line bg-ice overflow-hidden shadow-sm flex flex-col">
 <div class="w-full relative overflow-hidden bg-line/40" style="aspect-ratio: 16 / 10; max-height: 240px;">
-<img alt="Instalación de Aire Acondicionado en Madrid" class="h-full w-full object-cover object-top" loading="lazy" src="images/madrid-cluster-06-climatizacion.webp"/>
+<img alt="Instalación de Aire Acondicionado en Madrid" class="h-full w-full object-cover object-top" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-cluster-06-climatizacion-split.jpg"/>
 </div>
 <div class="p-4 sm:p-5 flex flex-col gap-2.5 bg-white border-t border-line">
 <div class="flex flex-wrap items-center gap-2 text-[12px] font-bold uppercase tracking-wider text-teal">
@@ -1706,7 +1824,7 @@ Ver cambio de bañera
 <h4 class="font-editorial text-[21px] font-bold text-ink leading-tight">Instalación de Aire Acondicionado en Madrid</h4>
 <p class="text-[14.5px] leading-[1.6] text-ink">Instalación autorizada RITE de sistemas inverter y bombas de calor aerotérmicas con zonificación independiente Airzone, reduciendo hasta un 70% el gasto energético de tu vivienda.</p>
 <div class="pt-2 flex justify-end">
-<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="https://reformasmadrid.seolifeteam.com/instalacion-aire-acondicionado-madrid/">
+<a class="inline-flex items-center gap-2 rounded-md bg-[#a87e34] px-5 py-2.5 text-[14px] font-semibold text-white hover:bg-[#926b2b] transition-colors shadow-sm" href="../landings_secundarias_madrid/instalacion-aire-acondicionado-madrid.html">
 Ver climatización
 <i class="ri-arrow-right-line text-[14px]"></i>
 </a>
@@ -1865,7 +1983,7 @@ Ver climatización
   <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0;">
     <div class="min-h-0">
       <div class="w-full relative overflow-hidden bg-line/40" style="aspect-ratio: 16 / 10; max-height: 230px;">
-        <img class="h-full w-full object-cover object-top" src="images/madrid-fase-05-entrega.webp" alt="Entrega, limpieza fina y garantía de 2 años" loading="lazy" />
+        <img class="h-full w-full object-cover object-top" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-fase-05-entrega-garantia.jpg" alt="Entrega, limpieza fina y garantía de 2 años" loading="lazy" />
       </div>
       <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
         <h3 class="font-editorial text-[21px] font-bold text-ink leading-tight">Entrega, limpieza fina y garantía de 2 años</h3>
@@ -1964,7 +2082,31 @@ Ver climatización
       </div>
     </button>
   </div>
-</div></div></section><section class="w-full border-t border-line bg-white py-16 md:py-24" id="proyectos"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"><div><h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">Transformaciones reales, manteniendo la esencia de tu hogar.</h2></div><span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">Obras ejecutadas en distritos de Madrid: Chamberí, Arganzuela, Retiro, Tetuán y Moratalaz.</span></div></div><div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+</div>
+
+<!-- BANNER DIRECCIÓN TÉCNICA -->
+<div class="mt-8 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
+<div class="banner-dt-text flex flex-col justify-center gap-4 p-6 order-2 lg:order-1 lg:col-span-8 xl:col-span-9 md:p-8">
+<div class="flex flex-wrap items-center gap-3">
+<span class="text-[11px] font-bold uppercase tracking-[0.18em] text-teal">Dirección Técnica Colegiada</span>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[11px] font-bold text-okgreen"><i class="ri-shield-check-line text-[13px]"></i>Garantía Escrita por Contrato</span>
+</div>
+<blockquote class="font-editorial text-[19px] leading-[1.45] text-ink md:text-[22px]">
+          «Una reforma integral en Madrid exige rigor técnico absoluto. Desde el replanteo inicial hasta las pruebas de instalaciones y acabados finales, cada proyecto es supervisado a pie de obra por un arquitecto técnico colegiado propio.»
+        </blockquote>
+<div>
+<div class="text-[14px] font-bold text-ink">Dirección Facultativa Propia</div>
+<div class="text-[12.5px] font-medium text-ink/75">Arquitecto Técnico Colegiado · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
+</div>
+</div>
+<div class="banner-dt-img order-1 lg:order-2 lg:col-span-4 xl:col-span-3">
+<div class="jefe-obra-img-box w-full overflow-hidden bg-ice">
+<img alt="Dirección técnica colegiada de reformas en Madrid" class="jefe-obra-img h-full w-full object-cover" src="images/madrid-director-tecnico.webp"/>
+</div>
+</div>
+</div>
+
+</div></section><section class="w-full border-t border-line bg-white py-16 md:py-24" id="proyectos"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"><div><h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">Transformaciones reales, manteniendo la esencia de tu hogar.</h2></div><span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">Obras ejecutadas en distritos de Madrid: Chamberí, Arganzuela, Retiro, Tetuán y Moratalaz.</span></div></div><div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
 <!-- PROYECTO 1: CHAMBERÍ -->
 <div class="h-full" style="opacity: 1;">
@@ -1975,7 +2117,7 @@ Ver climatización
 <span class="absolute top-3 right-3 z-10 rounded-md bg-black/75 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none shadow-sm">Antes</span>
 <!-- 2. IMAGEN DESPUÉS (CAPA SUPERIOR - RECORTADA POR --split) -->
 <div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none select-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
-<img alt="Piso en Chamberí - Reforma integral - 124 m²" class="absolute inset-0 h-full w-full object-cover object-top" loading="lazy" src="images/madrid-project-chamberi.webp" title="Después de la reforma - Piso señorial en Chamberí"/>
+<img alt="Piso en Chamberí - Reforma en Madrid - 124 m²" class="absolute inset-0 h-full w-full object-cover object-top" loading="lazy" src="images/madrid-project-chamberi.webp" title="Después de la reforma - Piso señorial en Chamberí"/>
 <span class="absolute top-3 left-3 z-10 rounded-md bg-teal/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none shadow-sm">Después</span>
 </div>
 <!-- 3. LÍNEA DIVISORIA + HANDLE INTERACTIVO -->
@@ -1988,7 +2130,7 @@ Ver climatización
 </div>
 <div class="flex flex-1 flex-col p-5 md:p-6">
 <div class="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wider text-teal">
-<span>Reforma Integral</span>
+<span>Reforma en Madrid</span>
 <span class="h-1 w-1 rounded-full bg-teal"></span>
 <span class="normal-case font-medium text-ink">Chamberí, Madrid · 124 m²</span>
 </div>
@@ -2128,11 +2270,11 @@ Ver climatización
 <article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white">
 <div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
 <!-- 1. IMAGEN ANTES -->
-<img alt="Dormitorio y carpintería original antes de la reforma en Moratalaz" class="absolute inset-0 h-full w-full object-cover object-top pointer-events-none select-none" loading="lazy" src="images/madrid-project-moratalaz-antes.webp" title="Antes de la reforma - Vivienda en Moratalaz"/>
+<img alt="Dormitorio y carpintería original antes de la reforma en Moratalaz" class="absolute inset-0 h-full w-full object-cover object-top pointer-events-none select-none" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-project-moratalaz-dormitorio-antes.jpg" title="Antes de la reforma - Vivienda en Moratalaz"/>
 <span class="absolute top-3 right-3 z-10 rounded-md bg-black/75 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none shadow-sm">Antes</span>
 <!-- 2. IMAGEN DESPUÉS -->
 <div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none select-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
-<img alt="Residencial en Moratalaz - Carpintería a medida y acabados" class="absolute inset-0 h-full w-full object-cover object-top" loading="lazy" src="images/madrid-project-moratalaz.webp" title="Después de la reforma - Vivienda en Moratalaz"/>
+<img alt="Residencial en Moratalaz - Carpintería a medida y acabados" class="absolute inset-0 h-full w-full object-cover object-top" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-project-moratalaz-dormitorio-despues.jpg" title="Después de la reforma - Vivienda en Moratalaz"/>
 <span class="absolute top-3 left-3 z-10 rounded-md bg-teal/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none shadow-sm">Después</span>
 </div>
 <!-- 3. HANDLE -->
@@ -2163,7 +2305,7 @@ Ver climatización
     <div style="opacity: 1; transform: translate3d(0px, 0px, 0px);">
       <div class="flex flex-col gap-3 max-w-[760px] mb-2">
         <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block">Innovación &amp; Oficios Coordinados</span>
-        <h2 class="font-editorial text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">Soluciones integrales que revalorizan tu vivienda en Madrid.</h2>
+        <h2 class="font-editorial text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">Soluciones que revalorizan tu vivienda en Madrid.</h2>
         <p class="mt-1 text-[16px] leading-[1.65] text-ink/80">Sostenibilidad ecoamigable, ahorro energético, domótica integrada e interiorismo personalizado para viviendas en Madrid.</p>
       </div>
     </div>
@@ -2218,7 +2360,7 @@ Ver climatización
           <!-- FICHA 3: DOMÓTICA -->
           <article class="oficios-card flex flex-col overflow-hidden rounded-[20px] border border-line bg-white shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-300 w-full min-w-full sm:min-w-[340px] md:min-w-[calc(50%-12px)] md:w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 snap-start">
             <div class="w-full relative overflow-hidden bg-line/40 group" style="aspect-ratio: 16 / 10;">
-              <img alt="Domótica y Confort Inteligente en Madrid" class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/madrid-trade-electricidad.webp" title="Domótica — Control integral desde tu smartphone"/>
+              <img alt="Domótica y Confort Inteligente en Madrid" class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/madrid-trade-electricidad.webp" title="Domótica — Control total desde tu smartphone"/>
               <span class="absolute top-3 left-3 rounded-md bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[11.5px] font-bold text-teal shadow-sm">03</span>
             </div>
             <div class="p-6 flex flex-col flex-1 gap-3 bg-white">
@@ -2226,7 +2368,7 @@ Ver climatización
               <h3 class="font-editorial text-[20px] md:text-[22px] font-bold text-ink leading-tight">Domótica &amp; Confort Inteligente</h3>
               <p class="text-[14.5px] leading-[1.65] text-ink/80 flex-1">Control inteligente de iluminación LED por zonas, termostatos modulantes programables, persianas motorizadas con sensores y monitorización del consumo eléctrico en tiempo real desde tu smartphone.</p>
               <div class="mt-2 inline-flex items-center gap-2 rounded-full bg-ice px-3 py-1.5 text-[12px] font-medium text-ink self-start border border-line">
-                <i class="ri-check-line text-[14px] text-teal"></i> Control integral desde tu móvil
+                <i class="ri-check-line text-[14px] text-teal"></i> Control inteligente desde tu móvil
               </div>
             </div>
           </article>
@@ -2234,13 +2376,13 @@ Ver climatización
           <!-- FICHA 4: INTERIORISMO (NUEVA FOTO: ASESORA INTERIORISTA CON CLIENTE REVISANDO PLANOS Y MUESTRAS) -->
           <article class="oficios-card flex flex-col overflow-hidden rounded-[20px] border border-line bg-white shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-300 w-full min-w-full sm:min-w-[340px] md:min-w-[calc(50%-12px)] md:w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 snap-start">
             <div class="w-full relative overflow-hidden bg-line/40 group" style="aspect-ratio: 16 / 10;">
-              <img alt="Interiorismo y Asesoramiento de Espacio con Interiorista Colegiada en Madrid" class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/madrid-trade-interiorismo.webp" title="Interiorismo — Asesoramiento integral por interioristas en Madrid"/>
+              <img alt="Interiorismo y Asesoramiento de Espacio con Interiorista Colegiada en Madrid" class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/madrid-trade-interiorismo.webp" title="Interiorismo — Asesoramiento experto por interioristas en Madrid"/>
               <span class="absolute top-3 left-3 rounded-md bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[11.5px] font-bold text-teal shadow-sm">04</span>
             </div>
             <div class="p-6 flex flex-col flex-1 gap-3 bg-white">
               <span class="text-[11.5px] font-bold uppercase tracking-[0.14em] text-teal">Diseño a tu Medida</span>
               <h3 class="font-editorial text-[20px] md:text-[22px] font-bold text-ink leading-tight">Interiorismo &amp; Asesoramiento de Espacio</h3>
-              <p class="text-[14.5px] leading-[1.65] text-ink/80 flex-1">Asesoramiento integral por interioristas colegiados: distribución ergonómica del espacio, selección de texturas y materiales nobles, estudio de iluminación arquitectónica e infografías 3D previas a obra.</p>
+              <p class="text-[14.5px] leading-[1.65] text-ink/80 flex-1">Asesoramiento personalizado por interioristas colegiados: distribución ergonómica del espacio, selección de texturas y materiales nobles, estudio de iluminación arquitectónica e infografías 3D previas a obra.</p>
               <div class="mt-2 inline-flex items-center gap-2 rounded-full bg-ice px-3 py-1.5 text-[12px] font-medium text-ink self-start border border-line">
                 <i class="ri-check-line text-[14px] text-teal"></i> Acompañamiento en cada decisión de estilo
               </div>
@@ -2266,7 +2408,7 @@ Ver climatización
           <!-- FICHA 6: CARPINTERÍA DE AUTOR -->
           <article class="oficios-card flex flex-col overflow-hidden rounded-[20px] border border-line bg-white shadow-sm hover:shadow-md hover:border-teal/40 transition-all duration-300 w-full min-w-full sm:min-w-[340px] md:min-w-[calc(50%-12px)] md:w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] lg:w-[calc(33.333%-16px)] flex-shrink-0 snap-start">
             <div class="w-full relative overflow-hidden bg-line/40 group" style="aspect-ratio: 16 / 10;">
-              <img alt="Carpintería de alta gama y armarios a medida en Madrid" class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" loading="lazy" src="images/madrid-project-moratalaz.webp" title="Carpintería y Acabados — Armarios empotrados y puertas macizas"/>
+              <img alt="Carpintería de alta gama y armarios a medida en Madrid" class="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-trade-carpinteria-ebanisteria.jpg" title="Carpintería y Acabados — Armarios empotrados y puertas macizas"/>
               <span class="absolute top-3 left-3 rounded-md bg-white/95 backdrop-blur-sm px-2.5 py-1 text-[11.5px] font-bold text-teal shadow-sm">06</span>
             </div>
             <div class="p-6 flex flex-col flex-1 gap-3 bg-white">
@@ -2298,7 +2440,7 @@ Ver climatización
 <div>
 <h2 class="font-editorial max-w-[720px] text-[30px] leading-[1.1] text-white md:text-[40px] lg:text-[44px] [text-shadow:0_2px_10px_rgba(0,0,0,0.85)]">Lo que cuesta, dicho antes de empezar.</h2>
 </div>
-<p class="tarifas-subtitle text-[14px] md:text-[15.5px] leading-[1.6] text-white md:max-w-[280px] [text-shadow:0_1px_8px_rgba(0,0,0,0.95)]" style="color: #FFFFFF !important;">Precios de referencia con IVA incluido. Tu presupuesto final se cierra tras la visita técnica.</p></div></div><div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8"><div class="lg:col-span-6"><div class="h-full" style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 60ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 60ms; will-change: transform, opacity;"><div class="flex h-full flex-col rounded-[20px] border border-line bg-white p-5 md:p-7"><div class="flex items-center justify-between gap-4 border-b border-line pb-4"><h3 class="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink">Tarifas orientativas 2026</h3><span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-2.5 py-1 text-[10.5px] font-semibold text-okgreen"><span class="h-1.5 w-1.5 rounded-full bg-okgreen"></span>Plazas disponibles</span></div><ul class="mt-2 flex-1"><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Visita Técnica y Asesoramiento</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Madrid capital y corredor · Sin compromiso</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-okgreen">0 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Reforma de Baño Completo</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Ducha a ras, sanitarios y alicatado · Hasta 6 m²</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 3.800 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Reforma de Cocina con Muebles</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Carpintería a medida, encimera e instalaciones</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 6.500 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Reforma Integral de Vivienda</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Hasta 80 m² · Proyecto, licencias y dirección</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 28.500 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Aerotermia y Suelo Radiante</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Equipo, colectores y zonificación domótica</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 7.200 €</span></div></li></ul><div class="mt-5 flex flex-col gap-3 rounded-lg bg-card p-4 sm:flex-row sm:items-center sm:justify-between"><span class="text-[14px] leading-[1.5] font-medium text-black">Precios con IVA incluido. Sujeto a medición y estado de instalaciones.</span><a class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-teal px-4 py-2.5 text-[12.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap" href="#contacto">Calcular mi reforma<i class="ri-arrow-right-line text-[14px] w-4 h-4 flex items-center justify-center"></i></a></div></div></div></div><div class="lg:col-span-6"><div class="h-full" style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 120ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 120ms; will-change: transform, opacity;"><div class="flex h-full flex-col rounded-[20px] border border-line bg-white p-5 md:p-7"><h3 class="border-b border-line pb-4 text-[20px] md:text-[23px] font-bold uppercase tracking-[0.06em] text-ink">Preguntas Frecuentes sobre Presupuestos y Obras</h3><div class="flex-1" id="faq-accordion"><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿Qué plazo contractual manejáis para una reforma?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Entre 6 y 9 semanas para una reforma integral de hasta 90 m², contadas desde la firma del acta de replanteo. El plazo se fija por contrato con penalización económica por retraso imputable a la obra.</p></div></div></div><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿El presupuesto es realmente cerrado?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Sí. Entregamos un presupuesto desglosado por partidas y capítulos, con precio final y sin letra pequeña. Solo puede variar si tú pides un cambio de alcance, y en ese caso se aprueba por escrito antes de ejecutarlo.</p></div></div></div><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿Os encargáis de las licencias municipales en Madrid?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Sí, tramitamos la licencia de obra y la comunicación previa ante el Ayuntamiento de Madrid y los municipios del corredor. También asumimos la dirección facultativa y la coordinación de seguridad y salud.</p></div></div></div><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿Puedo ver y tocar los materiales antes de decidir?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Te acompañamos a nuestro showroom de materiales en Madrid, donde puedes ver in situ porcelánicos, tarimas, carpintería y grifería. Trabajamos con Porcelanosa y marcas equivalentes con stock garantizado.</p></div></div></div></div><div class="mt-4 rounded-xl bg-card border border-line/60 p-4 md:p-5"><p class="text-[16px] leading-[1.6] font-semibold text-black">¿Tu caso no aparece? Escríbenos y lo revisamos sin coste en 24 horas laborables.</p></div></div></div></div></div></div></section><section class="w-full border-t border-line bg-white py-16 md:py-24" id="contacto"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div class="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-12 lg:gap-10"><div class="flex flex-col justify-between lg:col-span-6"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><h2 class="font-editorial max-w-[640px] text-[27px] sm:text-[34px] md:text-[40px] lg:text-[44px] leading-[1.18] text-ink">Empecemos cuando<br class="sm:hidden"> tú decidas.</h2><p class="mt-4 max-w-[520px] text-[15px] leading-[1.65] text-muted md:text-[16px]">Cuéntanos qué quieres reformar y te llamamos en menos de 24 horas laborables para agendar la visita técnica sin coste.</p></div><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 80ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 80ms; will-change: transform, opacity;"><div class="mt-7 flex flex-col gap-3 sm:flex-row"><button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap" type="button">Pedir Visita Gratuita<i class="ri-arrow-right-line text-[16px] w-4 h-4 flex items-center justify-center"></i></button><a class="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-white px-6 py-3.5 text-[14px] font-semibold text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer whitespace-nowrap" href="https://wa.me/34949000000" rel="noopener noreferrer" target="_blank"><i class="ri-whatsapp-line text-[17px] text-okgreen"></i>WhatsApp directo</a></div></div><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 140ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 140ms; will-change: transform, opacity;"><dl class="mt-9 grid grid-cols-1 gap-5 border-t border-line pt-6 sm:grid-cols-2"><div><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Teléfono directo</dt><dd class="mt-1.5"><a class="text-[16px] font-semibold text-ink hover:text-teal transition-colors cursor-pointer whitespace-nowrap" href="tel:+34949000000">+34 949 00 00 00</a></dd></div><div><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Estudio técnico</dt><dd class="mt-1.5 text-[13.5px] leading-[1.5] text-ink">Calle Mayor 42, 19001 Madrid</dd></div><div class="sm:col-span-2"><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Zona de actuación</dt><dd class="mt-1.5 text-[13.5px] leading-[1.6] text-muted">Madrid capital · Chamberí · Tetuán · Moratalaz · Arganzuela</dd></div><div><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Horario</dt><dd class="mt-1.5 text-[13px] leading-[1.6] text-muted">Lun–Vie 8:30–19:00 · Sábado con cita previa</dd></div><div class="flex items-end"><span class="inline-flex items-center gap-2 rounded-full border border-okgreen/25 bg-okgreen/10 px-3 py-2 text-[11px] font-semibold text-okgreen"><span class="relative flex h-2 w-2 items-center justify-center"><span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span></span>Urgencias en obra 24/7</span></div></dl></div></div><div class="lg:col-span-6"><div class="h-full" style="opacity: 0; transform: translate3d(0px, 24px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 100ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 100ms; will-change: transform, opacity;"><div class="relative h-full overflow-hidden rounded-[20px] border border-line bg-card"><div class="h-full w-full" style="min-height: 360px;"><img alt="Fachada del estudio técnico de Reformas Madrid" class="h-full w-full object-cover object-top" src="images/madrid-estudio-fachada.webp" title="Estudio técnico Reformas Madrid · Calle Mayor, Madrid"/></div><div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-5"><div class="text-[15px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.95)]" style="color: #FFFFFF !important;">Estudio técnico · Calle Mayor 42</div><div class="mt-1 text-[13.5px] font-medium text-white/90 [text-shadow:0_1px_4px_rgba(0,0,0,0.9)]" style="color: rgba(255, 255, 255, 0.95) !important;">Visitas con cita previa · Parking a 2 minutos</div></div></div></div></div></div></div></section></main><footer class="w-full bg-ice border-t border-line/60"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10"><div class="md:col-span-5"><div class="flex items-center gap-1.5"><span class="text-[18px] font-bold tracking-[-0.01em] text-black">REFORMAS</span><span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span></div><p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-black font-normal">Reformas integrales, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.</p><div class="mt-5 flex flex-col gap-2 text-[15px] text-black font-medium"><a class="hover:text-[#8C6424] transition-colors cursor-pointer whitespace-nowrap text-black font-semibold" href="tel:+34949000000">+34 949 00 00 00</a><span class="text-black">Calle Mayor 42, 19001 Madrid</span></div></div><div class="md:col-span-3"><h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black"><a class="cursor-pointer text-black" href="#estancias">Navegación</a></h4><ul class="mt-4 flex flex-col gap-2.5 text-[15px] text-black font-medium"><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#estancias">Estancias</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#proyectos">Proyectos</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#fases">Fases</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#oficios">Oficios</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#tarifas">Tarifas</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#" onclick="event.preventDefault();">Nosotros</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#" onclick="event.preventDefault();">Blog</a></li></ul></div><div class="md:col-span-4"><h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black"><a class="cursor-pointer text-black" href="#contacto">Contacto</a></h4><ul class="mt-4 flex flex-col gap-2.5 text-[15px] text-black font-medium"><li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="https://wa.me/34949000000" rel="noopener noreferrer" target="_blank">WhatsApp · respuesta en 24 h</a></li><li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="mailto:contacto@reformasmadrid.es">contacto@reformasmadrid.es</a></li><li class="text-black">Lun–Vie 8:30–19:00 · Sábado con cita previa</li><li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black font-semibold underline underline-offset-2" data-discover="true" href="#contacto">Formulario de contacto</a></li></ul></div></div><div class="border-t border-black/15 py-6">
+<p class="tarifas-subtitle text-[14px] md:text-[15.5px] leading-[1.6] text-white md:max-w-[280px] [text-shadow:0_1px_8px_rgba(0,0,0,0.95)]" style="color: #FFFFFF !important;">Precios de referencia con IVA incluido. Tu presupuesto final se cierra tras la visita técnica.</p></div></div><div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8"><div class="lg:col-span-6"><div class="h-full" style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 60ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 60ms; will-change: transform, opacity;"><div class="flex h-full flex-col rounded-[20px] border border-line bg-white p-5 md:p-7"><div class="flex items-center justify-between gap-4 border-b border-line pb-4"><h3 class="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink">Tarifas orientativas 2026</h3><span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-2.5 py-1 text-[10.5px] font-semibold text-okgreen"><span class="h-1.5 w-1.5 rounded-full bg-okgreen"></span>Plazas disponibles</span></div><ul class="mt-2 flex-1"><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Visita Técnica y Asesoramiento</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Madrid capital y corredor · Sin compromiso</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-okgreen">0 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Reforma de Baño Completo</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Ducha a ras, sanitarios y alicatado · Hasta 6 m²</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 3.800 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Reforma de Cocina con Muebles</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Carpintería a medida, encimera e instalaciones</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 6.500 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Reforma Completa de Vivienda</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Hasta 80 m² · Proyecto, licencias y dirección</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 28.500 €</span></div></li><li class="flex items-start justify-between gap-4 border-b border-line/70 py-4 last:border-0"><div class="min-w-0"><div class="text-[14px] font-semibold leading-snug text-ink">Aerotermia y Suelo Radiante</div><div class="mt-1 text-[11.5px] leading-[1.5] text-muted">Equipo, colectores y zonificación domótica</div></div><div class="shrink-0 whitespace-nowrap text-right"><span class="text-[15px] font-semibold text-teal">desde 7.200 €</span></div></li></ul><div class="mt-5 flex flex-col gap-3 rounded-lg bg-card p-4 sm:flex-row sm:items-center sm:justify-between"><span class="text-[14px] leading-[1.5] font-medium text-black">Precios con IVA incluido. Sujeto a medición y estado de instalaciones.</span><a class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-teal px-4 py-2.5 text-[12.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap" href="#contacto">Calcular mi reforma<i class="ri-arrow-right-line text-[14px] w-4 h-4 flex items-center justify-center"></i></a></div></div></div></div><div class="lg:col-span-6"><div class="h-full" style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 120ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 120ms; will-change: transform, opacity;"><div class="flex h-full flex-col rounded-[20px] border border-line bg-white p-5 md:p-7"><h3 class="border-b border-line pb-4 text-[20px] md:text-[23px] font-bold uppercase tracking-[0.06em] text-ink">Preguntas Frecuentes sobre Presupuestos y Obras</h3><div class="flex-1" id="faq-accordion"><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿Qué plazo contractual manejáis para una reforma?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Entre 6 y 9 semanas para una reforma completa de hasta 90 m², contadas desde la firma del acta de replanteo. El plazo se fija por contrato con penalización económica por retraso imputable a la obra.</p></div></div></div><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿El presupuesto es realmente cerrado?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Sí. Entregamos un presupuesto desglosado por partidas y capítulos, con precio final y sin letra pequeña. Solo puede variar si tú pides un cambio de alcance, y en ese caso se aprueba por escrito antes de ejecutarlo.</p></div></div></div><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿Os encargáis de las licencias municipales en Madrid?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Sí, tramitamos la licencia de obra y la comunicación previa ante el Ayuntamiento de Madrid y los municipios del corredor. También asumimos la dirección facultativa y la coordinación de seguridad y salud.</p></div></div></div><div class="border-b border-line/70 last:border-0"><button aria-expanded="false" class="flex w-full items-start justify-between gap-4 py-4 text-left cursor-pointer" type="button"><span class="text-[18px] md:text-[20px] font-bold leading-snug text-ink">¿Puedo ver y tocar los materiales antes de decidir?</span><i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted transition-transform duration-300"></i></button><div class="grid overflow-hidden transition-all duration-500 ease-out" style="grid-template-rows: 0fr; opacity: 0;"><div class="min-h-0"><p class="pb-4 pr-6 text-[14px] leading-[1.7] text-ink/85">Te acompañamos a nuestro showroom de materiales en Madrid, donde puedes ver in situ porcelánicos, tarimas, carpintería y grifería. Trabajamos con Porcelanosa y marcas equivalentes con stock garantizado.</p></div></div></div></div><div class="mt-4 rounded-xl bg-card border border-line/60 p-4 md:p-5"><p class="text-[16px] leading-[1.6] font-semibold text-black">¿Tu caso no aparece? Escríbenos y lo revisamos sin coste en 24 horas laborables.</p></div></div></div></div></div></div></section><section class="w-full border-t border-line bg-white py-16 md:py-24" id="contacto"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div class="grid grid-cols-1 items-stretch gap-8 lg:grid-cols-12 lg:gap-10"><div class="flex flex-col justify-between lg:col-span-6"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><h2 class="font-editorial max-w-[640px] text-[27px] sm:text-[34px] md:text-[40px] lg:text-[44px] leading-[1.18] text-ink">Empecemos cuando<br class="sm:hidden"> tú decidas.</h2><p class="mt-4 max-w-[520px] text-[15px] leading-[1.65] text-muted md:text-[16px]">Cuéntanos qué quieres reformar y te llamamos en menos de 24 horas laborables para agendar la visita técnica sin coste.</p></div><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 80ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 80ms; will-change: transform, opacity;"><div class="mt-7 flex flex-col gap-3 sm:flex-row"><button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-6 py-3.5 text-[14px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap" type="button">Pedir Visita Gratuita<i class="ri-arrow-right-line text-[16px] w-4 h-4 flex items-center justify-center"></i></button><a class="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-white px-6 py-3.5 text-[14px] font-semibold text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer whitespace-nowrap" href="https://wa.me/34949000000" rel="noopener noreferrer" target="_blank"><i class="ri-whatsapp-line text-[17px] text-okgreen"></i>WhatsApp directo</a></div></div><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 140ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 140ms; will-change: transform, opacity;"><dl class="mt-9 grid grid-cols-1 gap-5 border-t border-line pt-6 sm:grid-cols-2"><div><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Teléfono directo</dt><dd class="mt-1.5"><a class="text-[16px] font-semibold text-ink hover:text-teal transition-colors cursor-pointer whitespace-nowrap" href="tel:+34949000000">+34 949 00 00 00</a></dd></div><div><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Estudio técnico</dt><dd class="mt-1.5 text-[13.5px] leading-[1.5] text-ink">Calle Mayor 42, 19001 Madrid</dd></div><div class="sm:col-span-2"><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Zona de actuación</dt><dd class="mt-1.5 text-[13.5px] leading-[1.6] text-muted">Madrid capital · Chamberí · Tetuán · Moratalaz · Arganzuela</dd></div><div><dt class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Horario</dt><dd class="mt-1.5 text-[13px] leading-[1.6] text-muted">Lun–Vie 8:30–19:00 · Sábado con cita previa</dd></div><div class="flex items-end"><span class="inline-flex items-center gap-2 rounded-full border border-okgreen/25 bg-okgreen/10 px-3 py-2 text-[11px] font-semibold text-okgreen"><span class="relative flex h-2 w-2 items-center justify-center"><span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span></span>Urgencias en obra 24/7</span></div></dl></div></div><div class="lg:col-span-6"><div class="h-full" style="opacity: 0; transform: translate3d(0px, 24px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 100ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 100ms; will-change: transform, opacity;"><div class="relative h-full overflow-hidden rounded-[20px] border border-line bg-card"><div class="h-full w-full" style="min-height: 360px;"><img alt="Fachada del estudio técnico de Reformas Madrid" class="h-full w-full object-cover object-top" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-estudio-fachada-reformas-madrid.jpg" title="Estudio técnico Reformas Madrid · Calle Mayor, Madrid"/></div><div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-5"><div class="text-[15px] font-bold text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.95)]" style="color: #FFFFFF !important;">Estudio técnico · Calle Mayor 42</div><div class="mt-1 text-[13.5px] font-medium text-white/90 [text-shadow:0_1px_4px_rgba(0,0,0,0.9)]" style="color: rgba(255, 255, 255, 0.95) !important;">Visitas con cita previa · Parking a 2 minutos</div></div></div></div></div></div></div></section></main><footer class="w-full bg-ice border-t border-line/60"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10"><div class="md:col-span-5"><div class="flex items-center gap-1.5"><span class="text-[18px] font-bold tracking-[-0.01em] text-black">REFORMAS</span><span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span></div><p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-black font-normal">Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.</p><div class="mt-5 flex flex-col gap-2 text-[15px] text-black font-medium"><a class="hover:text-[#8C6424] transition-colors cursor-pointer whitespace-nowrap text-black font-semibold" href="tel:+34949000000">+34 949 00 00 00</a><span class="text-black">Calle Mayor 42, 19001 Madrid</span></div></div><div class="md:col-span-3"><h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black"><a class="cursor-pointer text-black" href="#estancias">Navegación</a></h4><ul class="mt-4 flex flex-col gap-2.5 text-[15px] text-black font-medium"><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#estancias">Estancias</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#proyectos">Proyectos</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#fases">Fases</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#oficios">Oficios</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="#tarifas">Tarifas</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="nosotros.html">Nosotros</a></li><li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="blog.html">Blog</a></li></ul></div><div class="md:col-span-4"><h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black"><a class="cursor-pointer text-black" href="#contacto">Contacto</a></h4><ul class="mt-4 flex flex-col gap-2.5 text-[15px] text-black font-medium"><li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="https://wa.me/34949000000" rel="noopener noreferrer" target="_blank">WhatsApp · respuesta en 24 h</a></li><li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="mailto:contacto@reformasmadrid.es">contacto@reformasmadrid.es</a></li><li class="text-black">Lun–Vie 8:30–19:00 · Sábado con cita previa</li><li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black font-semibold underline underline-offset-2" data-discover="true" href="#contacto">Formulario de contacto</a></li></ul></div></div><div class="border-t border-black/15 py-6">
   <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-black font-medium text-center md:text-left">
     <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
       <span class="text-black font-medium">Reformas Madrid · © 2026 Todos los derechos reservados.</span>
@@ -2306,11 +2448,11 @@ Ver climatización
       <span class="text-black/80 font-medium">Diseñado por <strong class="text-black font-semibold">SEOLife</strong></span>
     </div>
     <div class="flex flex-wrap items-center justify-center gap-y-2 text-[13px]">
-      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/aviso-legal/">Aviso Legal</a>
+      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="#aviso-legal">Aviso Legal</a>
       <span class="text-black/40 select-none px-2 sm:px-3">·</span>
-      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-privacidad/">Política de Privacidad</a>
+      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="#politica-de-privacidad">Política de Privacidad</a>
       <span class="text-black/40 select-none px-2 sm:px-3">·</span>
-      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-cookies/">Política de Cookies</a>
+      <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="#politica-de-cookies">Política de Cookies</a>
     </div>
   </div>
 </div></div></footer><!-- BOTÓN FLOTANTE SUBIR (BEIGE SUAVE - TOKEN DESIGN FREITECH 2026) -->
@@ -2318,17 +2460,17 @@ Ver climatización
   <i class="ri-arrow-up-line text-[19px] font-bold text-ink"></i>
 </button>
 
-<button aria-label="Abrir consulta rápida" class="fixed bottom-5 right-4 z-[60] flex items-center gap-2.5 rounded-full border border-line bg-white/95 py-2.5 pl-3.5 pr-4 shadow-[0_12px_32px_rgba(15,20,23,0.12)] backdrop-blur-md transition-all duration-300 hover:border-teal/40 cursor-pointer md:bottom-6 md:right-6 opacity-100" type="button"><span class="relative flex h-2 w-2 items-center justify-center"><span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span></span><i class="ri-chat-3-line text-[16px] text-teal"></i><span class="text-[12.5px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span></button><div aria-hidden="true" class="fixed inset-0 z-[70] bg-ink/35 backdrop-blur-sm transition-opacity duration-300 pointer-events-none opacity-0"></div><aside aria-hidden="true" aria-label="Consulta rápida" aria-modal="true" class="fixed inset-y-0 right-0 z-[80] w-full max-w-[460px] overflow-y-auto bg-white transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] translate-x-full" role="dialog"><div class="flex min-h-full flex-col"><div class="flex items-start justify-between gap-4 border-b border-line px-5 py-5 md:px-6"><div><span class="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span><h2 class="font-editorial mt-2 text-[22px] leading-[1.15] text-ink">Consulta rápida en Madrid</h2></div><button aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button"><i class="ri-close-line text-[18px]"></i></button></div><form action="https://readdy.ai/api/form/dbankn39uihupc2pc6bg" class="flex flex-1 flex-col gap-5 px-5 py-6 md:px-6" data-readdy-form="true" id="florin-consulta-rapida" method="post"><p class="text-[13px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p><fieldset><legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend><input name="tipo_reforma" readonly="" type="hidden" value="Reforma integral"/><div class="mt-2.5 flex flex-wrap gap-2"><button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma integral</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button></div></fieldset><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label><input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/></div><div class="grid grid-cols-1 gap-4 sm:grid-cols-2"><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label><input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/></div><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label><input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/></div></div><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label><textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Piso de 85 m² en el centro, quiero reformar cocina y baño..." required="" rows="4"></textarea><div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div></div><div class="fl-hp"><label for="florin-contact-alt">No rellenar</label><input aria-hidden="true" autocomplete="off" id="florin-contact-alt" name="contact_alt" readonly="" tabindex="-1" type="text"/></div><div class="mt-auto flex flex-col gap-3 border-t border-line pt-5"><button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">Solicitar visita gratuita<i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i></button><p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p></div></form></div></aside></div></div></div>
+<button aria-label="Abrir consulta rápida" class="fixed bottom-5 right-4 z-[60] flex items-center gap-2.5 rounded-full border border-line bg-white/95 py-2.5 pl-3.5 pr-4 shadow-[0_12px_32px_rgba(15,20,23,0.12)] backdrop-blur-md transition-all duration-300 hover:border-teal/40 cursor-pointer md:bottom-6 md:right-6 opacity-100" type="button"><span class="relative flex h-2 w-2 items-center justify-center"><span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span></span><i class="ri-chat-3-line text-[16px] text-teal"></i><span class="text-[12.5px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span></button><div aria-hidden="true" class="fixed inset-0 z-[70] bg-ink/35 backdrop-blur-sm transition-opacity duration-300 pointer-events-none opacity-0"></div><aside aria-hidden="true" aria-label="Consulta rápida" aria-modal="true" class="fixed inset-y-0 right-0 z-[80] w-full max-w-[460px] overflow-y-auto bg-white transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] translate-x-full" role="dialog"><div class="flex min-h-full flex-col"><div class="flex items-start justify-between gap-4 border-b border-line px-5 py-5 md:px-6"><div><span class="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span><h2 class="font-editorial mt-2 text-[22px] leading-[1.15] text-ink">Consulta rápida en Madrid</h2></div><button aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button"><i class="ri-close-line text-[18px]"></i></button></div><form action="https://readdy.ai/api/form/dbankn39uihupc2pc6bg" class="flex flex-1 flex-col gap-5 px-5 py-6 md:px-6" data-readdy-form="true" id="florin-consulta-rapida" method="post"><p class="text-[13px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p><fieldset><legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend><input name="tipo_reforma" readonly="" type="hidden" value="Reforma completa"/><div class="mt-2.5 flex flex-wrap gap-2"><button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button></div></fieldset><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label><input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/></div><div class="grid grid-cols-1 gap-4 sm:grid-cols-2"><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label><input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/></div><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label><input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/></div></div><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label><textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Piso de 85 m² en el centro, quiero reformar cocina y baño..." required="" rows="4"></textarea><div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div></div><div class="fl-hp"><label for="florin-contact-alt">No rellenar</label><input aria-hidden="true" autocomplete="off" id="florin-contact-alt" name="contact_alt" readonly="" tabindex="-1" type="text"/></div><div class="mt-auto flex flex-col gap-3 border-t border-line pt-5"><button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">Solicitar visita gratuita<i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i></button><p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p></div></form></div></aside></div></div></div>
 <!-- INTERACTIVE BEHAVIOR ENGINE (REVOLUTIONIZED FOR NATIVE LOCAL & PRODUCTION PERFORMANCE) -->
 <script>
 window.__RECOVERY_DATA__ = {
     estancias: [
-    {"id": "cocinas", "num": "01", "title": "Reformas de Cocinas en Madrid", "subtitle": "Distribución ergonómica, islas porcelánicas y muebles a medida", "location": "Chamberí, Madrid", "summary": "Diseño y reforma integral de cocinas con encimeras porcelánicas antibacterianas, mobiliario hidrófugo de alta durabilidad y renovación total de fontanería y electricidad con boletín oficial.", "image": "images/madrid-cluster-01-cocinas.webp", "showButton": true, "ctaText": "Ver reformas de cocinas", "ctaHref": "https://reformasmadrid.seolifeteam.com/reformas-cocinas-madrid/"},
-    {"id": "banos", "num": "02", "title": "Reformas de Baños en Madrid", "subtitle": "Duchas a ras de suelo, mamparas de vidrio y sanitarios suspendidos", "location": "Arganzuela · Madrid Río", "summary": "Sustitución de bañera por ducha con impermeabilización bicapa garantizada, alicatados porcelánicos de gran formato rectificado y griferías termostáticas empotradas de bajo consumo.", "image": "images/madrid-cluster-02-banos.webp", "showButton": true, "ctaText": "Ver reformas de baños", "ctaHref": "https://reformasmadrid.seolifeteam.com/reformas-banos-madrid/"},
-    {"id": "locales", "num": "03", "title": "Reformas de Locales Comerciales en Madrid", "subtitle": "Adecuación exprés, insonorización y licencias de actividad", "location": "Tetuán y Chamberí, Madrid", "summary": "Transformación de locales para hostelería, clínicas y retail. Tramitación completa de Licencia Urbanística y Declaración Responsable ante la Agencia de Actividades del Ayuntamiento de Madrid.", "image": "images/madrid-cluster-03-locales.webp", "showButton": true, "ctaText": "Ver locales comerciales", "ctaHref": "https://reformasmadrid.seolifeteam.com/reformas-locales-comerciales-madrid/"},
-    {"id": "oficinas", "num": "04", "title": "Reformas de Oficinas en Madrid", "subtitle": "Distribución diáfana, mamparas acústicas y cableado estructurado", "location": "Chamartín y Hortaleza, Madrid", "summary": "Modernización de espacios corporativos con climatización inteligente, techos fonoabsorbentes y redes de telecomunicaciones categoría 6A/7 certificadas para empresas en Madrid.", "image": "images/madrid-cluster-04-oficinas.webp", "showButton": true, "ctaText": "Ver reformas de oficinas", "ctaHref": "https://reformasmadrid.seolifeteam.com/reformas-oficinas-madrid/"},
-    {"id": "ducha", "num": "05", "title": "Cambio de Bañera por Plato de Ducha en Madrid", "subtitle": "Obra limpia en 24-48h con platos antideslizantes C3 y mamparas fijas", "location": "Moratalaz y Retiro, Madrid", "summary": "Transformamos tu baño antiguo en un espacio 100% accesible y seguro en 48 horas sin obras molestas, con plato de resina mineral al ras, tratamiento antibacteriano y mampara de seguridad.", "image": "images/madrid-cluster-05-ducha.webp", "showButton": true, "ctaText": "Ver cambio de bañera", "ctaHref": "https://reformasmadrid.seolifeteam.com/cambio-banera-por-plato-ducha-madrid/"},
-    {"id": "climatizacion", "num": "06", "title": "Instalación de Aire Acondicionado en Madrid", "subtitle": "Climatización por conductos, aerotermia y máxima eficiencia energética", "location": "Carabanchel y Madrid Centro", "summary": "Instalación autorizada RITE de sistemas inverter y bombas de calor aerotérmicas con zonificación independiente Airzone, reduciendo hasta un 70% el gasto energético de tu vivienda.", "image": "images/madrid-cluster-06-climatizacion.webp", "showButton": true, "ctaText": "Ver climatización", "ctaHref": "https://reformasmadrid.seolifeteam.com/instalacion-aire-acondicionado-madrid/"}
+    {"id": "cocinas", "num": "01", "title": "Reformas de Cocinas en Madrid", "subtitle": "Distribución ergonómica, islas porcelánicas y muebles a medida", "location": "Chamberí, Madrid", "summary": "Diseño y reforma completa de cocinas con encimeras porcelánicas antibacterianas, mobiliario hidrófugo de alta durabilidad y renovación total de fontanería y electricidad con boletín oficial.", "image": "images/madrid-cluster-01-cocinas.webp", "showButton": true, "ctaText": "Ver reformas de cocinas", "ctaHref": "../landings_secundarias_madrid/reformas-cocinas-madrid.html"},
+    {"id": "banos", "num": "02", "title": "Reformas de Baños en Madrid", "subtitle": "Duchas a ras de suelo, mamparas de vidrio y sanitarios suspendidos", "location": "Arganzuela · Madrid Río", "summary": "Sustitución de bañera por ducha con impermeabilización bicapa garantizada, alicatados porcelánicos de gran formato rectificado y griferías termostáticas empotradas de bajo consumo.", "image": "images/madrid-cluster-02-banos.webp", "showButton": true, "ctaText": "Ver reformas de baños", "ctaHref": "../landings_secundarias_madrid/reformas-banos-madrid.html"},
+    {"id": "locales", "num": "03", "title": "Reformas de Locales Comerciales en Madrid", "subtitle": "Adecuación exprés, insonorización y licencias de actividad", "location": "Tetuán y Chamberí, Madrid", "summary": "Transformación de locales para hostelería, clínicas y retail. Tramitación completa de Licencia Urbanística y Declaración Responsable ante la Agencia de Actividades del Ayuntamiento de Madrid.", "image": "images/madrid-cluster-03-locales.webp", "showButton": true, "ctaText": "Ver locales comerciales", "ctaHref": "../landings_secundarias_madrid/reformas-locales-comerciales-madrid.html"},
+    {"id": "oficinas", "num": "04", "title": "Reformas de Oficinas en Madrid", "subtitle": "Distribución diáfana, mamparas acústicas y cableado estructurado", "location": "Chamartín y Hortaleza, Madrid", "summary": "Modernización de espacios corporativos con climatización inteligente, techos fonoabsorbentes y redes de telecomunicaciones categoría 6A/7 certificadas para empresas en Madrid.", "image": "images/madrid-cluster-04-oficinas.webp", "showButton": true, "ctaText": "Ver reformas de oficinas", "ctaHref": "../landings_secundarias_madrid/reformas-oficinas-madrid.html"},
+    {"id": "ducha", "num": "05", "title": "Cambio de Bañera por Plato de Ducha en Madrid", "subtitle": "Obra limpia en 24-48h con platos antideslizantes C3 y mamparas fijas", "location": "Moratalaz y Retiro, Madrid", "summary": "Transformamos tu baño antiguo en un espacio 100% accesible y seguro en 48 horas sin obras molestas, con plato de resina mineral al ras, tratamiento antibacteriano y mampara de seguridad.", "image": "images/madrid-cluster-05-ducha.webp", "showButton": true, "ctaText": "Ver cambio de bañera", "ctaHref": "../landings_secundarias_madrid/cambio-banera-por-plato-ducha-madrid.html"},
+    {"id": "climatizacion", "num": "06", "title": "Instalación de Aire Acondicionado en Madrid", "subtitle": "Climatización por conductos, aerotermia y máxima eficiencia energética", "location": "Carabanchel y Madrid Centro", "summary": "Instalación autorizada RITE de sistemas inverter y bombas de calor aerotérmicas con zonificación independiente Airzone, reduciendo hasta un 70% el gasto energético de tu vivienda.", "image": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-cluster-06-climatizacion-split.jpg", "showButton": true, "ctaText": "Ver climatización", "ctaHref": "../landings_secundarias_madrid/instalacion-aire-acondicionado-madrid.html"}
   ],
   fases: [
     {
@@ -2400,14 +2542,14 @@ window.__RECOVERY_DATA__ = {
       "num": "05",
       "badge": "Paso 05 · Ejecución & Entrega",
       "title": "Dirección técnica diaria y entrega final impecable",
-      "description": "Un técnico colegiado supervisa la obra día a día, coordinando a nuestros albañiles, fontaneros y electricistas propios. Al finalizar, realizamos una limpieza integral de fin de obra y te entregamos la vivienda con la garantía legal de 2 años por escrito.",
+      "description": "Un técnico colegiado supervisa la obra día a día, coordinando a nuestros albañiles, fontaneros y electricistas propios. Al finalizar, realizamos una limpieza exhaustiva de fin de obra y te entregamos la vivienda con la garantía legal de 2 años por escrito.",
       "duration": "Según cronograma pactado",
       "protocols": [
         "Supervisión presencial diaria de cotas, niveles y aplomados",
         "Pruebas de estanqueidad de fontanería y certificación eléctrica",
         "Acta de recepción final firmada y entrega de certificados de garantía"
       ],
-      "image": "images/madrid-fase-05-entrega.webp",
+      "image": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-fase-05-entrega-garantia.jpg",
       "ctaText": "Pedir Visita Gratuita",
       "ctaHref": "#contacto"
     }
@@ -2550,7 +2692,7 @@ document.addEventListener('DOMContentLoaded', function() {
               arrow.className = 'estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-ink/60 bg-transparent transition-all duration-300';
             }
           } else {
-            activateEstancia(idx, true);
+            activateEstancia(idx, true); if (window.innerWidth >= 1024) { const itm = window.__RECOVERY_DATA__.estancias[idx]; if (itm && itm.ctaHref && !itm.ctaHref.startsWith('#')) { window.location.href = itm.ctaHref; } }
           }
         });
       }
@@ -2829,13 +2971,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
     oficiosPrevBtn.addEventListener('click', () => {
       const cardWidth = cards[0].offsetWidth + 24;
+      stopAutoplay();
       oficiosTrack.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      startAutoplay();
     });
 
     oficiosNextBtn.addEventListener('click', () => {
       const cardWidth = cards[0].offsetWidth + 24;
+      stopAutoplay();
       oficiosTrack.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      startAutoplay();
     });
+
+    // --- AUTOPLAY 1 A LA VEZ CON PAUSA EN HOVER Y TOUCH ---
+    let autoplayTimer = null;
+    function startAutoplay() {
+      if (autoplayTimer) clearInterval(autoplayTimer);
+      autoplayTimer = setInterval(() => {
+        if (!cards.length) return;
+        const cardWidth = cards[0].offsetWidth + 24;
+        const maxScrollLeft = oficiosTrack.scrollWidth - oficiosTrack.clientWidth - 15;
+        if (oficiosTrack.scrollLeft >= maxScrollLeft) { oficiosTrack.scrollTo({ left: 0, behavior: 'smooth' }); return; } oficiosTrack.scrollBy({ left: cardWidth, behavior: 'smooth' }); return; if (false) {
+          oficiosTrack.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+
+      oficiosTrack.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      startAutoplay();
+        }
+      }, 3500);
+    }
+
+    function stopAutoplay() {
+      if (autoplayTimer) {
+        clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    }
+
+    startAutoplay();
+
+    oficiosTrack.addEventListener('mouseenter', stopAutoplay);
+    oficiosTrack.addEventListener('mouseleave', startAutoplay);
+    oficiosTrack.addEventListener('touchstart', stopAutoplay, { passive: true });
+    oficiosTrack.addEventListener('touchend', startAutoplay, { passive: true });
+    oficiosPrevBtn.addEventListener('mouseenter', stopAutoplay);
+    oficiosPrevBtn.addEventListener('mouseleave', startAutoplay);
+    oficiosNextBtn.addEventListener('mouseenter', stopAutoplay);
+    oficiosNextBtn.addEventListener('mouseleave', startAutoplay);
 
     let scrollTimeout;
     oficiosTrack.addEventListener('scroll', () => {
@@ -3005,6 +3187,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => { const trigger = dropdown.querySelector('.nav-dropdown-trigger'); if (trigger) { trigger.addEventListener('click', function(e) { if (window.innerWidth >= 1024) { const href = trigger.getAttribute('href'); if (href === '#inicio' || href === '#' || !href) { e.preventDefault(); } const isOpen = dropdown.classList.contains('is-open'); document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open')); if (!isOpen) { dropdown.classList.add('is-open'); } } }); } }); document.addEventListener('click', function(e) { if (!e.target.closest('.nav-dropdown')) { document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open')); } });
   // Close mobile drawer when clicking anchor links
   if (mobileMenuDrawer) {
     mobileMenuDrawer.querySelectorAll('a[href^="#"]').forEach(a => {
