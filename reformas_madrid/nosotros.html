@@ -76,6 +76,14 @@
   .border-teal { border-color: #A87E34 !important; }
   .rounded-20 { border-radius: 20px !important; }
 
+  /* PROTECCIÓN DEFENSIVA DE CLASES DE COLOR Y BORDES ARBITRARIOS */
+  [class*="text-[#E2C48F]"] { color: #E2C48F !important; }
+  [class*="text-[#A87E34]"] { color: #A87E34 !important; }
+  [class*="bg-[#0E1B2E]"] { background-color: #0E1B2E !important; }
+  [class*="border-[#A87E34]"] { border-color: #A87E34 !important; }
+  [class*="border-[#D8CBB7]"] { border-color: #D8CBB7 !important; }
+  [class*="border-[#E2C48F]"] { border-color: #E2C48F !important; }
+
   /* =======================================================================
      BLINDAJE DE PADDING UTILITARIO (RESTAURACIÓN DE CLASES AUSENTES DE VITE)
      ======================================================================= */
@@ -106,6 +114,62 @@
   .py-3\.5 { padding-top: 0.875rem !important; padding-bottom: 0.875rem !important; }
   .py-4 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
   .py-5 { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
+  .py-6 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+  .py-8 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+  .py-12 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+  .py-16 { padding-top: 4rem !important; padding-bottom: 4rem !important; }
+  .py-20 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+  .py-24 { padding-top: 6rem !important; padding-bottom: 6rem !important; }
+  .py-28 { padding-top: 7rem !important; padding-bottom: 7rem !important; }
+  .py-32 { padding-top: 8rem !important; padding-bottom: 8rem !important; }
+
+  /* =======================================================================
+     BLINDAJE DE MÁRGENES Y GAPS (CERO COLAPSO DE SECCIONES EN NAVEGADOR)
+     ======================================================================= */
+  .mb-1 { margin-bottom: 0.25rem !important; }
+  .mb-1\.5 { margin-bottom: 0.375rem !important; }
+  .mb-2 { margin-bottom: 0.5rem !important; }
+  .mb-2\.5 { margin-bottom: 0.625rem !important; }
+  .mb-3 { margin-bottom: 0.75rem !important; }
+  .mb-3\.5 { margin-bottom: 0.875rem !important; }
+  .mb-4 { margin-bottom: 1rem !important; }
+  .mb-5 { margin-bottom: 1.25rem !important; }
+  .mb-6 { margin-bottom: 1.5rem !important; }
+  .mb-7 { margin-bottom: 1.75rem !important; }
+  .mb-8 { margin-bottom: 2rem !important; }
+  .mb-9 { margin-bottom: 2.25rem !important; }
+  .mb-10 { margin-bottom: 2.5rem !important; }
+  .mb-12 { margin-bottom: 3rem !important; }
+  .mb-14 { margin-bottom: 3.5rem !important; }
+  .mb-16 { margin-bottom: 4rem !important; }
+  .mb-20 { margin-bottom: 5rem !important; }
+
+  .mt-1 { margin-top: 0.25rem !important; }
+  .mt-1\.5 { margin-top: 0.375rem !important; }
+  .mt-2 { margin-top: 0.5rem !important; }
+  .mt-2\.5 { margin-top: 0.625rem !important; }
+  .mt-3 { margin-top: 0.75rem !important; }
+  .mt-4 { margin-top: 1rem !important; }
+  .mt-5 { margin-top: 1.25rem !important; }
+  .mt-6 { margin-top: 1.5rem !important; }
+  .mt-7 { margin-top: 1.75rem !important; }
+  .mt-8 { margin-top: 2rem !important; }
+  .mt-10 { margin-top: 2.5rem !important; }
+  .mt-12 { margin-top: 3rem !important; }
+  .mt-14 { margin-top: 3.5rem !important; }
+  .mt-16 { margin-top: 4rem !important; }
+  .mt-20 { margin-top: 5rem !important; }
+
+  .gap-2 { gap: 0.5rem !important; }
+  .gap-3 { gap: 0.75rem !important; }
+  .gap-4 { gap: 1rem !important; }
+  .gap-5 { gap: 1.25rem !important; }
+  .gap-6 { gap: 1.5rem !important; }
+  .gap-8 { gap: 2rem !important; }
+  .gap-10 { gap: 2.5rem !important; }
+  .gap-12 { gap: 3rem !important; }
+  .gap-14 { gap: 3.5rem !important; }
+  .gap-16 { gap: 4rem !important; }
 
   @media (min-width: 640px) {
     .sm\:p-8 { padding: 2rem !important; }
@@ -118,11 +182,32 @@
     .md\:p-8 { padding: 2rem !important; }
     .md\:p-9 { padding: 2.25rem !important; }
     .md\:p-10 { padding: 2.5rem !important; }
+    .md\:p-12 { padding: 3rem !important; }
     .md\:px-8 { padding-left: 2rem !important; padding-right: 2rem !important; }
+    .md\:mb-12 { margin-bottom: 3rem !important; }
+    .md\:mb-14 { margin-bottom: 3.5rem !important; }
+    .md\:mb-16 { margin-bottom: 4rem !important; }
+    .md\:mb-20 { margin-bottom: 5rem !important; }
+    .md\:mt-8 { margin-top: 2rem !important; }
+    .md\:mt-12 { margin-top: 3rem !important; }
+    .md\:mt-16 { margin-top: 4rem !important; }
+    .md\:py-20 { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+    .md\:py-24 { padding-top: 6rem !important; padding-bottom: 6rem !important; }
+    .md\:py-28 { padding-top: 7rem !important; padding-bottom: 7rem !important; }
+    .md\:py-32 { padding-top: 8rem !important; padding-bottom: 8rem !important; }
+    .md\:gap-8 { gap: 2rem !important; }
+    .md\:gap-10 { gap: 2.5rem !important; }
+    .md\:gap-12 { gap: 3rem !important; }
+    .md\:gap-14 { gap: 3.5rem !important; }
+    .md\:gap-16 { gap: 4rem !important; }
   }
   @media (min-width: 1024px) {
     .lg\:p-10 { padding: 2.5rem !important; }
     .lg\:p-12 { padding: 3rem !important; }
+    .lg\:gap-10 { gap: 2.5rem !important; }
+    .lg\:gap-12 { gap: 3rem !important; }
+    .lg\:gap-14 { gap: 3.5rem !important; }
+    .lg\:gap-16 { gap: 4rem !important; }
   }
 
   /* =======================================================================
@@ -140,7 +225,7 @@
     background-color: #A87E34 !important;
     color: #FFFFFF !important;
     font-weight: 700 !important;
-    padding: 13px 28px !important; /* PADDING INTERNO ROBUSTO GARANTIZADO */
+    padding: 13px 28px !important;
     border-radius: 10px !important;
     border: 1px solid rgba(226, 196, 143, 0.45) !important;
     box-shadow: 0 4px 16px rgba(168, 126, 52, 0.28) !important;
@@ -407,16 +492,6 @@
     }
   }
 
-  /* FICHA TÉCNICA INSTITUCIONAL HERO (DOSSIER FLOTANTE) */
-  .nosotros-dossier-card {
-    background: rgba(14, 27, 46, 0.78) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(226, 196, 143, 0.35) !important;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.55), 0 0 35px rgba(168, 126, 52, 0.10) !important;
-    border-radius: 20px !important;
-  }
-
   /* DOCK DE MÉTRICAS PANORÁMICO HERO */
   .nosotros-metrics-dock {
     background: rgba(14, 27, 46, 0.65) !important;
@@ -477,13 +552,6 @@
     border-radius: 9999px;
     background-color: #10b981;
     animation: coreBeacon 2s ease-in-out infinite;
-  }
-  .hero-zonas-card {
-    background: rgba(14, 27, 46, 0.85) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.22) !important;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55) !important;
   }
 </style>
 </head>
@@ -624,7 +692,7 @@
 <main>
 <!-- HERO EDITORIAL DE LUJO: SOBRE NOSOTROS -->
 <section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[112px] md:pt-[136px] pb-16 md:pb-20 border-b border-white/10" id="inicio">
-  <img class="absolute inset-0 h-full w-full object-cover object-center z-0" src="images/madrid-hero-chalet-luxury.webp" alt="Arquitectura técnica y dirección de obras en Madrid"/>
+  <img class="absolute inset-0 h-full w-full object-cover object-center z-0" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid_estudio_mesa_proyectos_1792883569570.jpg" alt="Estudio técnico de Reformas Madrid: mesa de proyectos, planos ejecutivos y selección de calidades nobles"/>
   
   <!-- CAPA DE OSCURECIMIENTO GRADUADA Y ASIMÉTRICA DEL HERO (CERO BLUR, MÁXIMA LUZ Y CONTRASTE) -->
   <div aria-hidden="true" class="nosotros-hero-scrim"></div>
@@ -633,116 +701,32 @@
 
   <div class="relative z-10 mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <!-- GRID PRINCIPAL DEL HERO (EDITORIAL A DOS COLUMNAS BALANCEADAS) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-      
-      <!-- COLUMNA IZQUIERDA: TITULAR EDITORIAL, COPY Y CÁPSULAS DE CONFIANZA -->
-      <div class="lg:col-span-7 flex flex-col justify-center">
-        
-        <!-- EYEBROW / BADGE EDITORIAL INFORMATIVO -->
-        <div class="inline-flex items-center gap-2.5 rounded-full border border-[#E2C48F]/40 bg-white/10 px-4 py-1.5 text-[12px] font-bold uppercase tracking-[0.2em] text-[#E2C48F] backdrop-blur-md mb-6 self-start shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-[#E2C48F] animate-pulse"></span>
-          <span>Sobre Nosotros · Trayectoria &amp; Rigor Técnico</span>
+    <!-- TITULAR EDITORIAL, COPY Y CÁPSULAS DE CONFIANZA -->
+    <div class="max-w-[880px] flex flex-col justify-center">
+      <h1 class="nosotros-hero-title mb-6">
+        ¿Quiénes somos?<br/>
+        <span class="italic text-teal-light block mt-1">La mejor empresa de Reformas de Madrid.</span>
+      </h1>
+
+      <p class="nosotros-hero-desc mb-8 max-w-[760px]">
+        Más de 15 años liderando la ejecución y dirección facultativa de reformas integrales, chalets y espacios singulares en Madrid y Guadalajara. Presencia diaria de aparejador colegiado a pie de obra, mediciones milimétricas y presupuesto cerrado por contrato.
+      </p>
+
+      <!-- 3 CÁPSULAS INFORMATIVAS DE GARANTÍA (CERO CTAs COMERCIALES) -->
+      <div class="flex flex-wrap gap-3 max-w-[760px]">
+        <div class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] backdrop-blur-md px-3.5 py-2 text-[13px] font-semibold text-white/90 shadow-sm">
+          <i class="ri-shield-check-fill text-[16px] text-[#E2C48F]"></i>
+          <span>Dirección Facultativa COAATM</span>
         </div>
-
-        <h1 class="nosotros-hero-title mb-6">
-          ¿Quiénes somos?<br/>
-          <span class="italic text-teal-light block mt-1">La mejor empresa de Reformas de Madrid.</span>
-        </h1>
-
-        <p class="nosotros-hero-desc mb-8 max-w-[680px]">
-          Más de 15 años liderando la ejecución y dirección facultativa de reformas integrales, chalets y espacios singulares en Madrid y Guadalajara. Presencia diaria de aparejador colegiado a pie de obra, mediciones milimétricas y presupuesto cerrado por contrato.
-        </p>
-
-        <!-- 3 CÁPSULAS INFORMATIVAS DE GARANTÍA (CERO CTAs COMERCIALES) -->
-        <div class="flex flex-wrap gap-3 max-w-[700px]">
-          <div class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] backdrop-blur-md px-3.5 py-2 text-[13px] font-semibold text-white/90 shadow-sm">
-            <i class="ri-shield-check-fill text-[16px] text-[#E2C48F]"></i>
-            <span>Dirección Facultativa COAATM</span>
-          </div>
-          <div class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] backdrop-blur-md px-3.5 py-2 text-[13px] font-semibold text-white/90 shadow-sm">
-            <i class="ri-file-lock-line text-[16px] text-[#E2C48F]"></i>
-            <span>Presupuesto Cerrado por Contrato</span>
-          </div>
-          <div class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] backdrop-blur-md px-3.5 py-2 text-[13px] font-semibold text-white/90 shadow-sm">
-            <i class="ri-team-line text-[16px] text-[#E2C48F]"></i>
-            <span>Plantilla Propia de Oficios</span>
-          </div>
+        <div class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] backdrop-blur-md px-3.5 py-2 text-[13px] font-semibold text-white/90 shadow-sm">
+          <i class="ri-file-lock-line text-[16px] text-[#E2C48F]"></i>
+          <span>Presupuesto Cerrado por Contrato</span>
         </div>
-
-      </div>
-
-      <!-- COLUMNA DERECHA: DOSSIER TÉCNICO INSTITUCIONAL (ELIMINA EL VACÍO NEGRO) -->
-      <div class="lg:col-span-5 flex justify-center lg:justify-end">
-        <div class="nosotros-dossier-card w-full max-w-[480px] p-6 sm:p-8">
-          
-          <!-- CABECERA DEL DOSSIER CON STATUS PULSANTE -->
-          <div class="flex items-center justify-between gap-3 pb-5 border-b border-white/15">
-            <div>
-              <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-[#E2C48F] block">Dossier Institucional</span>
-              <h2 class="font-editorial text-[20px] font-bold text-white mt-0.5">Estudio &amp; Dirección Técnica</h2>
-            </div>
-            <div class="inline-flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-3 py-1 text-[11px] font-bold text-emerald-300">
-              <span class="live-status-dot">
-                <span class="live-status-pulse"></span>
-                <span class="live-status-core"></span>
-              </span>
-              <span>Activo Hoy</span>
-            </div>
-          </div>
-
-          <!-- LISTA DE CREDENCIALES OFICIALES -->
-          <div class="py-5 flex flex-col gap-4 text-[13.5px]">
-            <div class="flex items-start gap-3">
-              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#A87E34]/20 border border-[#E2C48F]/40 text-[#E2C48F] shrink-0 mt-0.5">
-                <i class="ri-government-line text-[16px]"></i>
-              </div>
-              <div>
-                <p class="font-bold text-white">Colegio Oficial COAATM</p>
-                <p class="text-white/70 text-[12.5px]">Colegiación Nº 14.892 · Arquitectura Técnica de Madrid</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#A87E34]/20 border border-[#E2C48F]/40 text-[#E2C48F] shrink-0 mt-0.5">
-                <i class="ri-map-pin-2-line text-[16px]"></i>
-              </div>
-              <div>
-                <p class="font-bold text-white">Sede Central y Estudio</p>
-                <p class="text-white/70 text-[12.5px]">Calle Mayor 42, 28013 Madrid · Visitas con cita técnica</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#A87E34]/20 border border-[#E2C48F]/40 text-[#E2C48F] shrink-0 mt-0.5">
-                <i class="ri-compass-3-line text-[16px]"></i>
-              </div>
-              <div>
-                <p class="font-bold text-white">Área de Actuación Principal</p>
-                <p class="text-white/70 text-[12.5px]">Distritos Centro, Salamanca, Chamartín, Pozuelo y Guadalajara</p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-3">
-              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-[#A87E34]/20 border border-[#E2C48F]/40 text-[#E2C48F] shrink-0 mt-0.5">
-                <i class="ri-shield-star-line text-[16px]"></i>
-              </div>
-              <div>
-                <p class="font-bold text-white">Seguro de Responsabilidad Civil</p>
-                <p class="text-white/70 text-[12.5px]">Póliza Mapfre de 600.000 € de cobertura integral en obra</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- PIE DE DOSSIER: COMPROMISO RIGUROSO -->
-          <div class="pt-4 border-t border-white/15 flex items-center justify-between text-[12px] text-white/60">
-            <span>Rigor técnico colegiado</span>
-            <span class="text-[#E2C48F] font-semibold">100% Sin Subcontratas Opacas</span>
-          </div>
-
+        <div class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] backdrop-blur-md px-3.5 py-2 text-[13px] font-semibold text-white/90 shadow-sm">
+          <i class="ri-team-line text-[16px] text-[#E2C48F]"></i>
+          <span>Plantilla Propia de Oficios</span>
         </div>
       </div>
-
     </div>
 
     <!-- BANDA DE CREDENCIALES Y MÉTRICAS: DOCK PANORÁMICO DE CRISTAL -->
@@ -779,92 +763,74 @@
   </div>
 </section>
 
-<!-- FOTOGRAFÍA MAESTRA DEL ESTUDIO TÉCNICO (MESA DE PROYECTOS Y PLANOS EJECUTIVOS) -->
-<section class="w-full bg-ice py-12 md:py-16 border-b border-line" id="estudio-tecnico">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    <div class="rounded-20 border border-line bg-white p-3 md:p-5 shadow-lg w-full">
-      <div class="relative overflow-hidden rounded-xl bg-ink w-full" style="aspect-ratio: 16/9; max-height: 560px;">
-        <img alt="Mesa de proyectos y estudio técnico de Reformas Madrid en sesión de replanteo y planos ejecutivos" class="w-full h-full object-cover object-center block" style="width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: center !important;" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid_estudio_mesa_proyectos_1792883569570.jpg" onerror="this.src='images/madrid-director-tecnico.webp'"/>
-        <div class="absolute inset-x-0 bottom-0 p-6 md:p-8 scrim-text" style="background: linear-gradient(180deg, transparent 0%, rgba(8, 16, 28, 0.7) 40%, rgba(8, 16, 28, 0.95) 100%) !important;">
-          <span class="text-[12px] font-bold uppercase tracking-widest text-[#E2C48F] block" style="color: #E2C48F !important;">Mesa de Proyectos &amp; Coordinación</span>
-          <p class="text-[16px] md:text-[19px] font-medium mt-1 max-w-[840px] text-white" style="color: #FFFFFF !important; text-shadow: 0 1px 4px rgba(0,0,0,0.8) !important;">
-            Supervisión diaria de planos ejecutivos, cálculo de cargas estructurales y selección de materiales nobles en nuestro estudio técnico de Madrid.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- SECCIÓN 1: NUESTRO MANIFIESTO DE RIGOR (ICONOS Y TÍTULOS EQUILIBRADOS) -->
-<section class="w-full bg-white py-16 md:py-24" id="manifiesto">
+<section class="w-full bg-white py-20 md:py-28" id="manifiesto" style="padding-top: 5.5rem !important; padding-bottom: 5.5rem !important;">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20" style="margin-bottom: 4rem !important;">
       <div class="max-w-[780px]">
-        <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Filosofía Constructiva</span>
-        <h2 class="font-editorial text-[30px] sm:text-[38px] md:text-[44px] font-bold text-ink leading-[1.14] mt-2">
+        <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-3" style="margin-bottom: 0.75rem !important;">Filosofía Constructiva</span>
+        <h2 class="font-editorial text-[30px] sm:text-[38px] md:text-[44px] font-bold text-ink leading-[1.14] mt-2 mb-2">
           La diferencia entre empezar una obra<br class="hidden sm:inline"/> y garantizar su entrega impecable.
         </h2>
       </div>
-      <p class="max-w-[420px] text-body text-ink/85">
+      <p class="max-w-[440px] text-body text-ink/85 mt-4 md:mt-0" style="line-height: 1.7 !important;">
         Eliminamos la incertidumbre habitual del sector de las reformas mediante dirección facultativa presencial, mediciones milimétricas por láser y contratos sin letra pequeña.
       </p>
     </div>
 
     <!-- 3 PILARES TÉCNICOS CON RITMO ASIMÉTRICO Y JERARQUÍA ARQUITECTÓNICA -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-stretch" style="gap: 2rem !important;">
       
-      <!-- PILAR 1: TARJETA LÍDER EN ONYX OBSIDIANA Y DORADO (PRESTIGIO FACULTATIVO) -->
-      <div class="flex flex-col rounded-20 border-2 border-[#A87E34] bg-[#0E1B2E] text-white p-8 md:p-9 shadow-[0_12px_40px_rgba(14,27,46,0.22)] relative overflow-hidden group">
-        <div class="inline-flex items-center gap-2 rounded-full border border-[#E2C48F]/40 bg-white/10 px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-[#E2C48F] self-start mb-6">
-          <span class="w-2 h-2 rounded-full bg-[#E2C48F] animate-pulse"></span>
-          <span>Pilar Fundamental</span>
+      <!-- PILAR 1: DIRECCIÓN FACULTATIVA (ELEVADA EN BLANCO Y LÍNEAS NOBLES) -->
+      <div class="flex flex-col rounded-20 border border-[#D8CBB7] bg-white p-8 md:p-10 lg:p-12 shadow-md hover:shadow-xl hover:border-[#A87E34]/50 transition-all duration-300 group" style="padding: 2.75rem 2.25rem !important;">
+        <div class="inline-flex items-center gap-2 rounded-full border border-line bg-ice px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider text-teal self-start mb-7" style="margin-bottom: 1.75rem !important; padding: 6px 14px !important;">
+          <span>Dirección Colegiada COAATM</span>
         </div>
-        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#A87E34]/20 border border-[#E2C48F]/40 text-[#E2C48F] mb-6 shadow-sm shrink-0">
-          <i class="ri-ruler-2-line text-[28px] text-[#E2C48F]"></i>
+        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E1B2E] text-[#E2C48F] mb-7 shadow-sm shrink-0 border border-teal/20" style="background-color: #0E1B2E !important; color: #E2C48F !important; margin-bottom: 1.75rem !important;">
+          <i class="ri-ruler-2-line text-[28px]" style="color: #E2C48F !important; font-size: 28px !important;"></i>
         </div>
-        <h3 class="font-editorial text-[24px] font-bold text-white mb-3 leading-snug">1. Dirección Facultativa</h3>
-        <p class="text-[17px] md:text-[18px] leading-[1.65] text-white/90 flex-1">
+        <h3 class="font-editorial text-[23px] font-bold text-ink mb-4 leading-snug" style="margin-bottom: 1rem !important;">1. Dirección Facultativa</h3>
+        <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85 flex-1" style="margin-bottom: 1.75rem !important; line-height: 1.68 !important;">
           Un arquitecto técnico colegiado en el COAATM supervisa presencialmente tu vivienda cada jornada. Realiza replanteos milimétricos, pruebas de estanqueidad de fontanería a 6 bares y certificación de aislamientos acústicos y térmicos.
         </p>
-        <div class="mt-6 pt-4 border-t border-white/15 text-[13.5px] font-semibold text-[#E2C48F] flex items-center gap-2">
-          <i class="ri-checkbox-circle-fill text-[17px] text-[#E2C48F]"></i>
+        <div class="mt-auto pt-5 border-t border-line/60 text-[13.5px] font-semibold text-teal flex items-center gap-2" style="margin-top: auto !important; padding-top: 1.25rem !important;">
+          <i class="ri-checkbox-circle-fill text-[17px] text-teal"></i>
           <span>Presencia diaria en obra y libro oficial</span>
         </div>
       </div>
 
       <!-- PILAR 2: PRESUPUESTO CERRADO (ELEVADA EN BLANCO Y LÍNEAS NOBLES) -->
-      <div class="flex flex-col rounded-20 border border-[#D8CBB7] bg-white p-8 md:p-9 shadow-md hover:shadow-xl hover:border-[#A87E34]/50 transition-all duration-300 group">
-        <div class="inline-flex items-center gap-2 rounded-full border border-line bg-ice px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-teal self-start mb-6">
+      <div class="flex flex-col rounded-20 border border-[#D8CBB7] bg-white p-8 md:p-10 lg:p-12 shadow-md hover:shadow-xl hover:border-[#A87E34]/50 transition-all duration-300 group" style="padding: 2.75rem 2.25rem !important;">
+        <div class="inline-flex items-center gap-2 rounded-full border border-line bg-ice px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider text-teal self-start mb-7" style="margin-bottom: 1.75rem !important; padding: 6px 14px !important;">
           <span>Compromiso Contractual</span>
         </div>
-        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E1B2E] text-[#E2C48F] mb-6 shadow-sm shrink-0 border border-teal/20" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
+        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E1B2E] text-[#E2C48F] mb-7 shadow-sm shrink-0 border border-teal/20" style="background-color: #0E1B2E !important; color: #E2C48F !important; margin-bottom: 1.75rem !important;">
           <i class="ri-file-lock-line text-[28px]" style="color: #E2C48F !important; font-size: 28px !important;"></i>
         </div>
-        <h3 class="font-editorial text-[23px] font-bold text-ink mb-3 leading-snug">2. Presupuesto Blindado</h3>
-        <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85 flex-1">
+        <h3 class="font-editorial text-[23px] font-bold text-ink mb-4 leading-snug" style="margin-bottom: 1rem !important;">2. Presupuesto Blindado</h3>
+        <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85 flex-1" style="margin-bottom: 1.75rem !important; line-height: 1.68 !important;">
           Memoria de calidades pormenorizada por capítulos y partidas con precios unitarios cerrados. Lo pactado en contrato es el precio final irrevocable, respaldado con cláusula de penalización económica por día de demora imputable.
         </p>
-        <div class="mt-6 pt-4 border-t border-line/60 text-[13.5px] font-semibold text-teal flex items-center gap-2">
+        <div class="mt-auto pt-5 border-t border-line/60 text-[13.5px] font-semibold text-teal flex items-center gap-2" style="margin-top: auto !important; padding-top: 1.25rem !important;">
           <i class="ri-checkbox-circle-fill text-[17px] text-teal"></i>
           <span>Cero sobrecostes ni partidas imprevistas</span>
         </div>
       </div>
 
       <!-- PILAR 3: OFICIOS HOMOLOGADOS (ELEVADA EN BLANCO Y LÍNEAS NOBLES) -->
-      <div class="flex flex-col rounded-20 border border-[#D8CBB7] bg-white p-8 md:p-9 shadow-md hover:shadow-xl hover:border-[#A87E34]/50 transition-all duration-300 group">
-        <div class="inline-flex items-center gap-2 rounded-full border border-line bg-ice px-3.5 py-1 text-[11px] font-bold uppercase tracking-wider text-teal self-start mb-6">
+      <div class="flex flex-col rounded-20 border border-[#D8CBB7] bg-white p-8 md:p-10 lg:p-12 shadow-md hover:shadow-xl hover:border-[#A87E34]/50 transition-all duration-300 group" style="padding: 2.75rem 2.25rem !important;">
+        <div class="inline-flex items-center gap-2 rounded-full border border-line bg-ice px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider text-teal self-start mb-7" style="margin-bottom: 1.75rem !important; padding: 6px 14px !important;">
           <span>Equipo Especialista Propio</span>
         </div>
-        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E1B2E] text-[#E2C48F] mb-6 shadow-sm shrink-0 border border-teal/20" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
+        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0E1B2E] text-[#E2C48F] mb-7 shadow-sm shrink-0 border border-teal/20" style="background-color: #0E1B2E !important; color: #E2C48F !important; margin-bottom: 1.75rem !important;">
           <i class="ri-team-line text-[28px]" style="color: #E2C48F !important; font-size: 28px !important;"></i>
         </div>
-        <h3 class="font-editorial text-[23px] font-bold text-ink mb-3 leading-snug">3. Oficios Homologados</h3>
-        <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85 flex-1">
+        <h3 class="font-editorial text-[23px] font-bold text-ink mb-4 leading-snug" style="margin-bottom: 1rem !important;">3. Oficios Homologados</h3>
+        <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85 flex-1" style="margin-bottom: 1.75rem !important; line-height: 1.68 !important;">
           Plantilla propia de albañilería tradicional, fontaneros autorizados RITE, electricistas cualificados con boletín oficial y ebanistas dedicados a carpintería enrasada y armarios a medida. Cero subcontrataciones opacas.
         </p>
-        <div class="mt-6 pt-4 border-t border-line/60 text-[13.5px] font-semibold text-teal flex items-center gap-2">
+        <div class="mt-auto pt-5 border-t border-line/60 text-[13.5px] font-semibold text-teal flex items-center gap-2" style="margin-top: auto !important; padding-top: 1.25rem !important;">
           <i class="ri-checkbox-circle-fill text-[17px] text-teal"></i>
           <span>Especialistas cualificados con carné profesional</span>
         </div>
@@ -875,41 +841,37 @@
 </section>
 
 <!-- SECCIÓN 2: CONTROL Y DIRECCIÓN A PIE DE OBRA (FONDO CÁLIDO BG-ICE) -->
-<section class="w-full bg-ice py-16 md:py-24 border-y border-line" id="direccion-obra">
+<section class="w-full bg-ice py-20 md:py-28 border-y border-line" id="direccion-obra" style="padding-top: 5.5rem !important; padding-bottom: 5.5rem !important;">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
+    <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
       
-      <!-- FOTOGRAFÍA PRUEBAS TÉCNICAS E INSTALACIONES EN OBRA (CERO REPETICIÓN VISUAL) -->
+      <!-- FOTOGRAFÍA DIRECCIÓN FACULTATIVA A PIE DE OBRA (BESPOKE FOTORREALISTA) -->
       <div class="lg:col-span-6">
         <div class="relative overflow-hidden rounded-20 border border-line shadow-xl bg-white w-full" style="aspect-ratio: 16/10;">
-          <img alt="Dirección técnica colegiada e inspección de colectores y pruebas de estanqueidad en Madrid" class="h-full w-full object-cover object-center block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="images/madrid-trade-fontaneria.webp"/>
-          <div class="absolute bottom-4 left-4 right-4 rounded-xl bg-ink/90 backdrop-blur-md p-4 text-white">
-            <span class="text-[12px] font-bold uppercase tracking-wider text-teal-light block">Protocolo de Control en Obra</span>
-            <p class="text-[14px] md:text-[15px] font-medium text-white/95 mt-0.5">Inspección de colectores multicapa, pruebas de presión a 6 bares y certificación RITE antes de alicatar.</p>
-          </div>
+          <img alt="Dirección técnica colegiada y supervisión presencial diaria de obra con aparejador y distanciómetro láser en Madrid" class="h-full w-full object-cover object-center block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="file:///C:/Users/Freitech/.gemini/antigravity/brain/0a0d37ce-dc30-4cee-a3f6-3aabdb501156/madrid_supervision_aparejador_obra_v2_1792998949018.jpg" onerror="this.onerror=null; this.src='images/madrid-supervision-aparejador-obra.jpg';"/>
         </div>
       </div>
 
       <!-- TEXTO Y PUNTOS DE CONTROL TÉCNICO -->
-      <div class="lg:col-span-6">
-        <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Rigor en Cada Detalle</span>
-        <h2 class="font-editorial text-[30px] md:text-[40px] leading-[1.16] text-ink mt-2 mb-6">
+      <div class="lg:col-span-6 lg:pl-4">
+        <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-3" style="margin-bottom: 0.85rem !important;">Rigor en Cada Detalle</span>
+        <h2 class="font-editorial text-[30px] md:text-[40px] leading-[1.2] text-ink mb-6" style="margin-bottom: 1.75rem !important;">
           Supervisión presencial diaria,<br/>no visitas esporádicas.
         </h2>
-        <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85 mb-6">
+        <p class="text-[17px] md:text-[18px] leading-[1.7] text-ink/85 mb-8" style="margin-bottom: 2.25rem !important;">
           En el sector de las reformas, la falta de supervisión técnica es la principal causa de sobrecostes y acabados deficientes. En Reformas Madrid, cada vivienda cuenta con un aparejador responsable que ejerce la dirección facultativa presencial cada jornada de trabajo.
         </p>
-        <ul class="flex flex-col gap-4">
-          <li class="flex items-start gap-3.5 text-[16px] md:text-[17px] leading-[1.6] text-ink">
-            <i class="ri-checkbox-circle-fill text-[22px] text-teal shrink-0 mt-0.5"></i>
+        <ul class="flex flex-col gap-5" style="gap: 1.5rem !important; display: flex !important; flex-direction: column !important;">
+          <li class="flex items-start gap-4 text-[16px] md:text-[17px] leading-[1.65] text-ink">
+            <i class="ri-checkbox-circle-fill text-[22px] text-teal shrink-0 mt-0.5" style="margin-top: 0.15rem !important;"></i>
             <span><strong>Pruebas de estanqueidad a 6 bares:</strong> Certificamos las conducciones de agua fría y caliente bajo presión continua antes de colocar el pavimento o alicatar.</span>
           </li>
-          <li class="flex items-start gap-3.5 text-[16px] md:text-[17px] leading-[1.6] text-ink">
-            <i class="ri-checkbox-circle-fill text-[22px] text-teal shrink-0 mt-0.5"></i>
+          <li class="flex items-start gap-4 text-[16px] md:text-[17px] leading-[1.65] text-ink">
+            <i class="ri-checkbox-circle-fill text-[22px] text-teal shrink-0 mt-0.5" style="margin-top: 0.15rem !important;"></i>
             <span><strong>Apeos y cálculo de cargas:</strong> Si tu proyecto requiere abrir espacios o suprimir tabiques, nuestros técnicos calculan y certifican la seguridad estructural del forjado.</span>
           </li>
-          <li class="flex items-start gap-3.5 text-[16px] md:text-[17px] leading-[1.6] text-ink">
-            <i class="ri-checkbox-circle-fill text-[22px] text-teal shrink-0 mt-0.5"></i>
+          <li class="flex items-start gap-4 text-[16px] md:text-[17px] leading-[1.65] text-ink">
+            <i class="ri-checkbox-circle-fill text-[22px] text-teal shrink-0 mt-0.5" style="margin-top: 0.15rem !important;"></i>
             <span><strong>Reporte semanal fotográfico:</strong> Recibes en tu móvil un informe detallado con fotografías de alta resolución y el grado de avance según el cronograma Gantt pactado.</span>
           </li>
         </ul>
@@ -920,21 +882,21 @@
 </section>
 
 <!-- SECCIÓN 3: EQUIPO TÉCNICO COLEGIADO (DISEÑO ARQUITECTÓNICO DE ALTO STANDING) -->
-<section class="w-full bg-white py-16 md:py-24" id="equipo">
+<section class="w-full bg-white py-20 md:py-28" id="equipo" style="padding-top: 5.5rem !important; padding-bottom: 5.5rem !important;">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[760px] mx-auto mb-14">
-      <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Equipo Facultativo Colegiado</span>
-      <h2 class="font-editorial text-[32px] md:text-[44px] leading-tight text-ink mt-2 mb-4">
+    <div class="text-center max-w-[780px] mx-auto mb-16 md:mb-20" style="margin-bottom: 4rem !important;">
+      <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-3" style="margin-bottom: 0.75rem !important;">Equipo Facultativo Colegiado</span>
+      <h2 class="font-editorial text-[32px] md:text-[44px] leading-tight text-ink mt-2 mb-4" style="margin-bottom: 1.25rem !important;">
         Los profesionales que firman y responden por tu vivienda
       </h2>
-      <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/80">
+      <p class="text-[17px] md:text-[18px] leading-[1.7] text-ink/80">
         Titulados universitarios colegiados en el Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid (COAATM) y Colegio de Arquitectos (COAM) con dedicación exclusiva a pie de obra.
       </p>
     </div>
 
     <!-- 3 TARJETAS DE PERFIL TÉCNICO CON FOTOS DE TAMAÑO IDÉNTICO Y PARIDAD DE ALTURAS -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-stretch" style="gap: 2rem !important;">
       
       <!-- PERFIL 1: DIRECTOR TÉCNICO -->
       <div class="flex flex-col rounded-20 border border-line bg-card overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group h-full">
@@ -942,15 +904,15 @@
           <img alt="Carlos M. Santillana, Arquitecto Técnico y Director de Obra en Madrid" class="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top !important;" src="images/madrid-director-tecnico.webp"/>
           <span class="absolute top-4 right-4 bg-ink/85 backdrop-blur-md border border-white/20 text-[#E2C48F] text-[11.5px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">COAATM Nº 14.892</span>
         </div>
-        <div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+        <div class="p-8 md:p-9 flex-1 flex flex-col justify-between" style="padding: 2.25rem 2rem !important;">
           <div>
-            <p class="text-[12.5px] font-bold uppercase tracking-wider text-teal mb-1">Arquitecto Técnico &amp; Director Facultativo</p>
-            <h3 class="font-editorial text-[24px] font-bold text-ink leading-tight mb-3">Carlos M. Santillana</h3>
-            <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85">
+            <p class="text-[12.5px] font-bold uppercase tracking-wider text-teal mb-2" style="margin-bottom: 0.5rem !important;">Arquitecto Técnico &amp; Director Facultativo</p>
+            <h3 class="font-editorial text-[24px] font-bold text-ink leading-tight mb-3" style="margin-bottom: 1rem !important;">Carlos M. Santillana</h3>
+            <p class="text-[17px] md:text-[18px] leading-[1.7] text-ink/85" style="margin-bottom: 1.5rem !important;">
               16 años de trayectoria coordinando reformas integrales en Chamberí, Salamanca, Retiro y Corredor del Henares. Especialista en patología de la edificación, refuerzo de estructuras y cumplimiento del Código Técnico (CTE).
             </p>
           </div>
-          <div class="mt-6 pt-4 border-t border-line/60 flex items-center gap-2 text-[13.5px] font-semibold text-ink/75">
+          <div class="mt-auto pt-5 border-t border-line/60 flex items-center gap-2 text-[13.5px] font-semibold text-ink/75" style="margin-top: auto !important; padding-top: 1.25rem !important;">
             <i class="ri-shield-check-line text-teal text-[17px]"></i>
             <span>Dirección facultativa y acta notarial</span>
           </div>
@@ -963,15 +925,15 @@
           <img alt="Javier Gómez Alarcón, Jefe de Obra y Coordinador de Seguridad en Madrid" class="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top !important;" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid_equipo_javier_gomez_1792883529711.jpg" onerror="this.src='images/madrid-director-tecnico.webp'"/>
           <span class="absolute top-4 right-4 bg-ink/85 backdrop-blur-md border border-white/20 text-[#E2C48F] text-[11.5px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">COAATM Nº 16.204</span>
         </div>
-        <div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+        <div class="p-8 md:p-9 flex-1 flex flex-col justify-between" style="padding: 2.25rem 2rem !important;">
           <div>
-            <p class="text-[12.5px] font-bold uppercase tracking-wider text-teal mb-1">Jefe de Obra &amp; Coordinador de Seguridad</p>
-            <h3 class="font-editorial text-[24px] font-bold text-ink leading-tight mb-3">Javier Gómez Alarcón</h3>
-            <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85">
+            <p class="text-[12.5px] font-bold uppercase tracking-wider text-teal mb-2" style="margin-bottom: 0.5rem !important;">Jefe de Obra &amp; Coordinador de Seguridad</p>
+            <h3 class="font-editorial text-[24px] font-bold text-ink leading-tight mb-3" style="margin-bottom: 1rem !important;">Javier Gómez Alarcón</h3>
+            <p class="text-[17px] md:text-[18px] leading-[1.7] text-ink/85" style="margin-bottom: 1.5rem !important;">
               Responsable de la presencia diaria a pie de obra en Madrid, replanteos continuos, recepción y custodia de materiales nobles y sincronización entre albañilería, fontanería, electricidad y ebanistas propios.
             </p>
           </div>
-          <div class="mt-6 pt-4 border-t border-line/60 flex items-center gap-2 text-[13.5px] font-semibold text-ink/75">
+          <div class="mt-auto pt-5 border-t border-line/60 flex items-center gap-2 text-[13.5px] font-semibold text-ink/75" style="margin-top: auto !important; padding-top: 1.25rem !important;">
             <i class="ri-hard-hat-line text-teal text-[17px]"></i>
             <span>Control diario de cotas y aplomados</span>
           </div>
@@ -984,15 +946,15 @@
           <img alt="Elena Valenzuela, Arquitecta de Interiores y Licencias en Madrid" class="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important; object-position: top !important;" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid_equipo_elena_valenzuela_1792883546870.jpg" onerror="this.src='images/madrid-director-tecnico.webp'"/>
           <span class="absolute top-4 right-4 bg-ink/85 backdrop-blur-md border border-white/20 text-[#E2C48F] text-[11.5px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">COAM Nº 19.410</span>
         </div>
-        <div class="p-6 md:p-8 flex-1 flex flex-col justify-between">
+        <div class="p-8 md:p-9 flex-1 flex flex-col justify-between" style="padding: 2.25rem 2rem !important;">
           <div>
-            <p class="text-[12.5px] font-bold uppercase tracking-wider text-teal mb-1">Arquitectura de Interiores &amp; Licencias</p>
-            <h3 class="font-editorial text-[24px] font-bold text-ink leading-tight mb-3">Elena Valenzuela</h3>
-            <p class="text-[17px] md:text-[18px] leading-[1.65] text-ink/85">
+            <p class="text-[12.5px] font-bold uppercase tracking-wider text-teal mb-2" style="margin-bottom: 0.5rem !important;">Arquitectura de Interiores &amp; Licencias</p>
+            <h3 class="font-editorial text-[24px] font-bold text-ink leading-tight mb-3" style="margin-bottom: 1rem !important;">Elena Valenzuela</h3>
+            <p class="text-[17px] md:text-[18px] leading-[1.7] text-ink/85" style="margin-bottom: 1.5rem !important;">
               Especialista en distribución espacial, iluminación técnica indirecta, diseño de mobiliario integrado a medida y tramitación de declaraciones responsables y licencias urbanísticas ante el Ayuntamiento de Madrid.
             </p>
           </div>
-          <div class="mt-6 pt-4 border-t border-line/60 flex items-center gap-2 text-[13.5px] font-semibold text-ink/75">
+          <div class="mt-auto pt-5 border-t border-line/60 flex items-center gap-2 text-[13.5px] font-semibold text-ink/75" style="margin-top: auto !important; padding-top: 1.25rem !important;">
             <i class="ri-compasses-2-line text-teal text-[17px]"></i>
             <span>Renders 3D fotorrealistas antes de demoler</span>
           </div>
@@ -1004,84 +966,86 @@
 </section>
 
 <!-- SECCIÓN 4: GARANTÍAS CONTRACTUALES BLINDADAS (FONDO OSCURO BG-INK) -->
-<section class="w-full bg-ink py-16 md:py-24 text-white relative overflow-hidden" id="garantias">
-  <!-- Sutil resplandor de fondo -->
+<section class="w-full bg-ink py-20 md:py-28 text-white relative overflow-hidden" id="garantias" style="padding-top: 5.5rem !important; padding-bottom: 5.5rem !important;">
   <div aria-hidden="true" class="absolute -top-40 -right-40 w-96 h-96 bg-[#A87E34]/10 rounded-full blur-3xl pointer-events-none"></div>
   <div aria-hidden="true" class="absolute -bottom-40 -left-40 w-96 h-96 bg-teal/10 rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="relative z-10 mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[760px] mx-auto mb-14">
-      <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#E2C48F]">Seguridad Jurídica y Técnica</span>
-      <h2 class="font-editorial text-[32px] md:text-[44px] leading-tight text-white mt-2 mb-4">
+    <div class="text-center max-w-[780px] mx-auto mb-16 md:mb-20" style="margin-bottom: 4rem !important;">
+      <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#E2C48F] block mb-3" style="color: #E2C48F !important; margin-bottom: 0.85rem !important;">Seguridad Jurídica y Técnica</span>
+      <h2 class="font-editorial text-[32px] md:text-[44px] leading-tight text-white mt-2 mb-4" style="margin-bottom: 1.25rem !important;">
         Tu tranquilidad respaldada por contrato antes del primer ladrillo
       </h2>
-      <p class="text-[17px] md:text-[19px] leading-[1.65] text-white/85">
+      <p class="text-[17px] md:text-[19px] leading-[1.7] text-white/85">
         No trabajamos con presupuestos abiertos ni estimaciones verbales. Todo compromiso se documenta de forma estricta ante notario y en contrato vinculante.
       </p>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-stretch" style="gap: 1.75rem !important;">
       <!-- TARJETA 1: PRECIO FIJO CERRADO (CORREGIDA, MISMO FORMATO ELEGANTE) -->
-      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-7 md:p-8 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important;">
+      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-8 md:p-9 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important; padding: 2.25rem 2rem !important;">
         <div>
-          <i class="ri-file-shield-2-line text-[34px] text-[#E2C48F] mb-4 block" style="color: #E2C48F !important;"></i>
-          <h3 class="font-editorial text-[21px] font-bold text-white mb-2 leading-snug" style="color: #FFFFFF !important;">Precio Fijo Cerrado</h3>
-          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important;">
+          <i class="ri-file-shield-2-line text-[34px] text-[#E2C48F] mb-5 block" style="color: #E2C48F !important; margin-bottom: 1.25rem !important;"></i>
+          <h3 class="font-editorial text-[22px] font-bold text-white mb-3 leading-snug" style="color: #FFFFFF !important; margin-bottom: 0.85rem !important;">Precio Fijo Cerrado</h3>
+          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important; margin-bottom: 1.5rem !important;">
             Lo que firma el contrato es lo que pagas al céntimo. Cualquier desviación en mediciones o imprevistos de obra corre por nuestra cuenta. Cero sobrecostes.
           </p>
         </div>
-        <div class="mt-6 pt-3 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important;">
+        <div class="mt-auto pt-4 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important; margin-top: auto !important; padding-top: 1rem !important;">
           <i class="ri-check-line text-[16px]"></i>
           <span>Desviación 0% garantizada</span>
         </div>
       </div>
 
       <!-- TARJETA 2: PENALIZACIÓN POR DEMORA -->
-      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-7 md:p-8 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important;">
+      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-8 md:p-9 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important; padding: 2.25rem 2rem !important;">
         <div>
-          <i class="ri-calendar-check-line text-[34px] text-[#E2C48F] mb-4 block" style="color: #E2C48F !important;"></i>
-          <h3 class="font-editorial text-[21px] font-bold text-white mb-2 leading-snug" style="color: #FFFFFF !important;">Penalización por Demora</h3>
-          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important;">
+          <i class="ri-calendar-check-line text-[34px] text-[#E2C48F] mb-5 block" style="color: #E2C48F !important; margin-bottom: 1.25rem !important;"></i>
+          <h3 class="font-editorial text-[22px] font-bold text-white mb-3 leading-snug" style="color: #FFFFFF !important; margin-bottom: 0.85rem !important;">Penalización por Demora</h3>
+          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important; margin-bottom: 1.5rem !important;">
             Fijamos fecha exacta de entrega en contrato formal con indemnización económica diaria si nos demoramos en la ejecución por causas imputables a la obra.
           </p>
         </div>
-        <div class="mt-6 pt-3 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important;">
+        <div class="mt-auto pt-4 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important; margin-top: auto !important; padding-top: 1rem !important;">
           <i class="ri-check-line text-[16px]"></i>
           <span>Fecha fijada en contrato</span>
         </div>
       </div>
 
       <!-- TARJETA 3: SEGURO RC -->
-      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-7 md:p-8 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important;">
+      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-8 md:p-9 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important; padding: 2.25rem 2rem !important;">
         <div>
-          <i class="ri-shield-star-line text-[34px] text-[#E2C48F] mb-4 block" style="color: #E2C48F !important;"></i>
-          <h3 class="font-editorial text-[21px] font-bold text-white mb-2 leading-snug" style="color: #FFFFFF !important;">Seguro RC 600.000 €</h3>
-          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important;">
+          <i class="ri-shield-star-line text-[34px] text-[#E2C48F] mb-5 block" style="color: #E2C48F !important; margin-bottom: 1.25rem !important;"></i>
+          <h3 class="font-editorial text-[22px] font-bold text-white mb-3 leading-snug" style="color: #FFFFFF !important; margin-bottom: 0.85rem !important;">Seguro RC 600.000 €</h3>
+          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important; margin-bottom: 1.5rem !important;">
             Póliza de responsabilidad civil suscrita con Mapfre para blindar cualquier eventualidad o daño a terceros en tu comunidad o vivienda.
           </p>
         </div>
-        <div class="mt-6 pt-3 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important;">
+        <div class="mt-auto pt-4 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important; margin-top: auto !important; padding-top: 1rem !important;">
           <i class="ri-check-line text-[16px]"></i>
           <span>Póliza Mapfre en vigor</span>
         </div>
       </div>
 
       <!-- TARJETA 4: GARANTÍA 2 AÑOS -->
-      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-7 md:p-8 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important;">
+      <div class="rounded-20 border border-white/20 bg-white/[0.07] p-8 md:p-9 backdrop-blur-md hover:border-[#A87E34]/60 hover:bg-white/10 transition-all duration-300 flex flex-col justify-between" style="background: rgba(255, 255, 255, 0.07) !important; border: 1px solid rgba(255, 255, 255, 0.2) !important; border-radius: 20px !important; padding: 2.25rem 2rem !important;">
         <div>
-          <i class="ri-medal-line text-[34px] text-[#E2C48F] mb-4 block" style="color: #E2C48F !important;"></i>
-          <h3 class="font-editorial text-[21px] font-bold text-white mb-2 leading-snug" style="color: #FFFFFF !important;">Garantía Escrita 2 Años</h3>
-          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important;">
+          <i class="ri-medal-line text-[34px] text-[#E2C48F] mb-5 block" style="color: #E2C48F !important; margin-bottom: 1.25rem !important;"></i>
+          <h3 class="font-editorial text-[22px] font-bold text-white mb-3 leading-snug" style="color: #FFFFFF !important; margin-bottom: 0.85rem !important;">Garantía Escrita 2 Años</h3>
+          <p class="text-[16px] md:text-[17px] leading-[1.65] text-white/85" style="color: rgba(255, 255, 255, 0.85) !important; margin-bottom: 1.5rem !important;">
             Acta formal de fin de obra y garantía legal de dos años por escrito para instalaciones eléctricas y de fontanería, alicatados, suelos y carpintería.
           </p>
         </div>
-        <div class="mt-6 pt-3 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important;">
+        <div class="mt-auto pt-4 border-t border-white/15 text-[12.5px] font-bold uppercase tracking-wider text-teal-light flex items-center gap-1.5" style="color: #E2C48F !important; margin-top: auto !important; padding-top: 1rem !important;">
           <i class="ri-check-line text-[16px]"></i>
           <span>Acta formal notariada</span>
         </div>
       </div>
     </div>
+
+  </div>
+</section>
 
   </div>
 </section>
