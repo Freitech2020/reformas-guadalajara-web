@@ -138,292 +138,77 @@
     border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06) !important;
   }
   header.scrolled nav ul a { color: #0E1B2E !important; }
-  header.scrolled nav a[href="#inicio"] span:first-child { color: #0E1B2E !important; }
-  header.scrolled nav a[href="#inicio"] span:last-child { color: #8C6424 !important; }
-  @keyframes radarPulse { 0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.75); opacity: 0.9; } 70% { transform: scale(1.85); box-shadow: 0 0 0 7px rgba(52, 211, 153, 0); opacity: 0; } 100% { transform: scale(2.2); box-shadow: 0 0 0 9px rgba(52, 211, 153, 0); opacity: 0; } }
-  .live-status-dot { position: relative; display: inline-flex; align-items: center; justify-content: center; width: 14px; height: 14px; flex-shrink: 0; }
-  .live-status-pulse { position: absolute; width: 100%; height: 100%; border-radius: 9999px; background-color: #34d399; animation: radarPulse 2s infinite; }
-  .live-status-core { position: relative; width: 10px; height: 10px; border-radius: 9999px; background-color: #10b981; }
-  #tarifas, section#tarifas { background-color: #0E1B2E !important; }
-  #tarifas h2 { color: #FFFFFF !important; }
-  #tarifas p.tarifas-subtitle { color: #FFFFFF !important; }
-  .jefe-obra-img-box { width: 100%; min-height: 280px; overflow: hidden; background-color: #F8FAFC; }
-  .jefe-obra-img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
-  a.bg-teal, button.bg-teal { background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; }
-  a.bg-teal:hover, button.bg-teal:hover { background-color: #8F6A29 !important; }
-</style>
-<style id="freitech-token-design-2026">
-  @media (max-width: 1023px) {
-    .estancia-mobile-panel,
-    .fase-mobile-panel {
-      display: none !important;
-      height: 0 !important;
-      max-height: 0 !important;
-      visibility: hidden !important;
-      overflow: hidden !important;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-    .estancia-mobile-panel.is-open,
-    .fase-mobile-panel.is-open,
-    .fase-mobile-card.is-open .fase-mobile-panel {
-      display: block !important;
-      height: auto !important;
-      max-height: none !important;
-      opacity: 1 !important;
-      visibility: visible !important;
-      overflow: visible !important;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .estancia-mobile-panel,
-    .fase-mobile-panel,
-    #fases-mobile-accordion {
-      display: none !important;
-      height: 0 !important;
-      max-height: 0 !important;
-      visibility: hidden !important;
-      overflow: hidden !important;
-    }
-  }
-
-  @media (max-width: 1023px) {
-    .card-obras-certificadas {
-      order: 99 !important;
-    }
-  }
-  @media (min-width: 1024px) {
-    .card-obras-certificadas {
-      order: initial !important;
-    }
-  }
-
-  .grid-cols-5,
-  #fases-desktop-tabs {
-    display: grid !important;
-    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-  }
-
-  @media (min-width: 1024px) {
-    .lg\:col-span-1 { grid-column: span 1 / span 1 !important; }
-    .lg\:col-span-2 { grid-column: span 2 / span 2 !important; }
-    .lg\:col-span-3 { grid-column: span 3 / span 3 !important; }
-    .lg\:col-span-4 { grid-column: span 4 / span 4 !important; }
-    .lg\:col-span-5 { grid-column: span 5 / span 5 !important; }
-    .lg\:col-span-6 { grid-column: span 6 / span 6 !important; }
-    .lg\:col-span-7 { grid-column: span 7 / span 7 !important; }
-    .lg\:col-span-8 { grid-column: span 8 / span 8 !important; }
-    .lg\:col-span-9 { grid-column: span 9 / span 9 !important; }
-    .lg\:col-span-10 { grid-column: span 10 / span 10 !important; }
-    .lg\:col-span-11 { grid-column: span 11 / span 11 !important; }
-    .lg\:col-span-12 { grid-column: span 12 / span 12 !important; }
-  }
-  @media (min-width: 1280px) {
-    .xl\:col-span-3 { grid-column: span 3 / span 3 !important; }
-    .xl\:col-span-4 { grid-column: span 4 / span 4 !important; }
-    .xl\:col-span-8 { grid-column: span 8 / span 8 !important; }
-    .xl\:col-span-9 { grid-column: span 9 / span 9 !important; }
-  }
-
-  .ba-slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    cursor: ew-resize;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: pan-y;
-  }
-
-  .hero-h1-title {
-    font-size: 42px !important;
-    line-height: 1.06 !important;
-    letter-spacing: -0.025em !important;
-    text-shadow: 0 2px 14px rgba(14, 27, 46, 0.75), 0 1px 3px rgba(0, 0, 0, 0.8) !important;
-  }
-  @media (min-width: 480px) {
-    .hero-h1-title {
-      font-size: 52px !important;
-      line-height: 1.05 !important;
-    }
-  }
-  @media (min-width: 640px) {
-    .hero-h1-title {
-      font-size: 62px !important;
-      line-height: 1.04 !important;
-    }
-  }
-  @media (min-width: 768px) {
-    .hero-h1-title {
-      font-size: 74px !important;
-      line-height: 1.03 !important;
-    }
-  }
-  @media (min-width: 1024px) {
-    .hero-h1-title {
-      font-size: 86px !important;
-      line-height: 1.02 !important;
-    }
-  }
-  @media (min-width: 1280px) {
-    .hero-h1-title {
-      font-size: 94px !important;
-      line-height: 1.01 !important;
-    }
-  }
-
-  .hero-subtitle {
-    font-size: 16.5px !important;
-    line-height: 1.65 !important;
-  }
-  @media (min-width: 768px) {
-    .hero-subtitle {
-      font-size: 19px !important;
-      line-height: 1.65 !important;
-    }
-  }
-
-  .no-scrollbar::-webkit-scrollbar {
-    display: none !important;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
-  }
-
-  .ba-slider .ba-divider {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    pointer-events: none;
-    z-index: 25;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 200ms ease;
-  }
-  .ba-slider:hover .ba-divider,
-  .ba-slider.is-hovering .ba-divider {
-    opacity: 1 !important;
-  }
-  .ba-slider:hover [class*="group-hover/ba:opacity-100"],
-  .ba-slider.is-hovering [class*="group-hover/ba:opacity-100"] {
-    opacity: 1 !important;
-  }
-  .ba-slider .ba-overlay {
-    transition: clip-path 0.04s ease-out;
-  }
-
-  #btn-scroll-top {
-    position: fixed !important;
-    bottom: 80px !important;
-    right: 16px !important;
-    z-index: 9999 !important;
-    width: 44px !important;
-    height: 44px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    border-radius: 9999px !important;
-    background-color: #EFE8DE !important;
-    border: 1px solid #D8CBB7 !important;
-    color: #0E1B2E !important;
-    box-shadow: 0 4px 16px rgba(14, 27, 46, 0.16), 0 2px 4px rgba(14, 27, 46, 0.08) !important;
-    cursor: pointer !important;
-    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.2s ease, border-color 0.2s ease !important;
-  }
-  @media (min-width: 768px) {
-    #btn-scroll-top {
-      bottom: 88px !important;
-      right: 24px !important;
-    }
-  }
-  #btn-scroll-top:hover {
-    background-color: #E5DCB8 !important;
-    border-color: #C8BAA3 !important;
-    transform: translateY(-2px) !important;
-  }
-  #btn-scroll-top:active {
-    transform: translateY(0) !important;
-  }
-  #btn-scroll-top.is-hidden {
-    opacity: 0 !important;
-    pointer-events: none !important;
-    transform: translateY(12px) !important;
-  }
-  #btn-scroll-top.is-visible {
-    opacity: 1 !important;
-    pointer-events: auto !important;
-    transform: translateY(0) !important;
-  }
-
-  :root {
-    --hero-darkness: 0.72;
-  }
-
-  .hero-master-scrim {
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, var(--hero-darkness)) !important;
-    pointer-events: none;
-    z-index: 1;
-  }
-
-  header.header-scrim:not(.scrolled):not(.bg-white\/95) {
-    background: linear-gradient(180deg, rgba(8, 15, 26, 0.75) 0%, rgba(8, 15, 26, 0.35) 65%, rgba(8, 15, 26, 0) 100%) !important;
-  }
-  header.header-scrim:not(.scrolled):not(.bg-white\/95) nav a,
-  header.header-scrim:not(.scrolled):not(.bg-white\/95) nav span,
-  header.header-scrim:not(.scrolled):not(.bg-white\/95) nav ul li a {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
-    font-weight: 500 !important;
-  }
-  header.header-scrim:not(.scrolled):not(.bg-white\/95) nav ul li a:hover {
-    color: #E2C48F !important;
-    text-shadow: 0 1px 6px rgba(226, 196, 143, 0.4) !important;
-  }
-  header.header-scrim:not(.scrolled):not(.bg-white\/95) .text-teal-light {
-    color: #E2C48F !important;
-  }
-
-  header.scrolled,
-  header.bg-white\/95 {
-    background-color: rgba(255, 255, 255, 0.96) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important;
-    box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.06) !important;
-  }
-  header.scrolled *,
-  header.bg-white\/95 * {
-    text-shadow: none !important;
-    filter: none !important;
-  }
-  header.scrolled nav ul a,
-  header.bg-white\/95 nav ul a {
-    color: #0E1B2E !important;
-    font-weight: 500 !important;
+    header.scrolled nav a[aria-label*="inicio"] span:first-child,
+  header.scrolled nav a[href*="inicio"] span:first-child,
+  header.scrolled nav a[href*="index.html"] span:first-child,
+  header.bg-white\/95 nav a[aria-label*="inicio"] span:first-child,
+  header.bg-white\/95 nav a[href*="inicio"] span:first-child,
+  header.bg-white\/95 nav a[href*="index.html"] span:first-child {
+    color: #0E1B2E !important; /* REFORMAS */
     text-shadow: none !important;
   }
-  header.scrolled nav ul a:hover,
-  header.bg-white\/95 nav ul a:hover {
-    color: #8C6424 !important;
-    text-shadow: none !important;
-  }
-  header.scrolled nav a[href="#inicio"] span:first-child,
-  header.bg-white\/95 nav a[href="#inicio"] span:first-child {
-    color: #0E1B2E !important;
-    text-shadow: none !important;
-  }
-  header.scrolled nav a[href="#inicio"] span:last-child,
-  header.bg-white\/95 nav a[href="#inicio"] span:last-child,
+  header.scrolled nav a[aria-label*="inicio"] span:last-child,
+  header.scrolled nav a[href*="inicio"] span:last-child,
+  header.scrolled nav a[href*="index.html"] span:last-child,
+  header.bg-white\/95 nav a[aria-label*="inicio"] span:last-child,
+  header.bg-white\/95 nav a[href*="inicio"] span:last-child,
+  header.bg-white\/95 nav a[href*="index.html"] span:last-child,
   header.scrolled .text-teal-light,
   header.bg-white\/95 .text-teal-light {
-    color: #8C6424 !important;
+    color: #8C6424 !important; /* MADRID en marrón dorado */
     text-shadow: none !important;
+  }
+
+  /* --- BOTÓN PEDIR PRESUPUESTO (ALTA VISIBILIDAD ORO TOKEN DESIGN) --- */
+  .btn-open-popup-presupuesto,
+  header .btn-open-popup-presupuesto,
+  button.btn-open-popup-presupuesto,
+  button.bg-teal,
+  .btn-gold {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    background-color: #A87E34 !important;
+    background: #A87E34 !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(226, 196, 143, 0.65) !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .btn-open-popup-presupuesto:hover,
+  header .btn-open-popup-presupuesto:hover,
+  button.btn-open-popup-presupuesto:hover,
+  button.bg-teal:hover,
+  .btn-gold:hover {
+    background-color: #8C6424 !important;
+    background: #8C6424 !important;
+    border-color: rgba(226, 196, 143, 0.95) !important;
+    box-shadow: 0 6px 20px rgba(78, 52, 23, 0.5) !important;
+    transform: translateY(-2px) !important;
+    color: #FFFFFF !important;
+  }
+  .btn-open-popup-presupuesto i,
+  header .btn-open-popup-presupuesto i {
+    color: #FFFFFF !important;
+    font-size: 15px !important;
+  }
+  #mobile-menu-drawer .btn-open-popup-presupuesto {
+    width: 100% !important;
+    padding: 14px 24px !important;
+    font-size: 14px !important;
+    border-radius: 8px !important;
   }
 
   /* --- DROPDOWNS DESKTOP (ARQUITECTURA DE MENÚ DE LUJO - ESTÁNDAR MADRID/GUADALAJARA) --- */
@@ -522,42 +307,57 @@
   }
 
   /* --- BLINDAJE DE ESPACIADO Y JERARQUÍA DEL HEADER (ANTI-APRETADO / ZERO COLLISION) --- */
-  header nav ul.header-nav-list,
-  header nav ul.hidden.lg\:flex {
-    display: flex !important;
-    align-items: center !important;
-    gap: 1.35rem !important; /* 22px en pantallas lg */
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
+  @media (max-width: 1023px) {
+    header nav ul.header-nav-list,
+    header nav ul.hidden.lg\:flex,
+    header nav ul[class*="hidden lg:flex"] {
+      display: none !important;
+    }
+    .nav-dropdown-menu {
+      display: none !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    header nav ul.header-nav-list,
+    header nav ul.hidden.lg\:flex,
+    header nav ul[class*="hidden lg:flex"] {
+      display: flex !important;
+      align-items: center !important;
+      gap: 1.35rem !important; /* 22px en pantallas lg */
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+    }
+    header nav ul.header-nav-list > li,
+    header nav ul.hidden.lg\:flex > li,
+    header nav ul[class*="hidden lg:flex"] > li {
+      display: inline-flex !important;
+      align-items: center !important;
+      flex-shrink: 0 !important;
+      margin: 0 !important;
+    }
+    header nav ul.header-nav-list > li > a,
+    header nav ul.hidden.lg\:flex > li > a,
+    header nav ul[class*="hidden lg:flex"] > li > a {
+      display: inline-flex !important;
+      align-items: center !important;
+      padding: 0.5rem 0.2rem !important;
+      font-size: 12.5px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.05em !important;
+      text-transform: uppercase !important;
+      white-space: nowrap !important;
+    }
   }
   @media (min-width: 1280px) {
     header nav ul.header-nav-list,
-    header nav ul.hidden.lg\:flex {
+    header nav ul.hidden.lg\:flex,
+    header nav ul[class*="hidden lg:flex"] {
       gap: 1.75rem !important; /* 28px generoso en xl */
     }
-  }
-  header nav ul.header-nav-list > li,
-  header nav ul.hidden.lg\:flex > li {
-    display: inline-flex !important;
-    align-items: center !important;
-    flex-shrink: 0 !important;
-    margin: 0 !important;
-  }
-  header nav ul.header-nav-list > li > a,
-  header nav ul.hidden.lg\:flex > li > a {
-    display: inline-flex !important;
-    align-items: center !important;
-    padding: 0.5rem 0.2rem !important;
-    font-size: 12.5px !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.05em !important;
-    text-transform: uppercase !important;
-    white-space: nowrap !important;
-  }
-  @media (min-width: 1280px) {
     header nav ul.header-nav-list > li > a,
-    header nav ul.hidden.lg\:flex > li > a {
+    header nav ul.hidden.lg\:flex > li > a,
+    header nav ul[class*="hidden lg:flex"] > li > a {
       font-size: 13px !important;
     }
   }
@@ -615,6 +415,8 @@
     color: rgba(255, 255, 255, 0.85) !important;
   }
 
+  .hero-zonas-card ul li { display: flex !important; align-items: center !important; gap: 16px !important; }
+  .hero-zonas-card ul li > span:first-child { margin-right: 14px !important; flex-shrink: 0 !important; }
   .hero-zonas-card {
     max-width: 440px !important;
   }
@@ -1246,20 +1048,20 @@
           </div>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="#" onclick="event.preventDefault();">NOSOTROS</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="#contacto">CONTACTO</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/contacto.html">CONTACTO</a>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="#" onclick="event.preventDefault();">BLOG</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/blog.html">BLOG</a>
         </li>
       </ul>
       <div class="flex items-center gap-2">
-        <a class="hidden sm:inline-flex items-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[12.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap shadow-md" href="#contacto">
+        <button aria-label="Pedir Presupuesto" class="btn-open-popup-presupuesto btn-gold bg-teal hidden sm:inline-flex items-center gap-2 rounded-md px-5 py-2.5 text-[12.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" type="button">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i>
-        </a>
+        </button>
         <button id="btn-mobile-menu" aria-label="Abrir menú" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md border cursor-pointer transition-colors border-white/35 bg-white/10 text-white backdrop-blur-sm" type="button">
           <i class="ri-menu-line text-[20px]"></i>
         </button>
@@ -1329,19 +1131,19 @@
         </div>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="#" onclick="event.preventDefault();">NOSOTROS</a>
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="#contacto">CONTACTO</a>
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/contacto.html">CONTACTO</a>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="#" onclick="event.preventDefault();">BLOG</a>
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/blog.html">BLOG</a>
       </div>
       <div class="pt-4">
-        <a class="w-full flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white hover:bg-teal-hover transition-colors shadow-md text-center" href="#contacto">
+        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal w-full flex items-center justify-center gap-2 rounded-md px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white transition-colors shadow-md text-center cursor-pointer" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[16px]"></i>
-        </a>
+        </button>
       </div>
       <div class="mt-auto pt-6 text-center">
         <a class="inline-flex items-center gap-2 text-[15px] font-bold text-ink hover:text-[#8C6424] transition-colors" href="tel:+34910000000">
@@ -1433,22 +1235,22 @@
 <!-- COLUMNA LISTA IZQUIERDA -->
 <div class="hidden lg:block lg:col-span-7">
 <div class="group relative w-full h-[540px] rounded-2xl overflow-hidden shadow-2xl border border-sand/40">
-<img alt="Proyecto seleccionado de reforma de cocina en Madrid" class="w-full h-full object-cover transition-all duration-700" id="estancia-desktop-img" onerror="this.onerror=null; this.src='images/cocinas-despues.webp';" src="images/cocinas-isla-calacatta.webp"/>
+<img alt="Proyecto seleccionado de reforma de cocina en Madrid" class="w-full h-full object-cover transition-all duration-700" id="estancias-desktop-img" onerror="this.onerror=null; this.src='images/cocinas-despues.webp';" src="images/cocinas-isla-calacatta.webp"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-[1]"></div>
 <div class="estancia-glass-wrapper absolute inset-x-6 bottom-6">
 <div class="estancia-glass-card rounded-xl p-6 text-white">
 <div class="flex items-center justify-between mb-2">
-<span class="text-[11px] font-bold uppercase tracking-widest text-teal-light bg-teal/30 px-3 py-1 rounded-full border border-teal/40" id="estancia-desktop-badge">
+<span class="text-[11px] font-bold uppercase tracking-widest text-teal-light bg-teal/30 px-3 py-1 rounded-full border border-teal/40" id="estancias-desktop-badge">
                   Tipología 01 · Barrio de Salamanca
                 </span>
-<span class="text-[12px] font-semibold text-white/80" id="estancia-desktop-time">
+<span class="text-[12px] font-semibold text-white/80" id="estancias-desktop-time">
 <i class="ri-time-line text-teal-light mr-1"></i> Plazo: 16 Días
                 </span>
 </div>
-<h4 class="text-[22px] font-bold text-white mb-2 font-editorial" id="estancia-desktop-title">
+<h4 class="text-[22px] font-bold text-white mb-2 font-editorial" id="estancias-desktop-title">
                 Cocina con Isla y Porcelánico Calacatta
               </h4>
-<p class="text-[14px] text-white/90 leading-relaxed mb-4" id="estancia-desktop-desc">
+<p class="text-[14px] text-white/90 leading-relaxed mb-4" id="estancias-desktop-desc">
                 Isla central monobloque con inducción oculta, encimera porcelánica Calacatta Gold resistente a impactos y manchas, taburetes en roble natural y campana extractora integrada a ras de falso techo con aspiración silenciosa.
               </p>
 <div class="flex items-center justify-between pt-3 border-t border-white/15">
@@ -1521,7 +1323,7 @@
 </div>
 </button>
 <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
-<img alt="Cocina lineal con sistema gola y acabado blanco mate antihuellas en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/cocinas-despues.webp"/>
+<img alt="Cocina lineal con sistema gola y acabado blanco mate antihuellas en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-lineal-minimalista.webp';" src="images/cocinas-lineal-minimalista.webp"/>
 <p class="text-[14px] text-muted leading-relaxed">
               Distribución lineal continua ideal para estancias alargadas. Puertas con tirador integrado oculto perfil gola, zócalo de aluminio a juego y despensa torre con cajones interiores de extracción total Blum Tandembox.
             </p>
@@ -1543,7 +1345,7 @@
 </div>
 </button>
 <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
-<img alt="Cocina en L con península desayunador en Pozuelo Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/cocinas-hero.webp"/>
+<img alt="Cocina en L con península desayunador en Pozuelo Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-en-l-peninsula.webp';" src="images/cocinas-en-l-peninsula.webp"/>
 <p class="text-[14px] text-muted leading-relaxed">
               Triángulo de trabajo ergonómico perfecto (frigorífico, fregadero y zona de fuego). La península actúa como separador visual e incorpora tomas escamoteables y barra volada de madera tratada para desayunos diarios.
             </p>
@@ -1565,7 +1367,7 @@
 </div>
 </button>
 <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
-<img alt="Cocina nórdica moderna roble y blanco mate en Las Tablas Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/estancia-cocina.webp"/>
+<img alt="Cocina nórdica moderna roble y blanco mate en Las Tablas Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_nordica_roble.png"/>
 <p class="text-[14px] text-muted leading-relaxed">
               Combinación armónica de frentes blanco seda antihuellas y módulos altos revestidos en chapa de roble natural. Pavimento combinado entre tarima hidrófuga AC5 y alfombra cerámica porcelánica en zona de aguas.
             </p>
@@ -1587,7 +1389,7 @@
 </div>
 </button>
 <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
-<img alt="Cocina prémium con vinoteca y columnas de hornos en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/cocinas-fase-02-3d.webp"/>
+<img alt="Cocina prémium con vinoteca y columnas de hornos en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_gourmet_vinoteca.png"/>
 <p class="text-[14px] text-muted leading-relaxed">
               Para apasionados de la gastronomía. Columna técnica con horno pirolítico, microondas a juego, calientaplatos, vinoteca bitémperatura encastrada y grifo monomando semiprofesional con ducha extensible y filtrado de agua.
             </p>
@@ -1783,10 +1585,10 @@
 <div class="h-full">
 <article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white">
 <div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
-<img alt="Cocina antigua antes de la reforma en Chamberí" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/cocinas-antes.webp"/>
+<img alt="Cocina antigua antes de la reforma en Chamberí" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_almagro_antes_coherente.png"/>
 <span class="absolute top-3 right-3 z-10 rounded-md bg-black/70 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Antes</span>
 <div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
-<img alt="Cocina con isla y porcelánico reformada en Chamberí" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/cocinas-despues.webp"/>
+<img alt="Cocina con isla y porcelánico reformada en Chamberí" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_almagro_despues_coherente.png"/>
 <span class="absolute top-3 left-3 z-10 rounded-md bg-teal/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none">Después</span>
 </div>
 <div class="ba-divider absolute top-0 bottom-0 w-[2px] bg-white pointer-events-none opacity-100 z-20" style="left: var(--split, 100%); transform: translateX(-50%);">
@@ -2175,7 +1977,7 @@
 <span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span>
 </div>
 <p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-black font-normal">
-Reformas integrales, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.
+Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.
 </p>
 <div class="mt-5 flex flex-col gap-2 text-[15px] text-black font-medium">
 <a class="hover:text-[#8C6424] transition-colors cursor-pointer whitespace-nowrap text-black font-semibold" href="tel:+34910000000">+34 910 00 00 00</a>
@@ -2224,6 +2026,73 @@ Reformas integrales, cocinas, baños y climatización en Madrid capital y Comuni
 </div>
 </footer>
 <!-- BOTÓN VOLVER ARRIBA -->
+<!-- BOTÓN FLOTANTE CONSULTA RÁPIDA -->
+<button id="btn-floating-consulta" aria-label="Abrir consulta rápida" class="btn-open-popup-presupuesto fixed bottom-5 right-4 z-[60] flex items-center gap-2.5 rounded-full border border-line bg-white/95 py-2.5 pl-3.5 pr-4 shadow-[0_12px_32px_rgba(15,20,23,0.12)] backdrop-blur-md transition-all duration-300 hover:border-teal/40 cursor-pointer md:bottom-6 md:right-6 opacity-100" type="button">
+  <span class="relative flex h-2 w-2 items-center justify-center">
+    <span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span>
+    <span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span>
+  </span>
+  <i class="ri-chat-3-line text-[16px] text-teal"></i>
+  <span class="text-[12.5px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span>
+</button>
+
+<!-- BACKDROP & MODAL POPUP DRAWER (CONSULTA RÁPIDA / PEDIR PRESUPUESTO) -->
+<div id="modal-consulta-backdrop" aria-hidden="true" class="fixed inset-0 z-[70] bg-ink/35 backdrop-blur-sm transition-opacity duration-300 pointer-events-none opacity-0"></div>
+<aside id="modal-consulta-rapida" aria-hidden="true" aria-label="Consulta rápida" aria-modal="true" class="fixed inset-y-0 right-0 z-[80] w-full max-w-[460px] overflow-y-auto bg-white transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] translate-x-full" role="dialog">
+  <div class="flex min-h-full flex-col">
+    <div class="flex items-start justify-between gap-4 border-b border-line px-5 py-5 md:px-6">
+      <div>
+        <span class="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span>
+        <h2 class="font-editorial mt-2 text-[22px] leading-[1.15] text-ink">Consulta rápida en Madrid</h2>
+      </div>
+      <button id="btn-close-consulta-modal" aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button">
+        <i class="ri-close-line text-[18px]"></i>
+      </button>
+    </div>
+    <form action="https://readdy.ai/api/form/dbankn39uihupc2pc6bg" class="flex flex-1 flex-col gap-5 px-5 py-6 md:px-6" data-readdy-form="true" id="florin-consulta-rapida" method="post">
+      <p class="text-[13px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p>
+      <fieldset>
+        <legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend>
+        <input name="tipo_reforma" readonly="" type="hidden" value="Reforma completa"/>
+        <div class="mt-2.5 flex flex-wrap gap-2 modal-chips-container">
+          <button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button>
+        </div>
+      </fieldset>
+      <div>
+        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label>
+        <input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div>
+          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label>
+          <input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/>
+        </div>
+        <div>
+          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label>
+          <input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/>
+        </div>
+      </div>
+      <div>
+        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label>
+        <textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Piso de 85 m² en el centro, quiero reformar cocina y baño..." required="" rows="4"></textarea>
+        <div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div>
+      </div>
+      <div class="fl-hp"><label for="florin-contact-alt">No rellenar</label><input aria-hidden="true" autocomplete="off" id="florin-contact-alt" name="contact_alt" readonly="" tabindex="-1" type="text"/></div>
+      <div class="mt-auto flex flex-col gap-3 border-t border-line pt-5">
+        <button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">
+          Solicitar visita gratuita
+          <i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i>
+        </button>
+        <p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
+      </div>
+    </form>
+  </div>
+</aside>
 <button aria-label="Volver arriba" class="is-hidden" id="btn-scroll-top">
 <i class="ri-arrow-up-line text-[20px]"></i>
 </button>
@@ -2275,7 +2144,7 @@ window.__DATA_COCINAS__ = {
       title: "Renovación integral de fontanería, electricidad y nivelado",
       desc: "Retiramos azulejos antiguos, sustituimos tuberías de plomo/cobre por multicapa de alta resistencia y realizamos regolas limpias con aspiración para cableado independiente protegido en cuadro eléctrico.",
       duration: "Ejecución técnica · 1 a 2 semanas",
-      image: "images/cocinas-fase-04-ejecucion.webp",
+      image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_fase_04_instalaciones.png",
       protocols: [
         "Fontanería multicapa termofusionada sin empalmes en falso tabique",
         "Nuevos circuitos independientes (C3 para vitro/horno, C4 para lavavajillas/lavadora)",
@@ -2312,25 +2181,25 @@ window.__DATA_COCINAS__ = {
       title: "Cocina Lineal Minimalista con Sistema Gola",
       badge: "Moncloa / Argüelles · Muebles sin tirador y Columnas de Techo",
       desc: "Distribución lineal continua ideal para estancias alargadas. Puertas con tirador integrado oculto perfil gola, zócalo de aluminio a juego y despensa torre con cajones interiores de extracción total Blum Tandembox.",
-      image: "images/cocinas-despues.webp"
+      image: "images/cocinas-lineal-minimalista.webp"
     },
     {
       title: "Cocina en L con Península Desayunadora",
       badge: "Pozuelo / Aravaca · Zona de Comidas y Rincón Mágico Extraíble",
       desc: "Triángulo de trabajo ergonómico perfecto (frigorífico, fregadero y zona de fuego). La península actúa como separador visual e incorpora tomas escamoteables y barra volada de madera tratada para desayunos diarios.",
-      image: "images/cocinas-hero.webp"
+      image: "images/cocinas-en-l-peninsula.webp"
     },
     {
       title: "Cocina Nórdica Roble & Frentes Blancos",
       badge: "Alcobendas / Las Tablas · Calidez Escandinava y Solera Hidráulica",
       desc: "Combinación armónica de frentes blanco seda antihuellas y módulos altos revestidos en chapa de roble natural. Pavimento combinado entre tarima hidrófuga AC5 y alfombra cerámica porcelánica en zona de aguas.",
-      image: "images/estancia-cocina.webp"
+      image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_nordica_roble.png"
     },
     {
       title: "Cocina Gourmet con Vinoteca y Torre Horno",
       badge: "La Moraleja / Arturo Soria · Gama Prémium y Frigo Americano",
       desc: "Equipamiento para amantes de la gastronomía: vinoteca bajo encimera de dos temperaturas, horno pirolítico a la altura de los ojos, calientaplatos y grifería con caño extraíble profesional.",
-      image: "images/cocinas-despues.webp"
+      image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_gourmet_vinoteca.png"
     }
   ]
 };
@@ -2338,11 +2207,12 @@ window.__DATA_COCINAS__ = {
 document.addEventListener('DOMContentLoaded', function() {
   // ESTANCIAS ENGINE
   const estanciasList = document.getElementById('estancias-list');
-  const desktopImg = document.getElementById('estancias-desktop-img');
-  const desktopBadge = document.getElementById('estancias-desktop-badge');
-  const desktopLocation = document.getElementById('estancias-desktop-location');
-  const desktopTitle = document.getElementById('estancias-desktop-title');
-  const desktopDesc = document.getElementById('estancias-desktop-desc');
+  const desktopImg = document.getElementById('estancias-desktop-img') || document.getElementById('estancia-desktop-img');
+  const desktopBadge = document.getElementById('estancias-desktop-badge') || document.getElementById('estancia-desktop-badge');
+  const desktopLocation = document.getElementById('estancias-desktop-location') || document.getElementById('estancia-desktop-location');
+  const desktopTitle = document.getElementById('estancias-desktop-title') || document.getElementById('estancia-desktop-title');
+  const desktopDesc = document.getElementById('estancias-desktop-desc') || document.getElementById('estancia-desktop-desc');
+  const desktopTime = document.getElementById('estancias-desktop-time') || document.getElementById('estancia-desktop-time');
 
   if (estanciasList) {
     const items = estanciasList.querySelectorAll('.estancia-item');
@@ -2351,6 +2221,22 @@ document.addEventListener('DOMContentLoaded', function() {
       if (btn) {
         btn.addEventListener('click', function() {
           const item = window.__DATA_COCINAS__.estancias ? window.__DATA_COCINAS__.estancias[idx] : null;
+          if (!item) return;
+          const isCurrentlyOpen = btn.getAttribute('aria-expanded') === 'true';
+          if (isCurrentlyOpen && window.innerWidth < 1024) {
+            btn.setAttribute('aria-expanded', 'false');
+            btn.className = 'estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-transparent hover:bg-ice/60';
+            const otherTitle = btn.querySelector('.estancia-item-title');
+            const otherArrow = itemEl.querySelector('.estancia-arrow');
+            const otherPanel = itemEl.querySelector('.estancia-mobile-panel');
+            if (otherTitle) otherTitle.className = 'estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink';
+            if (otherArrow) otherArrow.className = 'estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-ink bg-transparent transition-all duration-300';
+            if (otherPanel) {
+              otherPanel.classList.remove('is-open');
+              otherPanel.style.display = 'none';
+            }
+            return;
+          }
           if (!item) return;
 
           items.forEach((otherEl, otherIdx) => {
@@ -2398,6 +2284,7 @@ document.addEventListener('DOMContentLoaded', function() {
           if (desktopBadge) desktopBadge.textContent = item.badge;
           if (desktopTitle) desktopTitle.textContent = item.title;
           if (desktopDesc) desktopDesc.textContent = item.desc;
+          if (desktopTime && item.time) desktopTime.innerHTML = '<i class="ri-time-line text-teal-light mr-1"></i> ' + item.time;
         });
       }
     });
@@ -2551,33 +2438,91 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function openMobileMenu() {
     if (!mobileMenuDrawer) return;
-    mobileMenuDrawer.classList.remove('pointer-events-none', 'opacity-0');
-    mobileMenuDrawer.classList.add('opacity-100');
-    const panel = mobileMenuDrawer.querySelector('nav');
-    if (panel) panel.classList.remove('translate-x-full');
+    mobileMenuDrawer.classList.add('is-active');
+    mobileMenuDrawer.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
   }
 
   function closeMobileMenu() {
     if (!mobileMenuDrawer) return;
-    const panel = mobileMenuDrawer.querySelector('nav');
-    if (panel) panel.classList.add('translate-x-full');
-    mobileMenuDrawer.classList.remove('opacity-100');
-    mobileMenuDrawer.classList.add('opacity-0');
-    setTimeout(() => {
-      mobileMenuDrawer.classList.add('pointer-events-none');
-      document.body.style.removeProperty('overflow');
-    }, 300);
+    mobileMenuDrawer.classList.remove('is-active');
+    mobileMenuDrawer.setAttribute('aria-hidden', 'true');
+    document.body.style.removeProperty('overflow');
   }
 
   if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', openMobileMenu);
+    mobileMenuBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      openMobileMenu();
+    });
   }
   if (btnCloseMobileMenu) {
-    btnCloseMobileMenu.addEventListener('click', closeMobileMenu);
+    btnCloseMobileMenu.addEventListener('click', function(e) {
+      e.stopPropagation();
+      closeMobileMenu();
+    });
   }
   if (mobileMenuBackdrop) {
     mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+  }
+
+  // --- MOTOR UNIVERSAL MODAL CONSULTA RÁPIDA (POPUP PRESUPUESTO) ---
+  const modalConsulta = document.getElementById('modal-consulta-rapida');
+  const backdropConsulta = document.getElementById('modal-consulta-backdrop');
+  const btnCloseConsulta = document.getElementById('btn-close-consulta-modal');
+
+  function openConsultaModal() {
+    if (modalConsulta && backdropConsulta) {
+      closeMobileMenu();
+      backdropConsulta.classList.add('is-active');
+      modalConsulta.classList.add('is-active');
+      modalConsulta.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeConsultaModal() {
+    if (modalConsulta && backdropConsulta) {
+      modalConsulta.classList.remove('is-active');
+      backdropConsulta.classList.remove('is-active');
+      modalConsulta.setAttribute('aria-hidden', 'true');
+      document.body.style.removeProperty('overflow');
+    }
+  }
+
+  document.querySelectorAll('.btn-open-popup-presupuesto, [data-open-popup="presupuesto"]').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      openConsultaModal();
+    });
+  });
+
+  if (btnCloseConsulta) btnCloseConsulta.addEventListener('click', closeConsultaModal);
+  if (backdropConsulta) backdropConsulta.addEventListener('click', closeConsultaModal);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeConsultaModal();
+      closeMobileMenu();
+    }
+  });
+
+  // Chips interactivos del modal
+  const modalChipsContainer = document.querySelector('.modal-chips-container');
+  if (modalChipsContainer && modalConsulta) {
+    const hiddenInput = modalConsulta.querySelector('input[name="tipo_reforma"]');
+    modalChipsContainer.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        modalChipsContainer.querySelectorAll('button').forEach(b => {
+          b.setAttribute('aria-pressed', 'false');
+          b.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal';
+        });
+        this.setAttribute('aria-pressed', 'true');
+        this.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white';
+        if (hiddenInput) hiddenInput.value = this.innerText.trim();
+      });
+    });
   }
 
   // Mobile accordion submenus toggle
@@ -2605,6 +2550,27 @@ document.addEventListener('DOMContentLoaded', function() {
       a.addEventListener('click', closeMobileMenu);
     });
   }
+
+  // --- DESKTOP NAV DROPDOWN CLICK & OUTSIDE CLICK ENGINE ---
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+    if (trigger) {
+      trigger.addEventListener('click', function(e) {
+        if (window.innerWidth < 1024) return;
+        e.preventDefault();
+        const wasOpen = dropdown.classList.contains('is-open');
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open'));
+        if (!wasOpen) {
+          dropdown.classList.add('is-open');
+        }
+      });
+    }
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open'));
+    }
+  });
 
   // 5. FAQ ACCORDION ENGINE (MADRID GOLD STANDARD)
   const faqAccordion = document.getElementById('faq-accordion');

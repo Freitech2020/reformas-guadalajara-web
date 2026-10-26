@@ -674,17 +674,77 @@
     color: #8C6424 !important; /* marrón dorado / cognac cálido en hover */
     text-shadow: none !important;
   }
-  header.scrolled nav a[href="#inicio"] span:first-child,
-  header.bg-white\/95 nav a[href="#inicio"] span:first-child {
+  header.scrolled nav a[aria-label*="inicio"] span:first-child,
+  header.scrolled nav a[href*="inicio"] span:first-child,
+  header.scrolled nav a[href*="index.html"] span:first-child,
+  header.bg-white\/95 nav a[aria-label*="inicio"] span:first-child,
+  header.bg-white\/95 nav a[href*="inicio"] span:first-child,
+  header.bg-white\/95 nav a[href*="index.html"] span:first-child {
     color: #0E1B2E !important; /* REFORMAS */
     text-shadow: none !important;
   }
-  header.scrolled nav a[href="#inicio"] span:last-child,
-  header.bg-white\/95 nav a[href="#inicio"] span:last-child,
+  header.scrolled nav a[aria-label*="inicio"] span:last-child,
+  header.scrolled nav a[href*="inicio"] span:last-child,
+  header.scrolled nav a[href*="index.html"] span:last-child,
+  header.bg-white\/95 nav a[aria-label*="inicio"] span:last-child,
+  header.bg-white\/95 nav a[href*="inicio"] span:last-child,
+  header.bg-white\/95 nav a[href*="index.html"] span:last-child,
   header.scrolled .text-teal-light,
   header.bg-white\/95 .text-teal-light {
     color: #8C6424 !important; /* MADRID en marrón dorado elegante */
     text-shadow: none !important;
+  }
+
+  /* --- BOTÓN PEDIR PRESUPUESTO (ALTA VISIBILIDAD ORO TOKEN DESIGN) --- */
+  .btn-open-popup-presupuesto,
+  header .btn-open-popup-presupuesto,
+  button.btn-open-popup-presupuesto,
+  button.bg-teal,
+  .btn-gold {
+    position: relative !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    background-color: #A87E34 !important;
+    background: #A87E34 !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(226, 196, 143, 0.65) !important;
+    border-radius: 8px !important;
+    padding: 10px 22px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .btn-open-popup-presupuesto:hover,
+  header .btn-open-popup-presupuesto:hover,
+  button.btn-open-popup-presupuesto:hover,
+  button.bg-teal:hover,
+  .btn-gold:hover {
+    background-color: #8C6424 !important;
+    background: #8C6424 !important;
+    border-color: rgba(226, 196, 143, 0.95) !important;
+    box-shadow: 0 6px 20px rgba(78, 52, 23, 0.5) !important;
+    transform: translateY(-2px) !important;
+    color: #FFFFFF !important;
+  }
+  .btn-open-popup-presupuesto i,
+  header .btn-open-popup-presupuesto i {
+    color: #FFFFFF !important;
+    font-size: 15px !important;
+  }
+  #mobile-menu-drawer .btn-open-popup-presupuesto {
+    width: 100% !important;
+    padding: 14px 24px !important;
+    font-size: 14px !important;
+    border-radius: 8px !important;
   }
 
   /* --- DROPDOWNS DESKTOP (ARQUITECTURA DE MENÚ DE LUJO) --- */
@@ -1413,6 +1473,86 @@
     object-position: center 15%;
   }
 
+  /* --- BLINDAJE MODAL CONSULTA RÁPIDA (POPUP PRESUPUESTO) --- */
+  #modal-consulta-backdrop {
+    position: fixed !important;
+    inset: 0 !important;
+    background-color: rgba(14, 27, 46, 0.65) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    z-index: 99990 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease !important;
+  }
+  #modal-consulta-backdrop.is-active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  #modal-consulta-rapida {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    background-color: #FFFFFF !important;
+    box-shadow: -10px 0 35px rgba(0, 0, 0, 0.3) !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    z-index: 99995 !important;
+    overflow-y: auto !important;
+  }
+  #modal-consulta-rapida.is-active {
+    transform: translateX(0) !important;
+  }
+
+  /* --- BLINDAJE MENÚ MÓVIL DRAWER (100% OPERATIVO EN CUALQUIER VIEWPORT) --- */
+  #mobile-menu-drawer {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 99998 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease !important;
+  }
+  #mobile-menu-drawer.is-active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  #mobile-menu-drawer nav {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    background-color: #FFFFFF !important;
+    box-shadow: -8px 0 32px rgba(14, 27, 46, 0.25) !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-y: auto !important;
+    z-index: 99999 !important;
+  }
+  #mobile-menu-drawer.is-active nav {
+    transform: translateX(0) !important;
+  }
+  #mobile-menu-backdrop {
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(14, 27, 46, 0.65) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    z-index: 99998 !important;
+  }
+  header.scrolled #btn-mobile-menu {
+    border-color: rgba(226, 232, 240, 0.9) !important;
+    background-color: rgba(14, 27, 46, 0.05) !important;
+    color: #0E1B2E !important;
+  }
+
   /* --- ESTANCIAS & FASES ACCORDION STYLING --- */
   .estancia-item .estancia-arrow,
   .fase-mobile-card .fase-arrow {
@@ -1492,10 +1632,10 @@
         </li>
       </ul>
       <div class="flex items-center gap-2">
-        <a class="hidden sm:inline-flex items-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[12.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap shadow-md" href="#contacto">
+        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal hidden sm:inline-flex items-center gap-2 rounded-md px-5 py-2.5 text-[12.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i>
-        </a>
+        </button>
         <button id="btn-mobile-menu" aria-label="Abrir menú" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md border cursor-pointer transition-colors border-white/35 bg-white/10 text-white backdrop-blur-sm" type="button">
           <i class="ri-menu-line text-[20px]"></i>
         </button>
@@ -1574,10 +1714,10 @@
         <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="blog.html">BLOG</a>
       </div>
       <div class="pt-4">
-        <a class="w-full flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white hover:bg-teal-hover transition-colors shadow-md text-center" href="#contacto">
+        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal w-full flex items-center justify-center gap-2 rounded-md px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white transition-colors shadow-md text-center cursor-pointer" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[16px]"></i>
-        </a>
+        </button>
       </div>
       <div class="mt-auto pt-6 text-center">
         <a class="inline-flex items-center gap-2 text-[15px] font-bold text-ink hover:text-[#8C6424] transition-colors" href="tel:+34910000000">
@@ -2460,7 +2600,74 @@ Ver climatización
   <i class="ri-arrow-up-line text-[19px] font-bold text-ink"></i>
 </button>
 
-<button aria-label="Abrir consulta rápida" class="fixed bottom-5 right-4 z-[60] flex items-center gap-2.5 rounded-full border border-line bg-white/95 py-2.5 pl-3.5 pr-4 shadow-[0_12px_32px_rgba(15,20,23,0.12)] backdrop-blur-md transition-all duration-300 hover:border-teal/40 cursor-pointer md:bottom-6 md:right-6 opacity-100" type="button"><span class="relative flex h-2 w-2 items-center justify-center"><span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span></span><i class="ri-chat-3-line text-[16px] text-teal"></i><span class="text-[12.5px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span></button><div aria-hidden="true" class="fixed inset-0 z-[70] bg-ink/35 backdrop-blur-sm transition-opacity duration-300 pointer-events-none opacity-0"></div><aside aria-hidden="true" aria-label="Consulta rápida" aria-modal="true" class="fixed inset-y-0 right-0 z-[80] w-full max-w-[460px] overflow-y-auto bg-white transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] translate-x-full" role="dialog"><div class="flex min-h-full flex-col"><div class="flex items-start justify-between gap-4 border-b border-line px-5 py-5 md:px-6"><div><span class="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span><h2 class="font-editorial mt-2 text-[22px] leading-[1.15] text-ink">Consulta rápida en Madrid</h2></div><button aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button"><i class="ri-close-line text-[18px]"></i></button></div><form action="https://readdy.ai/api/form/dbankn39uihupc2pc6bg" class="flex flex-1 flex-col gap-5 px-5 py-6 md:px-6" data-readdy-form="true" id="florin-consulta-rapida" method="post"><p class="text-[13px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p><fieldset><legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend><input name="tipo_reforma" readonly="" type="hidden" value="Reforma completa"/><div class="mt-2.5 flex flex-wrap gap-2"><button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button><button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button></div></fieldset><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label><input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/></div><div class="grid grid-cols-1 gap-4 sm:grid-cols-2"><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label><input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/></div><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label><input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/></div></div><div><label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label><textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Piso de 85 m² en el centro, quiero reformar cocina y baño..." required="" rows="4"></textarea><div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div></div><div class="fl-hp"><label for="florin-contact-alt">No rellenar</label><input aria-hidden="true" autocomplete="off" id="florin-contact-alt" name="contact_alt" readonly="" tabindex="-1" type="text"/></div><div class="mt-auto flex flex-col gap-3 border-t border-line pt-5"><button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">Solicitar visita gratuita<i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i></button><p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p></div></form></div></aside></div></div></div>
+<!-- BOTÓN FLOTANTE CONSULTA RÁPIDA -->
+<button id="btn-floating-consulta" aria-label="Abrir consulta rápida" class="btn-open-popup-presupuesto fixed bottom-5 right-4 z-[60] flex items-center gap-2.5 rounded-full border border-line bg-white/95 py-2.5 pl-3.5 pr-4 shadow-[0_12px_32px_rgba(15,20,23,0.12)] backdrop-blur-md transition-all duration-300 hover:border-teal/40 cursor-pointer md:bottom-6 md:right-6 opacity-100" type="button">
+  <span class="relative flex h-2 w-2 items-center justify-center">
+    <span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span>
+    <span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span>
+  </span>
+  <i class="ri-chat-3-line text-[16px] text-teal"></i>
+  <span class="text-[12.5px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span>
+</button>
+
+<!-- BACKDROP & MODAL POPUP DRAWER (CONSULTA RÁPIDA / PEDIR PRESUPUESTO) -->
+<div id="modal-consulta-backdrop" aria-hidden="true" class="fixed inset-0 z-[70] bg-ink/35 backdrop-blur-sm transition-opacity duration-300 pointer-events-none opacity-0"></div>
+<aside id="modal-consulta-rapida" aria-hidden="true" aria-label="Consulta rápida" aria-modal="true" class="fixed inset-y-0 right-0 z-[80] w-full max-w-[460px] overflow-y-auto bg-white transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] translate-x-full" role="dialog">
+  <div class="flex min-h-full flex-col">
+    <div class="flex items-start justify-between gap-4 border-b border-line px-5 py-5 md:px-6">
+      <div>
+        <span class="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span>
+        <h2 class="font-editorial mt-2 text-[22px] leading-[1.15] text-ink">Consulta rápida en Madrid</h2>
+      </div>
+      <button id="btn-close-consulta-modal" aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button">
+        <i class="ri-close-line text-[18px]"></i>
+      </button>
+    </div>
+    <form action="https://readdy.ai/api/form/dbankn39uihupc2pc6bg" class="flex flex-1 flex-col gap-5 px-5 py-6 md:px-6" data-readdy-form="true" id="florin-consulta-rapida" method="post">
+      <p class="text-[13px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p>
+      <fieldset>
+        <legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend>
+        <input name="tipo_reforma" readonly="" type="hidden" value="Reforma completa"/>
+        <div class="mt-2.5 flex flex-wrap gap-2 modal-chips-container">
+          <button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button>
+        </div>
+      </fieldset>
+      <div>
+        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label>
+        <input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div>
+          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label>
+          <input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/>
+        </div>
+        <div>
+          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label>
+          <input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/>
+        </div>
+      </div>
+      <div>
+        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label>
+        <textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Piso de 85 m² en el centro, quiero reformar cocina y baño..." required="" rows="4"></textarea>
+        <div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div>
+      </div>
+      <div class="fl-hp"><label for="florin-contact-alt">No rellenar</label><input aria-hidden="true" autocomplete="off" id="florin-contact-alt" name="contact_alt" readonly="" tabindex="-1" type="text"/></div>
+      <div class="mt-auto flex flex-col gap-3 border-t border-line pt-5">
+        <button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">
+          Solicitar visita gratuita
+          <i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i>
+        </button>
+        <p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
+      </div>
+    </form>
+  </div>
+</aside>
+</div></div></div>
 <!-- INTERACTIVE BEHAVIOR ENGINE (REVOLUTIONIZED FOR NATIVE LOCAL & PRODUCTION PERFORMANCE) -->
 <script>
 window.__RECOVERY_DATA__ = {
@@ -3139,17 +3346,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function openMobileMenu() {
     if (!mobileMenuDrawer) return;
-    mobileMenuDrawer.classList.remove('pointer-events-none', 'opacity-0');
+    mobileMenuDrawer.classList.add('is-active');
+    mobileMenuDrawer.setAttribute('aria-hidden', 'false');
     mobileMenuDrawer.classList.add('opacity-100');
     const panel = mobileMenuDrawer.querySelector('nav');
-    if (panel) panel.classList.remove('translate-x-full');
+    if (panel) panel.style.transform = 'translateX(0)';
     document.body.style.overflow = 'hidden';
   }
 
   function closeMobileMenu() {
     if (!mobileMenuDrawer) return;
     const panel = mobileMenuDrawer.querySelector('nav');
-    if (panel) panel.classList.add('translate-x-full');
+    if (panel) panel.style.transform = 'translateX(100%)';
+    mobileMenuDrawer.classList.remove('is-active');
+    mobileMenuDrawer.setAttribute('aria-hidden', 'true');
     mobileMenuDrawer.classList.remove('opacity-100');
     mobileMenuDrawer.classList.add('opacity-0');
     setTimeout(() => {
@@ -3192,6 +3402,67 @@ document.addEventListener('DOMContentLoaded', function() {
   if (mobileMenuDrawer) {
     mobileMenuDrawer.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', closeMobileMenu);
+    });
+  }
+
+  // ==============================================================================
+  // --- 5c. POPUP MODAL DRAWER CONTROLLER (CONSULTA RÁPIDA / PEDIR PRESUPUESTO) ---
+  // ==============================================================================
+  const modalConsulta = document.getElementById('modal-consulta-rapida');
+  const backdropConsulta = document.getElementById('modal-consulta-backdrop');
+  const btnCloseConsulta = document.getElementById('btn-close-consulta-modal');
+
+  function openConsultaModal() {
+    if (modalConsulta && backdropConsulta) {
+      closeMobileMenu();
+      backdropConsulta.classList.add('is-active');
+      modalConsulta.classList.add('is-active');
+      modalConsulta.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
+  function closeConsultaModal() {
+    if (modalConsulta && backdropConsulta) {
+      modalConsulta.classList.remove('is-active');
+      backdropConsulta.classList.remove('is-active');
+      modalConsulta.setAttribute('aria-hidden', 'true');
+      document.body.style.removeProperty('overflow');
+    }
+  }
+
+  document.querySelectorAll('.btn-open-popup-presupuesto, [data-open-popup="presupuesto"]').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      openConsultaModal();
+    });
+  });
+
+  if (btnCloseConsulta) btnCloseConsulta.addEventListener('click', closeConsultaModal);
+  if (backdropConsulta) backdropConsulta.addEventListener('click', closeConsultaModal);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      closeConsultaModal();
+      closeMobileMenu();
+    }
+  });
+
+  // Chips interactivos de tipo de reforma dentro del popup
+  const modalChipsContainer = document.querySelector('.modal-chips-container');
+  if (modalChipsContainer && modalConsulta) {
+    const hiddenInput = modalConsulta.querySelector('input[name="tipo_reforma"]');
+    modalChipsContainer.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        modalChipsContainer.querySelectorAll('button').forEach(b => {
+          b.setAttribute('aria-pressed', 'false');
+          b.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal';
+        });
+        this.setAttribute('aria-pressed', 'true');
+        this.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white';
+        if (hiddenInput) hiddenInput.value = this.innerText.trim();
+      });
     });
   }
 

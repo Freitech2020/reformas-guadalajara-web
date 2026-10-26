@@ -1,0 +1,24 @@
+{
+  "project_name": "Web Reformas Madrid - Auditoria Visual y Maquetacion",
+  "total_units": 3,
+  "completed": [
+    "contacto.html",
+    "nosotros.html",
+    "blog.html"
+  ],
+  "in_progress": null,
+  "pending": [],
+  "last_checkpoint": "2026-10-24T15:25:00Z",
+  "metrics": {
+    "status": "APPROVED",
+    "resolved_issues": [
+      "Restauración completa de clases utilitarias de padding en CSS (.p-3 a .p-12, .px-3 a .px-10, .py-2 a .py-5, breakpoints responsive)",
+      "Regla CSS de .btn-gold blindada con padding interno (13px 28px) y elevación",
+      "Eliminación de fichas planas y sin margen (padding interno garantizado de 28px-36px en todas las tarjetas)",
+      "Sustitución de la paleta amarillenta/barro rara (--ice, --card, --line) por paleta arquitectónica de alto standing: fondos claros limpios, tarjetas blancas puras y bordes piedra suave",
+      "Sustitución de círculos con iniciales CMS/JGA/EVA en nosotros.html por retratos fotográficos reales fotorrealistas de alta gama",
+      "Corrección de rutas de imágenes 404 en blog.html (madrid-fase-02-medicion -> madrid-fase-01-medicion; climatizacion-hero -> madrid-trade-aerotermia)",
+      "Higiene cromática en canal WhatsApp de contacto.html integrándolo con la identidad corporativa"
+    ]
+  }
+}
