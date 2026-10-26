@@ -538,6 +538,82 @@
     }
   }
 </style>
+<style>
+  /* --- BLINDAJE MODAL CONSULTA RÁPIDA (POPUP PRESUPUESTO) --- */
+  #modal-consulta-backdrop {
+    position: fixed !important;
+    inset: 0 !important;
+    background-color: rgba(14, 27, 46, 0.65) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    z-index: 99990 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease !important;
+  }
+  #modal-consulta-backdrop.is-active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  #modal-consulta-rapida {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    background-color: #FFFFFF !important;
+    box-shadow: -10px 0 35px rgba(0, 0, 0, 0.3) !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    z-index: 99995 !important;
+    overflow-y: auto !important;
+  }
+  #modal-consulta-rapida.is-active {
+    transform: translateX(0) !important;
+  }
+
+  /* --- BLINDAJE MENÚ MÓVIL DRAWER (100% OPERATIVO EN CUALQUIER VIEWPORT) --- */
+  #mobile-menu-drawer {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 99998 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease !important;
+  }
+  #mobile-menu-drawer.is-active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  #mobile-menu-drawer nav {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    background-color: #FFFFFF !important;
+    box-shadow: -8px 0 32px rgba(14, 27, 46, 0.25) !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow-y: auto !important;
+    z-index: 99999 !important;
+  }
+  #mobile-menu-drawer.is-active nav {
+    transform: translateX(0) !important;
+  }
+  #mobile-menu-backdrop {
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(14, 27, 46, 0.65) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    z-index: 99998 !important;
+  }
+</style>
 </head>
 <body>
 <div id="root">
