@@ -30,17 +30,30 @@
   @media (max-width: 767px) {
     section#inicio,
     #inicio,
-    #inicio > div.relative.z-10,
+    /* inner div cleared */
     main > section#inicio,
     .pt-\[152px\],
     .pt-\[160px\] {
-      padding-top: 160px !important;
+      padding-top: 140px !important;
+    }
+    #inicio > div.relative.z-10,
+    section#inicio > div.relative.z-10 {
+      padding-top: 0 !important;
+      padding-bottom: 48px !important;
+    }
+    #inicio > div.relative.z-10,
+    section#inicio > div.relative.z-10 {
+      padding-top: 0 !important;
     }
   }
   @media (min-width: 768px) {
     section#inicio,
     #inicio {
       padding-top: 140px !important;
+    }
+    #inicio > div.relative.z-10,
+    section#inicio > div.relative.z-10 {
+      padding-top: 0 !important;
     }
   }
   /* =======================================================================
@@ -816,7 +829,7 @@
 
 <main>
 <!-- HERO EDITORIAL DEL BLOG: 100% INFORMATIVO Y PROFESIONAL -->
-<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[160px] md:pt-[140px] pb-16 md:pb-24 border-b border-white/10" id="inicio">
+<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[140px] md:pt-[140px] pb-16 md:pb-24 border-b border-white/10" id="inicio">
   <img class="absolute inset-0 h-full w-full object-cover object-center" src="images/madrid-trade-interiorismo.webp" alt="Revista técnica de arquitectura y reformas en Madrid"/>
   <!-- CAPA DE OSCURECIMIENTO MAESTRA DEL HERO -->
   <div aria-hidden="true" class="hero-master-scrim"></div>

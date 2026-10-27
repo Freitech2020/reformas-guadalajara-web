@@ -30,17 +30,26 @@
   @media (max-width: 767px) {
     section#inicio,
     #inicio,
-    #inicio > div.relative.z-10,
+    /* inner div cleared */
     main > section#inicio,
     .pt-\[152px\],
     .pt-\[160px\] {
-      padding-top: 160px !important;
+      padding-top: 140px !important;
+      padding-bottom: 48px !important;
+    }
+    #inicio > div.relative.z-10,
+    section#inicio > div.relative.z-10 {
+      padding-top: 0 !important;
     }
   }
   @media (min-width: 768px) {
     section#inicio,
     #inicio {
       padding-top: 136px !important;
+    }
+    #inicio > div.relative.z-10,
+    section#inicio > div.relative.z-10 {
+      padding-top: 0 !important;
     }
   }
   /* =======================================================================
@@ -835,7 +844,7 @@
 
 <main>
 <!-- HERO EDITORIAL DE LUJO: SOBRE NOSOTROS -->
-<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[160px] md:pt-[136px] pb-16 md:pb-20 border-b border-white/10" id="inicio">
+<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[140px] md:pt-[136px] pb-16 md:pb-20 border-b border-white/10" id="inicio">
   <img class="absolute inset-0 h-full w-full object-cover object-center z-0" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid_estudio_mesa_proyectos_1792883569570.jpg" alt="Estudio técnico de Reformas Madrid: mesa de proyectos, planos ejecutivos y selección de calidades nobles"/>
   
   <!-- CAPA DE OSCURECIMIENTO GRADUADA Y ASIMÉTRICA DEL HERO (CERO BLUR, MÁXIMA LUZ Y CONTRASTE) -->
