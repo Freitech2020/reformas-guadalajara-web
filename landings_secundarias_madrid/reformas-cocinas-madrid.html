@@ -2624,7 +2624,81 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // 3. OFICIOS ACCORDION
-  const oficioHeaders = document.querySelectorAll('.oficio-header');
+  const oficiosAccordion = document.getElementById('oficios-accordion');
+  if (oficiosAccordion) {
+    const oficioItems = oficiosAccordion.querySelectorAll('.oficio-item');
+    oficioItems.forEach(item => {
+      const btn = item.querySelector('.oficio-btn');
+      const panel = item.querySelector('.oficio-panel');
+      const chevron = btn ? btn.querySelector('i.ri-arrow-down-s-line, i:last-child') : null;
+
+      // Sincronizar estado inicial
+      const isInitiallyOpen = item.classList.contains('is-open');
+      if (btn) btn.setAttribute('aria-expanded', isInitiallyOpen ? 'true' : 'false');
+      if (chevron) {
+        if (isInitiallyOpen) {
+          chevron.classList.add('rotate-180', 'text-teal');
+          chevron.classList.remove('text-muted');
+          chevron.style.transform = 'rotate(180deg)';
+        } else {
+          chevron.classList.remove('rotate-180', 'text-teal');
+          chevron.classList.add('text-muted');
+          chevron.style.transform = 'rotate(0deg)';
+        }
+      }
+
+      if (btn && panel) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isCurrentlyOpen = item.classList.contains('is-open');
+
+          // Cerrar todos los demás items (comportamiento acordeón)
+          oficioItems.forEach(otherItem => {
+            if (otherItem !== item) {
+              const otherBtn = otherItem.querySelector('.oficio-btn');
+              const otherPanel = otherItem.querySelector('.oficio-panel');
+              const otherChevron = otherBtn ? otherBtn.querySelector('i.ri-arrow-down-s-line, i:last-child') : null;
+
+              otherItem.classList.remove('is-open', 'bg-surface-warm');
+              otherItem.classList.add('bg-white');
+              if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+              if (otherPanel) otherPanel.classList.add('hidden');
+              if (otherChevron) {
+                otherChevron.classList.remove('rotate-180', 'text-teal');
+                otherChevron.classList.add('text-muted');
+                otherChevron.style.transform = 'rotate(0deg)';
+              }
+            }
+          });
+
+          // Conmutar el item actual (abrir o cerrar)
+          if (isCurrentlyOpen) {
+            item.classList.remove('is-open', 'bg-surface-warm');
+            item.classList.add('bg-white');
+            btn.setAttribute('aria-expanded', 'false');
+            panel.classList.add('hidden');
+            if (chevron) {
+              chevron.classList.remove('rotate-180', 'text-teal');
+              chevron.classList.add('text-muted');
+              chevron.style.transform = 'rotate(0deg)';
+            }
+          } else {
+            item.classList.add('is-open', 'bg-surface-warm');
+            item.classList.remove('bg-white');
+            btn.setAttribute('aria-expanded', 'true');
+            panel.classList.remove('hidden');
+            if (chevron) {
+              chevron.classList.add('rotate-180', 'text-teal');
+              chevron.classList.remove('text-muted');
+              chevron.style.transform = 'rotate(180deg)';
+            }
+          }
+        });
+      }
+    });
+  }
+
+  /*
   oficioHeaders.forEach(btn => {
     btn.addEventListener('click', () => {
       const panel = btn.nextElementSibling;
@@ -2651,6 +2725,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  */
 
   // 4. HEADER SHRINK ON SCROLL
   const header = document.querySelector('header');
