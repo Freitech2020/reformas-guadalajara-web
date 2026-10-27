@@ -26,6 +26,23 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" rel="stylesheet"/>
 <link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
 <style>
+  /* HERO MOBILE FIRST RESPONSIVE PADDING SHIELD (CERO COLISION CON HEADER FIJO) */
+  @media (max-width: 767px) {
+    section#inicio,
+    #inicio,
+    #inicio > div.relative.z-10,
+    main > section#inicio,
+    .pt-\[152px\],
+    .pt-\[160px\] {
+      padding-top: 160px !important;
+    }
+  }
+  @media (min-width: 768px) {
+    section#inicio,
+    #inicio {
+      padding-top: 136px !important;
+    }
+  }
   /* =======================================================================
      TOKEN DESIGN FREITECH / SEOLIFE 2026 · PALETA DE LUJO & BLINDAJE DE PADDING
      ======================================================================= */
@@ -457,26 +474,27 @@
     }
   }
 
-  /* TIPOGRAFÍA HERO NOSOTROS */
+  /* TIPOGRAFÍA HERO NOSOTROS (CENTRADA Y REFINADA) */
   .nosotros-hero-title {
     font-family: 'Playfair Display', Georgia, serif !important;
     font-weight: 700 !important;
-    line-height: 1.08 !important;
+    line-height: 1.1 !important;
     letter-spacing: -0.02em !important;
     color: #FFFFFF !important;
     text-shadow: 0 2px 24px rgba(0, 0, 0, 0.65) !important;
+    text-align: center !important;
   }
   @media (min-width: 1280px) {
-    .nosotros-hero-title { font-size: 62px !important; }
+    .nosotros-hero-title { font-size: 50px !important; }
   }
   @media (min-width: 1024px) and (max-width: 1279px) {
-    .nosotros-hero-title { font-size: 52px !important; }
+    .nosotros-hero-title { font-size: 44px !important; }
   }
   @media (min-width: 640px) and (max-width: 1023px) {
-    .nosotros-hero-title { font-size: 42px !important; }
+    .nosotros-hero-title { font-size: 38px !important; }
   }
   @media (max-width: 639px) {
-    .nosotros-hero-title { font-size: 33px !important; }
+    .nosotros-hero-title { font-size: 29px !important; }
   }
 
   .nosotros-hero-desc {
@@ -553,6 +571,120 @@
     background-color: #10b981;
     animation: coreBeacon 2s ease-in-out infinite;
   }
+
+  
+
+  
+
+  /* ==========================================================================
+     BLINDAJE ULTRA-DEFINITIVO: HEADER DESKTOP VS SUB-BARRA RESPONSIVE
+     ========================================================================== */
+  @media (max-width: 1023px) {
+    header .btn-header-desktop,
+    header button.btn-header-desktop,
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+    .btn-header-desktop {
+      display: none !important;
+      visibility: hidden !important;
+      width: 0 !important;
+      height: 0 !important;
+      min-width: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+    header #btn-mobile-menu,
+    #btn-mobile-menu {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    header .header-subbar,
+    .header-subbar {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    header .btn-header-desktop,
+    header button.btn-header-desktop,
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+    .btn-header-desktop {
+      display: inline-flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      font-size: 12.5px !important;
+      padding: 9px 18px !important;
+      letter-spacing: 0.04em !important;
+    }
+    header #btn-mobile-menu,
+    #btn-mobile-menu {
+      display: none !important;
+      visibility: hidden !important;
+    }
+    header .header-subbar,
+    .header-subbar {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  }
+
+  /* ESTILOS DE LA SUB-BARRA RESPONSIVE (DEBAJO DEL HEADER) */
+  .header-subbar {
+    width: 100% !important;
+    max-height: 54px !important;
+    opacity: 1 !important;
+    overflow: hidden !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    background: rgba(14, 27, 46, 0.94) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    padding: 6px 16px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, padding 0.35s ease, border-color 0.25s ease !important;
+  }
+
+  /* AL HACER SCROLL: SE OCULTA COMPLETAMENTE PARA NO SATURAR EL VIEWPORT MÓVIL */
+  header.scrolled .header-subbar {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-top-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
+  .header-subbar .subbar-text {
+    font-size: 12px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500 !important;
+  }
+  .header-subbar .btn-header-mobile {
+    background-color: #A87E34 !important;
+    border: 1px solid rgba(226, 196, 143, 0.6) !important;
+    color: #FFFFFF !important;
+    padding: 4px 12px !important;
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    border-radius: 9999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+  }
 </style>
 </head>
 <body>
@@ -562,14 +694,14 @@
 
 <!-- HEADER NAVEGACIÓN -->
 <header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-transparent">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     <nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-4 xl:gap-6">
       <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="index.html">
         <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
         <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-teal-light [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
       </a>
 
-      <ul class="hidden lg:flex items-center gap-5 xl:gap-7 header-nav-list">
+      <ul class="hidden lg:flex items-center gap-3 xl:gap-6 header-nav-list">
         <!-- DROPDOWN GUADALAJARA -->
         <li class="nav-dropdown group relative">
           <a class="nav-dropdown-trigger flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../readdy_captured_complete/index.html">
@@ -637,8 +769,8 @@
         </li>
       </ul>
 
-      <div class="flex items-center gap-2">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal hidden sm:inline-flex items-center gap-2 rounded-md px-5 py-2.5 text-[12.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
+            <div class="flex items-center gap-3">
+        <button type="button" class="btn-open-popup-presupuesto btn-header-desktop btn-gold bg-teal hidden lg:inline-flex items-center gap-2 rounded-md px-3.5 py-2 xl:px-5 xl:py-2.5 text-[11.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[15px]"></i>
         </button>
@@ -647,6 +779,18 @@
         </button>
       </div>
     </nav>
+  </div>
+
+  <!-- SUB-BARRA RESPONSIVE: BOTÓN PEDIR PRESUPUESTO DEBAJO DEL HEADER (PEQUEÑO Y DISCRETO) -->
+  <div class="header-subbar lg:hidden">
+    <span class="subbar-text flex items-center gap-1.5">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+      Visita gratuita 48-72h
+    </span>
+    <button type="button" class="btn-open-popup-presupuesto btn-header-mobile" aria-label="Pedir Presupuesto">
+      <span>Pedir Presupuesto</span>
+      <i class="ri-arrow-right-line"></i>
+    </button>
   </div>
 </header>
 
@@ -691,7 +835,7 @@
 
 <main>
 <!-- HERO EDITORIAL DE LUJO: SOBRE NOSOTROS -->
-<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[112px] md:pt-[136px] pb-16 md:pb-20 border-b border-white/10" id="inicio">
+<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[160px] md:pt-[136px] pb-16 md:pb-20 border-b border-white/10" id="inicio">
   <img class="absolute inset-0 h-full w-full object-cover object-center z-0" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid_estudio_mesa_proyectos_1792883569570.jpg" alt="Estudio técnico de Reformas Madrid: mesa de proyectos, planos ejecutivos y selección de calidades nobles"/>
   
   <!-- CAPA DE OSCURECIMIENTO GRADUADA Y ASIMÉTRICA DEL HERO (CERO BLUR, MÁXIMA LUZ Y CONTRASTE) -->
@@ -701,19 +845,19 @@
 
   <div class="relative z-10 mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <!-- TITULAR EDITORIAL, COPY Y CÁPSULAS DE CONFIANZA -->
-    <div class="max-w-[880px] flex flex-col justify-center">
-      <h1 class="nosotros-hero-title mb-6">
+    <!-- TITULAR EDITORIAL, COPY Y CÁPSULAS DE CONFIANZA (TODO CENTRADO) -->
+    <div class="max-w-[860px] mx-auto text-center flex flex-col items-center">
+      <h1 class="nosotros-hero-title mb-5">
         ¿Quiénes somos?<br/>
         <span class="italic text-teal-light block mt-1">La mejor empresa de Reformas de Madrid.</span>
       </h1>
 
-      <p class="nosotros-hero-desc mb-8 max-w-[760px]">
+      <p class="nosotros-hero-desc mb-7 max-w-[760px] mx-auto text-center">
         Más de 15 años liderando la ejecución y dirección facultativa de reformas integrales, chalets y espacios singulares en Madrid y Guadalajara. Presencia diaria de aparejador colegiado a pie de obra, mediciones milimétricas y presupuesto cerrado por contrato.
       </p>
 
-      <!-- 3 CÁPSULAS INFORMATIVAS DE GARANTÍA (CERO CTAs COMERCIALES) -->
-      <div class="flex flex-wrap gap-3 max-w-[760px]">
+      <!-- 3 CÁPSULAS INFORMATIVAS DE GARANTÍA (CENTRADAS) -->
+      <div class="flex flex-wrap justify-center gap-3 max-w-[760px] mx-auto">
         <div class="inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/[0.08] backdrop-blur-md px-3.5 py-2 text-[13px] font-semibold text-white/90 shadow-sm">
           <i class="ri-shield-check-fill text-[16px] text-[#E2C48F]"></i>
           <span>Dirección Facultativa COAATM</span>
@@ -765,7 +909,7 @@
 
 <!-- SECCIÓN 1: NUESTRO MANIFIESTO DE RIGOR (ICONOS Y TÍTULOS EQUILIBRADOS) -->
 <section class="w-full bg-white py-20 md:py-28" id="manifiesto" style="padding-top: 5.5rem !important; padding-bottom: 5.5rem !important;">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16 md:mb-20" style="margin-bottom: 4rem !important;">
       <div class="max-w-[780px]">
@@ -842,7 +986,7 @@
 
 <!-- SECCIÓN 2: CONTROL Y DIRECCIÓN A PIE DE OBRA (FONDO CÁLIDO BG-ICE) -->
 <section class="w-full bg-ice py-20 md:py-28 border-y border-line" id="direccion-obra" style="padding-top: 5.5rem !important; padding-bottom: 5.5rem !important;">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-16">
       
       <!-- FOTOGRAFÍA DIRECCIÓN FACULTATIVA A PIE DE OBRA (BESPOKE FOTORREALISTA) -->
@@ -883,7 +1027,7 @@
 
 <!-- SECCIÓN 3: EQUIPO TÉCNICO COLEGIADO (DISEÑO ARQUITECTÓNICO DE ALTO STANDING) -->
 <section class="w-full bg-white py-20 md:py-28" id="equipo" style="padding-top: 5.5rem !important; padding-bottom: 5.5rem !important;">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     
     <div class="text-center max-w-[780px] mx-auto mb-16 md:mb-20" style="margin-bottom: 4rem !important;">
       <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-3" style="margin-bottom: 0.75rem !important;">Equipo Facultativo Colegiado</span>
@@ -1053,7 +1197,7 @@
 
 <!-- FOOTER CANÓNICO TOKEN DESIGN SEOLIFE 2026 (IDÉNTICO A TODAS LAS PÁGINAS) -->
 <footer class="w-full bg-ice border-t border-line/60">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     <div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10">
       <div class="md:col-span-5">
         <div class="flex items-center gap-1.5">

@@ -26,6 +26,23 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" rel="stylesheet"/>
 <link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
 <style>
+  /* HERO MOBILE FIRST RESPONSIVE PADDING SHIELD (CERO COLISION CON HEADER FIJO) */
+  @media (max-width: 767px) {
+    section#inicio,
+    #inicio,
+    #inicio > div.relative.z-10,
+    main > section#inicio,
+    .pt-\[152px\],
+    .pt-\[160px\] {
+      padding-top: 160px !important;
+    }
+  }
+  @media (min-width: 768px) {
+    section#inicio,
+    #inicio {
+      padding-top: 140px !important;
+    }
+  }
   /* =======================================================================
      TOKEN DESIGN FREITECH / SEOLIFE 2026 · PALETA DE LUJO & BLINDAJE DE PADDING
      ======================================================================= */
@@ -190,11 +207,73 @@
     box-shadow: 0 6px 18px rgba(14, 27, 46, 0.08) !important;
   }
 
-  /* PESTAÑAS DE CATEGORÍA DEL BLOG CON ESTADO ACTIVO NOTABLE */
+  /* =======================================================================
+     SECCIÓN DESTACADO: PADDING DEBAJO DEL HERO (EXACTAMENTE 25px)
+     ======================================================================= */
+  #destacado {
+    padding-top: 25px !important;
+    padding-bottom: 40px !important;
+  }
+  @media (min-width: 768px) {
+    #destacado {
+      padding-top: 25px !important;
+      padding-bottom: 56px !important;
+    }
+  }
+
+  /* =======================================================================
+     PESTAÑAS DE CATEGORÍA DEL BLOG (LETRAS BLANCAS EN HOVER & ACTIVO)
+     ======================================================================= */
   .blog-tab-btn {
     padding: 8px 18px !important;
     border-radius: 9999px !important;
-    font-size: 13.5px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border: 1px solid #E8E2D6 !important;
+    background-color: #FFFFFF !important;
+    color: #0E1B2E !important;
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    cursor: pointer !important;
+    user-select: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    box-shadow: 0 1px 3px rgba(14, 27, 46, 0.05) !important;
+  }
+
+  /* Estado Activo: Fondo Dorado #A87E34 + Texto 100% Blanco */
+  .blog-tab-btn.active {
+    background-color: #A87E34 !important;
+    color: #FFFFFF !important;
+    border-color: #A87E34 !important;
+    box-shadow: 0 4px 14px rgba(168, 126, 52, 0.28) !important;
+  }
+
+  /* Estado Hover (activo e inactivo): Fondo Cognac/Dorado #8C6424 + Letras 100% Blancas */
+  .blog-tab-btn:hover,
+  .blog-tab-btn:not(.active):hover,
+  .blog-tab-btn.active:hover,
+  .blog-tab-btn:focus,
+  .blog-tab-btn:focus-visible {
+    background-color: #8C6424 !important;
+    color: #FFFFFF !important;
+    border-color: #8C6424 !important;
+    box-shadow: 0 4px 14px rgba(140, 100, 36, 0.35) !important;
+    transform: translateY(-1px) !important;
+    outline: none !important;
+  }
+
+  /* Cascada garantizada: elementos internos en hover siempre blancos */
+  .blog-tab-btn:hover *,
+  .blog-tab-btn:not(.active):hover *,
+  .blog-tab-btn.active:hover * {
+    color: #FFFFFF !important;
+  }
+  .blog-tab-btn {
+    padding: 8px 18px !important;
+    border-radius: 9999px !important;
+
     font-weight: 600 !important;
     border: 1px solid #E8E2D6 !important;
     background-color: #FFFFFF !important;
@@ -202,7 +281,7 @@
     transition: all 0.2s ease !important;
     cursor: pointer !important;
   }
-  .blog-tab-btn.active, .blog-tab-btn:hover {
+  .blog-tab-btn-old {
     background-color: #A87E34 !important;
     color: #FFFFFF !important;
     border-color: #A87E34 !important;
@@ -272,7 +351,7 @@
   #btn-scroll-top.is-hidden { opacity: 0 !important; pointer-events: none !important; transform: translateY(12px) !important; }
   #btn-scroll-top.is-visible { opacity: 1 !important; pointer-events: auto !important; transform: translateY(0) !important; }
 
-  /* TABS DE FILTRO */
+
   .blog-tab-btn {
     transition: all 0.22s ease;
     cursor: pointer;
@@ -283,7 +362,7 @@
     color: #FFFFFF !important;
     border-color: #A87E34 !important;
   }
-  .blog-tab-btn:not(.active):hover {
+  .blog-tab-btn-deprecated {
     border-color: #A87E34 !important;
     color: #A87E34 !important;
   }
@@ -408,6 +487,185 @@
   #articulos article {
     transition: opacity 0.28s ease, transform 0.28s ease;
   }
+
+  /* BLINDAJE DE DIMENSIONES Y MÁRGENES FALTANTES EN VITE BUNDLE */
+  .w-10 { width: 2.5rem !important; }
+  .h-10 { height: 2.5rem !important; }
+  .w-11 { width: 2.75rem !important; }
+  .h-11 { height: 2.75rem !important; }
+  .w-12 { width: 3rem !important; }
+  .h-12 { height: 3rem !important; }
+
+  .mb-1 { margin-bottom: 0.25rem !important; }
+  .mb-1\.5 { margin-bottom: 0.375rem !important; }
+  .mb-2 { margin-bottom: 0.5rem !important; }
+  .mb-3 { margin-bottom: 0.75rem !important; }
+  .mb-4 { margin-bottom: 1rem !important; }
+  .mb-5 { margin-bottom: 1.25rem !important; }
+  .mb-6 { margin-bottom: 1.5rem !important; }
+  .mb-7 { margin-bottom: 1.75rem !important; }
+  .mb-8 { margin-bottom: 2rem !important; }
+  .mb-10 { margin-bottom: 2.5rem !important; }
+  .mb-12 { margin-bottom: 3rem !important; }
+  .mb-14 { margin-bottom: 3.5rem !important; }
+  .mb-16 { margin-bottom: 4rem !important; }
+
+  .mt-1 { margin-top: 0.25rem !important; }
+  .mt-1\.5 { margin-top: 0.375rem !important; }
+  .mt-2 { margin-top: 0.5rem !important; }
+  .mt-3 { margin-top: 0.75rem !important; }
+  .mt-4 { margin-top: 1rem !important; }
+  .mt-6 { margin-top: 1.5rem !important; }
+  .mt-8 { margin-top: 2rem !important; }
+
+
+  /* HERO HEADINGS (PLAYFAIR DISPLAY ESCALA EDITORIAL REFINADA Y CENTRADA) */
+  .hero-heading {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+  @media (min-width: 640px) {
+    .hero-heading {
+      font-size: 38px !important;
+      line-height: 1.12 !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .hero-heading {
+      font-size: 44px !important;
+      line-height: 1.1 !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-heading {
+      font-size: 48px !important;
+      line-height: 1.08 !important;
+    }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+  }
+  @media (min-width: 1280px) {
+    .hero-heading {
+      font-size: 52px !important;
+      line-height: 1.08 !important;
+    }
+  }
+
+
+  
+
+  
+
+  /* ==========================================================================
+     BLINDAJE ULTRA-DEFINITIVO: HEADER DESKTOP VS SUB-BARRA RESPONSIVE
+     ========================================================================== */
+  @media (max-width: 1023px) {
+    header .btn-header-desktop,
+    header button.btn-header-desktop,
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+    .btn-header-desktop {
+      display: none !important;
+      visibility: hidden !important;
+      width: 0 !important;
+      height: 0 !important;
+      min-width: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+    header #btn-mobile-menu,
+    #btn-mobile-menu {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    header .header-subbar,
+    .header-subbar {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    header .btn-header-desktop,
+    header button.btn-header-desktop,
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+    .btn-header-desktop {
+      display: inline-flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      font-size: 12.5px !important;
+      padding: 9px 18px !important;
+      letter-spacing: 0.04em !important;
+    }
+    header #btn-mobile-menu,
+    #btn-mobile-menu {
+      display: none !important;
+      visibility: hidden !important;
+    }
+    header .header-subbar,
+    .header-subbar {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  }
+
+  /* ESTILOS DE LA SUB-BARRA RESPONSIVE (DEBAJO DEL HEADER) */
+  .header-subbar {
+    width: 100% !important;
+    max-height: 54px !important;
+    opacity: 1 !important;
+    overflow: hidden !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    background: rgba(14, 27, 46, 0.94) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    padding: 6px 16px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, padding 0.35s ease, border-color 0.25s ease !important;
+  }
+
+  /* AL HACER SCROLL: SE OCULTA COMPLETAMENTE PARA NO SATURAR EL VIEWPORT MÓVIL */
+  header.scrolled .header-subbar {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-top-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
+  .header-subbar .subbar-text {
+    font-size: 12px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500 !important;
+  }
+  .header-subbar .btn-header-mobile {
+    background-color: #A87E34 !important;
+    border: 1px solid rgba(226, 196, 143, 0.6) !important;
+    color: #FFFFFF !important;
+    padding: 4px 12px !important;
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    border-radius: 9999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+  }
 </style>
 </head>
 <body>
@@ -417,14 +675,14 @@
 
 <!-- HEADER NAVEGACIÓN -->
 <header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-transparent">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     <nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-4 xl:gap-6">
       <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="index.html">
         <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
         <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-teal-light [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
       </a>
 
-      <ul class="hidden lg:flex items-center gap-5 xl:gap-7 header-nav-list">
+      <ul class="hidden lg:flex items-center gap-3 xl:gap-6 header-nav-list">
         <!-- DROPDOWN GUADALAJARA -->
         <li class="nav-dropdown group relative">
           <a class="nav-dropdown-trigger flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../readdy_captured_complete/index.html">
@@ -492,8 +750,8 @@
         </li>
       </ul>
 
-      <div class="flex items-center gap-2">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal hidden sm:inline-flex items-center gap-2 rounded-md px-5 py-2.5 text-[12.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
+            <div class="flex items-center gap-3">
+        <button type="button" class="btn-open-popup-presupuesto btn-header-desktop btn-gold bg-teal hidden lg:inline-flex items-center gap-2 rounded-md px-3.5 py-2 xl:px-5 xl:py-2.5 text-[11.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[15px]"></i>
         </button>
@@ -502,6 +760,18 @@
         </button>
       </div>
     </nav>
+  </div>
+
+  <!-- SUB-BARRA RESPONSIVE: BOTÓN PEDIR PRESUPUESTO DEBAJO DEL HEADER (PEQUEÑO Y DISCRETO) -->
+  <div class="header-subbar lg:hidden">
+    <span class="subbar-text flex items-center gap-1.5">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+      Visita gratuita 48-72h
+    </span>
+    <button type="button" class="btn-open-popup-presupuesto btn-header-mobile" aria-label="Pedir Presupuesto">
+      <span>Pedir Presupuesto</span>
+      <i class="ri-arrow-right-line"></i>
+    </button>
   </div>
 </header>
 
@@ -546,30 +816,24 @@
 
 <main>
 <!-- HERO EDITORIAL DEL BLOG: 100% INFORMATIVO Y PROFESIONAL -->
-<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[112px] md:pt-[140px] pb-16 md:pb-24 border-b border-white/10" id="inicio">
+<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[160px] md:pt-[140px] pb-16 md:pb-24 border-b border-white/10" id="inicio">
   <img class="absolute inset-0 h-full w-full object-cover object-center" src="images/madrid-trade-interiorismo.webp" alt="Revista técnica de arquitectura y reformas en Madrid"/>
   <!-- CAPA DE OSCURECIMIENTO MAESTRA DEL HERO -->
   <div aria-hidden="true" class="hero-master-scrim"></div>
   <div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div>
 
   <div class="relative z-10 mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    
-    <div class="max-w-[900px]">
-      <div class="inline-flex items-center gap-2.5 rounded-full border border-teal/40 bg-white/10 px-4 py-1.5 text-[12.5px] font-semibold uppercase tracking-wider text-teal-light backdrop-blur-md mb-6">
-        <i class="ri-article-line text-[15px]"></i>
-        <span>Artículos Técnicos &amp; Criterio Profesional de Obra</span>
-      </div>
-
-      <h1 class="font-editorial text-[34px] sm:text-[44px] md:text-[54px] lg:text-[62px] font-bold text-white leading-[1.08] tracking-[-0.02em]">
+    <div class="max-w-[880px] mx-auto text-center flex flex-col items-center">
+      <h1 class="font-editorial hero-heading font-bold text-white tracking-[-0.02em] text-center">
         El Blog de las Reformas en Madrid:<br/>
         <span class="italic text-teal-light">guías técnicas, costes y tendencias 2026.</span>
       </h1>
 
-      <p class="mt-6 text-[17px] md:text-[20px] leading-[1.65] text-white/90 max-w-[760px] [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)]">
+      <p class="mt-5 text-[17px] sm:text-[19px] md:text-[20px] leading-[1.65] text-white/90 max-w-[780px] mx-auto text-center [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)]">
         Criterio técnico independiente redactado por aparejadores y arquitectos de Reformas Madrid. Análisis de precios por metro cuadrado, comparativas objetivas de materiales y requisitos normativos de licencias en la Comunidad de Madrid.
       </p>
 
-      <div class="mt-8 flex flex-wrap items-center gap-4">
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
         <a class="inline-flex items-center justify-center gap-2.5 rounded-md btn-gold text-[15.5px] font-bold text-white transition-all whitespace-nowrap shadow-md text-center px-7 py-3.5" href="#destacado">
           <span>Ver Artículo Destacado</span>
           <i class="ri-arrow-down-line text-[18px]"></i>
@@ -580,53 +844,26 @@
         </a>
       </div>
     </div>
-
-  </div>
-</section>
-
-<!-- BARRA DE CATEGORÍAS TÉCNICAS (CON FILTRADO ACTIVO EN VIVO) -->
-<section class="w-full bg-ice py-5 border-b border-line sticky top-[68px] md:top-[76px] z-40 backdrop-blur-md bg-ice/95">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    <div class="flex items-center gap-3 overflow-x-auto no-scrollbar py-1">
-      <span class="text-[12px] font-bold uppercase tracking-wider text-teal shrink-0 mr-2 flex items-center gap-1">
-        <i class="ri-filter-3-line text-[15px]"></i> Categorías:
-      </span>
-      <button class="blog-tab-btn active shrink-0 rounded-full border border-line bg-white px-4 py-2 text-[13.5px] font-semibold text-ink shadow-sm" type="button" data-category="all">
-        Todos los Artículos (6)
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line bg-white px-4 py-2 text-[13.5px] font-semibold text-ink shadow-sm" type="button" data-category="costes">
-        Costes &amp; Presupuestos
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line bg-white px-4 py-2 text-[13.5px] font-semibold text-ink shadow-sm" type="button" data-category="cocinas-banos">
-        Cocinas &amp; Baños
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line bg-white px-4 py-2 text-[13.5px] font-semibold text-ink shadow-sm" type="button" data-category="licencias">
-        Licencias &amp; Normativa
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line bg-white px-4 py-2 text-[13.5px] font-semibold text-ink shadow-sm" type="button" data-category="climatizacion">
-        Climatización &amp; Aislamiento
-      </button>
-    </div>
   </div>
 </section>
 
 <!-- SECCIÓN 1: ARTÍCULO DESTACADO DE PORTADA -->
-<section class="w-full bg-white py-14 md:py-20 border-b border-line" id="destacado">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+<section class="w-full bg-white border-b border-line" id="destacado" style="padding-top: 25px !important; padding-bottom: 40px !important;">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     
     <div class="rounded-20 border border-line bg-card overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-stretch">
       
       <!-- FOTOGRAFÍA DESTACADA (7 COLS) -->
       <div class="lg:col-span-7 relative min-h-[320px] sm:min-h-[400px] lg:min-h-[460px] overflow-hidden bg-ink">
         <img alt="Cocina abierta al salón con isla en cascada de porcelánico calacatta e iluminación LED integrada en Madrid" class="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/blog_cocina_isla_2026_1792823888355.jpg"/>
-        <div class="absolute top-4 left-4 rounded-md bg-ink/90 backdrop-blur-md px-3.5 py-1.5 text-[12px] font-bold uppercase tracking-wider text-teal-light shadow-sm">
+        <div class="absolute top-4 left-4 rounded-md bg-ink/90 backdrop-blur-md px-3.5 py-1.5 text-[14px] font-bold uppercase tracking-wider text-teal-light shadow-sm">
           Artículo Destacado · Diseño &amp; Técnica
         </div>
       </div>
 
       <!-- CONTENIDO EDITORIAL (5 COLS) -->
       <div class="lg:col-span-5 p-7 sm:p-10 lg:p-12 flex flex-col justify-center">
-        <div class="flex items-center gap-3 text-[13px] font-bold uppercase tracking-wider text-teal mb-3">
+        <div class="flex items-center gap-3 text-[15px] font-bold uppercase tracking-wider text-teal mb-3">
           <span>Cocinas de Lujo</span>
           <span>·</span>
           <span>7 min de lectura</span>
@@ -645,7 +882,7 @@
             <span>Consultar con un Técnico</span>
             <i class="ri-arrow-right-line text-[16px]"></i>
           </a>
-          <span class="text-[13px] text-ink/70 font-medium">Por Carlos M. Santillana (COAATM)</span>
+          <span class="text-[14.5px] text-ink/80 font-medium">Por Carlos M. Santillana (COAATM)</span>
         </div>
       </div>
 
@@ -654,13 +891,40 @@
   </div>
 </section>
 
+<!-- BARRA DE CATEGORÍAS TÉCNICAS (CON FILTRADO ACTIVO EN VIVO) -->
+<section class="w-full bg-ice py-5 border-b border-line sticky top-[68px] md:top-[76px] z-40 backdrop-blur-md bg-ice/95">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+    <div class="flex items-center gap-3 overflow-x-auto no-scrollbar py-1 md:justify-center">
+      <span class="text-[14.5px] font-bold uppercase tracking-wider text-teal shrink-0 mr-2 flex items-center gap-1">
+        <i class="ri-filter-3-line text-[15px]"></i> Categorías:
+      </span>
+      <button class="blog-tab-btn active shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="all">
+        Todos los Artículos (6)
+      </button>
+      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="costes">
+        Costes &amp; Presupuestos
+      </button>
+      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="cocinas-banos">
+        Cocinas &amp; Baños
+      </button>
+      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="licencias">
+        Licencias &amp; Normativa
+      </button>
+      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="climatizacion">
+        Climatización &amp; Aislamiento
+      </button>
+    </div>
+  </div>
+</section>
+
+
 <!-- SECCIÓN 2: ARCHIVO DE GUÍAS TÉCNICAS (GRID 6 ARTÍCULOS SIN REPETIR MEDIOS) -->
 <section class="w-full bg-ice py-16 md:py-24" id="articulos">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     
     <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
       <div>
-        <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Archivo de Conocimiento</span>
+        <span class="text-[15px] font-bold uppercase tracking-[0.16em] text-teal block mb-1">Archivo de Conocimiento</span>
         <h2 class="font-editorial text-[30px] sm:text-[38px] md:text-[44px] font-bold text-ink leading-tight mt-1">
           Guías prácticas redactadas por aparejadores
         </h2>

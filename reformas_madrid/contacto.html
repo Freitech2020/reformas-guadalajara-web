@@ -26,6 +26,23 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" rel="stylesheet"/>
 <link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
 <style>
+  /* HERO MOBILE FIRST RESPONSIVE PADDING SHIELD (CERO COLISION CON HEADER FIJO) */
+  @media (max-width: 767px) {
+    section#inicio,
+    #inicio,
+    #inicio > div.relative.z-10,
+    main > section#inicio,
+    .pt-\[152px\],
+    .pt-\[160px\] {
+      padding-top: 160px !important;
+    }
+  }
+  @media (min-width: 768px) {
+    section#inicio,
+    #inicio {
+      padding-top: 140px !important;
+    }
+  }
   /* =======================================================================
      TOKEN DESIGN FREITECH / SEOLIFE 2026 · PALETA DE LUJO & BLINDAJE DE PADDING
      ======================================================================= */
@@ -463,6 +480,186 @@
     border-color: #A87E34 !important;
     box-shadow: 0 3px 12px rgba(168, 126, 52, 0.3) !important;
   }
+
+  /* BLINDAJE DE DIMENSIONES Y MÁRGENES FALTANTES EN VITE BUNDLE */
+  .w-10 { width: 2.5rem !important; }
+  .h-10 { height: 2.5rem !important; }
+  .w-11 { width: 2.75rem !important; }
+  .h-11 { height: 2.75rem !important; }
+  .w-12 { width: 3rem !important; }
+  .h-12 { height: 3rem !important; }
+
+  .mb-1 { margin-bottom: 0.25rem !important; }
+  .mb-1\.5 { margin-bottom: 0.375rem !important; }
+  .mb-2 { margin-bottom: 0.5rem !important; }
+  .mb-3 { margin-bottom: 0.75rem !important; }
+  .mb-4 { margin-bottom: 1rem !important; }
+  .mb-5 { margin-bottom: 1.25rem !important; }
+  .mb-6 { margin-bottom: 1.5rem !important; }
+  .mb-7 { margin-bottom: 1.75rem !important; }
+  .mb-8 { margin-bottom: 2rem !important; }
+  .mb-10 { margin-bottom: 2.5rem !important; }
+  .mb-12 { margin-bottom: 3rem !important; }
+  .mb-14 { margin-bottom: 3.5rem !important; }
+  .mb-16 { margin-bottom: 4rem !important; }
+
+  .mt-1 { margin-top: 0.25rem !important; }
+  .mt-1\.5 { margin-top: 0.375rem !important; }
+  .mt-2 { margin-top: 0.5rem !important; }
+  .mt-3 { margin-top: 0.75rem !important; }
+  .mt-4 { margin-top: 1rem !important; }
+  .mt-6 { margin-top: 1.5rem !important; }
+  .mt-8 { margin-top: 2rem !important; }
+
+
+  /* HERO HEADINGS (PLAYFAIR DISPLAY ESCALA EDITORIAL REFINADA Y CENTRADA) */
+  .hero-heading {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+  }
+  @media (min-width: 640px) {
+    .hero-heading {
+      font-size: 38px !important;
+      line-height: 1.12 !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .hero-heading {
+      font-size: 44px !important;
+      line-height: 1.1 !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-heading {
+      font-size: 48px !important;
+      line-height: 1.08 !important;
+    }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+  }
+  @media (min-width: 1280px) {
+    .hero-heading {
+      font-size: 52px !important;
+      line-height: 1.08 !important;
+    }
+  }
+
+
+  
+
+  
+
+  /* ==========================================================================
+     BLINDAJE ULTRA-DEFINITIVO: HEADER DESKTOP VS SUB-BARRA RESPONSIVE
+     ========================================================================== */
+  @media (max-width: 1023px) {
+    header .btn-header-desktop,
+    header button.btn-header-desktop,
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+    .btn-header-desktop {
+      display: none !important;
+      visibility: hidden !important;
+      width: 0 !important;
+      height: 0 !important;
+      min-width: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+    header #btn-mobile-menu,
+    #btn-mobile-menu {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+    header .header-subbar,
+    .header-subbar {
+      display: flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    header .btn-header-desktop,
+    header button.btn-header-desktop,
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+    .btn-header-desktop {
+      display: inline-flex !important;
+      visibility: visible !important;
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      font-size: 12.5px !important;
+      padding: 9px 18px !important;
+      letter-spacing: 0.04em !important;
+    }
+    header #btn-mobile-menu,
+    #btn-mobile-menu {
+      display: none !important;
+      visibility: hidden !important;
+    }
+    header .header-subbar,
+    .header-subbar {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  }
+
+  /* ESTILOS DE LA SUB-BARRA RESPONSIVE (DEBAJO DEL HEADER) */
+  .header-subbar {
+    width: 100% !important;
+    max-height: 54px !important;
+    opacity: 1 !important;
+    overflow: hidden !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+    background: rgba(14, 27, 46, 0.94) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    padding: 6px 16px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, padding 0.35s ease, border-color 0.25s ease !important;
+  }
+
+  /* AL HACER SCROLL: SE OCULTA COMPLETAMENTE PARA NO SATURAR EL VIEWPORT MÓVIL */
+  header.scrolled .header-subbar {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-top-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
+  .header-subbar .subbar-text {
+    font-size: 12px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500 !important;
+  }
+  .header-subbar .btn-header-mobile {
+    background-color: #A87E34 !important;
+    border: 1px solid rgba(226, 196, 143, 0.6) !important;
+    color: #FFFFFF !important;
+    padding: 4px 12px !important;
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    border-radius: 9999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.03em !important;
+  }
 </style>
 </head>
 <body>
@@ -472,14 +669,14 @@
 
 <!-- HEADER NAVEGACIÓN -->
 <header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-transparent">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     <nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-4 xl:gap-6">
       <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="index.html">
         <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
         <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-teal-light [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
       </a>
 
-      <ul class="hidden lg:flex items-center gap-5 xl:gap-7 header-nav-list">
+      <ul class="hidden lg:flex items-center gap-3 xl:gap-6 header-nav-list">
         <!-- DROPDOWN GUADALAJARA -->
         <li class="nav-dropdown group relative">
           <a class="nav-dropdown-trigger flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../readdy_captured_complete/index.html">
@@ -547,8 +744,8 @@
         </li>
       </ul>
 
-      <div class="flex items-center gap-2">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal hidden sm:inline-flex items-center gap-2 rounded-md px-5 py-2.5 text-[12.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
+      <div class="flex items-center gap-3">
+        <button type="button" class="btn-open-popup-presupuesto btn-header-desktop btn-gold bg-teal hidden lg:inline-flex items-center gap-2 rounded-md px-3.5 py-2 xl:px-5 xl:py-2.5 text-[11.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[15px]"></i>
         </button>
@@ -557,6 +754,18 @@
         </button>
       </div>
     </nav>
+  </div>
+
+  <!-- SUB-BARRA RESPONSIVE: BOTÓN PEDIR PRESUPUESTO DEBAJO DEL HEADER (PEQUEÑO Y DISCRETO) -->
+  <div class="header-subbar lg:hidden">
+    <span class="subbar-text flex items-center gap-1.5">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+      Visita gratuita 48-72h
+    </span>
+    <button type="button" class="btn-open-popup-presupuesto btn-header-mobile" aria-label="Pedir Presupuesto">
+      <span>Pedir Presupuesto</span>
+      <i class="ri-arrow-right-line"></i>
+    </button>
   </div>
 </header>
 
@@ -601,157 +810,83 @@
 
 <main>
 <!-- HERO CONTACTO: ALTA CONVERSIÓN Y CLARIDAD EDITORIAL -->
-<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[112px] md:pt-[140px] pb-16 md:pb-24 border-b border-white/10" id="inicio">
+<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[160px] md:pt-[140px] pb-16 md:pb-24 border-b border-white/10" id="inicio">
   <img class="absolute inset-0 h-full w-full object-cover object-center" src="images/madrid-estudio-fachada.webp" alt="Estudio técnico y showroom de Reformas Madrid"/>
   <!-- CAPA DE OSCURECIMIENTO MAESTRA DEL HERO -->
   <div aria-hidden="true" class="hero-master-scrim"></div>
   <div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div>
 
   <div class="relative z-10 mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    
-    <div class="grid grid-cols-1 items-end gap-10 lg:grid-cols-12 lg:gap-12">
-      
-      <!-- COLUMNA IZQUIERDA (7 COLS): TÍTULO, CLAIM Y ACCIONES DIRECTAS -->
-      <div class="lg:col-span-7">
-        <div class="inline-flex items-center gap-2.5 rounded-full border border-teal/40 bg-white/10 px-4 py-1.5 text-[12.5px] font-semibold uppercase tracking-wider text-teal-light backdrop-blur-md mb-6">
-          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0 inline-block shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
-          <span>Estudio Técnico Madrid · Respuesta en menos de 2 horas laborables</span>
-        </div>
+    <div class="max-w-[880px] mx-auto text-center flex flex-col items-center">
+      <h1 class="font-editorial hero-heading font-bold text-white tracking-[-0.02em] text-center">
+        Solicita tu visita técnica gratuita<br/>
+        <span class="italic text-teal-light">y presupuesto cerrado en 48-72 horas.</span>
+      </h1>
 
-        <h1 class="font-editorial text-[34px] sm:text-[44px] md:text-[54px] lg:text-[62px] font-bold text-white leading-[1.08] tracking-[-0.02em]">
-          Solicita tu visita técnica gratuita<br/>
-          <span class="italic text-teal-light">y presupuesto cerrado en 48-72 horas.</span>
-        </h1>
+      <p class="mt-5 text-[17px] sm:text-[19px] md:text-[20px] leading-[1.65] text-white/90 max-w-[780px] mx-auto text-center [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)]">
+        Cuéntanos tu proyecto. Un arquitecto técnico colegiado evaluará presencialmente tu inmueble en Madrid o Guadalajara, medirá con distanciómetro láser y elaborará una memoria detallada con precios unitarios blindados. Sin coste ni compromiso.
+      </p>
 
-        <p class="mt-6 text-[17px] md:text-[20px] leading-[1.65] text-white/90 max-w-[720px] [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)]">
-          Cuéntanos tu proyecto. Un arquitecto técnico colegiado evaluará presencialmente tu inmueble en Madrid o Guadalajara, medirá con distanciómetro láser y elaborará una memoria detallada con precios unitarios blindados. Sin coste ni compromiso.
-        </p>
-
-        <div class="mt-8 flex flex-wrap items-center gap-4">
-          <a class="inline-flex items-center justify-center gap-2.5 rounded-md btn-gold text-[16px] font-bold text-white transition-all whitespace-nowrap shadow-md text-center px-8 py-4" href="#solicitud-visita">
-            <span>Rellenar Solicitud de Visita</span>
-            <i class="ri-arrow-down-line text-[18px]"></i>
-          </a>
-          <a class="inline-flex items-center justify-center gap-2 rounded-md border border-white/30 bg-white/10 px-7 py-4 text-[15px] font-semibold text-white backdrop-blur-sm hover:bg-white/20 transition-all cursor-pointer" href="https://wa.me/34910000000" target="_blank" rel="noopener noreferrer">
-            <i class="ri-whatsapp-line text-[19px] text-[#25D366]"></i>
-            <span>WhatsApp Directo</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- COLUMNA DERECHA (5 COLS): FICHA GLASS FLOTANTE DE HORARIO Y ATENCIÓN DIRECTA -->
-      <div class="hidden lg:col-span-5 lg:block">
-        <div class="hero-zonas-card ml-auto w-full max-w-[440px] rounded-2xl border border-white/25 bg-ink/55 p-6 md:p-7 backdrop-blur-md">
-          <div class="flex items-center gap-2.5 mb-4">
-            <i class="ri-building-line text-[22px] text-teal-light"></i>
-            <span class="text-[15px] font-bold uppercase tracking-[0.14em] text-white/90">Oficina Técnica Central</span>
-          </div>
-          <ul class="flex flex-col gap-4">
-            <li class="flex items-center gap-3.5">
-              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light">
-                <i class="ri-map-pin-2-line text-[20px]"></i>
-              </span>
-              <div>
-                <div class="text-[17px] font-bold leading-tight text-white">Calle Mayor 42</div>
-                <div class="text-[14px] leading-snug text-white/80">19001 Madrid (con cita previa)</div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3.5">
-              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light">
-                <i class="ri-time-line text-[20px]"></i>
-              </span>
-              <div>
-                <div class="text-[17px] font-bold leading-tight text-white">Horario de Atención</div>
-                <div class="text-[14px] leading-snug text-white/80">Lunes a Viernes: 8:30 a 19:30</div>
-              </div>
-            </li>
-            <li class="flex items-center gap-3.5">
-              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light">
-                <i class="ri-phone-line text-[20px]"></i>
-              </span>
-              <div>
-                <div class="text-[17px] font-bold leading-tight text-white">Teléfono de Proyectos</div>
-                <div class="text-[14px] leading-snug text-white/80">+34 910 00 00 00</div>
-              </div>
-            </li>
-          </ul>
-          <div class="mt-6 flex items-center gap-3 border-t border-white/15 pt-4">
-            <span class="live-status-dot">
-              <span class="live-status-pulse"></span>
-              <span class="live-status-core"></span>
-            </span>
-            <span class="text-[14.5px] font-medium text-white/90">Estudio abierto hoy · 2 aparejadores de guardia</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- TARJETA MÓVIL RESPONSIVE (LG:HIDDEN) -->
-    <div class="hero-zonas-card mt-8 rounded-2xl border border-white/25 bg-ink/55 p-6 backdrop-blur-md lg:hidden">
-      <div class="flex items-center gap-2.5 mb-3">
-        <i class="ri-building-line text-[20px] text-teal-light"></i>
-        <span class="text-[14px] font-bold uppercase tracking-[0.14em] text-white/90">Oficina Técnica Central</span>
-      </div>
-      <p class="text-[14px] text-white/85 mb-3">Calle Mayor 42, Madrid · Lun–Vie 8:30 a 19:30</p>
-      <div class="flex items-center gap-3 border-t border-white/15 pt-3">
-        <span class="live-status-dot">
-          <span class="live-status-pulse"></span>
-          <span class="live-status-core"></span>
-        </span>
-        <span class="text-[13.5px] font-medium text-white/90">Estudio abierto hoy con aparejador de guardia</span>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a class="inline-flex items-center justify-center gap-2.5 rounded-md btn-gold text-[16px] font-bold text-white transition-all whitespace-nowrap shadow-md text-center px-8 py-3.5" href="#solicitud-visita">
+          <span>Rellenar Solicitud de Visita</span>
+          <i class="ri-arrow-down-line text-[18px]"></i>
+        </a>
+        <a class="inline-flex items-center justify-center gap-2 rounded-md border border-white/30 bg-white/10 px-7 py-3.5 text-[15px] font-semibold text-white backdrop-blur-sm hover:bg-white/20 transition-all cursor-pointer" href="https://wa.me/34910000000" target="_blank" rel="noopener noreferrer">
+          <i class="ri-whatsapp-line text-[19px] text-[#25D366]"></i>
+          <span>WhatsApp Directo</span>
+        </a>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- SECCIÓN 1: 4 CANALES DIRECTOS DE COMUNICACIÓN -->
 <section class="w-full bg-ice py-12 md:py-16 border-b border-line" id="canales">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div class="mx-auto w-full max-w-[1140px] px-4 md:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
       
       <!-- CANAL 1: TELÉFONO -->
-      <div class="flex flex-col rounded-20 border border-line bg-white p-7 shadow-sm hover:shadow-md transition-all">
-        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-ink text-[#E2C48F] mb-5 shrink-0" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
-          <i class="ri-phone-line text-[24px]" style="color: #E2C48F !important;"></i>
+      <div class="flex flex-col rounded-20 border border-line bg-white p-5 md:p-6 shadow-sm hover:shadow-md transition-all">
+        <div class="flex items-center justify-center rounded-xl bg-ink text-[#E2C48F] mb-4 shrink-0 shadow-sm" style="width: 44px !important; height: 44px !important; min-width: 44px !important; max-width: 44px !important; background-color: #0E1B2E !important; color: #E2C48F !important;">
+          <i class="ri-phone-line text-[22px]" style="color: #E2C48F !important;"></i>
         </div>
-        <h3 class="font-editorial text-[20px] font-bold text-ink mb-1">Teléfono Directo</h3>
-        <p class="text-[14.5px] text-ink/75 mb-4">Atención inmediata con un aparejador responsable.</p>
-        <a class="text-[18px] font-bold text-teal hover:underline mt-auto" href="tel:+34910000000">+34 910 00 00 00</a>
+        <h3 class="font-editorial text-[18px] md:text-[19px] font-bold text-ink mb-1">Teléfono Directo</h3>
+        <p class="text-[13.5px] md:text-[14px] text-ink/75 mb-3 leading-snug">Atención inmediata con un aparejador responsable.</p>
+        <a class="text-[15.5px] md:text-[16px] font-bold text-teal hover:underline mt-auto" href="tel:+34910000000">+34 910 00 00 00</a>
       </div>
 
       <!-- CANAL 2: WHATSAPP -->
-      <div class="flex flex-col rounded-20 border border-line bg-white p-7 shadow-sm hover:shadow-md transition-all">
-        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-ink text-[#25D366] mb-5 shrink-0 border border-emerald-500/20 shadow-sm" style="background-color: #0E1B2E !important;">
-          <i class="ri-whatsapp-line text-[24px]" style="color: #25D366 !important;"></i>
+      <div class="flex flex-col rounded-20 border border-line bg-white p-5 md:p-6 shadow-sm hover:shadow-md transition-all">
+        <div class="flex items-center justify-center rounded-xl bg-ink text-[#25D366] mb-4 shrink-0 border border-emerald-500/20 shadow-sm" style="width: 44px !important; height: 44px !important; min-width: 44px !important; max-width: 44px !important; background-color: #0E1B2E !important;">
+          <i class="ri-whatsapp-line text-[22px]" style="color: #25D366 !important;"></i>
         </div>
-        <h3 class="font-editorial text-[20px] font-bold text-ink mb-1">WhatsApp Express</h3>
-        <p class="text-[14.5px] text-ink/75 mb-4">Envíanos fotos, croquis o dudas preliminares.</p>
-        <a class="text-[17px] font-bold text-emerald-700 hover:text-emerald-800 hover:underline mt-auto flex items-center gap-1.5" href="https://wa.me/34910000000" target="_blank" rel="noopener noreferrer">
+        <h3 class="font-editorial text-[18px] md:text-[19px] font-bold text-ink mb-1">WhatsApp Express</h3>
+        <p class="text-[13.5px] md:text-[14px] text-ink/75 mb-3 leading-snug">Envíanos fotos, croquis o dudas preliminares.</p>
+        <a class="text-[15px] md:text-[15.5px] font-bold text-emerald-700 hover:text-emerald-800 hover:underline mt-auto flex items-center gap-1.5" href="https://wa.me/34910000000" target="_blank" rel="noopener noreferrer">
           <span>Abrir chat técnico</span>
-          <i class="ri-external-link-line text-[15px]"></i>
+          <i class="ri-external-link-line text-[14px]"></i>
         </a>
       </div>
 
       <!-- CANAL 3: EMAIL -->
-      <div class="flex flex-col rounded-20 border border-line bg-white p-7 shadow-sm hover:shadow-md transition-all">
-        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-ink text-[#E2C48F] mb-5 shrink-0" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
-          <i class="ri-mail-send-line text-[24px]" style="color: #E2C48F !important;"></i>
+      <div class="flex flex-col rounded-20 border border-line bg-white p-5 md:p-6 shadow-sm hover:shadow-md transition-all">
+        <div class="flex items-center justify-center rounded-xl bg-ink text-[#E2C48F] mb-4 shrink-0 shadow-sm" style="width: 44px !important; height: 44px !important; min-width: 44px !important; max-width: 44px !important; background-color: #0E1B2E !important; color: #E2C48F !important;">
+          <i class="ri-mail-send-line text-[22px]" style="color: #E2C48F !important;"></i>
         </div>
-        <h3 class="font-editorial text-[20px] font-bold text-ink mb-1">Correo de Proyectos</h3>
-        <p class="text-[14.5px] text-ink/75 mb-4">Envío de memorias, pliegos o planos DWG y PDF.</p>
-        <a class="text-[15.5px] font-bold text-teal hover:underline mt-auto" href="mailto:contacto@reformasmadrid.es">contacto@reformasmadrid.es</a>
+        <h3 class="font-editorial text-[18px] md:text-[19px] font-bold text-ink mb-1">Correo de Proyectos</h3>
+        <p class="text-[13.5px] md:text-[14px] text-ink/75 mb-3 leading-snug">Envío de memorias, pliegos o planos DWG y PDF.</p>
+        <a class="text-[14.5px] md:text-[15px] font-bold text-teal hover:underline mt-auto break-all" href="mailto:contacto@reformasmadrid.es">contacto@reformasmadrid.es</a>
       </div>
 
       <!-- CANAL 4: ESTUDIO -->
-      <div class="flex flex-col rounded-20 border border-line bg-white p-7 shadow-sm hover:shadow-md transition-all">
-        <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-ink text-[#E2C48F] mb-5 shrink-0" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
-          <i class="ri-map-pin-2-line text-[24px]" style="color: #E2C48F !important;"></i>
+      <div class="flex flex-col rounded-20 border border-line bg-white p-5 md:p-6 shadow-sm hover:shadow-md transition-all">
+        <div class="flex items-center justify-center rounded-xl bg-ink text-[#E2C48F] mb-4 shrink-0 shadow-sm" style="width: 44px !important; height: 44px !important; min-width: 44px !important; max-width: 44px !important; background-color: #0E1B2E !important; color: #E2C48F !important;">
+          <i class="ri-map-pin-2-line text-[22px]" style="color: #E2C48F !important;"></i>
         </div>
-        <h3 class="font-editorial text-[20px] font-bold text-ink mb-1">Estudio &amp; Showroom</h3>
-        <p class="text-[14.5px] text-ink/75 mb-4">Calle Mayor 42, 19001 Madrid (con cita previa).</p>
-        <span class="text-[14px] font-semibold text-ink mt-auto">Lun–Vie 8:30 a 19:30</span>
+        <h3 class="font-editorial text-[18px] md:text-[19px] font-bold text-ink mb-1">Estudio &amp; Showroom</h3>
+        <p class="text-[13.5px] md:text-[14px] text-ink/75 mb-3 leading-snug">Calle Mayor 42, 19001 Madrid (cita previa).</p>
+        <span class="text-[13.5px] md:text-[14px] font-semibold text-ink mt-auto">Lun–Vie 8:30 a 19:30</span>
       </div>
 
     </div>
@@ -760,101 +895,101 @@
 
 <!-- SECCIÓN 2: FORMULARIO INTERACTIVO + TIMELINE (GRID 7 / 5) -->
 <section class="w-full bg-white py-16 md:py-24" id="solicitud-visita">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1360px] px-4 md:px-8 lg:px-12">
     
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
       
-      <!-- COLUMNA IZQUIERDA (7 COLS): EL FORMULARIO ARQUITECTÓNICO -->
-      <div class="lg:col-span-7">
-        <div class="rounded-20 border border-line bg-card p-6 sm:p-9 md:p-10 shadow-sm">
+      <!-- COLUMNA IZQUIERDA (7 COLS): EL FORMULARIO ARQUITECTÓNICO COMPACTO -->
+      <div class="lg:col-span-7 flex flex-col">
+        <div class="rounded-20 border border-line bg-card p-6 sm:p-8 shadow-sm flex flex-col justify-between h-full">
           
-          <div class="mb-8">
-            <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Presupuesto Cerrado</span>
-            <h2 class="font-editorial text-[28px] sm:text-[36px] font-bold text-ink leading-tight mt-1">
+          <div class="mb-6">
+            <span class="text-[15px] font-bold uppercase tracking-wider text-teal block mb-1">Presupuesto Cerrado</span>
+            <h2 class="font-editorial text-[26px] sm:text-[32px] font-bold text-ink leading-tight mt-1">
               Cuéntanos qué quieres reformar
             </h2>
-            <p class="text-body text-ink/80 mt-2">
-              Selecciona las opciones que mejor se ajusten a tu proyecto y déjanos tus datos de contacto.
+            <p class="text-[16px] text-ink/80 mt-1.5 leading-snug">
+              Selecciona las opciones de tu proyecto y déjanos tus datos para coordinar la visita.
             </p>
           </div>
 
-          <form action="#" id="form-visita-madrid" method="POST" onsubmit="event.preventDefault(); alert('¡Gracias! Hemos recibido tu solicitud. Un arquitecto técnico de Reformas Madrid te contactará en menos de 2 horas laborables para coordinar tu visita técnica gratuita.');">
+          <form action="#" id="form-visita-madrid" method="POST" onsubmit="event.preventDefault(); alert('¡Gracias! Hemos recibido tu solicitud. Un arquitecto técnico de Reformas Madrid te contactará en menos de 2 horas laborables para coordinar tu visita técnica gratuita.');" class="flex flex-col gap-5">
             
             <!-- PASO 1: TIPO DE REFORMA -->
-            <div class="mb-6">
-              <label class="block text-[13px] font-bold uppercase tracking-wider text-ink mb-3">
+            <div>
+              <label class="block text-[14.5px] font-bold uppercase tracking-wider text-ink mb-2.5">
                 1. Tipo de Intervención
               </label>
-              <div class="flex flex-wrap gap-2.5" id="chips-tipo">
-                <span class="chip-option active rounded-xl border border-line bg-white px-4 py-2.5 text-[14px] font-semibold text-ink" data-val="reforma-completa">Reforma Completa de Vivienda</span>
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2.5 text-[14px] font-semibold text-ink" data-val="cocina">Reforma de Cocina con Isla</span>
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2.5 text-[14px] font-semibold text-ink" data-val="bano">Reforma de Baño de Lujo</span>
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2.5 text-[14px] font-semibold text-ink" data-val="local">Local Comercial u Oficina</span>
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2.5 text-[14px] font-semibold text-ink" data-val="clima">Climatización &amp; Aerotermia</span>
+              <div class="flex flex-wrap gap-2" id="chips-tipo">
+                <span class="chip-option active rounded-xl border border-line bg-white px-3.5 py-2 text-[14px] font-semibold text-ink" data-val="reforma-completa">Reforma Completa de Vivienda</span>
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-2 text-[14px] font-semibold text-ink" data-val="cocina">Cocina con Isla</span>
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-2 text-[14px] font-semibold text-ink" data-val="bano">Baño de Lujo</span>
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-2 text-[14px] font-semibold text-ink" data-val="local">Local Comercial u Oficina</span>
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-2 text-[14px] font-semibold text-ink" data-val="clima">Climatización &amp; Aerotermia</span>
               </div>
               <input type="hidden" name="tipo_reforma" id="input-tipo-reforma" value="reforma-completa"/>
-              <div id="chips-tipo-feedback" class="mt-3 flex items-center gap-2 rounded-xl bg-ice border border-line/80 px-4 py-2.5 text-[13.5px] font-medium text-ink transition-all">
-                <i class="ri-information-line text-teal text-[17px] shrink-0"></i>
+              <div id="chips-tipo-feedback" class="mt-2.5 flex items-center gap-2 rounded-xl bg-ice border border-line/80 px-3.5 py-2 text-[13.5px] font-medium text-ink transition-all">
+                <i class="ri-information-line text-teal text-[16px] shrink-0"></i>
                 <span id="chips-tipo-feedback-text">Plazo estimado: 60-90 días laborables · Aparejador colegiado asignado a pie de obra diario.</span>
               </div>
             </div>
 
             <!-- PASO 2: SUPERFICIE ESTIMADA -->
-            <div class="mb-7">
-              <label class="block text-[13px] font-bold uppercase tracking-wider text-ink mb-3">
+            <div>
+              <label class="block text-[14.5px] font-bold uppercase tracking-wider text-ink mb-2.5">
                 2. Superficie Aproximada
               </label>
-              <div class="flex flex-wrap gap-2.5" id="chips-superficie">
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2 text-[14px] font-semibold text-ink" data-val="menos-60">&lt; 60 m²</span>
-                <span class="chip-option active rounded-xl border border-line bg-white px-4 py-2 text-[14px] font-semibold text-ink" data-val="60-90">60 - 90 m²</span>
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2 text-[14px] font-semibold text-ink" data-val="90-130">90 - 130 m²</span>
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2 text-[14px] font-semibold text-ink" data-val="mas-130">&gt; 130 m²</span>
-                <span class="chip-option rounded-xl border border-line bg-white px-4 py-2 text-[14px] font-semibold text-ink" data-val="chalet">Chalet / Vivienda Unifamiliar</span>
+              <div class="flex flex-wrap gap-2" id="chips-superficie">
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-1.5 text-[14px] font-semibold text-ink" data-val="menos-60">&lt; 60 m²</span>
+                <span class="chip-option active rounded-xl border border-line bg-white px-3.5 py-1.5 text-[14px] font-semibold text-ink" data-val="60-90">60 - 90 m²</span>
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-1.5 text-[14px] font-semibold text-ink" data-val="90-130">90 - 130 m²</span>
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-1.5 text-[14px] font-semibold text-ink" data-val="mas-130">&gt; 130 m²</span>
+                <span class="chip-option rounded-xl border border-line bg-white px-3.5 py-1.5 text-[14px] font-semibold text-ink" data-val="chalet">Chalet Unifamiliar</span>
               </div>
               <input type="hidden" name="superficie" id="input-superficie" value="60-90"/>
             </div>
 
-            <!-- PASO 3: DATOS DE CONTACTO -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+            <!-- PASO 3: DATOS DE CONTACTO (GRID COMPACTO) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1.5" for="contacto-nombre">Nombre y Apellidos *</label>
-                <input class="form-input" id="contacto-nombre" name="nombre" placeholder="Ej. Ignacio Mendoza" required="" type="text"/>
+                <label class="block text-[14px] font-semibold text-ink mb-1" for="contacto-nombre">Nombre y Apellidos *</label>
+                <input class="form-input" style="padding: 10px 14px !important;" id="contacto-nombre" name="nombre" placeholder="Ej. Ignacio Mendoza" required="" type="text"/>
               </div>
               <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1.5" for="contacto-telefono">Teléfono de Contacto *</label>
-                <input class="form-input" id="contacto-telefono" name="telefono" placeholder="+34 600 000 000" required="" type="tel"/>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-              <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1.5" for="contacto-email">Correo Electrónico *</label>
-                <input class="form-input" id="contacto-email" name="email" placeholder="ignacio@correo.es" required="" type="email"/>
-              </div>
-              <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1.5" for="contacto-zona">Ubicación / Distrito de la Vivienda</label>
-                <input class="form-input" id="contacto-zona" name="zona" placeholder="Ej. Chamberí, Retiro, Las Rozas, Guadalajara..." type="text"/>
+                <label class="block text-[14px] font-semibold text-ink mb-1" for="contacto-telefono">Teléfono de Contacto *</label>
+                <input class="form-input" style="padding: 10px 14px !important;" id="contacto-telefono" name="telefono" placeholder="+34 600 000 000" required="" type="tel"/>
               </div>
             </div>
 
-            <div class="mb-6">
-              <label class="block text-[13px] font-semibold text-ink mb-1.5" for="contacto-mensaje">Detalles Adicionales del Inmueble</label>
-              <textarea class="form-input resize-none" id="contacto-mensaje" name="mensaje" placeholder="Antigüedad del edificio, si deseas redistribuir tabiques, cambiar carpinterías, estado de fontanería..." rows="4"></textarea>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-[14px] font-semibold text-ink mb-1" for="contacto-email">Correo Electrónico *</label>
+                <input class="form-input" style="padding: 10px 14px !important;" id="contacto-email" name="email" placeholder="ignacio@correo.es" required="" type="email"/>
+              </div>
+              <div>
+                <label class="block text-[14px] font-semibold text-ink mb-1" for="contacto-zona">Ubicación / Distrito</label>
+                <input class="form-input" style="padding: 10px 14px !important;" id="contacto-zona" name="zona" placeholder="Ej. Chamberí, Retiro, Guadalajara..." type="text"/>
+              </div>
             </div>
 
-            <div class="mb-7 flex items-start gap-3">
+            <div>
+              <label class="block text-[14px] font-semibold text-ink mb-1" for="contacto-mensaje">Detalles Adicionales del Inmueble</label>
+              <textarea class="form-input resize-none" style="padding: 10px 14px !important;" id="contacto-mensaje" name="mensaje" placeholder="Antigüedad del edificio, redistribución de tabiques, carpinterías, estado de fontanería..." rows="2"></textarea>
+            </div>
+
+            <div class="flex items-start gap-2.5">
               <input class="mt-1 h-4 w-4 rounded border-line text-teal focus:ring-teal" id="rgpd-consent" required="" type="checkbox"/>
-              <label class="text-[13.5px] leading-[1.5] text-ink/80" for="rgpd-consent">
+              <label class="text-[13.5px] leading-snug text-ink/80" for="rgpd-consent">
                 Acepto la <a class="text-teal hover:underline font-semibold" href="#politica-de-privacidad" target="_blank">política de privacidad</a>. Tus datos son confidenciales y solo se emplean para coordinar la visita técnica y remitir el presupuesto.
               </label>
             </div>
 
-            <button class="w-full rounded-md btn-gold py-4 text-[16px] font-bold uppercase tracking-wider text-white shadow-md flex items-center justify-center gap-3 cursor-pointer" type="submit">
+            <button class="w-full rounded-md btn-gold py-3.5 text-[15.5px] font-bold uppercase tracking-wider text-white shadow-md flex items-center justify-center gap-2.5 cursor-pointer mt-1" type="submit">
               <span>SOLICITAR VISITA TÉCNICA GRATUITA</span>
-              <i class="ri-arrow-right-line text-[18px]"></i>
+              <i class="ri-arrow-right-line text-[17px]"></i>
             </button>
 
-            <div class="mt-4 flex flex-wrap items-center justify-center gap-4 text-[12.5px] font-medium text-ink/70">
+            <div class="flex flex-wrap items-center justify-center gap-3 text-[13.5px] font-medium text-ink/75">
               <span class="flex items-center gap-1.5"><i class="ri-shield-check-line text-teal text-[15px]"></i> Visita 100% gratuita</span>
               <span>·</span>
               <span class="flex items-center gap-1.5"><i class="ri-ruler-line text-teal text-[15px]"></i> Medición láser</span>
@@ -867,86 +1002,83 @@
         </div>
       </div>
 
-      <!-- COLUMNA DERECHA (5 COLS): FOTOGRAFÍA ASESORAMIENTO + TIMELINE -->
-      <div class="lg:col-span-5 flex flex-col gap-8">
-        
-        <!-- TARJETA FOTOGRÁFICA DE ASESORAMIENTO CON CLIENTE -->
-        <div class="rounded-20 border border-line bg-card overflow-hidden shadow-sm w-full">
-          <div class="relative overflow-hidden bg-ink w-full" style="aspect-ratio: 16/10;">
-            <img alt="Arquitecto técnico de Reformas Madrid asesorando a clientes en estudio de arquitectura y showroom" class="h-full w-full object-cover object-center block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="images/madrid-trade-interiorismo.webp"/>
-            <div class="absolute inset-0" style="background: linear-gradient(180deg, transparent 40%, rgba(8, 16, 28, 0.9) 100%) !important;"></div>
-            <div class="absolute bottom-4 left-4 right-4 text-white">
-              <span class="text-[11.5px] font-bold uppercase tracking-wider text-[#E2C48F] block" style="color: #E2C48F !important;">Asesoramiento Colegiado</span>
-              <p class="text-[14.5px] font-semibold mt-0.5" style="color: #FFFFFF !important; text-shadow: 0 1px 4px rgba(0,0,0,0.8) !important;">
-                Estudio de viabilidad técnica y soluciones distributivas desde la primera reunión.
-              </p>
+      <!-- COLUMNA DERECHA (5 COLS): PROTOCOLO DE TRABAJO PROPORCIONADO -->
+      <div class="lg:col-span-5 flex flex-col">
+        <div class="rounded-20 border border-line bg-ice p-6 sm:p-8 shadow-sm flex flex-col justify-between h-full">
+          
+          <div>
+            <span class="text-[15px] font-bold uppercase tracking-wider text-teal block mb-1">Protocolo de Trabajo</span>
+            <h3 class="font-editorial text-[24px] sm:text-[28px] font-bold text-ink mt-1 mb-6 leading-tight">
+              ¿Qué ocurre tras enviar tu solicitud?
+            </h3>
+
+            <div class="flex flex-col gap-5 relative">
+              <div class="flex items-start gap-4">
+                <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink text-[#E2C48F] font-bold text-[14px]" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
+                  1
+                </div>
+                <div>
+                  <h4 class="text-[16px] font-bold text-ink">Contacto telefónico en &lt; 2h</h4>
+                  <p class="text-[14.5px] leading-[1.5] text-ink/80 mt-1">
+                    Un técnico de Reformas Madrid te contacta para comprender tus prioridades y agendar el día y hora de la visita técnica que mejor te convenga.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink text-[#E2C48F] font-bold text-[14px]" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
+                  2
+                </div>
+                <div>
+                  <h4 class="text-[16px] font-bold text-ink">Visita presencial y medición láser</h4>
+                  <p class="text-[14.5px] leading-[1.5] text-ink/80 mt-1">
+                    El aparejador acude a tu vivienda, toma cotas exactas con distanciómetro láser, revisa instalaciones y analiza muros de carga.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink text-[#E2C48F] font-bold text-[14px]" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
+                  3
+                </div>
+                <div>
+                  <h4 class="text-[16px] font-bold text-ink">Presupuesto cerrado en 48-72h</h4>
+                  <p class="text-[14.5px] leading-[1.5] text-ink/80 mt-1">
+                    Recibes un desglose completo por capítulos y partidas con precios unitarios blindados. Sin letra pequeña ni costes imprevistos.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-teal text-white font-bold text-[14px]" style="background-color: #A87E34 !important; color: #FFFFFF !important;">
+                  4
+                </div>
+                <div>
+                  <h4 class="text-[16px] font-bold text-ink">Contrato con fecha garantizada</h4>
+                  <p class="text-[14.5px] leading-[1.5] text-ink/80 mt-1">
+                    Firmamos contrato con fecha de entrega exacta por escrito e indemnización diaria si existiera demora en la entrega.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- BLOQUE DE GARANTÍA COLEGIADA Y ATENCIÓN DIRECTA -->
+          <div class="mt-8 pt-5 border-t border-line/60 flex flex-col gap-4">
+            <div class="rounded-xl border border-line/80 bg-white/80 p-3.5 flex items-center gap-3 shadow-xs">
+              <i class="ri-shield-check-fill text-[24px] text-teal shrink-0"></i>
+              <div class="text-[13.5px] leading-tight text-ink/85">
+                <span class="font-bold text-ink block">Dirección Colegiada COAATM</span>
+                Seguro de responsabilidad civil suscrito hasta 600.000 €.
+              </div>
+            </div>
+            <div class="flex items-center justify-between text-[14.5px]">
+              <span class="font-semibold text-ink">¿Prefieres llamarnos?</span>
+              <a class="font-bold text-teal hover:underline text-[15.5px]" href="tel:+34910000000">+34 910 00 00 00</a>
+            </div>
+          </div>
+
         </div>
-
-        <!-- TIMELINE: QUÉ OCURRE TRAS ENVIAR TU SOLICITUD -->
-        <div class="rounded-20 border border-line bg-ice p-7 md:p-8 shadow-sm">
-          <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Protocolo de Trabajo</span>
-          <h3 class="font-editorial text-[22px] font-bold text-ink mt-1 mb-6">
-            ¿Qué ocurre tras enviar tu solicitud?
-          </h3>
-
-          <div class="flex flex-col gap-6 relative">
-            <div class="flex items-start gap-4">
-              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink text-[#E2C48F] font-bold text-[14px]" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
-                1
-              </div>
-              <div>
-                <h4 class="text-[16px] font-bold text-ink">Contacto telefónico en &lt; 2h</h4>
-                <p class="text-[14.5px] leading-[1.55] text-ink/80 mt-1">
-                  Un técnico de Reformas Madrid te contacta para comprender tus prioridades y agendar el día y hora de la visita técnica que mejor te convenga.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink text-[#E2C48F] font-bold text-[14px]" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
-                2
-              </div>
-              <div>
-                <h4 class="text-[16px] font-bold text-ink">Visita presencial y medición láser</h4>
-                <p class="text-[14.5px] leading-[1.55] text-ink/80 mt-1">
-                  El aparejador acude a tu vivienda, toma cotas exactas con distanciómetro láser, revisa instalaciones y analiza muros de carga.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ink text-[#E2C48F] font-bold text-[14px]" style="background-color: #0E1B2E !important; color: #E2C48F !important;">
-                3
-              </div>
-              <div>
-                <h4 class="text-[16px] font-bold text-ink">Presupuesto cerrado en 48-72h</h4>
-                <p class="text-[14.5px] leading-[1.55] text-ink/80 mt-1">
-                  Recibes un desglose completo por capítulos y partidas con precios unitarios blindados. Sin letra pequeña ni costes imprevistos.
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-start gap-4">
-              <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-teal text-white font-bold text-[14px]" style="background-color: #A87E34 !important; color: #FFFFFF !important;">
-                4
-              </div>
-              <div>
-                <h4 class="text-[16px] font-bold text-ink">Contrato con fecha garantizada</h4>
-                <p class="text-[14.5px] leading-[1.55] text-ink/80 mt-1">
-                  Si decides trabajar con nosotros, firmamos contrato con fecha de entrega exacta e indemnización diaria si existiera demora.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-line/60 flex items-center justify-between">
-            <span class="text-[13.5px] font-semibold text-ink">¿Prefieres llamarnos directamente?</span>
-            <a class="text-[15px] font-bold text-teal hover:underline" href="tel:+34910000000">+34 910 00 00 00</a>
-          </div>
-        </div>
-
       </div>
 
     </div>
@@ -956,14 +1088,14 @@
 
 <!-- SECCIÓN 3: PREGUNTAS FRECUENTES SOBRE LA VISITA Y PRESUPUESTO -->
 <section class="w-full bg-ice py-16 md:py-20 border-t border-line" id="faq">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
     
-    <div class="max-w-[760px] mx-auto text-center mb-12">
-      <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Dudas Habituales</span>
-      <h2 class="font-editorial text-[30px] md:text-[40px] font-bold text-ink leading-tight mt-1 mb-3">
+    <div class="max-w-[760px] mx-auto text-center" style="margin-bottom: 56px !important;">
+      <span class="text-[15px] md:text-[16px] font-bold uppercase tracking-wider text-teal block mb-2">Dudas Habituales</span>
+      <h2 class="font-editorial text-[32px] md:text-[42px] font-bold text-ink leading-tight mb-3">
         Preguntas frecuentes sobre la visita técnica
       </h2>
-      <p class="text-body text-ink/80">
+      <p class="text-body text-ink/80" style="margin-bottom: 0 !important;">
         Todo lo que necesitas saber antes de recibir a nuestro aparejador en tu vivienda.
       </p>
     </div>
