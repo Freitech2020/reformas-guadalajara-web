@@ -1,1440 +1,221 @@
 <!DOCTYPE html>
-<html lang="es" translate="no">
+<html lang="es">
 <head>
-<meta charset="utf-8"/>
-<link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>El Blog de las Reformas en Madrid · Guías, Costes y Tendencias 2026</title>
-<meta content="Artículos técnicos, análisis de costes de reformas por metro cuadrado, normativas de licencias y comparativas de materiales en Madrid y Guadalajara redactadas por arquitectos técnicos." name="description"/>
-<meta content="blog reformas madrid, costes reformas madrid, precio m2 reforma madrid, licencias obras madrid, blog reformas viviendas" name="keywords"/>
-<meta content="index, follow" name="robots"/>
-<link href="blog.html" rel="canonical"/>
-<meta content="website" property="og:type"/>
-<meta content="es_ES" property="og:locale"/>
-<meta content="Reformas Madrid" property="og:site_name"/>
-<meta content="El Blog de las Reformas en Madrid · Guías, Costes y Tendencias 2026" property="og:title"/>
-<meta content="Criterio técnico independiente, comparativas reales de materiales y análisis de precios por m² para propietarios en Madrid." property="og:description"/>
-<meta content="blog.html" property="og:url"/>
-<meta content="images/madrid-cluster-01-cocinas.webp" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="El Blog de las Reformas en Madrid · Guías, Costes y Tendencias 2026" name="twitter:title"/>
-<meta content="Artículos técnicos y consejos prácticos de aparejadores colegiados en Madrid." name="twitter:description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<!-- REMIXICON CDN OFICIAL VERIFICADO -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" rel="stylesheet"/>
-<link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
-<style>
-  /* HERO MOBILE FIRST RESPONSIVE PADDING SHIELD (CERO COLISION CON HEADER FIJO) */
-  @media (max-width: 767px) {
-    section#inicio,
-    #inicio,
-    /* inner div cleared */
-    main > section#inicio,
-    .pt-\[152px\],
-    .pt-\[160px\] {
-      padding-top: 140px !important;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>El Blog de las Reformas en Madrid · Guías, Costes y Tendencias 2026 | Sitio Web en Construcci&oacute;n</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    #inicio > div.relative.z-10,
-    section#inicio > div.relative.z-10 {
-      padding-top: 0 !important;
-      padding-bottom: 48px !important;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      min-height: 100vh;
+      background: #090d16;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(15, 23, 42, 1) 0px, #090d16 100%);
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
-    #inicio > div.relative.z-10,
-    section#inicio > div.relative.z-10 {
-      padding-top: 0 !important;
+    .container {
+      max-width: 620px;
+      width: 100%;
+      background: rgba(17, 24, 39, 0.78);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 48px 36px;
+      text-align: center;
+      box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.8),
+        0 0 40px rgba(37, 99, 235, 0.12);
+      animation: fadeIn 0.8s ease-out;
     }
-  }
-  @media (min-width: 768px) {
-    section#inicio,
-    #inicio {
-      padding-top: 140px !important;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    #inicio > div.relative.z-10,
-    section#inicio > div.relative.z-10 {
-      padding-top: 0 !important;
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      font-size: 12px;
+      font-weight: 700;
+      color: #fbbf24;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
     }
-  }
-  /* =======================================================================
-     TOKEN DESIGN FREITECH / SEOLIFE 2026 · PALETA DE LUJO & BLINDAJE DE PADDING
-     ======================================================================= */
-  :root {
-    --ink: #0E1B2E;
-    --gold: #A87E34;
-    --gold-hover: #8C6424;
-    --champagne: #E2C48F;
-    --ice: #F8F9FA;         /* Fondo alterno limpio, fresco y arquitectónico */
-    --card: #FFFFFF;        /* Fichas 100% blancas, limpias y luminosas */
-    --line: #E8E2D6;        /* Borde fino color piedra cálida, CERO tono barro */
-  }
-  html, body {
-    background-color: #FFFFFF !important;
-    color: #0E1B2E !important;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-  .font-editorial {
-    font-family: 'Playfair Display', Georgia, serif !important;
-  }
-
-  /* LEY 8: Tipografía de cuerpo >= 18px Desktop, >= 16px Mobile */
-  p, .text-body {
-    font-size: 18px !important;
-    line-height: 1.65 !important;
-    color: #0E1B2E;
-  }
-  @media (max-width: 767px) {
-    p, .text-body {
-      font-size: 16px !important;
-      line-height: 1.6 !important;
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f59e0b;
+      box-shadow: 0 0 10px #f59e0b;
+      animation: pulse 2s infinite ease-in-out;
     }
-  }
-
-  /* CLASES DE COLOR Y CONTENEDORES PROTEGIDOS */
-  .bg-ink { background-color: #0E1B2E !important; }
-  .text-ink { color: #0E1B2E !important; }
-  .bg-ice { background-color: #F8F9FA !important; }
-  .bg-card { background-color: #FFFFFF !important; }
-  .bg-teal { background-color: #A87E34 !important; }
-  .text-teal { color: #A87E34 !important; }
-  .bg-teal-hover:hover { background-color: #8C6424 !important; }
-  .bg-teal-light { background-color: #E2C48F !important; }
-  .text-teal-light { color: #E2C48F !important; }
-  .border-line { border-color: #E8E2D6 !important; }
-  .border-teal { border-color: #A87E34 !important; }
-  .rounded-20 { border-radius: 20px !important; }
-
-  /* =======================================================================
-     BLINDAJE DE PADDING UTILITARIO (RESTAURACIÓN DE CLASES AUSENTES DE VITE)
-     ======================================================================= */
-  .p-3 { padding: 0.75rem !important; }
-  .p-4 { padding: 1rem !important; }
-  .p-5 { padding: 1.25rem !important; }
-  .p-6 { padding: 1.5rem !important; }
-  .p-7 { padding: 1.75rem !important; }
-  .p-8 { padding: 2rem !important; }
-  .p-9 { padding: 2.25rem !important; }
-  .p-10 { padding: 2.5rem !important; }
-  .p-12 { padding: 3rem !important; }
-
-  .px-2\.5 { padding-left: 0.625rem !important; padding-right: 0.625rem !important; }
-  .px-3 { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
-  .px-3\.5 { padding-left: 0.875rem !important; padding-right: 0.875rem !important; }
-  .px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
-  .px-5 { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
-  .px-6 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
-  .px-7 { padding-left: 1.75rem !important; padding-right: 1.75rem !important; }
-  .px-8 { padding-left: 2rem !important; padding-right: 2rem !important; }
-  .px-9 { padding-left: 2.25rem !important; padding-right: 2.25rem !important; }
-  .px-10 { padding-left: 2.5rem !important; padding-right: 2.5rem !important; }
-
-  .py-2 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
-  .py-2\.5 { padding-top: 0.625rem !important; padding-bottom: 0.625rem !important; }
-  .py-3 { padding-top: 0.75rem !important; padding-bottom: 0.75rem !important; }
-  .py-3\.5 { padding-top: 0.875rem !important; padding-bottom: 0.875rem !important; }
-  .py-4 { padding-top: 1rem !important; padding-bottom: 1rem !important; }
-  .py-5 { padding-top: 1.25rem !important; padding-bottom: 1.25rem !important; }
-
-  @media (min-width: 640px) {
-    .sm\:p-8 { padding: 2rem !important; }
-    .sm\:p-9 { padding: 2.25rem !important; }
-    .sm\:p-10 { padding: 2.5rem !important; }
-    .sm\:px-8 { padding-left: 2rem !important; padding-right: 2rem !important; }
-  }
-  @media (min-width: 768px) {
-    .md\:p-7 { padding: 1.75rem !important; }
-    .md\:p-8 { padding: 2rem !important; }
-    .md\:p-9 { padding: 2.25rem !important; }
-    .md\:p-10 { padding: 2.5rem !important; }
-    .md\:px-8 { padding-left: 2rem !important; padding-right: 2rem !important; }
-  }
-  @media (min-width: 1024px) {
-    .lg\:p-10 { padding: 2.5rem !important; }
-    .lg\:p-12 { padding: 3rem !important; }
-  }
-
-  /* =======================================================================
-     BLINDAJE DE SOMBRAS Y ELEVACIÓN (SHADOWS PRECISAS Y ELEGANTES)
-     ======================================================================= */
-  .shadow-sm { box-shadow: 0 2px 8px rgba(14, 27, 46, 0.05), 0 1px 2px rgba(14, 27, 46, 0.03) !important; }
-  .shadow-md { box-shadow: 0 4px 18px rgba(14, 27, 46, 0.08), 0 2px 6px rgba(14, 27, 46, 0.04) !important; }
-  .shadow-lg { box-shadow: 0 10px 30px rgba(14, 27, 46, 0.10), 0 3px 10px rgba(14, 27, 46, 0.04) !important; }
-  .shadow-xl { box-shadow: 0 20px 45px rgba(14, 27, 46, 0.12), 0 6px 16px rgba(14, 27, 46, 0.06) !important; }
-
-  /* =======================================================================
-     BOTONES DORADOS Y SECUNDARIOS: PADDING INTERNO BLINDADO
-     ======================================================================= */
-  .btn-gold {
-    background-color: #A87E34 !important;
-    color: #FFFFFF !important;
-    font-weight: 700 !important;
-    padding: 13px 28px !important; /* PADDING INTERNO ROBUSTO GARANTIZADO */
-    border-radius: 10px !important;
-    border: 1px solid rgba(226, 196, 143, 0.45) !important;
-    box-shadow: 0 4px 16px rgba(168, 126, 52, 0.28) !important;
-    transition: all 0.25s ease !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px !important;
-    cursor: pointer !important;
-    text-decoration: none !important;
-    letter-spacing: 0.02em !important;
-  }
-  .btn-gold:hover {
-    background-color: #8C6424 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 8px 24px rgba(140, 100, 36, 0.38) !important;
-    color: #FFFFFF !important;
-  }
-
-  header .btn-gold {
-    padding: 10px 22px !important;
-  }
-
-  /* BOTÓN SECUNDARIO / OUTLINE */
-  .btn-secondary,
-  a.border-line.bg-white {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px !important;
-    padding: 13px 26px !important;
-    border-radius: 10px !important;
-    border: 1px solid #D8CBB7 !important;
-    background-color: #FFFFFF !important;
-    color: #0E1B2E !important;
-    font-weight: 600 !important;
-    transition: all 0.25s ease !important;
-    box-shadow: 0 2px 8px rgba(14, 27, 46, 0.04) !important;
-    cursor: pointer !important;
-    text-decoration: none !important;
-  }
-  .btn-secondary:hover,
-  a.border-line.bg-white:hover {
-    border-color: #A87E34 !important;
-    color: #8C6424 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 18px rgba(14, 27, 46, 0.08) !important;
-  }
-
-  /* =======================================================================
-     SECCIÓN DESTACADO: PADDING DEBAJO DEL HERO (EXACTAMENTE 25px)
-     ======================================================================= */
-  #destacado {
-    padding-top: 25px !important;
-    padding-bottom: 40px !important;
-  }
-  @media (min-width: 768px) {
-    #destacado {
-      padding-top: 25px !important;
-      padding-bottom: 56px !important;
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(0.75); opacity: 0.4; }
     }
-  }
-
-  /* =======================================================================
-     PESTAÑAS DE CATEGORÍA DEL BLOG (LETRAS BLANCAS EN HOVER & ACTIVO)
-     ======================================================================= */
-  .blog-tab-btn {
-    padding: 8px 18px !important;
-    border-radius: 9999px !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    border: 1px solid #E8E2D6 !important;
-    background-color: #FFFFFF !important;
-    color: #0E1B2E !important;
-    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    cursor: pointer !important;
-    user-select: none !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    white-space: nowrap !important;
-    box-shadow: 0 1px 3px rgba(14, 27, 46, 0.05) !important;
-  }
-
-  /* Estado Activo: Fondo Dorado #A87E34 + Texto 100% Blanco */
-  .blog-tab-btn.active {
-    background-color: #A87E34 !important;
-    color: #FFFFFF !important;
-    border-color: #A87E34 !important;
-    box-shadow: 0 4px 14px rgba(168, 126, 52, 0.28) !important;
-  }
-
-  /* Estado Hover (activo e inactivo): Fondo Cognac/Dorado #8C6424 + Letras 100% Blancas */
-  .blog-tab-btn:hover,
-  .blog-tab-btn:not(.active):hover,
-  .blog-tab-btn.active:hover,
-  .blog-tab-btn:focus,
-  .blog-tab-btn:focus-visible {
-    background-color: #8C6424 !important;
-    color: #FFFFFF !important;
-    border-color: #8C6424 !important;
-    box-shadow: 0 4px 14px rgba(140, 100, 36, 0.35) !important;
-    transform: translateY(-1px) !important;
-    outline: none !important;
-  }
-
-  /* Cascada garantizada: elementos internos en hover siempre blancos */
-  .blog-tab-btn:hover *,
-  .blog-tab-btn:not(.active):hover *,
-  .blog-tab-btn.active:hover * {
-    color: #FFFFFF !important;
-  }
-  .blog-tab-btn {
-    padding: 8px 18px !important;
-    border-radius: 9999px !important;
-
-    font-weight: 600 !important;
-    border: 1px solid #E8E2D6 !important;
-    background-color: #FFFFFF !important;
-    color: #0E1B2E !important;
-    transition: all 0.2s ease !important;
-    cursor: pointer !important;
-  }
-  .blog-tab-btn-old {
-    background-color: #A87E34 !important;
-    color: #FFFFFF !important;
-    border-color: #A87E34 !important;
-    box-shadow: 0 4px 14px rgba(168, 126, 52, 0.25) !important;
-  }
-
-  /* HEADER & NAVEGACIÓN */
-  header.header-scrim:not(.scrolled) {
-    background: linear-gradient(180deg, rgba(8, 15, 26, 0.95) 0%, rgba(8, 15, 26, 0.7) 70%, transparent 100%) !important;
-  }
-  header.scrolled {
-    background-color: rgba(255, 255, 255, 0.97) !important;
-    backdrop-filter: blur(12px) !important;
-    border-bottom: 1px solid rgba(226, 232, 240, 0.95) !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
-  }
-  header.scrolled nav ul a { color: #0E1B2E !important; }
-  header.scrolled nav ul a:hover { color: #8C6424 !important; }
-  header.scrolled nav a[href*="index.html"] span:first-child { color: #0E1B2E !important; }
-  header.scrolled nav a[href*="index.html"] span:last-child { color: #8C6424 !important; }
-  header.scrolled #btn-mobile-menu {
-    border-color: rgba(226, 232, 240, 0.9) !important;
-    background-color: rgba(14, 27, 46, 0.05) !important;
-    color: #0E1B2E !important;
-  }
-
-  .nav-dropdown { position: relative; display: inline-flex; align-items: center; }
-  .nav-dropdown::after { content: ''; position: absolute; top: 100%; left: 0; right: 0; height: 14px; }
-  .nav-dropdown-menu {
-    position: absolute; top: calc(100% + 6px); left: 50%;
-    transform: translateX(-50%) translateY(8px); min-width: 320px; padding: 8px;
-    border-radius: 16px; opacity: 0; visibility: hidden; pointer-events: none;
-    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s; z-index: 100;
-  }
-  .nav-dropdown:hover .nav-dropdown-menu, .nav-dropdown:focus-within .nav-dropdown-menu, .nav-dropdown.is-open .nav-dropdown-menu {
-    opacity: 1 !important; visibility: visible !important; pointer-events: auto !important;
-    transform: translateX(-50%) translateY(0) !important;
-  }
-  .nav-dropdown:hover .dropdown-chevron, .nav-dropdown.is-open .dropdown-chevron { transform: rotate(180deg); }
-  .dropdown-chevron { transition: transform 0.25s ease; display: inline-flex; align-items: center; }
-
-  header.header-scrim:not(.scrolled) .nav-dropdown-menu {
-    background: rgba(14, 27, 46, 0.97) !important;
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18) !important;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
-  }
-  header.header-scrim:not(.scrolled) .nav-dropdown-item { color: rgba(255, 255, 255, 0.92) !important; }
-  header.header-scrim:not(.scrolled) .nav-dropdown-item:hover { background-color: rgba(255, 255, 255, 0.1) !important; color: #E2C48F !important; }
-
-  header.scrolled .nav-dropdown-menu {
-    background: rgba(255, 255, 255, 0.98) !important;
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(226, 232, 240, 0.95) !important;
-    box-shadow: 0 20px 45px rgba(14, 27, 46, 0.12) !important;
-  }
-  header.scrolled .nav-dropdown-item { color: #0E1B2E !important; }
-  header.scrolled .nav-dropdown-item:hover { background-color: #F8FAFC !important; color: #8C6424 !important; }
-
-  /* BOTÓN VOLVER ARRIBA */
-  #btn-scroll-top {
-    position: fixed !important; bottom: 80px !important; right: 16px !important; z-index: 9999 !important;
-    width: 44px !important; height: 44px !important; display: flex !important; align-items: center !important; justify-content: center !important;
-    border-radius: 9999px !important; background-color: #EFE8DE !important; border: 1px solid #D8CBB7 !important; color: #0E1B2E !important;
-    box-shadow: 0 4px 16px rgba(14, 27, 46, 0.16) !important; cursor: pointer !important; transition: opacity 0.3s ease, transform 0.3s ease !important;
-  }
-  #btn-scroll-top.is-hidden { opacity: 0 !important; pointer-events: none !important; transform: translateY(12px) !important; }
-  #btn-scroll-top.is-visible { opacity: 1 !important; pointer-events: auto !important; transform: translateY(0) !important; }
-
-
-  .blog-tab-btn {
-    transition: all 0.22s ease;
-    cursor: pointer;
-    user-select: none;
-  }
-  .blog-tab-btn.active {
-    background-color: #A87E34 !important;
-    color: #FFFFFF !important;
-    border-color: #A87E34 !important;
-  }
-  .blog-tab-btn-deprecated {
-    border-color: #A87E34 !important;
-    color: #A87E34 !important;
-  }
-
-  /* REGLA LEY 8 CONTRASTE PURO */
-  section:not(.bg-ink) p:not(.text-white):not([class*="text-white"]):not(.scrim-text *),
-  section:not(.bg-ink) li:not(.text-white):not([class*="text-white"]) {
-    color: #0E1B2E !important;
-  }
-  footer, footer * {
-    color: #000000 !important;
-  }
-  footer a:hover {
-    color: #8C6424 !important;
-  }
-
-  /* --- BLINDAJE MODAL CONSULTA RÁPIDA (POPUP PRESUPUESTO) --- */
-  #modal-consulta-backdrop {
-    position: fixed !important;
-    inset: 0 !important;
-    background-color: rgba(14, 27, 46, 0.65) !important;
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
-    z-index: 99990 !important;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease !important;
-  }
-  #modal-consulta-backdrop.is-active {
-    opacity: 1 !important;
-    pointer-events: auto !important;
-  }
-  #modal-consulta-rapida {
-    position: fixed !important;
-    top: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: 100% !important;
-    max-width: 460px !important;
-    background-color: #FFFFFF !important;
-    box-shadow: -10px 0 35px rgba(0, 0, 0, 0.3) !important;
-    transform: translateX(100%) !important;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    z-index: 99995 !important;
-    overflow-y: auto !important;
-  }
-  #modal-consulta-rapida.is-active {
-    transform: translateX(0) !important;
-  }
-
-  /* --- BLINDAJE MENÚ MÓVIL DRAWER (100% OPERATIVO EN CUALQUIER VIEWPORT) --- */
-  #mobile-menu-drawer {
-    position: fixed !important;
-    inset: 0 !important;
-    z-index: 99998 !important;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease !important;
-  }
-  #mobile-menu-drawer.is-active {
-    opacity: 1 !important;
-    pointer-events: auto !important;
-  }
-  #mobile-menu-drawer nav {
-    position: absolute !important;
-    top: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    width: 100% !important;
-    max-width: 360px !important;
-    background-color: #FFFFFF !important;
-    box-shadow: -8px 0 32px rgba(14, 27, 46, 0.25) !important;
-    transform: translateX(100%) !important;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow-y: auto !important;
-    z-index: 99999 !important;
-  }
-  #mobile-menu-drawer.is-active nav {
-    transform: translateX(0) !important;
-  }
-  #mobile-menu-backdrop {
-    position: absolute !important;
-    inset: 0 !important;
-    background: rgba(14, 27, 46, 0.65) !important;
-    backdrop-filter: blur(6px) !important;
-    -webkit-backdrop-filter: blur(6px) !important;
-    z-index: 99998 !important;
-  }
-  header.scrolled #btn-mobile-menu {
-    border-color: rgba(226, 232, 240, 0.9) !important;
-    background-color: rgba(14, 27, 46, 0.05) !important;
-    color: #0E1B2E !important;
-  }
-
-  /* --- HERO MASTER SCRIM & BLOG TABS --- */
-  .hero-master-scrim {
-    position: absolute;
-    inset: 0;
-    background: rgba(8, 15, 26, 0.76) !important;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    z-index: 1;
-    pointer-events: none;
-  }
-  .blog-tab-btn {
-    cursor: pointer;
-    transition: all 0.25s ease !important;
-    user-select: none;
-  }
-  .blog-tab-btn:hover {
-    border-color: #A87E34 !important;
-    color: #8C6424 !important;
-  }
-  .blog-tab-btn.active {
-    background-color: #A87E34 !important;
-    color: #FFFFFF !important;
-    border-color: #A87E34 !important;
-    box-shadow: 0 3px 12px rgba(168, 126, 52, 0.28) !important;
-  }
-  #articulos article {
-    transition: opacity 0.28s ease, transform 0.28s ease;
-  }
-
-  /* BLINDAJE DE DIMENSIONES Y MÁRGENES FALTANTES EN VITE BUNDLE */
-  .w-10 { width: 2.5rem !important; }
-  .h-10 { height: 2.5rem !important; }
-  .w-11 { width: 2.75rem !important; }
-  .h-11 { height: 2.75rem !important; }
-  .w-12 { width: 3rem !important; }
-  .h-12 { height: 3rem !important; }
-
-  .mb-1 { margin-bottom: 0.25rem !important; }
-  .mb-1\.5 { margin-bottom: 0.375rem !important; }
-  .mb-2 { margin-bottom: 0.5rem !important; }
-  .mb-3 { margin-bottom: 0.75rem !important; }
-  .mb-4 { margin-bottom: 1rem !important; }
-  .mb-5 { margin-bottom: 1.25rem !important; }
-  .mb-6 { margin-bottom: 1.5rem !important; }
-  .mb-7 { margin-bottom: 1.75rem !important; }
-  .mb-8 { margin-bottom: 2rem !important; }
-  .mb-10 { margin-bottom: 2.5rem !important; }
-  .mb-12 { margin-bottom: 3rem !important; }
-  .mb-14 { margin-bottom: 3.5rem !important; }
-  .mb-16 { margin-bottom: 4rem !important; }
-
-  .mt-1 { margin-top: 0.25rem !important; }
-  .mt-1\.5 { margin-top: 0.375rem !important; }
-  .mt-2 { margin-top: 0.5rem !important; }
-  .mt-3 { margin-top: 0.75rem !important; }
-  .mt-4 { margin-top: 1rem !important; }
-  .mt-6 { margin-top: 1.5rem !important; }
-  .mt-8 { margin-top: 2rem !important; }
-
-
-  /* HERO HEADINGS (PLAYFAIR DISPLAY ESCALA EDITORIAL REFINADA Y CENTRADA) */
-  .hero-heading {
-    font-size: 30px !important;
-    line-height: 1.15 !important;
-  }
-  @media (min-width: 640px) {
-    .hero-heading {
-      font-size: 38px !important;
-      line-height: 1.12 !important;
+    .icon-wrapper {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 24px;
+      background: rgba(37, 99, 235, 0.1);
+      border: 1px solid rgba(37, 99, 235, 0.25);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #60a5fa;
     }
-  }
-  @media (min-width: 768px) {
-    .hero-heading {
-      font-size: 44px !important;
-      line-height: 1.1 !important;
+    .icon-wrapper svg {
+      width: 36px;
+      height: 36px;
     }
-  }
-  @media (min-width: 1024px) {
-    .hero-heading {
-      font-size: 48px !important;
-      line-height: 1.08 !important;
+    h1 {
+      font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+      font-weight: 800;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 12px;
+      letter-spacing: -0.025em;
     }
-    .lg\:grid-cols-4 {
-      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    .subtitle {
+      font-size: clamp(1rem, 2vw, 1.1rem);
+      color: #94a3b8;
+      margin-bottom: 32px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 400;
     }
-  }
-  @media (min-width: 1280px) {
-    .hero-heading {
-      font-size: 52px !important;
-      line-height: 1.08 !important;
+    .progress-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 32px;
+      text-align: left;
     }
-  }
-
-
-  
-
-  
-
-  /* ==========================================================================
-     BLINDAJE ULTRA-DEFINITIVO: HEADER DESKTOP VS SUB-BARRA RESPONSIVE
-     ========================================================================== */
-  @media (max-width: 1023px) {
-    header .btn-header-desktop,
-    header button.btn-header-desktop,
-    header .btn-open-popup-presupuesto.btn-header-desktop,
-    .btn-header-desktop {
-      display: none !important;
-      visibility: hidden !important;
-      width: 0 !important;
-      height: 0 !important;
-      min-width: 0 !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      border: none !important;
-      opacity: 0 !important;
-      pointer-events: none !important;
+    .progress-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 10px;
     }
-    header #btn-mobile-menu,
-    #btn-mobile-menu {
-      display: flex !important;
-      visibility: visible !important;
-      opacity: 1 !important;
+    .progress-bar-bg {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 9999px;
+      overflow: hidden;
     }
-    header .header-subbar,
-    .header-subbar {
-      display: flex !important;
-      visibility: visible !important;
-      opacity: 1 !important;
+    .progress-bar-fill {
+      height: 100%;
+      width: 82%;
+      background: linear-gradient(90deg, #2563eb, #38bdf8);
+      border-radius: 9999px;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
     }
-  }
-
-  @media (min-width: 1024px) {
-    header .btn-header-desktop,
-    header button.btn-header-desktop,
-    header .btn-open-popup-presupuesto.btn-header-desktop,
-    .btn-header-desktop {
-      display: inline-flex !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      pointer-events: auto !important;
-      font-size: 12.5px !important;
-      padding: 9px 18px !important;
-      letter-spacing: 0.04em !important;
+    .progress-note {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 10px;
     }
-    header #btn-mobile-menu,
-    #btn-mobile-menu {
-      display: none !important;
-      visibility: hidden !important;
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #2563eb;
+      color: #ffffff;
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
     }
-    header .header-subbar,
-    .header-subbar {
-      display: none !important;
-      visibility: hidden !important;
+    .btn-contact:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(37, 99, 235, 0.45);
     }
-  }
-
-  /* ESTILOS DE LA SUB-BARRA RESPONSIVE (DEBAJO DEL HEADER) */
-  .header-subbar {
-    width: 100% !important;
-    max-height: 54px !important;
-    opacity: 1 !important;
-    overflow: hidden !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
-    background: rgba(14, 27, 46, 0.94) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    padding: 6px 16px !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-    transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, padding 0.35s ease, border-color 0.25s ease !important;
-  }
-
-  /* AL HACER SCROLL: SE OCULTA COMPLETAMENTE PARA NO SATURAR EL VIEWPORT MÓVIL */
-  header.scrolled .header-subbar {
-    max-height: 0 !important;
-    opacity: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    border-top-color: transparent !important;
-    border-bottom: none !important;
-    box-shadow: none !important;
-    pointer-events: none !important;
-    visibility: hidden !important;
-  }
-
-  .header-subbar .subbar-text {
-    font-size: 12px !important;
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-weight: 500 !important;
-  }
-  .header-subbar .btn-header-mobile {
-    background-color: #A87E34 !important;
-    border: 1px solid rgba(226, 196, 143, 0.6) !important;
-    color: #FFFFFF !important;
-    padding: 4px 12px !important;
-    font-size: 11.5px !important;
-    font-weight: 700 !important;
-    border-radius: 9999px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
-    cursor: pointer !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.03em !important;
-  }
-</style>
+    .footer {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 13px;
+      color: #64748b;
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 20px;
+        border-radius: 20px;
+      }
+      .btn-contact {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-<div id="root">
-<div class="page-enter">
-<div class="min-h-screen bg-white text-ink">
-
-<!-- HEADER NAVEGACIÓN -->
-<header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-transparent">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
-    <nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-4 xl:gap-6">
-      <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="index.html">
-        <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
-        <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-teal-light [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
-      </a>
-
-      <ul class="hidden lg:flex items-center gap-3 xl:gap-6 header-nav-list">
-        <!-- DROPDOWN GUADALAJARA -->
-        <li class="nav-dropdown group relative">
-          <a class="nav-dropdown-trigger flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../readdy_captured_complete/index.html">
-            <span>REFORMAS EN GUADALAJARA</span>
-            <i class="ri-arrow-down-s-line text-[15px] dropdown-chevron"></i>
-          </a>
-          <div class="nav-dropdown-menu">
-            <div class="flex flex-col gap-1">
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../readdy_captured_complete/index.html#estancias">
-                <i class="ri-home-4-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Reformas integrales en Guadalajara</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../readdy_captured_complete/index.html#oficios">
-                <i class="ri-temp-cold-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Instalación de aire acondicionado en Guadalajara</span>
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <!-- DROPDOWN MADRID -->
-        <li class="nav-dropdown group relative">
-          <a class="nav-dropdown-trigger flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="index.html">
-            <span>REFORMAS EN MADRID</span>
-            <i class="ri-arrow-down-s-line text-[15px] dropdown-chevron"></i>
-          </a>
-          <div class="nav-dropdown-menu">
-            <div class="flex flex-col gap-1">
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../landings_secundarias_madrid/reformas-cocinas-madrid.html">
-                <i class="ri-restaurant-2-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Reformas de cocinas en Madrid</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../landings_secundarias_madrid/reformas-banos-madrid.html">
-                <i class="ri-drop-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Reformas de baños en Madrid</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../landings_secundarias_madrid/reformas-locales-comerciales-madrid.html">
-                <i class="ri-store-2-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Reformas de locales comerciales en Madrid</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../landings_secundarias_madrid/reformas-oficinas-madrid.html">
-                <i class="ri-building-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Reformas de oficinas en Madrid</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../landings_secundarias_madrid/cambio-banera-por-plato-ducha-madrid.html">
-                <i class="ri-contrast-drop-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Cambio de bañera por plato de ducha en Madrid</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../landings_secundarias_madrid/instalacion-aire-acondicionado-madrid.html">
-                <i class="ri-temp-cold-line text-[16px] shrink-0 text-teal-light"></i>
-                <span>Instalación de aire acondicionado en Madrid</span>
-              </a>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="nosotros.html">NOSOTROS</a>
-        </li>
-        <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="contacto.html">CONTACTO</a>
-        </li>
-        <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-teal-light py-2" href="blog.html">BLOG</a>
-        </li>
-      </ul>
-
-            <div class="flex items-center gap-3">
-        <button type="button" class="btn-open-popup-presupuesto btn-header-desktop btn-gold bg-teal hidden lg:inline-flex items-center gap-2 rounded-md px-3.5 py-2 xl:px-5 xl:py-2.5 text-[11.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
-          <span>PEDIR PRESUPUESTO</span>
-          <i class="ri-arrow-right-line text-[15px]"></i>
-        </button>
-        <button id="btn-mobile-menu" aria-label="Abrir menú" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md border cursor-pointer transition-colors border-white/35 bg-white/10 text-white backdrop-blur-sm" type="button">
-          <i class="ri-menu-line text-[20px]"></i>
-        </button>
-      </div>
-    </nav>
-  </div>
-
-  <!-- SUB-BARRA RESPONSIVE: BOTÓN PEDIR PRESUPUESTO DEBAJO DEL HEADER (PEQUEÑO Y DISCRETO) -->
-  <div class="header-subbar lg:hidden">
-    <span class="subbar-text flex items-center gap-1.5">
-      <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-      Visita gratuita 48-72h
-    </span>
-    <button type="button" class="btn-open-popup-presupuesto btn-header-mobile" aria-label="Pedir Presupuesto">
-      <span>Pedir Presupuesto</span>
-      <i class="ri-arrow-right-line"></i>
-    </button>
-  </div>
-</header>
-
-<!-- DRAWER MÓVIL RESPONSIVE -->
-<div id="mobile-menu-drawer" class="fixed inset-0 z-[100] transition-all duration-300 pointer-events-none opacity-0" aria-hidden="true">
-  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-ink/60 backdrop-blur-sm transition-opacity duration-300"></div>
-  <nav class="absolute top-0 right-0 bottom-0 w-full max-w-[360px] bg-white shadow-2xl flex flex-col transition-transform duration-300 translate-x-full overflow-y-auto" aria-label="Menú móvil">
-    <div class="flex items-center justify-between p-5 border-b border-line bg-ice">
-      <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="index.html">
-        <span class="text-[17px] font-bold text-ink">REFORMAS</span>
-        <span class="text-[17px] font-bold text-teal">MADRID</span>
-      </a>
-      <button id="btn-close-mobile-menu" aria-label="Cerrar menú" class="w-10 h-10 flex items-center justify-center rounded-md border border-line text-ink cursor-pointer" type="button">
-        <i class="ri-close-line text-[22px]"></i>
-      </button>
-    </div>
-    <div class="flex-1 px-5 py-6 flex flex-col gap-3">
-      <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink" href="../readdy_captured_complete/index.html">REFORMAS GUADALAJARA</a>
-      </div>
-      <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink" href="index.html">REFORMAS EN MADRID</a>
-      </div>
-      <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink" href="nosotros.html">NOSOTROS</a>
-      </div>
-      <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink" href="contacto.html">CONTACTO</a>
-      </div>
-      <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-teal" href="blog.html">BLOG</a>
-      </div>
-      <div class="pt-4">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal w-full flex items-center justify-center gap-2 rounded-md px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white text-center cursor-pointer shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
-          <span>PEDIR PRESUPUESTO</span>
-          <i class="ri-arrow-right-line text-[16px]"></i>
-        </button>
-      </div>
-    </div>
-  </nav>
-</div>
-
-<main>
-<!-- HERO EDITORIAL DEL BLOG: 100% INFORMATIVO Y PROFESIONAL -->
-<section class="relative w-full isolate overflow-hidden bg-ink text-white pt-[140px] md:pt-[140px] pb-16 md:pb-24 border-b border-white/10" id="inicio">
-  <img class="absolute inset-0 h-full w-full object-cover object-center" src="images/madrid-trade-interiorismo.webp" alt="Revista técnica de arquitectura y reformas en Madrid"/>
-  <!-- CAPA DE OSCURECIMIENTO MAESTRA DEL HERO -->
-  <div aria-hidden="true" class="hero-master-scrim"></div>
-  <div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div>
-
-  <div class="relative z-10 mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    <div class="max-w-[880px] mx-auto text-center flex flex-col items-center">
-      <h1 class="font-editorial hero-heading font-bold text-white tracking-[-0.02em] text-center">
-        El Blog de las Reformas en Madrid:<br/>
-        <span class="italic text-teal-light">guías técnicas, costes y tendencias 2026.</span>
-      </h1>
-
-      <p class="mt-5 text-[17px] sm:text-[19px] md:text-[20px] leading-[1.65] text-white/90 max-w-[780px] mx-auto text-center [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)]">
-        Criterio técnico independiente redactado por aparejadores y arquitectos de Reformas Madrid. Análisis de precios por metro cuadrado, comparativas objetivas de materiales y requisitos normativos de licencias en la Comunidad de Madrid.
-      </p>
-
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
-        <a class="inline-flex items-center justify-center gap-2.5 rounded-md btn-gold text-[15.5px] font-bold text-white transition-all whitespace-nowrap shadow-md text-center px-7 py-3.5" href="#destacado">
-          <span>Ver Artículo Destacado</span>
-          <i class="ri-arrow-down-line text-[18px]"></i>
-        </a>
-        <a class="inline-flex items-center justify-center gap-2 rounded-md border border-white/30 bg-white/10 px-6 py-3.5 text-[15px] font-semibold text-white backdrop-blur-sm hover:bg-white/20 transition-all cursor-pointer" href="#articulos">
-          <i class="ri-list-check-2 text-[18px] text-teal-light"></i>
-          <span>Explorar Todas las Guías</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECCIÓN 1: ARTÍCULO DESTACADO DE PORTADA -->
-<section class="w-full bg-white border-b border-line" id="destacado" style="padding-top: 25px !important; padding-bottom: 40px !important;">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
-    
-    <div class="rounded-20 border border-line bg-card overflow-hidden shadow-lg grid grid-cols-1 lg:grid-cols-12 items-stretch">
-      
-      <!-- FOTOGRAFÍA DESTACADA (7 COLS) -->
-      <div class="lg:col-span-7 relative min-h-[320px] sm:min-h-[400px] lg:min-h-[460px] overflow-hidden bg-ink">
-        <img alt="Cocina abierta al salón con isla en cascada de porcelánico calacatta e iluminación LED integrada en Madrid" class="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/blog_cocina_isla_2026_1792823888355.jpg"/>
-        <div class="absolute top-4 left-4 rounded-md bg-ink/90 backdrop-blur-md px-3.5 py-1.5 text-[14px] font-bold uppercase tracking-wider text-teal-light shadow-sm">
-          Artículo Destacado · Diseño &amp; Técnica
-        </div>
-      </div>
-
-      <!-- CONTENIDO EDITORIAL (5 COLS) -->
-      <div class="lg:col-span-5 p-7 sm:p-10 lg:p-12 flex flex-col justify-center">
-        <div class="flex items-center gap-3 text-[15px] font-bold uppercase tracking-wider text-teal mb-3">
-          <span>Cocinas de Lujo</span>
-          <span>·</span>
-          <span>7 min de lectura</span>
-        </div>
-
-        <h2 class="font-editorial text-[26px] sm:text-[32px] lg:text-[36px] font-bold text-ink leading-[1.16] mb-4">
-          Cocinas abiertas al salón con isla en cascada: claves técnicas en pisos de Madrid
-        </h2>
-
-        <p class="text-body text-ink/80 mb-6">
-          Cómo solucionar la evacuación de humos en fincas históricas de techos altos, la selección de porcelánicos antibacterianos frente al cuarzo y la integración estética mediante carpintería alistonada de roble natural y foseados perimetrales.
-        </p>
-
-        <div class="pt-2 flex flex-wrap items-center gap-4">
-          <a class="inline-flex items-center justify-center gap-2 rounded-md btn-gold px-7 py-3.5 text-[15px] font-bold uppercase tracking-wider text-white shadow-md transition-all" href="contacto.html">
-            <span>Consultar con un Técnico</span>
-            <i class="ri-arrow-right-line text-[16px]"></i>
-          </a>
-          <span class="text-[14.5px] text-ink/80 font-medium">Por Carlos M. Santillana (COAATM)</span>
-        </div>
-      </div>
-
+  <main class="container">
+    <div class="badge">
+      <span class="pulse-dot"></span>
+      Sitio Web en Construcci&oacute;n
     </div>
 
-  </div>
-</section>
-
-<!-- BARRA DE CATEGORÍAS TÉCNICAS (CON FILTRADO ACTIVO EN VIVO) -->
-<section class="w-full bg-ice py-5 border-b border-line sticky top-[68px] md:top-[76px] z-40 backdrop-blur-md bg-ice/95">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
-    <div class="flex items-center gap-3 overflow-x-auto no-scrollbar py-1 md:justify-center">
-      <span class="text-[14.5px] font-bold uppercase tracking-wider text-teal shrink-0 mr-2 flex items-center gap-1">
-        <i class="ri-filter-3-line text-[15px]"></i> Categorías:
-      </span>
-      <button class="blog-tab-btn active shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="all">
-        Todos los Artículos (6)
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="costes">
-        Costes &amp; Presupuestos
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="cocinas-banos">
-        Cocinas &amp; Baños
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="licencias">
-        Licencias &amp; Normativa
-      </button>
-      <button class="blog-tab-btn shrink-0 rounded-full border border-line shadow-sm" type="button" data-category="climatizacion">
-        Climatización &amp; Aislamiento
-      </button>
-    </div>
-  </div>
-</section>
-
-
-<!-- SECCIÓN 2: ARCHIVO DE GUÍAS TÉCNICAS (GRID 6 ARTÍCULOS SIN REPETIR MEDIOS) -->
-<section class="w-full bg-ice py-16 md:py-24" id="articulos">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
-    
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
-      <div>
-        <span class="text-[15px] font-bold uppercase tracking-[0.16em] text-teal block mb-1">Archivo de Conocimiento</span>
-        <h2 class="font-editorial text-[30px] sm:text-[38px] md:text-[44px] font-bold text-ink leading-tight mt-1">
-          Guías prácticas redactadas por aparejadores
-        </h2>
-      </div>
-      <p class="max-w-[420px] text-body text-ink/80">
-        Información técnica transparente sobre precios reales, licencias municipales y soluciones constructivas en Madrid y Guadalajara.
-      </p>
+    <div class="icon-wrapper">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+      </svg>
     </div>
 
-    <!-- GRID DE 6 ARTÍCULOS TÉCNICOS CON MEDIOS ÚNICOS -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- ARTÍCULO 1: GUÍA DE COSTES 2026 -->
-      <article class="flex flex-col rounded-20 border border-line bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" data-cat="costes">
-        <div class="relative overflow-hidden bg-ink w-full" style="aspect-ratio: 16/10;">
-          <img alt="Desglose de presupuesto de reforma de vivienda en Madrid con tablet y planos de arquitectura" class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/blog_guia_costes_2026_1792823919035.jpg"/>
-          <span class="absolute top-3 left-3 rounded-md bg-ink/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-bold text-teal-light shadow-sm">Presupuestos &amp; Costes</span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <div class="flex items-center gap-2 text-[12.5px] font-semibold text-teal mb-2">
-            <span>Economía de Obra</span>
-            <span>·</span>
-            <span>5 min lectura</span>
-          </div>
-          <h3 class="font-editorial text-[21px] font-bold text-ink leading-snug mb-3 hover:text-teal transition-colors">
-            Guía de Costes de Reforma en Madrid 2026: Desglose por m² y Partidas
-          </h3>
-          <p class="text-[15.5px] leading-[1.65] text-ink/80 flex-1 mb-5">
-            Analizamos partidas reales de demolición, fontanería RITE, electricidad con boletín oficial y revestimientos porcelánicos para pisos de 70 a 120 m².
-          </p>
-          <div class="pt-4 border-t border-line/60 flex items-center justify-between text-[13px] font-bold text-teal">
-            <a class="flex items-center gap-1.5 hover:underline" href="contacto.html">
-              <span>Pedir desglose personalizado</span>
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-      </article>
+    <h1>El Blog de las Reformas en Madrid · Guías, Costes y Tendencias 2026</h1>
+    <p class="subtitle">Estamos renovando nuestra plataforma para ofrecer una experiencia digital de vanguardia, alta velocidad y dise&ntilde;o premium. Muy pronto estaremos en l&iacute;nea.</p>
 
-      <!-- ARTÍCULO 2: MICROCEMENTO VS PORCELÁNICO -->
-      <article class="flex flex-col rounded-20 border border-line bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" data-cat="cocinas-banos">
-        <div class="relative overflow-hidden bg-ink w-full" style="aspect-ratio: 16/10;">
-          <img alt="Baño moderno de diseño con microcemento continuo, grifería empotrada negra y espejo retroiluminado" class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/blog_bano_microcemento_2026_1792823919174.jpg"/>
-          <span class="absolute top-3 left-3 rounded-md bg-ink/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-bold text-teal-light shadow-sm">Baños &amp; Materiales</span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <div class="flex items-center gap-2 text-[12.5px] font-semibold text-teal mb-2">
-            <span>Materiales Nobles</span>
-            <span>·</span>
-            <span>6 min lectura</span>
-          </div>
-          <h3 class="font-editorial text-[21px] font-bold text-ink leading-snug mb-3 hover:text-teal transition-colors">
-            Microcemento vs. Gres Porcelánico en Baños: Comparativa de Durabilidad
-          </h3>
-          <p class="text-[15.5px] leading-[1.65] text-ink/80 flex-1 mb-5">
-            Ventajas de la ausencia de juntas frente a baldosas rectificadas de gran formato. Tratamientos hidrófugos de poliuretano y platos de ducha enrasados.
-          </p>
-          <div class="pt-4 border-t border-line/60 flex items-center justify-between text-[13px] font-bold text-teal">
-            <a class="flex items-center gap-1.5 hover:underline" href="contacto.html">
-              <span>Consultar acabados para baños</span>
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ARTÍCULO 3: LICENCIAS DE OBRA EN MADRID -->
-      <article class="flex flex-col rounded-20 border border-line bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" data-cat="licencias">
-        <div class="relative overflow-hidden bg-ink w-full" style="aspect-ratio: 16/10;">
-          <img alt="Proyecto y licencias de obra visadas por arquitecto técnico en Madrid" class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="images/madrid-project-chamberi.webp"/>
-          <span class="absolute top-3 left-3 rounded-md bg-ink/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-bold text-teal-light shadow-sm">Licencias &amp; Normativa</span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <div class="flex items-center gap-2 text-[12.5px] font-semibold text-teal mb-2">
-            <span>Burocracia Municipal</span>
-            <span>·</span>
-            <span>5 min lectura</span>
-          </div>
-          <h3 class="font-editorial text-[21px] font-bold text-ink leading-snug mb-3 hover:text-teal transition-colors">
-            Licencias en Madrid: Declaración Responsable vs. Licencia Urbanística
-          </h3>
-          <p class="text-[15.5px] leading-[1.65] text-ink/80 flex-1 mb-5">
-            Plazos de tramitación ante la Agencia de Actividades de Madrid, tasas municipales y cuándo es preceptivo el proyecto visado por arquitecto técnico.
-          </p>
-          <div class="pt-4 border-t border-line/60 flex items-center justify-between text-[13px] font-bold text-teal">
-            <a class="flex items-center gap-1.5 hover:underline" href="contacto.html">
-              <span>Revisar tu caso de licencia</span>
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ARTÍCULO 4: AEROTERMIA Y CLIMATIZACIÓN -->
-      <article class="flex flex-col rounded-20 border border-line bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" data-cat="climatizacion">
-        <div class="relative overflow-hidden bg-ink w-full" style="aspect-ratio: 16/10;">
-          <img alt="Instalación de conductos de climatización y máquina de aerotermia oculta en falso techo" class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="images/madrid-trade-aerotermia.webp"/>
-          <span class="absolute top-3 left-3 rounded-md bg-ink/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-bold text-teal-light shadow-sm">Climatización &amp; Confort</span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <div class="flex items-center gap-2 text-[12.5px] font-semibold text-teal mb-2">
-            <span>Eficiencia Energética</span>
-            <span>·</span>
-            <span>6 min lectura</span>
-          </div>
-          <h3 class="font-editorial text-[21px] font-bold text-ink leading-snug mb-3 hover:text-teal transition-colors">
-            Aerotermia por Suelo Radiante y Fancoils: Ahorro Térmico Real
-          </h3>
-          <p class="text-[15.5px] leading-[1.65] text-ink/80 flex-1 mb-5">
-            Requisitos de altura en falsos techos, zonificación independiente Airzone y cómo reducir hasta un 70% el consumo eléctrico en invierno y verano.
-          </p>
-          <div class="pt-4 border-t border-line/60 flex items-center justify-between text-[13px] font-bold text-teal">
-            <a class="flex items-center gap-1.5 hover:underline" href="contacto.html">
-              <span>Pedir estudio de climatización</span>
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ARTÍCULO 5: AISLAMIENTO ACÚSTICO -->
-      <article class="flex flex-col rounded-20 border border-line bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" data-cat="climatizacion">
-        <div class="relative overflow-hidden bg-ink w-full" style="aspect-ratio: 16/10;">
-          <img alt="Salón reformado con trasdosados acústicos y acabados de lujo en Chamberí" class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="images/madrid-project-tetuan.webp"/>
-          <span class="absolute top-3 left-3 rounded-md bg-ink/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-bold text-teal-light shadow-sm">Aislamiento &amp; Silencio</span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <div class="flex items-center gap-2 text-[12.5px] font-semibold text-teal mb-2">
-            <span>Bienestar Acústico</span>
-            <span>·</span>
-            <span>5 min lectura</span>
-          </div>
-          <h3 class="font-editorial text-[21px] font-bold text-ink leading-snug mb-3 hover:text-teal transition-colors">
-            Aislamiento Acústico en Fincas Clásicas: Soluciones ante Ruidos Vecinales
-          </h3>
-          <p class="text-[15.5px] leading-[1.65] text-ink/80 flex-1 mb-5">
-            Sistemas de trasdosado autoportante con láminas viscoelásticas bicapa, lana mineral y rotura de puentes fónicos en medianeras antiguas de Madrid.
-          </p>
-          <div class="pt-4 border-t border-line/60 flex items-center justify-between text-[13px] font-bold text-teal">
-            <a class="flex items-center gap-1.5 hover:underline" href="contacto.html">
-              <span>Consultar insonorización</span>
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ARTÍCULO 6: ILUMINACIÓN ARQUITECTÓNICA -->
-      <article class="flex flex-col rounded-20 border border-line bg-white overflow-hidden shadow-sm hover:shadow-md transition-all duration-300" data-cat="cocinas-banos">
-        <div class="relative overflow-hidden bg-ink w-full" style="aspect-ratio: 16/10;">
-          <img alt="Dormitorio con iluminación indirecta LED cálida y carpintería enrasada a medida" class="h-full w-full object-cover object-center transition-transform duration-500 hover:scale-105 block" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" src="images/madrid-project-moratalaz.webp"/>
-          <span class="absolute top-3 left-3 rounded-md bg-ink/90 backdrop-blur-sm px-2.5 py-1 text-[11px] font-bold text-teal-light shadow-sm">Iluminación Técnica</span>
-        </div>
-        <div class="p-7 flex flex-col flex-1">
-          <div class="flex items-center gap-2 text-[12.5px] font-semibold text-teal mb-2">
-            <span>Interiorismo Lumínico</span>
-            <span>·</span>
-            <span>5 min lectura</span>
-          </div>
-          <h3 class="font-editorial text-[21px] font-bold text-ink leading-snug mb-3 hover:text-teal transition-colors">
-            Iluminación Técnica: Foseados LED, Carriles Magnéticos y Control DALI
-          </h3>
-          <p class="text-[15.5px] leading-[1.65] text-ink/80 flex-1 mb-5">
-            Cómo proyectar escenas lumínicas cálidas (2700K - 3000K), integrar carriles magnéticos enrasados y dimensionar fuentes de alimentación ocultas.
-          </p>
-          <div class="pt-4 border-t border-line/60 flex items-center justify-between text-[13px] font-bold text-teal">
-            <a class="flex items-center gap-1.5 hover:underline" href="contacto.html">
-              <span>Ver proyectos con iluminación LED</span>
-              <i class="ri-arrow-right-line"></i>
-            </a>
-          </div>
-        </div>
-      </article>
-
+    <div class="progress-card">
+      <div class="progress-header">
+        <span>Fase de Preparaci&oacute;n y Despliegue</span>
+        <span>82%</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill"></div>
+      </div>
+      <p class="progress-note">Arquitectura, maquetaci&oacute;n responsiva y contenidos en fase final de verificaci&oacute;n.</p>
     </div>
 
-  </div>
-</section>
+    <a href="mailto:aitautimatizacion@gmail.com?subject=Consulta%20sobre%20El%20Blog%20de%20las%20Reformas%20en%20Madrid%20%C2%B7%20Gu%C3%ADas%2C%20Costes%20y%20Tendencias%202026" class="btn-contact">
+      <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+      </svg>
+      Contactar / M&aacute;s Informaci&oacute;n
+    </a>
 
-<!-- SECCIÓN 3: CIERRE INFORMATIVO Y CONTACTO CON EL EQUIPO TÉCNICO -->
-<section class="w-full bg-white py-16 md:py-24 border-t border-line">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12 text-center">
-    <div class="max-w-[800px] mx-auto">
-      <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal">Asesoramiento Profesional</span>
-      <h2 class="font-editorial text-[30px] sm:text-[38px] md:text-[42px] font-bold text-ink leading-tight mt-2 mb-4">
-        ¿Tienes dudas sobre la reforma de tu vivienda en Madrid?
-      </h2>
-      <p class="text-body text-ink/80 mb-8 max-w-[680px] mx-auto">
-        Nuestro equipo de arquitectos técnicos colegiados resolverá tus preguntas sobre distribución, normativas municipales, calidades de materiales y costes de obra sin ningún coste ni compromiso.
-      </p>
-      <div class="flex flex-wrap items-center justify-center gap-4">
-        <a class="inline-flex items-center justify-center gap-2.5 rounded-md btn-gold text-[16px] font-bold text-white transition-all whitespace-nowrap shadow-md text-center px-8 py-4" href="contacto.html">
-          <span>Solicitar Visita Técnica Gratuita</span>
-          <i class="ri-arrow-right-line text-[18px]"></i>
-        </a>
-        <a class="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-white px-7 py-4 text-[15px] font-semibold text-ink hover:border-teal transition-all shadow-sm" href="tel:+34910000000">
-          <i class="ri-phone-line text-[18px] text-teal"></i>
-          <span>Llamar al +34 910 00 00 00</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- FOOTER CANÓNICO TOKEN DESIGN SEOLIFE 2026 -->
-<footer class="w-full bg-ice border-t border-line/60">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16">
-    <div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10">
-      <div class="md:col-span-5">
-        <div class="flex items-center gap-1.5">
-          <span class="text-[18px] font-bold tracking-[-0.01em] text-black">REFORMAS</span>
-          <span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span>
-        </div>
-        <p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-black font-normal">
-          Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.
-        </p>
-        <div class="mt-5 flex flex-col gap-2 text-[15px] text-black font-medium">
-          <a class="hover:text-[#8C6424] transition-colors cursor-pointer whitespace-nowrap text-black font-semibold" href="tel:+34910000000">+34 910 00 00 00</a>
-          <span class="text-black">Calle Mayor 42, 19001 Madrid</span>
-        </div>
-      </div>
-      <div class="md:col-span-3">
-        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black"><a class="cursor-pointer text-black" href="index.html#estancias">Navegación</a></h4>
-        <ul class="mt-4 flex flex-col gap-2.5 text-[15px] text-black font-medium">
-          <li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="index.html#estancias">Estancias</a></li>
-          <li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="index.html#proyectos">Proyectos</a></li>
-          <li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="index.html#fases">Fases</a></li>
-          <li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="index.html#oficios">Oficios</a></li>
-          <li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="index.html#tarifas">Tarifas</a></li>
-          <li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer" href="nosotros.html">Nosotros</a></li>
-          <li><a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer font-bold text-[#8C6424]" href="blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div class="md:col-span-4">
-        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black"><a class="cursor-pointer text-black" href="contacto.html">Contacto</a></h4>
-        <ul class="mt-4 flex flex-col gap-2.5 text-[15px] text-black font-medium">
-          <li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="https://wa.me/34910000000" rel="noopener noreferrer" target="_blank">WhatsApp · respuesta en 24 h</a></li>
-          <li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="mailto:contacto@reformasmadrid.es">contacto@reformasmadrid.es</a></li>
-          <li class="text-black">Lun–Vie 8:30–19:00 · Sábado con cita previa</li>
-          <li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black font-semibold underline underline-offset-2" href="contacto.html">Formulario de contacto</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-black/15 py-6">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-black font-medium text-center md:text-left">
-        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
-          <span class="text-black font-medium">Reformas Madrid · © 2026 Todos los derechos reservados.</span>
-          <span class="hidden sm:inline text-black/30">|</span>
-          <span class="text-black/80 font-medium">Diseñado por <strong class="text-black font-semibold">SEOLife</strong></span>
-        </div>
-        <div class="flex flex-wrap items-center justify-center gap-y-2 text-[13px]">
-          <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="#aviso-legal">Aviso Legal</a>
-          <span class="text-black/40 select-none px-2 sm:px-3">·</span>
-          <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="#politica-de-privacidad">Política de Privacidad</a>
-          <span class="text-black/40 select-none px-2 sm:px-3">·</span>
-          <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="#politica-de-cookies">Política de Cookies</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- BOTÓN FLOTANTE SUBIR (BEIGE SUAVE) -->
-<button id="btn-scroll-top" aria-label="Volver arriba" type="button" class="is-hidden" title="Volver al inicio">
-  <i class="ri-arrow-up-line text-[19px] font-bold text-ink"></i>
-</button>
-
-<!-- BOTÓN FLOTANTE CONSULTA RÁPIDA -->
-<button id="btn-floating-consulta" aria-label="Abrir consulta rápida" class="btn-open-popup-presupuesto fixed bottom-5 right-4 z-[60] flex items-center gap-2.5 rounded-full border border-line bg-white/95 py-2.5 pl-3.5 pr-4 shadow-[0_12px_32px_rgba(15,20,23,0.12)] backdrop-blur-md transition-all duration-300 hover:border-teal/40 cursor-pointer md:bottom-6 md:right-6 opacity-100" type="button">
-  <span class="relative flex h-2 w-2 items-center justify-center">
-    <span class="absolute inline-flex h-2 w-2 animate-ping rounded-full bg-okgreen opacity-60"></span>
-    <span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span>
-  </span>
-  <i class="ri-chat-3-line text-[16px] text-teal"></i>
-  <span class="text-[12.5px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span>
-</button>
-
-<!-- BACKDROP & MODAL POPUP DRAWER (CONSULTA RÁPIDA / PEDIR PRESUPUESTO) -->
-<div id="modal-consulta-backdrop" aria-hidden="true" class="fixed inset-0 z-[70] bg-ink/35 backdrop-blur-sm transition-opacity duration-300 pointer-events-none opacity-0"></div>
-<aside id="modal-consulta-rapida" aria-hidden="true" aria-label="Consulta rápida" aria-modal="true" class="fixed inset-y-0 right-0 z-[80] w-full max-w-[460px] overflow-y-auto bg-white transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] translate-x-full" role="dialog">
-  <div class="flex min-h-full flex-col">
-    <div class="flex items-start justify-between gap-4 border-b border-line px-5 py-5 md:px-6">
-      <div>
-        <span class="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span>
-        <h2 class="font-editorial mt-2 text-[22px] leading-[1.15] text-ink">Consulta rápida en Madrid</h2>
-      </div>
-      <button id="btn-close-consulta-modal" aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button">
-        <i class="ri-close-line text-[18px]"></i>
-      </button>
-    </div>
-    <form action="https://readdy.ai/api/form/dbankn39uihupc2pc6bg" class="flex flex-1 flex-col gap-5 px-5 py-6 md:px-6" data-readdy-form="true" id="florin-consulta-rapida" method="post">
-      <p class="text-[13px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p>
-      <fieldset>
-        <legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend>
-        <input name="tipo_reforma" readonly="" type="hidden" value="Reforma completa"/>
-        <div class="mt-2.5 flex flex-wrap gap-2 modal-chips-container">
-          <button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button>
-        </div>
-      </fieldset>
-      <div>
-        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label>
-        <input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/>
-      </div>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div>
-          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label>
-          <input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/>
-        </div>
-        <div>
-          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label>
-          <input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/>
-        </div>
-      </div>
-      <div>
-        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label>
-        <textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Piso de 85 m² en el centro, quiero reformar cocina y baño..." required="" rows="4"></textarea>
-        <div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div>
-      </div>
-      <div class="fl-hp"><label for="florin-contact-alt">No rellenar</label><input aria-hidden="true" autocomplete="off" id="florin-contact-alt" name="contact_alt" readonly="" tabindex="-1" type="text"/></div>
-      <div class="mt-auto flex flex-col gap-3 border-t border-line pt-5">
-        <button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">
-          Solicitar visita gratuita
-          <i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i>
-        </button>
-        <p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
-      </div>
-    </form>
-  </div>
-</aside>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // 1. SCROLL HEADER
-  const header = document.querySelector('header');
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 40) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-
-  // 2. BOTÓN SCROLL TOP
-  const btnScrollTop = document.getElementById('btn-scroll-top');
-  if (btnScrollTop) {
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 400) {
-        btnScrollTop.classList.remove('is-hidden');
-        btnScrollTop.classList.add('is-visible');
-      } else {
-        btnScrollTop.classList.remove('is-visible');
-        btnScrollTop.classList.add('is-hidden');
-      }
-    });
-    btnScrollTop.addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-
-  // 3. MENÚ MÓVIL DRAWER
-  const btnOpenMenu = document.getElementById('btn-mobile-menu');
-  const btnCloseMenu = document.getElementById('btn-close-mobile-menu');
-  const mobileDrawer = document.getElementById('mobile-menu-drawer');
-  const mobileBackdrop = document.getElementById('mobile-menu-backdrop');
-  const navDrawer = mobileDrawer ? mobileDrawer.querySelector('nav') : null;
-
-  function openDrawer() {
-    if (!mobileDrawer) return;
-    mobileDrawer.classList.add('is-active');
-    mobileDrawer.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeDrawer() {
-    if (!mobileDrawer) return;
-    mobileDrawer.classList.remove('is-active');
-    mobileDrawer.setAttribute('aria-hidden', 'true');
-    document.body.style.removeProperty('overflow');
-  }
-
-  if (btnOpenMenu) {
-    btnOpenMenu.addEventListener('click', function(e) {
-      e.stopPropagation();
-      openDrawer();
-    });
-  }
-  if (btnCloseMenu) {
-    btnCloseMenu.addEventListener('click', function(e) {
-      e.stopPropagation();
-      closeDrawer();
-    });
-  }
-  if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeDrawer);
-
-  document.querySelectorAll('.nav-dropdown').forEach(dropdown => { const trigger = dropdown.querySelector('.nav-dropdown-trigger'); if (trigger) { trigger.addEventListener('click', function(e) { if (window.innerWidth >= 1024) { const href = trigger.getAttribute('href'); if (href === '#inicio' || href === '#' || !href) { e.preventDefault(); } const isOpen = dropdown.classList.contains('is-open'); document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open')); if (!isOpen) { dropdown.classList.add('is-open'); } } }); } }); document.addEventListener('click', function(e) { if (!e.target.closest('.nav-dropdown')) { document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open')); } });
-  
-  // 4. MOTOR DE FILTRADO DINÁMICO DE ARTÍCULOS POR CATEGORÍA
-  const tabBtns = document.querySelectorAll('.blog-tab-btn');
-  const articles = document.querySelectorAll('#articulos article');
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      tabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filterCat = btn.getAttribute('data-category') || 'all';
-
-      articles.forEach(article => {
-        const artCat = article.getAttribute('data-cat');
-        if (filterCat === 'all' || artCat === filterCat) {
-          article.style.display = 'flex';
-          article.style.opacity = '0';
-          article.style.transform = 'translateY(8px)';
-          setTimeout(() => {
-            article.style.opacity = '1';
-            article.style.transform = 'translateY(0)';
-          }, 30);
-        } else {
-          article.style.opacity = '0';
-          article.style.transform = 'translateY(8px)';
-          setTimeout(() => {
-            article.style.display = 'none';
-          }, 200);
-        }
-      });
-    });
-  });
-
-  // 5. MOTOR UNIVERSAL MODAL CONSULTA RÁPIDA (POPUP PRESUPUESTO)
-  const modalConsulta = document.getElementById('modal-consulta-rapida');
-  const backdropConsulta = document.getElementById('modal-consulta-backdrop');
-  const btnCloseConsulta = document.getElementById('btn-close-consulta-modal');
-
-  function openConsultaModal() {
-    if (modalConsulta && backdropConsulta) {
-      closeDrawer();
-      backdropConsulta.classList.add('is-active');
-      modalConsulta.classList.add('is-active');
-      modalConsulta.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    }
-  }
-
-  function closeConsultaModal() {
-    if (modalConsulta && backdropConsulta) {
-      modalConsulta.classList.remove('is-active');
-      backdropConsulta.classList.remove('is-active');
-      modalConsulta.setAttribute('aria-hidden', 'true');
-      document.body.style.removeProperty('overflow');
-    }
-  }
-
-  document.querySelectorAll('.btn-open-popup-presupuesto, [data-open-popup="presupuesto"]').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      openConsultaModal();
-    });
-  });
-
-  if (btnCloseConsulta) btnCloseConsulta.addEventListener('click', closeConsultaModal);
-  if (backdropConsulta) backdropConsulta.addEventListener('click', closeConsultaModal);
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      closeConsultaModal();
-      closeDrawer();
-    }
-  });
-
-  // Chips interactivos del modal
-  const modalChipsContainer = document.querySelector('.modal-chips-container');
-  if (modalChipsContainer && modalConsulta) {
-    const hiddenInput = modalConsulta.querySelector('input[name="tipo_reforma"]');
-    modalChipsContainer.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        modalChipsContainer.querySelectorAll('button').forEach(b => {
-          b.setAttribute('aria-pressed', 'false');
-          b.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal';
-        });
-        this.setAttribute('aria-pressed', 'true');
-        this.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white';
-        if (hiddenInput) hiddenInput.value = this.innerText.trim();
-      });
-    });
-  }
-});
-</script>
-
-</div>
-</div>
-</div>
+    <footer class="footer">
+      <p>&copy; 2026 El Blog de las Reformas en Madrid · Guías, Costes y Tendencias 2026 &bull; Plataforma en desarrollo</p>
+    </footer>
+  </main>
 </body>
 </html>
