@@ -8,7 +8,7 @@
   ],
   "in_progress": null,
   "pending": [],
-  "last_checkpoint": "2026-10-24T15:25:00Z",
+  "last_checkpoint": "2026-10-27T21:35:35.571954+00:00",
   "metrics": {
     "status": "APPROVED",
     "resolved_issues": [
@@ -18,7 +18,8 @@
       "Sustitución de la paleta amarillenta/barro rara (--ice, --card, --line) por paleta arquitectónica de alto standing: fondos claros limpios, tarjetas blancas puras y bordes piedra suave",
       "Sustitución de círculos con iniciales CMS/JGA/EVA en nosotros.html por retratos fotográficos reales fotorrealistas de alta gama",
       "Corrección de rutas de imágenes 404 en blog.html (madrid-fase-02-medicion -> madrid-fase-01-medicion; climatizacion-hero -> madrid-trade-aerotermia)",
-      "Higiene cromática en canal WhatsApp de contacto.html integrándolo con la identidad corporativa"
+      "Higiene cromática en canal WhatsApp de contacto.html integrándolo con la identidad corporativa",
+      "Retirada de cápsulas de confianza, dock de métricas de cristal, sección Manifiesto (Filosofía Constructiva) y sección Supervisión Presencial Diaria en nosotros.html con respaldo local preservado."
     ]
   }
 }
