@@ -15,6 +15,150 @@
 <link href="assets/remixicon.min.css" rel="stylesheet"/>
 <link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
 <style>
+
+  /* ==========================================================================
+     BLINDAJE DE PRECISIÓN MILIMÉTRICA: TIMELINE VERTICAL (#fases - VARIANTE 2)
+     Resuelve la falta de clases de Tailwind en index-DzWYBm73.css
+     ========================================================================== */
+
+  /* 1. Contenedor del Timeline y Eje Vertical Dorado */
+  #fases #timeline-container {
+    position: relative !important;
+    border-left: 2px solid rgba(168, 126, 52, 0.35) !important;
+    padding-left: 28px !important;
+    box-sizing: border-box !important;
+  }
+  @media (min-width: 640px) {
+    #fases #timeline-container { padding-left: 36px !important; }
+  }
+  @media (min-width: 768px) {
+    #fases #timeline-container { padding-left: 44px !important; }
+  }
+  @media (min-width: 1024px) {
+    #fases #timeline-container { padding-left: 48px !important; }
+  }
+
+  /* 2. Ritmo Vertical entre Hitos (Reemplazo exacto de space-y) */
+  #fases #timeline-container > .timeline-fase-item + .timeline-fase-item {
+    margin-top: 28px !important;
+  }
+  @media (min-width: 768px) {
+    #fases #timeline-container > .timeline-fase-item + .timeline-fase-item {
+      margin-top: 36px !important;
+    }
+  }
+
+  /* 3. Nodos Circulares Numerados (Centrados matemáticamente sobre el eje x=0) */
+  #fases .timeline-fase-item {
+    position: relative !important;
+    cursor: pointer !important;
+  }
+
+  #fases .timeline-node {
+    position: absolute !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 9999px !important;
+    border: 2px solid #E4DCCB !important;
+    background-color: #FFFFFF !important;
+    color: #475569 !important;
+    font-weight: 700 !important;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+    z-index: 10 !important;
+    transition: all 0.25s ease !important;
+    
+    /* Mobile (<640px): 38px de diámetro, centrado sobre línea en -28px */
+    width: 38px !important;
+    height: 38px !important;
+    top: 14px !important;
+    left: -47px !important;
+    font-size: 13.5px !important;
+  }
+
+  @media (min-width: 640px) {
+    #fases .timeline-node {
+      width: 42px !important;
+      height: 42px !important;
+      left: -57px !important;
+      top: 15px !important;
+      font-size: 14px !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #fases .timeline-node {
+      width: 48px !important;
+      height: 48px !important;
+      top: 16px !important;
+      left: -68px !important;
+      font-size: 15px !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #fases .timeline-node {
+      left: -72px !important;
+    }
+  }
+
+  /* 4. Estados Cromáticos del Nodo (Activo y Hover) */
+  #fases .timeline-fase-item.active .timeline-node,
+  #fases .timeline-node.bg-teal,
+  #fases .timeline-fase-item:hover .timeline-node {
+    background-color: #A87E34 !important;
+    border-color: #A87E34 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(168, 126, 52, 0.35) !important;
+  }
+
+  /* 5. Tarjetas de Hito (.timeline-card) */
+  #fases .timeline-card {
+    border-radius: 20px !important;
+    border: 1px solid #E4DCCB !important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    padding: 20px !important;
+    transition: all 0.25s ease !important;
+  }
+  @media (min-width: 768px) {
+    #fases .timeline-card { padding: 24px 28px !important; }
+  }
+  #fases .timeline-fase-item.active .timeline-card,
+  #fases .timeline-card.border-teal {
+    border: 2px solid #A87E34 !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(14, 27, 46, 0.07) !important;
+  }
+  #fases .timeline-fase-item:hover .timeline-card {
+    border-color: rgba(168, 126, 52, 0.5) !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 8px 24px rgba(14, 27, 46, 0.08) !important;
+  }
+
+  /* 6. Sticky Showcase Visual (Columna Derecha) */
+  @media (min-width: 1024px) {
+    #fases .lg\:sticky,
+    #fases [class*="lg:sticky"] {
+      position: sticky !important;
+      top: 110px !important;
+      z-index: 20 !important;
+    }
+  }
+
+  /* 7. Tipografía y tracking */
+  #fases .timeline-card span[class*="tracking-wider"] {
+    letter-spacing: 0.12em !important;
+    font-weight: 700 !important;
+    display: inline-block !important;
+  }
+  #fases .timeline-card h3 {
+    font-family: 'Fraunces', 'Playfair Display', Georgia, serif !important;
+    letter-spacing: -0.015em !important;
+    line-height: 1.22 !important;
+  }
+
+
   /* HERO MOBILE FIRST RESPONSIVE PADDING SHIELD (CERO COLISION CON HEADER FIJO) */
   @media (max-width: 767px) {
     #inicio > div.relative.z-10,
@@ -1637,169 +1781,255 @@
 </div>
 </div>
 </section>
-<!-- SECCIÓN FASES DE LA REFORMA (5 FASES CON PESTAÑAS Y BANNER DIRECCIÓN TÉCNICA) -->
+<!-- SECCIÓN FASES DE LA REFORMA (TIMELINE VERTICAL CON SCROLLSPY Y SHOWCASE COMPLETO - CORREGIDO) -->
 <section class="w-full border-t border-line bg-ice py-16 md:py-24" id="fases">
-<div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
-<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-<div>
-<span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-2">Metodología Comprobada</span>
-<h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+    
+    <!-- Encabezado de Sección -->
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div class="max-w-[800px]">
+        <span class="text-[12px] font-bold uppercase tracking-[0.2em] text-teal block mb-2">Metodología Comprobada · Recorrido Secuencial</span>
+        <h2 class="font-editorial text-[30px] leading-[1.12] text-ink sm:text-[38px] md:text-[44px]">
           Cómo ejecutamos tu reforma de cocina paso a paso.
         </h2>
-</div>
-<span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">
-        Cinco fases secuenciales con verificación de cotas in situ y entrega limpia certificada.
-      </span>
-</div>
-<!-- FASES MOBILE (ACCORDION CARDS) -->
-<div class="block lg:hidden mt-8 space-y-4">
-<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
-<div class="flex items-center justify-between">
-<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 01</span>
-<span class="text-[11.5px] font-semibold text-muted">60 min</span>
-</div>
-<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Medición y Enlaces Técnicos</h3>
-<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Comprobación milimétrica de cotas, bajantes comunitarias y tomas de gas o electricidad para inducción de alta potencia.</p>
-</div>
-<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
-<div class="flex items-center justify-between">
-<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 02</span>
-<span class="text-[11.5px] font-semibold text-muted">2 a 3 días</span>
-</div>
-<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Infografía 3D y Selección de Muestras</h3>
-<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Render fotorrealista de la isla, gola e iluminación LED. Selección de encimeras porcelánicas antimanchas en showroom.</p>
-</div>
-<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
-<div class="flex items-center justify-between">
-<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 03</span>
-<span class="text-[11.5px] font-semibold text-muted">24 horas</span>
-</div>
-<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Presupuesto Cerrado y Contrato</h3>
-<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Firma vinculante con precio invariable por contrato y penalización económica por cada día de demora.</p>
-</div>
-<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
-<div class="flex items-center justify-between">
-<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 04</span>
-<span class="text-[11.5px] font-semibold text-muted">1 a 2 semanas</span>
-</div>
-<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Demolición e Instalaciones</h3>
-<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Fontanería multicapa, circuitos eléctricos independientes (C3 y C4) y nivelación autonivelante de solera.</p>
-</div>
-<div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
-<div class="flex items-center justify-between">
-<span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 05</span>
-<span class="text-[11.5px] font-semibold text-muted">3 a 4 días</span>
-</div>
-<h3 class="font-editorial mt-2 text-[18px] font-bold text-ink">Montaje de Muebles, Encimera y Entrega</h3>
-<p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Ajuste de herrajes Blum, colocación de encimera porcelánica y prueba de funcionamiento de electrodomésticos.</p>
-</div>
-</div>
-<!-- FASES DESKTOP MASTER VIEW -->
-<div class="hidden lg:block mt-10">
-<div class="overflow-hidden rounded-[20px] border border-line bg-white shadow-sm">
-<div class="grid grid-cols-1 lg:grid-cols-2">
-<div class="reveal flex flex-col justify-between p-6 md:p-9 order-2 lg:order-1">
-<div>
-<span class="inline-flex items-center gap-2 rounded-full bg-teal/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-teal" id="fases-desktop-badge">Fase 01 · Medición y Enlaces Técnicos</span>
-<h3 class="font-editorial mt-4 text-[24px] leading-[1.18] text-ink md:text-[30px] font-bold" id="fases-desktop-title">Comprobación milimétrica de cotas, bajantes y tomas</h3>
-<p class="mt-3 text-[15px] leading-[1.65] text-ink/90" id="fases-desktop-desc">Inspeccionamos la presión de agua, la sección de los cables para placas de inducción de alta potencia y el trazado de evacuación de humos hacia la chimenea comunitaria según normativa madrileña.</p>
-<ul class="mt-5 flex flex-col gap-2.5" id="fases-desktop-protocols">
-<li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Comprobación de sección eléctrica (mínimo 6 mm² para placa/horno)</li>
-<li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Verificación de tiro y diámetro del tubo de extracción de humos</li>
-<li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Medición láser 3D para encajar módulos gola sin descuadres</li>
-</ul>
-</div>
-<div class="mt-7 flex flex-col gap-3 border-t border-line pt-5 sm:flex-row sm:items-center sm:justify-between">
-<span class="text-[13px] font-semibold text-ink/80" id="fases-desktop-duration">Visita técnica gratuita · 60 min</span>
-<a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap" href="#contacto" id="fases-desktop-cta">Solicitar Visita en Madrid <i class="ri-arrow-right-line text-[14px]"></i></a>
-</div>
-</div>
-<div class="w-full bg-ice order-1 lg:order-2" style="aspect-ratio: 4 / 3;">
-<img alt="Medición técnica de cocina en Madrid" class="reveal h-full w-full object-cover object-top" id="fases-desktop-img" src="images/cocinas-fase-01-medicion.webp"/>
-</div>
-</div>
-</div>
-<div class="mt-5 grid grid-cols-5 gap-3" id="fases-desktop-tabs">
-    <!-- TAB 1 (ACTIVA) -->
-    <button aria-pressed="true" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border-2 border-teal bg-white p-4 text-left transition-all duration-300 cursor-pointer shadow-sm min-h-[135px] h-full" data-index="0" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-teal tabular-nums">Paso 01</span>
-        <i class="ri-check-line text-teal text-[16px] font-bold"></i>
       </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-teal leading-snug my-auto">Medición</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 100%;"></span>
+      <p class="text-muted md:max-w-[320px] text-[15px] sm:text-[16px] leading-[1.6]">
+        Un proceso transparente y cronológico donde cada fase cuenta con verificación facultativa in situ antes de iniciar la siguiente etapa.
+      </p>
+    </div>
+
+    <!-- Grid Principal: Timeline Vertical (Col 7) + Sticky Showcase Completo (Col 5) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+      
+      <!-- Columna Izquierda: Eje Cronológico de los 5 Hitos -->
+      <div class="lg:col-span-7 relative pl-7 sm:pl-9 md:pl-11 space-y-8 border-l-2 border-teal/30" id="timeline-container">
+        
+        <!-- Hito 01: Medición -->
+        <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="0" onclick="selectTimelineFase(0)">
+          <!-- Nodo circular sobre la línea -->
+          <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-teal bg-teal text-white font-bold text-[14px] md:text-[15px] shadow-sm transition-all duration-300">
+            01
+          </div>
+          <div class="timeline-card rounded-2xl border-2 border-teal bg-white p-5 md:p-6 shadow-sm transition-all duration-300">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 01 · Medición y Enlaces Técnicos</span>
+              <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">60 min · In situ</span>
+            </div>
+            <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Comprobación milimétrica de cotas, bajantes y tomas</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+              Inspeccionamos la presión de agua, la sección de los cables para placas de inducción de alta potencia y el trazado de evacuación de humos hacia la chimenea comunitaria según normativa madrileña.
+            </p>
+
+            <!-- Foto solo en móvil -->
+            <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+              <img src="images/cocinas-fase-01-medicion.webp" alt="Medición técnica de cocina" class="h-full w-full object-cover"/>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Láser 3D sin descuadres</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Tiro de campana CTE</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Cableado mín. 6 mm²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 02: Infografía 3D -->
+        <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="1" onclick="selectTimelineFase(1)">
+          <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+            02
+          </div>
+          <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 02 · Infografía 3D y Selección</span>
+              <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">2 a 3 días</span>
+            </div>
+            <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Modelado hiperrealista y visualización de acabados</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+              Podrás visualizar cómo interactúa la luz natural con tu futura isla porcelánica Calacatta, la distribución de cajones interiores y la iluminación LED bajo muebles antes de cortar una sola tabla.
+            </p>
+
+            <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+              <img src="images/cocinas-fase-02-3d.webp" alt="Infografía 3D de cocina" class="h-full w-full object-cover"/>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Render 360° 4K</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Muestras Dekton/Silestone</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Triángulo de trabajo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 03: Presupuesto y Contrato -->
+        <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="2" onclick="selectTimelineFase(2)">
+          <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+            03
+          </div>
+          <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 03 · Presupuesto Desglosado y Contrato</span>
+              <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">24 horas</span>
+            </div>
+            <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Partidas cerradas por escrito y penalización por demora</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+              Redactamos una memoria técnica exhaustiva con marcas, calibres y modelos exactos. El importe final no sufre sobrecostes sorpresivos y se pacta una fecha límite avalada por contrato.
+            </p>
+
+            <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+              <img src="images/cocinas-fase-03-contrato.webp" alt="Contrato de cocina" class="h-full w-full object-cover"/>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Precio cerrado invariable</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Penalización por día</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Recepción coordinada</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 04: Demolición e Instalaciones -->
+        <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="3" onclick="selectTimelineFase(3)">
+          <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+            04
+          </div>
+          <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 04 · Demolición, Albañilería e Instalaciones</span>
+              <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">1 a 2 semanas</span>
+            </div>
+            <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Renovación integral de fontanería, electricidad y nivelado</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+              Retiramos azulejos antiguos, sustituimos tuberías de plomo/cobre por multicapa de alta resistencia y realizamos regolas limpias con aspiración para cableado independiente protegido en cuadro eléctrico.
+            </p>
+
+            <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+              <img src="images/cocinas-fase-04-ejecucion.webp" alt="Instalaciones de cocina" class="h-full w-full object-cover"/>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Multicapa termofusionada</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Circuitos C3 y C4</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Solera autonivelante</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 05: Montaje y Entrega -->
+        <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="4" onclick="selectTimelineFase(4)">
+          <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+            05
+          </div>
+          <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 05 · Montaje de Mobiliario, Encimera y Entrega</span>
+              <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">3 a 4 días</span>
+            </div>
+            <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Montaje de módulos gola, encimera porcelánica y entrega limpia</h3>
+            <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+              Montadores especialistas ensamblan el mobiliario, canteros especialistas fijan la encimera porcelánica con copete ingletado y dejamos todos los electrodomésticos comprobados y conectados.
+            </p>
+
+            <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+              <img src="images/cocinas-fase-05-entrega.webp" alt="Entrega de cocina" class="h-full w-full object-cover"/>
+            </div>
+
+            <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Herrajes freno Blum</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Estanqueidad probada</span>
+              <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Limpieza técnica final</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </button>
-    <!-- TAB 2 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="1" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 02</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
+
+      <!-- Columna Derecha: Sticky Showcase Visual Completo (Desktop 5 Cols) -->
+      <!-- SIN widgets duplicados, con imagen amplia, protocolos completos y botón de acción -->
+      <div class="hidden lg:block lg:col-span-5 lg:sticky lg:top-28">
+        
+        <div class="overflow-hidden rounded-[20px] border border-line bg-white shadow-lg transition-all duration-300">
+          
+          <!-- Imagen de la Fase Activa con Badges Flotantes -->
+          <div class="relative h-[290px] xl:h-[320px] bg-ice overflow-hidden">
+            <img id="timeline-sticky-img" src="images/cocinas-fase-01-medicion.webp" alt="Fase de cocina activa" class="h-full w-full object-cover object-top transition-all duration-300"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+            
+            <div class="absolute top-4 right-4 rounded-lg bg-ink/90 backdrop-blur-md px-3 py-1 text-[11.5px] font-bold text-white flex items-center gap-1.5 border border-white/20 shadow-md">
+              <i class="ri-verified-badge-fill text-[#E6C687]"></i>
+              <span id="timeline-sticky-pill">Inspección In Situ Certificada</span>
+            </div>
+
+            <div class="absolute bottom-4 left-5 right-5 text-white">
+              <span id="timeline-sticky-step" class="text-[11px] font-bold uppercase tracking-widest text-[#E6C687] block mb-1">Fase Activa: 01 de 05</span>
+              <h4 id="timeline-sticky-title" class="font-editorial text-[21px] xl:text-[23px] font-bold leading-tight">Medición y Enlaces Técnicos</h4>
+            </div>
+          </div>
+          
+          <!-- Contenido Técnico Completo del Showcase -->
+          <div class="p-6 space-y-5">
+            <p id="timeline-sticky-desc" class="text-[14.5px] text-muted leading-relaxed">
+              Inspeccionamos la presión de agua, la sección de los cables para placas de inducción de alta potencia y el trazado de evacuación de humos hacia la chimenea comunitaria según normativa madrileña.
+            </p>
+
+            <!-- Lista de Protocolos de la Fase Activa -->
+            <div class="rounded-xl border border-line bg-ice/40 p-4">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-teal block mb-2.5">
+                <i class="ri-shield-check-line mr-1"></i>Protocolos Verificados en esta Fase:
+              </span>
+              <ul id="timeline-sticky-protocols" class="space-y-2 text-[13px] text-ink font-medium">
+                <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i><span>Comprobación de sección eléctrica (mínimo 6 mm² para placa/horno)</span></li>
+                <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i><span>Verificación de tiro y diámetro del tubo de extracción de humos</span></li>
+                <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i><span>Medición láser 3D para encajar módulos gola sin descuadres</span></li>
+              </ul>
+            </div>
+
+            <!-- Footer del Showcase con CTA -->
+            <div class="pt-3 border-t border-line flex items-center justify-between gap-3">
+              <div class="flex items-center gap-1.5 text-[12px] font-semibold text-muted">
+                <i class="ri-time-line text-teal text-[15px]"></i>
+                <span id="timeline-sticky-time">60 min · Visita gratuita</span>
+              </div>
+              <a href="#contacto" class="inline-flex items-center gap-2 rounded-xl bg-teal px-5 py-2.5 text-[13.5px] font-bold text-white hover:bg-teal-hover transition-colors shadow-sm">
+                <span>Solicitar Visita en Madrid</span>
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Infografía 3D</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
-    <!-- TAB 3 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="2" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 03</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-      </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Contrato</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
-    <!-- TAB 4 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="3" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 04</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-      </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Fabricación y Obra</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
-    <!-- TAB 5 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="4" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 05</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-      </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Entrega</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
-  </div>
-</div>
-<!-- BANNER DIRECCIÓN TÉCNICA -->
-<div class="mt-8 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
-<div class="flex flex-col justify-center gap-4 p-6 order-2 lg:order-1 lg:col-span-8 xl:col-span-9 md:p-8">
-<div class="flex flex-wrap items-center gap-3">
-<span class="text-[11px] font-bold uppercase tracking-[0.18em] text-teal">Dirección Técnica Colegiada</span>
-<span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[11px] font-bold text-okgreen"><i class="ri-shield-check-line text-[13px]"></i>2 Años de Garantía Escrita</span>
-</div>
-<blockquote class="font-editorial text-[19px] leading-[1.45] text-ink md:text-[22px]">
+
+    </div>
+
+    <!-- Banner Completo de Dirección Técnica Colegiada (UNA SOLA VEZ, AL PIE) -->
+    <div class="mt-14 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
+      <div class="flex flex-col justify-center gap-4 p-6 order-2 lg:order-1 lg:col-span-8 xl:col-span-9 md:p-8">
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-teal">Dirección Técnica Colegiada</span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[11px] font-bold text-okgreen">
+            <i class="ri-shield-check-line text-[13px]"></i>2 Años de Garantía Escrita
+          </span>
+        </div>
+        <blockquote class="font-editorial text-[19px] leading-[1.45] text-ink md:text-[22px]">
           «La cocina concentra el mayor consumo eléctrico y de fontanería de toda la vivienda. Un error en la cota de la encimera o un mal tiro de campana arruinan el mejor mueble. Por eso supervisamos a pie de obra cada acometida antes de montar los módulos.»
         </blockquote>
-<div>
-<div class="text-[14px] font-bold text-ink">Dirección Facultativa Propia</div>
-<div class="text-[12.5px] font-medium text-ink/75">Arquitecto Técnico Colegiado · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
-</div>
-</div>
-<div class="order-1 lg:order-2 lg:col-span-4 xl:col-span-3">
-<div class="jefe-obra-img-box w-full overflow-hidden bg-ice">
-<img alt="Dirección técnica de reformas de cocinas en Madrid" class="jefe-obra-img h-full w-full object-cover" src="images/madrid-director-tecnico.webp"/>
-</div>
-</div>
-</div>
-</div>
+        <div>
+          <div class="text-[14px] font-bold text-ink">Dirección Facultativa Propia</div>
+          <div class="text-[12.5px] font-medium text-ink/75">Arquitecto Técnico Colegiado · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 lg:col-span-4 xl:col-span-3">
+        <div class="jefe-obra-img-box w-full overflow-hidden bg-ice h-full min-h-[220px]">
+          <img alt="Dirección técnica de reformas de cocinas en Madrid" class="jefe-obra-img h-full w-full object-cover" src="images/madrid-director-tecnico.webp"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
+
+
 <!-- SECCIÓN ANTES Y DESPUÉS INTERACTIVA (SLIDER FÍSICO) -->
 <section class="w-full border-t border-line bg-white py-16 md:py-24" id="proyectos">
 <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
@@ -2527,68 +2757,154 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // 1. FASES DESKTOP ENGINE (TOKEN DESIGN FREITECH 2026 GOLD STANDARD)
-  const faseTabs = document.querySelectorAll('.fase-tab-btn');
-  const fasesDesktopBadge = document.getElementById('fases-desktop-badge');
-  const fasesDesktopTitle = document.getElementById('fases-desktop-title');
-  const fasesDesktopDesc = document.getElementById('fases-desktop-desc');
-  const fasesDesktopProtocols = document.getElementById('fases-desktop-protocols');
-  const fasesDesktopDuration = document.getElementById('fases-desktop-duration');
-  const fasesDesktopImg = document.getElementById('fases-desktop-img');
-
-  function activateFaseTab(index) {
-    const pageData = window.__DATA_COCINAS__ || window.__RECOVERY_DATA__;
-    const data = pageData && pageData.fases ? pageData.fases[index] : null;
-
-    faseTabs.forEach((btn, i) => {
-      const isSelected = (i === index);
-      btn.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
-      const stepSpan = btn.querySelector('.tabular-nums');
-      const titleSpan = btn.querySelector('.fase-tab-title');
-      const icon = btn.querySelector('i');
-      const progressSpan = btn.querySelector('.fase-tab-progress');
-
-      if (isSelected) {
-        btn.className = 'fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border-2 border-teal bg-white p-4 text-left transition-all duration-300 cursor-pointer shadow-sm min-h-[135px] h-full';
-        if (stepSpan) stepSpan.className = 'text-[12px] font-bold uppercase tracking-wider text-teal tabular-nums';
-        if (titleSpan) titleSpan.className = 'fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-teal leading-snug my-auto';
-        if (icon) icon.className = 'ri-check-line text-teal text-[16px] font-bold';
-        if (progressSpan) progressSpan.style.width = '100%';
-      } else {
-        btn.className = 'fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full';
-        if (stepSpan) stepSpan.className = 'text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums';
-        if (titleSpan) titleSpan.className = 'fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto';
-        if (icon) icon.className = 'ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity';
-        if (progressSpan) progressSpan.style.width = '0%';
-      }
-    });
-
-    if (data) {
-      if (fasesDesktopImg) {
-        fasesDesktopImg.style.opacity = '0.35';
-        setTimeout(() => {
-          fasesDesktopImg.src = data.image;
-          fasesDesktopImg.style.opacity = '1';
-        }, 80);
-      }
-      if (fasesDesktopBadge) fasesDesktopBadge.textContent = data.badge;
-      if (fasesDesktopTitle) fasesDesktopTitle.textContent = data.title;
-      if (fasesDesktopDesc) fasesDesktopDesc.textContent = data.desc || data.description;
-      if (fasesDesktopDuration) fasesDesktopDuration.textContent = data.duration;
-      if (fasesDesktopProtocols && data.protocols) {
-        fasesDesktopProtocols.innerHTML = data.protocols.map(p => `
-          <li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium">
-            <i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i><span>${p}</span>
-          </li>
-        `).join('');
-      }
+      // 1. TIMELINE VERTICAL STICKY ENGINE (CON SCROLLSPY Y ACTUALIZACIÓN FLUIDA)
+  const timelineData = [
+    {
+      step: "01 de 05",
+      time: "60 min · In situ",
+      badge: "Inspección In Situ Certificada",
+      title: "Medición y Enlaces Técnicos",
+      desc: "Inspeccionamos la presión de agua, la sección de los cables para placas de inducción de alta potencia y el trazado de evacuación de humos hacia la chimenea comunitaria según normativa madrileña.",
+      image: "images/cocinas-fase-01-medicion.webp",
+      protocols: [
+        "Comprobación de sección eléctrica (mínimo 6 mm² para placa/horno)",
+        "Verificación de tiro y diámetro del tubo de extracción de humos",
+        "Medición láser 3D para encajar módulos gola sin descuadres"
+      ]
+    },
+    {
+      step: "02 de 05",
+      time: "2 a 3 días",
+      badge: "Render 360° Fotorrealista",
+      title: "Infografía 3D y Selección de Muestras",
+      desc: "Podrás visualizar cómo interactúa la luz natural con tu futura isla porcelánica Calacatta, la distribución de cajones interiores y la iluminación LED bajo muebles antes de cortar una sola tabla.",
+      image: "images/cocinas-fase-02-3d.webp",
+      protocols: [
+        "Render fotorrealista 360° con iluminación diurna y nocturna",
+        "Muestrario físico de encimeras (Dekton, Silestone, Neolith) y lacados",
+        "Optimización ergonómica del triángulo de trabajo (frío, lavado, cocción)"
+      ]
+    },
+    {
+      step: "03 de 05",
+      time: "24 horas",
+      badge: "Precio Cerrado y Plazo Vinculante",
+      title: "Presupuesto Desglosado y Contrato",
+      desc: "Redactamos una memoria técnica exhaustiva con marcas, calibres y modelos exactos. El importe final no sufre sobrecostes sorpresivos y se pacta una fecha límite avalada por contrato.",
+      image: "images/cocinas-fase-03-contrato.webp",
+      protocols: [
+        "Precio cerrado sin cláusulas ocultas ni desviaciones de presupuesto",
+        "Cláusula de penalización económica si se supera el plazo acordado",
+        "Planificación de recepción de electrodomésticos y encimera coordinada"
+      ]
+    },
+    {
+      step: "04 de 05",
+      time: "1 a 2 semanas",
+      badge: "Fontanería Multicapa & Cuadro C3/C4",
+      title: "Demolición, Albañilería e Instalaciones",
+      desc: "Retiramos azulejos antiguos, sustituimos tuberías de plomo/cobre por multicapa de alta resistencia y realizamos regolas limpias con aspiración para cableado independiente protegido en cuadro eléctrico.",
+      image: "images/cocinas-fase-04-ejecucion.webp",
+      protocols: [
+        "Fontanería multicapa termofusionada sin empalmes en falso tabique",
+        "Nuevos circuitos independientes (C3 para vitro/horno, C4 para lavavajillas/lavadora)",
+        "Nivelación autonivelante de solera para colocación perfecta de pavimentos"
+      ]
+    },
+    {
+      step: "05 de 05",
+      time: "3 a 4 días",
+      badge: "2 Años de Garantía Escrita",
+      title: "Montaje de Módulos, Encimera y Entrega",
+      desc: "Montadores especialistas ensamblan el mobiliario, canteros especialistas fijan la encimera porcelánica con copete ingletado y dejamos todos los electrodomésticos comprobados y conectados.",
+      image: "images/cocinas-fase-05-entrega.webp",
+      protocols: [
+        "Ajuste milimétrico de bisagras y cajones con freno amortiguado Blum",
+        "Conexión y prueba de estanqueidad de fregadero y electrodomésticos",
+        "Limpieza técnica integral de fin de obra lista para cocinar desde el primer minuto"
+      ]
     }
-  }
+  ];
 
-  if (faseTabs.length > 0) {
-    faseTabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => activateFaseTab(index));
+  let currentActiveFase = 0;
+
+  window.selectTimelineFase = function(index) {
+    if (index === currentActiveFase) return;
+    currentActiveFase = index;
+    const data = timelineData[index];
+    if (!data) return;
+
+    // Actualizar estados visuales de los hitos
+    const items = document.querySelectorAll('.timeline-fase-item');
+    items.forEach((item, i) => {
+      const node = item.querySelector('.timeline-node');
+      const card = item.querySelector('.timeline-card');
+      if (i === index) {
+        if (node) {
+          node.className = 'timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-teal bg-teal text-white font-bold text-[14px] md:text-[15px] shadow-sm transition-all duration-300';
+        }
+        if (card) {
+          card.className = 'timeline-card rounded-2xl border-2 border-teal bg-white p-5 md:p-6 shadow-sm transition-all duration-300';
+        }
+      } else {
+        if (node) {
+          node.className = 'timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white';
+        }
+        if (card) {
+          card.className = 'timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm';
+        }
+      }
     });
+
+    // Actualizar Showcase Derecho
+    const stickyImg = document.getElementById('timeline-sticky-img');
+    const stickyStep = document.getElementById('timeline-sticky-step');
+    const stickyTitle = document.getElementById('timeline-sticky-title');
+    const stickyDesc = document.getElementById('timeline-sticky-desc');
+    const stickyPill = document.getElementById('timeline-sticky-pill');
+    const stickyTime = document.getElementById('timeline-sticky-time');
+    const stickyProtocols = document.getElementById('timeline-sticky-protocols');
+
+    if (stickyImg) {
+      stickyImg.style.opacity = '0.3';
+      setTimeout(() => {
+        stickyImg.src = data.image;
+        stickyImg.style.opacity = '1';
+      }, 80);
+    }
+    if (stickyStep) stickyStep.textContent = `Fase Activa: ${data.step}`;
+    if (stickyTitle) stickyTitle.textContent = data.title;
+    if (stickyDesc) stickyDesc.textContent = data.desc;
+    if (stickyPill) stickyPill.textContent = data.badge;
+    if (stickyTime) stickyTime.textContent = data.time;
+
+    if (stickyProtocols && data.protocols) {
+      stickyProtocols.innerHTML = data.protocols.map(p => `
+        <li class="flex items-start gap-2">
+          <i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i>
+          <span>${p}</span>
+        </li>
+      `).join('');
+    }
+  };
+
+  // Observador de Scroll (Scrollspy) para activar automáticamente la fase visible
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = parseInt(entry.target.getAttribute('data-index'), 10);
+          if (!isNaN(idx)) {
+            window.selectTimelineFase(idx);
+          }
+        }
+      });
+    }, {
+      rootMargin: '-20% 0px -40% 0px',
+      threshold: 0.3
+    });
+
+    document.querySelectorAll('.timeline-fase-item').forEach(el => observer.observe(el));
   }
 
   // 2. BEFORE / AFTER SLIDERS

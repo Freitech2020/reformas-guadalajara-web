@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Laboratorio de Rediseños · Fases de Reforma de Cocinas (5 Variantes)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ice: '#F8F2E5',
+            'ice-light': '#FDFBF7',
+            teal: '#A87E34',
+            'teal-hover': '#8F6A29',
+            'teal-soft': '#F4EAD4',
+            ink: '#0E1B2E',
+            'ink-light': '#1C2C44',
+            muted: '#475569',
+            line: '#E4DCCB',
+            'line-light': '#EFE9DC',
+            okgreen: '#16A34A',
+            'okgreen-soft': '#DCFCE7'
+          },
+          fontFamily: {
+            editorial: ['Fraunces', 'Playfair Display', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* TOKEN DESIGN FREITECH 2026 - REGLAS FUNDAMENTALES */
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background-color: #F8F2E5;
+      color: #0E1B2E;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    .font-editorial {
+      font-family: 'Fraunces', 'Playfair Display', Georgia, serif;
+    }
+    /* TIPOGRAFÍA BASE LEY 8: Párrafos mínimo 18px en Desktop, 16px en Mobile */
+    p, li, .text-body-base {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      p, li, .text-body-base {
+        font-size: 18px;
+        line-height: 1.65;
+      }
+    }
+    /* SOMBRAS Y CONTENEDORES LEY 8 */
+    .card-radius {
+      border-radius: 20px;
+    }
+    .card-radius-lg {
+      border-radius: 24px;
+    }
+    /* HOTSPOTS PULSANTES PARA VARIANTE 4 */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(168, 126, 52, 0.7); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(168, 126, 52, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(168, 126, 52, 0); }
+    }
+    .hotspot-pulse {
+      animation: pulse-ring 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+    }
+    /* TRANSICIONES FLUIDAS */
+    .fade-switch {
+      transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    /* SCROLLBAR REFINADA */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F8F2E5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D8CEBA;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #A87E34;
+    }
+  </style>
+</head>
+<body class="bg-ice text-ink antialiased">
+
+  <!-- ========================================================================= -->
+  <!-- TOOLBAR EVALUADOR FLOTANTE (SOLO HERRAMIENTA DE INSPECCIÓN, NO ES HEADER)  -->
+  <!-- ========================================================================= -->
+  <aside class="sticky top-0 z-50 w-full border-b border-ink/15 bg-ink text-white shadow-xl backdrop-blur-md">
+    <div class="mx-auto flex max-w-[1440px] flex-col gap-3 px-4 py-3 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 rounded-full bg-teal/20 px-3 py-0.5 text-[11px] font-bold uppercase tracking-widest text-[#E6C687]">
+          <i class="ri-palette-line"></i> Laboratorio de Rediseños
+        </span>
+        <h1 class="text-[14px] font-semibold tracking-wide text-white/90 sm:text-[15px]">
+          Sección Metodología Cocinas · <span class="text-teal-soft font-bold">5 Variantes Evaluables</span>
+        </h1>
+      </div>
+      
+      <!-- BOTONES DE FILTRO RÁPIDO DE VARIANTES -->
+      <nav class="flex flex-wrap items-center gap-1.5" aria-label="Selector de Variantes">
+        <button onclick="filtrarVariante('todas')" id="btn-todas" class="filter-btn rounded-lg bg-teal px-3 py-1 text-[12px] font-bold text-white transition hover:bg-teal-hover">
+          Ver Todas (5)
+        </button>
+        <button onclick="filtrarVariante('var1')" id="btn-var1" class="filter-btn rounded-lg bg-white/10 px-3 py-1 text-[12px] font-medium text-white/80 transition hover:bg-white/20">
+          01 · Stepper Pro
+        </button>
+        <button onclick="filtrarVariante('var2')" id="btn-var2" class="filter-btn rounded-lg bg-white/10 px-3 py-1 text-[12px] font-medium text-white/80 transition hover:bg-white/20">
+          02 · Timeline Sticky
+        </button>
+        <button onclick="filtrarVariante('var3')" id="btn-var3" class="filter-btn rounded-lg bg-white/10 px-3 py-1 text-[12px] font-medium text-white/80 transition hover:bg-white/20">
+          03 · Bento Grid
+        </button>
+        <button onclick="filtrarVariante('var4')" id="btn-var4" class="filter-btn rounded-lg bg-white/10 px-3 py-1 text-[12px] font-medium text-white/80 transition hover:bg-white/20">
+          04 · Blueprint Studio
+        </button>
+        <button onclick="filtrarVariante('var5')" id="btn-var5" class="filter-btn rounded-lg bg-white/10 px-3 py-1 text-[12px] font-medium text-white/80 transition hover:bg-white/20">
+          05 · Entregables Clave
+        </button>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- CONTENEDOR PRINCIPAL DE LAS 5 VARIANTES AISLADAS -->
+  <main class="mx-auto w-full max-w-[1440px] px-4 py-8 md:px-6 lg:px-8 xl:px-12 space-y-24">
+
+    <!-- ========================================================================= -->
+    <!-- FICHA Y VARIANTE 01: STEPPER LINEAL PRO (Evolución Refinada del Original) -->
+    <!-- ========================================================================= -->
+    <article id="var1" class="variante-block scroll-mt-24 space-y-6">
+      
+      <!-- CABECERA METADATOS DE LA VARIANTE (Para evaluación del usuario) -->
+      <div class="rounded-xl border border-line bg-white/80 p-5 shadow-sm">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-teal text-white font-bold text-[13px]">01</span>
+            <h2 class="text-[17px] font-bold text-ink">Variante 01: Stepper Lineal Pro (Evolución Refinada del Original)</h2>
+          </div>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-teal/10 px-3 py-1 text-[12px] font-semibold text-teal">
+            <i class="ri-flashlight-line"></i> Alta familiaridad · Barra horizontal superior conectada
+          </span>
+        </div>
+        <p class="mt-2 text-[14px] text-muted">
+          <strong>Enfoque:</strong> Perfecciona la estructura de la imagen original. Coloca la navegación en la parte superior con números grandes y barra de conexión dorada, permitiendo ver de inmediato la secuencia lógica completa (01 a 05) y el tiempo total. En móvil funciona con selector deslizante o tarjetas ordenadas.
+        </p>
+      </div>
+
+      <!-- COMIENZO DE LA SECCIÓN AISLADA 01 (LISTA PARA INYECTAR) -->
+      <section class="w-full card-radius-lg border border-line bg-white p-6 md:p-10 lg:p-12 shadow-sm" aria-label="Metodología de reforma de cocina - Variante 1">
+        
+        <!-- Header de Sección -->
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between border-b border-line pb-8">
+          <div>
+            <span class="text-[12px] font-bold uppercase tracking-[0.2em] text-teal block mb-2">Metodología Comprobada · Sello Técnico Madrid</span>
+            <h3 class="font-editorial text-[28px] leading-[1.15] text-ink sm:text-[36px] md:text-[42px] max-w-[780px]">
+              Cómo ejecutamos tu reforma de cocina paso a paso.
+            </h3>
+          </div>
+          <p class="text-muted md:max-w-[280px] text-[15px] leading-[1.6]">
+            Cinco fases secuenciales con verificación de cotas in situ, precio cerrado y entrega limpia certificada.
+          </p>
+        </div>
+
+        <!-- Barra Stepper Superior Conectada (Paso 01 a 05) -->
+        <div class="mt-8">
+          <div class="grid grid-cols-2 gap-2.5 sm:grid-cols-5 md:gap-3" id="var1-tabs" role="tablist">
+            
+            <!-- Tab 01 (Activa) -->
+            <button role="tab" aria-selected="true" onclick="var1Select(0)" class="var1-btn text-left p-3.5 sm:p-4 rounded-xl border-2 border-teal bg-teal/5 transition-all duration-200 cursor-pointer shadow-sm flex flex-col justify-between gap-2.5">
+              <div class="flex items-center justify-between w-full">
+                <span class="var1-step text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-teal">Paso 01</span>
+                <span class="var1-time text-[11px] font-semibold text-teal bg-white px-2 py-0.5 rounded-full border border-teal/30">60 min</span>
+              </div>
+              <span class="var1-title font-bold text-ink text-[16px] sm:text-[17px] leading-tight">Medición</span>
+              <div class="h-1 w-full bg-line rounded-full overflow-hidden mt-1">
+                <div class="var1-bar h-full bg-teal rounded-full w-full transition-all duration-300"></div>
+              </div>
+            </button>
+
+            <!-- Tab 02 -->
+            <button role="tab" aria-selected="false" onclick="var1Select(1)" class="var1-btn text-left p-3.5 sm:p-4 rounded-xl border border-line bg-white/70 hover:bg-white hover:border-teal/50 transition-all duration-200 cursor-pointer flex flex-col justify-between gap-2.5">
+              <div class="flex items-center justify-between w-full">
+                <span class="var1-step text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-muted">Paso 02</span>
+                <span class="var1-time text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">2-3 días</span>
+              </div>
+              <span class="var1-title font-bold text-ink/75 text-[16px] sm:text-[17px] leading-tight">Infografía 3D</span>
+              <div class="h-1 w-full bg-line rounded-full overflow-hidden mt-1">
+                <div class="var1-bar h-full bg-teal rounded-full w-0 transition-all duration-300"></div>
+              </div>
+            </button>
+
+            <!-- Tab 03 -->
+            <button role="tab" aria-selected="false" onclick="var1Select(2)" class="var1-btn text-left p-3.5 sm:p-4 rounded-xl border border-line bg-white/70 hover:bg-white hover:border-teal/50 transition-all duration-200 cursor-pointer flex flex-col justify-between gap-2.5">
+              <div class="flex items-center justify-between w-full">
+                <span class="var1-step text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-muted">Paso 03</span>
+                <span class="var1-time text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">24 h</span>
+              </div>
+              <span class="var1-title font-bold text-ink/75 text-[16px] sm:text-[17px] leading-tight">Contrato</span>
+              <div class="h-1 w-full bg-line rounded-full overflow-hidden mt-1">
+                <div class="var1-bar h-full bg-teal rounded-full w-0 transition-all duration-300"></div>
+              </div>
+            </button>
+
+            <!-- Tab 04 -->
+            <button role="tab" aria-selected="false" onclick="var1Select(3)" class="var1-btn text-left p-3.5 sm:p-4 rounded-xl border border-line bg-white/70 hover:bg-white hover:border-teal/50 transition-all duration-200 cursor-pointer flex flex-col justify-between gap-2.5">
+              <div class="flex items-center justify-between w-full">
+                <span class="var1-step text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-muted">Paso 04</span>
+                <span class="var1-time text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">1-2 sem</span>
+              </div>
+              <span class="var1-title font-bold text-ink/75 text-[16px] sm:text-[17px] leading-tight">Instalaciones</span>
+              <div class="h-1 w-full bg-line rounded-full overflow-hidden mt-1">
+                <div class="var1-bar h-full bg-teal rounded-full w-0 transition-all duration-300"></div>
+              </div>
+            </button>
+
+            <!-- Tab 05 -->
+            <button role="tab" aria-selected="false" onclick="var1Select(4)" class="var1-btn col-span-2 sm:col-span-1 text-left p-3.5 sm:p-4 rounded-xl border border-line bg-white/70 hover:bg-white hover:border-teal/50 transition-all duration-200 cursor-pointer flex flex-col justify-between gap-2.5">
+              <div class="flex items-center justify-between w-full">
+                <span class="var1-step text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-muted">Paso 05</span>
+                <span class="var1-time text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">3-4 días</span>
+              </div>
+              <span class="var1-title font-bold text-ink/75 text-[16px] sm:text-[17px] leading-tight">Entrega</span>
+              <div class="h-1 w-full bg-line rounded-full overflow-hidden mt-1">
+                <div class="var1-bar h-full bg-teal rounded-full w-0 transition-all duration-300"></div>
+              </div>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Tarjeta Principal Asimétrica (Split Screen 50/50) -->
+        <div class="mt-8 card-radius overflow-hidden border border-line bg-ice/50">
+          <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+            
+            <!-- Columna Izquierda: Información Técnica y Protocolos -->
+            <div class="p-6 md:p-8 lg:p-10 lg:col-span-7 flex flex-col justify-between">
+              <div>
+                <div class="flex flex-wrap items-center gap-2.5">
+                  <span id="var1-badge" class="inline-flex items-center gap-1.5 rounded-full bg-teal px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+                    Fase 01 · Medición y Enlaces Técnicos
+                  </span>
+                  <span id="var1-duration-badge" class="inline-flex items-center gap-1 rounded-full bg-white px-2.5 py-1 text-[11.5px] font-semibold text-muted border border-line">
+                    <i class="ri-time-line text-teal"></i> Visita técnica gratuita · 60 min
+                  </span>
+                </div>
+
+                <h4 id="var1-headline" class="font-editorial mt-4 text-[24px] sm:text-[28px] md:text-[32px] font-bold leading-[1.2] text-ink">
+                  Comprobación milimétrica de cotas, bajantes y tomas
+                </h4>
+
+                <p id="var1-description" class="mt-3.5 text-muted text-[16px] sm:text-[17px] md:text-[18px] leading-[1.65]">
+                  Inspeccionamos la presión de agua, la sección de los cables para placas de inducción de alta potencia y el trazado de evacuación de humos hacia la chimenea comunitaria según normativa madrileña.
+                </p>
+
+                <!-- Tarjeta de 3 Protocolos de Verificación -->
+                <div class="mt-6 rounded-xl border border-line bg-white p-5">
+                  <div class="text-[12px] font-bold uppercase tracking-wider text-teal mb-3 flex items-center gap-1.5">
+                    <i class="ri-shield-check-line text-[15px]"></i> Protocolos de Verificación Técnica Obligatorios
+                  </div>
+                  <ul id="var1-protocols" class="space-y-3">
+                    <li class="flex items-start gap-3 text-[15px] sm:text-[16px] font-medium text-ink">
+                      <i class="ri-checkbox-circle-fill text-teal text-[18px] shrink-0 mt-0.5"></i>
+                      <span>Comprobación de sección eléctrica (mínimo 6 mm² para placa/horno)</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-[15px] sm:text-[16px] font-medium text-ink">
+                      <i class="ri-checkbox-circle-fill text-teal text-[18px] shrink-0 mt-0.5"></i>
+                      <span>Verificación de tiro y diámetro del tubo de extracción de humos</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-[15px] sm:text-[16px] font-medium text-ink">
+                      <i class="ri-checkbox-circle-fill text-teal text-[18px] shrink-0 mt-0.5"></i>
+                      <span>Medición láser 3D para encajar módulos gola sin descuadres</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Barra Inferior de Acción y Conversión -->
+              <div class="mt-8 pt-6 border-t border-line flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="flex items-center gap-2 text-[14px] text-muted">
+                  <i class="ri-map-pin-2-line text-teal text-[17px]"></i>
+                  <span>Servicio en toda la Comunidad de Madrid</span>
+                </div>
+                <a href="#contacto" class="inline-flex items-center justify-center gap-2 rounded-xl bg-teal px-6 py-3.5 text-[15px] font-bold text-white shadow-sm hover:bg-teal-hover transition-colors">
+                  <span>Solicitar Visita en Madrid</span>
+                  <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Columna Derecha: Visor Fotográfico con Badges Flotantes -->
+            <div class="relative lg:col-span-5 min-h-[340px] lg:min-h-[480px] bg-ink/5">
+              <img id="var1-img" src="../landings_secundarias_madrid/images/cocinas-fase-01-medicion.webp" alt="Medición técnica de cocina en Madrid" class="h-full w-full object-cover object-top fade-switch"/>
+              
+              <!-- Badges Flotantes de Calidad sobre la foto -->
+              <div class="absolute top-4 right-4 rounded-lg bg-ink/90 backdrop-blur-md px-3.5 py-1.5 text-[12px] font-bold text-white flex items-center gap-1.5 border border-white/20 shadow-lg">
+                <i class="ri-verified-badge-fill text-[#E6C687]"></i>
+                <span id="var1-img-badge">Inspección In Situ Certificada</span>
+              </div>
+              <div class="absolute bottom-4 left-4 right-4 rounded-xl bg-white/95 backdrop-blur-md p-3 border border-line text-[13px] text-ink shadow-lg flex items-center gap-3">
+                <div class="h-9 w-9 rounded-lg bg-teal/10 flex items-center justify-center text-teal shrink-0">
+                  <i class="ri-ruler-2-line text-[18px]"></i>
+                </div>
+                <div>
+                  <span class="block font-bold text-[12px] uppercase text-teal">Garantía de Acople</span>
+                  <span class="text-ink/80 text-[12.5px] leading-tight block">Tolerancia cero: encimeras y golas ajustadas a plomo sin remates postizos.</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Banner de Dirección Técnica Colegiada Integrado -->
+        <div class="mt-8 card-radius border border-line bg-ice/40 p-6 md:p-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-9 space-y-3">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-teal">Dirección Técnica Colegiada</span>
+                <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-0.5 text-[11.5px] font-bold text-okgreen">
+                  <i class="ri-shield-check-line"></i> 2 Años de Garantía Escrita
+                </span>
+              </div>
+              <blockquote class="font-editorial text-[18px] sm:text-[20px] md:text-[22px] leading-[1.4] text-ink">
+                «La cocina concentra el mayor consumo eléctrico y de fontanería de toda la vivienda. Un error en la cota de la encimera o un mal tiro de campana arruinan el mejor mueble. Por eso supervisamos a pie de obra cada acometida antes de montar los módulos.»
+              </blockquote>
+              <div class="text-[13.5px] text-muted">
+                <strong class="text-ink">Dirección Facultativa Propia</strong> · Arquitecto Técnico Colegiado en el Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid
+              </div>
+            </div>
+            <div class="lg:col-span-3 flex justify-center lg:justify-end">
+              <div class="relative w-28 h-28 md:w-32 md:h-32 rounded-2xl overflow-hidden border-2 border-white shadow-md bg-white">
+                <img src="../landings_secundarias_madrid/images/madrid-director-tecnico.webp" alt="Director Técnico Colegiado de Reformas Madrid" class="h-full w-full object-cover"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- FIN SECCIÓN AISLADA 01 -->
+
+    </article>
+
+
+    <!-- ========================================================================= -->
+    <!-- FICHA Y VARIANTE 02: TIMELINE VERTICAL STICKY (Storytelling Secuencial)   -->
+    <!-- ========================================================================= -->
+    <article id="var2" class="variante-block scroll-mt-24 space-y-6">
+      
+      <!-- CABECERA METADATOS DE LA VARIANTE -->
+      <div class="rounded-xl border border-line bg-white/80 p-5 shadow-sm">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-teal text-white font-bold text-[13px]">02</span>
+            <h2 class="text-[17px] font-bold text-ink">Variante 02: Timeline Vertical con Sticky Showcase (Storytelling Secuencial)</h2>
+          </div>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-teal/10 px-3 py-1 text-[12px] font-semibold text-teal">
+            <i class="ri-route-line"></i> Lectura sin fricción · Panel fotográfico fijo inteligente
+          </span>
+        </div>
+        <p class="mt-2 text-[14px] text-muted">
+          <strong>Enfoque:</strong> Elimina la necesidad de hacer clic para descubrir cada paso. Presenta un eje cronológico vertical transparente a la izquierda que se lee como un relato de obra, mientras a la derecha un panel "Sticky" actualiza dinámicamente la foto y el certificado conforme avanzas.
+        </p>
+      </div>
+
+      <!-- COMIENZO DE LA SECCIÓN AISLADA 02 -->
+      <section class="w-full card-radius-lg border border-line bg-white p-6 md:p-10 lg:p-12 shadow-sm" aria-label="Metodología de reforma de cocina - Variante 2">
+        
+        <!-- Header de Sección -->
+        <div class="max-w-[850px] mb-12">
+          <span class="text-[12px] font-bold uppercase tracking-[0.2em] text-teal block mb-2">Metodología Comprobada · Recorrido Secuencial</span>
+          <h3 class="font-editorial text-[28px] leading-[1.15] text-ink sm:text-[36px] md:text-[42px]">
+            Cómo ejecutamos tu reforma de cocina paso a paso.
+          </h3>
+          <p class="mt-3 text-muted text-[17px] md:text-[18px] leading-[1.6]">
+            Un proceso transparente y cronológico donde cada fase cuenta con inspección facultativa previa antes de pasar a la siguiente etapa.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          
+          <!-- Columna Izquierda: Timeline Vertical de 5 Hitos (7 Cols) -->
+          <div class="lg:col-span-7 relative pl-6 md:pl-10 space-y-10 border-l-2 border-teal/30">
+            
+            <!-- Hito 01 -->
+            <div onmouseenter="var2Hover(0)" class="var2-item relative group cursor-pointer">
+              <!-- Nodo Circular en la línea -->
+              <div class="absolute -left-[31px] md:-left-[47px] top-1 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-teal bg-white font-bold text-teal text-[14px] md:text-[15px] shadow-sm group-hover:bg-teal group-hover:text-white transition-colors">
+                01
+              </div>
+              <div class="rounded-2xl border border-line bg-ice/40 p-5 md:p-6 transition-all duration-200 group-hover:border-teal group-hover:bg-white group-hover:shadow-md">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 01 · Medición</span>
+                  <span class="rounded-full bg-white px-2.5 py-0.5 text-[11px] font-semibold text-muted border border-line">60 min · In situ</span>
+                </div>
+                <h4 class="font-editorial mt-2 text-[20px] md:text-[22px] font-bold text-ink">Comprobación milimétrica de cotas, bajantes y tomas</h4>
+                <p class="mt-2 text-[15px] md:text-[16px] text-muted">
+                  Inspección de presión de agua, sección de cables (mín. 6 mm² para placa) y tiro de humos hacia la chimenea comunitaria según normativa madrileña.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Láser 3D sin descuadres</span>
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Tiro de campana</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 02 -->
+            <div onmouseenter="var2Hover(1)" class="var2-item relative group cursor-pointer">
+              <div class="absolute -left-[31px] md:-left-[47px] top-1 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm group-hover:border-teal group-hover:bg-teal group-hover:text-white transition-colors">
+                02
+              </div>
+              <div class="rounded-2xl border border-line bg-ice/40 p-5 md:p-6 transition-all duration-200 group-hover:border-teal group-hover:bg-white group-hover:shadow-md">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 02 · Infografía 3D</span>
+                  <span class="rounded-full bg-white px-2.5 py-0.5 text-[11px] font-semibold text-muted border border-line">2 a 3 días</span>
+                </div>
+                <h4 class="font-editorial mt-2 text-[20px] md:text-[22px] font-bold text-ink">Modelado hiperrealista y visualización de acabados</h4>
+                <p class="mt-2 text-[15px] md:text-[16px] text-muted">
+                  Visualiza cómo interactúa la luz natural con tu futura isla porcelánica Calacatta, cajones interiores y luz LED bajo muebles antes de cortar una tabla.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Render 360° 4K</span>
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Muestras Dekton/Silestone</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 03 -->
+            <div onmouseenter="var2Hover(2)" class="var2-item relative group cursor-pointer">
+              <div class="absolute -left-[31px] md:-left-[47px] top-1 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm group-hover:border-teal group-hover:bg-teal group-hover:text-white transition-colors">
+                03
+              </div>
+              <div class="rounded-2xl border border-line bg-ice/40 p-5 md:p-6 transition-all duration-200 group-hover:border-teal group-hover:bg-white group-hover:shadow-md">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 03 · Contrato</span>
+                  <span class="rounded-full bg-white px-2.5 py-0.5 text-[11px] font-semibold text-muted border border-line">24 horas</span>
+                </div>
+                <h4 class="font-editorial mt-2 text-[20px] md:text-[22px] font-bold text-ink">Partidas cerradas por escrito y penalización por demora</h4>
+                <p class="mt-2 text-[15px] md:text-[16px] text-muted">
+                  Memoria técnica exhaustiva con marcas y modelos exactos. El importe final no sufre sobrecostes y se pacta fecha límite con indemnización diaria.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Precio invariable</span>
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Penalización por retraso</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 04 -->
+            <div onmouseenter="var2Hover(3)" class="var2-item relative group cursor-pointer">
+              <div class="absolute -left-[31px] md:-left-[47px] top-1 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm group-hover:border-teal group-hover:bg-teal group-hover:text-white transition-colors">
+                04
+              </div>
+              <div class="rounded-2xl border border-line bg-ice/40 p-5 md:p-6 transition-all duration-200 group-hover:border-teal group-hover:bg-white group-hover:shadow-md">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 04 · Instalaciones</span>
+                  <span class="rounded-full bg-white px-2.5 py-0.5 text-[11px] font-semibold text-muted border border-line">1 a 2 semanas</span>
+                </div>
+                <h4 class="font-editorial mt-2 text-[20px] md:text-[22px] font-bold text-ink">Renovación integral de fontanería, electricidad y solera</h4>
+                <p class="mt-2 text-[15px] md:text-[16px] text-muted">
+                  Tuberías multicapa termofusionadas, cuadros con circuitos independientes (C3 vitro, C4 lavavajillas) y solera autonivelante de alta resistencia.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Multicapa sin empalmes ocultos</span>
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Autonivelante</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hito 05 -->
+            <div onmouseenter="var2Hover(4)" class="var2-item relative group cursor-pointer">
+              <div class="absolute -left-[31px] md:-left-[47px] top-1 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm group-hover:border-teal group-hover:bg-teal group-hover:text-white transition-colors">
+                05
+              </div>
+              <div class="rounded-2xl border border-line bg-ice/40 p-5 md:p-6 transition-all duration-200 group-hover:border-teal group-hover:bg-white group-hover:shadow-md">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 05 · Montaje y Entrega</span>
+                  <span class="rounded-full bg-white px-2.5 py-0.5 text-[11px] font-semibold text-muted border border-line">3 a 4 días</span>
+                </div>
+                <h4 class="font-editorial mt-2 text-[20px] md:text-[22px] font-bold text-ink">Módulos gola, encimera porcelánica y prueba técnica</h4>
+                <p class="mt-2 text-[15px] md:text-[16px] text-muted">
+                  Ajuste de herrajes Blum, canteros fijando encimera porcelánica con copete ingletado y limpieza técnica completa lista para cocinar.
+                </p>
+                <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Herrajes Blum</span>
+                  <span class="bg-white px-2.5 py-1 rounded-md border border-line"><i class="ri-check-line text-teal mr-1"></i>Limpieza certificada</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Columna Derecha: Sticky Showcase Visual (5 Cols) -->
+          <div class="lg:col-span-5 lg:sticky lg:top-24 space-y-5">
+            <div class="card-radius overflow-hidden border border-line bg-white shadow-md">
+              <div class="relative h-[320px] bg-ice">
+                <img id="var2-sticky-img" src="../landings_secundarias_madrid/images/cocinas-fase-01-medicion.webp" alt="Fase de cocina" class="h-full w-full object-cover fade-switch"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span id="var2-sticky-fase" class="text-[11px] font-bold uppercase tracking-widest text-[#E6C687] block">Fase Activa: 01 de 05</span>
+                  <h5 id="var2-sticky-title" class="text-[18px] font-bold font-editorial">Medición y Enlaces Técnicos</h5>
+                </div>
+              </div>
+              <div class="p-6 space-y-4">
+                <p id="var2-sticky-desc" class="text-[14.5px] text-muted">
+                  Inspección técnica rigurosa de cotas y suministros antes de fabricar ningún componente.
+                </p>
+                <div class="pt-3 border-t border-line flex items-center justify-between">
+                  <span class="text-[12px] font-semibold text-ink/80">Garantía Colegiada Madrid</span>
+                  <a href="#contacto" class="text-[13px] font-bold text-teal hover:underline flex items-center gap-1">
+                    Pedir Cita Gratuita <i class="ri-arrow-right-s-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mini Banner Aparejador Colegiado -->
+            <div class="card-radius border border-line bg-ice/40 p-5 flex items-center gap-4">
+              <img src="../landings_secundarias_madrid/images/madrid-director-tecnico.webp" alt="Director Técnico" class="h-16 w-16 rounded-xl object-cover shrink-0 border border-white shadow-sm"/>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-teal block">Supervisión en cada etapa</span>
+                <p class="text-[13px] text-ink/85 font-medium leading-snug mt-0.5">
+                  «El aparejador de Reformas Madrid valida cada fase por escrito antes de emitir la siguiente certificación.»
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+      <!-- FIN SECCIÓN AISLADA 02 -->
+
+    </article>
+
+
+    <!-- ========================================================================= -->
+    <!-- FICHA Y VARIANTE 03: BENTO GRID MODULAR (2026 Dashboard Style)            -->
+    <!-- ========================================================================= -->
+    <article id="var3" class="variante-block scroll-mt-24 space-y-6">
+      
+      <!-- CABECERA METADATOS DE LA VARIANTE -->
+      <div class="rounded-xl border border-line bg-white/80 p-5 shadow-sm">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-teal text-white font-bold text-[13px]">03</span>
+            <h2 class="text-[17px] font-bold text-ink">Variante 03: Bento Grid Modular Contemporáneo (2026 Dashboard Style)</h2>
+          </div>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-teal/10 px-3 py-1 text-[12px] font-semibold text-teal">
+            <i class="ri-dashboard-3-line"></i> Visión panorámica instantánea · Todas las fases visibles
+          </span>
+        </div>
+        <p class="mt-2 text-[14px] text-muted">
+          <strong>Enfoque:</strong> Las 5 fases conviven en una cuadrícula modular Bento. La fase activa se despliega en una tarjeta Hero grande mientras las otras 4 son tarjetas interactivas perimetrales con fotos y métricas. Al hacer clic en cualquiera, se convierte al instante en la tarjeta activa.
+        </p>
+      </div>
+
+      <!-- COMIENZO DE LA SECCIÓN AISLADA 03 -->
+      <section class="w-full card-radius-lg border border-line bg-white p-6 md:p-10 lg:p-12 shadow-sm" aria-label="Metodología de reforma de cocina - Variante 3">
+        
+        <!-- Header de Sección -->
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between mb-10">
+          <div>
+            <span class="text-[12px] font-bold uppercase tracking-[0.2em] text-teal block mb-2">Metodología Comprobada · Control Modular</span>
+            <h3 class="font-editorial text-[28px] leading-[1.15] text-ink sm:text-[36px] md:text-[42px] max-w-[780px]">
+              Cómo ejecutamos tu reforma de cocina paso a paso.
+            </h3>
+          </div>
+          <p class="text-muted md:max-w-[280px] text-[15px] leading-[1.6]">
+            Control total de tu obra: visualiza todas las fases de un vistazo e interactúa para inspeccionar cada etapa.
+          </p>
+        </div>
+
+        <!-- Bento Grid Structure -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-5 items-stretch">
+          
+          <!-- TARJETA HERO BENTO (8 Cols en Desktop): Fase Activa Principal -->
+          <div class="md:col-span-12 lg:col-span-8 card-radius overflow-hidden border-2 border-teal bg-ice/30 shadow-md flex flex-col justify-between p-6 sm:p-8 md:p-10">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <span id="var3-hero-badge" class="inline-flex items-center gap-1.5 rounded-full bg-teal px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+                  Fase 01 · Medición y Enlaces Técnicos
+                </span>
+                <span id="var3-hero-time" class="rounded-full bg-white px-3 py-1 text-[12px] font-semibold text-muted border border-line">
+                  <i class="ri-time-line text-teal mr-1"></i> 60 min · In Situ Gratuita
+                </span>
+              </div>
+
+              <h4 id="var3-hero-title" class="font-editorial mt-4 text-[26px] sm:text-[30px] md:text-[34px] font-bold text-ink leading-tight">
+                Comprobación milimétrica de cotas, bajantes y tomas
+              </h4>
+              
+              <p id="var3-hero-desc" class="mt-3 text-muted text-[16px] md:text-[18px] leading-[1.6]">
+                Inspeccionamos la presión de agua, la sección de los cables para placas de inducción de alta potencia y el trazado de evacuación de humos hacia la chimenea comunitaria según normativa madrileña.
+              </p>
+
+              <!-- Grid de Imagen y Protocolos -->
+              <div class="mt-6 grid grid-cols-1 sm:grid-cols-12 gap-5 items-center">
+                <div class="sm:col-span-5 rounded-xl overflow-hidden h-[180px] sm:h-[200px] border border-line">
+                  <img id="var3-hero-img" src="../landings_secundarias_madrid/images/cocinas-fase-01-medicion.webp" alt="Fase Hero" class="h-full w-full object-cover"/>
+                </div>
+                <div class="sm:col-span-7">
+                  <div class="text-[12px] font-bold uppercase tracking-wider text-teal mb-2">Protocolos Obligatorios</div>
+                  <ul id="var3-hero-protocols" class="space-y-2 text-[14px] text-ink font-medium">
+                    <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[16px] mt-0.5"></i><span>Comprobación de sección eléctrica (mínimo 6 mm² para placa/horno)</span></li>
+                    <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[16px] mt-0.5"></i><span>Verificación de tiro y diámetro del tubo de extracción de humos</span></li>
+                    <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[16px] mt-0.5"></i><span>Medición láser 3D para encajar módulos gola sin descuadres</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-5 border-t border-line flex items-center justify-between">
+              <span class="text-[13px] text-muted font-medium">Fase 1/5 del Proceso Certificado</span>
+              <a href="#contacto" class="inline-flex items-center gap-2 rounded-xl bg-teal px-5 py-2.5 text-[14px] font-bold text-white hover:bg-teal-hover transition-colors">
+                Agendar Medición Técnica <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- MINI CARD BENTO 02: Infografía 3D (4 Cols) -->
+          <div onclick="var3Select(1)" class="var3-card md:col-span-6 lg:col-span-4 card-radius border border-line bg-white p-6 shadow-sm hover:border-teal/60 hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-teal">Fase 02</span>
+                <span class="text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">2-3 días</span>
+              </div>
+              <h5 class="font-editorial mt-2 text-[20px] font-bold text-ink group-hover:text-teal transition-colors">Infografía 3D y Muestras</h5>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed line-clamp-3">
+                Render 360° hiperrealista de la isla, gola y luz LED. Muestrario de encimeras Dekton y Silestone en estudio.
+              </p>
+            </div>
+            <div class="mt-4 rounded-xl overflow-hidden h-[120px] border border-line relative">
+              <img src="../landings_secundarias_madrid/images/cocinas-fase-02-3d.webp" alt="Infografía 3D" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[11px] font-bold px-2 py-0.5 rounded">Ver detalles</span>
+            </div>
+          </div>
+
+          <!-- MINI CARD BENTO 03: Presupuesto y Contrato (4 Cols) -->
+          <div onclick="var3Select(2)" class="var3-card md:col-span-6 lg:col-span-4 card-radius border border-line bg-white p-6 shadow-sm hover:border-teal/60 hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-teal">Fase 03</span>
+                <span class="text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">24 h</span>
+              </div>
+              <h5 class="font-editorial mt-2 text-[20px] font-bold text-ink group-hover:text-teal transition-colors">Presupuesto y Contrato</h5>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed line-clamp-3">
+                Precio cerrado con penalización diaria por retraso. Partidas desglosadas por escrito sin letra pequeña.
+              </p>
+            </div>
+            <div class="mt-4 rounded-xl overflow-hidden h-[120px] border border-line relative">
+              <img src="../landings_secundarias_madrid/images/cocinas-fase-03-contrato.webp" alt="Contrato de cocina" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[11px] font-bold px-2 py-0.5 rounded">Ver detalles</span>
+            </div>
+          </div>
+
+          <!-- MINI CARD BENTO 04: Demolición e Instalaciones (4 Cols) -->
+          <div onclick="var3Select(3)" class="var3-card md:col-span-6 lg:col-span-4 card-radius border border-line bg-white p-6 shadow-sm hover:border-teal/60 hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-teal">Fase 04</span>
+                <span class="text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">1-2 semanas</span>
+              </div>
+              <h5 class="font-editorial mt-2 text-[20px] font-bold text-ink group-hover:text-teal transition-colors">Demolición e Instalaciones</h5>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed line-clamp-3">
+                Fontanería multicapa termofusionada, circuitos eléctricos C3/C4 y solera autonivelante de máxima planimetría.
+              </p>
+            </div>
+            <div class="mt-4 rounded-xl overflow-hidden h-[120px] border border-line relative">
+              <img src="../landings_secundarias_madrid/images/cocinas-fase-04-ejecucion.webp" alt="Instalaciones de cocina" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[11px] font-bold px-2 py-0.5 rounded">Ver detalles</span>
+            </div>
+          </div>
+
+          <!-- MINI CARD BENTO 05: Montaje y Entrega (4 Cols) -->
+          <div onclick="var3Select(4)" class="var3-card md:col-span-6 lg:col-span-4 card-radius border border-line bg-white p-6 shadow-sm hover:border-teal/60 hover:shadow-md transition-all cursor-pointer flex flex-col justify-between group">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-teal">Fase 05</span>
+                <span class="text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full">3-4 días</span>
+              </div>
+              <h5 class="font-editorial mt-2 text-[20px] font-bold text-ink group-hover:text-teal transition-colors">Montaje y Entrega Limpia</h5>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed line-clamp-3">
+                Herrajes con freno Blum, sellado ingletado de encimera, pruebas de electrodomésticos y limpieza final certificada.
+              </p>
+            </div>
+            <div class="mt-4 rounded-xl overflow-hidden h-[120px] border border-line relative">
+              <img src="../landings_secundarias_madrid/images/cocinas-fase-05-entrega.webp" alt="Entrega final de cocina" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+              <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[11px] font-bold px-2 py-0.5 rounded">Ver detalles</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner Bento Full Width de Dirección Técnica -->
+        <div class="mt-6 card-radius border border-line bg-ice/40 p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-4">
+            <div class="h-14 w-14 rounded-2xl bg-teal/10 flex items-center justify-center text-teal shrink-0">
+              <i class="ri-shield-star-line text-[28px]"></i>
+            </div>
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Supervisión Colegiada de Principio a Fin</span>
+              <h5 class="font-editorial text-[18px] md:text-[20px] font-bold text-ink">Garantía Escrita de 2 Años en Contrato</h5>
+            </div>
+          </div>
+          <p class="text-[14px] text-muted max-w-[500px]">
+            Cada hito del Bento Grid es inspeccionado personalmente por nuestro Arquitecto Técnico Colegiado antes de dar la orden de ensamblaje.
+          </p>
+        </div>
+
+      </section>
+      <!-- FIN SECCIÓN AISLADA 03 -->
+
+    </article>
+
+
+    <!-- ========================================================================= -->
+    <!-- FICHA Y VARIANTE 04: BLUEPRINT STUDIO (Revista de Arquitectura y Lujo)   -->
+    <!-- ========================================================================= -->
+    <article id="var4" class="variante-block scroll-mt-24 space-y-6">
+      
+      <!-- CABECERA METADATOS DE LA VARIANTE -->
+      <div class="rounded-xl border border-line bg-white/80 p-5 shadow-sm">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-teal text-white font-bold text-[13px]">04</span>
+            <h2 class="text-[17px] font-bold text-ink">Variante 04: Blueprint Studio & Luxury Editorial (Estilo Revista de Arquitectura)</h2>
+          </div>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-teal/10 px-3 py-1 text-[12px] font-semibold text-teal">
+            <i class="ri-compasses-2-line"></i> Puntos de inspección interactivos (Hotspots) · Estética Atelier
+          </span>
+        </div>
+        <p class="mt-2 text-[14px] text-muted">
+          <strong>Enfoque:</strong> Inspirada en publicaciones de alta gama (Architectural Digest / Monocle). Incorpora "Hotspots" o pines técnicos interactivos sobre la fotografía de obra que revelan detalles constructivos exactos al pasar el cursor o pulsar (ej. bajante comunitaria, toma de fuerza 25A, nivelación láser).
+        </p>
+      </div>
+
+      <!-- COMIENZO DE LA SECCIÓN AISLADA 04 -->
+      <section class="w-full card-radius-lg border border-line bg-[#FAF7F2] p-6 md:p-10 lg:p-12 shadow-sm" aria-label="Metodología de reforma de cocina - Variante 4">
+        
+        <!-- Header Editorial -->
+        <div class="border-b border-line pb-8">
+          <div class="flex items-center gap-3">
+            <span class="h-px w-10 bg-teal"></span>
+            <span class="text-[11.5px] font-bold uppercase tracking-[0.25em] text-teal">Memoria Técnica Facultativa · Edición 2026</span>
+          </div>
+          <div class="mt-3 flex flex-col md:flex-row md:items-baseline md:justify-between gap-4">
+            <h3 class="font-editorial text-[30px] sm:text-[38px] md:text-[46px] leading-[1.1] text-ink max-w-[800px]">
+              Cómo ejecutamos tu reforma de cocina paso a paso.
+            </h3>
+            <span class="text-[13px] font-mono text-muted uppercase tracking-wider">Normativa CTE DB-HS3 / REBT</span>
+          </div>
+        </div>
+
+        <!-- Contenido Blueprint Studio -->
+        <div class="mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Selector Lateral de Fases Tipo Dossier (4 Cols) -->
+          <div class="lg:col-span-4 space-y-2.5" role="tablist">
+            <button onclick="var4Select(0)" class="var4-btn w-full text-left p-4 rounded-xl border-l-4 border-teal bg-white shadow-sm transition-all flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-mono uppercase text-teal block font-bold">Fase I · 60 min</span>
+                <span class="font-editorial text-[18px] font-bold text-ink">Medición y Enlaces</span>
+              </div>
+              <i class="ri-arrow-right-line text-teal"></i>
+            </button>
+
+            <button onclick="var4Select(1)" class="var4-btn w-full text-left p-4 rounded-xl border-l-4 border-transparent bg-white/60 hover:bg-white transition-all flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-mono uppercase text-muted block font-semibold">Fase II · 2 a 3 días</span>
+                <span class="font-editorial text-[18px] font-bold text-ink/80">Infografía 3D & Muestras</span>
+              </div>
+              <i class="ri-arrow-right-line text-muted/60"></i>
+            </button>
+
+            <button onclick="var4Select(2)" class="var4-btn w-full text-left p-4 rounded-xl border-l-4 border-transparent bg-white/60 hover:bg-white transition-all flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-mono uppercase text-muted block font-semibold">Fase III · 24 horas</span>
+                <span class="font-editorial text-[18px] font-bold text-ink/80">Contrato y Plazos</span>
+              </div>
+              <i class="ri-arrow-right-line text-muted/60"></i>
+            </button>
+
+            <button onclick="var4Select(3)" class="var4-btn w-full text-left p-4 rounded-xl border-l-4 border-transparent bg-white/60 hover:bg-white transition-all flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-mono uppercase text-muted block font-semibold">Fase IV · 1-2 semanas</span>
+                <span class="font-editorial text-[18px] font-bold text-ink/80">Obra e Instalaciones</span>
+              </div>
+              <i class="ri-arrow-right-line text-muted/60"></i>
+            </button>
+
+            <button onclick="var4Select(4)" class="var4-btn w-full text-left p-4 rounded-xl border-l-4 border-transparent bg-white/60 hover:bg-white transition-all flex items-center justify-between">
+              <div>
+                <span class="text-[11px] font-mono uppercase text-muted block font-semibold">Fase V · 3-4 días</span>
+                <span class="font-editorial text-[18px] font-bold text-ink/80">Montaje y Entrega</span>
+              </div>
+              <i class="ri-arrow-right-line text-muted/60"></i>
+            </button>
+
+            <!-- Sello Oficial del Colegio de Aparejadores -->
+            <div class="mt-6 rounded-xl border border-line bg-white/90 p-4 text-[13px] text-muted">
+              <div class="flex items-center gap-2 text-ink font-bold mb-1">
+                <i class="ri-award-fill text-teal text-[16px]"></i> Colegiación Oficial COAATM
+              </div>
+              Proyectos visados y supervisados bajo seguro de responsabilidad civil con cobertura total.
+            </div>
+          </div>
+
+          <!-- Lienzo Fotográfico Central con Hotspots Interactivos (8 Cols) -->
+          <div class="lg:col-span-8 card-radius overflow-hidden border border-line bg-white p-6 md:p-8 space-y-6">
+            
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-line pb-4">
+              <div>
+                <span id="var4-badge" class="text-[11px] font-mono font-bold uppercase text-teal">FASE I · MEDICIÓN Y ENLACES TÉCNICOS</span>
+                <h4 id="var4-title" class="font-editorial text-[24px] md:text-[28px] font-bold text-ink mt-0.5">
+                  Comprobación milimétrica de cotas, bajantes y tomas
+                </h4>
+              </div>
+              <span id="var4-duration" class="text-[12px] font-semibold text-muted bg-ice px-3 py-1 rounded-full border border-line whitespace-nowrap">
+                Duración: 60 min
+              </span>
+            </div>
+
+            <!-- Visor con Hotspots Pulsantes -->
+            <div class="relative card-radius overflow-hidden h-[340px] md:h-[420px] bg-ice">
+              <img id="var4-img" src="../landings_secundarias_madrid/images/cocinas-fase-01-medicion.webp" alt="Medición de cocina" class="h-full w-full object-cover"/>
+              
+              <!-- Hotspot 1: Campana / Humos -->
+              <div class="absolute top-[28%] right-[22%] group">
+                <button class="relative flex h-8 w-8 items-center justify-center rounded-full bg-teal text-white shadow-lg cursor-pointer hotspot-pulse" title="Tiro de humos">
+                  <i class="ri-focus-3-line text-[16px]"></i>
+                </button>
+                <div class="absolute right-0 top-10 hidden group-hover:block group-focus:block z-20 w-64 rounded-xl bg-ink/95 backdrop-blur-md p-3.5 text-white shadow-2xl border border-white/20 text-[12px]">
+                  <span class="font-bold text-[#E6C687] block mb-1">Evacuación de Humos</span>
+                  Tiro directo a chimenea comunitaria según norma ambiental madrileña con tubo estanco de 150 mm.
+                </div>
+              </div>
+
+              <!-- Hotspot 2: Enchufe Inducción -->
+              <div class="absolute bottom-[35%] left-[25%] group">
+                <button class="relative flex h-8 w-8 items-center justify-center rounded-full bg-teal text-white shadow-lg cursor-pointer hotspot-pulse" title="Toma eléctrica">
+                  <i class="ri-flashlight-line text-[16px]"></i>
+                </button>
+                <div class="absolute left-0 bottom-10 hidden group-hover:block group-focus:block z-20 w-64 rounded-xl bg-ink/95 backdrop-blur-md p-3.5 text-white shadow-2xl border border-white/20 text-[12px]">
+                  <span class="font-bold text-[#E6C687] block mb-1">Circuito C3 (6 mm²)</span>
+                  Comprobación de la línea de alta potencia para placa de inducción y horno sin caídas de tensión.
+                </div>
+              </div>
+
+              <!-- Hotspot 3: Láser 3D -->
+              <div class="absolute bottom-[18%] right-[32%] group">
+                <button class="relative flex h-8 w-8 items-center justify-center rounded-full bg-teal text-white shadow-lg cursor-pointer hotspot-pulse" title="Nivelación láser">
+                  <i class="ri-ruler-line text-[16px]"></i>
+                </button>
+                <div class="absolute right-0 bottom-10 hidden group-hover:block group-focus:block z-20 w-64 rounded-xl bg-ink/95 backdrop-blur-md p-3.5 text-white shadow-2xl border border-white/20 text-[12px]">
+                  <span class="font-bold text-[#E6C687] block mb-1">Medición Láser 3D</span>
+                  Escaneo de descuadres en tabiquería antigua para fabricar módulos gola a plomo perfecto.
+                </div>
+              </div>
+
+              <!-- Leyenda interactiva -->
+              <div class="absolute bottom-3 left-3 bg-ink/75 backdrop-blur-md px-3 py-1 rounded-md text-[11.5px] text-white/90">
+                <i class="ri-hand-finger-line text-[#E6C687] mr-1"></i> Pasa el cursor por los puntos dorados para inspeccionar
+              </div>
+            </div>
+
+            <!-- Ficha Técnica Inferior de 3 Columnas -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+              <div class="p-3.5 rounded-xl bg-ice/50 border border-line">
+                <span class="text-[11px] font-bold uppercase text-teal block">01 · Verificación</span>
+                <span class="text-[13.5px] font-medium text-ink mt-1 block">Inspección de presión de agua y sección de cables.</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-ice/50 border border-line">
+                <span class="text-[11px] font-bold uppercase text-teal block">02 · Normativa</span>
+                <span class="text-[13.5px] font-medium text-ink mt-1 block">Reglamento Electrotécnico de Baja Tensión (REBT).</span>
+              </div>
+              <div class="p-3.5 rounded-xl bg-ice/50 border border-line">
+                <span class="text-[11px] font-bold uppercase text-teal block">03 · Garantía</span>
+                <span class="text-[13.5px] font-medium text-ink mt-1 block">Plano de cotas in situ con tolerancia cero.</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- FIN SECCIÓN AISLADA 04 -->
+
+    </article>
+
+
+    <!-- ========================================================================= -->
+    <!-- FICHA Y VARIANTE 05: TARJETAS CON ENTREGABLES CLAVE (Resultados Tangibles) -->
+    <!-- ========================================================================= -->
+    <article id="var5" class="variante-block scroll-mt-24 space-y-6">
+      
+      <!-- CABECERA METADATOS DE LA VARIANTE -->
+      <div class="rounded-xl border border-line bg-white/80 p-5 shadow-sm">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div class="flex items-center gap-2.5">
+            <span class="flex h-7 w-7 items-center justify-center rounded-lg bg-teal text-white font-bold text-[13px]">05</span>
+            <h2 class="text-[17px] font-bold text-ink">Variante 05: Tarjetas Secuenciales con "Entregables Clave Tangibles"</h2>
+          </div>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-teal/10 px-3 py-1 text-[12px] font-semibold text-teal">
+            <i class="ri-folder-shield-2-line"></i> Psicología de control · Lo que recibes por escrito en cada etapa
+          </span>
+        </div>
+        <p class="mt-2 text-[14px] text-muted">
+          <strong>Enfoque:</strong> Centrado en la tranquilidad psicológica del cliente particular: responde de inmediato a la pregunta <em>"¿Qué recibo yo en mis manos en cada momento y qué aval tengo?"</em>. Cada una de las 5 fases tiene una caja dorada destacada con el documento o entregable vinculante.
+        </p>
+      </div>
+
+      <!-- COMIENZO DE LA SECCIÓN AISLADA 05 -->
+      <section class="w-full card-radius-lg border border-line bg-white p-6 md:p-10 lg:p-12 shadow-sm" aria-label="Metodología de reforma de cocina - Variante 5">
+        
+        <!-- Header de Sección -->
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+          <div>
+            <span class="text-[12px] font-bold uppercase tracking-[0.2em] text-teal block mb-2">Metodología Comprobada · Entregables Garantizados</span>
+            <h3 class="font-editorial text-[28px] leading-[1.15] text-ink sm:text-[36px] md:text-[42px] max-w-[800px]">
+              Cómo ejecutamos tu reforma de cocina paso a paso.
+            </h3>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3.5 py-1 text-[12.5px] font-bold text-okgreen">
+              <i class="ri-shield-check-fill"></i> 5 Certificaciones Escritas
+            </span>
+          </div>
+        </div>
+
+        <!-- Grid de 5 Tarjetas Verticales con Entregables -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+          
+          <!-- TARJETA 01 -->
+          <div class="card-radius border border-line bg-ice/30 p-5 flex flex-col justify-between hover:border-teal hover:bg-white hover:shadow-lg transition-all duration-300 group">
+            <div>
+              <div class="relative h-40 rounded-xl overflow-hidden border border-line">
+                <img src="../landings_secundarias_madrid/images/cocinas-fase-01-medicion.webp" alt="Medición" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                <span class="absolute top-2 left-2 bg-teal text-white text-[11px] font-bold px-2.5 py-0.5 rounded-md">Paso 01</span>
+                <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[10.5px] font-semibold px-2 py-0.5 rounded">60 min</span>
+              </div>
+
+              <h4 class="font-editorial mt-3 text-[19px] font-bold text-ink leading-snug">Medición y Enlaces Técnicos</h4>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed">
+                Comprobación milimétrica de cotas, bajantes comunitarias y tomas eléctricas de inducción.
+              </p>
+
+              <!-- CAJA DORADA DEL ENTREGABLE -->
+              <div class="mt-4 rounded-xl border border-teal/40 bg-teal/10 p-3 text-[12.5px]">
+                <span class="font-bold text-teal flex items-center gap-1 uppercase tracking-wider text-[11px]">
+                  <i class="ri-file-list-3-line text-[14px]"></i> Entregable al Cliente:
+                </span>
+                <span class="font-semibold text-ink mt-1 block">Plano de cotas in situ e informe de viabilidad técnica.</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 pt-3 border-t border-line space-y-1.5 text-[12.5px] text-ink/80 font-medium">
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Cableado mín. 6 mm²</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Tiro de humos CTE</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Medición láser 3D</li>
+            </ul>
+          </div>
+
+          <!-- TARJETA 02 -->
+          <div class="card-radius border border-line bg-ice/30 p-5 flex flex-col justify-between hover:border-teal hover:bg-white hover:shadow-lg transition-all duration-300 group">
+            <div>
+              <div class="relative h-40 rounded-xl overflow-hidden border border-line">
+                <img src="../landings_secundarias_madrid/images/cocinas-fase-02-3d.webp" alt="Infografía 3D" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                <span class="absolute top-2 left-2 bg-teal text-white text-[11px] font-bold px-2.5 py-0.5 rounded-md">Paso 02</span>
+                <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[10.5px] font-semibold px-2 py-0.5 rounded">2-3 días</span>
+              </div>
+
+              <h4 class="font-editorial mt-3 text-[19px] font-bold text-ink leading-snug">Infografía 3D y Muestras</h4>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed">
+                Modelado fotorrealista de la isla, gola e iluminación LED bajo muebles en estudio.
+              </p>
+
+              <!-- CAJA DORADA DEL ENTREGABLE -->
+              <div class="mt-4 rounded-xl border border-teal/40 bg-teal/10 p-3 text-[12.5px]">
+                <span class="font-bold text-teal flex items-center gap-1 uppercase tracking-wider text-[11px]">
+                  <i class="ri-image-line text-[14px]"></i> Entregable al Cliente:
+                </span>
+                <span class="font-semibold text-ink mt-1 block">Dossier Render 3D 4K y muestras físicas elegidas.</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 pt-3 border-t border-line space-y-1.5 text-[12.5px] text-ink/80 font-medium">
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Render diurno y noche</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Muestras Dekton/Silestone</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Triángulo de trabajo</li>
+            </ul>
+          </div>
+
+          <!-- TARJETA 03 -->
+          <div class="card-radius border border-line bg-ice/30 p-5 flex flex-col justify-between hover:border-teal hover:bg-white hover:shadow-lg transition-all duration-300 group">
+            <div>
+              <div class="relative h-40 rounded-xl overflow-hidden border border-line">
+                <img src="../landings_secundarias_madrid/images/cocinas-fase-03-contrato.webp" alt="Contrato" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                <span class="absolute top-2 left-2 bg-teal text-white text-[11px] font-bold px-2.5 py-0.5 rounded-md">Paso 03</span>
+                <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[10.5px] font-semibold px-2 py-0.5 rounded">24 h</span>
+              </div>
+
+              <h4 class="font-editorial mt-3 text-[19px] font-bold text-ink leading-snug">Presupuesto y Contrato</h4>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed">
+                Memoria técnica exhaustiva con marcas, calibres y modelos exactos garantizados por escrito.
+              </p>
+
+              <!-- CAJA DORADA DEL ENTREGABLE -->
+              <div class="mt-4 rounded-xl border border-teal/40 bg-teal/10 p-3 text-[12.5px]">
+                <span class="font-bold text-teal flex items-center gap-1 uppercase tracking-wider text-[11px]">
+                  <i class="ri-file-shield-line text-[14px]"></i> Entregable al Cliente:
+                </span>
+                <span class="font-semibold text-ink mt-1 block">Contrato vinculante con precio y fecha cerrada.</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 pt-3 border-t border-line space-y-1.5 text-[12.5px] text-ink/80 font-medium">
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Precio sin desviaciones</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Penalización por retraso</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Calendario detallado</li>
+            </ul>
+          </div>
+
+          <!-- TARJETA 04 -->
+          <div class="card-radius border border-line bg-ice/30 p-5 flex flex-col justify-between hover:border-teal hover:bg-white hover:shadow-lg transition-all duration-300 group">
+            <div>
+              <div class="relative h-40 rounded-xl overflow-hidden border border-line">
+                <img src="../landings_secundarias_madrid/images/cocinas-fase-04-ejecucion.webp" alt="Obra" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                <span class="absolute top-2 left-2 bg-teal text-white text-[11px] font-bold px-2.5 py-0.5 rounded-md">Paso 04</span>
+                <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[10.5px] font-semibold px-2 py-0.5 rounded">1-2 semanas</span>
+              </div>
+
+              <h4 class="font-editorial mt-3 text-[19px] font-bold text-ink leading-snug">Albañilería e Instalaciones</h4>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed">
+                Fontanería multicapa, cuadro eléctrico C3/C4 y solera autonivelante de alta resistencia.
+              </p>
+
+              <!-- CAJA DORADA DEL ENTREGABLE -->
+              <div class="mt-4 rounded-xl border border-teal/40 bg-teal/10 p-3 text-[12.5px]">
+                <span class="font-bold text-teal flex items-center gap-1 uppercase tracking-wider text-[11px]">
+                  <i class="ri-tools-line text-[14px]"></i> Entregable al Cliente:
+                </span>
+                <span class="font-semibold text-ink mt-1 block">Boletín de instalaciones y prueba de presión.</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 pt-3 border-t border-line space-y-1.5 text-[12.5px] text-ink/80 font-medium">
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Multicapa termofusionada</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Circuitos C3 y C4</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Solera autonivelante</li>
+            </ul>
+          </div>
+
+          <!-- TARJETA 05 -->
+          <div class="card-radius border border-line bg-ice/30 p-5 flex flex-col justify-between hover:border-teal hover:bg-white hover:shadow-lg transition-all duration-300 group">
+            <div>
+              <div class="relative h-40 rounded-xl overflow-hidden border border-line">
+                <img src="../landings_secundarias_madrid/images/cocinas-fase-05-entrega.webp" alt="Entrega final" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"/>
+                <span class="absolute top-2 left-2 bg-teal text-white text-[11px] font-bold px-2.5 py-0.5 rounded-md">Paso 05</span>
+                <span class="absolute bottom-2 right-2 bg-ink/80 text-white text-[10.5px] font-semibold px-2 py-0.5 rounded">3-4 días</span>
+              </div>
+
+              <h4 class="font-editorial mt-3 text-[19px] font-bold text-ink leading-snug">Montaje y Entrega Limpia</h4>
+              <p class="mt-2 text-[13.5px] text-muted leading-relaxed">
+                Herrajes Blum ajustados al milímetro, encimera porcelánica sellada y electrodomésticos en marcha.
+              </p>
+
+              <!-- CAJA DORADA DEL ENTREGABLE -->
+              <div class="mt-4 rounded-xl border border-teal/40 bg-teal/10 p-3 text-[12.5px]">
+                <span class="font-bold text-teal flex items-center gap-1 uppercase tracking-wider text-[11px]">
+                  <i class="ri-medal-line text-[14px]"></i> Entregable al Cliente:
+                </span>
+                <span class="font-semibold text-ink mt-1 block">Certificado 2 Años de Garantía y Llave Lista.</span>
+              </div>
+            </div>
+
+            <ul class="mt-4 pt-3 border-t border-line space-y-1.5 text-[12.5px] text-ink/80 font-medium">
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Herrajes freno Blum</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Estanqueidad probada</li>
+              <li class="flex items-center gap-1.5"><i class="ri-check-line text-teal"></i>Limpieza técnica final</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Banner de Conversión con Garantía Escrita -->
+        <div class="mt-10 card-radius border border-line bg-ice/50 p-6 md:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div class="space-y-1">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Sin Letra Pequeña · Madrid Centro y Comunidad</span>
+            <h5 class="font-editorial text-[22px] md:text-[24px] font-bold text-ink">¿Empezamos por el Paso 01 sin ningún compromiso?</h5>
+            <p class="text-[14px] text-muted">Visita técnica de 60 minutos con medición láser y asesoramiento sobre tu tabiquería.</p>
+          </div>
+          <a href="#contacto" class="inline-flex items-center justify-center gap-2 rounded-xl bg-teal px-6 py-3.5 text-[15px] font-bold text-white hover:bg-teal-hover transition-colors whitespace-nowrap shadow-sm">
+            <span>Solicitar Visita Técnica</span>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+
+      </section>
+      <!-- FIN SECCIÓN AISLADA 05 -->
+
+    </article>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- SCRIPTS DE INTERACTIVIDAD PARA CADA VARIANTE Y FILTRO DE EVALUACIÓN        -->
+  <!-- ========================================================================= -->
+  <script>
+    // DATOS DE LAS 5 FASES
+    const FASES_DATA = [
+      {
+        step: "01",
+        stepName: "Medición",
+        time: "60 min",
+        badge: "Fase 01 · Medición y Enlaces Técnicos",
+        title: "Comprobación milimétrica de cotas, bajantes y tomas",
+        desc: "Inspeccionamos la presión de agua, la sección de los cables para placas de inducción de alta potencia y el trazado de evacuación de humos hacia la chimenea comunitaria según normativa madrileña.",
+        duration: "Visita técnica gratuita · 60 min",
+        img: "../landings_secundarias_madrid/images/cocinas-fase-01-medicion.webp",
+        imgBadge: "Inspección In Situ Certificada",
+        protocols: [
+          "Comprobación de sección eléctrica (mínimo 6 mm² para placa/horno)",
+          "Verificación de tiro y diámetro del tubo de extracción de humos",
+          "Medición láser 3D para encajar módulos gola sin descuadres"
+        ]
+      },
+      {
+        step: "02",
+        stepName: "Infografía 3D",
+        time: "2 a 3 días",
+        badge: "Fase 02 · Infografía 3D y Selección de Muestras",
+        title: "Modelado hiperrealista y visualización de acabados en pantalla",
+        desc: "Podrás visualizar cómo interactúa la luz natural con tu futura isla porcelánica Calacatta, la distribución de cajones interiores y la iluminación LED bajo muebles antes de cortar una sola tabla.",
+        duration: "Presentación en estudio · 2 a 3 días",
+        img: "../landings_secundarias_madrid/images/cocinas-fase-02-3d.webp",
+        imgBadge: "Render 360° Fotorrealista",
+        protocols: [
+          "Render fotorrealista 360° con iluminación diurna y nocturna",
+          "Muestrario físico de encimeras (Dekton, Silestone, Neolith) y lacados",
+          "Optimización ergonómica del triángulo de trabajo (frío, lavado, cocción)"
+        ]
+      },
+      {
+        step: "03",
+        stepName: "Contrato",
+        time: "24 horas",
+        badge: "Fase 03 · Presupuesto Desglosado y Contrato",
+        title: "Partidas cerradas por escrito y penalización por día de demora",
+        desc: "Redactamos una memoria técnica exhaustiva con marcas, calibres y modelos exactos. El importe final no sufre sobrecostes sorpresivos y se pacta una fecha límite de entrega avalada por contrato.",
+        duration: "Firma vinculante · 24 horas",
+        img: "../landings_secundarias_madrid/images/cocinas-fase-03-contrato.webp",
+        imgBadge: "Precio Cerrado y Plazo Vinculante",
+        protocols: [
+          "Precio cerrado sin cláusulas ocultas ni desviaciones de presupuesto",
+          "Cláusula de penalización económica si se supera el plazo acordado",
+          "Planificación de recepción de electrodomésticos y encimera coordinada"
+        ]
+      },
+      {
+        step: "04",
+        stepName: "Instalaciones",
+        time: "1 a 2 semanas",
+        badge: "Fase 04 · Demolición, Albañilería e Instalaciones",
+        title: "Renovación integral de fontanería, electricidad y nivelado",
+        desc: "Retiramos azulejos antiguos, sustituimos tuberías de plomo/cobre por multicapa de alta resistencia y realizamos regolas limpias con aspiración para cableado independiente protegido en cuadro eléctrico.",
+        duration: "Ejecución técnica · 1 a 2 semanas",
+        img: "../landings_secundarias_madrid/images/cocinas-fase-04-ejecucion.webp",
+        imgBadge: "Fontanería Multicapa & Cuadro C3/C4",
+        protocols: [
+          "Fontanería multicapa termofusionada sin empalmes en falso tabique",
+          "Nuevos circuitos independientes (C3 para vitro/horno, C4 para lavavajillas/lavadora)",
+          "Nivelación autonivelante de solera para colocación perfecta de pavimentos"
+        ]
+      },
+      {
+        step: "05",
+        stepName: "Entrega",
+        time: "3 a 4 días",
+        badge: "Fase 05 · Montaje de Mobiliario, Encimera y Entrega",
+        title: "Instalación de módulos gola, sellado de encimera y limpieza final",
+        desc: "Montadores especialistas ensamblan el mobiliario, canteros especialistas fijan la encimera porcelánica con copete ingletado y dejamos todos los electrodomésticos comprobados y conectados.",
+        duration: "Ajuste fino · 3 a 4 días",
+        img: "../landings_secundarias_madrid/images/cocinas-fase-05-entrega.webp",
+        imgBadge: "2 Años de Garantía Escrita",
+        protocols: [
+          "Ajuste milimétrico de bisagras y cajones con freno amortiguado Blum",
+          "Conexión y prueba de estanqueidad de fregadero y electrodomésticos",
+          "Limpieza técnica integral de fin de obra lista para cocinar desde el primer minuto"
+        ]
+      }
+    ];
+
+    // 1. CONTROL DE LA VARIANTE 01 (STEPPER PRO)
+    function var1Select(index) {
+      const data = FASES_DATA[index];
+      const buttons = document.querySelectorAll('.var1-btn');
+      buttons.forEach((btn, i) => {
+        const isSel = (i === index);
+        btn.setAttribute('aria-selected', isSel ? 'true' : 'false');
+        const step = btn.querySelector('.var1-step');
+        const title = btn.querySelector('.var1-title');
+        const time = btn.querySelector('.var1-time');
+        const bar = btn.querySelector('.var1-bar');
+        if (isSel) {
+          btn.className = 'var1-btn text-left p-3.5 sm:p-4 rounded-xl border-2 border-teal bg-teal/5 transition-all duration-200 cursor-pointer shadow-sm flex flex-col justify-between gap-2.5';
+          if (step) step.className = 'var1-step text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-teal';
+          if (title) title.className = 'var1-title font-bold text-ink text-[16px] sm:text-[17px] leading-tight';
+          if (time) time.className = 'var1-time text-[11px] font-semibold text-teal bg-white px-2 py-0.5 rounded-full border border-teal/30';
+          if (bar) bar.style.width = '100%';
+        } else {
+          btn.className = 'var1-btn text-left p-3.5 sm:p-4 rounded-xl border border-line bg-white/70 hover:bg-white hover:border-teal/50 transition-all duration-200 cursor-pointer flex flex-col justify-between gap-2.5';
+          if (step) step.className = 'var1-step text-[11px] sm:text-[12px] font-bold uppercase tracking-wider text-muted';
+          if (title) title.className = 'var1-title font-bold text-ink/75 text-[16px] sm:text-[17px] leading-tight';
+          if (time) time.className = 'var1-time text-[11px] font-medium text-muted bg-ice px-2 py-0.5 rounded-full';
+          if (bar) bar.style.width = '0%';
+        }
+      });
+
+      // Actualizar información
+      const img = document.getElementById('var1-img');
+      if (img) {
+        img.style.opacity = '0.3';
+        setTimeout(() => {
+          img.src = data.img;
+          img.style.opacity = '1';
+        }, 100);
+      }
+      document.getElementById('var1-badge').textContent = data.badge;
+      document.getElementById('var1-headline').textContent = data.title;
+      document.getElementById('var1-description').textContent = data.desc;
+      document.getElementById('var1-duration-badge').innerHTML = '<i class="ri-time-line text-teal"></i> ' + data.duration;
+      document.getElementById('var1-img-badge').textContent = data.imgBadge;
+
+      const protContainer = document.getElementById('var1-protocols');
+      if (protContainer) {
+        protContainer.innerHTML = data.protocols.map(p => `
+          <li class="flex items-start gap-3 text-[15px] sm:text-[16px] font-medium text-ink">
+            <i class="ri-checkbox-circle-fill text-teal text-[18px] shrink-0 mt-0.5"></i>
+            <span>${p}</span>
+          </li>
+        `).join('');
+      }
+    }
+
+    // 2. CONTROL DE LA VARIANTE 02 (TIMELINE STICKY HOVER/CLICK)
+    function var2Hover(index) {
+      const data = FASES_DATA[index];
+      const img = document.getElementById('var2-sticky-img');
+      if (img && img.src !== data.img) {
+        img.style.opacity = '0.4';
+        setTimeout(() => {
+          img.src = data.img;
+          img.style.opacity = '1';
+        }, 80);
+      }
+      document.getElementById('var2-sticky-fase').textContent = `Fase Activa: 0${index + 1} de 05`;
+      document.getElementById('var2-sticky-title').textContent = data.title;
+      document.getElementById('var2-sticky-desc').textContent = data.desc;
+    }
+
+    // 3. CONTROL DE LA VARIANTE 03 (BENTO GRID CLICK)
+    function var3Select(index) {
+      const data = FASES_DATA[index];
+      const heroBadge = document.getElementById('var3-hero-badge');
+      const heroTime = document.getElementById('var3-hero-time');
+      const heroTitle = document.getElementById('var3-hero-title');
+      const heroDesc = document.getElementById('var3-hero-desc');
+      const heroImg = document.getElementById('var3-hero-img');
+      const heroProtocols = document.getElementById('var3-hero-protocols');
+
+      if (heroImg) {
+        heroImg.style.opacity = '0.3';
+        setTimeout(() => {
+          heroImg.src = data.img;
+          heroImg.style.opacity = '1';
+        }, 100);
+      }
+      if (heroBadge) heroBadge.textContent = data.badge;
+      if (heroTime) heroTime.innerHTML = '<i class="ri-time-line text-teal mr-1"></i> ' + data.time;
+      if (heroTitle) heroTitle.textContent = data.title;
+      if (heroDesc) heroDesc.textContent = data.desc;
+
+      if (heroProtocols) {
+        heroProtocols.innerHTML = data.protocols.map(p => `
+          <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[16px] mt-0.5"></i><span>${p}</span></li>
+        `).join('');
+      }
+    }
+
+    // 4. CONTROL DE LA VARIANTE 04 (BLUEPRINT STUDIO)
+    function var4Select(index) {
+      const data = FASES_DATA[index];
+      const buttons = document.querySelectorAll('.var4-btn');
+      buttons.forEach((btn, i) => {
+        if (i === index) {
+          btn.className = 'var4-btn w-full text-left p-4 rounded-xl border-l-4 border-teal bg-white shadow-sm transition-all flex items-center justify-between';
+          btn.querySelector('i').className = 'ri-arrow-right-line text-teal';
+        } else {
+          btn.className = 'var4-btn w-full text-left p-4 rounded-xl border-l-4 border-transparent bg-white/60 hover:bg-white transition-all flex items-center justify-between';
+          btn.querySelector('i').className = 'ri-arrow-right-line text-muted/60';
+        }
+      });
+
+      const img = document.getElementById('var4-img');
+      if (img) {
+        img.style.opacity = '0.3';
+        setTimeout(() => {
+          img.src = data.img;
+          img.style.opacity = '1';
+        }, 100);
+      }
+      document.getElementById('var4-badge').textContent = data.badge.toUpperCase();
+      document.getElementById('var4-title').textContent = data.title;
+      document.getElementById('var4-duration').textContent = 'Duración: ' + data.time;
+    }
+
+    // 5. HERRAMIENTA TOOLBAR: FILTRO RÁPIDO PARA EVALUAR UNA O TODAS LAS VARIANTES
+    function filtrarVariante(id) {
+      const allBlocks = document.querySelectorAll('.variante-block');
+      const allButtons = document.querySelectorAll('.filter-btn');
+
+      allButtons.forEach(btn => {
+        btn.classList.remove('bg-teal', 'font-bold');
+        btn.classList.add('bg-white/10', 'font-medium', 'text-white/80');
+      });
+
+      const activeBtn = document.getElementById('btn-' + id);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white/10', 'font-medium', 'text-white/80');
+        activeBtn.classList.add('bg-teal', 'font-bold', 'text-white');
+      }
+
+      if (id === 'todas') {
+        allBlocks.forEach(b => b.style.display = 'block');
+      } else {
+        allBlocks.forEach(b => {
+          if (b.id === id) {
+            b.style.display = 'block';
+            b.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } else {
+            b.style.display = 'none';
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>
