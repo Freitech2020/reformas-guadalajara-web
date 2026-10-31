@@ -402,6 +402,419 @@
   }
 
   
+
+  /* ==============================================================================
+     BLINDAJE SCOPED: SECCIÓN FASES - GRID PANORÁMICO DE 5 PASOS (OPCIÓN 2)
+     Ley 8: Token Design Freitech 2026 | Cero Clics | 100% Responsive Vertical Flow
+     ============================================================================== */
+  #fases-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .fase-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid rgba(14, 27, 46, 0.09);
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(14, 27, 46, 0.04);
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  }
+  .fase-card:hover {
+    border-color: rgba(45, 134, 126, 0.45);
+    box-shadow: 0 12px 28px rgba(14, 27, 46, 0.09);
+    transform: translateY(-3px);
+  }
+  .fase-card-wide {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 640px) {
+    .fase-card-wide {
+      flex-direction: row;
+    }
+    .fase-card-wide .fase-card-media {
+      width: 42%;
+      flex-shrink: 0;
+      min-height: 100%;
+    }
+    .fase-card-wide .fase-card-body {
+      width: 58%;
+    }
+  }
+  .fase-card-media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f5f9;
+  }
+  .fase-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease-out;
+  }
+  .fase-card:hover .fase-card-media img {
+    transform: scale(1.04);
+  }
+  .fase-card-badge-num {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+  }
+  .fase-card-num {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(14, 27, 46, 0.92);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .fase-card-num-gold {
+    background: #2D867E;
+    color: #ffffff;
+  }
+  .fase-card-step-tag {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2D867E;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .fase-card-duration {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    background: rgba(14, 27, 46, 0.85);
+    padding: 4px 10px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 2;
+  }
+  .fase-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+  @media (min-width: 640px) {
+    .fase-card-body {
+      padding: 28px;
+    }
+  }
+  .fase-card-subtitle {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #2D867E;
+  }
+  .fase-card-title {
+    font-family: var(--font-editorial, Georgia, serif);
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0E1B2E;
+    line-height: 1.25;
+  }
+  @media (min-width: 640px) {
+    .fase-card-title {
+      font-size: 22px;
+    }
+  }
+  .fase-card-desc {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(14, 27, 46, 0.85);
+    font-weight: 400;
+  }
+  @media (min-width: 640px) {
+    .fase-card-desc {
+      font-size: 16px;
+    }
+  }
+  .fase-card-checklist {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(14, 27, 46, 0.08);
+    padding-top: 16px;
+  }
+  .fase-card-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #0E1B2E;
+    font-weight: 500;
+  }
+  .fase-card-checklist li i {
+    color: #2D867E;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .fase-card-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(14, 27, 46, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fase-card-footer-meta {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: rgba(14, 27, 46, 0.7);
+  }
+  .fase-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #2D867E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .fase-card-cta:hover {
+    color: #246B65;
+  }
+  .fase-card-cta i {
+    transition: transform 0.2s ease;
+  }
+  .fase-card-cta:hover i {
+    transform: translateX(4px);
+  }
+
+
+  /* ==============================================================================
+     BLINDAJE SCOPED: SECCIÓN FASES - GRID PANORÁMICO DE 5 PASOS (OPCIÓN 2)
+     Ley 8: Token Design Freitech 2026 | Cero Clics | Armonía Proporcional 100%
+     ============================================================================== */
+  #fases-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .fase-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid rgba(14, 27, 46, 0.09);
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(14, 27, 46, 0.04);
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  }
+  .fase-card:hover {
+    border-color: rgba(45, 134, 126, 0.45);
+    box-shadow: 0 12px 28px rgba(14, 27, 46, 0.09);
+    transform: translateY(-3px);
+  }
+  .fase-card-media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f5f9;
+    aspect-ratio: 16 / 10;
+  }
+  .fase-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease-out;
+  }
+  .fase-card:hover .fase-card-media img {
+    transform: scale(1.04);
+  }
+  .fase-card-badge-num {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+  }
+  .fase-card-num {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(14, 27, 46, 0.92);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .fase-card-num-gold {
+    background: #2D867E;
+    color: #ffffff;
+  }
+  .fase-card-step-tag {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2D867E;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .fase-card-duration {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    background: rgba(14, 27, 46, 0.85);
+    padding: 4px 10px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 2;
+  }
+  .fase-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+  @media (min-width: 640px) {
+    .fase-card-body {
+      padding: 28px;
+    }
+  }
+  .fase-card-subtitle {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #2D867E;
+  }
+  .fase-card-title {
+    font-family: var(--font-editorial, Georgia, serif);
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0E1B2E;
+    line-height: 1.25;
+  }
+  @media (min-width: 640px) {
+    .fase-card-title {
+      font-size: 22px;
+    }
+  }
+  .fase-card-desc {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(14, 27, 46, 0.85);
+    font-weight: 400;
+  }
+  @media (min-width: 640px) {
+    .fase-card-desc {
+      font-size: 16px;
+    }
+  }
+  .fase-card-checklist {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(14, 27, 46, 0.08);
+    padding-top: 16px;
+  }
+  .fase-card-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #0E1B2E;
+    font-weight: 500;
+  }
+  .fase-card-checklist li i {
+    color: #2D867E;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .fase-card-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(14, 27, 46, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fase-card-footer-meta {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: rgba(14, 27, 46, 0.7);
+  }
+  .fase-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #2D867E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .fase-card-cta:hover {
+    color: #246B65;
+  }
+  .fase-card-cta i {
+    transition: transform 0.2s ease;
+  }
+  .fase-card-cta:hover i {
+    transform: translateX(4px);
+  }
+
 </style>
 <!-- FREITECH TOKEN DESIGN 2026: TIPOGRAFÍA NEGRO PURO, ESCALA ESTRICTA, OVERLAYS Y CTAS DINÁMICOS -->
 <style id="freitech-token-design-2026">
@@ -2120,253 +2533,269 @@ Ver climatización
 </li>
 </ul></div>
   </div>
-</div></section><section class="w-full border-t border-line bg-ice py-16 md:py-24" id="fases"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"><div><h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">Un proceso riguroso y transparente desde la primera visita.</h2></div><p class="text-[14px] leading-[1.6] text-ink/80 md:max-w-[280px]">Cada fase se cierra con documentación firmada antes de pasar a la siguiente.</p></div></div>
-<!-- MOBILE ACCORDION (< 1024px: CERO DESORIENTACIÓN, FOTO Y CONTENIDO EN CADA PASO) -->
-<div class="mt-8 flex flex-col gap-3 lg:hidden" id="fases-mobile-accordion">
-<div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="0">
-  <button type="button" aria-expanded="true" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-ice transition-colors cursor-pointer">
-    <div class="flex items-center gap-3.5">
-      <span class="w-8 h-8 rounded-full bg-teal text-white flex items-center justify-center text-[13px] font-bold">01</span>
+</div></section><section class="w-full border-t border-line bg-ice py-16 md:py-24" id="fases"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-16"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+<div>
+  <span class="inline-flex items-center gap-2 rounded-full bg-teal/10 px-3.5 py-1 text-[12px] font-bold uppercase tracking-[0.16em] text-teal mb-3">
+    <i class="ri-route-line text-[14px]"></i> Proceso Transparente · 5 Pasos Garantizados
+  </span>
+  <h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">
+    De la primera visita a la entrega final: 5 pasos claros y garantizados por contrato.
+  </h2>
+</div>
+<p class="text-[16px] md:text-[18px] leading-[1.6] text-ink/80 md:max-w-[340px]">
+  Cero sorpresas ni costes ocultos. Cada fase se documenta, se valida contigo y se cierra formalmente antes de pasar a la siguiente.
+</p>
+</div></div>
+
+<!-- GRID PANORÁMICO DE 5 PASOS AUTÓNOMOS (OPCIÓN 2: CERO CLICS, MÁXIMA CLARIDAD Y CONVERSIÓN) -->
+<div class="mt-10" id="fases-grid">
+
+  <!-- FILA SUPERIOR: FASE DE PLANIFICACIÓN Y PROYECTO (PASOS 01, 02, 03) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- PASO 01: MEDICIÓN -->
+    <article class="fase-card group">
       <div>
-        <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 01 · Medición</span>
-        <h4 class="text-[17px] sm:text-[18px] font-bold text-ink">Medición</h4>
-      </div>
-    </div>
-    <span class="fase-arrow flex h-8 w-8 items-center justify-center rounded-full border border-teal/30 bg-teal/10 text-teal transition-transform duration-300 rotate-180">
-      <i class="ri-arrow-down-s-line text-[18px]"></i>
-    </span>
-  </button>
-  <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 1fr; opacity: 1;">
-    <div class="min-h-0">
-      <div class="w-full relative overflow-hidden bg-line/40" style="aspect-ratio: 16 / 10; max-height: 230px;">
-        <img class="h-full w-full object-cover object-top" src="images/madrid-fase-01-medicion.webp" alt="Visita técnica y medición real de tu vivienda" loading="lazy" />
-      </div>
-      <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
-        <h3 class="font-editorial text-[21px] font-bold text-ink leading-tight">Visita técnica y medición real de tu vivienda</h3>
-        <p class="text-[14.5px] leading-[1.6] text-ink/90">Vamos a tu casa con láser y cámara térmica. Medimos cada estancia, revisamos instalaciones existentes y detectamos posibles patologías antes de presupuestar nada.</p>
-        <ul class="flex flex-col gap-2 pt-1">
-          <li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Levantamiento de planos en 48 h</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Revisión de cuadro eléctrico y fontanería</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Informe fotográfico y de viabilidad</li>
-        </ul>
-        <div class="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-3 border-t border-line">
-          <span class="text-[13px] font-semibold text-ink/80">Visita de 60–90 min · Sin coste</span>
-          <a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm self-start sm:self-auto" href="#contacto">Pedir Visita Gratuita <i class="ri-arrow-right-line text-[14px]"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="1">
-  <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
-    <div class="flex items-center gap-3.5">
-      <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold">02</span>
-      <div>
-        <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 02 · Diseño 3D</span>
-        <h4 class="text-[17px] sm:text-[18px] font-bold text-ink">Diseño 3D</h4>
-      </div>
-    </div>
-    <span class="fase-arrow flex h-8 w-8 items-center justify-center rounded-full border border-teal/30 bg-teal/10 text-teal transition-transform duration-300 ">
-      <i class="ri-arrow-down-s-line text-[18px]"></i>
-    </span>
-  </button>
-  <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0;">
-    <div class="min-h-0">
-      <div class="w-full relative overflow-hidden bg-line/40" style="aspect-ratio: 16 / 10; max-height: 230px;">
-        <img class="h-full w-full object-cover object-top" src="images/madrid-fase-02-diseno3d.webp" alt="Diseño 3D y definición de materiales" loading="lazy" />
-      </div>
-      <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
-        <h3 class="font-editorial text-[21px] font-bold text-ink leading-tight">Diseño 3D y definición de materiales</h3>
-        <p class="text-[14.5px] leading-[1.6] text-ink/90">Traducimos el brief en una propuesta espacial con renderizados fotorrealistas, paleta de materiales y desglose de calidades. Dos rondas de ajustes incluidas en el encargo.</p>
-        <ul class="flex flex-col gap-2 pt-1">
-          <li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Planos de distribución y alzados</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Render 3D por estancia</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Selección de materiales en showroom</li>
-        </ul>
-        <div class="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-3 border-t border-line">
-          <span class="text-[13px] font-semibold text-ink/80">7–10 días laborables</span>
-          <a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm self-start sm:self-auto" href="#contacto">Solicitar diseño 3D <i class="ri-arrow-right-line text-[14px]"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="2">
-  <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
-    <div class="flex items-center gap-3.5">
-      <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold">03</span>
-      <div>
-        <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 03 · Contrato Cerrado</span>
-        <h4 class="text-[17px] sm:text-[18px] font-bold text-ink">Contrato Cerrado</h4>
-      </div>
-    </div>
-    <span class="fase-arrow flex h-8 w-8 items-center justify-center rounded-full border border-teal/30 bg-teal/10 text-teal transition-transform duration-300 ">
-      <i class="ri-arrow-down-s-line text-[18px]"></i>
-    </span>
-  </button>
-  <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0;">
-    <div class="min-h-0">
-      <div class="w-full relative overflow-hidden bg-line/40" style="aspect-ratio: 16 / 10; max-height: 230px;">
-        <img class="h-full w-full object-cover object-top" src="images/madrid-fase-03-contrato.webp" alt="Presupuesto ciego y contrato cerrado por partidas" loading="lazy" />
-      </div>
-      <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
-        <h3 class="font-editorial text-[21px] font-bold text-ink leading-tight">Presupuesto ciego y contrato cerrado por partidas</h3>
-        <p class="text-[14.5px] leading-[1.6] text-ink/90">Recibes un presupuesto desglosado partida por partida con precio final garantizado. Firmamos plazo de ejecución y penalización por retraso, sin sorpresas ni extras no aprobados.</p>
-        <ul class="flex flex-col gap-2 pt-1">
-          <li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Presupuesto detallado por capítulos</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Plazo y penalizaciones por escrito</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Gestión de licencia municipal</li>
-        </ul>
-        <div class="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-3 border-t border-line">
-          <span class="text-[13px] font-semibold text-ink/80">3–5 días desde el diseño</span>
-          <a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm self-start sm:self-auto" href="#contacto">Pedir presupuesto cerrado <i class="ri-arrow-right-line text-[14px]"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="3">
-  <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
-    <div class="flex items-center gap-3.5">
-      <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold">04</span>
-      <div>
-        <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 04 · Ejecución</span>
-        <h4 class="text-[17px] sm:text-[18px] font-bold text-ink">Ejecución</h4>
-      </div>
-    </div>
-    <span class="fase-arrow flex h-8 w-8 items-center justify-center rounded-full border border-teal/30 bg-teal/10 text-teal transition-transform duration-300 ">
-      <i class="ri-arrow-down-s-line text-[18px]"></i>
-    </span>
-  </button>
-  <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0;">
-    <div class="min-h-0">
-      <div class="w-full relative overflow-hidden bg-line/40" style="aspect-ratio: 16 / 10; max-height: 230px;">
-        <img class="h-full w-full object-cover object-top" src="images/madrid-fase-04-licencias.webp" alt="Ejecución con dirección técnica diaria" loading="lazy" />
-      </div>
-      <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
-        <h3 class="font-editorial text-[21px] font-bold text-ink leading-tight">Ejecución con dirección técnica diaria</h3>
-        <p class="text-[14.5px] leading-[1.6] text-ink/90">Un jefe de obra asignado supervisa cada gremio y te envía parte fotográfico diario por WhatsApp. Los oficios entran coordinados por fases para no solapar ni parar la obra.</p>
-        <ul class="flex flex-col gap-2 pt-1">
-          <li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Parte de obra diario con fotos</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Coordinación de seguridad y residuos</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Reunión de seguimiento semanal</li>
-        </ul>
-        <div class="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-3 border-t border-line">
-          <span class="text-[13px] font-semibold text-ink/80">6–9 semanas según proyecto</span>
-          <a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm self-start sm:self-auto" href="#oficios">Conocer nuestros oficios <i class="ri-arrow-right-line text-[14px]"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="4">
-  <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
-    <div class="flex items-center gap-3.5">
-      <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold">05</span>
-      <div>
-        <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 05 · Entrega</span>
-        <h4 class="text-[17px] sm:text-[18px] font-bold text-ink">Entrega</h4>
-      </div>
-    </div>
-    <span class="fase-arrow flex h-8 w-8 items-center justify-center rounded-full border border-teal/30 bg-teal/10 text-teal transition-transform duration-300 ">
-      <i class="ri-arrow-down-s-line text-[18px]"></i>
-    </span>
-  </button>
-  <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0;">
-    <div class="min-h-0">
-      <div class="w-full relative overflow-hidden bg-line/40" style="aspect-ratio: 16 / 10; max-height: 230px;">
-        <img class="h-full w-full object-cover object-top" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-fase-05-entrega-garantia.jpg" alt="Entrega, limpieza fina y garantía de 2 años" loading="lazy" />
-      </div>
-      <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
-        <h3 class="font-editorial text-[21px] font-bold text-ink leading-tight">Entrega, limpieza fina y garantía de 2 años</h3>
-        <p class="text-[14.5px] leading-[1.6] text-ink/90">Repasamos la obra contigo punto por punto, entregamos planos finales, boletines e instrucciones de mantenimiento. Garantía legal de 2 años en ejecución y 10 en impermeabilizaciones.</p>
-        <ul class="flex flex-col gap-2 pt-1">
-          <li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Lista de remates firmada contigo</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Limpieza fina y retirada de escombros</li><li class="flex items-start gap-2.5 text-[13.5px] text-ink font-medium"><i class="ri-checkbox-circle-line text-teal text-[16px] mt-0.5"></i>Garantía de 2 años por escrito</li>
-        </ul>
-        <div class="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-3 border-t border-line">
-          <span class="text-[13px] font-semibold text-ink/80">2–3 días de repaso final</span>
-          <a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm self-start sm:self-auto" href="#proyectos">Ver proyectos entregados <i class="ri-arrow-right-line text-[14px]"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- DESKTOP MASTER VIEW (>= 1024px) -->
-<div class="hidden lg:block mt-10">
-  <div class="overflow-hidden rounded-[20px] border border-line bg-white shadow-sm">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
-      <div class="reveal flex flex-col justify-between p-6 md:p-9 order-2 lg:order-1">
-        <div>
-          <span id="fases-desktop-badge" class="inline-flex items-center gap-2 rounded-full bg-teal/10 px-3 py-1 text-[11px] font-bold uppercase tracking-[0.16em] text-teal">Fase 01 — Medición</span>
-          <h3 id="fases-desktop-title" class="font-editorial mt-4 text-[24px] leading-[1.18] text-ink md:text-[30px] font-bold">Visita técnica y medición real de tu vivienda</h3>
-          <p id="fases-desktop-desc" class="mt-3 text-[15px] leading-[1.65] text-ink/90">Vamos a tu casa con láser y cámara térmica. Medimos cada estancia, revisamos instalaciones existentes y detectamos posibles patologías antes de presupuestar nada.</p>
-          <ul id="fases-desktop-protocols" class="mt-5 flex flex-col gap-2.5">
-            <li class="flex items-start gap-2.5 text-[13.5px] leading-[1.5] text-ink font-medium"><i class="ri-checkbox-circle-line mt-[1px] text-[16px] text-teal"></i>Levantamiento de planos en 48 h</li>
-            <li class="flex items-start gap-2.5 text-[13.5px] leading-[1.5] text-ink font-medium"><i class="ri-checkbox-circle-line mt-[1px] text-[16px] text-teal"></i>Revisión de cuadro eléctrico y fontanería</li>
-            <li class="flex items-start gap-2.5 text-[13.5px] leading-[1.5] text-ink font-medium"><i class="ri-checkbox-circle-line mt-[1px] text-[16px] text-teal"></i>Informe fotográfico y de viabilidad</li>
-          </ul>
-        </div>
-        <div class="mt-7 flex flex-col gap-3 border-t border-line pt-5 sm:flex-row sm:items-center sm:justify-between">
-          <span id="fases-desktop-duration" class="text-[13px] font-semibold text-ink/80">Visita de 60–90 min · Sin coste</span>
-          <a id="fases-desktop-cta" class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap self-start sm:self-auto" href="#contacto">Pedir Visita Gratuita<i class="ri-arrow-right-line text-[14px] w-4 h-4 flex items-center justify-center"></i></a>
-        </div>
-      </div>
-      <div class="w-full bg-ice order-1 lg:order-2" style="aspect-ratio: 4 / 3;">
-        <img id="fases-desktop-img" alt="Visita técnica y medición real de tu vivienda — fase 01 de la reforma" class="reveal h-full w-full object-cover object-top" src="images/madrid-fase-01-medicion.webp" title="Fase 01 — Medición"/>
-      </div>
+        <div class="fase-card-media">
+          <img src="images/madrid-fase-01-medicion.webp" alt="Visita técnica y medición real de tu vivienda en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">01</span>
+            <span class="fase-card-step-tag">Medición</span>
           </div>
+          <div class="fase-card-duration">
+            <i class="ri-time-line text-[12px] text-teal-light"></i> 48–72 h
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 01 · Sin coste ni compromiso</span>
+            <h3 class="fase-card-title">
+              Visita técnica gratuita y toma de datos
+            </h3>
+            <p class="fase-card-desc">
+              Vamos a tu casa en Madrid con distanciómetro láser y cámara térmica. Medimos cada estancia, revisamos instalaciones existentes, bajantes y muros de carga antes de plantear cambios.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Levantamiento de plano actual con cotas exactas en 48 h</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Inspección de bajantes comunitarias y cuadro eléctrico</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Informe de viabilidad técnica y fotográfico sin coste</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Visita de 60–90 min</span>
+            <a href="#contacto" class="fase-card-cta">
+              Pedir visita <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PASO 02: DISEÑO 3D -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/madrid-fase-02-diseno3d.webp" alt="Diseño 3D y definición de materiales para reforma en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">02</span>
+            <span class="fase-card-step-tag">Diseño 3D</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-time-line text-[12px] text-teal-light"></i> 5–7 días
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 02 · Proyecto Visual</span>
+            <h3 class="fase-card-title">
+              Propuesta distributiva y visualización 3D
+            </h3>
+            <p class="fase-card-desc">
+              Desarrollamos planos optimizados para ganar luz natural y almacenaje. Creamos infografías 3D fotorrealistas de cocina y baños para que veas acabados reales antes de empezar a demoler.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Planos de demolición y nueva tabiquería a escala</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Renders 3D fotorrealistas de cocinas y baños</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Selección de porcelánicos y muebles en showroom</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">2 rondas de ajuste</span>
+            <a href="#proyectos" class="fase-card-cta">
+              Ver proyectos 3D <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PASO 03: CONTRATO CERRADO -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/madrid-fase-03-contrato.webp" alt="Presupuesto ciego y contrato cerrado para reforma en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">03</span>
+            <span class="fase-card-step-tag">Contrato</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-shield-check-line text-[12px] text-teal-light"></i> Precio Blindado
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 03 · Blindaje Económico</span>
+            <h3 class="fase-card-title">
+              Presupuesto desglosado y contrato cerrado
+            </h3>
+            <p class="fase-card-desc">
+              Memoria de calidades pormenorizada partida por partida con precio final cerrado. Firmamos fecha exacta de fin de obra y penalización económica por día de retraso, sin sorpresas ni extras inventados.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Presupuesto exhaustivo por capítulos (cero costes ocultos)</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Cronograma semanal pactado por escrito en contrato</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Cláusula de penalización económica por demora</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Inmutable tras firma</span>
+            <a href="#tarifas" class="fase-card-cta">
+              Calcular reforma <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
   </div>
-    <div class="mt-6 grid grid-cols-5 gap-3.5" id="fases-desktop-tabs">
-    <!-- TAB 1 (ACTIVA) -->
-    <button aria-pressed="true" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border-2 border-teal bg-white p-4 text-left transition-all duration-300 cursor-pointer shadow-sm min-h-[135px] h-full" data-index="0" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-teal tabular-nums">Paso 01</span>
-        <i class="ri-check-line text-teal text-[16px] font-bold"></i>
+
+  <!-- FILA INFERIOR: FASE DE EJECUCIÓN Y ENTREGA GARANTIZADA (PASOS 04 Y 05 - CENTRADAS EN DESKTOP) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-[960px] mx-auto w-full">
+
+    <!-- PASO 04: EJECUCIÓN -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/madrid-fase-04-licencias.webp" alt="Ejecución de obra con dirección técnica y oficios propios en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">04</span>
+            <span class="fase-card-step-tag">Ejecución</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-time-line text-[12px] text-teal-light"></i> 6–9 sem.
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 04 · Supervisión Diaria</span>
+            <h3 class="fase-card-title">
+              Dirección técnica diaria y oficios propios
+            </h3>
+            <p class="fase-card-desc">
+              Un arquitecto técnico colegiado supervisa la obra día a día, coordinando cuadrillas propias sin intermediarios. Te enviamos reporte fotográfico diario por WhatsApp para que sigas el avance cómodamente.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Parte fotográfico diario de avances vía WhatsApp</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Coordinación de oficios y gestión de residuos autorizada</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Reunión presencial o virtual de seguimiento semanal</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Jefe de obra asignado</span>
+            <a href="#oficios" class="fase-card-cta">
+              Conocer oficios <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-teal leading-snug my-auto">Medición</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 100%;"></span>
+    </article>
+
+    <!-- PASO 05: ENTREGA Y GARANTÍA -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/madrid-fase-05-entrega.webp" alt="Entrega final, limpieza fina y 2 años de garantía legal en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num fase-card-num-gold">05</span>
+            <span class="fase-card-step-tag">Entrega</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-shield-check-line text-[12px] text-teal-light"></i> Garantía 2 Años
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 05 · Entrega & Posventa</span>
+            <h3 class="fase-card-title">
+              Entrega, limpieza fina y garantía de 2 años
+            </h3>
+            <p class="fase-card-desc">
+              Repasamos la obra contigo punto por punto hasta firmar el acta de recepción. Entregamos llaves, planos definitivos, boletines de luz y agua, con limpieza profesional lista para entrar a vivir.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Acta de recepción final firmada contigo punto a punto</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Limpieza fina profesional lista para amueblar</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Garantía de 2 años por escrito (10 en impermeabilización)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">2–3 días de repaso final</span>
+            <a href="#contacto" class="fase-card-cta">
+              Pedir presupuesto <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </button>
-    <!-- TAB 2 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="1" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 02</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-      </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Diseño 3D</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
-    <!-- TAB 3 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="2" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 03</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-      </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Contrato Cerrado</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
-    <!-- TAB 4 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="3" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 04</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-      </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Ejecución Obra</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
-    <!-- TAB 5 -->
-    <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="4" type="button">
-      <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 05</span>
-        <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
-      </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Entrega y Garantía</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
-      </div>
-    </button>
+    </article>
+
   </div>
 </div>
+
 
 <!-- BANNER DIRECCIÓN TÉCNICA -->
 <div class="mt-8 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
@@ -2900,7 +3329,7 @@ window.__RECOVERY_DATA__ = {
         "Pruebas de estanqueidad de fontanería y certificación eléctrica",
         "Acta de recepción final firmada y entrega de certificados de garantía"
       ],
-      "image": "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/madrid-fase-05-entrega-garantia.jpg",
+      "image": "images/madrid-fase-05-entrega.webp",
       "ctaText": "Pedir Visita Gratuita",
       "ctaHref": "#contacto"
     }
