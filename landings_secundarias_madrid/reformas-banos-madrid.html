@@ -15,6 +15,149 @@
 <link href="assets/remixicon.min.css" rel="stylesheet"/>
 <link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
 <style>
+
+  /* ==========================================================================
+     BLINDAJE DE PRECISIÓN MILIMÉTRICA: TIMELINE VERTICAL (#fases - VARIANTE 2)
+     Resuelve la falta de clases de Tailwind en index-DzWYBm73.css
+     ========================================================================== */
+
+  /* 1. Contenedor del Timeline y Eje Vertical Dorado */
+  #fases #timeline-container {
+    position: relative !important;
+    border-left: 2px solid rgba(168, 126, 52, 0.35) !important;
+    padding-left: 28px !important;
+    box-sizing: border-box !important;
+  }
+  @media (min-width: 640px) {
+    #fases #timeline-container { padding-left: 36px !important; }
+  }
+  @media (min-width: 768px) {
+    #fases #timeline-container { padding-left: 44px !important; }
+  }
+  @media (min-width: 1024px) {
+    #fases #timeline-container { padding-left: 48px !important; }
+  }
+
+  /* 2. Ritmo Vertical entre Hitos (Reemplazo exacto de space-y) */
+  #fases #timeline-container > .timeline-fase-item + .timeline-fase-item {
+    margin-top: 28px !important;
+  }
+  @media (min-width: 768px) {
+    #fases #timeline-container > .timeline-fase-item + .timeline-fase-item {
+      margin-top: 36px !important;
+    }
+  }
+
+  /* 3. Nodos Circulares Numerados (Centrados matemáticamente sobre el eje x=0) */
+  #fases .timeline-fase-item {
+    position: relative !important;
+    cursor: pointer !important;
+  }
+
+  #fases .timeline-node {
+    position: absolute !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 9999px !important;
+    border: 2px solid #E4DCCB !important;
+    background-color: #FFFFFF !important;
+    color: #475569 !important;
+    font-weight: 700 !important;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+    z-index: 10 !important;
+    transition: all 0.25s ease !important;
+
+    /* Mobile (<640px): 38px de diámetro, centrado sobre línea en -28px */
+    width: 38px !important;
+    height: 38px !important;
+    top: 14px !important;
+    left: -47px !important;
+    font-size: 13.5px !important;
+  }
+
+  @media (min-width: 640px) {
+    #fases .timeline-node {
+      width: 42px !important;
+      height: 42px !important;
+      left: -57px !important;
+      top: 15px !important;
+      font-size: 14px !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #fases .timeline-node {
+      width: 48px !important;
+      height: 48px !important;
+      top: 16px !important;
+      left: -68px !important;
+      font-size: 15px !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #fases .timeline-node {
+      left: -72px !important;
+    }
+  }
+
+  /* 4. Estados Cromáticos del Nodo (Activo y Hover) */
+  #fases .timeline-fase-item.active .timeline-node,
+  #fases .timeline-node.bg-teal,
+  #fases .timeline-fase-item:hover .timeline-node {
+    background-color: #A87E34 !important;
+    border-color: #A87E34 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(168, 126, 52, 0.35) !important;
+  }
+
+  /* 5. Tarjetas de Hito (.timeline-card) */
+  #fases .timeline-card {
+    border-radius: 20px !important;
+    border: 1px solid #E4DCCB !important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    padding: 20px !important;
+    transition: all 0.25s ease !important;
+  }
+  @media (min-width: 768px) {
+    #fases .timeline-card { padding: 24px 28px !important; }
+  }
+  #fases .timeline-fase-item.active .timeline-card,
+  #fases .timeline-card.border-teal {
+    border: 2px solid #A87E34 !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(14, 27, 46, 0.07) !important;
+  }
+  #fases .timeline-fase-item:hover .timeline-card {
+    border-color: rgba(168, 126, 52, 0.5) !important;
+    background-color: #FFFFFF !important;
+    box-shadow: 0 8px 24px rgba(14, 27, 46, 0.08) !important;
+  }
+
+  /* 6. Sticky Showcase Visual (Columna Derecha) */
+  @media (min-width: 1024px) {
+    #fases .lg\:sticky,
+    #fases [class*="lg:sticky"] {
+      position: sticky !important;
+      top: 110px !important;
+      z-index: 20 !important;
+    }
+  }
+
+  /* 7. Tipografía y tracking */
+  #fases .timeline-card span[class*="tracking-wider"] {
+    letter-spacing: 0.12em !important;
+    font-weight: 700 !important;
+    display: inline-block !important;
+  }
+  #fases .timeline-card h3 {
+    font-family: 'Fraunces', 'Playfair Display', Georgia, serif !important;
+    letter-spacing: -0.015em !important;
+    line-height: 1.22 !important;
+  }
+</style>
   /* HERO MOBILE FIRST RESPONSIVE PADDING SHIELD (CERO COLISION CON HEADER FIJO) */
   @media (max-width: 767px) {
     #inicio > div.relative.z-10,
@@ -1038,7 +1181,7 @@
 
   
 </style>
-<style>
+</style>
   /* HERO MOBILE FIRST RESPONSIVE PADDING SHIELD (CERO COLISION CON HEADER FIJO) */
   @media (max-width: 767px) {
     #inicio > div.relative.z-10,
@@ -1750,7 +1893,7 @@
 <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
 <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
 <div>
-<span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-2">Metodología de Obra Limpia</span>
+<span class="text-[12px] font-bold uppercase tracking-[0.2em] text-teal block mb-2">Metodología Comprobada · Recorrido Secuencial</span>
 <h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">
           Tu baño renovado en 5 a 7 días hábiles, paso a paso.
         </h2>
@@ -1759,12 +1902,201 @@
         Cada fase cuenta con protocolos técnicos firmados y supervisión directa para evitar retrasos y obras molestas.
 
 </div>
-<!-- FASES MOBILE ACCORDION -->
-<div class="mt-8 flex flex-col gap-3 lg:hidden" id="fases-mobile-accordion">
-<div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card is-open" data-index="0">
-<button aria-expanded="true" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-ice transition-colors cursor-pointer" type="button">
+<!-- Grid Principal: Timeline Vertical (Col 7) + Sticky Showcase Completo (Col 5) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+  
+  <!-- Columna Izquierda: Eje Cronológico de los 5 Hitos -->
+  <div class="lg:col-span-7 relative pl-7 sm:pl-9 md:pl-11 space-y-8 border-l-2 border-teal/30" id="timeline-container">
+
+    <!-- Hito 01: Medición -->
+    <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="0" onclick="selectTimelineFase(0)">
+      <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-teal bg-teal text-white font-bold text-[14px] md:text-[15px] shadow-sm transition-all duration-300">
+        01
+      </div>
+      <div class="timeline-card rounded-2xl border-2 border-teal bg-white p-5 md:p-6 shadow-sm transition-all duration-300">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 01 · Medición y Desagües</span>
+          <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">45 min · In situ</span>
+        </div>
+        <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Visita técnica y comprobación de bajantes</h3>
+        <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+          Inspección de cotas de desagüe, estado de llaves de corte generales y comprobación de pendientes para asegurar la evacuación fluida del plato enrasado sin bombas ni escalones.
+        </p>
+        <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+          <img src="images/banos-fase-01-medicion.webp" alt="Visita y medición técnica de baño en Madrid" class="h-full w-full object-cover object-top"/>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Pendiente mín. 2%</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Cota cero enrasada</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Llaves corte independientes</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hito 02: Infografía 3D -->
+    <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="1" onclick="selectTimelineFase(1)">
+      <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+        02
+      </div>
+      <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 02 · Diseño 3D e Infografía</span>
+          <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">3 a 5 días</span>
+        </div>
+        <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Modelado fotorrealista de revestimientos y sanitarios</h3>
+        <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+          Visualiza con exactitud cómo lucen los porcelánicos rectificados, la hornacina de obra iluminada, el mueble suspendido y la mampara de vidrio templado antes de iniciar cualquier demolición.
+        </p>
+        <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+          <img src="images/banos-fase-02-3d.webp" alt="Diseño 3D e infografía de baño en Madrid" class="h-full w-full object-cover object-top"/>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Render 3D fotorrealista</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Muestras en showroom</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Plano replanteo técnico</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hito 03: Presupuesto y Contrato -->
+    <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="2" onclick="selectTimelineFase(2)">
+      <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+        03
+      </div>
+      <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 03 · Presupuesto Cerrado y Contrato</span>
+          <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">24 a 48 horas</span>
+        </div>
+        <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Partidas detalladas sin extras y plazo garantizado</h3>
+        <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+          Memoria técnica desglosada al milímetro con marcas, calibres y modelos exactos. Precio blindado por contrato con fecha estricta de inicio y penalización económica por demora.
+        </p>
+        <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+          <img src="images/banos-fase-03-contrato.webp" alt="Presupuesto cerrado de baño en Madrid" class="h-full w-full object-cover object-top"/>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Precio cerrado invariable</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Penalización por día</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Licencia tramitada</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hito 04: Ejecución de Obra -->
+    <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="3" onclick="selectTimelineFase(3)">
+      <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+        04
+      </div>
+      <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 04 · Demolición, Impermeabilización y Obra</span>
+          <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">5 a 7 días hábiles</span>
+        </div>
+        <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Protección de zonas comunes, fontanería multicapa y prueba estanca</h3>
+        <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+          Protegemos ascensor y descansillo de la comunidad, retiramos escombros en sacos homologados y ejecutamos doble lámina impermeabilizante con prueba de estanqueidad de 24 horas antes de alicatar.
+        </p>
+        <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+          <img src="images/banos-fase-04-ejecucion.webp" alt="Ejecución de obra de baño en Madrid" class="h-full w-full object-cover object-top"/>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Protección zonas comunes</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Estanqueidad 24 horas</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Multicapa prensada</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hito 05: Entrega y Garantía -->
+    <div class="timeline-fase-item relative group cursor-pointer transition-all duration-300" data-index="4" onclick="selectTimelineFase(4)">
+      <div class="timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+        05
+      </div>
+      <div class="timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span class="text-[11.5px] font-bold uppercase tracking-wider text-teal">Fase 05 · Montaje, Limpieza y Entrega</span>
+          <span class="rounded-full bg-ice px-2.5 py-0.5 text-[11.5px] font-semibold text-muted border border-line">Fin de obra impecable</span>
+        </div>
+        <h3 class="font-editorial mt-2 text-[19px] sm:text-[21px] font-bold text-ink leading-snug">Montaje de sanitarios, sellado antimoho y garantía escrita</h3>
+        <p class="mt-2 text-[14.5px] sm:text-[15.5px] text-muted leading-[1.6]">
+          Instalación de griferías termostáticas, sellado fungicida sanitario, prueba de presión de agua, limpieza técnica final y entrega de acta fin de obra con 2 años de garantía legal certificada.
+        </p>
+        <div class="block lg:hidden mt-4 rounded-xl overflow-hidden border border-line h-[200px]">
+          <img src="images/banos-fase-05-entrega.webp" alt="Entrega limpia y garantía de baño en Madrid" class="h-full w-full object-cover object-top"/>
+        </div>
+        <div class="mt-4 flex flex-wrap gap-2 text-[12.5px] font-medium text-ink/80">
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Sellado antimoho C3</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>2 años de garantía escrita</span>
+          <span class="bg-ice px-2.5 py-1 rounded-lg border border-line"><i class="ri-check-line text-teal mr-1"></i>Limpieza técnica final</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Columna Derecha: Sticky Showcase Visual Completo (Desktop 5 Cols) -->
+  <div class="hidden lg:block lg:col-span-5 lg:sticky lg:top-28">
+    <div class="overflow-hidden rounded-[20px] border border-line bg-white shadow-lg transition-all duration-300">
+      
+      <!-- Imagen de la Fase Activa con Badges Flotantes -->
+      <div class="relative h-[290px] xl:h-[320px] bg-ice overflow-hidden">
+        <img id="timeline-sticky-img" src="images/banos-fase-01-medicion.webp" alt="Fase de reforma de baño activa" class="h-full w-full object-cover object-top transition-all duration-300"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
+
+        <div class="absolute top-4 right-4 rounded-lg bg-ink/90 backdrop-blur-md px-3 py-1 text-[11.5px] font-bold text-white flex items-center gap-1.5 border border-white/20 shadow-md">
+          <i class="ri-verified-badge-fill text-[#E6C687]"></i>
+          <span id="timeline-sticky-pill">Inspección In Situ Certificada</span>
+        </div>
+
+        <div class="absolute bottom-4 left-5 right-5 text-white">
+          <span id="timeline-sticky-step" class="text-[11px] font-bold uppercase tracking-widest text-[#E6C687] block mb-1">Fase Activa: 01 de 05</span>
+          <h4 id="timeline-sticky-title" class="font-editorial text-[21px] xl:text-[23px] font-bold leading-tight">Medición y Desagües</h4>
+        </div>
+      </div>
+
+      <!-- Contenido Técnico del Showcase -->
+      <div class="p-6 space-y-5">
+        <p id="timeline-sticky-desc" class="text-[14.5px] text-muted leading-relaxed">
+          Inspección de cotas de desagüe, estado de llaves de corte generales y comprobación de pendientes para asegurar la evacuación fluida del plato enrasado sin bombas ni escalones.
+        </p>
+
+        <!-- Lista de Protocolos de la Fase Activa -->
+        <div class="rounded-xl border border-line bg-ice/40 p-4">
+          <span class="text-[11px] font-bold uppercase tracking-wider text-teal block mb-2.5">
+            <i class="ri-shield-check-line mr-1"></i>Protocolos Verificados en esta Fase:
+          </span>
+          <ul id="timeline-sticky-protocols" class="space-y-2 text-[13px] text-ink font-medium">
+            <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i><span>Comprobación de cota cero para ducha sin escalón</span></li>
+            <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i><span>Revisión de ventilación natural o forzada según CTE</span></li>
+            <li class="flex items-start gap-2"><i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i><span>Verificación de bajante general y bote sifónico accesible</span></li>
+          </ul>
+        </div>
+
+        <!-- Footer del Showcase con CTA Dorado Ley 8 -->
+        <div class="pt-3 border-t border-line flex items-center justify-between gap-3">
+          <div class="flex items-center gap-1.5 text-[12px] font-semibold text-muted">
+            <i class="ri-time-line text-teal text-[15px]"></i>
+            <span id="timeline-sticky-time">45 min · Visita gratuita</span>
+          </div>
+
+          <a href="#contacto" class="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-2.5 text-[13.5px] font-bold text-white hover:bg-gold-hover transition-colors shadow-sm">
+            <span>Solicitar Visita en Madrid</span>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div style="display: none !important;">
+
+
+<!-- CHUNK_1_REMOVED -->
 <div class="flex items-center gap-3 min-w-0 flex-1 pr-2">
-<span class="w-8 h-8 rounded-full bg-teal text-white flex items-center justify-center text-[13px] font-bold shrink-0">01</span>
+<!-- PRUNE_1 -->
 <div>
 <span class="text-[11px] font-bold uppercase tracking-wider text-teal block truncate">Fase 01 · Medición</span>
 <h4 class="text-[16px] sm:text-[17px] font-bold text-ink leading-snug">Medición y Desagües</h4>
@@ -1774,10 +2106,10 @@
 <i class="ri-arrow-down-s-line text-[18px]"></i>
 </span>
 </button>
-<div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out is-open" style="grid-template-rows: 1fr; opacity: 1; display: block;">
+<!-- SUBCHUNK_1 -->
 <div class="min-h-0">
 <div class="w-full relative overflow-hidden bg-slate-100" style="aspect-ratio: 16 / 10; max-height: 230px;">
-<img alt="Visita y medición técnica de baño en Madrid" class="h-full w-full object-cover object-top" src="images/banos-fase-01-medicion.webp"/>
+<!-- SUBCHUNK_IMG_1 -->
 </div>
 <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
 <h3 class="font-editorial text-[21px] font-bold text-ink leading-tight">Visita técnica y comprobación de bajantes</h3>
@@ -1796,11 +2128,11 @@
 </div>
 </div>
 </div>
-  <!-- CARD 02 -->
+  <!-- CHUNK_2_REMOVED -->
   <div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="1">
     <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
       <div class="flex items-center gap-3 min-w-0 flex-1 pr-2">
-        <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold shrink-0">02</span>
+        <!-- PRUNE_2 -->
         <div class="min-w-0 flex-1">
           <span class="text-[11px] font-bold uppercase tracking-wider text-teal block truncate">Fase 02 · Diseño 3D</span>
           <h4 class="text-[16px] sm:text-[17px] font-bold text-ink leading-snug">Diseño 3D e Infografía</h4>
@@ -1810,10 +2142,10 @@
         <i class="ri-arrow-down-s-line text-[18px]"></i>
       </span>
     </button>
-    <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0; display: none;">
+    <!-- SUBCHUNK_2 -->
       <div class="min-h-0">
         <div class="w-full relative overflow-hidden bg-slate-100" style="aspect-ratio: 16 / 10; max-height: 230px;">
-          <img alt="Diseño 3D e infografía fotorrealista de baño en Madrid" class="h-full w-full object-cover object-top" loading="lazy" src="images/banos-fase-02-3d.webp"/>
+          <!-- SUBCHUNK_IMG_2 -->
         </div>
         <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
           <h3 class="font-editorial text-[20px] font-bold text-ink leading-tight">Visualización realista de alicatados y mobiliario</h3>
@@ -1832,11 +2164,11 @@
     </div>
   </div>
 
-  <!-- CARD 03 -->
+  <!-- CHUNK_3_REMOVED -->
   <div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="2">
     <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
       <div class="flex items-center gap-3 min-w-0 flex-1 pr-2">
-        <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold shrink-0">03</span>
+        <!-- PRUNE_3 -->
         <div class="min-w-0 flex-1">
           <span class="text-[11px] font-bold uppercase tracking-wider text-teal block truncate">Fase 03 · Contrato</span>
           <h4 class="text-[16px] sm:text-[17px] font-bold text-ink leading-snug">Presupuesto y Contrato</h4>
@@ -1846,10 +2178,10 @@
         <i class="ri-arrow-down-s-line text-[18px]"></i>
       </span>
     </button>
-    <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0; display: none;">
+    <!-- SUBCHUNK_2 -->
       <div class="min-h-0">
         <div class="w-full relative overflow-hidden bg-slate-100" style="aspect-ratio: 16 / 10; max-height: 230px;">
-          <img alt="Presupuesto cerrado partida por partida y contrato de reforma de baño" class="h-full w-full object-cover object-top" loading="lazy" src="images/banos-fase-03-contrato.webp"/>
+          <!-- SUBCHUNK_IMG_3 -->
         </div>
         <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
           <h3 class="font-editorial text-[20px] font-bold text-ink leading-tight">Precio cerrado partida por partida sin extras</h3>
@@ -1868,11 +2200,11 @@
     </div>
   </div>
 
-  <!-- CARD 04 -->
+  <!-- CHUNK_4_REMOVED -->
   <div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="3">
     <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
       <div class="flex items-center gap-3 min-w-0 flex-1 pr-2">
-        <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold shrink-0">04</span>
+        <!-- PRUNE_4 -->
         <div class="min-w-0 flex-1">
           <span class="text-[11px] font-bold uppercase tracking-wider text-teal block truncate">Fase 04 · Ejecución</span>
           <h4 class="text-[16px] sm:text-[17px] font-bold text-ink leading-snug">Ejecución de Obra</h4>
@@ -1882,10 +2214,10 @@
         <i class="ri-arrow-down-s-line text-[18px]"></i>
       </span>
     </button>
-    <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0; display: none;">
+    <!-- SUBCHUNK_2 -->
       <div class="min-h-0">
         <div class="w-full relative overflow-hidden bg-slate-100" style="aspect-ratio: 16 / 10; max-height: 230px;">
-          <img alt="Ejecución de obra de baño con protección y dirección facultativa diaria" class="h-full w-full object-cover object-top" loading="lazy" src="images/banos-fase-04-ejecucion.webp"/>
+          <!-- SUBCHUNK_IMG_4 -->
         </div>
         <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
           <h3 class="font-editorial text-[20px] font-bold text-ink leading-tight">Obra limpia, protección de zonas comunes y dirección diaria</h3>
@@ -1904,11 +2236,11 @@
     </div>
   </div>
 
-  <!-- CARD 05 -->
+  <!-- CHUNK_5_REMOVED -->
   <div class="border border-line rounded-2xl overflow-hidden bg-white shadow-sm fase-mobile-card" data-index="4">
     <button type="button" aria-expanded="false" class="fase-mobile-header flex w-full items-center justify-between p-4 sm:p-5 text-left bg-white transition-colors cursor-pointer">
       <div class="flex items-center gap-3 min-w-0 flex-1 pr-2">
-        <span class="w-8 h-8 rounded-full bg-slate-200 text-ink flex items-center justify-center text-[13px] font-bold shrink-0">05</span>
+        <!-- PRUNE_5 -->
         <div class="min-w-0 flex-1">
           <span class="text-[11px] font-bold uppercase tracking-wider text-teal block truncate">Fase 05 · Entrega</span>
           <h4 class="text-[16px] sm:text-[17px] font-bold text-ink leading-snug">Entrega y Garantía</h4>
@@ -1918,10 +2250,10 @@
         <i class="ri-arrow-down-s-line text-[18px]"></i>
       </span>
     </button>
-    <div class="fase-mobile-panel grid overflow-hidden transition-all duration-400 ease-out" style="grid-template-rows: 0fr; opacity: 0; display: none;">
+    <!-- SUBCHUNK_2 -->
       <div class="min-h-0">
         <div class="w-full relative overflow-hidden bg-slate-100" style="aspect-ratio: 16 / 10; max-height: 230px;">
-          <img alt="Entrega final limpia y garantía por escrito de reforma de baño en Madrid" class="h-full w-full object-cover object-top" loading="lazy" src="images/banos-fase-05-entrega.webp"/>
+          <!-- SUBCHUNK_IMG_5 -->
         </div>
         <div class="p-5 flex flex-col gap-3 bg-white border-t border-line">
           <h3 class="font-editorial text-[20px] font-bold text-ink leading-tight">Limpieza fina, entrega de certificados y 2 años de garantía</h3>
@@ -1933,16 +2265,16 @@
           </ul>
           <div class="mt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-3 border-t border-line">
             <span class="text-[13px] font-semibold text-ink/80">Fin de obra impecable</span>
-            <a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-2.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm self-start sm:self-auto cursor-pointer" href="#proyectos">Ver Baños Entregados <i class="ri-arrow-right-line text-[14px]"></i></a>
+            <!-- ACCORDION_CLOSED -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- FASES DESKTOP MASTER VIEW -->
-<div class="hidden lg:block mt-10">
-<div class="overflow-hidden rounded-[20px] border border-line bg-white shadow-sm">
+
+<!-- REPLACED -->
+<!-- MID_BLOCK_HEAD -->
 <div class="grid grid-cols-1 lg:grid-cols-2">
 <div class="reveal flex flex-col justify-between p-6 md:p-9 order-2 lg:order-1">
 <div>
@@ -1961,11 +2293,11 @@
 </div>
 </div>
 <div class="w-full bg-ice order-1 lg:order-2" style="aspect-ratio: 4 / 3;">
-<img alt="Medición técnica de baño" class="reveal h-full w-full object-cover object-top" id="fases-desktop-img" src="images/banos-fase-01-medicion.webp"/>
+<!-- SUBCHUNK_DESK_IMG -->
 </div>
 </div>
 </div>
-<div class="mt-5 grid grid-cols-5 gap-3" id="fases-desktop-tabs">
+<!-- CHUNK_TABS_REMOVED -->
     <!-- TAB 1 (ACTIVA) -->
     <button aria-pressed="true" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border-2 border-teal bg-white p-4 text-left transition-all duration-300 cursor-pointer shadow-sm min-h-[135px] h-full" data-index="0" type="button">
       <div class="flex items-center justify-between w-full">
@@ -1973,7 +2305,7 @@
         <i class="ri-check-line text-teal text-[16px] font-bold"></i>
       </div>
       <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-teal leading-snug my-auto">Medición</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
+      <!-- DIV_3PX_DONE -->
         <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 100%;"></span>
       </div>
     </button>
@@ -1984,8 +2316,8 @@
         <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
       </div>
       <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Diseño 3D</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      <!-- DIV_3PX_DONE -->
+        <!-- END_OLD_FASES_2 -->
       </div>
     </button>
     <!-- TAB 3 -->
@@ -1995,8 +2327,8 @@
         <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
       </div>
       <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Contrato</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      <!-- DIV_3PX_DONE -->
+        <!-- END_OLD_FASES_2 -->
       </div>
     </button>
     <!-- TAB 4 -->
@@ -2006,25 +2338,30 @@
         <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
       </div>
       <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Ejecución Obra</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      <!-- DIV_3PX_DONE -->
+        <!-- END_OLD_FASES_2 -->
       </div>
     </button>
     <!-- TAB 5 -->
     <button aria-pressed="false" class="fase-tab-btn group flex flex-col justify-between gap-3 rounded-xl border border-line bg-white/70 p-4 text-left transition-all duration-300 cursor-pointer hover:border-teal/40 hover:bg-white hover:shadow-sm min-h-[135px] h-full" data-index="4" type="button">
       <div class="flex items-center justify-between w-full">
-        <span class="text-[12px] font-bold uppercase tracking-wider text-muted tabular-nums">Paso 05</span>
+        <!-- BTM_FASES_START -->
+<!-- BTM_GAP -->
         <i class="ri-arrow-right-line text-muted text-[14px] opacity-0 group-hover:opacity-100 transition-opacity"></i>
       </div>
-      <span class="fase-tab-title text-[16px] sm:text-[18px] lg:text-[19px] xl:text-[22px] font-bold text-ink/80 leading-snug my-auto">Entrega</span>
-      <div class="h-[3px] w-full overflow-hidden rounded-full bg-line/40">
-        <span class="fase-tab-progress block h-full rounded-full bg-teal transition-all duration-500 ease-out" style="width: 0%;"></span>
+      <!-- TAB_05_DONE -->
+<!-- OLD_TAIL -->
+      <!-- DIV_3PX_DONE -->
+        <!-- END_OLD_FASES_2 -->
       </div>
     </button>
   </div>
 </div>
-<!-- BANNER DIRECCIÓN TÉCNICA -->
-<div class="mt-8 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
+
+
+</div>
+<!-- BANNER_LEAD_IN -->
+<div class="mt-14 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
 <div class="flex flex-col justify-center gap-4 p-6 order-2 lg:order-1 lg:col-span-8 xl:col-span-9 md:p-8">
 <div class="flex flex-wrap items-center gap-3">
 <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-teal">Dirección Técnica Colegiada</span>
@@ -2035,11 +2372,11 @@
         </blockquote>
 <div>
 <div class="text-[14px] font-bold text-ink">Dirección Facultativa Propia</div>
-<div class="text-[12.5px] font-medium text-ink/75">Arquitecto Técnico Colegiado · Colegio Oficial de Aparejadores de Madrid</div>
+<div class="text-[12.5px] font-medium text-ink/75">Arquitecto Técnico Colegiado · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
 </div>
 </div>
 <div class="order-1 lg:order-2 lg:col-span-4 xl:col-span-3">
-<div class="jefe-obra-img-box w-full overflow-hidden bg-ice">
+<div class="jefe-obra-img-box w-full overflow-hidden bg-ice h-full min-h-[220px]">
 <img alt="Dirección técnica de reformas de baños en Madrid" class="jefe-obra-img h-full w-full object-cover" src="images/madrid-director-tecnico.webp"/>
 </div>
 </div>
@@ -2210,7 +2547,7 @@
 </div>
 </section>
 <!-- SECCIÓN TARIFAS ORIENTATIVAS Y FAQ (FONDO OSCURO ALTO CONTRASTE) -->
-<section class="w-full border-t border-line py-16 md:py-24" id="tarifas">
+<section class="w-full border-t border-line py-16 md:py-24" id="tarifas" style="background-color: #0E1B2E !important;">
 <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
 <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
 <div>
@@ -2264,7 +2601,7 @@
 </ul>
 <div class="mt-5 flex flex-col gap-3 rounded-lg bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
 <span class="text-[13px] font-medium text-black">Precios con IVA y desescombro autorizados.</span>
-<a class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-teal px-4 py-2.5 text-[12.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm" href="#contacto">
+<a class="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-gold px-5 py-3 text-[14px] font-bold text-white hover:bg-gold-hover transition-colors shadow-sm" href="#contacto">
               Calcular mi baño <i class="ri-arrow-right-line text-[14px]"></i>
 </a>
 </div>
@@ -2323,7 +2660,7 @@
     
 </div>
 <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-<a class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-6 py-3.5 text-[15px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-md text-center" href="#contacto-form">
+<a class="inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-[15px] font-bold text-white hover:bg-gold-hover transition-colors shadow-md text-center" href="#contacto-form">
             Pedir Visita Gratuita <i class="ri-arrow-right-line text-[16px]"></i>
 </a>
 <a class="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-white px-6 py-3.5 text-[15px] font-semibold text-ink hover:border-teal hover:text-teal transition-colors text-center" href="https://wa.me/34600000000" rel="noopener noreferrer" target="_blank">
@@ -2370,7 +2707,7 @@
 <option>Aseo de cortesía</option>
 </select>
 </div>
-<button class="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-teal px-6 py-3.5 text-[15px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-md cursor-pointer" type="submit">
+<button class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-[15px] font-bold text-white hover:bg-gold-hover transition-colors shadow-md cursor-pointer" type="submit">
               Solicitar Visita y Presupuesto Cerrado <i class="ri-arrow-right-line text-[15px]"></i>
 </button>
 <p class="text-[11px] text-muted text-center">Tus datos están protegidos conforme a la LOPD. Sin spam ni compromiso.</p>
@@ -2725,10 +3062,158 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
 
-    // 2. FASES DESKTOP ENGINE (EXACT MADRID GOLD STANDARD)
-  const fasesAccordion = document.getElementById('fases-mobile-accordion');
-  const fasesDesktopTabs = document.getElementById('fases-desktop-tabs');
-  const fasesDesktopBadge = document.getElementById('fases-desktop-badge');
+
+
+  // 2. FASES TIMELINE ENGINE (EXACT MADRID GOLD STANDARD)
+  const timelineData = [
+    {
+      step: "01 de 05",
+      time: "45 min · Visita gratuita",
+      badge: "Inspección In Situ Certificada",
+      title: "Medición y Desagües",
+      desc: "Inspección de cotas de desagüe, estado de llaves de corte generales y comprobación de pendientes para asegurar la evacuación fluida del plato enrasado sin bombas ni escalones.",
+      image: "images/banos-fase-01-medicion.webp",
+      protocols: [
+        "Comprobación de cota cero para ducha sin escalón",
+        "Revisión de ventilación natural o forzada según CTE",
+        "Verificación de bajante general y bote sifónico accesible"
+      ]
+    },
+    {
+      step: "02 de 05",
+      time: "3 a 5 días",
+      badge: "Infografía Fotorrealista 3D",
+      title: "Diseño 3D e Infografía",
+      desc: "Visualiza con exactitud cómo lucen los porcelánicos rectificados, la hornacina de obra iluminada, el mueble suspendido y la mampara de vidrio templado antes de iniciar cualquier demolición.",
+      image: "images/banos-fase-02-3d.webp",
+      protocols: [
+        "Render 3D fotorrealista con diferentes acabados",
+        "Selección de muestras físicas en showroom",
+        "Plano de replanteo con cotas de fontanería y tomas eléctricas"
+      ]
+    },
+    {
+      step: "03 de 05",
+      time: "24 a 48 horas",
+      badge: "Precio Cerrado y Plazo Vinculante",
+      title: "Presupuesto Cerrado y Contrato",
+      desc: "Memoria técnica desglosada al milímetro con marcas, calibres y modelos exactos. Precio blindado por contrato con fecha estricta de inicio y penalización económica por demora.",
+      image: "images/banos-fase-03-contrato.webp",
+      protocols: [
+        "Precio cerrado sin partidas abiertas ni extras ocultos",
+        "Penalización diaria por demora estipulada en contrato",
+        "Tramitación de licencia municipal en Ayuntamiento de Madrid"
+      ]
+    },
+    {
+      step: "04 de 05",
+      time: "5 a 7 días hábiles",
+      badge: "Fontanería Multicapa & Estanqueidad 24h",
+      title: "Demolición, Impermeabilización y Obra",
+      desc: "Protegemos ascensor y descansillo de la comunidad, retiramos escombros en sacos homologados y ejecutamos doble lámina impermeabilizante con prueba de estanqueidad de 24 horas antes de alicatar.",
+      image: "images/banos-fase-04-ejecucion.webp",
+      protocols: [
+        "Protección total de zonas comunes con moqueta de impacto",
+        "Prueba de estanqueidad de 24h previa al alicatado",
+        "Instalación de fontanería multicapa termofusionada"
+      ]
+    },
+    {
+      step: "05 de 05",
+      time: "Fin de obra impecable",
+      badge: "2 Años de Garantía Escrita",
+      title: "Montaje, Limpieza y Entrega",
+      desc: "Instalación de griferías termostáticas, sellado fungicida sanitario, prueba de presión de agua, limpieza técnica final y entrega de acta fin de obra con 2 años de garantía legal certificada.",
+      image: "images/banos-fase-05-entrega.webp",
+      protocols: [
+        "Sellado perimetral con silicona sanitaria antimoho C3",
+        "Revisión y firma de lista de remates con el cliente",
+        "Entrega de certificado de garantía de 2 años por escrito"
+      ]
+    }
+  ];
+
+  let currentActiveTimelineFase = 0;
+
+  window.selectTimelineFase = function(index) {
+    if (index === currentActiveTimelineFase) return;
+    currentActiveTimelineFase = index;
+    const data = timelineData[index];
+    if (!data) return;
+
+    // Actualizar estados visuales de los hitos
+    const items = document.querySelectorAll('.timeline-fase-item');
+    items.forEach((item, i) => {
+      const node = item.querySelector('.timeline-node');
+      const card = item.querySelector('.timeline-card');
+      if (i === index) {
+        if (node) {
+          node.className = 'timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-teal bg-teal text-white font-bold text-[14px] md:text-[15px] shadow-sm transition-all duration-300';
+        }
+        if (card) {
+          card.className = 'timeline-card rounded-2xl border-2 border-teal bg-white p-5 md:p-6 shadow-sm transition-all duration-300';
+        }
+      } else {
+        if (node) {
+          node.className = 'timeline-node absolute -left-[35px] sm:-left-[43px] md:-left-[51px] top-3 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full border-2 border-line bg-white font-bold text-muted text-[14px] md:text-[15px] shadow-sm transition-all duration-300 group-hover:border-teal group-hover:bg-teal group-hover:text-white';
+        }
+        if (card) {
+          card.className = 'timeline-card rounded-2xl border border-line bg-white/70 p-5 md:p-6 transition-all duration-300 group-hover:border-teal/50 group-hover:bg-white group-hover:shadow-sm';
+        }
+      }
+    });
+
+    // Actualizar Showcase Derecho
+    const stickyImg = document.getElementById('timeline-sticky-img');
+    const stickyStep = document.getElementById('timeline-sticky-step');
+    const stickyTitle = document.getElementById('timeline-sticky-title');
+    const stickyDesc = document.getElementById('timeline-sticky-desc');
+    const stickyPill = document.getElementById('timeline-sticky-pill');
+    const stickyTime = document.getElementById('timeline-sticky-time');
+    const stickyProtocols = document.getElementById('timeline-sticky-protocols');
+
+    if (stickyImg) {
+      stickyImg.style.opacity = '0.3';
+      setTimeout(() => {
+        stickyImg.src = data.image;
+        stickyImg.style.opacity = '1';
+      }, 80);
+    }
+    if (stickyStep) stickyStep.textContent = `Fase Activa: ${data.step}`;
+    if (stickyTitle) stickyTitle.textContent = data.title;
+    if (stickyDesc) stickyDesc.textContent = data.desc;
+    if (stickyPill) stickyPill.textContent = data.badge;
+    if (stickyTime) stickyTime.textContent = data.time;
+
+    if (stickyProtocols && data.protocols) {
+      stickyProtocols.innerHTML = data.protocols.map(p => `
+        <li class="flex items-start gap-2">
+          <i class="ri-checkbox-circle-fill text-teal text-[15px] shrink-0 mt-0.5"></i>
+          <span>${p}</span>
+        </li>
+      `).join('');
+    }
+  };
+
+  // Scrollspy automático para Timeline
+  if ('IntersectionObserver' in window) {
+    const timelineObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = parseInt(entry.target.getAttribute('data-index'), 10);
+          if (!isNaN(idx)) {
+            window.selectTimelineFase(idx);
+          }
+        }
+      });
+    }, {
+      rootMargin: '-20% 0px -40% 0px',
+      threshold: 0.3
+    });
+
+    document.querySelectorAll('.timeline-fase-item').forEach(el => timelineObserver.observe(el));
+  }
+/* OLD_FASES_DISABLED
   const fasesDesktopTitle = document.getElementById('fases-desktop-title');
   const fasesDesktopDesc = document.getElementById('fases-desktop-desc');
   const fasesDesktopProtocols = document.getElementById('fases-desktop-protocols');
@@ -2740,7 +3225,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const item = pageData && pageData.fases ? pageData.fases[index] : null;
 
     // 1. Mobile accordion cards
-    if (fasesAccordion) {
+  // 2. FASES ENGINE PART 3
       const cards = fasesAccordion.querySelectorAll('.fase-mobile-card');
       cards.forEach((card, idx) => {
         const btn = card.querySelector('.fase-mobile-header');
@@ -2790,7 +3275,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }
 
-    if (fasesDesktopTabs) {
+  // 2. FASES ENGINE PART 2
       const tabBtns = fasesDesktopTabs.querySelectorAll('button');
       tabBtns.forEach((btn, idx) => {
         const stepSpan = btn.querySelector('.tabular-nums');
@@ -2838,7 +3323,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  if (fasesDesktopTabs) {
+// 2. FASES ENGINE PART 2
     const tabBtns = fasesDesktopTabs.querySelectorAll('button');
     tabBtns.forEach((btn, idx) => {
       btn.addEventListener('click', () => activateFase(idx));
@@ -2846,7 +3331,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Mobile accordion event listeners
-  if (fasesAccordion) {
+// 2. FASES ENGINE PART 3
     const cards = fasesAccordion.querySelectorAll('.fase-mobile-card');
     cards.forEach((card, idx) => {
       const btn = card.querySelector('.fase-mobile-header');
@@ -2881,7 +3366,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // 3. BEFORE / AFTER SLIDERS
+OLD_FASES_DISABLED */
+// 3. BEFORE / AFTER SLIDERS
   const sliders = document.querySelectorAll('.ba-slider');
   sliders.forEach(slider => {
     let isTracking = false;
