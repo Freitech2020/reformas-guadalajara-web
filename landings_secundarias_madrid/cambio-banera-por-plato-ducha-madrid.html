@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" translate="no">
+<html lang="es" translate="no" class="scroll-smooth">
 <head>
   <meta charset="utf-8"/>
   <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
@@ -7,14 +7,22 @@
   <title>Cambio de Bañera por Plato de Ducha en Madrid en 24 Horas | Reformas Madrid</title>
   <meta content="Cambio de bañera por plato de ducha en Madrid en 24 horas. Platos de resina antideslizantes C3, mamparas de cristal templado, fontanería certificada y presupuesto cerrado." name="description"/>
   <meta content="cambio banera por ducha madrid, cambiar banera por plato ducha madrid, plato ducha resina madrid, mampara ducha madrid, reforma ducha 24 horas" name="keywords"/>
+  <link rel="canonical" href="https://reformas-madrid.es/cambio-banera-por-plato-ducha-madrid.html"/>
   <meta content="index, follow" name="robots"/>
+
+  <!-- Google Fonts & Remix Icon -->
   <link href="https://fonts.googleapis.com" rel="preconnect"/>
   <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&display=swap" rel="stylesheet"/>
   <link href="assets/remixicon.min.css" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+  <!-- Tailwind CSS & Assets -->
   <link href="assets/index-DzWYBm73.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
+
     /* ==========================================================================
        TOKEN DESIGN FREITECH 2026 & CRO STYLES — CAMBIO DE BAÑERA POR DUCHA
        Autosuficiente, ultra-robusto y 100% blindado contra colisiones CSS
@@ -923,106 +931,246 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(168, 126, 52, 0.35);
     }
+  
+
+    /* ==========================================================================
+       CANONICAL HEADER, SUBBAR, DRAWER & MODAL RULES
+       ========================================================================== */
+    .header-scrim {
+      background: rgba(7, 15, 30, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .header-scrim.scrolled {
+      background: rgba(7, 15, 30, 0.96);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+    .nav-dropdown {
+      position: relative;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .nav-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 320px;
+      background: #FFFFFF;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.25);
+      border: 1px solid #E2E8F0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 100;
+    }
+    .nav-dropdown-item {
+      color: #0A121E;
+    }
+    .nav-dropdown-item:hover {
+      background-color: #F8FAFC;
+      color: #A87E34;
+    }
+    .header-subbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 16px;
+      background: rgba(14, 27, 46, 0.95);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .btn-gold-hero {
+      background: linear-gradient(135deg, #C5A059 0%, #A87E34 100%);
+      color: #070F1E;
+      font-weight: 700;
+      border-radius: 9999px;
+      padding: 10px 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 14px rgba(168, 126, 52, 0.35);
+    }
+    .btn-gold-hero:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(168, 126, 52, 0.45);
+      filter: brightness(1.05);
+    }
+    .btn-whatsapp-hero {
+      background-color: #1B9958;
+      color: #FFFFFF;
+      font-weight: 700;
+      border-radius: 9999px;
+      padding: 10px 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s ease;
+      height: 46px;
+    }
+    .btn-whatsapp-hero:hover {
+      background-color: #15803D;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(27, 153, 88, 0.35);
+    }
+    .btn-header-mobile {
+      background: linear-gradient(135deg, #C5A059 0%, #A87E34 100%);
+      color: #070F1E;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    #mobile-menu-drawer.is-active {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+    #mobile-menu-drawer.is-active nav {
+      transform: translateX(0px) !important;
+    }
+    #modal-presupuesto-overlay {
+      position: fixed;
+      inset: 0px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      background-color: rgba(7, 15, 30, 0.75);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+    #modal-presupuesto-overlay.is-active {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+
   </style>
 </head>
-<body class="bg-white text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900">
+<body class="bg-white text-ink antialiased selection:bg-[#E2C48F]/30 selection:text-[#8C6424]">
 
-<!-- ==========================================================================
-     SECCIÓN 1: CABECERA CANÓNICA CON NAVEGACIÓN Y ACCESO DIRECTO
-     ========================================================================== -->
 <header class="header-scrim fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
-    <div class="flex h-16 sm:h-20 items-center justify-between">
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
+    <nav class="flex items-center justify-between h-[68px] lg:h-[76px] transition-all" aria-label="Navegación principal">
       
-      <!-- Logo Oficial Canónico -->
-      <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
-        <span class="text-[19px] sm:text-[21px] font-bold tracking-tight text-white transition-colors">REFORMAS</span>
-        <span class="text-[19px] sm:text-[21px] font-bold tracking-tight text-[#A87E34] transition-colors">MADRID</span>
+      <!-- Logo -->
+      <a aria-label="Reformas Madrid, volver al inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
+        <span class="text-[19px] lg:text-[21px] font-bold tracking-tight text-white transition-colors">REFORMAS</span>
+        <span class="text-[19px] lg:text-[21px] font-bold tracking-tight text-[#E2C48F] transition-colors">MADRID</span>
       </a>
 
-      <!-- Navegación Desktop -->
-      <nav aria-label="Navegación principal" class="hidden lg:flex items-center gap-7">
-        <ul class="flex items-center gap-6 text-[14.5px] font-medium tracking-tight">
-          
-          <!-- Dropdown Reformas Guadalajara -->
-          <li class="relative nav-dropdown py-2">
-            <button type="button" class="flex items-center gap-1 text-white/90 hover:text-white transition-colors cursor-pointer" aria-expanded="false" aria-haspopup="true">
-              <span>Reformas Guadalajara</span>
-              <i class="ri-arrow-down-s-line text-[16px] dropdown-chevron transition-transform duration-300"></i>
-            </button>
-            <div class="nav-dropdown-menu p-3">
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-medium transition-colors" href="../readdy_captured_complete/index.html#estancias">
-                <i class="ri-home-4-line text-[16px] text-teal"></i>
-                <span>Reformas integrales Guadalajara</span>
+      <!-- Menú Desktop -->
+      <ul class="hidden lg:flex items-center gap-7 xl:gap-9">
+        
+        <!-- Dropdown Guadalajara -->
+        <li class="relative nav-dropdown">
+          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_guadalajara/index.html">
+            <span>REFORMAS EN GUADALAJARA</span>
+            <i class="ri-arrow-down-s-line text-[15px] transition-transform"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <div class="p-2 space-y-1">
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-integrales-guadalajara.html">
+                <i class="ri-home-4-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas integrales en Guadalajara</span>
               </a>
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-medium transition-colors" href="../readdy_captured_complete/index.html#oficios">
-                <i class="ri-temp-cold-line text-[16px] text-teal"></i>
-                <span>Aire acondicionado Guadalajara</span>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-cocinas-guadalajara.html">
+                <i class="ri-restaurant-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas de cocinas en Guadalajara</span>
               </a>
-            </div>
-          </li>
-
-          <!-- Dropdown Reformas Madrid -->
-          <li class="relative nav-dropdown py-2">
-            <button type="button" class="flex items-center gap-1 text-white font-semibold hover:text-white transition-colors cursor-pointer" aria-expanded="false" aria-haspopup="true">
-              <span>Reformas Madrid</span>
-              <i class="ri-arrow-down-s-line text-[16px] dropdown-chevron transition-transform duration-300"></i>
-            </button>
-            <div class="nav-dropdown-menu p-3">
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-medium transition-colors" href="reformas-cocinas-madrid.html">
-                <i class="ri-restaurant-line text-[16px] text-teal"></i>
-                <span>Reformas de cocinas</span>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-banos-guadalajara.html">
+                <i class="ri-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas de baños en Guadalajara</span>
               </a>
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-medium transition-colors" href="reformas-banos-madrid.html">
-                <i class="ri-drop-line text-[16px] text-teal"></i>
-                <span>Reformas de baños</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-semibold text-[#A87E34] bg-white/5 transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">
-                <i class="ri-contrast-drop-line text-[16px] text-teal"></i>
-                <span>Cambio de bañera por ducha</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-medium transition-colors" href="reformas-locales-comerciales-madrid.html">
-                <i class="ri-store-2-line text-[16px] text-teal"></i>
-                <span>Locales comerciales</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-medium transition-colors" href="reformas-oficinas-madrid.html">
-                <i class="ri-building-line text-[16px] text-teal"></i>
-                <span>Reformas de oficinas</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-[13.5px] font-medium transition-colors" href="instalacion-aire-acondicionado-madrid.html">
-                <i class="ri-temp-cold-line text-[16px] text-teal"></i>
-                <span>Aire acondicionado Madrid</span>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-locales-comerciales-guadalajara.html">
+                <i class="ri-store-2-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas de locales comerciales en Guadalajara</span>
               </a>
             </div>
-          </li>
+          </div>
+        </li>
 
-          <li><a class="text-white/90 hover:text-white transition-colors" href="../reformas_madrid/nosotros.html">Nosotros</a></li>
-          <li><a class="text-white/90 hover:text-white transition-colors" href="../reformas_madrid/blog.html">Blog</a></li>
-        </ul>
-      </nav>
+        <!-- Dropdown Madrid -->
+        <li class="relative nav-dropdown">
+          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/index.html">
+            <span>REFORMAS EN MADRID</span>
+            <i class="ri-arrow-down-s-line text-[15px] transition-transform"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <div class="p-2 space-y-1">
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_madrid/index.html">
+                <i class="ri-home-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas integrales en Madrid</span>
+              </a>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="reformas-cocinas-madrid.html">
+                <i class="ri-restaurant-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas de cocinas en Madrid</span>
+              </a>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="reformas-banos-madrid.html">
+                <i class="ri-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas de baños en Madrid</span>
+              </a>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all " href="reformas-locales-comerciales-madrid.html">
+                <i class="ri-store-2-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas de locales en Madrid</span>
+              </a>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="reformas-oficinas-madrid.html">
+                <i class="ri-building-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Reformas de oficinas en Madrid</span>
+              </a>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium bg-slate-100 text-[#A87E34] font-boldfont-medium rounded-xl transition-all" href="cambio-banera-por-plato-ducha-madrid.html">
+                <i class="ri-contrast-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Cambio de bañera por plato de ducha en Madrid</span>
+              </a>
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="instalacion-aire-acondicionado-madrid.html">
+                <i class="ri-temp-cold-line text-[16px] shrink-0 text-[#A87E34]"></i>
+                <span>Instalación de aire acondicionado en Madrid</span>
+              </a>
+            </div>
+          </div>
+        </li>
 
-      <!-- Botón Pedir Presupuesto CTA Header -->
-      <div class="hidden sm:flex items-center gap-4">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold-hero py-2.5 px-5 !text-[13.5px] tracking-wide !rounded-full shadow-md">
-          <span>PEDIR PRESUPUESTO →</span>
+        <li>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
+        </li>
+        <li>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/contacto.html">CONTACTO</a>
+        </li>
+        <li>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/blog.html">BLOG</a>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <button type="button" class="btn-open-popup-presupuesto btn-gold-hero hidden lg:inline-flex" aria-label="Pedir Presupuesto">
+          <span>PEDIR PRESUPUESTO</span>
+          <i class="ri-arrow-right-line text-[15px]"></i>
+        </button>
+        <button id="btn-mobile-menu" aria-label="Abrir menú" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md border cursor-pointer transition-colors border-white/35 bg-white/10 text-white backdrop-blur-sm" type="button">
+          <i class="ri-menu-line text-[20px]"></i>
         </button>
       </div>
-
-      <!-- Botón Hamburguesa Móvil -->
-      <div class="flex items-center gap-3 lg:hidden">
-        <button id="btn-mobile-menu" aria-label="Abrir menú" class="w-10 h-10 flex items-center justify-center rounded-lg border border-white/20 text-white bg-white/10 backdrop-blur-md transition-colors cursor-pointer" type="button">
-          <i class="ri-menu-4-line text-[22px]"></i>
-        </button>
-      </div>
-
-    </div>
+    </nav>
   </div>
 
-  <!-- Sub-barra Móvil -->
+  <!-- Sub-barra móvil -->
   <div class="header-subbar lg:hidden">
-    <span class="subbar-text flex items-center gap-1.5">
-      <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-      Visita gratuita 48-72h
+    <span class="text-white text-[12px] font-medium flex items-center gap-1.5">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      Respuesta rápida en 2h
     </span>
     <button type="button" class="btn-open-popup-presupuesto btn-header-mobile" aria-label="Pedir Presupuesto">
       <span>Pedir Presupuesto</span>
@@ -1031,75 +1179,64 @@
   </div>
 </header>
 
-<!-- Drawer Menú Móvil -->
 <div id="mobile-menu-drawer" class="fixed inset-0 z-[100] transition-all duration-300 pointer-events-none opacity-0" aria-hidden="true">
-  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity duration-300"></div>
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm"></div>
   <nav class="absolute top-0 right-0 bottom-0 w-full max-w-[360px] bg-white shadow-2xl flex flex-col transition-transform duration-300 translate-x-full overflow-y-auto" aria-label="Menú móvil">
-    <div class="flex items-center justify-between p-5 border-b border-line bg-slate-50">
+    <div class="flex items-center justify-between p-5 border-b border-line bg-surface">
       <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
-        <span class="text-[17px] font-bold tracking-tight text-slate-900">REFORMAS</span>
-        <span class="text-[17px] font-bold tracking-tight text-[#A87E34]">MADRID</span>
+        <span class="text-[17px] font-bold tracking-tight text-ink">REFORMAS</span>
+        <span class="text-[17px] font-bold tracking-tight text-[#8C6424]">MADRID</span>
       </a>
-      <button id="btn-close-mobile-menu" aria-label="Cerrar menú" class="w-10 h-10 flex items-center justify-center rounded-md border border-line text-slate-900 hover:text-teal hover:border-teal transition-colors cursor-pointer" type="button">
-        <i class="ri-close-line text-[22px]"></i>
+      <button id="btn-close-mobile-menu" aria-label="Cerrar menú" class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-ink hover:bg-slate-200" type="button">
+        <i class="ri-close-line text-[20px]"></i>
       </button>
     </div>
-    <div class="flex-1 px-5 py-6 flex flex-col gap-3">
-      <div class="mobile-nav-item border-b border-line/60 pb-3">
-        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[14px] font-bold uppercase tracking-wider text-slate-900 hover:text-[#A87E34] transition-colors cursor-pointer" type="button" aria-expanded="false">
-          <span>REFORMAS EN GUADALAJARA</span>
-          <i class="ri-arrow-down-s-line text-[18px] transition-transform duration-300"></i>
-        </button>
-        <div class="mobile-accordion-panel hidden pl-3 pt-2 flex-col gap-2">
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="../readdy_captured_complete/index.html#estancias">
-            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
-            <span>Reformas integrales en Guadalajara</span>
+
+    <div class="p-6 space-y-5 text-left flex-1 flex flex-col">
+      <div class="border-b border-line/60 pb-4">
+        <p class="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-2">Servicios Madrid</p>
+        <div class="space-y-1">
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../reformas_madrid/index.html">
+            <i class="ri-home-line text-[16px] shrink-0 text-[#A87E34]"></i>
+            <span>Reformas integrales en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="../readdy_captured_complete/index.html#oficios">
-            <i class="ri-temp-cold-line text-[16px] shrink-0"></i>
-            <span>Instalación de aire acondicionado en Guadalajara</span>
-          </a>
-        </div>
-      </div>
-      <div class="mobile-nav-item border-b border-line/60 pb-3">
-        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[14px] font-bold uppercase tracking-wider text-slate-900 hover:text-[#A87E34] transition-colors cursor-pointer" type="button" aria-expanded="false">
-          <span>REFORMAS EN MADRID</span>
-          <i class="ri-arrow-down-s-line text-[18px] transition-transform duration-300"></i>
-        </button>
-        <div class="mobile-accordion-panel hidden pl-3 pt-2 flex-col gap-2">
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="reformas-cocinas-madrid.html">
-            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">
+            <i class="ri-restaurant-line text-[16px] shrink-0 text-[#A87E34]"></i>
             <span>Reformas de cocinas en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="reformas-banos-madrid.html">
-            <i class="ri-drop-line text-[16px] shrink-0"></i>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">
+            <i class="ri-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
             <span>Reformas de baños en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">
-            <i class="ri-contrast-drop-line text-[16px] shrink-0"></i>
-            <span>Cambio de bañera por plato de ducha en Madrid</span>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">
+            <i class="ri-store-2-line text-[16px] shrink-0 text-[#A87E34]"></i>
+            <span>Reformas de locales comerciales</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="reformas-locales-comerciales-madrid.html">
-            <i class="ri-store-2-line text-[16px] shrink-0"></i>
-            <span>Reformas de locales comerciales en Madrid</span>
-          </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="reformas-oficinas-madrid.html">
-            <i class="ri-building-line text-[16px] shrink-0"></i>
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">
+            <i class="ri-building-line text-[16px] shrink-0 text-[#A87E34]"></i>
             <span>Reformas de oficinas en Madrid</span>
-          </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-slate-700 hover:text-[#A87E34] transition-colors" href="instalacion-aire-acondicionado-madrid.html">
-            <i class="ri-temp-cold-line text-[16px] shrink-0"></i>
-            <span>Aire acondicionado en Madrid</span>
           </a>
         </div>
       </div>
-      <a class="py-2 text-[14px] font-bold uppercase tracking-wider text-slate-900 hover:text-[#A87E34] transition-colors" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
-      <a class="py-2 text-[14px] font-bold uppercase tracking-wider text-slate-900 hover:text-[#A87E34] transition-colors" href="../reformas_madrid/blog.html">BLOG</a>
-      
-      <div class="mt-6 pt-6 border-t border-line flex flex-col gap-3">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold-hero w-full py-3.5 !text-[14px] tracking-wide !rounded-full shadow-md">
-          <span>PEDIR PRESUPUESTO →</span>
+
+      <div class="border-b border-line/60 pb-3">
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
+      </div>
+      <div class="border-b border-line/60 pb-3">
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/contacto.html">CONTACTO</a>
+      </div>
+
+      <div class="pt-4">
+        <button type="button" class="btn-open-popup-presupuesto btn-gold-hero w-full !text-center justify-center shadow-md cursor-pointer" aria-label="Pedir Presupuesto">
+          <span>PEDIR PRESUPUESTO</span>
+          <i class="ri-arrow-right-line text-[16px]"></i>
         </button>
+      </div>
+
+      <div class="mt-auto pt-6 text-center">
+        <a class="inline-flex items-center gap-2 text-[15px] font-bold text-ink hover:text-[#8C6424] transition-colors" href="tel:+34910000000">
+          <i class="ri-phone-line text-[#A87E34]"></i> +34 910 00 00 00
+        </a>
       </div>
     </div>
   </nav>
@@ -1951,70 +2088,78 @@
 
 </main>
 
-<!-- ==========================================================================
-     SECCIÓN 12: FOOTER OFICIAL CLARO (BG-ICE #F6F8FA)
-     ========================================================================== -->
-<footer class="w-full bg-[#F6F8FA] border-t border-[#E2E8F0]">
+<footer class="w-full bg-ice border-t border-line/60">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
-    <div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10">
-      
+    <div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10 text-left">
       <div class="md:col-span-5">
         <div class="flex items-center gap-1.5">
-          <span class="text-[18px] font-bold tracking-[-0.01em] text-slate-900">REFORMAS</span>
-          <span class="text-[18px] font-bold tracking-[-0.01em] text-[#A87E34]">MADRID</span>
+          <span class="text-[18px] font-bold tracking-[-0.01em] text-black">REFORMAS</span>
+          <span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span>
         </div>
-        <p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-slate-700 font-normal">
+        <p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-black font-normal">
           Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.
         </p>
-        <div class="mt-5 flex flex-col gap-2 text-[15px] text-slate-800 font-medium">
-          <a class="hover:text-[#A87E34] transition-colors cursor-pointer whitespace-nowrap text-slate-900 font-semibold" href="tel:+34910000000">+34 910 00 00 00</a>
-          <span class="text-slate-700">Calle Mayor 42, 28013 Madrid</span>
+        <div class="mt-5 flex flex-col gap-2 text-[15px] text-black font-medium">
+          <a class="hover:text-[#8C6424] transition-colors cursor-pointer whitespace-nowrap text-black font-semibold" href="tel:+34910000000">+34 910 00 00 00</a>
+          <span class="text-black">Calle Mayor 42, 28013 Madrid</span>
         </div>
       </div>
 
       <div class="md:col-span-3">
-        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-slate-900">Servicios en Madrid</h4>
-        <ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-slate-700 font-medium">
-          <li><a class="hover:text-[#A87E34] transition-colors" href="reformas-cocinas-madrid.html">Reformas de Cocinas</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors" href="reformas-banos-madrid.html">Reformas de Baños</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors font-semibold text-[#A87E34]" href="cambio-banera-por-plato-ducha-madrid.html">Cambio de Bañera por Ducha</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors" href="reformas-locales-comerciales-madrid.html">Locales Comerciales</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors" href="reformas-oficinas-madrid.html">Reformas de Oficinas</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors" href="instalacion-aire-acondicionado-madrid.html">Aire Acondicionado</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors cursor-pointer" href="../reformas_madrid/nosotros.html">Nosotros</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors cursor-pointer" href="../reformas_madrid/blog.html">Blog</a></li>
+        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black">Servicios en Madrid</h4>
+        <ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-black font-medium">
+          <li><a class="hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">Reformas de Cocinas</a></li>
+          <li><a class="hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">Reformas de Baños</a></li>
+          <li><a class="hover:text-[#8C6424] transition-colors font-bold text-[#A87E34]" href="cambio-banera-por-plato-ducha-madrid.html">Cambio de Bañera por Ducha</a></li>
+          <li><a class="hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">Locales Comerciales</a></li>
+          <li><a class="hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">Reformas de Oficinas</a></li>
+          <li><a class="hover:text-[#8C6424] transition-colors" href="instalacion-aire-acondicionado-madrid.html">Aire Acondicionado</a></li>
+          <li><a class="hover:text-[#8C6424] transition-colors cursor-pointer" href="../reformas_madrid/nosotros.html">Nosotros</a></li>
+          <li><a class="hover:text-[#8C6424] transition-colors cursor-pointer" href="../reformas_madrid/blog.html">Blog</a></li>
         </ul>
       </div>
 
       <div class="md:col-span-4">
-        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-slate-900">Contacto Directo</h4>
-        <ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-slate-700 font-medium">
-          <li><a class="hover:text-[#A87E34] transition-colors cursor-pointer text-slate-800" href="https://wa.me/34910000000" rel="noopener noreferrer" target="_blank"><i class="ri-whatsapp-line text-[17px] text-emerald-600 mr-1.5 inline-block"></i>WhatsApp · respuesta en 24 h</a></li>
-          <li><a class="hover:text-[#A87E34] transition-colors cursor-pointer text-slate-800" href="mailto:contacto@reformasmadrid.es"><i class="ri-mail-line text-[16px] text-teal mr-1.5 inline-block" style="color: #A87E34 !important;"></i>contacto@reformasmadrid.es</a></li>
-          <li class="text-slate-700"><i class="ri-time-line text-[16px] text-slate-500 mr-1.5 inline-block"></i>Lun–Vie 8:30–19:00 · Sábado con cita previa</li>
-          <li><button type="button" class="btn-open-popup-presupuesto hover:text-[#A87E34] transition-colors cursor-pointer text-slate-900 font-semibold underline underline-offset-2 bg-transparent border-none p-0 text-left">Formulario de contacto</button></li>
+        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black">Contacto Directo</h4>
+        <ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-black font-medium">
+          <li>
+            <a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="https://wa.me/34600000000" rel="noopener noreferrer" target="_blank">
+              <i class="ri-whatsapp-line text-[17px] text-okgreen mr-1.5 inline-block"></i>WhatsApp · respuesta en 24 h
+            </a>
+          </li>
+          <li>
+            <a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="mailto:contacto@reformasmadrid.es">
+              <i class="ri-mail-line text-[16px] text-teal mr-1.5 inline-block"></i>contacto@reformasmadrid.es
+            </a>
+          </li>
+          <li class="text-black">
+            <i class="ri-time-line text-[16px] text-muted mr-1.5 inline-block"></i>Lun–Vie 8:30–19:00 · Sábado con cita previa
+          </li>
+          <li>
+            <button type="button" class="btn-open-popup-presupuesto hover:text-[#8C6424] transition-colors cursor-pointer text-black font-semibold underline underline-offset-2">
+              Formulario de contacto
+            </button>
+          </li>
         </ul>
       </div>
-
     </div>
 
-    <div class="border-t border-slate-200 py-6">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-slate-600 font-medium text-center md:text-left">
+    <div class="border-t border-black/15 py-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-black font-medium text-center md:text-left">
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
-          <span>Reformas Madrid · © 2026 Todos los derechos reservados.</span>
-          <span class="hidden sm:inline text-slate-300">|</span>
-          <span>Diseñado por <strong class="text-slate-900 font-semibold">SEOLife</strong></span>
+          <span class="text-black font-medium">Reformas Madrid · © 2026 Todos los derechos reservados.</span>
+          <span class="hidden sm:inline text-black/30">|</span>
+          <span class="text-black/80 font-medium">Diseñado por <strong class="text-black font-semibold">SEOLife</strong></span>
         </div>
         <div class="flex flex-wrap items-center justify-center gap-y-2 text-[13px]">
-          <a class="hover:text-[#A87E34] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/aviso-legal/">Aviso Legal</a>
-          <span class="text-slate-400 select-none px-2 sm:px-3">·</span>
-          <a class="hover:text-[#A87E34] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-privacidad/">Política de Privacidad</a>
-          <span class="text-slate-400 select-none px-2 sm:px-3">·</span>
-          <a class="hover:text-[#A87E34] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-cookies/">Política de Cookies</a>
+          <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/aviso-legal/">Aviso Legal</a>
+          <span class="text-black/40 select-none px-2 sm:px-3">·</span>
+          <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-privacidad/">Política de Privacidad</a>
+          <span class="text-black/40 select-none px-2 sm:px-3">·</span>
+          <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-cookies/">Política de Cookies</a>
         </div>
       </div>
     </div>
-
   </div>
 </footer>
 
@@ -2131,6 +2276,7 @@
 </div>
 
 <!-- SCRIPTS DE INTERACTIVIDAD -->
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // 1. CALCULADOR INTERACTIVO
@@ -2173,8 +2319,14 @@ document.addEventListener('DOMContentLoaded', function() {
       const nombre = document.getElementById('calc-nombre')?.value || '';
       const telefono = document.getElementById('calc-telefono')?.value || '';
 
-      const mensaje = `Hola, he calculado mi presupuesto de cambio de bañera en Madrid:%0A- Medida: ${encodeURIComponent(medida)}%0A- Mampara: ${encodeURIComponent(mampara)}%0A- Zona: ${encodeURIComponent(zona)}%0A- Nombre: ${encodeURIComponent(nombre)}%0A- Teléfono: ${encodeURIComponent(telefono)}%0A¿Podrían confirmarme la valoración exacta?`;
-      window.open(`https://wa.me/34910000000?text=${mensaje}`, '_blank');
+      const text = `Hola, he calculado mi presupuesto para cambio de bañera por ducha en Madrid:\n` +
+        `• Medida de plato: ${medida}\n` +
+        `• Tipo de mampara: ${mampara}\n` +
+        `• Zona / Municipio: ${zona}\n` +
+        (nombre ? `• Nombre: ${nombre}\n` : '') +
+        (telefono ? `• Teléfono: ${telefono}\n` : '') +
+        `¿Podrían confirmarme la valoración y fecha de visita técnica gratuita?`;
+      window.open(`https://wa.me/34910000000?text=${encodeURIComponent(text)}`, '_blank');
     });
   }
 
@@ -2193,14 +2345,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // 3. HEADER SCROLL SHRINK
-  const header = document.querySelector('header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      header?.classList.add('scrolled', 'shadow-md');
-    } else {
-      header?.classList.remove('scrolled', 'shadow-md');
-    }
-  });
+  const header = document.querySelector('header.header-scrim') || document.querySelector('header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled', 'shadow-md');
+      } else {
+        header.classList.remove('scrolled', 'shadow-md');
+      }
+    }, { passive: true });
+  }
 
   // 4. MODAL POPUP PRESUPUESTO
   const modalOverlay = document.getElementById('modal-presupuesto-overlay');
@@ -2226,13 +2380,41 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.btn-open-popup-presupuesto').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      e.stopPropagation();
+      closeMobile();
       openPresupuestoModal();
     });
   });
 
   if (btnCloseModal) btnCloseModal.addEventListener('click', closePresupuestoModal);
   if (backdropModal) backdropModal.addEventListener('click', closePresupuestoModal);
+  if (modalOverlay) {
+    modalOverlay.addEventListener('click', function(e) {
+      if (e.target === modalOverlay) closePresupuestoModal();
+    });
+  }
+
+  // Envío Formulario Popup a WhatsApp
+  const formPopup = document.getElementById('form-popup-presupuesto');
+  if (formPopup) {
+    formPopup.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('popup-nombre')?.value.trim() || '';
+      const telefono = document.getElementById('popup-telefono')?.value.trim() || '';
+      const zona = document.getElementById('popup-zona')?.value || '';
+      const pack = document.getElementById('popup-pack')?.value || '';
+      const comentarios = document.getElementById('popup-comentarios')?.value.trim() || '';
+
+      const text = `Hola, solicito estudio y presupuesto para cambio de bañera por ducha en Madrid:\n` +
+        (nombre ? `👤 Nombre: ${nombre}\n` : '') +
+        (telefono ? `📞 Teléfono: ${telefono}\n` : '') +
+        (zona ? `📍 Zona / Barrio: ${zona}\n` : '') +
+        (pack ? `🚿 Pack preferido: ${pack}\n` : '') +
+        (comentarios ? `📝 Detalles: ${comentarios}` : '');
+
+      window.open(`https://wa.me/34910000000?text=${encodeURIComponent(text)}`, '_blank');
+      closePresupuestoModal();
+    });
+  }
 
   // 5. LIGHTBOX PARA CASOS REALES
   const lightboxModal = document.getElementById('lightbox-modal');
@@ -2275,7 +2457,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
   if (lightboxBackdrop) lightboxBackdrop.addEventListener('click', closeLightbox);
 
-  // 6. MENÚ MÓVIL DRAWER
+  // 6. MENÚ MÓVIL DRAWER CANÓNICO
   const btnMobileMenu = document.getElementById('btn-mobile-menu');
   const mobileMenuDrawer = document.getElementById('mobile-menu-drawer');
   const btnCloseMobile = document.getElementById('btn-close-mobile-menu');
@@ -2301,26 +2483,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (btnCloseMobile) btnCloseMobile.addEventListener('click', closeMobile);
   if (backdropMobile) backdropMobile.addEventListener('click', closeMobile);
 
-  document.querySelectorAll('.mobile-accordion-btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      const isExpanded = this.getAttribute('aria-expanded') === 'true';
-      const panel = this.nextElementSibling;
-      const icon = this.querySelector('i');
-      if (isExpanded) {
-        this.setAttribute('aria-expanded', 'false');
-        panel?.classList.add('hidden');
-        panel?.classList.remove('flex');
-        icon?.classList.remove('rotate-180');
-      } else {
-        this.setAttribute('aria-expanded', 'true');
-        panel?.classList.remove('hidden');
-        panel?.classList.add('flex');
-        icon?.classList.add('rotate-180');
-      }
-    });
-  });
-
+  // 7. TECLA ESCAPE CIERRA TODOS LOS ELEMENTOS FLOTANTES
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closePresupuestoModal();
