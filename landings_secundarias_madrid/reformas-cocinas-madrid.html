@@ -2294,33 +2294,69 @@ transition: transform 0.3s ease, background-color 0.3s ease;
 
      ========================================================================== */
 
-  .card-local { 
+  .card-espacio, .card-local { 
 
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF !important; 
 
-    border: 1px solid #E4DCCB; 
+    border: 1px solid var(--line, #E2E8F0) !important; 
 
-    border-radius: 20px; 
+    border-radius: 20px !important; 
 
-    box-shadow: 0 4px 20px rgba(14, 27, 46, 0.06); 
+    box-shadow: 0 4px 20px rgba(14, 27, 46, 0.06) !important; 
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important; 
 
-    display: flex; 
+    display: flex !important; 
 
-    flex-direction: column; 
+    flex-direction: column !important; 
 
-    overflow: hidden; 
+    overflow: hidden !important; 
 
   }
 
-  .card-local:hover { 
+  .card-espacio:hover, .card-local:hover { 
 
-    transform: translateY(-4px); 
+    transform: translateY(-4px) !important; 
 
-    box-shadow: 0 12px 28px rgba(14, 27, 46, 0.12); 
+    box-shadow: 0 12px 28px rgba(14, 27, 46, 0.12) !important; 
 
-    border-color: rgba(168, 126, 52, 0.4); 
+    border-color: rgba(168, 126, 52, 0.4) !important; 
+
+  }
+
+  @media (min-width: 1024px) { 
+
+    #fases .grid.gap-6 { 
+
+      display: grid !important; 
+
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important; 
+
+    } 
+
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) { 
+
+    #fases .grid.gap-6 { 
+
+      display: grid !important; 
+
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important; 
+
+    } 
+
+  }
+
+  @media (max-width: 639px) { 
+
+    #fases .grid.gap-6 { 
+
+      display: grid !important; 
+
+      grid-template-columns: 1fr !important; 
+
+    } 
 
   }
 
@@ -2343,6 +2379,10 @@ transition: transform 0.3s ease, background-color 0.3s ease;
     letter-spacing: 0.05em; 
 
     text-transform: uppercase; 
+
+    white-space: nowrap !important; 
+
+    flex-shrink: 0 !important; 
 
     background-color: #FDF9F0; 
 
@@ -3972,7 +4012,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="step-badge !bg-emerald-50 !text-emerald-800 !border-emerald-200">Paso 04</span>
-              <span class="text-[12px] font-bold text-slate-500">Entrega Llave en Mano</span>
+              <span class="text-[12px] font-bold text-slate-500">Llave en Mano</span>
             </div>
             <h3 class="text-[18px] font-bold text-ink mb-2">Montaje y Clientes Felices</h3>
             <p class="!text-[14.5px] !text-slate-600 !leading-relaxed">
