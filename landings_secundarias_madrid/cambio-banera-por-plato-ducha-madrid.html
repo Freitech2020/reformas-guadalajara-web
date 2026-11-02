@@ -387,6 +387,8 @@
     /* Pack Popular Destacado Fiel al Máster */
     .card-pack-popular {
       border: 2px solid var(--color-gold) !important;
+      overflow: visible !important;
+      margin-top: 16px !important;
       position: relative;
       box-shadow: 0 12px 36px rgba(168, 126, 52, 0.12) !important;
     }
@@ -449,8 +451,9 @@
     /* Tarjetas de Autoridad */
     .autoridad-card {
       padding: 28px 24px;
+      background: #F8FAFC;
       border-radius: 20px;
-      background-color: #F8FAFC;
+
       border: 1px solid #E2E8F0;
       text-align: left;
       transition: all 0.25s ease;
@@ -567,7 +570,7 @@
       height: 56px;
       border-radius: 14px;
       border: 2px solid #E2E8F0;
-      background-color: #F8FAFC;
+
       font-size: 16px;
       font-weight: 500;
       color: #0F172A;
@@ -598,7 +601,7 @@
     .geo-card {
       padding: 26px 22px;
       border-radius: 20px;
-      background-color: #F8FAFC;
+
       border: 1px solid #E2E8F0;
       text-align: left;
       transition: all 0.25s ease;
@@ -972,12 +975,53 @@
       pointer-events: none;
       z-index: 100;
     }
-    .nav-dropdown-item {
-      color: #0A121E;
+
+
     }
-    .nav-dropdown-item:hover {
-      background-color: #F8FAFC;
-      color: #A87E34;
+
+
+
+
+      background: rgba(14, 27, 46, 0.97) !important;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
+    }
+    header.header-scrim:not(.scrolled) .nav-dropdown-item {
+      color: rgba(255, 255, 255, 0.92) !important;
+      text-shadow: none !important;
+    }
+    header.header-scrim:not(.scrolled) .nav-dropdown-item:hover {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      color: #E2C48F !important;
+    }
+    header.header-scrim:not(.scrolled) .nav-dropdown-item i {
+      color: #E2C48F !important;
+    }
+    header.scrolled .nav-dropdown-menu {
+      background: rgba(255, 255, 255, 0.98) !important;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(226, 232, 240, 0.95) !important;
+      box-shadow: 0 20px 45px rgba(14, 27, 46, 0.12) !important;
+    }
+    header.scrolled .nav-dropdown-item {
+      color: #0E1B2E !important;
+      text-shadow: none !important;
+    }
+    header.scrolled .nav-dropdown-item:hover {
+      background-color: #F8FAFC !important;
+      color: #8C6424 !important;
+    }
+    header.scrolled .nav-dropdown-item-active {
+      color: #8C6424 !important;
+    }
+    }
+
+      color: #8C6424 !important;
+    }
+    }
     }
     .header-subbar {
       display: flex;
@@ -1068,18 +1112,18 @@
       
       <!-- Logo -->
       <a aria-label="Reformas Madrid, volver al inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
-        <span class="text-[19px] lg:text-[21px] font-bold tracking-tight text-white transition-colors">REFORMAS</span>
-        <span class="text-[19px] lg:text-[21px] font-bold tracking-tight text-[#E2C48F] transition-colors">MADRID</span>
+        <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
+        <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-[#E2C48F] [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
       </a>
 
       <!-- Menú Desktop -->
-      <ul class="hidden lg:flex items-center gap-7 xl:gap-9">
+      <ul class="hidden lg:flex items-center gap-3 xl:gap-6 header-nav-list">
         
         <!-- Dropdown Guadalajara -->
-        <li class="relative nav-dropdown">
-          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_guadalajara/index.html">
+        <li class="nav-dropdown group relative">
+          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_guadalajara/index.html">
             <span>REFORMAS EN GUADALAJARA</span>
-            <i class="ri-arrow-down-s-line text-[15px] transition-transform"></i>
+            <i class="ri-arrow-down-s-line text-[15px] dropdown-chevron"></i>
           </a>
           <div class="nav-dropdown-menu">
             <div class="p-2 space-y-1">
@@ -1104,10 +1148,10 @@
         </li>
 
         <!-- Dropdown Madrid -->
-        <li class="relative nav-dropdown">
-          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/index.html">
+        <li class="nav-dropdown group relative">
+          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/index.html">
             <span>REFORMAS EN MADRID</span>
-            <i class="ri-arrow-down-s-line text-[15px] transition-transform"></i>
+            <i class="ri-arrow-down-s-line text-[15px] dropdown-chevron"></i>
           </a>
           <div class="nav-dropdown-menu">
             <div class="p-2 space-y-1">
@@ -1131,7 +1175,7 @@
                 <i class="ri-building-line text-[16px] shrink-0 text-[#A87E34]"></i>
                 <span>Reformas de oficinas en Madrid</span>
               </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium bg-slate-100 text-[#A87E34] font-boldfont-medium rounded-xl transition-all" href="cambio-banera-por-plato-ducha-madrid.html">
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="cambio-banera-por-plato-ducha-madrid.html">
                 <i class="ri-contrast-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
                 <span>Cambio de bañera por plato de ducha en Madrid</span>
               </a>
@@ -1144,18 +1188,18 @@
         </li>
 
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/contacto.html">CONTACTO</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/contacto.html">CONTACTO</a>
         </li>
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/blog.html">BLOG</a>
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/blog.html">BLOG</a>
         </li>
       </ul>
 
       <div class="flex items-center gap-3">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold-hero hidden lg:inline-flex" aria-label="Pedir Presupuesto">
+        <button type="button" class="btn-open-popup-presupuesto btn-header-desktop btn-gold bg-teal hidden lg:inline-flex items-center gap-2 rounded-md px-3.5 py-2 xl:px-5 xl:py-2.5 text-[11.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[15px]"></i>
         </button>
@@ -1376,12 +1420,12 @@
 <section id="proceso" class="bg-surface">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[820px] mx-auto pre-cards-spacing">
-      <div class="step-badge">CRONOGRAMA EN UN SOLO DÍA</div>
-      <h2 class="text-[30px] sm:text-[38px] font-serif font-bold text-black leading-tight">
+    <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
+      
+      <h2 class="text-[30px] sm:text-[38px] md:text-[44px] font-serif font-bold text-black leading-tight tracking-tight">
         ¿Cómo Cambiamos tu Bañera en Solo un Día?
       </h2>
-      <p class="text-[18px] sm:text-[19px] text-black leading-relaxed font-normal">
+      <p class="text-[16px] sm:text-[18px] text-black/85 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
         Demostramos que sabemos trabajar y eliminamos el miedo al desorden. Así transcurre la jornada en tu domicilio:
       </p>
     </div>
@@ -1424,7 +1468,7 @@
       <!-- Paso 3: 15:00h -->
       <div class="card-ducha flex flex-col">
         <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
-          <img src="images/ducha-paso-03.webp" alt="Colocación del plato y alicatado a juego" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
+          <img src="images/ducha-paso-03.jpg" alt="Colocación del plato y alicatado a juego" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
           <span class="absolute top-3 left-3 bg-[#E6F4EA] text-[#0D652D] font-bold text-[13px] px-3.5 py-1.5 rounded-full shadow-sm tracking-wide">
             15:00 h
           </span>
@@ -1440,7 +1484,7 @@
       <!-- Paso 4: 18:00h -->
       <div class="card-ducha flex flex-col">
         <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
-          <img src="images/ducha-paso-04.webp" alt="Montaje de mampara y entrega listo para usar" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
+          <img src="images/ducha-paso-04.jpg" alt="Montaje de mampara y entrega listo para usar" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
           <span class="absolute top-3 left-3 bg-[#E6F4EA] text-[#0D652D] font-bold text-[13px] px-3.5 py-1.5 rounded-full shadow-sm tracking-wide">
             18:00 h
           </span>
@@ -1463,12 +1507,12 @@
 <section id="precios" class="bg-white border-t border-line">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[840px] mx-auto pre-cards-spacing">
-      <div class="step-badge">PRESUPUESTOS SIN SORPRESAS</div>
-      <h2 class="text-[30px] sm:text-[38px] font-serif font-bold text-black leading-tight">
+    <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
+      
+      <h2 class="text-[30px] sm:text-[38px] md:text-[44px] font-serif font-bold text-black leading-tight tracking-tight">
         Precios Transparentes: Elige tu Pack de Cambio de Ducha
       </h2>
-      <p class="text-[18px] sm:text-[19px] text-black leading-relaxed font-normal">
+      <p class="text-[16px] sm:text-[18px] text-black/85 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
         A los clientes no les gusta el "depende". Trabajamos con precio cerrado firmado en contrato, con todo incluido desde el primer minuto.
       </p>
     </div>
@@ -1583,12 +1627,12 @@
 <section id="casos-reales" class="bg-surface">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[820px] mx-auto pre-cards-spacing">
-      <div class="step-badge">CASOS REALES EN MADRID</div>
-      <h2 class="text-[30px] sm:text-[38px] font-serif font-bold text-black leading-tight">
+    <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
+      
+      <h2 class="text-[30px] sm:text-[38px] md:text-[44px] font-serif font-bold text-black leading-tight tracking-tight">
         Casos Reales: Trabajos Entregados en la Comunidad de Madrid
       </h2>
-      <p class="text-[18px] sm:text-[19px] text-black leading-relaxed font-normal">
+      <p class="text-[16px] sm:text-[18px] text-black/85 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
         No usamos fotos de catálogo. Comprueba transformaciones reales documentadas en pisos y viviendas de la región:
       </p>
     </div>
@@ -1675,12 +1719,12 @@
 <section id="garantias" class="bg-white border-t border-line">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[820px] mx-auto pre-cards-spacing">
-      <div class="step-badge">SEGURIDAD Y TRANQUILIDAD</div>
-      <h2 class="text-[30px] sm:text-[38px] font-serif font-bold text-black leading-tight">
+    <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
+      
+      <h2 class="text-[30px] sm:text-[38px] md:text-[44px] font-serif font-bold text-black leading-tight tracking-tight">
         Por Qué Somos la Opción Más Segura en Madrid
       </h2>
-      <p class="text-[18px] sm:text-[19px] text-black leading-relaxed font-normal">
+      <p class="text-[16px] sm:text-[18px] text-black/85 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
         Todas nuestras reformas cuentan con las máximas garantías legales, técnicas y aseguradoras:
       </p>
     </div>
@@ -1741,12 +1785,12 @@
 <section id="calculador" class="bg-surface border-t border-line">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[820px] mx-auto pre-cards-spacing">
-      <div class="step-badge">HERRAMIENTA ONLINE GRATUITA</div>
-      <h2 class="text-[30px] sm:text-[38px] font-serif font-bold text-black leading-tight">
+    <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
+      
+      <h2 class="text-[30px] sm:text-[38px] md:text-[44px] font-serif font-bold text-black leading-tight tracking-tight">
         Calcula el Precio de tu Cambio de Bañera en 1 Minuto
       </h2>
-      <p class="text-[18px] sm:text-[19px] text-black leading-relaxed font-normal">
+      <p class="text-[16px] sm:text-[18px] text-black/85 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
         Selecciona las características de tu baño y obtén una estimación inmediata sin compromiso:
       </p>
     </div>
@@ -1903,12 +1947,12 @@
 <section id="cobertura" class="bg-white border-t border-line">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[820px] mx-auto pre-cards-spacing">
-      <div class="step-badge">COBERTURA EN TODA LA COMUNIDAD</div>
-      <h2 class="text-[30px] sm:text-[38px] font-serif font-bold text-black leading-tight">
+    <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
+      
+      <h2 class="text-[30px] sm:text-[38px] md:text-[44px] font-serif font-bold text-black leading-tight tracking-tight">
         Damos Servicio a Todo Madrid
       </h2>
-      <p class="text-[18px] sm:text-[19px] text-black leading-relaxed font-normal">
+      <p class="text-[16px] sm:text-[18px] text-black/85 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
         Nuestras cuadrillas móviles se desplazan diariamente por todos los municipios de la región sin sobrecostes:
       </p>
     </div>
@@ -1985,12 +2029,12 @@
 <section id="faqs" class="bg-surface border-t border-line">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
-    <div class="text-center max-w-[820px] mx-auto pre-cards-spacing">
-      <div class="step-badge">DUDAS Y RESPUESTAS</div>
-      <h2 class="text-[30px] sm:text-[38px] font-serif font-bold text-black leading-tight">
+    <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
+      
+      <h2 class="text-[30px] sm:text-[38px] md:text-[44px] font-serif font-bold text-black leading-tight tracking-tight">
         Dudas Frecuentes sobre el Cambio de Bañera por Ducha
       </h2>
-      <p class="text-[18px] sm:text-[19px] text-black leading-relaxed font-normal">
+      <p class="text-[16px] sm:text-[18px] text-black/85 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
         Resolvemos las dudas más habituales antes de empezar tu reforma de ducha en Madrid:
       </p>
     </div>

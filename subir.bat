@@ -1,0 +1,2 @@
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0subir.ps1"
+pause
