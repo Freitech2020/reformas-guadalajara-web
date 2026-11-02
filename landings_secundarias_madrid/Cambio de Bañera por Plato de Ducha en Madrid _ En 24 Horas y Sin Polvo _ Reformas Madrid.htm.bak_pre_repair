@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<!-- saved from url=(0159)file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/cambio-banera-por-plato-ducha-madrid.html -->
+<html lang="es" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambio de Bañera por Plato de Ducha en Madrid | En 24 Horas y Sin Polvo | Reformas Madrid</title>
+  <meta name="description" content="Cambio de bañera por plato de ducha en Madrid en solo 24 horas. Platos de resina antideslizantes C3 a ras de suelo, mamparas de cristal templado y máxima seguridad para toda la familia. Presupuesto cerrado en 2h.">
+  <link rel="canonical" href="https://reformas-madrid.es/cambio-banera-por-plato-ducha-madrid.html">
+  
+  <!-- Remix Icon & Google Fonts -->
+  <link href="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/css2" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/saved_resource"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              DEFAULT: '#0E1B2E',
+              dark: '#070F1E',
+              light: '#16263D',
+              surface: '#F8FAFC'
+            },
+            gold: {
+              DEFAULT: '#A87E34',
+              hover: '#8C6424',
+              light: '#E2C48F',
+              subtle: '#FDF9F0'
+            },
+            whatsapp: {
+              DEFAULT: '#1B9958',
+              hover: '#15803D'
+            },
+            ink: '#0F172A',
+            surface: '#F8FAFC',
+            ice: '#F6F8FA',
+            line: '#E2E8F0',
+            teal: '#0D9488',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Estándar Ley 8 Token Design Freitech 2026 */
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #000000 !important;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    p, li, span, input, select, textarea {
+      color: #000000;
+    }
+
+    /* Legibilidad garantizada: Desktop >= 18px, Mobile >= 16px */
+    .body-lead {
+      font-size: 18px;
+      line-height: 1.6em;
+      color: #000000 !important;
+    }
+    @media (min-width: 768px) {
+      .body-lead {
+        font-size: 19px;
+        line-height: 1.65em;
+      }
+    }
+
+    .body-regular {
+      font-size: 16px;
+      line-height: 1.55em;
+      color: #000000 !important;
+    }
+    @media (min-width: 768px) {
+      .body-regular {
+        font-size: 18px;
+        line-height: 1.6em;
+      }
+    }
+
+    /* Luxury Navy Banner & Dark Sections */
+    .dark-surface p, .dark-surface span, .dark-surface h2, .dark-surface h3 {
+      color: #FFFFFF !important;
+    }
+
+    /* Botones CTA Gemelos */
+    .btn-twin-action {
+      height: 46px;
+      border-radius: 8px;
+      padding: 0 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 15px;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      white-space: nowrap;
+    }
+    .btn-twin-gold {
+      background: linear-gradient(135deg, #B58A3E 0%, #8C6424 100%);
+      color: #FFFFFF !important;
+    }
+    .btn-twin-gold:hover {
+      background: linear-gradient(135deg, #C29547 0%, #996E28 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(140, 100, 36, 0.25);
+    }
+    .btn-twin-whatsapp {
+      background-color: #1B9958 !important;
+      color: #FFFFFF !important;
+    }
+    .btn-twin-whatsapp:hover {
+      background-color: #15803D !important;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(27, 153, 88, 0.28);
+    }
+
+    /* Acordeón FAQs */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease-out, opacity 0.25s ease-out;
+      opacity: 0;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 380px;
+      opacity: 1;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Header Nav Dropdowns */
+    .nav-item-dropdown:hover .nav-dropdown-menu {
+      display: block;
+    }
+
+    /* Custom Scrollbar & Modals */
+    #modal-presupuesto-overlay {
+      display: none;
+    }
+    #modal-presupuesto-overlay.active {
+      display: flex;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Plus Jakarta Sans", sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-2{bottom:0.5rem}.bottom-3{bottom:0.75rem}.bottom-4{bottom:1rem}.left-0{left:0px}.left-2{left:0.5rem}.left-3{left:0.75rem}.right-0{right:0px}.right-3{right:0.75rem}.right-4{right:1rem}.top-0{top:0px}.top-3{top:0.75rem}.top-4{top:1rem}.top-full{top:100%}.z-0{z-index:0}.z-10{z-index:10}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.mx-2{margin-left:0.5rem;margin-right:0.5rem}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-top:0.5rem;margin-bottom:0.5rem}.mb-1{margin-bottom:0.25rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:0.25rem}.ml-1\.5{margin-left:0.375rem}.ml-2{margin-left:0.5rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-9{height:2.25rem}.h-\[200px\]{height:200px}.h-\[220px\]{height:220px}.h-\[320px\]{height:320px}.h-\[34px\]{height:34px}.h-\[48px\]{height:48px}.h-full{height:100%}.min-h-\[640px\]{min-height:640px}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-64{width:16rem}.w-9{width:2.25rem}.w-\[85\%\]{width:85%}.w-full{width:100%}.max-w-\[1000px\]{max-width:1000px}.max-w-\[1440px\]{max-width:1440px}.max-w-\[360px\]{max-width:360px}.max-w-\[620px\]{max-width:620px}.max-w-\[700px\]{max-width:700px}.max-w-\[820px\]{max-width:820px}.max-w-\[900px\]{max-width:900px}.flex-1{flex:1 1 0%}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-6{column-gap:1.5rem}.gap-y-2{row-gap:0.5rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-\[\#C5A059\]\/40{border-color:rgb(197 160 89 / 0.4)}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-emerald-300{--tw-border-opacity:1;border-color:rgb(110 231 183 / var(--tw-border-opacity, 1))}.border-line{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-line\/60{border-color:rgb(226 232 240 / 0.6)}.border-line\/80{border-color:rgb(226 232 240 / 0.8)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.bg-\[\#0A1424\]{--tw-bg-opacity:1;background-color:rgb(10 20 36 / var(--tw-bg-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-brand{--tw-bg-opacity:1;background-color:rgb(14 27 46 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-800{--tw-bg-opacity:1;background-color:rgb(6 95 70 / var(--tw-bg-opacity, 1))}.bg-ice{--tw-bg-opacity:1;background-color:rgb(246 248 250 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-surface{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-\[\#070F1E\]\/95{--tw-gradient-from:rgb(7 15 30 / 0.95) var(--tw-gradient-from-position);--tw-gradient-to:rgb(7 15 30 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-black\/80{--tw-gradient-from:rgb(0 0 0 / 0.8) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#0E1B2E\]\/90{--tw-gradient-to:rgb(14 27 46 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(14 27 46 / 0.9) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#070F1E\]\/80{--tw-gradient-to:rgb(7 15 30 / 0.8) var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.object-center{object-position:center}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.font-serif{font-family:"Playfair Display", serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13px\]{font-size:13px}.text-\[14px\]{font-size:14px}.text-\[15px\]{font-size:15px}.text-\[16px\]{font-size:16px}.text-\[17px\]{font-size:17px}.text-\[18px\]{font-size:18px}.text-\[20px\]{font-size:20px}.text-\[26px\]{font-size:26px}.text-\[28px\]{font-size:28px}.text-\[30px\]{font-size:30px}.text-\[34px\]{font-size:34px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.15\]{line-height:1.15}.leading-\[1\.65em\]{line-height:1.65em}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-\[-0\.01em\]{letter-spacing:-0.01em}.tracking-\[-0\.02em\]{letter-spacing:-0.02em}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-\[\#8C6424\]{--tw-text-opacity:1;color:rgb(140 100 36 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-black\/30{color:rgb(0 0 0 / 0.3)}.text-black\/70{color:rgb(0 0 0 / 0.7)}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-gold-light{--tw-text-opacity:1;color:rgb(226 196 143 / var(--tw-text-opacity, 1))}.text-neutral-400{--tw-text-opacity:1;color:rgb(163 163 163 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/40{color:rgb(255 255 255 / 0.4)}.text-white\/70{color:rgb(255 255 255 / 0.7)}.text-white\/80{color:rgb(255 255 255 / 0.8)}.text-white\/90{color:rgb(255 255 255 / 0.9)}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-60{opacity:0.6}.opacity-75{opacity:0.75}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.brightness-90{--tw-brightness:brightness(.9);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.placeholder\:text-black\/40::placeholder{color:rgb(0 0 0 / 0.4)}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-\[\#8C6424\]:hover{--tw-border-opacity:1;border-color:rgb(140 100 36 / var(--tw-border-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-surface:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:text-\[\#8C6424\]:hover{--tw-text-opacity:1;color:rgb(140 100 36 / var(--tw-text-opacity, 1))}.hover\:text-gold-light:hover{--tw-text-opacity:1;color:rgb(226 196 143 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-\[\#8C6424\]:focus{--tw-border-opacity:1;border-color:rgb(140 100 36 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:p-8{padding:2rem}}@media (min-width: 768px){.md\:col-span-3{grid-column:span 3 / span 3}.md\:col-span-4{grid-column:span 4 / span 4}.md\:col-span-5{grid-column:span 5 / span 5}.md\:h-\[360px\]{height:360px}.md\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:gap-10{gap:2.5rem}.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}.md\:py-16{padding-top:4rem;padding-bottom:4rem}.md\:text-\[14px\]{font-size:14px}.md\:text-\[16px\]{font-size:16px}.md\:text-\[19px\]{font-size:19px}.md\:text-\[20px\]{font-size:20px}.md\:text-\[34px\]{font-size:34px}.md\:text-\[36px\]{font-size:36px}.md\:text-\[40px\]{font-size:40px}.md\:text-\[44px\]{font-size:44px}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:gap-12{gap:3rem}.lg\:px-6{padding-left:1.5rem;padding-right:1.5rem}.lg\:text-\[48px\]{font-size:48px}}@media (min-width: 1280px){.xl\:px-12{padding-left:3rem;padding-right:3rem}}</style></head>
+<body class="bg-white antialiased text-black">
+
+  <!-- HEADER OFICIAL DEL PROYECTO REFORMAS MADRID -->
+  <header class="sticky top-0 z-40 w-full border-b border-line/80 bg-white/95 backdrop-blur-md">
+    <div class="mx-auto flex h-16 w-full max-w-[1440px] items-center justify-between px-4 md:px-6 lg:px-6 xl:px-12">
+      <!-- Logo Oficial -->
+      <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/index.html" class="flex items-center gap-1.5 focus:outline-none">
+        <span class="text-[20px] font-bold tracking-[-0.02em] text-black">REFORMAS</span>
+        <span class="text-[20px] font-bold tracking-[-0.02em] text-[#8C6424]">MADRID</span>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <nav class="hidden items-center gap-6 lg:flex">
+        <!-- Dropdown Guadalajara -->
+        <div class="relative nav-item-dropdown py-4">
+          <button class="flex items-center gap-1 text-[15px] font-semibold text-black transition-colors hover:text-[#8C6424]">
+            REFORMAS EN GUADALAJARA <i class="ri-arrow-down-s-line text-sm opacity-60"></i>
+          </button>
+          <div class="nav-dropdown-menu absolute left-0 top-full hidden w-64 rounded-xl border border-line bg-white p-3 shadow-xl">
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-integrales-guadalajara.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Reformas Integrales Guadalajara</a>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-cocinas-guadalajara.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Reformas de Cocinas Guadalajara</a>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-banos-guadalajara.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Reformas de Baños Guadalajara</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Madrid -->
+        <div class="relative nav-item-dropdown py-4">
+          <button class="flex items-center gap-1 text-[15px] font-semibold text-black transition-colors hover:text-[#8C6424]">
+            REFORMAS EN MADRID <i class="ri-arrow-down-s-line text-sm opacity-60"></i>
+          </button>
+          <div class="nav-dropdown-menu absolute left-0 top-full hidden w-64 rounded-xl border border-line bg-white p-3 shadow-xl">
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-locales-comerciales-madrid.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Locales Comerciales Madrid</a>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-oficinas-madrid.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Reformas de Oficinas Madrid</a>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-banos-madrid.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Reformas de Baños Madrid</a>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/cambio-banera-por-plato-ducha-madrid.html" class="block rounded-lg px-3 py-2 text-[14px] font-semibold text-[#8C6424] bg-surface">Cambio de Bañera por Ducha</a>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-cocinas-madrid.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Reformas de Cocinas Madrid</a>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/instalacion-aire-acondicionado-madrid.html" class="block rounded-lg px-3 py-2 text-[14px] font-medium text-black hover:bg-surface hover:text-[#8C6424]">Aire Acondicionado Madrid</a>
+          </div>
+        </div>
+
+        <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/nosotros.html" class="text-[15px] font-semibold text-black transition-colors hover:text-[#8C6424]">NOSOTROS</a>
+        <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/contacto.html" class="text-[15px] font-semibold text-black transition-colors hover:text-[#8C6424]">CONTACTO</a>
+        <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/blog.html" class="text-[15px] font-semibold text-black transition-colors hover:text-[#8C6424]">BLOG</a>
+      </nav>
+
+      <!-- Botón Pedir Presupuesto Desktop -->
+      <div class="hidden items-center gap-3 lg:flex">
+        <button class="btn-open-popup-presupuesto btn-twin-action btn-twin-gold">
+          PEDIR PRESUPUESTO <i class="ri-arrow-right-line ml-1.5"></i>
+        </button>
+      </div>
+
+      <!-- Hamburger Móvil -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button id="mobile-menu-open-btn" class="flex h-10 w-10 items-center justify-center rounded-lg border border-line bg-surface text-black focus:outline-none" aria-label="Abrir Menú">
+          <i class="ri-menu-line text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sub-barra móvil de contacto directo -->
+    <div class="header-subbar flex items-center justify-between border-t border-line/60 bg-brand px-4 py-2 text-[13px] text-white lg:hidden">
+      <div class="flex items-center gap-1.5 font-medium">
+        <span class="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="text-white">Cambio en 24h en Madrid</span>
+      </div>
+      <button class="btn-open-popup-presupuesto btn-twin-action btn-twin-gold text-[12px] h-[34px] px-3 font-semibold">
+        PEDIR PRESUPUESTO <i class="ri-arrow-right-line ml-1"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- DRAWER MÓVIL NAVEGACIÓN -->
+  <div id="mobile-menu-drawer" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm transition-opacity">
+    <div class="absolute right-0 top-0 h-full w-[85%] max-w-[360px] bg-white p-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-line">
+          <span class="text-[18px] font-bold text-black">REFORMAS <span class="text-[#8C6424]">MADRID</span></span>
+          <button id="mobile-menu-close-btn" class="flex h-9 w-9 items-center justify-center rounded-lg bg-surface text-black">
+            <i class="ri-close-line text-xl"></i>
+          </button>
+        </div>
+        <div class="mt-6 flex flex-col gap-4">
+          <p class="text-[12px] font-bold uppercase tracking-wider text-neutral-400">Servicios en Madrid</p>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/cambio-banera-por-plato-ducha-madrid.html" class="text-[15px] font-semibold text-[#8C6424]">Cambio de Bañera por Ducha</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-banos-madrid.html" class="text-[15px] font-medium text-black">Reformas de Baños</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-locales-comerciales-madrid.html" class="text-[15px] font-medium text-black">Locales Comerciales</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-oficinas-madrid.html" class="text-[15px] font-medium text-black">Reformas de Oficinas</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-cocinas-madrid.html" class="text-[15px] font-medium text-black">Reformas de Cocinas</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/instalacion-aire-acondicionado-madrid.html" class="text-[15px] font-medium text-black">Aire Acondicionado</a>
+          <hr class="border-line my-2">
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/nosotros.html" class="text-[15px] font-medium text-black">Nosotros</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/contacto.html" class="text-[15px] font-medium text-black">Contacto</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/blog.html" class="text-[15px] font-medium text-black">Blog</a>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-line">
+        <a href="tel:+34910000000" class="flex items-center gap-2 text-[15px] font-bold text-black mb-3">
+          <i class="ri-phone-fill text-[#8C6424]"></i> +34 910 00 00 00
+        </a>
+        <button class="btn-open-popup-presupuesto btn-twin-action btn-twin-gold w-full text-center">
+          PEDIR PRESUPUESTO EN 2H
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION CON FONDO FOTORREALISTA RESIDENCIAL -->
+  <section id="inicio" class="hero-cro-section relative min-h-[640px] w-full overflow-hidden bg-brand py-12 md:py-16 text-white flex items-center">
+    <!-- Background Image con overlay suave -->
+    <div class="absolute inset-0 z-0">
+      <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-hero-bg.webp" alt="Baño residencial luminoso en Madrid con ducha moderna a ras de suelo" class="h-full w-full object-cover object-center brightness-90">
+      <div class="absolute inset-0 bg-gradient-to-r from-[#070F1E]/95 via-[#0E1B2E]/90 to-[#070F1E]/80"></div>
+    </div>
+
+    <div class="relative z-10 mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+      <!-- Migas de pan / Breadcrumb -->
+      <nav class="mb-4 flex items-center gap-2 text-[13px] text-white/70">
+        <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/index.html" class="hover:text-gold-light transition-colors text-white/80">Reformas Madrid</a>
+        <i class="ri-arrow-right-s-line text-xs"></i>
+        <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-banos-madrid.html" class="hover:text-gold-light transition-colors text-white/80">Baños</a>
+        <i class="ri-arrow-right-s-line text-xs"></i>
+        <span class="text-gold-light font-medium">Cambio de Bañera por Ducha</span>
+      </nav>
+
+      <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
+        <!-- Columna Izquierda: Copy persuasivo, amigable y directo -->
+        <div class="lg:col-span-7">
+          <!-- Social Proof Badge -->
+          <div class="mb-4 inline-flex flex-wrap items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 backdrop-blur-md">
+            <div class="flex items-center text-amber-400 text-xs">
+              <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+            </div>
+            <span class="text-[13px] font-semibold text-white">4.9/5 · 450+ Bañeras Cambiadas en Madrid</span>
+            <span class="hidden sm:inline text-white/40">|</span>
+            <span class="text-[12px] font-bold text-emerald-300 tracking-wide uppercase">EN 24 HORAS Y SIN POLVO</span>
+          </div>
+
+          <!-- Título H1 Principal -->
+          <h1 class="text-[34px] md:text-[44px] lg:text-[48px] font-serif font-bold leading-[1.15] text-white tracking-[-0.01em]">
+            Cambio de Bañera por Plato de Ducha en Madrid
+          </h1>
+
+          <!-- Párrafo Descriptivo Amigable (Sin viñetas repetitivas) -->
+          <p class="mt-4 max-w-[620px] text-[18px] md:text-[19px] leading-[1.65em] text-white/90">
+            ¿Quieres ganar espacio, comodidad y eliminar de una vez el peligro de resbalones en el baño? Cambiamos tu vieja bañera por un plato de ducha de resina antideslizante a cota cero en tan solo 24 horas. Trabajo limpio con protección total de tu vivienda, materiales de máxima durabilidad y presupuesto cerrado sin sorpresas.
+          </p>
+
+          <!-- Botones Gemelos CTA -->
+          <div class="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <button class="btn-open-popup-presupuesto btn-twin-action btn-twin-gold text-[15px] justify-center shadow-lg">
+              PEDIR ESTUDIO Y PRESUPUESTO EN 2H <i class="ri-arrow-right-line ml-2"></i>
+            </button>
+            <a href="https://wa.me/34910000000?text=Hola,%20me%20gustar%C3%ADa%20pedir%20presupuesto%20para%20cambiar%20mi%20ba%C3%B1era%20por%20plato%20de%20ducha%20en%20Madrid." target="_blank" rel="noopener noreferrer" class="btn-twin-action btn-twin-whatsapp text-[15px] justify-center">
+              <i class="ri-whatsapp-line mr-2 text-lg"></i> WhatsApp Especialista Baños
+            </a>
+          </div>
+
+          <!-- Garantías de tranquilidad para el hogar -->
+          <div class="mt-6 flex flex-wrap items-center gap-y-2 gap-x-6 text-[13px] text-white/80">
+            <span class="flex items-center gap-1.5"><i class="ri-shield-check-line text-emerald-400 text-base"></i> Sin obras en el resto de la casa</span>
+            <span class="flex items-center gap-1.5"><i class="ri-home-smile-line text-emerald-400 text-base"></i> Fieltro protector y aspiración sin polvo</span>
+            <span class="flex items-center gap-1.5"><i class="ri-medal-line text-emerald-400 text-base"></i> 3 años de garantía por escrito</span>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Tarjeta Fotográfica de Técnicos en Madrid -->
+        <div class="lg:col-span-5">
+          <div class="relative overflow-hidden rounded-2xl border border-white/20 bg-white/10 p-3 shadow-2xl backdrop-blur-md">
+            <div class="relative h-[320px] md:h-[360px] w-full overflow-hidden rounded-xl">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-hero-tecnicos.webp" alt="Técnicos especialistas nivelando mampara de ducha en baño residencial de Madrid" class="h-full w-full object-cover object-center">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-3 left-3 right-3 rounded-lg bg-white/95 p-3.5 backdrop-blur-md shadow-md">
+                <span class="text-[12px] font-bold text-emerald-800 tracking-wider uppercase block">TÉCNICOS ESPECIALISTAS EN BAÑOS RESIDENCIALES</span>
+                <p class="mt-1 text-[13px] md:text-[14px] leading-snug text-black">
+                  Visita técnica gratuita en 24h para medir tu baño, asesorarte con muestras reales de platos de resina C3 y darte precio cerrado en 2 horas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 1: SOLUCIONES Y TIPOLOGÍAS DE DUCHA (SIN BADGE INNECESARIO) -->
+  <section id="tipologias" class="bg-surface py-10">
+    <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+      <!-- Encabezado de Sección Limpio -->
+      <div class="mx-auto max-w-[820px] text-center mb-8">
+        <h2 class="text-[28px] md:text-[36px] font-serif font-bold leading-tight text-black tracking-[-0.01em]">
+          ¿Qué tipo de plato de ducha y mampara se adapta mejor a tu baño?
+        </h2>
+        <p class="mt-3 body-lead text-black">
+          Instalamos materiales antideslizantes certificados, vidrios de seguridad con tratamiento antical y revestimientos coordinados adaptados a pisos de toda la Comunidad de Madrid.
+        </p>
+      </div>
+
+      <!-- Grid de 6 Tarjetas con Nuevas Imágenes Fotorrealistas -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Tarjeta 1: Platos de Resina C3 Textura Pizarra -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-all hover:shadow-md">
+          <div class="relative h-[220px] w-full overflow-hidden bg-slate-100">
+            <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-tipo-resina-pizarra.webp" alt="Plato de ducha de resina y carga mineral textura pizarra blanca en Madrid" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105">
+            <span class="absolute top-3 left-3 rounded-md bg-black/80 px-2.5 py-1 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+              MÁXIMA SEGURIDAD C3
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-[20px] font-bold text-black tracking-tight">Platos de Resina y Carga Mineral</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Fabricados con resinas de alta densidad y minerales naturales. Textura pizarra 100% antideslizante clase 3, antibacteriano, cálido al tacto y extraplano a ras de suelo.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-line flex items-center justify-between">
+              <span class="text-[13px] font-medium text-black/70">Técnica: Carga mineral y rejilla inox</span>
+              <button class="btn-open-popup-presupuesto text-[13px] font-bold text-[#8C6424] hover:underline">Pedir →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Baños Pequeños Optimizados -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-all hover:shadow-md">
+          <div class="relative h-[220px] w-full overflow-hidden bg-slate-100">
+            <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-tipo-bano-pequeno.webp" alt="Ducha para baño pequeño en piso de Madrid con mampara corredera" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105">
+            <span class="absolute top-3 left-3 rounded-md bg-black/80 px-2.5 py-1 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+              ESPACIOS REDUCIDOS
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-[20px] font-bold text-black tracking-tight">Soluciones para Baños Pequeños</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Aprovechamiento milimétrico para baños de 3 a 4 m² típicos de pisos madrileños. Platos compactos con mampara corredera de suave deslizamiento que no invade espacio.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-line flex items-center justify-between">
+              <span class="text-[13px] font-medium text-black/70">Técnica: Mampara angular o corredera</span>
+              <button class="btn-open-popup-presupuesto text-[13px] font-bold text-[#8C6424] hover:underline">Pedir →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Accesibilidad y Seguridad Senior -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-all hover:shadow-md">
+          <div class="relative h-[220px] w-full overflow-hidden bg-slate-100">
+            <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-tipo-senior-accesible.webp" alt="Ducha accesible con asidero y asiento abatible para personas mayores en Madrid" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105">
+            <span class="absolute top-3 left-3 rounded-md bg-black/80 px-2.5 py-1 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+              ADAPTACIÓN SENIOR
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-[20px] font-bold text-black tracking-tight">Accesibilidad y Cero Barreras</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Diseñado para personas mayores o con movilidad reducida: acceso a cota cero sin escalón, asideros de seguridad de acero inoxidable, asiento abatible y grifería ergonómica.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-line flex items-center justify-between">
+              <span class="text-[13px] font-medium text-black/70">Técnica: Cota cero y asideros inox</span>
+              <button class="btn-open-popup-presupuesto text-[13px] font-bold text-[#8C6424] hover:underline">Pedir →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Mampara Fija Walk-In -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-all hover:shadow-md">
+          <div class="relative h-[220px] w-full overflow-hidden bg-slate-100">
+            <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-tipo-mampara-fija.webp" alt="Mampara de vidrio fijo de 8mm walk in sin perfiles en baño moderno de Madrid" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105">
+            <span class="absolute top-3 left-3 rounded-md bg-black/80 px-2.5 py-1 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+              DISEÑO MODERNO
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-[20px] font-bold text-black tracking-tight">Mamparas de Vidrio Fijo Walk-In</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Panel fijo de vidrio templado de 8 mm con tratamiento antical duradero. Entrada libre y despejada sin guías inferiores, máxima luminosidad y limpieza sin esfuerzo.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-line flex items-center justify-between">
+              <span class="text-[13px] font-medium text-black/70">Técnica: Vidrio 8mm y tratamiento antical</span>
+              <button class="btn-open-popup-presupuesto text-[13px] font-bold text-[#8C6424] hover:underline">Pedir →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Revestimiento Coordinado sin Obras Mayores -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-all hover:shadow-md">
+          <div class="relative h-[220px] w-full overflow-hidden bg-slate-100">
+            <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-tipo-revestimiento-express.webp" alt="Panelado impermeable coordinado en la pared de la bañera sin romper el resto del baño" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105">
+            <span class="absolute top-3 left-3 rounded-md bg-black/80 px-2.5 py-1 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+              OBRA LIMPIA EXPRÉS
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-[20px] font-bold text-black tracking-tight">Panelado y Revestimiento a Medida</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                No necesitas cambiar todos los azulejos de tu baño. Revestimos el hueco de la bañera con azulejos porcelánicos a juego o paneles hidrófugos de gran formato con sellado estanco.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-line flex items-center justify-between">
+              <span class="text-[13px] font-medium text-black/70">Técnica: Panel hidrófugo y sellado elástico</span>
+              <button class="btn-open-popup-presupuesto text-[13px] font-bold text-[#8C6424] hover:underline">Pedir →</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6: Columnas Termostáticas de Confort -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm transition-all hover:shadow-md">
+          <div class="relative h-[220px] w-full overflow-hidden bg-slate-100">
+            <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-tipo-griferia-termostatica.webp" alt="Columna termostática de ducha con rociador efecto lluvia y botón antiquemaduras" class="h-full w-full object-cover transition-transform duration-300 hover:scale-105">
+            <span class="absolute top-3 left-3 rounded-md bg-black/80 px-2.5 py-1 text-[11px] font-bold tracking-wider text-white uppercase backdrop-blur-sm">
+              CONFORT Y AHORRO
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-[20px] font-bold text-black tracking-tight">Columnas de Ducha Termostáticas</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Gran rociador efecto lluvia y mando termostático con tope de seguridad a 38 °C para evitar quemaduras accidentales. Ahorro de hasta un 40% de agua con caudal constante.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-line flex items-center justify-between">
+              <span class="text-[13px] font-medium text-black/70">Técnica: Grifería termostática y aireador eco</span>
+              <button class="btn-open-popup-presupuesto text-[13px] font-bold text-[#8C6424] hover:underline">Pedir →</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 2: VENTAJAS Y GARANTÍAS DEL SERVICIO EN MADRID -->
+  <section class="bg-white py-10 border-t border-line">
+    <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl border border-line bg-surface flex flex-col items-start">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-[#8C6424] flex items-center justify-center text-2xl mb-4">
+            <i class="ri-time-line"></i>
+          </div>
+          <h3 class="text-[20px] font-bold text-black">Cambio en 24 Horas Reales</h3>
+          <p class="mt-2 text-[16px] leading-relaxed text-black">
+            Nuestros instaladores entran por la mañana a desmontar la bañera y por la tarde dejan el plato colocado, la fontanería probada y la mampara instalada.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-line bg-surface flex flex-col items-start">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mb-4">
+            <i class="ri-brush-line"></i>
+          </div>
+          <h3 class="text-[20px] font-bold text-black">Cero Polvo y Casa Protegida</h3>
+          <p class="mt-2 text-[16px] leading-relaxed text-black">
+            Cubrimos suelos y pasillos con fieltro engomado de obra y usamos aspiración continua en el corte. Retirada de escombros el mismo día a punto limpio.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl border border-line bg-surface flex flex-col items-start">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-2xl mb-4">
+            <i class="ri-shield-star-line"></i>
+          </div>
+          <h3 class="text-[20px] font-bold text-black">Seguridad Antideslizante C3</h3>
+          <p class="mt-2 text-[16px] leading-relaxed text-black">
+            Platos certificados con la máxima calificación europea de agarre. Entra y sal de la ducha con total tranquilidad y sin miedo a resbalar.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 3: PROCESO PASO A PASO (HILO CONDUCTOR CLARO) -->
+  <section id="proceso" class="bg-surface py-10">
+    <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+      <!-- Encabezado de Sección Limpio -->
+      <div class="mx-auto max-w-[820px] text-center mb-8">
+        <h2 class="text-[28px] md:text-[36px] font-serif font-bold leading-tight text-black tracking-[-0.01em]">
+          Cómo cambiamos tu bañera por ducha paso a paso
+        </h2>
+        <p class="mt-3 body-lead text-black">
+          Un flujo de trabajo riguroso y ordenado para que disfrutes de tu nueva ducha sin sorpresas, con técnicos propios de Madrid y presupuesto cerrado por contrato.
+        </p>
+      </div>
+
+      <!-- Grid de 4 Pasos con Hilo Conductor -->
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+        <!-- Paso 01: Medición y Asesoramiento Láser -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm">
+          <div>
+            <div class="relative h-[200px] w-full overflow-hidden bg-slate-100">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-paso-01.webp" alt="Técnico midiendo con distanciómetro láser la zona de la bañera en Madrid" class="h-full w-full object-cover">
+              <span class="absolute top-3 left-3 rounded-md bg-amber-100 border border-amber-300 px-2.5 py-1 text-[11px] font-bold tracking-wider text-[#8C6424] uppercase">
+                PASO 01
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-[18px] font-bold text-black">Visita y Medición Láser</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Visitamos tu vivienda en Madrid para tomar medidas milimétricas del hueco de la bañera, verificar caídas de desagüe y mostrarte muestras de platos y mamparas.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2">
+            <span class="text-[12px] font-semibold text-emerald-800 flex items-center gap-1">
+              <i class="ri-check-line text-sm"></i> Medición in situ en 24h
+            </span>
+          </div>
+        </div>
+
+        <!-- Paso 02: Retirada Limpia y Desescombro en 2h -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm">
+          <div>
+            <div class="relative h-[200px] w-full overflow-hidden bg-slate-100">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-paso-02.webp" alt="Técnicos retirando la bañera antigua con suelo protegido y aspirador industrial" class="h-full w-full object-cover">
+              <span class="absolute top-3 left-3 rounded-md bg-amber-100 border border-amber-300 px-2.5 py-1 text-[11px] font-bold tracking-wider text-[#8C6424] uppercase">
+                PASO 02
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-[18px] font-bold text-black">Retirada Limpia en 2h</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Protegemos pasillos y suelos con fieltro engomado. Desmontamos la bañera sin dañar la fontanería general y retiramos los escombros inmediatamente a punto limpio.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2">
+            <span class="text-[12px] font-semibold text-emerald-800 flex items-center gap-1">
+              <i class="ri-check-line text-sm"></i> Cero polvo en vivienda
+            </span>
+          </div>
+        </div>
+
+        <!-- Paso 03: Fontanería Adaptada e Impermeabilización -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm">
+          <div>
+            <div class="relative h-[200px] w-full overflow-hidden bg-slate-100">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-paso-03.webp" alt="Fontanero instalando tomas de agua a cota de ducha e impermeabilización elástica" class="h-full w-full object-cover">
+              <span class="absolute top-3 left-3 rounded-md bg-amber-100 border border-amber-300 px-2.5 py-1 text-[11px] font-bold tracking-wider text-[#8C6424] uppercase">
+                PASO 03
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-[18px] font-bold text-black">Fontanería e Impermeabilización</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Subimos las tomas a la altura ergonómica de ducha, montamos válvula de desagüe de gran caudal y sellamos la pared con lámina impermeabilizante estanca.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2">
+            <span class="text-[12px] font-semibold text-emerald-800 flex items-center gap-1">
+              <i class="ri-check-line text-sm"></i> Estanqueidad 100% garantizada
+            </span>
+          </div>
+        </div>
+
+        <!-- Paso 04: Plato C3, Mampara y Entrega Llave en Mano -->
+        <div class="flex flex-col justify-between overflow-hidden rounded-2xl border border-line bg-white shadow-sm">
+          <div>
+            <div class="relative h-[200px] w-full overflow-hidden bg-slate-100">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-paso-04.webp" alt="Técnicos entregando el baño terminado con mampara y plato de ducha al cliente" class="h-full w-full object-cover">
+              <span class="absolute top-3 left-3 rounded-md bg-emerald-100 border border-emerald-300 px-2.5 py-1 text-[11px] font-bold tracking-wider text-emerald-800 uppercase">
+                PASO 04
+              </span>
+            </div>
+            <div class="p-5">
+              <h3 class="text-[18px] font-bold text-black">Plato C3, Mampara y Entrega</h3>
+              <p class="mt-2 text-[15px] leading-relaxed text-black">
+                Colocación nivelada del plato de resina C3, montaje de mampara de vidrio templado, sellado con silicona antimoho neutra y entrega impecable listo para ducharse.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-2">
+            <span class="text-[12px] font-semibold text-emerald-800 flex items-center gap-1">
+              <i class="ri-check-line text-sm"></i> Garantía sellada por 3 años
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 4: CASOS REALES ANTES Y DESPUÉS EN MADRID -->
+  <section id="proyectos" class="bg-white py-10 border-t border-line">
+    <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+      <!-- Encabezado de Sección Limpio -->
+      <div class="mx-auto max-w-[820px] text-center mb-8">
+        <h2 class="text-[28px] md:text-[36px] font-serif font-bold leading-tight text-black tracking-[-0.01em]">
+          Transformaciones reales: antes y después de bañera a ducha
+        </h2>
+        <p class="mt-3 body-lead text-black">
+          Comprueba la diferencia de amplitud, luminosidad y accesibilidad en baños de viviendas de la Comunidad de Madrid tras nuestra intervención en solo 24 horas.
+        </p>
+      </div>
+
+      <!-- Grid de 2 Casos Antes / Después -->
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+
+        <!-- Caso 1: Piso familiar en Moratalaz -->
+        <div class="overflow-hidden rounded-2xl border border-line bg-surface p-5 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-[20px] font-bold text-black">Piso familiar en Moratalaz (Madrid)</h3>
+            <span class="rounded-md border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-[12px] font-bold text-[#8C6424]">
+              Plazo: 24 horas
+            </span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="relative overflow-hidden rounded-xl">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-caso1-antes.webp" alt="Bañera antigua desgastada con escalón y azulejos viejos antes de la reforma" class="h-[220px] w-full object-cover">
+              <span class="absolute bottom-2 left-2 rounded bg-black/80 px-2 py-0.5 text-[11px] font-bold text-white tracking-wider">ANTES</span>
+            </div>
+            <div class="relative overflow-hidden rounded-xl">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-caso1-despues.webp" alt="Plato de ducha extraplano blanco pizarra a cota cero con mampara de cristal transparente" class="h-[220px] w-full object-cover">
+              <span class="absolute bottom-2 left-2 rounded bg-emerald-800 px-2 py-0.5 text-[11px] font-bold text-white tracking-wider">DESPUÉS</span>
+            </div>
+          </div>
+          <p class="mt-4 text-[15px] leading-relaxed text-black">
+            Sustitución de bañera alta con cortina plástica por plato extraplano de resina gris pizarra a cota cero con mampara corredera antical. Mayor seguridad para los abuelos y sensación de baño nuevo sin cambiar el resto de sanitarios.
+          </p>
+        </div>
+
+        <!-- Caso 2: Baño estrecho en Chamberí -->
+        <div class="overflow-hidden rounded-2xl border border-line bg-surface p-5 shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <h3 class="text-[20px] font-bold text-black">Baño estrecho en Chamberí (Madrid)</h3>
+            <span class="rounded-md border border-amber-300 bg-amber-50 px-2.5 py-0.5 text-[12px] font-bold text-[#8C6424]">
+              Plazo: 24 horas
+            </span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="relative overflow-hidden rounded-xl">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-caso2-antes.webp" alt="Bañera encajada entre tres paredes en baño estrecho antiguo" class="h-[220px] w-full object-cover">
+              <span class="absolute bottom-2 left-2 rounded bg-black/80 px-2 py-0.5 text-[11px] font-bold text-white tracking-wider">ANTES</span>
+            </div>
+            <div class="relative overflow-hidden rounded-xl">
+              <img src="./Cambio de Bañera por Plato de Ducha en Madrid _ En 24 Horas y Sin Polvo _ Reformas Madrid_files/ducha-caso2-despues.webp" alt="Ducha moderna de pared a pared con mampara fija y grifería termostática" class="h-[220px] w-full object-cover">
+              <span class="absolute bottom-2 left-2 rounded bg-emerald-800 px-2 py-0.5 text-[11px] font-bold text-white tracking-wider">DESPUÉS</span>
+            </div>
+          </div>
+          <p class="mt-4 text-[15px] leading-relaxed text-black">
+            Transformación de baño estrecho con bañera encajada: plato de ducha de pared a pared a ras de suelo, panel fijo de cristal templado de 8 mm y grifería termostática efecto lluvia. El baño duplicó su sensación de amplitud y luz.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 5: LUXURY NAVY BANNER DE CONVERSIÓN DIRECTA -->
+  <section id="presupuesto" class="dark-surface bg-[#0A1424] border-y border-[#C5A059]/40 py-12 md:py-16 text-white text-center">
+    <div class="mx-auto w-full max-w-[1000px] px-4">
+      <h2 class="text-[30px] md:text-[40px] font-serif font-bold text-white tracking-tight">
+        ¿Listo para cambiar tu bañera por una ducha segura y moderna?
+      </h2>
+      <p class="mt-4 text-[18px] md:text-[20px] text-white/90 max-w-[700px] mx-auto leading-relaxed">
+        Pide tu visita técnica gratuita sin compromiso en Madrid. Un instalador especialista te visitará para medir tu baño y entregarte tu presupuesto cerrado en menos de 2 horas.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button class="btn-open-popup-presupuesto btn-twin-action btn-twin-gold text-[16px] px-8 py-3 h-[48px]">
+          PEDIR ESTUDIO Y PRESUPUESTO EN 2H <i class="ri-arrow-right-line ml-2"></i>
+        </button>
+        <a href="https://wa.me/34910000000?text=Hola,%20quiero%20informaci%C3%B3n%20para%20cambiar%20mi%20ba%C3%B1era%20por%20ducha%20en%20Madrid." target="_blank" rel="noopener noreferrer" class="btn-twin-action btn-twin-whatsapp text-[16px] px-6 py-3 h-[48px]">
+          <i class="ri-whatsapp-line mr-2 text-lg"></i> WhatsApp Directo Especialista
+        </a>
+      </div>
+
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6 text-[14px] text-white/70">
+        <span class="flex items-center gap-1.5"><i class="ri-lock-line text-emerald-400"></i> Datos 100% protegidos</span>
+        <span class="flex items-center gap-1.5"><i class="ri-time-line text-emerald-400"></i> Respuesta técnica en 2h</span>
+        <span class="flex items-center gap-1.5"><i class="ri-car-line text-emerald-400"></i> Visita gratuita en toda la Comunidad de Madrid</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 6: PREGUNTAS FRECUENTES (TODAS CERRADAS POR DEFECTO) -->
+  <section id="faqs" class="bg-white py-10">
+    <div class="mx-auto w-full max-w-[900px] px-4 md:px-6">
+      <div class="text-center mb-8">
+        <h2 class="text-[28px] md:text-[34px] font-serif font-bold text-black tracking-tight">
+          Preguntas frecuentes sobre el cambio de bañera por ducha
+        </h2>
+        <p class="mt-2 text-[17px] text-black">
+          Resolvemos las dudas más habituales de propietarios en Madrid sobre plazos, polvo, azulejos y seguridad.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-3">
+        <!-- FAQ 1 -->
+        <div class="faq-item rounded-xl border border-line bg-surface p-4 transition-all">
+          <button class="faq-toggle flex w-full items-center justify-between text-left text-[17px] font-bold text-black">
+            <span>¿Cuánto tiempo se tarda realmente en cambiar la bañera por ducha?</span>
+            <i class="faq-icon ri-arrow-down-s-line text-xl text-[#8C6424] transition-transform"></i>
+          </button>
+          <div class="faq-answer pt-3 text-[16px] leading-relaxed text-black">
+            El trabajo completo se ejecuta en **solo 24 horas laborables** (1 día). Por la mañana entran nuestros técnicos a desmontar la bañera y adaptar la fontanería, y por la tarde queda colocado el plato, los revestimientos y la mampara. Solo dejamos 24h de secado para la silicona antes de la primera ducha.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item rounded-xl border border-line bg-surface p-4 transition-all">
+          <button class="faq-toggle flex w-full items-center justify-between text-left text-[17px] font-bold text-black">
+            <span>¿Es necesario cambiar todos los azulejos de mi baño?</span>
+            <i class="faq-icon ri-arrow-down-s-line text-xl text-[#8C6424] transition-transform"></i>
+          </button>
+          <div class="faq-answer pt-3 text-[16px] leading-relaxed text-black">
+            **No, no es necesario reformar todo el baño.** Revestimos exclusivamente la zona que ocupaba la bañera hasta la altura deseada. Podemos colocar azulejos coordinados que combinen con tu baño actual o instalar paneles hidrófugos de gran formato con acabado piedra, mármol o liso, logrando un diseño moderno y armónico sin encarecer la obra.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item rounded-xl border border-line bg-surface p-4 transition-all">
+          <button class="faq-toggle flex w-full items-center justify-between text-left text-[17px] font-bold text-black">
+            <span>¿El plato de ducha resbala? ¿Es seguro para personas mayores?</span>
+            <i class="faq-icon ri-arrow-down-s-line text-xl text-[#8C6424] transition-transform"></i>
+          </button>
+          <div class="faq-answer pt-3 text-[16px] leading-relaxed text-black">
+            Instalamos exclusivamente platos de resina con carga mineral con **certificación antideslizante Clase 3** (el máximo nivel de agarre según la normativa europea). La textura pizarra garantiza máxima adherencia incluso con agua y jabón. Además, podemos instalar asideros de seguridad de acero inoxidable homologados y asientos abatibles sin coste excesivo.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item rounded-xl border border-line bg-surface p-4 transition-all">
+          <button class="faq-toggle flex w-full items-center justify-between text-left text-[17px] font-bold text-black">
+            <span>¿Se genera mucho polvo o escombros en la casa durante la obra?</span>
+            <i class="faq-icon ri-arrow-down-s-line text-xl text-[#8C6424] transition-transform"></i>
+          </button>
+          <div class="faq-answer pt-3 text-[16px] leading-relaxed text-black">
+            Nuestra prioridad es la limpieza. Antes de picar un solo azulejo, **protegemos íntegramente los suelos de tu pasillo con fieltro engomado** y sellamos las puertas. Al retirar la bañera utilizamos aspiración industrial continua para partículas finas. Los escombros se ensacan de inmediato y se bajan a furgón para traslado a punto limpio el mismo día.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item rounded-xl border border-line bg-surface p-4 transition-all">
+          <button class="faq-toggle flex w-full items-center justify-between text-left text-[17px] font-bold text-black">
+            <span>¿El presupuesto es cerrado o pueden aparecer sobrecostes imprevistos?</span>
+            <i class="faq-icon ri-arrow-down-s-line text-xl text-[#8C6424] transition-transform"></i>
+          </button>
+          <div class="faq-answer pt-3 text-[16px] leading-relaxed text-black">
+            El presupuesto es **100% cerrado y por escrito** tras la visita técnica o tras revisar las fotografías que nos envíes por WhatsApp. Incluye mano de obra de fontanería, albañilería, plato de ducha C3, mampara de cristal, grifería, desescombro y limpieza final. El precio pactado es el precio final garantizado.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER OFICIAL DEL PROYECTO REFORMAS MADRID (BG-ICE) -->
+  <footer class="w-full bg-ice border-t border-line/60">
+    <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+      <div class="grid grid-cols-1 gap-8 py-12 md:grid-cols-12 md:gap-10 text-left">
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-1.5">
+            <span class="text-[18px] font-bold tracking-[-0.01em] text-black">REFORMAS</span>
+            <span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span>
+          </div>
+          <p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-relaxed text-black">
+            Reformas en Madrid, cocinas, baños, cambio de bañera por ducha y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.
+          </p>
+          <p class="mt-4 text-[14px] text-black font-semibold">+34 910 00 00 00</p>
+          <p class="text-[14px] text-black">Calle Mayor 42, 28013 Madrid</p>
+        </div>
+        <div class="md:col-span-3">
+          <p class="text-[13px] font-bold uppercase tracking-wider text-black">SERVICIOS EN MADRID</p>
+          <ul class="mt-4 space-y-2 text-[14px]">
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-cocinas-madrid.html" class="text-black hover:text-[#8C6424] transition-colors">Reformas de Cocinas</a></li>
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-banos-madrid.html" class="text-black hover:text-[#8C6424] transition-colors">Reformas de Baños</a></li>
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/cambio-banera-por-plato-ducha-madrid.html" class="font-semibold text-[#8C6424]">Cambio de Bañera por Ducha</a></li>
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-locales-comerciales-madrid.html" class="text-black hover:text-[#8C6424] transition-colors">Locales Comerciales</a></li>
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/reformas-oficinas-madrid.html" class="text-black hover:text-[#8C6424] transition-colors">Reformas de Oficinas</a></li>
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/instalacion-aire-acondicionado-madrid.html" class="text-black hover:text-[#8C6424] transition-colors">Aire Acondicionado</a></li>
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/nosotros.html" class="text-black hover:text-[#8C6424] transition-colors">Nosotros</a></li>
+            <li><a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/blog.html" class="text-black hover:text-[#8C6424] transition-colors">Blog</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-4">
+          <p class="text-[13px] font-bold uppercase tracking-wider text-black">CONTACTO DIRECTO</p>
+          <div class="mt-4 space-y-3 text-[14px] text-black">
+            <p class="flex items-center gap-2">
+              <i class="ri-whatsapp-line text-emerald-600 text-lg"></i>
+              <span>WhatsApp · respuesta en 24 h</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="ri-mail-line text-[#8C6424] text-lg"></i>
+              <span>contacto@reformasmadrid.es</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="ri-time-line text-[#8C6424] text-lg"></i>
+              <span>Lun–Vie 8:30–19:00 · Sábado con cita previa</span>
+            </p>
+            <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/contacto.html" class="inline-block pt-1 font-semibold text-black underline hover:text-[#8C6424]">Formulario de contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-between gap-4 border-t border-line/60 py-6 text-[13px] text-black md:flex-row">
+        <div>
+          <span>Reformas Madrid · © 2026 Todos los derechos reservados.</span>
+          <span class="mx-2 text-black/30">|</span>
+          <span>Diseñado por <strong>SEOLife</strong></span>
+        </div>
+        <div class="flex flex-wrap gap-6">
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/aviso-legal.html" class="hover:underline text-black">Aviso Legal</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/politica-de-privacidad.html" class="hover:underline text-black">Política de Privacidad</a>
+          <a href="file:///E:/DATA%20C/Downloads/WEBS/WEBs%20de%20SEOLIFE/Web%20Reformas%20Madrid/prototipos/landings_secundarias_madrid/politica-de-cookies.html" class="hover:underline text-black">Política de Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- POPUP MODAL CENTRADO EN PANTALLA (#modal-presupuesto-overlay) -->
+  <div id="modal-presupuesto-overlay" class="fixed inset-0 z-50 items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="relative w-full max-w-[620px] rounded-2xl bg-white p-6 sm:p-8 shadow-2xl border border-line">
+      <!-- Botón de Cierre -->
+      <button id="modal-presupuesto-close" class="absolute top-4 right-4 flex h-9 w-9 items-center justify-center rounded-full bg-surface text-black hover:bg-slate-200 transition-colors">
+        <i class="ri-close-line text-xl"></i>
+      </button>
+
+      <!-- Badge de Respuesta Rápida -->
+      <div class="text-center">
+        <span class="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-[12px] font-bold text-[#8C6424] uppercase tracking-wider">
+          <i class="ri-flashlight-line"></i> Respuesta Técnica en 2 Horas
+        </span>
+        <h3 class="mt-2 text-[26px] font-serif font-bold text-black">
+          Pide tu Estudio y Presupuesto de Ducha
+        </h3>
+        <p class="mt-1 text-[15px] text-black leading-relaxed">
+          Sin compromiso ni sobrecostes. Un instalador especialista de Madrid analizará tu baño y te enviará presupuesto cerrado.
+        </p>
+      </div>
+
+      <!-- Formulario -->
+      <form class="mt-6 flex flex-col gap-4 text-left">
+        <div>
+          <label class="block text-[14px] font-bold text-black mb-1">Nombre y Apellidos *</label>
+          <input type="text" placeholder="Ej. Carmen Gómez" required="" class="w-full rounded-lg border border-line px-3.5 py-2.5 text-[15px] text-black placeholder:text-black/40 focus:border-[#8C6424] focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[14px] font-bold text-black mb-1">Teléfono Móvil *</label>
+            <input type="tel" placeholder="Ej. 612 345 678" required="" class="w-full rounded-lg border border-line px-3.5 py-2.5 text-[15px] text-black placeholder:text-black/40 focus:border-[#8C6424] focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-[14px] font-bold text-black mb-1">Medida Aprox. Bañera</label>
+            <input type="text" placeholder="Ej. 140x70 cm o 160x70 cm" class="w-full rounded-lg border border-line px-3.5 py-2.5 text-[15px] text-black placeholder:text-black/40 focus:border-[#8C6424] focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[14px] font-bold text-black mb-1">¿Qué tipo de solución buscas? *</label>
+          <select required="" class="w-full rounded-lg border border-line px-3.5 py-2.5 text-[15px] text-black focus:border-[#8C6424] focus:outline-none">
+            <option value="">Selecciona una opción...</option>
+            <option value="resina-pizarra">Plato de resina antideslizante C3 con mampara</option>
+            <option value="adaptacion-senior">Adaptación senior para personas mayores (asidero + asiento)</option>
+            <option value="mampara-fija">Mampara fija walk-in de diseño</option>
+            <option value="bano-pequeno">Optimización para baño pequeño</option>
+            <option value="completa">Cambio de bañera + reforma parcial de baño</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[14px] font-bold text-black mb-1">Distrito o Municipio en Madrid *</label>
+          <select required="" class="w-full rounded-lg border border-line px-3.5 py-2.5 text-[15px] text-black focus:border-[#8C6424] focus:outline-none">
+            <option value="">Selecciona tu zona...</option>
+            <option value="madrid-centro">Madrid Centro (Chamberí, Salamanca, Retiro...)</option>
+            <option value="madrid-barrios">Madrid Barrios (Moratalaz, Tetuán, Aluche, Vallecas...)</option>
+            <option value="sur-oeste">Zona Sur / Oeste (Alcorcón, Leganés, Móstoles, Getafe...)</option>
+            <option value="norte-este">Zona Norte / Este (Alcobendas, Pozuelo, Alcalá...)</option>
+            <option value="otra-comunidad">Otra zona de la Comunidad de Madrid</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[14px] font-bold text-black mb-1">Detalles o necesidades particulares (Opcional)</label>
+          <textarea rows="2" placeholder="Ej. Es para mis padres mayores, necesitamos plato a ras de suelo y barra de apoyo..." class="w-full rounded-lg border border-line px-3.5 py-2 text-[15px] text-black placeholder:text-black/40 focus:border-[#8C6424] focus:outline-none"></textarea>
+        </div>
+
+        <button type="submit" class="btn-twin-action btn-twin-gold text-[16px] h-[48px] w-full justify-center mt-2">
+          SOLICITAR ESTUDIO Y PRESUPUESTO GRATUITO <i class="ri-arrow-right-line ml-2"></i>
+        </button>
+
+        <div class="mt-1 flex items-center justify-center gap-4 text-[12px] text-black/70">
+          <span class="flex items-center gap-1"><i class="ri-lock-line text-emerald-600"></i> Datos protegidos</span>
+          <span>•</span>
+          <span class="flex items-center gap-1"><i class="ri-time-line text-[#8C6424]"></i> En 2 horas</span>
+          <span>•</span>
+          <span>Sin compromiso</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FLOATING PILL BUTTON CONSULTA RÁPIDA -->
+  <aside class="fixed bottom-4 right-4 z-30" aria-label="Acceso flotante">
+    <button class="btn-open-popup-presupuesto flex items-center gap-2 rounded-full border border-line bg-white/95 px-4 py-2.5 text-[13px] font-bold text-black shadow-lg backdrop-blur-sm transition-all hover:border-[#8C6424] hover:shadow-xl">
+      <span class="relative flex h-2 w-2">
+        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+      </span>
+      <i class="ri-chat-1-line text-[#8C6424]"></i>
+      <span>Consulta Rápida Madrid</span>
+    </button>
+  </aside>
+
+  <!-- SCRIPTS DE INTERACCIÓN (DRAWER, MODAL POPUP, ACCORDION FAQS) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Manejo del Modal Popup
+      const modalOverlay = document.getElementById('modal-presupuesto-overlay');
+      const openModalBtns = document.querySelectorAll('.btn-open-popup-presupuesto');
+      const closeModalBtn = document.getElementById('modal-presupuesto-close');
+
+      openModalBtns.forEach(btn => {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          modalOverlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', function () {
+          modalOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      modalOverlay.addEventListener('click', function (e) {
+        if (e.target === modalOverlay) {
+          modalOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+          modalOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+
+      // 2. Manejo del Menú Drawer Móvil
+      const mobileDrawer = document.getElementById('mobile-menu-drawer');
+      const openDrawerBtn = document.getElementById('mobile-menu-open-btn');
+      const closeDrawerBtn = document.getElementById('mobile-menu-close-btn');
+
+      if (openDrawerBtn && mobileDrawer) {
+        openDrawerBtn.addEventListener('click', function () {
+          mobileDrawer.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+
+      if (closeDrawerBtn && mobileDrawer) {
+        closeDrawerBtn.addEventListener('click', function () {
+          mobileDrawer.classList.add('hidden');
+          document.body.style.overflow = '';
+        });
+      }
+
+      if (mobileDrawer) {
+        mobileDrawer.addEventListener('click', function (e) {
+          if (e.target === mobileDrawer) {
+            mobileDrawer.classList.add('hidden');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      // 3. Manejo del Acordeón FAQs (Todas cerradas por defecto)
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const toggleBtn = item.querySelector('.faq-toggle');
+        toggleBtn.addEventListener('click', function () {
+          const isActive = item.classList.contains('active');
+          // Cierra todos
+          faqItems.forEach(i => i.classList.remove('active'));
+          // Si no estaba activo, abre este
+          if (!isActive) {
+            item.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+
+
+
+</body></html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Challenger IT2 — Empirical Multi-Viewport Responsive & Overflow Verification Suite</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: #0A121E; color: #E2E8F0; padding: 24px; margin: 0; }
+    h1 { color: #A87E34; font-size: 24px; margin-bottom: 8px; }
+    .subtitle { color: #94A3B8; font-size: 14px; margin-bottom: 20px; }
+    .status-pass { color: #10B981; font-weight: bold; }
+    .status-fail { color: #EF4444; font-weight: bold; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; background: #1E293B; border-radius: 8px; overflow: hidden; font-size: 13px; }
+    th, td { border: 1px solid #334155; padding: 10px 12px; text-align: left; }
+    th { background: #0F172A; color: #E2C48F; font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 9999px; font-size: 11px; font-weight: bold; }
+    .badge-pass { background: rgba(16, 185, 129, 0.2); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.4); }
+    .badge-fail { background: rgba(239, 68, 68, 0.2); color: #EF4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+    .oracle-box { background: #0F172A; border: 1px solid #334155; border-radius: 6px; padding: 12px; margin-top: 6px; font-size: 12px; }
+    .oracle-title { font-weight: bold; color: #38BDF8; margin-bottom: 4px; }
+    #summary-box { background: #1E293B; border: 1px solid #334155; padding: 18px; border-radius: 8px; margin-bottom: 20px; }
+    pre { background: #000; padding: 14px; border-radius: 6px; overflow-x: auto; color: #38BDF8; font-size: 12px; max-height: 400px; }
+    iframe { border: 2px solid #A87E34; margin-top: 10px; background: white; }
+  </style>
+</head>
+<body>
+  <h1>Challenger IT2 — Empirical Multi-Viewport Responsive & Overflow Verification Suite</h1>
+  <div class="subtitle">Empirical validation of <code>cambio-banera-por-plato-ducha-madrid.html</code> across 8 viewports (320px to 1920px), re-testing Defect 1, Defect 2, Section 11 Top Badge, Modal, and Subbar.</div>
+  
+  <div id="summary-box">
+    <strong>Target File:</strong> <code>cambio-banera-por-plato-ducha-madrid.html</code><br>
+    <strong>Viewports Tested:</strong> 320px, 375px, 414px, 768px, 1024px, 1280px, 1440px, 1920px<br>
+    <div id="overall-status" style="margin-top: 12px; font-size: 18px; font-weight: bold;">Initialising test runner...</div>
+  </div>
+
+  <h2>1. Global Multi-Viewport Overflow Matrix</h2>
+  <table id="matrix-table">
+    <thead>
+      <tr>
+        <th>Viewport</th>
+        <th>Category</th>
+        <th>doc.scrollW / clientW</th>
+        <th>body.scrollW / clientW</th>
+        <th>Global Overflow</th>
+        <th>Defect 1 (Calc Row)</th>
+        <th>Defect 2 (Hero Badge)</th>
+        <th>Sec 11 Badge</th>
+        <th>Modal Card</th>
+        <th>Verdict</th>
+      </tr>
+    </thead>
+    <tbody id="matrix-body"></tbody>
+  </table>
+
+  <h2 style="margin-top: 30px;">2. Detailed Oracle Telemetry per Viewport</h2>
+  <div id="oracle-details"></div>
+
+  <h2 style="margin-top: 30px; color: #E2C48F;">3. Empirical Telemetry JSON Output</h2>
+  <pre id="json-output">// Telemetry gathering in progress...</pre>
+
+  <div id="iframe-runner" style="margin-top: 20px; opacity: 0.05; height: 10px; overflow: hidden;"></div>
+
+  <script>
+    const viewports = [
+      { name: "Mobile Min (iPhone 5/SE1)", width: 320, height: 600, category: "Mobile" },
+      { name: "Mobile Standard (iPhone SE2/3)", width: 375, height: 667, category: "Mobile" },
+      { name: "Mobile Large (iPhone XR/11/14)", width: 414, height: 896, category: "Mobile" },
+      { name: "Tablet Portrait (iPad Mini/Air)", width: 768, height: 1024, category: "Tablet" },
+      { name: "Tablet Landscape (iPad Pro)", width: 1024, height: 768, category: "Tablet" },
+      { name: "Desktop Standard (Laptop)", width: 1280, height: 800, category: "Desktop" },
+      { name: "Desktop Large (Full Browser)", width: 1440, height: 900, category: "Desktop" },
+      { name: "Desktop Full HD (1080p)", width: 1920, height: 1080, category: "Desktop" }
+    ];
+
+    const results = [];
+    let currentIdx = 0;
+    const runnerContainer = document.getElementById("iframe-runner");
+    const matrixBody = document.getElementById("matrix-body");
+    const oracleDetails = document.getElementById("oracle-details");
+    const jsonOutput = document.getElementById("json-output");
+    const overallStatus = document.getElementById("overall-status");
+
+    function runNextTest() {
+      if (currentIdx >= viewports.length) {
+        finishTests();
+        return;
+      }
+
+      const vp = viewports[currentIdx];
+      overallStatus.innerHTML = `<span style="color:#FBBF24;">Testing ${vp.width}px (${vp.name})... [${currentIdx + 1}/${viewports.length}]</span>`;
+
+      const iframe = document.createElement("iframe");
+      iframe.style.width = vp.width + "px";
+      iframe.style.height = vp.height + "px";
+      iframe.src = "cambio-banera-por-plato-ducha-madrid.html?test=" + Date.now();
+
+      runnerContainer.innerHTML = "";
+      runnerContainer.appendChild(iframe);
+
+      iframe.onload = function() {
+        setTimeout(() => {
+          try {
+            const win = iframe.contentWindow;
+            const doc = iframe.contentDocument || win.document;
+            const docEl = doc.documentElement;
+            const body = doc.body;
+
+            const docScrollW = docEl.scrollWidth;
+            const docClientW = docEl.clientWidth;
+            const bodyScrollW = body.scrollWidth;
+            const bodyClientW = body.clientWidth;
+
+            // 1. General Element Overflow Scan
+            const overflownElements = [];
+            const allElements = doc.querySelectorAll("*");
+
+            allElements.forEach(el => {
+              if (['HTML', 'BODY', 'SCRIPT', 'STYLE', 'LINK', 'META', 'HEAD', 'TITLE', 'NOSCRIPT'].includes(el.tagName)) return;
+              const rect = el.getBoundingClientRect();
+              const style = win.getComputedStyle(el);
+              if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') return;
+              if (style.position === 'fixed' && (rect.left >= vp.width || rect.right <= 0)) return;
+              if (el.closest('#mobile-menu-drawer') || el.closest('#modal-presupuesto-overlay')) return;
+
+              if (rect.right > vp.width + 1.5) {
+                overflownElements.push({
+                  tag: el.tagName.toLowerCase(),
+                  id: el.id || null,
+                  className: (el.className || '').toString().substring(0, 40),
+                  right: Math.round(rect.right),
+                  width: Math.round(rect.width),
+                  overflowBy: Math.round(rect.right - vp.width)
+                });
+              }
+            });
+
+            // 2. Oracle 1: Defect 1 (Calculator Micro-Guarantees Disclaimer Row)
+            const calcRow = doc.querySelector('#form-calculador-ducha + div') || doc.querySelector('#calculador form ~ div.flex-wrap');
+            let defect1Pass = false;
+            let defect1Details = {};
+
+            if (calcRow) {
+              const card = calcRow.closest('.bg-white.rounded-3xl') || calcRow.parentElement;
+              const rowRect = calcRow.getBoundingClientRect();
+              const cardRect = card.getBoundingClientRect();
+              const bullets = calcRow.querySelectorAll('span.text-slate-300');
+              const items = calcRow.querySelectorAll('span:not(.text-slate-300)');
+
+              const rowFitsInsideCard = (rowRect.right <= cardRect.right + 1.5) && (rowRect.left >= cardRect.left - 1.5);
+              const rowFitsInsideViewport = rowRect.right <= vp.width + 1.5;
+
+              let bulletsCorrect = true;
+              bullets.forEach(b => {
+                const bStyle = win.getComputedStyle(b);
+                if (vp.width < 640 && bStyle.display !== 'none') bulletsCorrect = false;
+                if (vp.width >= 640 && bStyle.display === 'none') bulletsCorrect = false;
+              });
+
+              // Check wrapping on narrow viewports
+              let itemsWrapped = false;
+              if (items.length >= 3) {
+                const firstItemRect = items[0].getBoundingClientRect();
+                const lastItemRect = items[items.length - 1].getBoundingClientRect();
+                itemsWrapped = (lastItemRect.top > firstItemRect.top + 5);
+              }
+
+              defect1Pass = rowFitsInsideCard && rowFitsInsideViewport && bulletsCorrect;
+              defect1Details = {
+                rowWidth: Math.round(rowRect.width),
+                cardInnerWidth: Math.round(cardRect.width - 48), // subtracting card padding
+                rowRight: Math.round(rowRect.right),
+                cardRight: Math.round(cardRect.right),
+                rowFitsInsideCard,
+                bulletsCorrect,
+                itemsWrappedOnMobile: itemsWrapped,
+                pass: defect1Pass
+              };
+            }
+
+            // 3. Oracle 2: Defect 2 (Hero Top Badge)
+            const heroBadge = doc.querySelector('#inicio .inline-flex.flex-wrap');
+            let defect2Pass = false;
+            let defect2Details = {};
+
+            if (heroBadge) {
+              const badgeRect = heroBadge.getBoundingClientRect();
+              const titleEl = heroBadge.querySelector('div.flex');
+              const guaranteeEl = heroBadge.querySelector('span.text-emerald-400');
+              const dotEl = heroBadge.querySelector('span.hidden.sm\\:inline');
+
+              const badgeFitsViewport = badgeRect.right <= vp.width + 1.5;
+              const titleRect = titleEl ? titleEl.getBoundingClientRect() : null;
+              const guaranteeRect = guaranteeEl ? guaranteeEl.getBoundingClientRect() : null;
+
+              let wrappedTier = false;
+              let singleCapsule = false;
+
+              if (titleRect && guaranteeRect) {
+                if (vp.width < 640) {
+                  // Must wrap to line 2 on mobile
+                  wrappedTier = guaranteeRect.top > titleRect.top + 5;
+                } else {
+                  // Single line on desktop
+                  singleCapsule = Math.abs(guaranteeRect.top - titleRect.top) < 6;
+                }
+              }
+
+              let dotCorrect = true;
+              if (dotEl) {
+                const dotStyle = win.getComputedStyle(dotEl);
+                if (vp.width < 640 && dotStyle.display !== 'none') dotCorrect = false;
+                if (vp.width >= 640 && dotStyle.display === 'none') dotCorrect = false;
+              }
+
+              const guaranteeVisible = guaranteeEl && win.getComputedStyle(guaranteeEl).display !== 'none' && guaranteeRect.right <= vp.width + 1.5;
+
+              defect2Pass = badgeFitsViewport && guaranteeVisible && dotCorrect && (vp.width < 640 ? wrappedTier : singleCapsule);
+              defect2Details = {
+                badgeWidth: Math.round(badgeRect.width),
+                badgeRight: Math.round(badgeRect.right),
+                badgeFitsViewport,
+                guaranteeVisible,
+                wrappedTierOnMobile: wrappedTier,
+                singleCapsuleOnDesktop: singleCapsule,
+                dotCorrect,
+                pass: defect2Pass
+              };
+            }
+
+            // 4. Oracle 3: Section 11 Top Badge
+            const sec11Badge = doc.querySelector('section.bg-gradient-to-r span.inline-flex');
+            let sec11Pass = false;
+            let sec11Details = {};
+
+            if (sec11Badge) {
+              const bRect = sec11Badge.getBoundingClientRect();
+              sec11Pass = bRect.right <= vp.width + 1.5;
+              sec11Details = {
+                width: Math.round(bRect.width),
+                right: Math.round(bRect.right),
+                pass: sec11Pass
+              };
+            }
+
+            // 5. Oracle 4: Modal Dialog Padding & Internal Scroll
+            const modalOverlay = doc.getElementById('modal-presupuesto-overlay');
+            let modalPass = true;
+            let modalDetails = {};
+
+            if (modalOverlay) {
+              modalOverlay.classList.add('is-active');
+              const modalCard = doc.querySelector('.modal-cro-card');
+              const modalBtn = modalCard ? modalCard.querySelector('button[type="submit"]') : null;
+
+              if (modalCard) {
+                const cardScrollW = modalCard.scrollWidth;
+                const cardClientW = modalCard.clientWidth;
+                const noInternalOverflow = cardScrollW <= cardClientW + 1;
+                let btnFits = true;
+                if (modalBtn) {
+                  const btnRect = modalBtn.getBoundingClientRect();
+                  const cardRect = modalCard.getBoundingClientRect();
+                  btnFits = btnRect.right <= cardRect.right + 2;
+                }
+                modalPass = noInternalOverflow && btnFits;
+                modalDetails = {
+                  scrollWidth: cardScrollW,
+                  clientWidth: cardClientW,
+                  noInternalOverflow,
+                  btnFits,
+                  pass: modalPass
+                };
+              }
+              modalOverlay.classList.remove('is-active');
+            }
+
+            // Global Viewport Verdict
+            const docZeroOverflow = docScrollW <= docClientW;
+            const bodyZeroOverflow = bodyScrollW <= bodyClientW;
+            const noElementsOverflown = overflownElements.length === 0;
+            const vpPass = docZeroOverflow && bodyZeroOverflow && noElementsOverflown && defect1Pass && defect2Pass && sec11Pass && modalPass;
+
+            const res = {
+              viewport: vp.width + "x" + vp.height,
+              name: vp.name,
+              category: vp.category,
+              docScrollW,
+              docClientW,
+              bodyScrollW,
+              bodyClientW,
+              docZeroOverflow,
+              bodyZeroOverflow,
+              overflownElementsCount: overflownElements.length,
+              overflownElements,
+              defect1: defect1Details,
+              defect2: defect2Details,
+              sec11Badge: sec11Details,
+              modal: modalDetails,
+              pass: vpPass
+            };
+
+            results.push(res);
+
+            // Append row to matrix table
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td><strong>${vp.width}px</strong></td>
+              <td>${vp.name}</td>
+              <td>${docScrollW} / ${docClientW}</td>
+              <td>${bodyScrollW} / ${bodyClientW}</td>
+              <td><span class="badge ${noElementsOverflown ? 'badge-pass' : 'badge-fail'}">${noElementsOverflown ? '0 overflow' : overflownElements.length + ' overflow'}</span></td>
+              <td><span class="badge ${defect1Pass ? 'badge-pass' : 'badge-fail'}">${defect1Pass ? 'RESOLVED' : 'FAIL'}</span></td>
+              <td><span class="badge ${defect2Pass ? 'badge-pass' : 'badge-fail'}">${defect2Pass ? 'RESOLVED' : 'FAIL'}</span></td>
+              <td><span class="badge ${sec11Pass ? 'badge-pass' : 'badge-fail'}">${sec11Pass ? 'RESOLVED' : 'FAIL'}</span></td>
+              <td><span class="badge ${modalPass ? 'badge-pass' : 'badge-fail'}">${modalPass ? 'RESOLVED' : 'FAIL'}</span></td>
+              <td><strong class="${vpPass ? 'status-pass' : 'status-fail'}">${vpPass ? 'PASS' : 'FAIL'}</strong></td>
+            `;
+            matrixBody.appendChild(tr);
+
+            // Append detailed oracle telemetry box
+            const oracleBox = document.createElement("div");
+            oracleBox.className = "oracle-box";
+            oracleBox.innerHTML = `
+              <div class="oracle-title">[${vp.width}px — ${vp.name}] Telemetry Details</div>
+              <div>• <strong>Defect 1 (Calc Row):</strong> Width: ${defect1Details.rowWidth}px (Card interior: ~${defect1Details.cardInnerWidth}px) | Fits Card: ${defect1Details.rowFitsInsideCard} | Bullets dot behavior: ${defect1Details.bulletsCorrect ? 'Correct' : 'Incorrect'} | Wrapped on mobile: ${defect1Details.itemsWrappedOnMobile}</div>
+              <div>• <strong>Defect 2 (Hero Badge):</strong> Width: ${defect2Details.badgeWidth}px (Right edge: ${defect2Details.badgeRight}px / ${vp.width}px) | 'OBRA EN 24 HORAS' Visible: ${defect2Details.guaranteeVisible} | Mode: ${vp.width < 640 ? '2-Tier Wrapped' : 'Single Luxury Capsule'} | Dot behavior: ${defect2Details.dotCorrect ? 'Correct' : 'Incorrect'}</div>
+              <div>• <strong>Section 11 Badge:</strong> Width: ${sec11Details.width}px (Right: ${sec11Details.right}px / ${vp.width}px) | Status: ${sec11Pass ? 'PASS' : 'FAIL'}</div>
+              <div>• <strong>Modal Popup:</strong> ScrollWidth: ${modalDetails.scrollWidth}px vs ClientWidth: ${modalDetails.clientWidth}px | No Internal Overflow: ${modalDetails.noInternalOverflow}</div>
+              ${overflownElements.length > 0 ? `<div style="color:#EF4444;">• Overflown elements: ${JSON.stringify(overflownElements)}</div>` : '<div style="color:#10B981;">• Global element overflow: 0 elements out of bounds.</div>'}
+            `;
+            oracleDetails.appendChild(oracleBox);
+
+          } catch (err) {
+            console.error("Test execution error:", err);
+            matrixBody.innerHTML += `<tr><td colspan="10" class="status-fail">Error: ${err.message}</td></tr>`;
+          }
+
+          currentIdx++;
+          runNextTest();
+        }, 500);
+      };
+    }
+
+    function finishTests() {
+      const allPassed = results.every(r => r.pass);
+      overallStatus.innerHTML = allPassed
+        ? '<span class="status-pass">✔ ALL 8 VIEWPORTS EMPIRICALLY PASSED (DEFECT 1 & DEFECT 2 100% RESOLVED)</span>'
+        : '<span class="status-fail">✖ ONE OR MORE VIEWPORTS FAILED EMPIRICAL VERIFICATION</span>';
+
+      jsonOutput.textContent = JSON.stringify({
+        timestamp: new Date().toISOString(),
+        suite: "Challenger IT2 Multi-Viewport Empirical Verification",
+        targetFile: "cambio-banera-por-plato-ducha-madrid.html",
+        allPassed: allPassed,
+        results: results
+      }, null, 2);
+    }
+
+    // Run tests
+    runNextTest();
+  </script>
+</body>
+</html>

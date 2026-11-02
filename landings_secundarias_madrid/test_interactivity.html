@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Independent Interactivity & UX Verification Suite</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: #0A121E; color: #E2E8F0; padding: 24px; margin: 0; }
+    h1 { color: #A87E34; margin-top: 0; }
+    .status-pass { color: #10B981; font-weight: bold; }
+    .status-fail { color: #EF4444; font-weight: bold; }
+    table { border-collapse: collapse; width: 100%; margin-top: 15px; background: #1E293B; border-radius: 8px; overflow: hidden; }
+    th, td { border: 1px solid #334155; padding: 12px 14px; text-align: left; }
+    th { background: #0F172A; color: #E2C48F; }
+    #summary-box { background: #1E293B; border: 1px solid #334155; padding: 18px; border-radius: 8px; margin-bottom: 20px; }
+    pre { background: #000; padding: 14px; border-radius: 6px; overflow-x: auto; color: #38BDF8; font-size: 13px; }
+    .badge { display: inline-block; padding: 3px 8px; border-radius: 9999px; font-size: 12px; font-weight: bold; }
+    .badge-pass { background: rgba(16, 185, 129, 0.2); color: #10B981; border: 1px solid #10B981; }
+    .badge-fail { background: rgba(239, 68, 68, 0.2); color: #EF4444; border: 1px solid #EF4444; }
+    iframe { border: 2px solid #A87E34; background: white; width: 100%; height: 600px; border-radius: 8px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Independent Interactivity & UX Verification Suite</h1>
+  <div id="summary-box">
+    <strong>Auditor:</strong> Reviewer IT2 2 (Independent Audit)<br>
+    <strong>Target File:</strong> <code>cambio-banera-por-plato-ducha-madrid.html</code><br>
+    <div id="overall-status" style="margin-top: 10px; font-size: 17px;">
+      Running test assertions against target DOM and JavaScript runtime...
+    </div>
+  </div>
+
+  <table id="results-table">
+    <thead>
+      <tr>
+        <th style="width: 50px;">#</th>
+        <th style="width: 220px;">Component</th>
+        <th>Assertion / Interaction Tested</th>
+        <th style="width: 120px;">Result</th>
+        <th>Telemetry / Output</th>
+      </tr>
+    </thead>
+    <tbody id="results-body"></tbody>
+  </table>
+
+  <h2 style="color: #E2C48F; margin-top: 30px;">JSON Export of Empirical Test Results</h2>
+  <pre id="json-output">// Executing assertions...</pre>
+
+  <h2 style="color: #E2C48F; margin-top: 30px;">Active Sandbox Frame</h2>
+  <div id="frame-container"></div>
+
+  <script>
+    const tests = [];
+    const tbody = document.getElementById("results-body");
+    const jsonOutput = document.getElementById("json-output");
+    const overallStatus = document.getElementById("overall-status");
+    const frameContainer = document.getElementById("frame-container");
+
+    function assert(category, description, condition, telemetry) {
+      const pass = Boolean(condition);
+      tests.push({
+        id: tests.length + 1,
+        category,
+        description,
+        pass,
+        telemetry: String(telemetry || (pass ? "Assertion passed" : "Assertion failed"))
+      });
+      return pass;
+    }
+
+    const iframe = document.createElement("iframe");
+    iframe.src = "cambio-banera-por-plato-ducha-madrid.html?v=" + Date.now();
+    frameContainer.appendChild(iframe);
+
+    iframe.onload = function() {
+      setTimeout(() => {
+        try {
+          const doc = iframe.contentDocument || iframe.contentWindow.document;
+          const win = iframe.contentWindow;
+
+          // ------------------------------------------------------------------
+          // TEST SUITE 1: CALCULATOR RADIO CARDS & SELECTION
+          // ------------------------------------------------------------------
+          const cardsMedida = doc.querySelectorAll('input[name="calc-medida"]');
+          const cardsMampara = doc.querySelectorAll('input[name="calc-mampara"]');
+
+          assert("Calculator", "Question 1 has 4 radio options", cardsMedida.length === 4, `Found: ${cardsMedida.length}`);
+          assert("Calculator", "Question 2 has 4 radio options", cardsMampara.length === 4, `Found: ${cardsMampara.length}`);
+
+          // Initial state: Card 1 checked
+          const card1Medida = cardsMedida[0].closest('.calc-card');
+          const card2Medida = cardsMedida[1].closest('.calc-card');
+          assert("Calculator", "Card 1 is initially selected with is-selected class", card1Medida.classList.contains('is-selected'), card1Medida.className);
+          assert("Calculator", "Card 2 is initially NOT selected", !card2Medida.classList.contains('is-selected'), card2Medida.className);
+
+          // Interaction: Select Card 2
+          cardsMedida[1].checked = true;
+          cardsMedida[1].dispatchEvent(new Event('change', { bubbles: true }));
+
+          assert("Calculator", "Card 2 becomes is-selected after selection", card2Medida.classList.contains('is-selected'), card2Medida.className);
+          assert("Calculator", "Card 1 loses is-selected after Card 2 selected", !card1Medida.classList.contains('is-selected'), card1Medida.className);
+          assert("Calculator", "Card 2 check indicator icon is visible", !card2Medida.querySelector('.calc-indicator i').classList.contains('hidden'), "Indicator visible");
+          assert("Calculator", "Card 1 check indicator icon is hidden", card1Medida.querySelector('.calc-indicator i').classList.contains('hidden'), "Indicator hidden");
+
+          // Interaction: Select Card 4
+          const card4Medida = cardsMedida[3].closest('.calc-card');
+          cardsMedida[3].checked = true;
+          cardsMedida[3].dispatchEvent(new Event('change', { bubbles: true }));
+          assert("Calculator", "Card 4 becomes is-selected after click", card4Medida.classList.contains('is-selected') && !card2Medida.classList.contains('is-selected'), "Exclusive selection OK");
+
+          // ------------------------------------------------------------------
+          // TEST SUITE 2: CALCULATOR WHATSAPP DISPATCH & QUERY PARAMS
+          // ------------------------------------------------------------------
+          let interceptedUrl = null;
+          win.open = function(url) {
+            interceptedUrl = url;
+            return null;
+          };
+
+          const calcForm = doc.getElementById('form-calculador-ducha');
+          const calcZona = doc.getElementById('calc-zona');
+          const calcNombre = doc.getElementById('calc-nombre');
+          const calcTelefono = doc.getElementById('calc-telefono');
+
+          calcZona.value = "Madrid Capital (Chamberí, Salamanca, Retiro, Centro, etc.)";
+          calcNombre.value = "Juan Pérez";
+          calcTelefono.value = "611223344";
+
+          // Dispatch submit
+          calcForm.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+
+          assert("Calculator", "Form submit dispatches window.open", Boolean(interceptedUrl), `URL: ${interceptedUrl}`);
+          assert("Calculator", "URL targets WhatsApp API wa.me", interceptedUrl && interceptedUrl.startsWith('https://wa.me/34910000000'), interceptedUrl);
+          assert("Calculator", "URL contains encoded customer name", interceptedUrl && interceptedUrl.includes(encodeURIComponent("Juan Pérez")), "Name encoded OK");
+          assert("Calculator", "URL contains encoded customer phone", interceptedUrl && interceptedUrl.includes(encodeURIComponent("611223344")), "Phone encoded OK");
+          assert("Calculator", "URL contains selected measure", interceptedUrl && interceptedUrl.includes(encodeURIComponent(cardsMedida[3].value)), "Measure encoded OK");
+
+          // ------------------------------------------------------------------
+          // TEST SUITE 3: FAQ ACCORDION EXCLUSIVE TOGGLE
+          // ------------------------------------------------------------------
+          const faqs = doc.querySelectorAll('#faq-accordion-container details');
+          assert("FAQ Accordion", "FAQ container contains 5 details elements", faqs.length === 5, `Count: ${faqs.length}`);
+          assert("FAQ Accordion", "Item 1 is initially open", faqs[0].open === true, `Item 1 open: ${faqs[0].open}`);
+          assert("FAQ Accordion", "Item 2 is initially closed", faqs[1].open === false, `Item 2 open: ${faqs[1].open}`);
+
+          // Open Item 2
+          faqs[1].open = true;
+          faqs[1].dispatchEvent(new Event('toggle'));
+
+          assert("FAQ Accordion", "Opening Item 2 automatically closes Item 1", faqs[0].open === false && faqs[1].open === true, `Item 1: ${faqs[0].open}, Item 2: ${faqs[1].open}`);
+
+          // Open Item 4
+          faqs[3].open = true;
+          faqs[3].dispatchEvent(new Event('toggle'));
+          assert("FAQ Accordion", "Opening Item 4 automatically closes Item 2", faqs[1].open === false && faqs[3].open === true, `Item 2: ${faqs[1].open}, Item 4: ${faqs[3].open}`);
+
+          // Close Item 4
+          faqs[3].open = false;
+          faqs[3].dispatchEvent(new Event('toggle'));
+          const anyOpen = Array.from(faqs).some(f => f.open);
+          assert("FAQ Accordion", "Closing active item allows 0 open items without force-open", !anyOpen, "All closed gracefully");
+
+          // ------------------------------------------------------------------
+          // TEST SUITE 4: MODAL POPUP DIALOG & ACCESSIBILITY
+          // ------------------------------------------------------------------
+          const modalOverlay = doc.getElementById('modal-presupuesto-overlay');
+          const btnCloseModal = doc.getElementById('btn-close-modal-cro');
+          const backdropModal = doc.getElementById('modal-presupuesto-backdrop');
+          const openBtns = doc.querySelectorAll('.btn-open-popup-presupuesto');
+
+          assert("Modal Dialog", "Modal elements exist in DOM", Boolean(modalOverlay && btnCloseModal && backdropModal), "Overlay, close btn, backdrop present");
+          assert("Modal Dialog", "At least 6 CTA buttons open modal", openBtns.length >= 6, `Count: ${openBtns.length}`);
+          assert("Modal Dialog", "Modal is initially closed", !modalOverlay.classList.contains('is-active'), modalOverlay.className);
+
+          // Open modal
+          openBtns[0].click();
+          assert("Modal Dialog", "Clicking CTA adds is-active class to modal", modalOverlay.classList.contains('is-active'), modalOverlay.className);
+          assert("Modal Dialog", "Modal aria-hidden is set to 'false'", modalOverlay.getAttribute('aria-hidden') === 'false', modalOverlay.getAttribute('aria-hidden'));
+          assert("Modal Dialog", "Opening modal locks document body scroll (overflow: hidden)", doc.body.style.overflow === 'hidden', `body overflow: ${doc.body.style.overflow}`);
+
+          // Close via close button
+          btnCloseModal.click();
+          assert("Modal Dialog", "Clicking close button removes is-active", !modalOverlay.classList.contains('is-active'), modalOverlay.className);
+          assert("Modal Dialog", "Closing modal restores body scroll", doc.body.style.overflow === '', `body overflow: '${doc.body.style.overflow}'`);
+
+          // Reopen and close via backdrop
+          openBtns[0].click();
+          backdropModal.click();
+          assert("Modal Dialog", "Clicking backdrop closes modal and restores scroll", !modalOverlay.classList.contains('is-active') && doc.body.style.overflow === '', "Closed via backdrop");
+
+          // Reopen and close via Escape key
+          openBtns[0].click();
+          doc.dispatchEvent(new win.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+          assert("Modal Dialog", "Pressing Escape key closes modal", !modalOverlay.classList.contains('is-active') && doc.body.style.overflow === '', "Closed via Escape key");
+
+          // ------------------------------------------------------------------
+          // TEST SUITE 5: MOBILE MENU DRAWER
+          // ------------------------------------------------------------------
+          const btnMobileMenu = doc.getElementById('btn-mobile-menu');
+          const mobileDrawer = doc.getElementById('mobile-menu-drawer');
+          const btnCloseMobile = doc.getElementById('btn-close-mobile-menu');
+          const backdropMobile = doc.getElementById('mobile-menu-backdrop');
+          const mobileAccordionBtns = doc.querySelectorAll('.mobile-accordion-btn');
+
+          assert("Mobile Drawer", "Drawer elements exist in DOM", Boolean(btnMobileMenu && mobileDrawer && btnCloseMobile && backdropMobile), "Trigger, drawer, close btn, backdrop present");
+          assert("Mobile Drawer", "Drawer is initially closed", !mobileDrawer.classList.contains('is-active'), mobileDrawer.className);
+
+          // Open drawer
+          btnMobileMenu.click();
+          assert("Mobile Drawer", "Clicking hamburger adds is-active class to drawer", mobileDrawer.classList.contains('is-active'), mobileDrawer.className);
+          assert("Mobile Drawer", "Drawer aria-hidden is set to 'false'", mobileDrawer.getAttribute('aria-hidden') === 'false', mobileDrawer.getAttribute('aria-hidden'));
+          assert("Mobile Drawer", "Opening drawer locks body scroll", doc.body.style.overflow === 'hidden', `body overflow: ${doc.body.style.overflow}`);
+
+          // Sub-accordion toggle
+          if (mobileAccordionBtns.length > 0) {
+            const accBtn = mobileAccordionBtns[0];
+            const accPanel = accBtn.nextElementSibling;
+            assert("Mobile Drawer", "Sub-accordion panel is initially hidden", accPanel.classList.contains('hidden'), accPanel.className);
+            accBtn.click();
+            assert("Mobile Drawer", "Clicking sub-accordion expands panel and sets aria-expanded true", accBtn.getAttribute('aria-expanded') === 'true' && !accPanel.classList.contains('hidden'), `expanded: ${accBtn.getAttribute('aria-expanded')}`);
+            accBtn.click();
+            assert("Mobile Drawer", "Clicking sub-accordion again collapses panel", accBtn.getAttribute('aria-expanded') === 'false' && accPanel.classList.contains('hidden'), "Collapsed OK");
+          }
+
+          // Close drawer via close button
+          btnCloseMobile.click();
+          assert("Mobile Drawer", "Clicking close button closes drawer and restores scroll", !mobileDrawer.classList.contains('is-active') && doc.body.style.overflow === '', "Closed via close btn");
+
+          // Reopen and close via Escape
+          btnMobileMenu.click();
+          doc.dispatchEvent(new win.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
+          assert("Mobile Drawer", "Pressing Escape key closes drawer", !mobileDrawer.classList.contains('is-active') && doc.body.style.overflow === '', "Closed via Escape key");
+
+          // ------------------------------------------------------------------
+          // TEST SUITE 6: HEADER SCROLL BEHAVIOR
+          // ------------------------------------------------------------------
+          const header = doc.querySelector('header');
+          win.scrollY = 100;
+          win.dispatchEvent(new Event('scroll'));
+          assert("Header", "Scrolling down (>40px) adds .scrolled class", header.classList.contains('scrolled'), header.className);
+
+          win.scrollY = 0;
+          win.dispatchEvent(new Event('scroll'));
+          assert("Header", "Scrolling back to top removes .scrolled class", !header.classList.contains('scrolled'), header.className);
+
+          // ------------------------------------------------------------------
+          // RENDER REPORT
+          // ------------------------------------------------------------------
+          tbody.innerHTML = "";
+          tests.forEach(t => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+              <td>${t.id}</td>
+              <td><strong>${t.category}</strong></td>
+              <td>${t.description}</td>
+              <td><span class="badge ${t.pass ? 'badge-pass' : 'badge-fail'}">${t.pass ? 'PASS' : 'FAIL'}</span></td>
+              <td style="font-size: 13px; color: ${t.pass ? '#94A3B8' : '#F87171'};">${t.telemetry}</td>
+            `;
+            tbody.appendChild(tr);
+          });
+
+          const allPassed = tests.every(t => t.pass);
+          overallStatus.innerHTML = allPassed
+            ? '<span class="status-pass">✔ ALL 29 INTERACTIVE ASSERTIONS PASSED (100% SUCCESSFUL VERIFICATION)</span>'
+            : `<span class="status-fail">✖ ${tests.filter(t => !t.pass).length} ASSERTIONS FAILED</span>`;
+
+          jsonOutput.textContent = JSON.stringify({
+            timestamp: new Date().toISOString(),
+            targetFile: "cambio-banera-por-plato-ducha-madrid.html",
+            totalTests: tests.length,
+            passed: tests.filter(t => t.pass).length,
+            failed: tests.filter(t => !t.pass).length,
+            allPassed: allPassed,
+            assertions: tests
+          }, null, 2);
+
+        } catch (err) {
+          console.error("Test execution failed:", err);
+          overallStatus.innerHTML = `<span class="status-fail">Execution Error: ${err.message}</span>`;
+        }
+      }, 500);
+    };
+  </script>
+</body>
+</html>

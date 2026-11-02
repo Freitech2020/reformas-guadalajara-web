@@ -1,1 +1,27 @@
-@echo off & chcp 65001 >nul & title Actualizacion GitHub - Reformas Guadalajara y Madrid & cd /d "%~dp0" & echo ======================================================================= & echo  Sincronizando cambios de Reformas Madrid y Guadalajara con GitHub & echo ======================================================================= & echo. & echo [1/3] Preparando archivos modificados (git add)... & git add -A & echo. & echo [2/3] Creando commit... & git commit -m "fix(responsive): centrado perfecto hero mobile en nosotros, contacto y blog eliminando padding acumulado" & echo. & echo [3/3] Subiendo cambios a GitHub (git push origin main)... & git push origin main & echo. & echo ======================================================================= & echo  [OK] Cambios subidos exitosamente a GitHub! & echo  Repositorio: https://github.com/Freitech2020/reformas-guadalajara-web & echo  GitHub Pages: https://freitech2020.github.io/reformas-guadalajara-web/reformas_madrid/blog.html & echo ======================================================================= & echo. & pause
+@echo off
+chcp 65001 >nul
+echo ========================================================
+echo [MIGITHUB] SINCRONIZANDO Y SUBIENDO A GITHUB PAGES...
+echo ========================================================
+
+cd /d "E:\DATA C\Downloads\WEBS\WEBs de SEOLIFE\Web Reformas Madrid\prototipos"
+
+echo [1/3] Estado actual de Git:
+git status --short
+
+echo.
+echo [2/3] Preparando cambios (git add)...
+git add landings_secundarias_madrid/
+git add reformas_madrid/
+git add images/ 2>nul
+
+echo.
+echo [3/3] Creando commit y enviando a origin main...
+git commit -m "feat(madrid): actualizar landings secundarias, correcciones tipograficas y recursos visuales"
+git push origin main
+
+echo.
+echo ========================================================
+echo ¡Despliegue a GitHub finalizado!
+echo ========================================================
+pause

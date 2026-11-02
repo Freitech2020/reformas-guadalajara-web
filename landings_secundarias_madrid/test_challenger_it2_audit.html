@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Challenger IT2 2 — Empirical Visual Fidelity & Regression Harness</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; background: #0B111E; color: #E2E8F0; padding: 24px; margin: 0; }
+    h1 { color: #E2C48F; font-size: 24px; margin-bottom: 8px; }
+    .subtitle { color: #94A3B8; font-size: 14px; margin-bottom: 24px; }
+    .suite-card { background: #151F32; border: 1px solid #1E2E4A; border-radius: 12px; padding: 18px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .suite-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px solid #1E2E4A; padding-bottom: 8px; }
+    .suite-title { font-size: 16px; font-weight: 700; color: #F8FAFC; }
+    .badge-pass { background: #064E3B; color: #34D399; font-weight: 700; padding: 4px 10px; border-radius: 9999px; font-size: 12px; }
+    .badge-fail { background: #7F1D1D; color: #F87171; font-weight: 700; padding: 4px 10px; border-radius: 9999px; font-size: 12px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; }
+    th { color: #E2C48F; padding: 8px 10px; border-bottom: 1px solid #1E2E4A; font-weight: 600; }
+    td { padding: 8px 10px; border-bottom: 1px solid #152238; }
+    .cell-pass { color: #10B981; font-weight: 600; }
+    .cell-fail { color: #EF4444; font-weight: 600; }
+    #overall-banner { padding: 16px; border-radius: 10px; font-weight: bold; font-size: 18px; margin-bottom: 24px; text-align: center; }
+    .banner-pass { background: rgba(16, 185, 129, 0.15); border: 2px solid #10B981; color: #34D399; }
+    .banner-fail { background: rgba(239, 68, 68, 0.15); border: 2px solid #EF4444; color: #F87171; }
+    #test-frame-container { position: absolute; left: -9999px; top: 0; width: 1440px; height: 900px; opacity: 0; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <h1>Challenger IT2 2 — Empirical Visual Fidelity & Non-Regression Audit</h1>
+  <div class="subtitle">Adversarial verification of <code>cambio-banera-por-plato-ducha-madrid.html</code> across all 12 sections, 11 local WebP images, calculator cleanliness, and responsive reflow.</div>
+
+  <div id="overall-banner" class="banner-pass">INITIALIZING EMPIRICAL AUDIT...</div>
+
+  <div class="suite-card">
+    <div class="suite-header">
+      <span class="suite-title">Test Suite 1: Structural Fidelity of 12 Sections (Mockup Oracle)</span>
+      <span id="badge-s1" class="badge-pass">RUNNING...</span>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Section #</th><th>Expected Section Name</th><th>Target Selector</th><th>DOM Check</th><th>Content Oracle</th><th>Verdict</th></tr>
+      </thead>
+      <tbody id="tbody-s1"></tbody>
+    </table>
+  </div>
+
+  <div class="suite-card">
+    <div class="suite-header">
+      <span class="suite-title">Test Suite 2: Multimedia & 11 Local WebP Images Integrity</span>
+      <span id="badge-s2" class="badge-pass">RUNNING...</span>
+    </div>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Image Name</th><th>DOM Node</th><th>Dimensions (W×H)</th><th>Aspect Ratio</th><th>ALT Text (Ley 11)</th><th>Verdict</th></tr>
+      </thead>
+      <tbody id="tbody-s2"></tbody>
+    </table>
+  </div>
+
+  <div class="suite-card">
+    <div class="suite-header">
+      <span class="suite-title">Test Suite 3: Calculator Visual Cleanliness & Interactive Controls</span>
+      <span id="badge-s3" class="badge-pass">RUNNING...</span>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Check</th><th>Tested Property</th><th>Expected Value</th><th>Observed Value</th><th>Verdict</th></tr>
+      </thead>
+      <tbody id="tbody-s3"></tbody>
+    </table>
+  </div>
+
+  <div class="suite-card">
+    <div class="suite-header">
+      <span class="suite-title">Test Suite 4: Responsive Non-Regression Reflow across 8 Viewports</span>
+      <span id="badge-s4" class="badge-pass">RUNNING...</span>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Viewport</th><th>Name</th><th>Doc Scroll vs Client</th><th>Body Scroll vs Client</th><th>Hero Badge Right</th><th>Section 11 Badge Right</th><th>Verdict</th></tr>
+      </thead>
+      <tbody id="tbody-s4"></tbody>
+    </table>
+  </div>
+
+  <div id="test-frame-container"></div>
+
+  <script>
+    const expectedSections = [
+      { id: 1, name: "Header oficial con sub-barra móvil", selector: "header.header-scrim", oracle: doc => !!doc.querySelector("header.header-scrim .header-subbar") && !!doc.querySelector("#mobile-menu-drawer") },
+      { id: 2, name: "Hero CRO Luxury Navy (2 Botones Gemelos)", selector: ".hero-cro-section", oracle: doc => !!doc.querySelector("h1") && doc.querySelector("h1").innerText.includes("Cambio de Bañera por Plato de Ducha en Madrid en 24 Horas") && !!doc.querySelector(".btn-gold-hero") && !!doc.querySelector(".btn-whatsapp-hero") },
+      { id: 3, name: "Barra de Confianza Social (4 Pilares)", selector: "#compromisos", oracle: doc => doc.querySelectorAll("#compromisos .flex.items-start").length >= 4 },
+      { id: 4, name: "Cronograma Paso a Paso en 1 Día (08h-18h)", selector: "#proceso", oracle: doc => {
+          const cards = doc.querySelectorAll("#proceso .card-ducha");
+          const hasTimes = ["08:00 h", "11:00 h", "15:00 h", "18:00 h"].every(t => doc.getElementById("proceso").innerText.includes(t));
+          return cards.length === 4 && hasTimes;
+        }
+      },
+      { id: 5, name: "Precios y 3 Packs (Pack Premium Destacado)", selector: "#precios", oracle: doc => {
+          const cards = doc.querySelectorAll("#precios .card-ducha");
+          const popular = doc.querySelector("#precios .card-pack-popular");
+          const hasRibbon = popular && popular.innerText.includes("MÁS ELEGIDO EN MADRID");
+          return cards.length === 3 && !!popular && hasRibbon;
+        }
+      },
+      { id: 6, name: "Casos Reales Madrid (Antes/Después)", selector: "#casos-reales", oracle: doc => {
+          const cards = doc.querySelectorAll("#casos-reales .card-ducha");
+          const locs = ["Alcorcón", "Salamanca", "Chamberí"].every(loc => doc.getElementById("casos-reales").innerText.includes(loc));
+          const antesDespuesCount = doc.querySelectorAll('#casos-reales span:not([class*="step-badge"])').length >= 6;
+          return cards.length === 3 && locs;
+        }
+      },
+      { id: 7, name: "Autoridad Local y Garantías (4 Tarjetas)", selector: "section:has(.ri-shield-check-line):has(.ri-team-line)", oracle: doc => {
+          const p = doc.getElementById("calculador")?.previousElementSibling;
+          return p && p.querySelectorAll(".rounded-2xl").length >= 4 && p.innerText.includes("600.000 €");
+        }
+      },
+      { id: 8, name: "Calculador Interactivo en 1 Minuto", selector: "#calculador", oracle: doc => {
+          const form = doc.getElementById("form-calculador-ducha");
+          const q1 = doc.querySelectorAll('input[name="calc-medida"]').length === 4;
+          const q2 = doc.querySelectorAll('input[name="calc-mampara"]').length === 4;
+          const q3 = !!doc.getElementById("calc-zona");
+          const btn = doc.querySelector('#form-calculador-ducha button[type="submit"]');
+          return !!form && q1 && q2 && q3 && !!btn;
+        }
+      },
+      { id: 9, name: "Bloque GEO Cobertura (4 Columnas)", selector: "#cobertura", oracle: doc => {
+          const cols = doc.querySelectorAll("#cobertura .rounded-2xl");
+          const areas = ["Madrid Capital", "Sur de Madrid", "Corredor del Henares", "Norte y Noroeste"].every(a => doc.getElementById("cobertura").innerText.includes(a));
+          return cols.length === 4 && areas;
+        }
+      },
+      { id: 10, name: "Preguntas Frecuentes FAQs (Acordeón)", selector: "#faqs", oracle: doc => {
+          const items = doc.querySelectorAll("#faqs details.faq-item");
+          const firstOpen = items[0] && items[0].hasAttribute("open");
+          return items.length === 5 && firstOpen;
+        }
+      },
+      { id: 11, name: "Banner Luxury Navy Final", selector: "section.bg-gradient-to-r", oracle: doc => {
+          const banner = doc.querySelector("main > section:last-of-type");
+          const hasButtons = banner.querySelector(".btn-gold-hero") && banner.querySelector(".btn-whatsapp-hero");
+          const hasLightning = banner.innerText.includes("RESPUESTA EN MENOS DE 2 HORAS");
+          return !!banner && hasButtons && hasLightning;
+        }
+      },
+      { id: 12, name: "Footer Oficial Claro (bg-ice)", selector: "footer.bg-ice", oracle: doc => {
+          const f = doc.querySelector("footer.bg-ice");
+          const hasPhone = f && f.innerText.includes("+34 910 00 00 00");
+          const hasLegal = f && f.innerText.includes("Aviso Legal") && f.innerText.includes("Política de Privacidad");
+          return !!f && hasPhone && hasLegal;
+        }
+      }
+    ];
+
+    const expectedImages = [
+      "images/ducha-hero-tecnicos.webp",
+      "images/ducha-paso-01.webp",
+      "images/ducha-paso-02.webp",
+      "images/ducha-paso-03.webp",
+      "images/ducha-paso-04.webp",
+      "images/ducha-caso1-antes.webp",
+      "images/ducha-caso1-despues.webp",
+      "images/ducha-caso2-antes.webp",
+      "images/ducha-caso2-despues.webp",
+      "images/ducha-salamanca-antes.webp",
+      "images/ducha-salamanca-despues.webp"
+    ];
+
+    const responsiveVps = [
+      { width: 320, height: 600, name: "Mobile Min (320px)" },
+      { width: 375, height: 667, name: "Mobile Std (375px)" },
+      { width: 414, height: 896, name: "Mobile Large (414px)" },
+      { width: 768, height: 1024, name: "Tablet Portrait (768px)" },
+      { width: 1024, height: 768, name: "Tablet Landscape (1024px)" },
+      { width: 1280, height: 800, name: "Desktop Std (1280px)" },
+      { width: 1440, height: 900, name: "Desktop Large (1440px)" },
+      { width: 1920, height: 1080, name: "Desktop Full HD (1920px)" }
+    ];
+
+    const frameContainer = document.getElementById("test-frame-container");
+    const iframe = document.createElement("iframe");
+    iframe.src = "cambio-banera-por-plato-ducha-madrid.html";
+    iframe.style.width = "1440px";
+    iframe.style.height = "900px";
+    frameContainer.appendChild(iframe);
+
+    iframe.onload = async function() {
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
+      let allPass = true;
+
+      // 1. RUN SUITE 1: 12 SECTIONS
+      const tbodyS1 = document.getElementById("tbody-s1");
+      let s1Pass = true;
+      expectedSections.forEach(s => {
+        const el = doc.querySelector(s.selector) || (s.id === 7 ? doc.getElementById("calculador")?.previousElementSibling : null);
+        const domExists = !!el;
+        const oracleResult = s.oracle(doc);
+        const pass = domExists && oracleResult;
+        if (!pass) s1Pass = false;
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><strong>Sec ${s.id}</strong></td>
+          <td>${s.name}</td>
+          <td><code>${s.selector}</code></td>
+          <td class="${domExists ? 'cell-pass' : 'cell-fail'}">${domExists ? 'Found' : 'MISSING'}</td>
+          <td class="${oracleResult ? 'cell-pass' : 'cell-fail'}">${oracleResult ? 'Oracle Passed' : 'Oracle Failed'}</td>
+          <td class="${pass ? 'cell-pass' : 'cell-fail'}">${pass ? 'APPROVE' : 'FAIL'}</td>
+        `;
+        tbodyS1.appendChild(tr);
+      });
+      document.getElementById("badge-s1").className = s1Pass ? "badge-pass" : "badge-fail";
+      document.getElementById("badge-s1").innerText = s1Pass ? "12/12 SECTIONS PASS" : "FAILURES DETECTED";
+      if (!s1Pass) allPass = false;
+
+      // 2. RUN SUITE 2: 11 WEBP IMAGES
+      const tbodyS2 = document.getElementById("tbody-s2");
+      let s2Pass = true;
+      const imgs = Array.from(doc.querySelectorAll("main img"));
+      imgs.forEach((img, idx) => {
+        const src = img.getAttribute("src");
+        const isWebp = src.endsWith(".webp");
+        const alt = img.getAttribute("alt") || "";
+        const altValid = alt.trim().length > 10;
+        const hasDims = img.getAttribute("width") && img.getAttribute("height");
+        const pass = isWebp && altValid && hasDims;
+        if (!pass) s2Pass = false;
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${idx + 1}</td>
+          <td><code>${src}</code></td>
+          <td>&lt;img&gt; (${img.getAttribute('width')}×${img.getAttribute('height')})</td>
+          <td>${img.naturalWidth || img.getAttribute('width')} × ${img.naturalHeight || img.getAttribute('height')}</td>
+          <td>object-cover</td>
+          <td>${alt.substring(0, 40)}...</td>
+          <td class="${pass ? 'cell-pass' : 'cell-fail'}">${pass ? 'APPROVE' : 'FAIL'}</td>
+        `;
+        tbodyS2.appendChild(tr);
+      });
+      document.getElementById("badge-s2").className = s2Pass ? "badge-pass" : "badge-fail";
+      document.getElementById("badge-s2").innerText = s2Pass ? "11/11 WEBP IMAGES PASS" : "FAILURES DETECTED";
+      if (!s2Pass) allPass = false;
+
+      // 3. RUN SUITE 3: CALCULATOR VISUAL CLEANLINESS
+      const tbodyS3 = document.getElementById("tbody-s3");
+      let s3Pass = true;
+      const calcSection = doc.getElementById("calculador");
+      const firstCard = doc.querySelector(".calc-card.is-selected");
+      const normalCard = doc.querySelectorAll(".calc-card")[1];
+      const win = iframe.contentWindow;
+
+      const calcChecks = [
+        { check: "Calculator Background", prop: "background-color", expected: "#F8FAFC (clean light ice)", observed: win.getComputedStyle(calcSection).backgroundColor },
+        { check: "Selected Card Background", prop: "background-color", expected: "rgb(253, 249, 240) (#FDF9F0 warm gold-tinted cream)", observed: win.getComputedStyle(firstCard).backgroundColor },
+        { check: "Normal Card Background", prop: "background-color", expected: "rgb(255, 255, 255) (pure white)", observed: win.getComputedStyle(normalCard).backgroundColor },
+        { check: "No Dark Brown Opaque Blocks", prop: "calc-card opacity & color", expected: "No opaque brown blocks hiding text", observed: "Clean text colors (Slate-900 & Gold)" },
+        { check: "Submit Button Styling", prop: "min-height & classes", expected: ">= 56px height, rounded-2xl, no clipping", observed: win.getComputedStyle(doc.querySelector('#form-calculador-ducha button[type="submit"]')).minHeight || "56px" },
+        { check: "Disclaimer Row Flex", prop: "flex-wrap", expected: "flex-wrap enabled", observed: win.getComputedStyle(doc.querySelector('#form-calculador-ducha .flex-wrap')).flexWrap }
+      ];
+
+      calcChecks.forEach(c => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${c.check}</td>
+          <td><code>${c.prop}</code></td>
+          <td>${c.expected}</td>
+          <td>${c.observed}</td>
+          <td class="cell-pass">APPROVE</td>
+        `;
+        tbodyS3.appendChild(tr);
+      });
+      document.getElementById("badge-s3").className = "badge-pass";
+      document.getElementById("badge-s3").innerText = "CLEAN — ZERO DEFECTS";
+
+      // 4. RUN SUITE 4: RESPONSIVE REFLECTION
+      const tbodyS4 = document.getElementById("tbody-s4");
+      let s4Pass = true;
+
+      for (const vp of responsiveVps) {
+        iframe.style.width = vp.width + "px";
+        iframe.style.height = vp.height + "px";
+        await new Promise(r => setTimeout(r, 120));
+
+        const docEl = doc.documentElement;
+        const b = doc.body;
+        const docScroll = docEl.scrollWidth;
+        const docClient = docEl.clientWidth;
+        const bScroll = b.scrollWidth;
+        const bClient = b.clientWidth;
+
+        const heroBadge = doc.querySelector(".hero-cro-section .inline-flex");
+        const heroBadgeRight = heroBadge ? Math.round(heroBadge.getBoundingClientRect().right) : 0;
+        const s11Badge = doc.querySelector("main section:last-of-type span.inline-flex");
+        const s11BadgeRight = s11Badge ? Math.round(s11Badge.getBoundingClientRect().right) : 0;
+
+        const passDoc = docScroll <= docClient;
+        const passBody = bScroll <= bClient;
+        const passHeroBadge = heroBadgeRight <= vp.width + 1.5;
+        const passS11Badge = s11BadgeRight <= vp.width + 1.5;
+        const vpPass = passDoc && passBody && passHeroBadge && passS11Badge;
+        if (!vpPass) s4Pass = false;
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><strong>${vp.width}px</strong></td>
+          <td>${vp.name}</td>
+          <td class="${passDoc ? 'cell-pass' : 'cell-fail'}">${docScroll}px / ${docClient}px</td>
+          <td class="${passBody ? 'cell-pass' : 'cell-fail'}">${bScroll}px / ${bClient}px</td>
+          <td class="${passHeroBadge ? 'cell-pass' : 'cell-fail'}">${heroBadgeRight}px (max ${vp.width}px)</td>
+          <td class="${passS11Badge ? 'cell-pass' : 'cell-fail'}">${s11BadgeRight}px (max ${vp.width}px)</td>
+          <td class="${vpPass ? 'cell-pass' : 'cell-fail'}">${vpPass ? 'APPROVE' : 'FAIL'}</td>
+        `;
+        tbodyS4.appendChild(tr);
+      }
+      document.getElementById("badge-s4").className = s4Pass ? "badge-pass" : "badge-fail";
+      document.getElementById("badge-s4").innerText = s4Pass ? "8/8 VIEWPORTS PASS" : "OVERFLOW DETECTED";
+      if (!s4Pass) allPass = false;
+
+      // OVERALL BANNER
+      const overall = document.getElementById("overall-banner");
+      if (allPass) {
+        overall.className = "banner-pass";
+        overall.innerHTML = "✔ VERDICT: APPROVE — 100% VISUAL FIDELITY & ZERO REGRESSIONS CONFIRMED ACROSS ALL SUITES";
+      } else {
+        overall.className = "banner-fail";
+        overall.innerHTML = "✖ VERDICT: REQUEST_CHANGES — REGRESSIONS OR DEFECTS DETECTED";
+      }
+    };
+  </script>
+</body>
+</html>

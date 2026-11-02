@@ -1,0 +1,30 @@
+{
+  "project_name": "Instalacion Aire Acondicionado Madrid",
+  "total_units": 11,
+  "completed": [
+    "respaldo_original_html",
+    "reconstruccion_fiel_5_capturas",
+    "eliminacion_imagen_repetida_dormitorios",
+    "incorporacion_imagenes_en_cards_pasos",
+    "blindaje_token_design_18px_desktop_16px_mobile",
+    "popup_modal_y_enlaces_whatsapp_operativos",
+    "desduplicacion_hero_y_simplificacion_badge",
+    "generacion_hero_split_tecnicos_gemini",
+    "publicacion_y_sincronizacion_github_pages",
+    "integracion_header_y_footer_global_canonico",
+    "remediacion_adversarial_paso3_inspector_visual"
+  ],
+  "in_progress": null,
+  "pending": [],
+  "last_checkpoint": "2026-10-31T23:47:00Z",
+  "metrics": {
+    "header_type": "global_canonico_dropdowns_guadalajara_madrid",
+    "footer_type": "global_canonico_multilink_contacto_directo",
+    "paso3_image": "images/climatizacion-paso-03-vacio-oficial.jpg",
+    "inspector_visual_status": "APPROVE",
+    "repo": "https://github.com/Freitech2020/reformas-guadalajara-web",
+    "public_url": "https://freitech2020.github.io/reformas-guadalajara-web/landings_secundarias_madrid/instalacion-aire-acondicionado-madrid.html",
+    "http_status_landing": 200,
+    "http_status_paso3_img": 200
+  }
+}
