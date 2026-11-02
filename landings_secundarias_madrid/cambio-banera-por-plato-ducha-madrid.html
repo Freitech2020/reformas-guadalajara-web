@@ -807,8 +807,95 @@
   }
 
   .header-subbar .btn-header-mobile {
+    background-color: var(--color-gold) !important;
+    border: 1px solid rgba(226, 196, 143, 0.6) !important;
+    color: #FFFFFF !important;
+    padding: 4px 12px !important;
+    font-size: 11.5px !important;
+    border-radius: 6px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    white-space: nowrap !important;
+  }
 
-    /* Botones Gemelos Hero y Banners */
+  /* Footer and Floating Button Scoped Fixes */
+  footer .btn-open-popup-presupuesto {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    padding: 0 !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+    display: inline !important;
+  }
+  #btn-floating-consulta {
+    background: rgba(255, 255, 255, 0.95) !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    color: #0F172A !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 9999px !important;
+  }
+  .card-ducha .btn-pack-outline {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 2px solid #CBD5E1 !important;
+    border-radius: 9999px !important;
+    padding: 14px 20px !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    text-decoration: none !important;
+  }
+  .card-ducha .btn-pack-outline:hover {
+    background: #F8FAFC !important;
+    background-color: #F8FAFC !important;
+    border-color: var(--color-gold) !important;
+    color: var(--color-gold) !important;
+    transform: translateY(-2px);
+  }
+  .card-ducha .btn-gold-hero,
+  .card-pack-popular .btn-gold-hero {
+    background: var(--color-gold) !important;
+    background-color: var(--color-gold) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(226, 196, 143, 0.6) !important;
+    border-radius: 9999px !important;
+    padding: 14px 20px !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 8px 24px rgba(168, 126, 52, 0.3) !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    text-decoration: none !important;
+  }
+  .card-ducha .btn-gold-hero:hover,
+  .card-pack-popular .btn-gold-hero:hover {
+    background-color: var(--color-gold-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(168, 126, 52, 0.45) !important;
+  }
+
+  /* FAQ Marker Reset for Safari / Chrome / Firefox */
+  .faq-summary::-webkit-details-marker { display: none !important; }
+  .faq-summary::marker { display: none !important; content: ""; }
+
+  /* Botones Gemelos Hero y Banners */
     .btn-gold-hero {
       background-color: var(--color-gold) !important;
       font-weight: 700;
@@ -1819,7 +1906,7 @@
 <!-- ==========================================================================
      SECCIÓN 2: HERO CRO LUXURY NAVY (2 BOTONES GEMELOS + GARANTÍAS)
      ========================================================================== -->
-<section class="hero-cro-section" id="inicio" style="background: radial-gradient(circle at 75% 25%, #142337 0%, #0A121E 100%) !important; color: #FFFFFF !important;">
+<section class="hero-cro-section scroll-mt-20 md:scroll-mt-24" id="inicio" style="background: radial-gradient(circle at 75% 25%, #142337 0%, #0A121E 100%) !important; color: #FFFFFF !important;">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
       
@@ -1945,7 +2032,7 @@
 <!-- ==========================================================================
      SECCIÓN 4: CRONOGRAMA PASO A PASO EN 1 DÍA (FILA ÚNICA EN DESKTOP)
      ========================================================================== -->
-<section id="proceso" class="bg-surface">
+<section id="proceso" class="bg-surface scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
@@ -1996,7 +2083,7 @@
       <!-- Paso 3: 15:00h -->
       <div class="card-ducha flex flex-col">
         <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
-          <img src="images/ducha-paso-03.jpg" alt="Colocación del plato y alicatado a juego" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
+          <img src="images/ducha-paso-03.webp" alt="Colocación del plato y alicatado a juego" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
           <span class="absolute top-3 left-3 bg-[#E6F4EA] text-[#0D652D] font-bold text-[13px] px-3.5 py-1.5 rounded-full shadow-sm tracking-wide">
             15:00 h
           </span>
@@ -2012,7 +2099,7 @@
       <!-- Paso 4: 18:00h -->
       <div class="card-ducha flex flex-col">
         <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
-          <img src="images/ducha-paso-04.jpg" alt="Montaje de mampara y entrega listo para usar" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
+          <img src="images/ducha-paso-04.webp" alt="Montaje de mampara y entrega listo para usar" class="w-full h-full object-cover" width="600" height="450" loading="lazy">
           <span class="absolute top-3 left-3 bg-[#E6F4EA] text-[#0D652D] font-bold text-[13px] px-3.5 py-1.5 rounded-full shadow-sm tracking-wide">
             18:00 h
           </span>
@@ -2032,7 +2119,7 @@
 <!-- ==========================================================================
      SECCIÓN 5: PRECIOS Y PACKS CERRADOS (3 TARJETAS - PACK PREMIUM DESTACADO)
      ========================================================================== -->
-<section id="precios" class="bg-white border-t border-line">
+<section id="precios" class="bg-white border-t border-line scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
@@ -2074,7 +2161,7 @@
             <li class="flex items-start gap-3"><i class="ri-check-line text-emerald-600 text-[20px] shrink-0 mt-0.5 font-bold"></i> <span>Grifería monomando y válvula sifónica de gran caudal</span></li>
           </ul>
         </div>
-        <button type="button" class="btn-open-popup-presupuesto w-full py-4 px-5 !rounded-full border-2 border-slate-300 hover:border-[#A87E34] text-black hover:text-[#A87E34] font-bold text-[16px] transition-colors cursor-pointer text-center bg-white hover:bg-slate-50 shadow-xs">
+        <button type="button" class="btn-open-popup-presupuesto btn-pack-outline w-full !rounded-full text-black hover:text-[#A87E34] font-bold text-[16px] transition-colors cursor-pointer text-center">
           ELEGIR PACK ESTÁNDAR →
         </button>
       </div>
@@ -2140,7 +2227,7 @@
             <li class="flex items-start gap-3"><i class="ri-check-line text-emerald-600 text-[20px] shrink-0 mt-0.5 font-bold"></i> <span>Mampara de apertura total sin carril inferior para silla</span></li>
           </ul>
         </div>
-        <button type="button" class="btn-open-popup-presupuesto w-full py-4 px-5 !rounded-full border-2 border-slate-300 hover:border-[#A87E34] text-black hover:text-[#A87E34] font-bold text-[16px] transition-colors cursor-pointer text-center bg-white hover:bg-slate-50 shadow-xs">
+        <button type="button" class="btn-open-popup-presupuesto btn-pack-outline w-full !rounded-full text-black hover:text-[#A87E34] font-bold text-[16px] transition-colors cursor-pointer text-center">
           ELEGIR PACK ACCESIBLE →
         </button>
       </div>
@@ -2152,7 +2239,7 @@
 <!-- ==========================================================================
      SECCIÓN 6: CASOS REALES EN LA COMUNIDAD DE MADRID (FOTOS Y MAPEO EXACTOS AL MÁSTER)
      ========================================================================== -->
-<section id="casos-reales" class="bg-surface">
+<section id="casos-reales" class="bg-surface scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
@@ -2244,7 +2331,7 @@
 <!-- ==========================================================================
      SECCIÓN 7: POR QUÉ SOMOS LA OPCIÓN MÁS SEGURA EN MADRID (FILA ÚNICA EN DESKTOP)
      ========================================================================== -->
-<section id="garantias" class="bg-white border-t border-line">
+<section id="garantias" class="bg-white border-t border-line scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
@@ -2310,7 +2397,7 @@
 <!-- ==========================================================================
      SECCIÓN 8: CALCULADOR INTERACTIVO ONLINE (OPCIONES EN 4 COLUMNAS EN DESKTOP)
      ========================================================================== -->
-<section id="calculador" class="bg-surface border-t border-line">
+<section id="calculador" class="bg-surface border-t border-line scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
@@ -2472,7 +2559,7 @@
 <!-- ==========================================================================
      SECCIÓN 9: DAMOS SERVICIO A TODO MADRID (FILA ÚNICA EN DESKTOP)
      ========================================================================== -->
-<section id="cobertura" class="bg-white border-t border-line">
+<section id="cobertura" class="bg-white border-t border-line scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
@@ -2554,7 +2641,7 @@
 <!-- ==========================================================================
      SECCIÓN 10: DUDAS FRECUENTES (FAQS EN ACORDEÓN)
      ========================================================================== -->
-<section id="faqs" class="bg-surface border-t border-line">
+<section id="faqs" class="bg-surface border-t border-line scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">
@@ -2569,7 +2656,7 @@
 
     <div class="max-w-[880px] mx-auto text-left" id="faq-accordion-container">
       
-      <details class="faq-item" open>
+      <details class="faq-item">
         <summary class="faq-summary">
           <span>¿De verdad se hace la obra completa en solo 24 horas?</span>
           <i class="ri-arrow-down-s-line text-[22px] text-slate-400 transition-transform shrink-0 ml-3"></i>
@@ -2842,7 +2929,7 @@
     <button type="button" id="lightbox-close" class="lightbox-close-btn" aria-label="Cerrar imagen ampliada">
       <i class="ri-close-line text-[24px]"></i>
     </button>
-    <img id="lightbox-img" src="" alt="Foto ampliada reforma bañera por ducha en Madrid" class="lightbox-image">
+    <img id="lightbox-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="Foto ampliada reforma bañera por ducha en Madrid" class="lightbox-image">
     <div id="lightbox-caption" class="lightbox-caption"></div>
   </div>
 </div>
