@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" translate="no" class="scroll-smooth">
 <head>
   <meta charset="utf-8"/>
@@ -161,138 +161,652 @@
       }
     }
 
-    /* HEADER */
-    header.header-scrim:not(.scrolled) {
-      box-shadow: none;
-      /* removido */
+    /* ==========================================================================
+   HEADER, DROPDOWNS & SUBBAR TRASPLANTADOS DE REFORMAS-BANOS-MADRID
+   ========================================================================== */
+  .hero-master-scrim { position: absolute; inset: 0; background-color: rgba(0, 0, 0, var(--hero-darkness)) !important; pointer-events: none; z-index: 1; }
+
+  header.header-scrim:not(.scrolled) { background: linear-gradient(180deg, rgba(8, 15, 26, 0.8) 0%, rgba(8, 15, 26, 0.4) 65%, transparent 100%) !important; }
+
+  header.scrolled {
+
+    background-color: rgba(255, 255, 255, 0.96) !important; backdrop-filter: blur(12px) !important;
+
+    border-bottom: 1px solid rgba(226, 232, 240, 0.9) !important; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06) !important;
+
+  }
+
+  header.scrolled nav ul a { color: #0E1B2E !important; }
+
+    header.scrolled nav a[aria-label*="inicio"] span:first-child,
+
+  header.scrolled nav a[href*="inicio"] span:first-child,
+
+  header.scrolled nav a[href*="index.html"] span:first-child,
+
+  header.bg-white\/95 nav a[aria-label*="inicio"] span:first-child,
+
+  header.bg-white\/95 nav a[href*="inicio"] span:first-child,
+
+  header.bg-white\/95 nav a[href*="index.html"] span:first-child {
+
+    color: #0E1B2E !important; /* REFORMAS */
+
+    text-shadow: none !important;
+
+  }
+
+  header.scrolled nav a[aria-label*="inicio"] span:last-child,
+
+  header.scrolled nav a[href*="inicio"] span:last-child,
+
+  header.scrolled nav a[href*="index.html"] span:last-child,
+
+  header.bg-white\/95 nav a[aria-label*="inicio"] span:last-child,
+
+  header.bg-white\/95 nav a[href*="inicio"] span:last-child,
+
+  header.bg-white\/95 nav a[href*="index.html"] span:last-child,
+
+  header.scrolled .text-teal-light,
+
+  header.bg-white\/95 .text-teal-light {
+
+    color: #8C6424 !important; /* MADRID en marrÃ³n dorado */
+
+    text-shadow: none !important;
+
+  }
+
+
+
+  /* --- 2. PROTECCIÃ“N TOTAL DE CONTRASTE: TEXTO BLANCO EN ELEMENTOS OSCUROS --- */
+
+  /* --- BOTÃ“N PEDIR PRESUPUESTO (ALTA VISIBILIDAD ORO TOKEN DESIGN) --- */
+
+  .btn-open-popup-presupuesto,
+
+  header .btn-open-popup-presupuesto,
+
+  button.btn-open-popup-presupuesto,
+
+  button.bg-teal,
+
+  .btn-gold {
+
+    position: relative !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 8px !important;
+
+    background-color: #A87E34 !important;
+
+    background: #A87E34 !important;
+
+    color: #FFFFFF !important;
+
+    border: 1px solid rgba(226, 196, 143, 0.65) !important;
+
+    border-radius: 8px !important;
+
+    padding: 10px 22px !important;
+
+    font-weight: 700 !important;
+
+    font-size: 13px !important;
+
+    letter-spacing: 0.05em !important;
+
+    text-transform: uppercase !important;
+
+    box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;
+
+    cursor: pointer !important;
+
+    text-decoration: none !important;
+
+    transition: all 0.25s ease !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+  }
+
+  .btn-open-popup-presupuesto:hover,
+
+  header .btn-open-popup-presupuesto:hover,
+
+  button.btn-open-popup-presupuesto:hover,
+
+  button.bg-teal:hover,
+
+  .btn-gold:hover {
+
+    background-color: #8C6424 !important;
+
+    background: #8C6424 !important;
+
+    border-color: rgba(226, 196, 143, 0.95) !important;
+
+    box-shadow: 0 6px 20px rgba(78, 52, 23, 0.5) !important;
+
+    transform: translateY(-2px) !important;
+
+    color: #FFFFFF !important;
+
+  }
+
+  .btn-open-popup-presupuesto i,
+
+  header .btn-open-popup-presupuesto i {
+
+    color: #FFFFFF !important;
+
+    font-size: 15px !important;
+
+  }
+
+  #mobile-menu-drawer .btn-open-popup-presupuesto {
+
+    width: 100% !important;
+
+    padding: 14px 24px !important;
+
+    font-size: 14px !important;
+
+    border-radius: 8px !important;
+
+  }
+
+
+
+  /* --- DROPDOWNS DESKTOP (ARQUITECTURA DE MENÃš DE LUJO - ESTÃNDAR MADRID/GUADALAJARA) --- */
+
+  .nav-dropdown {
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+  }
+
+  .nav-dropdown::after {
+
+    content: '';
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    right: 0;
+
+    height: 14px;
+
+  }
+
+  .nav-dropdown-menu {
+
+    position: absolute;
+
+    top: calc(100% + 6px);
+
+    left: 50%;
+
+    transform: translateX(-50%) translateY(8px);
+
+    min-width: 320px;
+
+    padding: 8px;
+
+    border-radius: 16px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.22s;
+
+    z-index: 100;
+
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu,
+
+  .nav-dropdown:focus-within .nav-dropdown-menu,
+
+  .nav-dropdown.is-open .nav-dropdown-menu {
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    pointer-events: auto !important;
+
+    transform: translateX(-50%) translateY(0) !important;
+
+  }
+
+  .nav-dropdown:hover .dropdown-chevron,
+
+  .nav-dropdown.is-open .dropdown-chevron {
+
+    transform: rotate(180deg);
+
+  }
+
+  .dropdown-chevron {
+
+    transition: transform 0.25s ease;
+
+    display: inline-flex;
+
+    align-items: center;
+
+  }
+
+
+
+  /* Dropdown en estado inicial (Hero oscuro) */
+
+  header.header-scrim:not(.scrolled) .nav-dropdown-menu {
+
+    background: rgba(14, 27, 46, 0.97) !important;
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
+
+  }
+
+  header.header-scrim:not(.scrolled) .nav-dropdown-item {
+
+    color: rgba(255, 255, 255, 0.92) !important;
+
+    text-shadow: none !important;
+
+  }
+
+  header.header-scrim:not(.scrolled) .nav-dropdown-item:hover {
+
+    background-color: rgba(255, 255, 255, 0.1) !important;
+
+    color: #E2C48F !important;
+
+  }
+
+  header.header-scrim:not(.scrolled) .nav-dropdown-item i {
+
+    color: #E2C48F !important;
+
+  }
+
+
+
+  /* Dropdown en estado scrolled (Fondo blanco) */
+
+  header.scrolled .nav-dropdown-menu,
+
+  header.bg-white\/95 .nav-dropdown-menu {
+
+    background: rgba(255, 255, 255, 0.98) !important;
+
+    backdrop-filter: blur(20px);
+
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(226, 232, 240, 0.95) !important;
+
+    box-shadow: 0 20px 45px rgba(14, 27, 46, 0.12) !important;
+
+  }
+
+  header.scrolled .nav-dropdown-item,
+
+  header.bg-white\/95 .nav-dropdown-item {
+
+    color: #0E1B2E !important;
+
+    text-shadow: none !important;
+
+  }
+
+  header.scrolled .nav-dropdown-item:hover,
+
+  header.bg-white\/95 .nav-dropdown-item:hover {
+
+    background-color: #F8FAFC !important;
+
+    color: #8C6424 !important;
+
+  }
+
+  header.scrolled .nav-dropdown-item i,
+
+  header.bg-white\/95 .nav-dropdown-item i {
+
+    color: #8C6424 !important;
+
+  }
+
+  header.scrolled #btn-mobile-menu {
+
+    border-color: rgba(226, 232, 240, 0.9) !important;
+
+    background-color: rgba(14, 27, 46, 0.05) !important;
+
+    color: #0E1B2E !important;
+
+  }
+
+
+
+  /* --- BLINDAJE DE ESPACIADO Y JERARQUÃA DEL HEADER (ANTI-APRETADO / ZERO COLLISION) --- */
+
+  @media (max-width: 1023px) {
+
+    header nav ul.header-nav-list,
+
+    header nav ul.hidden.lg\:flex,
+
+    header nav ul[class*="hidden lg:flex"] {
+
+      display: none !important;
+
     }
 
-    header.scrolled {
-      background-color: rgba(255, 255, 255, 0.98) !important;
-      backdrop-filter: blur(12px) !important;
-      -webkit-backdrop-filter: blur(12px) !important;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
-      border-bottom: 1px solid #E2E8F0 !important;
+    .nav-dropdown-menu {
+
+      display: none !important;
+
     }
 
-    header.scrolled nav ul li a,
-    header.scrolled nav ul li button,
-    header.scrolled nav ul a {
-      color: #0E1B2E !important;
+  }
+
+  @media (min-width: 1024px) {
+
+    header nav ul.header-nav-list,
+
+    header nav ul.hidden.lg\:flex,
+
+    header nav ul[class*="hidden lg:flex"] {
+
+      display: flex !important;
+
+      align-items: center !important;
+
+      gap: 1.35rem !important; /* 22px en pantallas lg */
+
+      margin: 0 !important;
+
+      padding: 0 !important;
+
+      list-style: none !important;
+
     }
 
-    header.scrolled nav a[aria-label*="inicio"] span:first-child {
-      color: #0E1B2E !important;
+    header nav ul.header-nav-list > li,
+
+    header nav ul.hidden.lg\:flex > li,
+
+    header nav ul[class*="hidden lg:flex"] > li {
+
+      display: inline-flex !important;
+
+      align-items: center !important;
+
+      flex-shrink: 0 !important;
+
+      margin: 0 !important;
+
     }
 
-    header.scrolled nav a[aria-label*="inicio"] span:last-child {
-      color: var(--color-gold) !important;
+    header nav ul.header-nav-list > li > a,
+
+    header nav ul.hidden.lg\:flex > li > a,
+
+    header nav ul[class*="hidden lg:flex"] > li > a {
+
+      display: inline-flex !important;
+
+      align-items: center !important;
+
+      padding: 0.5rem 0.2rem !important;
+
+      font-size: 12.5px !important;
+
+      font-weight: 600 !important;
+
+      letter-spacing: 0.05em !important;
+
+      text-transform: uppercase !important;
+
+      white-space: nowrap !important;
+
     }
 
-    header.scrolled #btn-mobile-menu {
-      color: #0E1B2E !important;
-      border-color: #CBD5E1 !important;
-      background: rgba(14, 27, 46, 0.05) !important;
+  }
+
+  @media (min-width: 1280px) {
+
+    header nav ul.header-nav-list,
+
+    header nav ul.hidden.lg\:flex,
+
+    header nav ul[class*="hidden lg:flex"] {
+
+      gap: 1.75rem !important; /* 28px generoso en xl */
+
     }
 
-    /* REEMPLAZO */
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 17rem;
-      background: rgba(10, 18, 30, 0.98);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-radius: 14px;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      z-index: 60;
+    header nav ul.header-nav-list > li > a,
+
+    header nav ul.hidden.lg\:flex > li > a,
+
+    header nav ul[class*="hidden lg:flex"] > li > a {
+
+      font-size: 13px !important;
+
     }
 
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown:focus-within .nav-dropdown-menu {
-      display: block;
+  }
+
+  @media (max-width: 1023px) {
+
+    header .btn-header-desktop,
+
+    header button.btn-header-desktop,
+
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+
+    .btn-header-desktop {
+
+      display: none !important;
+
+      visibility: hidden !important;
+
+      width: 0 !important;
+
+      height: 0 !important;
+
+      min-width: 0 !important;
+
+      padding: 0 !important;
+
+      margin: 0 !important;
+
+      border: none !important;
+
+      opacity: 0 !important;
+
+      pointer-events: none !important;
+
     }
 
-    .nav-dropdown:hover .dropdown-chevron {
-      transform: rotate(180deg);
+    header #btn-mobile-menu,
+
+    #btn-mobile-menu {
+
+      display: flex !important;
+
+      visibility: visible !important;
+
+      opacity: 1 !important;
+
     }
 
-    header.header-scrim:not(.scrolled) .nav-dropdown-item {
-      color: rgba(255, 255, 255, 0.92) !important;
-    }
-    header.header-scrim:not(.scrolled) .nav-dropdown-item i {
-      color: #E2C48F !important;
-    }
-    header.header-scrim:not(.scrolled) .nav-dropdown-menu {
-      background: rgba(14, 27, 46, 0.97) !important;
-      backdrop-filter: blur(20px) !important;
-      -webkit-backdrop-filter: blur(20px) !important;
-      border: 1px solid rgba(255, 255, 255, 0.18) !important;
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
-    }
-    }
+    header .header-subbar,
 
-    header.header-scrim:not(.scrolled) .nav-dropdown-item:hover {
-      color: #E2C48F !important;
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    header.scrolled .nav-dropdown-menu {
-      background: #FFFFFF !important;
-      border: 1px solid #E2E8F0 !important;
-      box-shadow: 0 16px 36px rgba(14, 27, 46, 0.12) !important;
-    }
-
-    header.scrolled .nav-dropdown-item {
-      color: #0E1B2E !important;
-    }
-
-    header.scrolled .nav-dropdown-item:hover {
-      color: var(--color-gold) !important;
-      background: #F8FAFC !important;
-    }
-
-    /* Subbarra Móvil */
     .header-subbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.4rem 1rem;
-      background: rgba(10, 18, 30, 0.95);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.8rem;
+
+      display: flex !important;
+
+      visibility: visible !important;
+
+      opacity: 1 !important;
+
     }
 
-    header.scrolled .header-subbar {
-      background: #F8FAFC !important;
-      border-bottom: 1px solid #E2E8F0 !important;
+  }
+
+
+
+  @media (min-width: 1024px) {
+
+    header .btn-header-desktop,
+
+    header button.btn-header-desktop,
+
+    header .btn-open-popup-presupuesto.btn-header-desktop,
+
+    .btn-header-desktop {
+
+      display: inline-flex !important;
+
+      visibility: visible !important;
+
+      opacity: 1 !important;
+
+      pointer-events: auto !important;
+
+      font-size: 12.5px !important;
+
+      padding: 9px 18px !important;
+
+      letter-spacing: 0.04em !important;
+
     }
 
-    header.scrolled .header-subbar .subbar-text {
-      color: #475569 !important;
+    header #btn-mobile-menu,
+
+    #btn-mobile-menu {
+
+      display: none !important;
+
+      visibility: hidden !important;
+
     }
 
-    .subbar-text {
-      color: rgba(255, 255, 255, 0.9);
-      font-weight: 500;
+    header .header-subbar,
+
+    .header-subbar {
+
+      display: none !important;
+
+      visibility: hidden !important;
+
     }
 
-    .btn-header-mobile {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.35rem;
-      padding: 0.35rem 0.85rem;
-      background-color: var(--color-gold);
-      font-size: 0.75rem;
-      font-weight: 700;
-      border-radius: 9999px;
-      border: none;
-      cursor: pointer;
-      color: #FFFFFF !important;
-    }
+  }
+
+
+
+  /* ESTILOS DE LA SUB-BARRA RESPONSIVE (DEBAJO DEL HEADER) */
+
+  .header-subbar {
+
+    width: 100% !important;
+
+    max-height: 54px !important;
+
+    opacity: 1 !important;
+
+    overflow: hidden !important;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+
+    background: rgba(14, 27, 46, 0.94) !important;
+
+    backdrop-filter: blur(12px) !important;
+
+    -webkit-backdrop-filter: blur(12px) !important;
+
+    padding: 6px 16px !important;
+
+    align-items: center !important;
+
+    justify-content: space-between !important;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+
+    transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, padding 0.35s ease, border-color 0.25s ease !important;
+
+  }
+
+
+
+  /* AL HACER SCROLL: SE OCULTA COMPLETAMENTE PARA NO SATURAR EL VIEWPORT MÃ“VIL */
+
+  header.scrolled .header-subbar {
+
+    max-height: 0 !important;
+
+    opacity: 0 !important;
+
+    padding-top: 0 !important;
+
+    padding-bottom: 0 !important;
+
+    border-top-color: transparent !important;
+
+    border-bottom: none !important;
+
+    box-shadow: none !important;
+
+    pointer-events: none !important;
+
+    visibility: hidden !important;
+
+  }
+
+
+
+  .header-subbar .subbar-text {
+
+    font-size: 12px !important;
+
+    color: rgba(255, 255, 255, 0.9) !important;
+
+    font-weight: 500 !important;
+
+  }
+
+  .header-subbar .btn-header-mobile {
 
     /* Botones Gemelos Hero y Banners */
     .btn-gold-hero {
@@ -947,393 +1461,358 @@
     }
   
 
-    /* ==========================================================================
-       CANONICAL HEADER, SUBBAR, DRAWER & MODAL RULES
-       ========================================================================== */
-    .header-scrim {
-      background: rgba(7, 15, 30, 0.88);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    .header-scrim.scrolled {
-      background: rgba(7, 15, 30, 0.96);
-      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-    }
-    .nav-dropdown {
-      position: relative;
-    }
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown:focus-within .nav-dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-    /* REEMPLAZO */
-      position: absolute;
-      top: 100%;
-      left: 0;
-      min-width: 320px;
-      background: #FFFFFF;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.25);
-      border: 1px solid #E2E8F0;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(10px);
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      pointer-events: none;
-      z-index: 100;
-    }
-
-
-    }
-
-
-
-
-      background: rgba(14, 27, 46, 0.97) !important;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.18) !important;
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
-    }
-    header.header-scrim:not(.scrolled) .nav-dropdown-item {
-      color: rgba(255, 255, 255, 0.92) !important;
-      text-shadow: none !important;
-    }
-    header.header-scrim:not(.scrolled) .nav-dropdown-item:hover {
-      background-color: rgba(255, 255, 255, 0.1) !important;
-      color: #E2C48F !important;
-    }
-    header.header-scrim:not(.scrolled) .nav-dropdown-item i {
-      color: #E2C48F !important;
-    }
-    header.scrolled .nav-dropdown-menu {
-      background: rgba(255, 255, 255, 0.98) !important;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(226, 232, 240, 0.95) !important;
-      box-shadow: 0 20px 45px rgba(14, 27, 46, 0.12) !important;
-    }
-    header.scrolled .nav-dropdown-item {
-      color: #0E1B2E !important;
-      text-shadow: none !important;
-    }
-    header.scrolled .nav-dropdown-item:hover {
-      background-color: #F8FAFC !important;
-      color: #8C6424 !important;
-    }
-    header.scrolled .nav-dropdown-item-active {
-      color: #8C6424 !important;
-    }
-    }
-
-      color: #8C6424 !important;
-    }
-    }
-    }
-    .header-subbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 6px 16px;
-      background: rgba(14, 27, 46, 0.95);
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .btn-gold-hero {
-      background: linear-gradient(135deg, #C5A059 0%, #A87E34 100%);
-      color: #070F1E;
-      font-weight: 700;
-      border-radius: 9999px;
-      padding: 10px 22px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.25s ease;
-      box-shadow: 0 4px 14px rgba(168, 126, 52, 0.35);
-    }
-    .btn-gold-hero:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(168, 126, 52, 0.45);
-      filter: brightness(1.05);
-    }
-    .btn-whatsapp-hero {
-      background-color: #1B9958;
-      color: #E2C48F !important;
-      font-weight: 700;
-      border-radius: 9999px;
-      padding: 10px 22px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.25s ease;
-      height: 46px;
-    }
-    .btn-whatsapp-hero:hover {
-      background-color: #15803D;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(27, 153, 88, 0.35);
-    }
-    .btn-header-mobile {
-      background: linear-gradient(135deg, #C5A059 0%, #A87E34 100%);
-      color: #070F1E;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 5px 12px;
-      border-radius: 9999px;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-    }
-    #mobile-menu-drawer.is-active {
-      opacity: 1 !important;
-      pointer-events: auto !important;
-    }
-    #mobile-menu-drawer.is-active nav {
-      transform: translateX(0px) !important;
-    }
-    #modal-presupuesto-overlay {
-      position: fixed;
-      inset: 0px;
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-      background-color: rgba(7, 15, 30, 0.75);
-      backdrop-filter: blur(8px);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s, visibility 0.3s;
-    }
-    #modal-presupuesto-overlay.is-active {
-      opacity: 1 !important;
-      pointer-events: auto !important;
-    }
-
-  /* HEADER CANÓNICO */
-.nav-dropdown-item {
-  color: #0E1B2E !important;
-}
-header:not(.scrolled) .nav-dropdown-item {
-  color: #FFFFFF !important;
-}
-header:not(.scrolled) .nav-dropdown-item i {
-  color: #E2C48F !important;
-}
-header:not(.scrolled) .nav-dropdown-menu {
-  background: rgba(14, 27, 46, 0.97) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
-}
-header:not(.scrolled) .nav-dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: #E2C48F !important;
-}
-header.scrolled .nav-dropdown-menu {
-  background: rgba(255, 255, 255, 0.98) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
-  border: 1px solid rgba(226, 232, 240, 0.95) !important;
-  box-shadow: 0 20px 45px rgba(14, 27, 46, 0.12) !important;
-}
-header.scrolled .nav-dropdown-item {
-  color: #0E1B2E !important;
-}
-header.scrolled .nav-dropdown-item:hover {
-  background-color: #F8FAFC !important;
-  color: #8C6424 !important;
-}
-header.scrolled .nav-dropdown-item i {
-  color: #8C6424 !important;
-}
-</style>
+    </style>
 </head>
 <body class="bg-white text-ink antialiased selection:bg-[#E2C48F]/30 selection:text-[#8C6424]">
 
-<header class="header-scrim fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
-    <nav class="flex items-center justify-between h-[68px] lg:h-[76px] transition-all" aria-label="Navegación principal">
-      
-      <!-- Logo -->
-      <a aria-label="Reformas Madrid, volver al inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
+<!-- HEADER -->
+
+<header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-transparent">
+
+  <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
+
+    <nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-4 xl:gap-6">
+
+      <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
+
         <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-white [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">REFORMAS</span>
-        <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-[#E2C48F] [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
+
+        <span class="text-[17px] md:text-[18px] font-semibold tracking-[-0.01em] transition-colors text-teal-light [text-shadow:0_1px_10px_rgba(14,27,46,0.55)]">MADRID</span>
+
       </a>
 
-      <!-- Menú Desktop -->
       <ul class="hidden lg:flex items-center gap-3 xl:gap-6 header-nav-list">
-        
-        <!-- Dropdown Guadalajara -->
+
         <li class="nav-dropdown group relative">
-          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_guadalajara/index.html">
+
+          <a class="nav-dropdown-trigger flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../readdy_captured_complete/index.html">
+
             <span>REFORMAS EN GUADALAJARA</span>
+
             <i class="ri-arrow-down-s-line text-[15px] dropdown-chevron"></i>
+
           </a>
+
           <div class="nav-dropdown-menu">
-            <div class="p-2 space-y-1">
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-integrales-guadalajara.html">
-                <i class="ri-home-4-line text-[16px] shrink-0 text-[#A87E34]"></i>
+
+            <div class="flex flex-col gap-1 p-1">
+
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2.5 text-[13.5px] font-medium rounded-xl transition-all" href="../readdy_captured_complete/index.html#estancias">
+
+                <i class="ri-home-4-line text-[16px] shrink-0"></i>
+
                 <span>Reformas integrales en Guadalajara</span>
+
               </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-cocinas-guadalajara.html">
-                <i class="ri-restaurant-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Reformas de cocinas en Guadalajara</span>
+
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2.5 text-[13.5px] font-medium rounded-xl transition-all" href="../readdy_captured_complete/index.html#oficios">
+
+                <i class="ri-temp-cold-line text-[16px] shrink-0"></i>
+
+                <span>InstalaciÃ³n de aire acondicionado en Guadalajara</span>
+
               </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-banos-guadalajara.html">
-                <i class="ri-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Reformas de baños en Guadalajara</span>
-              </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_guadalajara/reformas-locales-comerciales-guadalajara.html">
-                <i class="ri-store-2-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Reformas de locales comerciales en Guadalajara</span>
-              </a>
+
             </div>
+
           </div>
+
         </li>
 
-        <!-- Dropdown Madrid -->
         <li class="nav-dropdown group relative">
-          <a class="flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/index.html">
+
+          <a class="nav-dropdown-trigger flex items-center gap-1.5 text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/index.html">
+
             <span>REFORMAS EN MADRID</span>
+
             <i class="ri-arrow-down-s-line text-[15px] dropdown-chevron"></i>
+
           </a>
+
           <div class="nav-dropdown-menu">
-            <div class="p-2 space-y-1">
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="../reformas_madrid/index.html">
-                <i class="ri-home-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Reformas integrales en Madrid</span>
-              </a>
+
+            <div class="flex flex-col gap-1 p-1">
+
               <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="reformas-cocinas-madrid.html">
-                <i class="ri-restaurant-line text-[16px] shrink-0 text-[#A87E34]"></i>
+
+                <i class="ri-restaurant-2-line text-[16px] shrink-0"></i>
+
                 <span>Reformas de cocinas en Madrid</span>
+
               </a>
+
               <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="reformas-banos-madrid.html">
-                <i class="ri-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Reformas de baños en Madrid</span>
+
+                <i class="ri-drop-line text-[16px] shrink-0"></i>
+
+                <span>Reformas de baÃ±os en Madrid</span>
+
               </a>
-              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all " href="reformas-locales-comerciales-madrid.html">
-                <i class="ri-store-2-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Reformas de locales en Madrid</span>
+
+              <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="reformas-locales-comerciales-madrid.html">
+
+                <i class="ri-store-2-line text-[16px] shrink-0"></i>
+
+                <span>Reformas de locales comerciales en Madrid</span>
+
               </a>
+
               <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="reformas-oficinas-madrid.html">
-                <i class="ri-building-line text-[16px] shrink-0 text-[#A87E34]"></i>
+
+                <i class="ri-building-line text-[16px] shrink-0"></i>
+
                 <span>Reformas de oficinas en Madrid</span>
+
               </a>
+
               <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="cambio-banera-por-plato-ducha-madrid.html">
-                <i class="ri-contrast-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Cambio de bañera por plato de ducha en Madrid</span>
+
+                <i class="ri-contrast-drop-line text-[16px] shrink-0"></i>
+
+                <span>Cambio de baÃ±era por plato de ducha en Madrid</span>
+
               </a>
+
               <a class="nav-dropdown-item flex items-center gap-3 px-3.5 py-2 text-[13.5px] font-medium rounded-xl transition-all" href="instalacion-aire-acondicionado-madrid.html">
-                <i class="ri-temp-cold-line text-[16px] shrink-0 text-[#A87E34]"></i>
-                <span>Instalación de aire acondicionado en Madrid</span>
+
+                <i class="ri-temp-cold-line text-[16px] shrink-0"></i>
+
+                <span>InstalaciÃ³n de aire acondicionado en Madrid</span>
+
               </a>
+
             </div>
+
           </div>
+
         </li>
 
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
+
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
+
         </li>
+
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/contacto.html">CONTACTO</a>
+
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/contacto.html">CONTACTO</a>
+
         </li>
+
         <li>
-          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-[#E2C48F] py-2" href="../reformas_madrid/blog.html">BLOG</a>
+
+          <a class="text-[12.5px] xl:text-[13px] font-semibold uppercase tracking-wider transition-colors cursor-pointer whitespace-nowrap text-white/90 hover:text-teal-light py-2" href="../reformas_madrid/blog.html">BLOG</a>
+
         </li>
+
       </ul>
 
-      <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3">
+
         <button type="button" class="btn-open-popup-presupuesto btn-header-desktop btn-gold bg-teal hidden lg:inline-flex items-center gap-2 rounded-md px-3.5 py-2 xl:px-5 xl:py-2.5 text-[11.5px] xl:text-[13px] font-bold uppercase tracking-wider text-white transition-colors cursor-pointer whitespace-nowrap shadow-md" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
+
           <span>PEDIR PRESUPUESTO</span>
+
           <i class="ri-arrow-right-line text-[15px]"></i>
+
         </button>
-        <button id="btn-mobile-menu" aria-label="Abrir menú" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md border cursor-pointer transition-colors border-white/35 bg-white/10 text-white backdrop-blur-sm" type="button">
+
+        <button id="btn-mobile-menu" aria-label="Abrir menÃº" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md border cursor-pointer transition-colors border-white/35 bg-white/10 text-white backdrop-blur-sm" type="button">
+
           <i class="ri-menu-line text-[20px]"></i>
+
         </button>
+
       </div>
+
     </nav>
+
   </div>
 
-  <!-- Sub-barra móvil -->
+
+
+  <!-- SUB-BARRA RESPONSIVE: BOTÃ“N PEDIR PRESUPUESTO DEBAJO DEL HEADER (PEQUEÃ‘O Y DISCRETO) -->
+
   <div class="header-subbar lg:hidden">
-    <span class="text-white text-[12px] font-medium flex items-center gap-1.5">
-      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-      Respuesta rápida en 2h
+
+    <span class="subbar-text flex items-center gap-1.5">
+
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+
+      Visita gratuita 48-72h
+
     </span>
+
     <button type="button" class="btn-open-popup-presupuesto btn-header-mobile" aria-label="Pedir Presupuesto">
+
       <span>Pedir Presupuesto</span>
+
       <i class="ri-arrow-right-line"></i>
+
     </button>
+
   </div>
+
 </header>
 
 <div id="mobile-menu-drawer" class="fixed inset-0 z-[100] transition-all duration-300 pointer-events-none opacity-0" aria-hidden="true">
-  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/60 backdrop-blur-sm"></div>
-  <nav class="absolute top-0 right-0 bottom-0 w-full max-w-[360px] bg-white shadow-2xl flex flex-col transition-transform duration-300 translate-x-full overflow-y-auto" aria-label="Menú móvil">
-    <div class="flex items-center justify-between p-5 border-b border-line bg-surface">
+
+  <div id="mobile-menu-backdrop" class="absolute inset-0 bg-ink/60 backdrop-blur-sm transition-opacity duration-300"></div>
+
+  <nav class="absolute top-0 right-0 bottom-0 w-full max-w-[360px] bg-white shadow-2xl flex flex-col transition-transform duration-300 translate-x-full overflow-y-auto" aria-label="MenÃº mÃ³vil">
+
+    <div class="flex items-center justify-between p-5 border-b border-line bg-ice/40">
+
       <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="../reformas_madrid/index.html">
+
         <span class="text-[17px] font-bold tracking-tight text-ink">REFORMAS</span>
+
         <span class="text-[17px] font-bold tracking-tight text-[#8C6424]">MADRID</span>
+
       </a>
-      <button id="btn-close-mobile-menu" aria-label="Cerrar menú" class="w-9 h-9 rounded-full bg-slate-100 flex items-center justify-center text-ink hover:bg-slate-200" type="button">
-        <i class="ri-close-line text-[20px]"></i>
+
+      <button id="btn-close-mobile-menu" aria-label="Cerrar menÃº" class="w-10 h-10 flex items-center justify-center rounded-md border border-line text-ink hover:text-teal hover:border-teal transition-colors cursor-pointer" type="button">
+
+        <i class="ri-close-line text-[22px]"></i>
+
       </button>
+
     </div>
 
-    <div class="p-6 space-y-5 text-left flex-1 flex flex-col">
-      <div class="border-b border-line/60 pb-4">
-        <p class="text-[11px] font-bold uppercase tracking-wider text-black mb-2">Servicios Madrid</p>
-        <div class="space-y-1">
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../reformas_madrid/index.html">
-            <i class="ri-home-line text-[16px] shrink-0 text-[#A87E34]"></i>
-            <span>Reformas integrales en Madrid</span>
+    <div class="flex-1 px-5 py-6 flex flex-col gap-3">
+
+      <div class="mobile-nav-item border-b border-line/60 pb-3">
+
+        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors cursor-pointer" type="button" aria-expanded="false">
+
+          <span>REFORMAS EN GUADALAJARA</span>
+
+          <i class="ri-arrow-down-s-line text-[18px] transition-transform duration-300"></i>
+
+        </button>
+
+        <div class="mobile-accordion-panel hidden pl-3 pt-2 flex-col gap-2">
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../readdy_captured_complete/index.html#estancias">
+
+            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+
+            <span>Reformas integrales en Guadalajara</span>
+
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">
-            <i class="ri-restaurant-line text-[16px] shrink-0 text-[#A87E34]"></i>
-            <span>Reformas de cocinas en Madrid</span>
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../readdy_captured_complete/index.html#oficios">
+
+            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+
+            <span>InstalaciÃ³n de aire acondicionado en Guadalajara</span>
+
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">
-            <i class="ri-drop-line text-[16px] shrink-0 text-[#A87E34]"></i>
-            <span>Reformas de baños en Madrid</span>
-          </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">
-            <i class="ri-store-2-line text-[16px] shrink-0 text-[#A87E34]"></i>
-            <span>Reformas de locales comerciales</span>
-          </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">
-            <i class="ri-building-line text-[16px] shrink-0 text-[#A87E34]"></i>
-            <span>Reformas de oficinas en Madrid</span>
-          </a>
+
         </div>
+
+      </div>
+
+      <div class="mobile-nav-item border-b border-line/60 pb-3">
+
+        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors cursor-pointer" type="button" aria-expanded="false">
+
+          <span>REFORMAS EN MADRID</span>
+
+          <i class="ri-arrow-down-s-line text-[18px] transition-transform duration-300"></i>
+
+        </button>
+
+        <div class="mobile-accordion-panel hidden pl-3 pt-2 flex-col gap-2">
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">
+
+            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+
+            <span>Reformas de cocinas en Madrid</span>
+
+          </a>
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">
+
+            <i class="ri-drop-line text-[16px] shrink-0"></i>
+
+            <span>Reformas de baÃ±os en Madrid</span>
+
+          </a>
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">
+
+            <i class="ri-store-2-line text-[16px] shrink-0"></i>
+
+            <span>Reformas de locales comerciales en Madrid</span>
+
+          </a>
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">
+
+            <i class="ri-building-line text-[16px] shrink-0"></i>
+
+            <span>Reformas de oficinas en Madrid</span>
+
+          </a>
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">
+
+            <i class="ri-contrast-drop-line text-[16px] shrink-0"></i>
+
+            <span>Cambio de baÃ±era por plato de ducha en Madrid</span>
+
+          </a>
+
+          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="instalacion-aire-acondicionado-madrid.html">
+
+            <i class="ri-temp-cold-line text-[16px] shrink-0"></i>
+
+            <span>InstalaciÃ³n de aire acondicionado en Madrid</span>
+
+          </a>
+
+        </div>
+
       </div>
 
       <div class="border-b border-line/60 pb-3">
+
         <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
+
       </div>
+
       <div class="border-b border-line/60 pb-3">
+
         <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/contacto.html">CONTACTO</a>
+
+      </div>
+
+      <div class="border-b border-line/60 pb-3">
+
+        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/blog.html">BLOG</a>
+
       </div>
 
       <div class="pt-4">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold-hero w-full !text-center justify-center shadow-md cursor-pointer" aria-label="Pedir Presupuesto">
+
+        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal w-full flex items-center justify-center gap-2 rounded-md px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white transition-colors shadow-md text-center cursor-pointer" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
+
           <span>PEDIR PRESUPUESTO</span>
+
           <i class="ri-arrow-right-line text-[16px]"></i>
+
         </button>
+
       </div>
 
-      <div class="mt-auto pt-6 text-center">
-        <a class="inline-flex items-center gap-2 text-[15px] font-bold text-ink hover:text-[#8C6424] transition-colors" href="tel:+34910000000">
-          <i class="ri-phone-line text-[#A87E34]"></i> +34 910 00 00 00
-        </a>
-      </div>
     </div>
+
   </nav>
+
 </div>
+
 
 <main>
 
@@ -2372,6 +2851,48 @@ header.scrolled .nav-dropdown-item i {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // --- DESKTOP NAV DROPDOWN CLICK & OUTSIDE CLICK ENGINE ---
+
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown => {
+
+    const trigger = dropdown.querySelector('.nav-dropdown-trigger');
+
+    if (trigger) {
+
+      trigger.addEventListener('click', function(e) {
+
+        e.preventDefault();
+
+        if (window.innerWidth < 1024) return;
+
+        const wasOpen = dropdown.classList.contains('is-open');
+
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open'));
+
+        if (!wasOpen) {
+
+          dropdown.classList.add('is-open');
+
+        }
+
+      });
+
+    }
+
+  });
+
+  document.addEventListener('click', function(e) {
+
+    if (!e.target.closest('.nav-dropdown')) {
+
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open'));
+
+    }
+
+  });
+
+
+
   // 1. CALCULADOR INTERACTIVO
   const calcCards = document.querySelectorAll('.calc-card');
   calcCards.forEach(card => {
