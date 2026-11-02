@@ -815,6 +815,90 @@
     transform: translateX(4px);
   }
 
+
+  
+
+
+  /* BLINDAJE BANNER DIRECCIÓN TÉCNICA (FLEXBOX ANTI-DESBORDAMIENTO Y ANTI-COLAPSO) */
+  #fases .fases-banner-direccion,
+  .fases-banner-direccion,
+  .banner-direccion-tecnica,
+  .banner-dt-container {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  @media (max-width: 1023px) {
+    #fases .fases-banner-direccion > div.order-1,
+    .fases-banner-direccion > div.order-1,
+    .banner-direccion-tecnica > div.order-1,
+    .banner-dt-container > div.order-1,
+    .banner-dt-img,
+    .jefe-obra-img-box {
+      width: 100% !important;
+      max-height: 280px !important;
+      min-height: 220px !important;
+      overflow: hidden !important;
+    }
+    #fases .fases-banner-direccion img.jefe-obra-img,
+    .fases-banner-direccion img.jefe-obra-img,
+    .banner-direccion-tecnica img.jefe-obra-img,
+    .banner-dt-container img.jefe-obra-img,
+    .banner-dt-img img {
+      width: 100% !important;
+      height: 280px !important;
+      object-fit: cover !important;
+      object-position: center 15% !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    #fases .fases-banner-direccion,
+    .fases-banner-direccion,
+    .banner-direccion-tecnica,
+    .banner-dt-container {
+      flex-direction: row !important;
+      align-items: stretch !important;
+    }
+    #fases .fases-banner-direccion > div:first-child,
+    .fases-banner-direccion > div:first-child,
+    .banner-direccion-tecnica > div:first-child,
+    .banner-dt-container > div:first-child,
+    #fases .fases-banner-text,
+    .fases-banner-text,
+    .banner-dt-text {
+      flex: 1 1 auto !important;
+      width: calc(100% - 350px) !important;
+      min-width: 0 !important;
+    }
+    #fases .fases-banner-direccion > div:last-child,
+    .fases-banner-direccion > div:last-child,
+    .banner-direccion-tecnica > div:last-child,
+    .banner-dt-container > div:last-child,
+    .banner-dt-img {
+      width: 350px !important;
+      max-width: 380px !important;
+      flex-shrink: 0 !important;
+    }
+    .jefe-obra-img-box {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 260px !important;
+      overflow: hidden !important;
+    }
+    #fases .fases-banner-direccion img.jefe-obra-img,
+    .fases-banner-direccion img.jefe-obra-img,
+    .banner-direccion-tecnica img.jefe-obra-img,
+    .banner-dt-container img.jefe-obra-img,
+    .banner-dt-img img {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 260px !important;
+      object-fit: cover !important;
+      object-position: center 15% !important;
+    }
+  }
+
 </style>
 <!-- FREITECH TOKEN DESIGN 2026: TIPOGRAFÍA NEGRO PURO, ESCALA ESTRICTA, OVERLAYS Y CTAS DINÁMICOS -->
 <style id="freitech-token-design-2026">
