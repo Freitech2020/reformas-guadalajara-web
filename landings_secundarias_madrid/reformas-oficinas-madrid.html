@@ -467,6 +467,205 @@
 
   
 </style>
+<style id="fases-grid-scoped-css">
+  /* ==============================================================================
+     BLINDAJE SCOPED: SECCIÓN FASES - GRID PANORÁMICO DE 5 PASOS (OPCIÓN 2)
+     Ley 8: Token Design Freitech 2026 | Cero Clics | Oficinas Corporativas Madrid
+     ============================================================================== */
+  #fases-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .fase-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    border: 1px solid rgba(14, 27, 46, 0.09);
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(14, 27, 46, 0.04);
+    overflow: hidden;
+    height: 100%;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  }
+  .fase-card:hover {
+    border-color: rgba(45, 134, 126, 0.45);
+    box-shadow: 0 12px 28px rgba(14, 27, 46, 0.09);
+    transform: translateY(-3px);
+  }
+  .fase-card-media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f5f9;
+    aspect-ratio: 16 / 10;
+  }
+  .fase-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease-out;
+  }
+  .fase-card:hover .fase-card-media img {
+    transform: scale(1.04);
+  }
+  .fase-card-badge-num {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+  }
+  .fase-card-num {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(14, 27, 46, 0.92);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .fase-card-num-gold {
+    background: #A87E34;
+    color: #ffffff;
+  }
+  .fase-card-step-tag {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2D867E;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .fase-card-duration {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 8px;
+    background: rgba(14, 27, 46, 0.85);
+    padding: 4px 10px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 2;
+  }
+  .fase-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+  @media (min-width: 640px) {
+    .fase-card-body {
+      padding: 28px;
+    }
+  }
+  .fase-card-subtitle {
+    font-size: 11.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #2D867E;
+  }
+  .fase-card-title {
+    font-family: var(--font-editorial, Georgia, serif);
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0E1B2E;
+    line-height: 1.25;
+  }
+  @media (min-width: 640px) {
+    .fase-card-title {
+      font-size: 22px;
+    }
+  }
+  .fase-card-desc {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: rgba(14, 27, 46, 0.85);
+    font-weight: 400;
+  }
+  @media (min-width: 640px) {
+    .fase-card-desc {
+      font-size: 16px;
+    }
+  }
+  .fase-card-checklist {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid rgba(14, 27, 46, 0.08);
+    padding-top: 16px;
+  }
+  .fase-card-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #0E1B2E;
+    font-weight: 500;
+  }
+  .fase-card-checklist li i {
+    color: #2D867E;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .fase-card-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(14, 27, 46, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .fase-card-footer-meta {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: rgba(14, 27, 46, 0.7);
+  }
+  .fase-card-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #2D867E;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .fase-card-cta:hover {
+    color: #246B65;
+  }
+  .fase-card-cta i {
+    transition: transform 0.2s ease;
+  }
+  .fase-card-cta:hover i {
+    transform: translateX(4px);
+  }
+</style>
 <style id="freitech-token-design-2026">
   /* --- 3. PÁRRAFOS Y TEXTOS EN COLOR NEGRO (#000000) SOBRE FONDOS CLAROS (CERO GRIS) --- */
   section:not(#inicio):not(#tarifas) p:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
@@ -923,8 +1122,8 @@
 <img alt="Reforma integral de oficina moderna y tecnológica en Paseo de la Castellana Madrid" class="absolute inset-0 h-full w-full object-cover object-center" src="images/oficinas-hero.webp"/>
 <div aria-hidden="true" class="hero-master-scrim"></div>
 <div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div>
-<div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-end px-4 pb-12 pt-[160px] md:px-8 md:pb-20 md:pt-[150px] lg:min-h-[90vh] lg:px-12 lg:pb-24">
-<div class="grid grid-cols-1 items-end gap-10 lg:grid-cols-12 lg:gap-12">
+<div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-center px-4 pt-[110px] pb-14 md:px-8 md:pt-[120px] md:pb-16 lg:min-h-[90vh] lg:px-12 lg:pt-[110px] lg:pb-16">
+<div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12 w-full">
 <div class="lg:col-span-7 flex flex-col items-center text-center md:items-start md:text-left">
 <div style="opacity: 1;">
 <h1 class="font-editorial max-w-[720px] mx-auto md:mx-0 text-[34px] leading-[1.06] tracking-[-0.022em] text-white [text-shadow:0_2px_6px_rgba(14,27,46,0.55),0_4px_32px_rgba(14,27,46,0.7)] sm:text-[44px] md:text-[52px] lg:text-[60px]">
@@ -1182,17 +1381,267 @@
 <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
 <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
 <div>
-<span class="text-[12px] font-bold uppercase tracking-[0.18em] text-teal block mb-2">Metodología Corporativa</span>
+<span class="inline-flex items-center gap-2 rounded-full bg-teal/10 px-3.5 py-1 text-[12px] font-bold uppercase tracking-[0.16em] text-teal mb-3"><i class="ri-route-line text-[14px]"></i> Metodología Corporativa · 5 Fases Sin Parar Operativa</span>
 <h2 class="font-editorial max-w-[760px] text-[30px] leading-[1.1] text-ink md:text-[40px] lg:text-[44px]">
           Cómo transformamos tu sede corporativa en Madrid sin detener la operativa.
         </h2>
 </div>
-<span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">
-        Cinco fases técnicas desde la consultoría inicial de space planning hasta la entrega llave en mano.
+<p class="text-[16px] md:text-[18px] leading-[1.6] text-ink/80 md:max-w-[340px]">
+        Planificación por fases sectorizadas o en horario no laborable. Cada hito se valida formalmente con dirección facultativa antes de avanzar.
+</p>
       </span>
 </div>
-<!-- FASES MOBILE (ACCORDION CARDS) -->
-<div class="block lg:hidden mt-8 space-y-4">
+<!-- GRID PANORÁMICO DE 5 PASOS AUTÓNOMOS (OPCIÓN 2: CERO CLICS, MÁXIMA CLARIDAD Y CONVERSIÓN CORPORATIVA) -->
+<div class="mt-10" id="fases-grid">
+
+  <!-- FILA SUPERIOR: FASE DE CONSULTORÍA Y PROYECTO (PASOS 01, 02, 03) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- PASO 01: MEDICIÓN & SPACE PLANNING -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/oficinas-fase-01-medicion.webp" alt="Toma de datos y space planning para reforma de oficinas en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">01</span>
+            <span class="fase-card-step-tag">Toma de Datos</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-time-line text-[12px] text-teal-light"></i> 48 h
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 01 · Consultoría Espacial</span>
+            <h3 class="fase-card-title">
+              Estudio preliminar y análisis de necesidades
+            </h3>
+            <p class="fase-card-desc">
+              Analizamos la densidad de puestos, flujos de trabajo, requerimientos de salas de videoconferencia, puntos de red Cat 6A y trazados de climatización en falso techo para maximizar la productividad.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Levantamiento milimétrico de planta con distanciómetro láser y termografía</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Análisis de luz natural y cálculo de puestos según normativa de prevención (PRL)</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Comprobación de capacidad de falso suelo técnico y bandejas portacables</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Estudio inicial en 48 h</span>
+            <a href="#contacto" class="fase-card-cta">
+              Solicitar visita <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PASO 02: PLANIMETRÍA 3D & DISTRIBUCIÓN -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/oficinas-fase-02-diseno3d.webp" alt="Planimetría 3D y distribución modular de oficinas en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">02</span>
+            <span class="fase-card-step-tag">Plano 3D</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-time-line text-[12px] text-teal-light"></i> 3–5 días
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 02 · Proyecto Arquitectónico</span>
+            <h3 class="fase-card-title">
+              Open space flexible, acústica y salas de juntas
+            </h3>
+            <p class="fase-card-desc">
+              Modelado 3D fotorrealista de la sede con particiones acristaladas, áreas de descanso (coffee corner), cabinas fonoabsorbentes y zonas de concentración individual con simulación lumínica.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Zonificación acústica diferenciada (áreas colaborativas vs. silencio)</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Estudio luminotécnico para cumplimiento de 500 lux en plano de trabajo</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Muestrarios de acabados fonoabsorbentes Clase A y moquetas modulares</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Propuesta en 3 a 5 días</span>
+            <a href="#proyectos" class="fase-card-cta">
+              Ver proyectos 3D <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PASO 03: CONTRATO Y PLAN DE IMPLANTACIÓN -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/oficinas-fase-03-contrato-gantt.jpg" onerror="this.onerror=null; this.src='https://pikaso.cdnpk.net/private/production/5910267574/render.png?token=exp=1793923200~hmac=cdbb17896c70e13cb8d075144daeffeff76efc9def3e61232556e12774a8084a';" alt="Cronograma Gantt cerrado y contrato para reforma de oficinas en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">03</span>
+            <span class="fase-card-step-tag">Contrato</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-shield-check-line text-[12px] text-teal-light"></i> Precio Cerrado
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 03 · Plan de Implantación</span>
+            <h3 class="fase-card-title">
+              Cronograma Gantt cerrado y fases sectorizadas
+            </h3>
+            <p class="fase-card-desc">
+              Planificamos la intervención por plantas, sectores o fines de semana si tu empresa continúa operando, con precios unitarios cerrados por metro cuadrado y penalización estricta por día de retraso.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Precio cerrado por m² sin extras imprevistos ni desviaciones</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Plan de seguridad y salud visado con coordinación de actividades (CAE)</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Calendario de hitos semanales y turnos especiales sin interferir tu trabajo</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Firma vinculante en 24 h</span>
+            <a href="#tarifas" class="fase-card-cta">
+              Calcular presupuesto <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- FILA INFERIOR: FASE DE EJECUCIÓN Y RECEPCIÓN (PASOS 04 Y 05 - CENTRADAS EN DESKTOP) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-[960px] mx-auto w-full">
+
+    <!-- PASO 04: EJECUCIÓN TÉCNICA E INSTALACIONES -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/oficinas-fase-04-ejecucion.webp" alt="Instalación de suelo técnico y mamparas de vidrio acústicas en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num">04</span>
+            <span class="fase-card-step-tag">Ejecución</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-time-line text-[12px] text-teal-light"></i> 2–5 semanas
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 04 · Obra Técnica Modular</span>
+            <h3 class="fase-card-title">
+              Suelo técnico, mamparas fónicas y redes Cat 6A
+            </h3>
+            <p class="fase-card-desc">
+              Montaje de pavimento elevado 60x60 registrable, mamparas dobles de vidrio con aislamiento de 42 dB, cableado estructurado certificado y climatización VRF zonificada bajo dirección facultativa diaria.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Certificación punto a punto de cableado de datos con analizador Fluke Networks</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Mamparas divisorias modulares desmontables con perfilería oculta</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Sectorización antipolvo y trabajos ruidosos concentrados fuera de jornada</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Supervisión diaria colegiada</span>
+            <a href="#contacto" class="fase-card-cta">
+              Consultar ejecución <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PASO 05: RECEPCIÓN Y PUESTA EN MARCHA -->
+    <article class="fase-card group">
+      <div>
+        <div class="fase-card-media">
+          <img src="images/oficinas-sala-juntas.webp" alt="Recepción técnica y puesta en marcha de oficinas en Madrid" loading="lazy" />
+          <div class="fase-card-badge-num">
+            <span class="fase-card-num fase-card-num-gold">05</span>
+            <span class="fase-card-step-tag">Entrega</span>
+          </div>
+          <div class="fase-card-duration">
+            <i class="ri-shield-check-line text-[12px] text-teal-light"></i> 2 Años Garantía
+          </div>
+        </div>
+        <div class="fase-card-body">
+          <div>
+            <span class="fase-card-subtitle">Fase 05 · Entrega Llave en Mano</span>
+            <h3 class="fase-card-title">
+              Puesta en marcha, esquemas CIE/RITE y garantía
+            </h3>
+            <p class="fase-card-desc">
+              Entregamos la sede con todos los puestos de trabajo conectados, racks testeados y etiquetados, equilibrado de climatización, boletines oficiales visados y limpieza técnica exhaustiva para incorporación inmediata.
+            </p>
+            <ul class="fase-card-checklist">
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Entrega de Libro del Edificio, boletín CIE eléctrico y legalización RITE</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Pruebas de sistemas de protección contra incendios y control de accesos</span>
+              </li>
+              <li>
+                <i class="ri-checkbox-circle-fill"></i>
+                <span>Limpieza técnica integral de moquetas, mamparas y 2 años de garantía por escrito</span>
+              </li>
+            </ul>
+          </div>
+          <div class="fase-card-footer">
+            <span class="fase-card-footer-meta">Recepción en 48 h</span>
+            <a href="#contacto" class="fase-card-cta">
+              Pedir presupuesto <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</div>
+<!-- END_NEW_FASES_GRID -->
+<!-- OLD_MOBILE_START
 <div class="overflow-hidden rounded-xl border border-line bg-white p-5 shadow-sm">
 <div class="flex items-center justify-between">
 <span class="text-[11px] font-bold uppercase tracking-wider text-teal">Fase 01</span>
@@ -1234,8 +1683,8 @@
 <p class="mt-2 text-[13.5px] leading-[1.6] text-ink/80">Entregamos la sede con los puestos ergonómicos conectados, racks etiquetados, climatización equilibrada y limpieza exhaustiva lista para la incorporación del equipo.</p>
 </div>
 </div>
-<!-- FASES DESKTOP MASTER VIEW -->
-<div class="hidden lg:block mt-10">
+OLD_MOBILE_END -->
+<div class="hidden" style="display: none !important;" id="old-fases-legacy-container">
 <div class="overflow-hidden rounded-[20px] border border-line bg-white shadow-sm">
 <div class="grid grid-cols-1 lg:grid-cols-2">
 <div class="reveal flex flex-col justify-between p-6 md:p-9 order-2 lg:order-1">
@@ -1352,7 +1801,7 @@
           De espacios compartimentados a sedes modernas y colaborativas.
         </h2>
 </div>
-<span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">
+<p class="text-[16px] md:text-[18px] leading-[1.6] text-ink/80 md:max-w-[340px]">
 </span>
 </div>
 <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -1443,8 +1892,8 @@
 </div>
 </section>
 
-<!-- SECCIÓN ESPECIALIDADES Y OFICIOS EN ACORDEÓN -->
-<section class="w-full border-t border-line bg-white py-16 md:py-24" id="oficios">
+<!-- SECCIÓN ESPECIALIDADES Y OFICIOS EN ACORDEÓN (ELIMINADA) -->
+<section class="hidden" id="oficios" style="display: none !important;" aria-hidden="true">
 <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
 <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
 <div>
@@ -2196,7 +2645,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  if (faseTabs.length > 0) {
+  if (faseTabs.length > 0 && !document.getElementById('fases-grid')) {
     faseTabs.forEach((tab, index) => {
       tab.addEventListener('click', () => activateFaseTab(index));
     });
