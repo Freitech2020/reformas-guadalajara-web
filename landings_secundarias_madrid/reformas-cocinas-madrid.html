@@ -518,6 +518,45 @@ font-weight: 700 !important; line-height: 1 !important; flex-shrink: 0 !importan
 
   }
 
+  /* --- BLINDAJE GEOMETRICO DE TARJETAS DE ACABADOS DE COCINA (ALTURA Y ASPECT-RATIO IDENTICOS) --- */
+  #oficios .grid {
+    align-items: stretch !important;
+  }
+  #oficios .card-acabado {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    justify-content: flex-start !important;
+  }
+  #oficios .card-acabado-media {
+    position: relative !important;
+    width: 100% !important;
+    height: 210px !important;
+    max-height: 210px !important;
+    aspect-ratio: 16 / 10 !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+    background-color: #f8fafc !important;
+    flex-shrink: 0 !important;
+  }
+  #oficios .card-acabado-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+  }
+  #oficios .card-acabado-body {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex: 1 !important;
+    padding-top: 18px !important;
+  }
+  #oficios .card-acabado-desc {
+    min-height: 74px !important;
+  }
+
   .grid-cols-5, #fases-desktop-tabs { display: grid !important; grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
 
   @media (min-width: 1024px) {
@@ -3683,9 +3722,9 @@ letter-spacing: 0.03em !important;
 
 <div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div>
 
-<div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-end px-4 pb-12 pt-[160px] md:px-8 md:pb-20 md:pt-[150px] lg:min-h-[90vh] lg:px-12 lg:pb-24">
+<div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-center px-4 pt-[110px] pb-14 md:px-8 md:pt-[120px] md:pb-16 lg:min-h-[90vh] lg:px-12 lg:pt-[110px] lg:pb-16">
 
-<div class="grid grid-cols-1 items-end gap-10 lg:grid-cols-12 lg:gap-12">
+<div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12 w-full">
 
 <div class="lg:col-span-7 flex flex-col items-center text-center md:items-start md:text-left">
 
@@ -4545,17 +4584,17 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
       
       <!-- Tarjeta 1: Muebles y Despensa -->
       <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
-          <img src="images/cocinas-lineal-minimalista.webp" alt="Mobiliario de cocina a medida con frentes limpios y despensa de suelo a techo en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        <div class="card-acabado-media relative w-full h-[210px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-muebles-despensa.webp" onerror="this.onerror=null; this.src='images/cocinas-muebles-despensa.jpg';" alt="Mobiliario de cocina a medida con frentes limpios y despensa de suelo a techo en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+        <div class="card-acabado-body pt-5 pb-1 flex-1 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Mobiliario a Medida</span>
               <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-check-double-line text-[#A87E34]"></i> Gran Capacidad</span>
             </div>
             <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Muebles y Despensa de Suelo a Techo</h3>
-            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+            <p class="card-acabado-desc text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
               Aprovechamos cada centímetro de altura con cajones de extracción total y frentes continuos sin tiradores para un orden impecable.
             </p>
           </div>
@@ -4568,17 +4607,17 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
 
       <!-- Tarjeta 2: Encimeras Porcelánicas -->
       <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
-          <img src="images/cocinas-isla-calacatta.webp" alt="Encimera porcelánica con fregadero integrado e isla en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        <div class="card-acabado-media relative w-full h-[210px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-encimeras-porcelanico.webp" onerror="this.onerror=null; this.src='images/cocinas-encimeras-porcelanico.jpg';" alt="Encimera porcelánica con fregadero integrado e isla en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+        <div class="card-acabado-body pt-5 pb-1 flex-1 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Superficies Nobles</span>
               <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-fire-line text-[#A87E34]"></i> Calor y Rayaduras</span>
             </div>
             <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Encimeras Porcelánicas e Islas</h3>
-            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+            <p class="card-acabado-desc text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
               Piedras porcelánicas y cuarzo de marcas líderes (Dekton, Silestone). Corta y cocina directamente sobre la superficie sin riesgo de manchas ni marcas.
             </p>
           </div>
@@ -4591,17 +4630,17 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
 
       <!-- Tarjeta 3: Iluminación Integrada -->
       <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
-          <img src="images/cocinas-en-l-peninsula.webp" alt="Iluminación LED continua bajo muebles de palillería en cocina de Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        <div class="card-acabado-media relative w-full h-[210px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-iluminacion-led.webp" onerror="this.onerror=null; this.src='images/cocinas-iluminacion-led.jpg';" alt="Iluminación LED continua bajo muebles de palillería en cocina de Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+        <div class="card-acabado-body pt-5 pb-1 flex-1 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Luz & Confort</span>
               <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-lightbulb-line text-[#A87E34]"></i> LED 3000K</span>
             </div>
             <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Iluminación LED y Enchufes Ocultos</h3>
-            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+            <p class="card-acabado-desc text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
               Luz continua antideslumbrante bajo los armarios para cocinar cómodamente y tomas eléctricas discretas colocadas exactamente donde las necesitas.
             </p>
           </div>
@@ -4614,17 +4653,17 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
 
       <!-- Tarjeta 4: Cerramientos de Cristal -->
       <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
-          <img src="images/cocinas-abierta-cerramiento.webp" alt="Cerramiento de forja y cristal para cocina abierta al salón en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        <div class="card-acabado-media relative w-full h-[210px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-cerramientos-cristal.webp" onerror="this.onerror=null; this.src='images/cocinas-cerramientos-cristal.jpg';" alt="Cerramiento de forja y cristal para cocina abierta al salón en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+        <div class="card-acabado-body pt-5 pb-1 flex-1 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-3">
               <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Espacios Abiertos</span>
               <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-sun-line text-[#A87E34]"></i> Máxima Luz</span>
             </div>
             <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Cerramientos de Cristal y Forja</h3>
-            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+            <p class="card-acabado-desc text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
               Une la cocina visualmente con el salón para multiplicar la luz natural de tu hogar, manteniendo los ruidos y los humos totalmente aislados cuando cocines.
             </p>
           </div>
