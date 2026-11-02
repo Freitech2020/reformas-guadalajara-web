@@ -901,6 +901,95 @@
     }
   }
 
+
+  /* ==========================================================================
+     ESTANCIAS SELECTOR & ROTATOR ENGINE (DESIGN TOKENS FREITECH 2026)
+     Matches golden warm active state from screenshot media_1793642007686_5bbbaabe.png
+     ========================================================================== */
+  #estancias-desktop-img {
+    transition: opacity 0.35s ease-in-out, transform 0.5s ease-out !important;
+  }
+  #estancias-list .estancia-item {
+    border: 1px solid #E2E8F0 !important;
+    background-color: #FFFFFF !important;
+    border-radius: 14px !important;
+    transition: background-color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, transform 0.25s ease !important;
+    overflow: hidden !important;
+    cursor: pointer;
+  }
+  #estancias-list .estancia-item:hover:not(.is-active) {
+    border-color: #CBD5E1 !important;
+    background-color: #FBFBFC !important;
+  }
+  #estancias-list .estancia-item.is-active {
+    border-color: #C8A261 !important;
+    background-color: #FAF5ED !important;
+    box-shadow: 0 4px 18px rgba(168, 126, 52, 0.14) !important;
+  }
+  #estancias-list .estancia-header-btn {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 1.05rem 1.15rem !important;
+    cursor: pointer;
+    display: flex !important;
+    width: 100% !important;
+    align-items: center !important;
+    gap: 1rem !important;
+    text-align: left !important;
+  }
+  #estancias-list .estancia-item .estancia-arrow {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 9999px !important;
+    border: 1px solid #CBD5E1 !important;
+    background-color: transparent !important;
+    color: #64748B !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    flex-shrink: 0 !important;
+  }
+  #estancias-list .estancia-item.is-active .estancia-arrow {
+    background-color: #A87E34 !important;
+    border-color: #A87E34 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 2px 6px rgba(168, 126, 52, 0.3) !important;
+  }
+  #estancias-list .estancia-item .estancia-item-title {
+    color: #1E293B !important;
+    font-weight: 700 !important;
+    transition: color 0.3s ease !important;
+  }
+  #estancias-list .estancia-item.is-active .estancia-item-title {
+    color: #A87E34 !important;
+  }
+  #estancias-list .estancia-item .estancia-item-sub {
+    color: #64748B !important;
+    transition: color 0.3s ease !important;
+  }
+  #estancias-list .estancia-item.is-active .estancia-item-sub {
+    color: #6B7280 !important;
+  }
+  /* Dual responsive arrows: Desktop always points left to image (Ri-arrow-left-line) */
+  @media (min-width: 1024px) {
+    #estancias-list .estancia-arrow .arrow-desktop { display: inline-flex !important; }
+    #estancias-list .estancia-arrow .arrow-mobile { display: none !important; }
+  }
+  /* Mobile: Arrow down toggles rotation on active */
+  @media (max-width: 1023px) {
+    #estancias-list .estancia-arrow .arrow-desktop { display: none !important; }
+    #estancias-list .estancia-arrow .arrow-mobile {
+      display: inline-flex !important;
+      transition: transform 0.3s ease !important;
+    }
+    #estancias-list .estancia-item.is-active .estancia-arrow .arrow-mobile {
+      transform: rotate(180deg) !important;
+    }
+  }
+
 </style>
 </head>
 <body>
@@ -1313,7 +1402,7 @@
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
-            <img alt="Office comedor y cocina corporativa en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/oficinas_comedor_office_coffee_break.png"/>
+            <img alt="Office comedor y cocina corporativa en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-office-comedor.webp"/>
             <p class="text-[14px] text-muted leading-relaxed">
               Espacio social y comedor para el equipo: bancadas corridas, isla de café con tomas empotradas, electrodomésticos integrados silenciosos y suelo continuo vinílico de fácil limpieza.
             </p>
@@ -1336,7 +1425,7 @@
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
-            <img alt="Recepción corporativa de oficinas en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/oficinas_recepcion_corporativa_madrid.png"/>
+            <img alt="Recepción corporativa de oficinas en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-recepcion-corporativa.webp"/>
             <p class="text-[14px] text-muted leading-relaxed">
               La primera impresión de tu marca: mostrador a medida en Solid Surface con iluminación rasante, pared de fondo retroiluminada con logotipo fresado y tornos de paso rápido con tarjeta RFID.
             </p>
@@ -1654,10 +1743,10 @@
       <div class="h-full">
         <article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white">
           <div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
-            <img alt="Oficina obsoleta antes de la reforma en Paseo de la Castellana" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/oficinas_castellana_antes_coherente.png"/>
+            <img alt="Oficina obsoleta antes de la reforma en Paseo de la Castellana" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/oficinas-castellana-antes.webp"/>
             <span class="absolute top-3 right-3 z-10 rounded-md bg-black/70 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Antes</span>
             <div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
-              <img alt="Sede corporativa tecnológica moderna en Paseo de la Castellana" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/oficinas_castellana_despues_coherente.png"/>
+              <img alt="Sede corporativa tecnológica moderna en Paseo de la Castellana" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/oficinas-castellana-despues.webp"/>
               <span class="absolute top-3 left-3 z-10 rounded-md bg-teal px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Después</span>
             </div>
             <div class="ba-divider" style="left: 50%;"></div>
@@ -2134,7 +2223,7 @@ window.__DATA_OFICINAS__ = {
       badge: "Tipología 05 · Las Tablas / Alcobendas",
       time: "Plazo: 12 Días",
       desc: "Espacio social y comedor para el equipo: bancadas corridas, isla de café con tomas empotradas, electrodomésticos integrados silenciosos y suelo continuo vinílico de fácil limpieza.",
-      image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/oficinas_comedor_office_coffee_break.png",
+      image: "images/oficinas-office-comedor.webp",
       protocols: ["Suelo vinílico continuo", "Cocina integrada", "Isla de café"]
     },
     {
@@ -2142,97 +2231,159 @@ window.__DATA_OFICINAS__ = {
       badge: "Tipología 06 · Campo de las Naciones",
       time: "Plazo: 16 Días",
       desc: "La primera impresión de tu marca: mostrador a medida en Solid Surface con iluminación rasante, pared de fondo retroiluminada con logotipo fresado y tornos de paso rápido con tarjeta RFID.",
-      image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/oficinas_recepcion_corporativa_madrid.png",
+      image: "images/oficinas-recepcion-corporativa.webp",
       protocols: ["Mostrador Solid Surface", "Rótulo retroiluminado", "Control RFID"]
     }
   ]
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-  // 1. ESTANCIAS ENGINE
+  // 1. ESTANCIAS ENGINE CON ROTACIÓN AUTOMÁTICA Y RESPONSIVE
+  const estanciasSection = document.getElementById('estancias');
   const estanciasList = document.getElementById('estancias-list');
   const desktopImg = document.getElementById('estancias-desktop-img');
   const desktopBadge = document.getElementById('estancias-desktop-badge');
   const desktopTime = document.getElementById('estancias-desktop-time');
   const desktopTitle = document.getElementById('estancias-desktop-title');
   const desktopDesc = document.getElementById('estancias-desktop-desc');
+  const desktopProtocols = document.getElementById('estancias-desktop-protocols');
 
-  if (estanciasList) {
+  if (estanciasList && window.__DATA_OFICINAS__ && window.__DATA_OFICINAS__.estancias) {
     const items = estanciasList.querySelectorAll('.estancia-item');
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+    const ROTATION_INTERVAL = 3800; // 3.8s para apreciación óptima y fluida
+    let isPaused = false;
+
+    function activateEstancia(idx, isUserClick = false) {
+      if (idx < 0 || idx >= items.length) return;
+      currentIndex = idx;
+      const data = window.__DATA_OFICINAS__.estancias[idx];
+      if (!data) return;
+
+      // Actualizar clases de cada item en la lista
+      items.forEach((itemEl, i) => {
+        const btn = itemEl.querySelector('.estancia-header-btn');
+        const panel = itemEl.querySelector('.estancia-mobile-panel');
+
+        if (i === idx) {
+          itemEl.classList.add('is-active');
+          if (btn) btn.setAttribute('aria-expanded', 'true');
+          if (panel) {
+            panel.classList.add('is-open');
+            panel.style.display = 'block';
+          }
+        } else {
+          itemEl.classList.remove('is-active');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+          if (panel) {
+            panel.classList.remove('is-open');
+            panel.style.display = 'none';
+          }
+        }
+      });
+
+      // Transición suave del visor de escritorio
+      if (desktopImg) {
+        desktopImg.style.opacity = '0.35';
+        setTimeout(() => {
+          desktopImg.src = data.image;
+          desktopImg.style.opacity = '1';
+        }, 120);
+      }
+      if (desktopBadge) desktopBadge.textContent = data.badge;
+      if (desktopTitle) desktopTitle.textContent = data.title;
+      if (desktopDesc) desktopDesc.textContent = data.desc;
+      if (desktopTime && data.time) {
+        desktopTime.innerHTML = '<i class="ri-time-line text-teal-light mr-1"></i> ' + data.time;
+      }
+      if (desktopProtocols && data.protocols && Array.isArray(data.protocols)) {
+        desktopProtocols.innerHTML = data.protocols.map(p => `<span><i class="ri-check-line text-teal-light mr-1"></i>${p}</span>`).join('');
+      }
+
+      if (isUserClick) {
+        resetAutoPlay();
+      }
+    }
+
+    function nextEstancia() {
+      if (isPaused) return;
+      const nextIdx = (currentIndex + 1) % items.length;
+      activateEstancia(nextIdx, false);
+    }
+
+    function startAutoPlay() {
+      if (autoPlayTimer) clearInterval(autoPlayTimer);
+      autoPlayTimer = setInterval(nextEstancia, ROTATION_INTERVAL);
+    }
+
+    function pauseAutoPlay() {
+      isPaused = true;
+      if (autoPlayTimer) {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = null;
+      }
+    }
+
+    function resumeAutoPlay() {
+      isPaused = false;
+      startAutoPlay();
+    }
+
+    function resetAutoPlay() {
+      pauseAutoPlay();
+      isPaused = false;
+      startAutoPlay();
+    }
+
+    // Click en selectores
     items.forEach((itemEl, idx) => {
       const btn = itemEl.querySelector('.estancia-header-btn');
       if (btn) {
-        btn.addEventListener('click', function() {
-          const item = window.__DATA_OFICINAS__.estancias ? window.__DATA_OFICINAS__.estancias[idx] : null;
-          if (!item) return;
-          const isCurrentlyOpen = btn.getAttribute('aria-expanded') === 'true';
-          if (isCurrentlyOpen && window.innerWidth < 1024) {
-            btn.setAttribute('aria-expanded', 'false');
-            btn.className = 'estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-transparent hover:bg-ice/60';
-            const otherTitle = btn.querySelector('.estancia-item-title');
-            const otherArrow = itemEl.querySelector('.estancia-arrow');
-            const otherPanel = itemEl.querySelector('.estancia-mobile-panel');
-            if (otherTitle) otherTitle.className = 'estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink';
-            if (otherArrow) otherArrow.className = 'estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-ink bg-transparent transition-all duration-300';
-            if (otherPanel) {
-              otherPanel.classList.remove('is-open');
-              otherPanel.style.display = 'none';
-            }
-            return;
-          }
-
-          items.forEach((otherEl, otherIdx) => {
-            const otherBtn = otherEl.querySelector('.estancia-header-btn');
-            const otherPanel = otherEl.querySelector('.estancia-mobile-panel');
-            const otherArrow = otherEl.querySelector('.estancia-arrow');
-            const otherTitle = otherBtn ? otherBtn.querySelector('.estancia-item-title') : null;
-
-            if (otherIdx === idx) {
-              if (otherBtn) {
-                otherBtn.setAttribute('aria-expanded', 'true');
-                otherBtn.className = 'estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-ice shadow-sm';
-              }
-              if (otherTitle) otherTitle.className = 'estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-teal';
-              if (otherArrow) {
-                otherArrow.className = 'estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-teal bg-teal text-white transition-all duration-300 rotate-180 lg:rotate-0';
-              }
-              if (otherPanel) {
-                otherPanel.classList.add('is-open');
-                otherPanel.style.display = 'block';
-              }
-            } else {
-              if (otherBtn) {
-                otherBtn.setAttribute('aria-expanded', 'false');
-                otherBtn.className = 'estancia-header-btn flex w-full items-center gap-4 py-4 px-3 sm:px-4 text-left transition-colors cursor-pointer rounded-xl bg-transparent hover:bg-ice/60';
-              }
-              if (otherTitle) otherTitle.className = 'estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink';
-              if (otherArrow) {
-                otherArrow.className = 'estancia-arrow flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line text-ink bg-transparent transition-all duration-300';
-              }
-              if (otherPanel) {
-                otherPanel.classList.remove('is-open');
-                otherPanel.style.display = 'none';
-              }
-            }
-          });
-
-          if (desktopImg) {
-            desktopImg.style.opacity = '0.3';
-            setTimeout(() => {
-              desktopImg.src = item.image;
-              desktopImg.style.opacity = '1';
-            }, 80);
-          }
-          if (desktopBadge) desktopBadge.textContent = item.badge;
-          if (desktopTitle) desktopTitle.textContent = item.title;
-          if (desktopDesc) desktopDesc.textContent = item.desc;
-          if (desktopTime && item.time) desktopTime.innerHTML = '<i class="ri-time-line text-teal-light mr-1"></i> ' + item.time;
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          activateEstancia(idx, true);
         });
       }
+      itemEl.addEventListener('click', function(e) {
+        if (!e.target.closest('a') && !e.target.closest('button')) {
+          activateEstancia(idx, true);
+        }
+      });
     });
-    if (items.length > 0 && items[0].querySelector('.estancia-header-btn')) {
-      items[0].querySelector('.estancia-header-btn').click();
+
+    // Pausar rotación en hover (desktop) y reanudar al salir
+    if (estanciasSection) {
+      estanciasSection.addEventListener('mouseenter', pauseAutoPlay);
+      estanciasSection.addEventListener('mouseleave', resumeAutoPlay);
+
+      // En dispositivos táctiles pausar temporalmente durante touch
+      estanciasSection.addEventListener('touchstart', pauseAutoPlay, { passive: true });
+      estanciasSection.addEventListener('touchend', () => {
+        setTimeout(resumeAutoPlay, 2500);
+      }, { passive: true });
+
+      // Solo rotar cuando la sección esté en el viewport
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              resumeAutoPlay();
+            } else {
+              pauseAutoPlay();
+            }
+          });
+        }, { threshold: 0.15 });
+        observer.observe(estanciasSection);
+      } else {
+        startAutoPlay();
+      }
+    } else {
+      startAutoPlay();
     }
+
+    // Inicializar primer elemento
+    activateEstancia(0, false);
   }
 
   // 2. BEFORE / AFTER SLIDERS
