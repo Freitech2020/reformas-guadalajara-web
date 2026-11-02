@@ -161,10 +161,10 @@
       }
     }
 
-    /* Header Scrim Traslúcido */
+    /* HEADER */
     header.header-scrim:not(.scrolled) {
       box-shadow: none;
-      background: linear-gradient(rgba(8, 15, 26, 0.88) 0%, rgba(8, 15, 26, 0.5) 65%, transparent 100%) !important;
+      /* removido */
     }
 
     header.scrolled {
@@ -195,7 +195,7 @@
       background: rgba(14, 27, 46, 0.05) !important;
     }
 
-    .nav-dropdown-menu {
+    /* REEMPLAZO */
       display: none;
       position: absolute;
       top: 100%;
@@ -220,11 +220,22 @@
     }
 
     header.header-scrim:not(.scrolled) .nav-dropdown-item {
-      color: #CBD5E1;
+      color: rgba(255, 255, 255, 0.92) !important;
+    }
+    header.header-scrim:not(.scrolled) .nav-dropdown-item i {
+      color: #E2C48F !important;
+    }
+    header.header-scrim:not(.scrolled) .nav-dropdown-menu {
+      background: rgba(14, 27, 46, 0.97) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.18) !important;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
+    }
     }
 
     header.header-scrim:not(.scrolled) .nav-dropdown-item:hover {
-      color: #FFFFFF;
+      color: #E2C48F !important;
       background: rgba(255, 255, 255, 0.08);
     }
 
@@ -235,7 +246,7 @@
     }
 
     header.scrolled .nav-dropdown-item {
-      color: #334155 !important;
+      color: #0E1B2E !important;
     }
 
     header.scrolled .nav-dropdown-item:hover {
@@ -433,7 +444,7 @@
       width: 28px;
       height: 28px;
       background: rgba(10, 18, 30, 0.7);
-      color: #FFFFFF;
+      color: #E2C48F !important;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -630,7 +641,7 @@
     }
     .geo-list li {
       font-size: 16px;
-      color: #334155;
+      color: #0E1B2E !important;
       line-height: 1.5;
     }
 
@@ -805,7 +816,7 @@
       position: absolute;
       top: -46px;
       right: 0;
-      color: #FFFFFF;
+      color: #E2C48F !important;
       background: rgba(255, 255, 255, 0.15);
       border: 1px solid rgba(255, 255, 255, 0.25);
       width: 40px;
@@ -896,7 +907,7 @@
       display: block;
       font-size: 13.5px;
       font-weight: 700;
-      color: #334155;
+      color: #0E1B2E !important;
       margin-bottom: 6px;
       text-align: left;
     }
@@ -959,7 +970,7 @@
       transform: translateY(0);
       pointer-events: auto;
     }
-    .nav-dropdown-menu {
+    /* REEMPLAZO */
       position: absolute;
       top: 100%;
       left: 0;
@@ -1050,7 +1061,7 @@
     }
     .btn-whatsapp-hero {
       background-color: #1B9958;
-      color: #FFFFFF;
+      color: #E2C48F !important;
       font-weight: 700;
       border-radius: 9999px;
       padding: 10px 22px;
@@ -1102,7 +1113,45 @@
       pointer-events: auto !important;
     }
 
-  </style>
+  /* HEADER CANÓNICO */
+.nav-dropdown-item {
+  color: #0E1B2E !important;
+}
+header:not(.scrolled) .nav-dropdown-item {
+  color: #FFFFFF !important;
+}
+header:not(.scrolled) .nav-dropdown-item i {
+  color: #E2C48F !important;
+}
+header:not(.scrolled) .nav-dropdown-menu {
+  background: rgba(14, 27, 46, 0.97) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6) !important;
+}
+header:not(.scrolled) .nav-dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #E2C48F !important;
+}
+header.scrolled .nav-dropdown-menu {
+  background: rgba(255, 255, 255, 0.98) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(226, 232, 240, 0.95) !important;
+  box-shadow: 0 20px 45px rgba(14, 27, 46, 0.12) !important;
+}
+header.scrolled .nav-dropdown-item {
+  color: #0E1B2E !important;
+}
+header.scrolled .nav-dropdown-item:hover {
+  background-color: #F8FAFC !important;
+  color: #8C6424 !important;
+}
+header.scrolled .nav-dropdown-item i {
+  color: #8C6424 !important;
+}
+</style>
 </head>
 <body class="bg-white text-ink antialiased selection:bg-[#E2C48F]/30 selection:text-[#8C6424]">
 
