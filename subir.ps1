@@ -1,5 +1,5 @@
 param(
-    [string]$Mensaje = "feat(ducha): nuevas imagenes fotorealistas paso 3 y 4 con oficial Javier y garantia en espanol"
+    [string]$Mensaje = "fix(header): sincronizar estilo y contraste canonico del header y dropdowns identico a aire acondicionado"
 )
 
 Write-Host "==========================================================" -ForegroundColor Cyan

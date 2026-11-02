@@ -127,6 +127,28 @@
   #tarifas p.tarifas-subtitle { color: #FFFFFF !important; }
   .jefe-obra-img-box { width: 100%; min-height: 280px; overflow: hidden; background-color: #F8FAFC; }
   .jefe-obra-img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; }
+  
+  /* BLINDAJE BANNER DIRECCIÓN TÉCNICA (FLEXBOX ANTI-COLAPSO) */
+  .banner-direccion-tecnica {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  @media (min-width: 1024px) {
+    .banner-direccion-tecnica {
+      flex-direction: row !important;
+      align-items: stretch !important;
+    }
+    .banner-direccion-tecnica > div:first-child {
+      flex: 1 1 auto !important;
+      width: calc(100% - 350px) !important;
+      min-width: 0 !important;
+    }
+    .banner-direccion-tecnica > div:last-child {
+      width: 350px !important;
+      flex-shrink: 0 !important;
+    }
+  }
   a.bg-teal, button.bg-teal { background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; }
   a.bg-teal:hover, button.bg-teal:hover { background-color: #8F6A29 !important; }
 
@@ -185,6 +207,15 @@
   /* --- DROPDOWNS DESKTOP (ARQUITECTURA DE MENÚ DE LUJO) --- */
   .nav-dropdown {
     position: relative;
+  }
+  .dropdown-chevron {
+    transition: transform 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  .nav-dropdown:hover .dropdown-chevron,
+  .nav-dropdown.is-open .dropdown-chevron {
+    transform: rotate(180deg);
   }
   .nav-dropdown-menu {
     display: none;
@@ -889,6 +920,11 @@
           <i class="ri-arrow-right-line text-[16px]"></i>
         </button>
       </div>
+      <div class="mt-auto pt-6 text-center">
+        <a class="inline-flex items-center gap-2 text-[15px] font-bold text-ink hover:text-[#8C6424] transition-colors" href="tel:+34910000000">
+          <i class="ri-phone-line text-[#A87E34]"></i> +34 910 00 00 00
+        </a>
+      </div>
     </div>
   </nav>
 </div>
@@ -1414,10 +1450,10 @@
     </div>
 
     <!-- BANNER DIRECCIÓN TÉCNICA -->
-    <div class="mt-8 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm">
-      <div class="flex flex-col justify-center gap-4 p-6 order-2 lg:order-1 lg:col-span-8 xl:col-span-9 md:p-8">
+    <div class="banner-direccion-tecnica mt-12 w-full overflow-hidden rounded-[20px] border border-line bg-white shadow-sm flex flex-col lg:flex-row items-stretch" style="width: 100% !important;">
+      <div class="flex-1 p-6 md:p-8 flex flex-col justify-center gap-4 order-2 lg:order-1 min-w-0">
         <div class="flex flex-wrap items-center gap-3">
-          <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-teal">Dirección Facultativa Propia</span>
+          <span class="text-[11.5px] font-bold uppercase tracking-[0.16em] text-teal">Dirección Facultativa Propia</span>
           <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[11px] font-bold text-okgreen"><i class="ri-shield-check-line text-[13px]"></i>2 Años de Garantía Escrita</span>
         </div>
         <blockquote class="font-editorial text-[19px] leading-[1.45] text-ink md:text-[22px]">
@@ -1428,9 +1464,9 @@
           <div class="text-[12.5px] font-medium text-ink/75">Ingeniero Técnico de Edificación · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
         </div>
       </div>
-      <div class="order-1 lg:order-2 lg:col-span-4 xl:col-span-3">
-        <div class="jefe-obra-img-box w-full overflow-hidden bg-ice">
-          <img alt="Dirección facultativa en reforma de oficinas en Madrid" class="jefe-obra-img h-full w-full object-cover" src="images/madrid-director-tecnico.webp"/>
+      <div class="order-1 lg:order-2 w-full lg:w-[340px] xl:w-[380px] shrink-0 bg-ice">
+        <div class="w-full h-full min-h-[260px] lg:min-h-full overflow-hidden">
+          <img alt="Dirección facultativa en reforma de oficinas en Madrid" class="h-full w-full object-cover" style="object-position: center 15%; min-height: 260px; width: 100%; height: 100%;" src="images/madrid-director-tecnico.webp"/>
         </div>
       </div>
     </div>
