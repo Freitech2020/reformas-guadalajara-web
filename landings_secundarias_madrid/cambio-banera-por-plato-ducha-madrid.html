@@ -1548,7 +1548,40 @@
     }
   
 
-    </style>
+    
+  /* ESPACIADO GENEROSO ENTRE SECCIONES (TOKEN DESIGN 2026) */
+  section:not(#inicio) {
+    padding-top: 5.5rem !important;
+    padding-bottom: 5.5rem !important;
+  }
+  @media (min-width: 768px) {
+    section:not(#inicio) {
+      padding-top: 7rem !important;
+      padding-bottom: 7rem !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    section:not(#inicio) {
+      padding-top: 8.5rem !important;
+      padding-bottom: 8.5rem !important;
+    }
+  }
+
+  /* ESPACIADO ESPECÍFICO BANNERS DIRECCIÓN TÉCNICA */
+  .banner-direccion-tecnica,
+  .fases-banner-direccion {
+    margin-top: 4.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  @media (min-width: 768px) {
+    .banner-direccion-tecnica,
+    .fases-banner-direccion {
+      margin-top: 6rem !important;
+      margin-bottom: 2rem !important;
+    }
+  }
+
+</style>
 </head>
 <body class="bg-white text-ink antialiased selection:bg-[#E2C48F]/30 selection:text-[#8C6424]">
 
@@ -1981,7 +2014,7 @@
 <!-- ==========================================================================
      SECCIÓN 3: 4 TARJETAS HORIZONTALES DE CONFIANZA (FILA ÚNICA EN DESKTOP)
      ========================================================================== -->
-<section class="bg-white border-b border-line !py-8 sm:!py-10">
+<section class="bg-white border-b border-line !py-8 sm:!py-24 md:py-32">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     <div class="grid-cols-4-desktop">
       
@@ -2119,7 +2152,7 @@
 <!-- ==========================================================================
      SECCIÓN 5: PRECIOS Y PACKS CERRADOS (3 TARJETAS - PACK PREMIUM DESTACADO)
      ========================================================================== -->
-<section id="precios" class="w-full border-t border-line bg-white py-16 md:py-24 scroll-mt-20 md:scroll-mt-24">
+<section id="precios" class="w-full border-t border-line bg-white py-24 md:py-32 scroll-mt-20 md:scroll-mt-24">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12">
     
     <div class="text-center max-w-[860px] mx-auto pre-cards-spacing">

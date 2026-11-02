@@ -606,7 +606,40 @@
       pointer-events: auto;
       transform: translateY(0);
     }
-  </style>
+  
+  /* ESPACIADO GENEROSO ENTRE SECCIONES (TOKEN DESIGN 2026) */
+  section:not(#inicio) {
+    padding-top: 5.5rem !important;
+    padding-bottom: 5.5rem !important;
+  }
+  @media (min-width: 768px) {
+    section:not(#inicio) {
+      padding-top: 7rem !important;
+      padding-bottom: 7rem !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    section:not(#inicio) {
+      padding-top: 8.5rem !important;
+      padding-bottom: 8.5rem !important;
+    }
+  }
+
+  /* ESPACIADO ESPECÍFICO BANNERS DIRECCIÓN TÉCNICA */
+  .banner-direccion-tecnica,
+  .fases-banner-direccion {
+    margin-top: 4.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  @media (min-width: 768px) {
+    .banner-direccion-tecnica,
+    .fases-banner-direccion {
+      margin-top: 6rem !important;
+      margin-bottom: 2rem !important;
+    }
+  }
+
+</style>
 
   <!-- SCHEMA.ORG HVACBUSINESS & FAQPAGE -->
   <script type="application/ld+json">
@@ -897,7 +930,7 @@
 <!-- =======================================================================
      2. SECCIÓN ESPACIOS (GRID 6 TARJETAS - EXACTO IMAGEN 1)
      ======================================================================= -->
-<section class="bg-surface py-12" id="espacios">
+<section class="bg-surface py-24 md:py-32" id="espacios">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12 text-center">
     
     <div class="max-w-[860px] mx-auto text-center pre-cards-spacing">
@@ -1057,7 +1090,7 @@
 <!-- =======================================================================
      3. DOS FORMAS DE CONTRATAR TU INSTALACIÓN (EXACTO IMAGEN 5)
      ======================================================================= -->
-<section class="bg-white py-12" id="modalidades">
+<section class="bg-white py-24 md:py-32" id="modalidades">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12 text-center">
     
     <div class="max-w-[860px] mx-auto text-center pre-cards-spacing">
@@ -1163,7 +1196,7 @@
 <!-- =======================================================================
      4. CÓMO TRABAJAMOS (PROTOCOLO TÉCNICO EN 4 PASOS)
      ======================================================================= -->
-<section class="bg-surface py-12" id="como-trabajamos">
+<section class="bg-surface py-24 md:py-32" id="como-trabajamos">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12 text-center">
     
     <div class="max-w-[860px] mx-auto text-center pre-cards-spacing">
@@ -1272,7 +1305,7 @@
 <!-- =======================================================================
      5. LUXURY NAVY BANNER DE PRESUPUESTO EN 2 HORAS (EXACTO IMAGEN 2)
      ======================================================================= -->
-<section class="bg-surface py-10" id="presupuesto">
+<section class="bg-surface py-24 md:py-32" id="presupuesto">
   <div class="mx-auto w-full max-w-[1240px] px-4 md:px-8">
     <div class="luxury-navy-card text-center relative overflow-hidden">
       
@@ -1313,7 +1346,7 @@
 <!-- =======================================================================
      6. PREGUNTAS FRECUENTES (SECCIÓN DUDAS)
      ======================================================================= -->
-<section class="bg-white py-12" id="dudas">
+<section class="bg-white py-24 md:py-32" id="dudas">
   <div class="mx-auto w-full max-w-[960px] px-4 md:px-8 text-center">
     
     <div class="max-w-[860px] mx-auto text-center pre-cards-spacing">
