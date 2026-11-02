@@ -1318,13 +1318,13 @@ animation: coreBeacon 2s ease-in-out infinite;
 
 
 
-  section:not(#inicio):not(#tarifas) p:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  section:not(#inicio):not(#tarifas):not(#fases) p:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
 
-  section:not(#inicio):not(#tarifas) li:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  section:not(#inicio):not(#tarifas):not(#fases) li:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
 
-  section:not(#inicio):not(#tarifas) dd:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  section:not(#inicio):not(#tarifas):not(#fases) dd:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
 
-  section:not(#inicio):not(#tarifas) .text-muted:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
+  section:not(#inicio):not(#tarifas):not(#fases) .text-muted:not(.bg-ink *):not([class*="bg-ink"] *):not(.bg-teal *),
 
   #tarifas .bg-white *,
 
@@ -2278,7 +2278,86 @@ object-position: center 15%;
 
   .fase-mobile-card .fase-arrow {
 
-transition: transform 0.3s ease, background-color 0.3s ease;
+transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  /* --- BLINDAJE MODAL CONSULTA RÁPIDA (POPUP PRESUPUESTO) --- */
+  #modal-consulta-backdrop {
+    position: fixed !important;
+    inset: 0 !important;
+    background-color: rgba(14, 27, 46, 0.65) !important;
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    z-index: 99990 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease !important;
+  }
+  #modal-consulta-backdrop.is-active {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  #modal-consulta-rapida {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    background-color: #FFFFFF !important;
+    box-shadow: -10px 0 35px rgba(0, 0, 0, 0.3) !important;
+    transform: translateX(100%) !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    z-index: 99995 !important;
+    overflow-y: auto !important;
+  }
+  #modal-consulta-rapida.is-active {
+    transform: translateX(0) !important;
+  }
+
+  .modal-chips-container button {
+    border-radius: 9999px !important;
+    padding: 6px 14px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+    animation: none !important;
+    box-shadow: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 32px !important;
+  }
+  .modal-chips-container button[aria-pressed="true"],
+  .modal-chips-container button.bg-teal {
+    background-color: #A87E34 !important;
+    border-color: #A87E34 !important;
+    color: #FFFFFF !important;
+  }
+
+  #modal-consulta-rapida button[type="submit"] {
+    width: 100% !important;
+    padding: 13px 20px !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    background-color: #A87E34 !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(226, 196, 143, 0.7) !important;
+    box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+  #modal-consulta-rapida button[type="submit"]:hover {
+    background-color: #8C6424 !important;
+    box-shadow: 0 6px 20px rgba(78, 52, 23, 0.5) !important;
+    transform: translateY(-1px) !important;
 
   }
 
@@ -2290,7 +2369,115 @@ transition: transform 0.3s ease, background-color 0.3s ease;
 
      SECCIÓN PASOS / FASES: GRID PANORÁMICO DE 4 TARJETAS AUTÓNOMAS
 
-     Inspirado en el diseño ágil de reformas de locales comerciales
+     Atelier Luxury & Token Design Freitech 2026: Enmarcado concéntrico y tipografía editorial
+     ========================================================================== */
+
+  .card-paso-luxury {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E8E2D5 !important;
+    border-radius: 24px !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 20px -2px rgba(14, 27, 46, 0.05) !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+  @media (min-width: 640px) {
+    .card-paso-luxury { padding: 22px !important; }
+  }
+  .card-paso-luxury:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(168, 126, 52, 0.55) !important;
+    box-shadow: 0 16px 36px -6px rgba(14, 27, 46, 0.11) !important;
+  }
+  .card-paso-luxury .paso-img-frame {
+    position: relative !important;
+    width: 100% !important;
+    height: 195px !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    background-color: #F8FAFC !important;
+    border: 1px solid rgba(14, 27, 46, 0.06) !important;
+  }
+  @media (min-width: 768px) {
+    .card-paso-luxury .paso-img-frame { height: 205px !important; }
+  }
+  .card-paso-luxury .paso-img-frame img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+  .card-paso-luxury:hover .paso-img-frame img {
+    transform: scale(1.05) !important;
+  }
+  .card-paso-luxury h3,
+  #fases .card-paso-luxury h3 {
+    font-family: Fraunces, Playfair Display, Georgia, serif !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    color: #0E1B2E !important;
+    letter-spacing: -0.015em !important;
+    margin-top: 16px !important;
+    margin-bottom: 12px !important;
+  }
+  @media (min-width: 768px) {
+    .card-paso-luxury h3,
+    #fases .card-paso-luxury h3 {
+      font-size: 25px !important;
+    }
+  }
+  .card-paso-luxury p,
+  #fases .card-paso-luxury p {
+    font-size: 15.5px !important;
+    line-height: 1.7 !important;
+    color: rgba(14, 27, 46, 0.76) !important;
+    margin-top: 8px !important;
+  }
+  #fases .pasos-intro-text {
+    margin-bottom: 8px !important;
+  }
+  @media (min-width: 768px) {
+    #fases .pasos-intro-text {
+      margin-bottom: 20px !important;
+    }
+  }
+
+  /* ACABADOS Y CALIDADES DE COCINA (SEOLIFE TOKEN DESIGN 2026) */
+  .card-acabado {
+    border-radius: 20px !important;
+    border: 1px solid #E8E2D5 !important;
+    background-color: #FFFFFF !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 20px -2px rgba(14, 27, 46, 0.05) !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+  }
+  .card-acabado:hover {
+    transform: translateY(-5px) !important;
+    border-color: rgba(168, 126, 52, 0.55) !important;
+    box-shadow: 0 16px 36px -6px rgba(14, 27, 46, 0.11) !important;
+  }
+  .card-acabado h3 {
+    font-family: Fraunces, Playfair Display, Georgia, serif !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    color: #0E1B2E !important;
+    margin-top: 10px !important;
+    margin-bottom: 8px !important;
+  }
+  @media (min-width: 640px) {
+    .card-acabado h3 {
+      font-size: 22px !important;
+    }
+  }
+
+  /* ==========================================================================
 
      ========================================================================== */
 
@@ -2516,7 +2703,75 @@ transform: translateX(100%) !important;
 
 transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 
-z-index: 99995 !important;
+z-index: 99995 !important;
+  }
+  #modal-consulta-rapida.is-active {
+    transform: translateX(0) !important;
+  }
+  /* BLINDAJE DEL BOTÓN PEDIR PRESUPUESTO Y POPUP */
+  #btn-submit-popup-presupuesto,
+  .modal-submit-gold-btn {
+    width: 100% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    background-color: #A87E34 !important;
+    background: #A87E34 !important;
+    color: #FFFFFF !important;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+    font-size: 15.5px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    padding: 15px 24px !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(226, 196, 143, 0.65) !important;
+    box-shadow: 0 4px 16px rgba(168, 126, 52, 0.35) !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    box-sizing: border-box !important;
+    margin-top: 8px !important;
+    animation: none !important;
+  }
+  #btn-submit-popup-presupuesto:hover,
+  .modal-submit-gold-btn:hover {
+    background-color: #8C6424 !important;
+    background: #8C6424 !important;
+    border-color: rgba(226, 196, 143, 0.95) !important;
+    box-shadow: 0 6px 22px rgba(168, 126, 52, 0.5) !important;
+    transform: translateY(-2px) !important;
+    color: #FFFFFF !important;
+  }
+  #btn-submit-popup-presupuesto i,
+  .modal-submit-gold-btn i {
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: transform 0.2s ease !important;
+  }
+  #btn-submit-popup-presupuesto:hover i,
+  .modal-submit-gold-btn:hover i {
+    transform: translateX(3px) !important;
+  }
+  .modal-chips-container button {
+    animation: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    padding: 6px 14px !important;
+    border-radius: 9999px !important;
+  }
+  body.modal-open #btn-floating-consulta {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+  /* Fin blindaje modal */
+  #modal-consulta-rapida-old-rule {
 
 overflow-y: auto !important;
 
@@ -3472,6 +3727,7 @@ Islas y penínsulas en porcelánico Calacatta, frentes continuos gola antihuella
 
 </div>
 
+
 <div class="lg:col-span-5">
 
 <div style="opacity: 1;">
@@ -3494,7 +3750,7 @@ Islas y penínsulas en porcelánico Calacatta, frentes continuos gola antihuella
 
 </div>
 
-<span class="text-[11px] font-bold text-teal-light bg-black/40 px-2 py-0.5 rounded">Visita en 24/48h</span>
+<span class="text-[12px] font-bold text-teal-light bg-black/50 px-2.5 py-1 rounded-md border border-white/10">Visita en 24/48h</span>
 
 </div>
 
@@ -3502,7 +3758,7 @@ Islas y penínsulas en porcelánico Calacatta, frentes continuos gola antihuella
 
 <div>
 
-<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Plazo Medio Obra</p>
+<p class="text-[12px] font-semibold uppercase tracking-[0.12em] text-white/80">Plazo Medio Obra</p>
 
 <p class="text-[20px] font-bold text-white mt-0.5">12 a 18 Días</p>
 
@@ -3510,7 +3766,7 @@ Islas y penínsulas en porcelánico Calacatta, frentes continuos gola antihuella
 
 <div>
 
-<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Garantía Mobiliario</p>
+<p class="text-[12px] font-semibold uppercase tracking-[0.12em] text-white/80">Garantía Mobiliario</p>
 
 <p class="text-[20px] font-bold text-teal-light mt-0.5">10 Años Blum</p>
 
@@ -3518,7 +3774,7 @@ Islas y penínsulas en porcelánico Calacatta, frentes continuos gola antihuella
 
 <div>
 
-<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Presupuesto</p>
+<p class="text-[12px] font-semibold uppercase tracking-[0.12em] text-white/80">Presupuesto</p>
 
 <p class="text-[20px] font-bold text-white mt-0.5">100% Cerrado</p>
 
@@ -3526,7 +3782,7 @@ Islas y penínsulas en porcelánico Calacatta, frentes continuos gola antihuella
 
 <div>
 
-<p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Diseño 3D</p>
+<p class="text-[12px] font-semibold uppercase tracking-[0.12em] text-white/80">Diseño 3D</p>
 
 <p class="text-[20px] font-bold text-teal-light mt-0.5">Incluido Gratis</p>
 
@@ -3670,7 +3926,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <img alt="Cocina con isla central y mármol Calacatta en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-despues.webp';" src="images/cocinas-isla-calacatta.webp"/>
 
-<p class="text-[14px] text-muted leading-relaxed">
+<p class="text-[15.5px] text-ink/80 leading-[1.65]">
 
   Isla central monobloque con inducción oculta, encimera porcelánica Calacatta Gold resistente a impactos y manchas, taburetes en roble natural y campana extractora integrada a ras de falso techo con aspiración silenciosa.
 
@@ -3714,7 +3970,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <img alt="Cocina abierta al salón con cerramiento acristalado en Chamberí Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-hero.webp';" src="images/cocinas-abierta-cerramiento.webp"/>
 
-<p class="text-[14px] text-muted leading-relaxed">
+<p class="text-[15.5px] text-ink/80 leading-[1.65]">
 
   Conexión visual luminosa entre salón y zona de cocción. Mampara corredera de hierro lacado negro mate y vidrio acústico 4+4 mm que aísla de olores y ruidos sin perder amplitud diáfana ni elegancia arquitectónica.
 
@@ -3758,7 +4014,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <img alt="Cocina lineal con sistema gola y acabado blanco mate antihuellas en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-lineal-minimalista.webp';" src="images/cocinas-lineal-minimalista.webp"/>
 
-<p class="text-[14px] text-muted leading-relaxed">
+<p class="text-[15.5px] text-ink/80 leading-[1.65]">
 
   Distribución lineal continua ideal para estancias alargadas. Puertas con tirador integrado oculto perfil gola, zócalo de aluminio a juego y despensa torre con cajones interiores de extracción total Blum Tandembox.
 
@@ -3802,7 +4058,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <img alt="Cocina en L con península desayunador en Pozuelo Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-en-l-peninsula.webp';" src="images/cocinas-en-l-peninsula.webp"/>
 
-<p class="text-[14px] text-muted leading-relaxed">
+<p class="text-[15.5px] text-ink/80 leading-[1.65]">
 
   Triángulo de trabajo ergonómico perfecto (frigorífico, fregadero y zona de fuego). La península actúa como separador visual e incorpora tomas escamoteables y barra volada de madera tratada para desayunos diarios.
 
@@ -3844,9 +4100,9 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
 
-<img alt="Cocina nórdica moderna roble y blanco mate en Las Tablas Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_nordica_roble.png"/>
+<img alt="Cocina nórdica moderna roble y blanco mate en Las Tablas Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-despues.webp';" src="images/cocinas-lineal-minimalista.webp"/>
 
-<p class="text-[14px] text-muted leading-relaxed">
+<p class="text-[15.5px] text-ink/80 leading-[1.65]">
 
   Combinación armónica de frentes blanco seda antihuellas y módulos altos revestidos en chapa de roble natural. Pavimento combinado entre tarima hidrófuga AC5 y alfombra cerámica porcelánica en zona de aguas.
 
@@ -3888,9 +4144,9 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
 
-<img alt="Cocina prémium con vinoteca y columnas de hornos en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_gourmet_vinoteca.png"/>
+<img alt="Cocina prémium con vinoteca y columnas de hornos en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" onerror="this.onerror=null; this.src='images/cocinas-despues.webp';" src="images/cocinas-isla-calacatta.webp"/>
 
-<p class="text-[14px] text-muted leading-relaxed">
+<p class="text-[15.5px] text-ink/80 leading-[1.65]">
 
   Para apasionados de la gastronomía. Columna técnica con horno pirolítico, microondas a juego, calientaplatos, vinoteca bitémperatura encastrada y grifo monomando semiprofesional con ducha extensible y filtrado de agua.
 
@@ -3918,125 +4174,151 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <!-- SECCIÓN FASES DE LA REFORMA (TIMELINE VERTICAL CON SCROLLSPY Y SHOWCASE COMPLETO - CORREGIDO) -->
 
-<section class="w-full border-t border-line bg-ice py-16 md:py-24" id="fases">
+<section class="w-full border-t border-line bg-surface-warm/40 py-16 md:py-24" id="fases">
   <div class="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-12 text-center">
     
-    <!-- Encabezado Centrado Estilo Locales / Climatización -->
-    <div class="max-w-[840px] mx-auto text-center mb-12">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FDF9F0] border border-[#E8D3B0] text-[#A87E34] text-[12.5px] font-bold uppercase tracking-wider mb-3">
-        MÉTODO DE TRABAJO ÁGIL
+    <!-- Encabezado Centrado -->
+    <div class="max-w-[840px] mx-auto text-center mb-12"><div>
+
+
       </div>
-      <h2 class="text-[28px] sm:text-[36px] md:text-[40px] font-serif font-bold text-ink mb-3 leading-tight">
+      <h2 class="font-editorial text-[32px] sm:text-[38px] md:text-[44px] font-bold text-ink mb-4 leading-[1.12] tracking-tight">
         Cómo Ejecutamos tu Cocina Paso a Paso
       </h2>
-      <p class="text-[16px] sm:text-[18px] text-slate-700 max-w-[760px] mx-auto leading-relaxed">
-        Procedimientos técnicos coordinados bajo normativa CTE para garantizar cero polvo, instalaciones garantizadas y acabados impecables en tiempo récord.
+      <p class="pasos-intro-text text-[16px] sm:text-[18px] text-ink/75 max-w-[760px] mx-auto leading-[1.65] mb-2 md:mb-5">
+        Procedimientos técnicos coordinados bajo normativa CTE para garantizar cero polvo, instalaciones garantizadas y acabados de alta gama en tiempo récord.
       </p>
     </div>
 
     <!-- Grid Panorámico de 4 Pasos (Estructura idéntica a imagen de referencia) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left max-w-[1320px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left max-w-[1360px] mx-auto">
       
       <!-- Paso 1 -->
-      <div class="card-espacio border-t-4 border-t-[#A87E34] overflow-hidden flex flex-col justify-between">
-        <div class="h-[180px] overflow-hidden relative">
-          <img src="images/cocinas-paso-01.webp" alt="Paso 1: Medición técnica láser y replanteo de cocina en Madrid" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+      <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-paso-01.webp" alt="Paso 1: Medición técnica láser y replanteo de cocina en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="card-paso-content pt-6 pb-2 px-1 flex-1 flex flex-col justify-start">
           <div>
-            <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center justify-between mb-4">
               <span class="step-badge">Paso 01</span>
-              <span class="text-[12px] font-bold text-slate-500">24 a 48 Horas</span>
+              <span class="text-[12.5px] font-semibold text-ink/65 flex items-center gap-1.5"><i class="ri-time-line text-[#A87E34] text-[14px]"></i> 24 a 48 Horas</span>
             </div>
-            <h3 class="text-[18px] font-bold text-ink mb-2">Replanteo y Medición Láser</h3>
-            <p class="!text-[14.5px] !text-slate-600 !leading-relaxed">
-              Evaluamos orientación, tomas de agua, desagües, sección eléctrica y cotas al milímetro con distanciómetro láser para diseñar la distribución óptima de tus muebles sin descuadres.
+            <h3 class="font-editorial text-[24px] sm:text-[25px] font-bold text-ink mb-3 mt-1 leading-[1.25]">Replanteo y Medición Láser</h3>
+            <p class="text-[15.5px] text-ink/75 leading-[1.7] mt-1">
+              Evaluamos orientación, tomas de agua, desagües, sección eléctrica y cotas al milímetro con distanciómetro láser para diseñar la distribución óptima de tus muebles sin descuadres.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
             </p>
           </div>
-          <div class="pt-3 border-t border-line mt-4 text-[12.5px] font-semibold text-emerald-700 flex items-center gap-1.5">
-            <i class="ri-check-line font-bold"></i> Asesoramiento sin coste
+          
+
           </div>
         </div>
       </div>
 
+-->
       <!-- Paso 2 -->
-      <div class="card-espacio border-t-4 border-t-[#A87E34] overflow-hidden flex flex-col justify-between">
-        <div class="h-[180px] overflow-hidden relative">
-          <img src="images/cocinas-paso-02.webp" alt="Paso 2: Demolición limpia y saneamiento sin polvo" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+      <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-paso-02.webp" alt="Paso 2: Demolición limpia y saneamiento sin polvo" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="card-paso-content pt-6 pb-2 px-1 flex-1 flex flex-col justify-start">
           <div>
-            <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center justify-between mb-4">
               <span class="step-badge">Paso 02</span>
-              <span class="text-[12px] font-bold text-slate-500">Montaje Limpio</span>
+              <span class="text-[12.5px] font-semibold text-ink/65 flex items-center gap-1.5"><i class="ri-shield-flash-line text-[#A87E34] text-[14px]"></i> Montaje Limpio</span>
             </div>
-            <h3 class="text-[18px] font-bold text-ink mb-2">Demolición Limpia y Saneamiento</h3>
-            <p class="!text-[14.5px] !text-slate-600 !leading-relaxed">
-              Desmontaje de muebles y alicatados antiguos con aspirador industrial continuo en el punto de trabajo. Cero partículas de polvo sobre descansillos, ascensor o zonas comunes.
+            <h3 class="font-editorial text-[24px] sm:text-[25px] font-bold text-ink mb-3 mt-1 leading-[1.25]">Demolición Limpia y Saneamiento</h3>
+            <p class="text-[15.5px] text-ink/75 leading-[1.7] mt-1">
+              Desmontaje de muebles y alicatados antiguos con aspirador industrial continuo en el punto de trabajo. Cero partículas de polvo sobre descansillos, ascensor o zonas comunes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
             </p>
           </div>
-          <div class="pt-3 border-t border-line mt-4 text-[12.5px] font-semibold text-emerald-700 flex items-center gap-1.5">
-            <i class="ri-check-line font-bold"></i> Tu casa 100% limpia
+          
+
           </div>
         </div>
       </div>
 
+-->
       <!-- Paso 3 -->
-      <div class="card-espacio border-t-4 border-t-[#1B9958] overflow-hidden flex flex-col justify-between">
-        <div class="h-[180px] overflow-hidden relative">
-          <img src="images/cocinas-paso-03.webp" alt="Paso 3: Instalaciones técnicas de fontanería y electricidad" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+      <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-paso-03.webp" alt="Paso 3: Instalaciones técnicas de fontanería y electricidad" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="card-paso-content pt-6 pb-2 px-1 flex-1 flex flex-col justify-start">
           <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="step-badge !bg-emerald-50 !text-emerald-800 !border-emerald-200">Paso 03</span>
-              <span class="text-[12px] font-bold text-slate-500">Normativa CTE</span>
+            <div class="flex items-center justify-between mb-4">
+              <span class="step-badge">Paso 03</span>
+              <span class="text-[12.5px] font-semibold text-ink/65 flex items-center gap-1.5"><i class="ri-award-line text-[#A87E34] text-[14px]"></i> Normativa CTE</span>
             </div>
-            <h3 class="text-[18px] font-bold text-ink mb-2">Instalaciones Técnicas y Revestimientos</h3>
-            <p class="!text-[14.5px] !text-slate-600 !leading-relaxed">
-              Fontanería multicapa termofusionada y nuevas líneas independientes con cable de 6 mm² para placa y horno. Alicatado porcelánico rectificado a plomo con nivelación láser.
+            <h3 class="font-editorial text-[24px] sm:text-[25px] font-bold text-ink mb-3 mt-1 leading-[1.25]">Instalaciones Técnicas y Revestimientos</h3>
+            <p class="text-[15.5px] text-ink/75 leading-[1.7] mt-1">
+              Fontanería multicapa termofusionada y nuevas líneas independientes con cable de 6 mm² para placa y horno. Alicatado porcelánico rectificado a plomo con nivelación láser.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
             </p>
           </div>
-          <div class="pt-3 border-t border-line mt-4 text-[12.5px] font-semibold text-emerald-700 flex items-center gap-1.5">
-            <i class="ri-check-line font-bold"></i> Hermetismo e instalaciones garantizadas
+          
+
           </div>
         </div>
       </div>
 
+-->
       <!-- Paso 4 -->
-      <div class="card-espacio border-t-4 border-t-[#1B9958] overflow-hidden flex flex-col justify-between">
-        <div class="h-[180px] overflow-hidden relative">
-          <img src="images/cocinas-paso-04.webp" alt="Paso 4: Pareja de clientes admirando felices el resultado final de su cocina reformada" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+      <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-paso-04.webp" alt="Paso 4: Pareja de clientes admirando felices el resultado final de su cocina reformada" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
         </div>
-        <div class="p-5 flex-1 flex flex-col justify-between">
+        <div class="card-paso-content pt-6 pb-2 px-1 flex-1 flex flex-col justify-start">
           <div>
-            <div class="flex items-center justify-between mb-3">
-              <span class="step-badge !bg-emerald-50 !text-emerald-800 !border-emerald-200">Paso 04</span>
-              <span class="text-[12px] font-bold text-slate-500">Llave en Mano</span>
+            <div class="flex items-center justify-between mb-4">
+              <span class="step-badge">Paso 04</span>
+              <span class="text-[12.5px] font-semibold text-ink/65 flex items-center gap-1.5"><i class="ri-key-line text-[#A87E34] text-[14px]"></i> Llave en Mano</span>
             </div>
-            <h3 class="text-[18px] font-bold text-ink mb-2">Montaje y Clientes Felices</h3>
-            <p class="!text-[14.5px] !text-slate-600 !leading-relaxed">
-              Ajuste milimétrico de muebles de roble, colocación de encimera porcelánica, conexión de electrodomésticos, limpieza técnica final y entrega con garantía legal de 2 años.
+            <h3 class="font-editorial text-[24px] sm:text-[25px] font-bold text-ink mb-3 mt-1 leading-[1.25]">Montaje y Clientes Felices</h3>
+            <p class="text-[15.5px] text-ink/75 leading-[1.7] mt-1">
+              Ajuste milimétrico de muebles de roble, colocación de encimera porcelánica, conexión de electrodomésticos, limpieza técnica final y entrega con garantía legal de 2 años.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
             </p>
           </div>
-          <div class="pt-3 border-t border-line mt-4 text-[12.5px] font-semibold text-emerald-700 flex items-center gap-1.5">
-            <i class="ri-check-line font-bold"></i> Cocina lista para disfrutar
+          
+
           </div>
         </div>
       </div>
 
     </div>
 
+-->
+    </div>
+
     <!-- Banner Completo de Dirección Técnica Colegiada (UNA SOLA VEZ, AL PIE) -->
-    <div id="fases-banner-direccion" class="fases-banner-direccion mt-14 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[20px] border border-line bg-white lg:grid-cols-12 shadow-sm text-left">
+    <div id="fases-banner-direccion" class="fases-banner-direccion mt-14 grid grid-cols-1 items-stretch gap-0 overflow-hidden rounded-[24px] border border-[#E8E2D5] bg-[#FDFBF7] lg:grid-cols-12 shadow-[0_6px_24px_rgba(14,27,46,0.05)] text-left">
       <div class="fases-banner-text flex flex-col justify-center gap-4 p-6 order-2 lg:order-1 lg:col-span-8 xl:col-span-9 md:p-8">
         <div class="flex flex-wrap items-center gap-3">
-          <span class="text-[11px] font-bold uppercase tracking-[0.18em] text-teal">Dirección Técnica Colegiada</span>
-          <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[11px] font-bold text-okgreen">
+          <span class="text-[11.5px] font-bold uppercase tracking-[0.18em] text-[#A87E34]"><i class="ri-shield-star-line text-[14px] align-middle mr-1"></i>Dirección Técnica Colegiada</span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3.5 py-1 text-[11.5px] font-bold text-okgreen border border-okgreen/20">
             <i class="ri-shield-check-line text-[13px]"></i>2 Años de Garantía Escrita
           </span>
         </div>
-        <blockquote class="font-editorial text-[19px] leading-[1.45] text-ink md:text-[22px]">
+        <blockquote class="font-editorial text-[20px] leading-[1.45] text-ink md:text-[23px]">
           «La cocina concentra el mayor consumo eléctrico y de fontanería de toda la vivienda. Un error en la cota de la encimera o un mal tiro de campana arruinan el mejor mueble. Por eso supervisamos a pie de obra cada acometida antes de montar los módulos.»
         </blockquote>
         <div>
@@ -4046,7 +4328,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
       </div>
 
       <div class="order-1 lg:order-2 lg:col-span-4 xl:col-span-3">
-        <div class="jefe-obra-img-box w-full overflow-hidden bg-ice h-full min-h-[220px]">
+        <div class="jefe-obra-img-box w-full overflow-hidden bg-[#F5F1EA] h-full min-h-[240px]">
           <img alt="Dirección técnica de reformas de cocinas en Madrid" class="jefe-obra-img h-full w-full object-cover" src="images/madrid-director-tecnico.webp" loading="lazy"/>
         </div>
       </div>
@@ -4075,7 +4357,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 </div>
 
-<span class="text-[13px] leading-[1.6] text-muted md:max-w-[260px]">
+<p class="text-[15.5px] leading-[1.6] text-ink/75 md:max-w-[320px]">Desliza para comparar el estado original y el resultado final entregado por contrato.</p>
 
 
 
@@ -4093,13 +4375,13 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
 
-<img alt="Cocina antigua antes de la reforma en Chamberí" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_almagro_antes_coherente.png"/>
+<img alt="Cocina antigua antes de la reforma en Chamberí" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/cocinas-chamartin-antes.webp"/>
 
 <span class="absolute top-3 right-3 z-10 rounded-md bg-black/70 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Antes</span>
 
 <div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
 
-<img alt="Cocina con isla y porcelánico reformada en Chamberí" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_almagro_despues_coherente.png"/>
+<img alt="Cocina con isla y porcelánico reformada en Chamberí" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/cocinas-isla-calacatta.webp"/>
 
 <span class="absolute top-3 left-3 z-10 rounded-md bg-teal/90 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none">Después</span>
 
@@ -4131,7 +4413,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <h3 class="font-editorial mt-2 text-[20px] font-bold text-ink leading-tight">Piso en Calle Almagro</h3>
 
-<p class="mt-2 text-[14px] leading-[1.6] text-ink/80 flex-1">Demolición de tabique divisorio para integrar cocina y salón, isla en porcelánico Calacatta Gold con placa de inducción y campana de techo enrasada.</p>
+<p class="mt-2 text-[15.5px] leading-[1.65] text-ink/80 flex-1">Demolición de tabique divisorio para integrar cocina y salón, isla en porcelánico Calacatta Gold con placa de inducción y campana de techo enrasada.</p>
 
 </div>
 
@@ -4185,7 +4467,7 @@ Isla central monobloque con inducción oculta, encimera porcelánica Calacatta G
 
 <h3 class="font-editorial mt-2 text-[20px] font-bold text-ink leading-tight">Ático en Paseo de la Habana</h3>
 
-<p class="mt-2 text-[14px] leading-[1.6] text-ink/80 flex-1">Transformación de cocina alargada y oscura de los años 80 en un espacio diáfano con muebles en columna de suelo a techo y vinoteca integrada.</p>
+<p class="mt-2 text-[15.5px] leading-[1.65] text-ink/80 flex-1">Transformación de cocina alargada y oscura de los años 80 en un espacio diáfano con muebles en columna de suelo a techo y vinoteca integrada.</p>
 
 </div>
 
@@ -4241,16 +4523,130 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
 
 </section>
 
-<!-- SECCIÓN ESPECIALIDADES Y OFICIOS EN ACORDEÓN -->
+<!-- SECCIÓN CLAVES Y ACABADOS DE COCINA (SEOLIFE TD) -->
 
-<section class="bg-white py-16 md:py-24" id="oficios">
+<section class="w-full border-t border-line bg-surface-warm/30 py-16 md:py-24" id="oficios">
 
 <div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12">
 
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+    <!-- Encabezado Centrado SEOLife TD -->
+    <div class="max-w-[860px] mx-auto text-center mb-12 md:mb-16">
+      <span class="text-[12px] font-bold uppercase tracking-[0.18em] text-[#A87E34] block mb-2">Materiales y Acabados de Cocina</span>
+      <h2 class="font-editorial text-[30px] sm:text-[36px] md:text-[42px] font-bold text-ink leading-[1.15] tracking-tight">
+        Detalles que Hacen tu Cocina Cómoda, Luminosa y Duradera
+      </h2>
+      <p class="text-[16px] sm:text-[18px] text-ink/75 max-w-[760px] mx-auto leading-[1.65] mt-3">
+        Mobiliario a medida hasta el techo, encimeras resistentes a todo trote y soluciones prácticas pensadas para disfrutar cada día sin complicaciones.
+      </p>
+    </div>
+
+    <!-- Grid de 4 Tarjetas Visuales (Token Design SEOLife 2026) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-[1360px] mx-auto text-left">
+      
+      <!-- Tarjeta 1: Muebles y Despensa -->
+      <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-muebles-despensa.webp" alt="Mobiliario de cocina a medida con frentes limpios y despensa de suelo a techo en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        </div>
+        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Mobiliario a Medida</span>
+              <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-check-double-line text-[#A87E34]"></i> Gran Capacidad</span>
+            </div>
+            <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Muebles y Despensa de Suelo a Techo</h3>
+            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+              Aprovechamos cada centímetro de altura con cajones de extracción total y frentes continuos sin tiradores para un orden impecable.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#F1ECE1] mt-4 flex items-center justify-between text-[12.5px] font-semibold text-ink/70">
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Cierre amortiguado</span>
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Frentes antihuellas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Encimeras Porcelánicas -->
+      <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-encimeras-porcelanico.webp" alt="Encimera porcelánica con fregadero integrado e isla en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        </div>
+        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Superficies Nobles</span>
+              <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-fire-line text-[#A87E34]"></i> Calor y Rayaduras</span>
+            </div>
+            <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Encimeras Porcelánicas e Islas</h3>
+            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+              Piedras porcelánicas y cuarzo de marcas líderes (Dekton, Silestone). Corta y cocina directamente sobre la superficie sin riesgo de manchas ni marcas.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#F1ECE1] mt-4 flex items-center justify-between text-[12.5px] font-semibold text-ink/70">
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Cero absorción</span>
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Fácil limpieza</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3: Iluminación Integrada -->
+      <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-iluminacion-led.webp" alt="Iluminación LED continua bajo muebles de palillería en cocina de Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        </div>
+        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Luz & Confort</span>
+              <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-lightbulb-line text-[#A87E34]"></i> LED 3000K</span>
+            </div>
+            <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Iluminación LED y Enchufes Ocultos</h3>
+            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+              Luz continua antideslumbrante bajo los armarios para cocinar cómodamente y tomas eléctricas discretas colocadas exactamente donde las necesitas.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#F1ECE1] mt-4 flex items-center justify-between text-[12.5px] font-semibold text-ink/70">
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Luz sin sombras</span>
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Tomas integradas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 4: Cerramientos de Cristal -->
+      <div class="card-acabado group flex flex-col justify-start rounded-[20px] border border-[#E8E2D5] bg-white p-5 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/50 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
+        <div class="relative w-full h-[200px] overflow-hidden rounded-[16px] bg-slate-100 border border-black/5">
+          <img src="images/cocinas-cerramientos-cristal.webp" alt="Cerramiento de forja y cristal para cocina abierta al salón en Madrid" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" loading="lazy">
+        </div>
+        <div class="pt-5 pb-1 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-[11.5px] font-bold uppercase tracking-wider bg-[#FDF9F0] text-[#A87E34] border border-[#E8D3B0]">Espacios Abiertos</span>
+              <span class="text-[12px] font-semibold text-ink/60 flex items-center gap-1"><i class="ri-sun-line text-[#A87E34]"></i> Máxima Luz</span>
+            </div>
+            <h3 class="font-editorial text-[21px] sm:text-[22px] font-bold text-ink mb-2 leading-[1.25]">Cerramientos de Cristal y Forja</h3>
+            <p class="text-[15px] sm:text-[16px] text-ink/75 leading-[1.6] mt-2">
+              Une la cocina visualmente con el salón para multiplicar la luz natural de tu hogar, manteniendo los ruidos y los humos totalmente aislados cuando cocines.
+            </p>
+          </div>
+          <div class="pt-3 border-t border-[#F1ECE1] mt-4 flex items-center justify-between text-[12.5px] font-semibold text-ink/70">
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Vidrio acústico</span>
+            <span><i class="ri-check-line text-[#A87E34] mr-1"></i>Guía silenciosa</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  
 
+
 <div class="lg:col-span-5">
 
+</div>
+</section>
+<!-- <div class="hidden" id="old-oficios-accordion">
 <span class="text-[12px] font-bold uppercase tracking-widest text-teal">Oficios Propios Integrados</span>
 
 <h2 class="font-editorial text-[28px] md:text-[38px] text-ink mt-1">Especialidades técnicas para una cocina perfecta
@@ -4283,9 +4679,9 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
 
 </div>
 
-<div class="lg:col-span-7 space-y-3" id="oficios-accordion">
+<div class="hidden" id="oficios-accordion" style="display: none !important;">
 
-<!-- OFICIO 1 -->
+[OFICIO 1]
 
 <div class="oficio-item rounded-xl border border-sand bg-surface-warm p-4 md:p-5 is-open">
 
@@ -4295,7 +4691,7 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
 
 <i class="ri-archive-stack-line text-teal text-[20px]"></i>
 
-<span class="text-[16px] font-bold text-ink">Mobiliario a Medida e Interiores Hidrófugos</span>
+<span class="text-[17.5px] font-bold text-ink">Mobiliario a Medida e Interiores Hidrófugos</span>
 
 </div>
 
@@ -4303,7 +4699,7 @@ Calcular Presupuesto Cocina <i class="ri-arrow-right-line text-[15px]"></i>
 
 </button>
 
-<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3">
+<div class="oficio-panel mt-3 text-[15.5px] text-ink/80 leading-[1.65] border-t border-sand/50 pt-3">
 
 Cascos fabricados con tablero de partículas de 19 mm con tratamiento hidrófugo antiamole y cantos de PVC termosellados con cola de poliuretano PUR (resistente al vapor y al agua hirviendo). Guías y bisagras Blum con amortiguación integrada testadas a 200.000 aperturas.
 
@@ -4311,7 +4707,7 @@ Cascos fabricados con tablero de partículas de 19 mm con tratamiento hidrófugo
 
 </div>
 
-<!-- OFICIO 2 -->
+[OFICIO 2]
 
 <div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
 
@@ -4321,7 +4717,7 @@ Cascos fabricados con tablero de partículas de 19 mm con tratamiento hidrófugo
 
 <i class="ri-shape-line text-teal text-[20px]"></i>
 
-<span class="text-[16px] font-bold text-ink">Encimeras de Porcelánico y Cuarzo (Dekton / Silestone)</span>
+<span class="text-[17.5px] font-bold text-ink">Encimeras de Porcelánico y Cuarzo (Dekton / Silestone)</span>
 
 </div>
 
@@ -4329,7 +4725,7 @@ Cascos fabricados con tablero de partículas de 19 mm con tratamiento hidrófugo
 
 </button>
 
-<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+<div class="oficio-panel mt-3 text-[15.5px] text-ink/80 leading-[1.65] border-t border-sand/50 pt-3 hidden">
 
 Corte milimétrico mediante chorro de agua a presión y control numérico (CNC). Realizamos encastres para fregaderos bajo encimera con escurridor fresado en la propia piedra y cajeados para tomas de corriente escamoteables.
 
@@ -4337,7 +4733,7 @@ Corte milimétrico mediante chorro de agua a presión y control numérico (CNC).
 
 </div>
 
-<!-- OFICIO 3 -->
+[OFICIO 3]
 
 <div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
 
@@ -4347,7 +4743,7 @@ Corte milimétrico mediante chorro de agua a presión y control numérico (CNC).
 
 <i class="ri-flashlight-line text-teal text-[20px]"></i>
 
-<span class="text-[16px] font-bold text-ink">Electricidad de Potencia y Circuitos Independientes (C4/C5)</span>
+<span class="text-[17.5px] font-bold text-ink">Electricidad de Potencia y Circuitos Independientes (C4/C5)</span>
 
 </div>
 
@@ -4355,7 +4751,7 @@ Corte milimétrico mediante chorro de agua a presión y control numérico (CNC).
 
 </button>
 
-<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+<div class="oficio-panel mt-3 text-[15.5px] text-ink/80 leading-[1.65] border-t border-sand/50 pt-3 hidden">
 
 Adecuación completa al Reglamento Electrotécnico de Baja Tensión (REBT). Tiramos líneas independientes con magnetotérmicos dedicados para placa de inducción (6 mm²), horno, microondas, lavavajillas y tomas auxiliares sobre encimera con iluminación LED integrada.
 
@@ -4363,7 +4759,7 @@ Adecuación completa al Reglamento Electrotécnico de Baja Tensión (REBT). Tira
 
 </div>
 
-<!-- OFICIO 4 -->
+[OFICIO 4]
 
 <div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
 
@@ -4373,7 +4769,7 @@ Adecuación completa al Reglamento Electrotécnico de Baja Tensión (REBT). Tira
 
 <i class="ri-drop-line text-teal text-[20px]"></i>
 
-<span class="text-[16px] font-bold text-ink">Fontanería Multicapa y Desagües de Alto Caudal</span>
+<span class="text-[17.5px] font-bold text-ink">Fontanería Multicapa y Desagües de Alto Caudal</span>
 
 </div>
 
@@ -4381,7 +4777,7 @@ Adecuación completa al Reglamento Electrotécnico de Baja Tensión (REBT). Tira
 
 </button>
 
-<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+<div class="oficio-panel mt-3 text-[15.5px] text-ink/80 leading-[1.65] border-t border-sand/50 pt-3 hidden">
 
 Sustitución de plomo o cobre envejecido por tuberías Uponor multicapa con prensado mecánico. Nuevas tomas de agua fría, caliente y desagües sifónicos con antirretorno para evitar malos olores procedentes de la red general.
 
@@ -4389,7 +4785,7 @@ Sustitución de plomo o cobre envejecido por tuberías Uponor multicapa con pren
 
 </div>
 
-<!-- OFICIO 5 -->
+[OFICIO 5]
 
 <div class="oficio-item rounded-xl border border-sand bg-white p-4 md:p-5">
 
@@ -4399,7 +4795,7 @@ Sustitución de plomo o cobre envejecido por tuberías Uponor multicapa con pren
 
 <i class="ri-layout-masonry-line text-teal text-[20px]"></i>
 
-<span class="text-[16px] font-bold text-ink">Cerramientos de Hierro y Vidrio Laminar Acústico</span>
+<span class="text-[17.5px] font-bold text-ink">Cerramientos de Hierro y Vidrio Laminar Acústico</span>
 
 </div>
 
@@ -4407,7 +4803,7 @@ Sustitución de plomo o cobre envejecido por tuberías Uponor multicapa con pren
 
 </button>
 
-<div class="oficio-panel mt-3 text-[14px] text-muted leading-relaxed border-t border-sand/50 pt-3 hidden">
+<div class="oficio-panel mt-3 text-[15.5px] text-ink/80 leading-[1.65] border-t border-sand/50 pt-3 hidden">
 
 Fabricación en taller propio de cerramientos industriales con perfiles de forja lacados al horno y vidrios de seguridad. Sistemas de guías ocultas Klein con cierre amortiguado para una apertura silenciosa sin esfuerzo.
 
@@ -4423,6 +4819,8 @@ Fabricación en taller propio de cerramientos industriales con perfiles de forja
 
 </section>
 
+-->
+
 <!-- SECCIÓN TARIFAS ORIENTATIVAS Y FAQ (FONDO OSCURO ALTO CONTRASTE) -->
 
 <section class="w-full border-t border-line py-16 md:py-24" id="tarifas" style="background-color: #0E1B2E !important;">
@@ -5013,9 +5411,14 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
 
 
-  <button id="btn-close-consulta-modal" aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button">
+  </div>
+      <button id="btn-close-consulta-modal" aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button">
+        <i class="ri-close-line text-[18px]"></i>
+      </button>
+    </div><div style="display:contents">
 
-<i class="ri-close-line text-[18px]"></i>
+
+
 
 
 
@@ -5029,13 +5432,13 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
 <legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend>
 
-<input name="tipo_reforma" readonly="" type="hidden" value="Reforma completa"/>
+<input name="tipo_reforma" readonly="" type="hidden" value="Cocina"/>
 
 <div class="mt-2.5 flex flex-wrap gap-2 modal-chips-container">
 
-  <button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button>
+  <button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Cocina</button>
 
-  <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button>
+  <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Reforma completa</button>
 
   <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button>
 
@@ -5043,7 +5446,8 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
   <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button>
 
-  <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button>
+  <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button>
+</div>
 
   
 
@@ -5053,7 +5457,7 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
 <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label>
 
-<input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/>
+<input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/></div>
 
 
 
@@ -5063,7 +5467,7 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
   <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label>
 
-  <input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/>
+  <input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/></div>
 
   
 
@@ -5071,7 +5475,7 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
   <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label>
 
-  <input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/>
+  <input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/></div></div>
 
   
 
@@ -5083,7 +5487,7 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
 <textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Piso de 85 m² en el centro, quiero reformar cocina y baño..." required="" rows="4"></textarea>
 
-<div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div>
+<div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div></div>
 
 
 
@@ -5099,7 +5503,7 @@ Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunid
 
 </button>
 
-<p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
+<p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p></div>
 
 
 
@@ -5211,7 +5615,7 @@ window.__DATA_COCINAS__ = {
 
   duration: "Ejecución técnica · 1 a 2 semanas",
 
-  image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_fase_04_instalaciones.png",
+  image: "images/cocinas-paso-03.webp",
 
   protocols: [
 
@@ -5309,7 +5713,7 @@ window.__DATA_COCINAS__ = {
 
   desc: "Combinación armónica de frentes blanco seda antihuellas y módulos altos revestidos en chapa de roble natural. Pavimento combinado entre tarima hidrófuga AC5 y alfombra cerámica porcelánica en zona de aguas.",
 
-  image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_nordica_roble.png"
+  image: "images/cocinas-lineal-minimalista.webp"
 
 },
 
@@ -5321,7 +5725,7 @@ window.__DATA_COCINAS__ = {
 
   desc: "Equipamiento para amantes de la gastronomía: vinoteca bajo encimera de dos temperaturas, horno pirolítico a la altura de los ojos, calientaplatos y grifería con caño extraíble profesional.",
 
-  image: "https://reformasmadrid.seolifeteam.com/wp-content/uploads/2026/10/cocinas_estancia_gourmet_vinoteca.png"
+  image: "images/cocinas-isla-calacatta.webp"
 
 }
 
@@ -6127,7 +6531,9 @@ mobileMenuDrawer.classList.add('is-active');
 
 mobileMenuDrawer.setAttribute('aria-hidden', 'false');
 
-document.body.style.overflow = 'hidden';
+document.body.style.overflow = 'hidden';
+      document.body.classList.add('modal-open');
+      const floatBtn = document.getElementById('btn-floating-consulta'); if (floatBtn) floatBtn.style.display = 'none';
 
   }
 
@@ -6141,7 +6547,9 @@ mobileMenuDrawer.classList.remove('is-active');
 
 mobileMenuDrawer.setAttribute('aria-hidden', 'true');
 
-document.body.style.removeProperty('overflow');
+document.body.style.removeProperty('overflow');
+      document.body.classList.remove('modal-open');
+      const floatBtn = document.getElementById('btn-floating-consulta'); if (floatBtn) floatBtn.style.display = 'flex';
 
   }
 
@@ -6201,7 +6609,9 @@ if (modalConsulta && backdropConsulta) {
 
   modalConsulta.setAttribute('aria-hidden', 'false');
 
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+      document.body.classList.add('modal-open');
+      const floatBtn = document.getElementById('btn-floating-consulta'); if (floatBtn) floatBtn.style.display = 'none';
 
 }
 
@@ -6219,7 +6629,9 @@ if (modalConsulta && backdropConsulta) {
 
   modalConsulta.setAttribute('aria-hidden', 'true');
 
-  document.body.style.removeProperty('overflow');
+  document.body.style.removeProperty('overflow');
+      document.body.classList.remove('modal-open');
+      const floatBtn = document.getElementById('btn-floating-consulta'); if (floatBtn) floatBtn.style.display = 'flex';
 
 }
 
