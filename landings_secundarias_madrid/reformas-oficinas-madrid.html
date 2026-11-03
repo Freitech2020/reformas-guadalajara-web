@@ -744,39 +744,192 @@
     color: #8C6424 !important;
   }
 
-  /* TARJETAS DE FASES LUXURY (ESTÁNDAR SEOLIFE TD 2026) */
-  .card-paso-luxury {
-    background: #ffffff !important;
-    border: 1px solid #E8E2D5 !important;
-    border-radius: 24px !important;
-    box-shadow: 0 4px 20px -2px rgba(14, 27, 46, 0.05) !important;
+    /* ESTILOS CANÓNICOS FASE-CARD READDY (100% IDÉNTICO A IMAGEN DE REFERENCIA) */
+  .fase-card {
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(14, 27, 46, 0.09) !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(14, 27, 46, 0.04) !important;
+    overflow: hidden !important;
+    height: 100% !important;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease !important;
   }
-  .card-paso-luxury:hover {
-    transform: translateY(-6px) !important;
-    border-color: rgba(168, 126, 52, 0.6) !important;
-    box-shadow: 0 16px 36px -6px rgba(14, 27, 46, 0.12) !important;
+  .fase-card:hover {
+    border-color: rgba(45, 134, 126, 0.45) !important;
+    box-shadow: 0 12px 28px rgba(14, 27, 46, 0.09) !important;
+    transform: translateY(-3px) !important;
   }
-  .paso-img-frame {
+  .fase-card-media {
     position: relative !important;
     width: 100% !important;
-    height: 200px !important;
-    border-radius: 18px !important;
     overflow: hidden !important;
-    background-color: #F8FAFC !important;
+    background-color: #f1f5f9 !important;
+    aspect-ratio: 16 / 10 !important;
   }
-  .paso-img-frame img {
+  .fase-card-media img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    object-position: center !important;
+    object-position: top !important;
     transition: transform 0.5s ease-out !important;
   }
-  .card-paso-luxury:hover .paso-img-frame img {
-    transform: scale(1.05) !important;
+  .fase-card:hover .fase-card-media img {
+    transform: scale(1.04) !important;
+  }
+  .fase-card-badge-num {
+    position: absolute !important;
+    top: 14px !important;
+    left: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    z-index: 2 !important;
+  }
+  .fase-card-num {
+    width: 36px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 10px !important;
+    background: rgba(14, 27, 46, 0.92) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+  }
+  .fase-card-num-gold {
+    background: #2D867E !important;
+    color: #ffffff !important;
+  }
+  .fase-card-step-tag {
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    padding: 4px 10px !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #2D867E !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08) !important;
+  }
+  .fase-card-duration {
+    position: absolute !important;
+    top: 14px !important;
+    right: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    border-radius: 8px !important;
+    background: rgba(14, 27, 46, 0.85) !important;
+    padding: 4px 10px !important;
+    font-size: 11.5px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    z-index: 2 !important;
+  }
+  .fase-card-body {
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    flex: 1 !important;
+  }
+  @media (min-width: 640px) {
+    .fase-card-body {
+      padding: 28px !important;
+    }
+  }
+  .fase-card-subtitle {
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.12em !important;
+    color: #2D867E !important;
+    display: block !important;
+  }
+  .fase-card-title {
+    font-family: var(--font-editorial, Georgia, serif) !important;
+    margin-top: 8px !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #0E1B2E !important;
+    line-height: 1.25 !important;
+  }
+  @media (min-width: 640px) {
+    .fase-card-title {
+      font-size: 22px !important;
+    }
+  }
+  .fase-card-desc {
+    margin-top: 12px !important;
+    font-size: 16px !important;
+    line-height: 1.65 !important;
+    color: rgba(14, 27, 46, 0.85) !important;
+    font-weight: 400 !important;
+  }
+  .fase-card-checklist {
+    margin-top: 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    border-top: 1px solid rgba(14, 27, 46, 0.08) !important;
+    padding-top: 16px !important;
+  }
+  .fase-card-checklist li {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    color: #0E1B2E !important;
+    font-weight: 500 !important;
+  }
+  .fase-card-checklist li i {
+    color: #2D867E !important;
+    font-size: 17px !important;
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+  }
+  .fase-card-footer {
+    margin-top: 20px !important;
+    padding-top: 16px !important;
+    border-top: 1px solid rgba(14, 27, 46, 0.08) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .fase-card-footer-meta {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: rgba(14, 27, 46, 0.7) !important;
+  }
+  .fase-card-cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: #2D867E !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+  }
+  .fase-card-cta:hover {
+    color: #246B65 !important;
+  }
+  .fase-card-cta i {
+    transition: transform 0.2s ease !important;
+  }
+  .fase-card-cta:hover i {
+    transform: translateX(4px) !important;
   }
   .step-badge {
     display: inline-flex !important;
@@ -896,22 +1049,7 @@
   }
 
   
-  /* BLINDAJE GEOMÉTRICO Y CENTRADO DE FASES (TOKEN DESIGN 2026) */
-  #fases-grid {
-    max-width: 1140px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  #fases-grid > div:first-child {
-    max-width: 1140px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  #fases-grid > div:last-child {
-    max-width: 752px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
+
 
   /* ESPACIADO ESPECÍFICO BANNER DIRECCIÓN TÉCNICA (SEPARACIÓN EXACTA DE 15PX RESPECTO A CARDS) */
   .banner-direccion-tecnica {
@@ -1584,250 +1722,250 @@
       </p>
     </div>
 
-        <!-- GRID PANORÁMICO DE 5 FASES EQUILIBRADAS (ESTRUCTURA LUXURY SEOLIFE TD 2026) -->
-    <div class="mt-12 text-left max-w-[1140px] mx-auto" id="fases-grid">
+            <!-- GRID PANORÁMICO DE 5 PASOS AUTÓNOMOS (3 ARRIBA + 2 ABAJO CENTRADOS) -->
+    <div class="mt-10" id="fases-grid">
       <!-- FILA SUPERIOR: FASE DE CONSULTORÍA Y PROYECTO (PASOS 01, 02, 03) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- PASO 01: MEDICIÓN & SPACE PLANNING -->
-        <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-          <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
-            <img src="images/oficinas-fase-01-medicion.webp" alt="Toma de datos y space planning para reforma de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-            <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-              <span class="step-badge">Paso 01</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">TOMA DE DATOS</span>
+        <article class="fase-card group">
+          <div>
+            <div class="fase-card-media">
+              <img src="images/oficinas-fase-01-medicion.webp" alt="Toma de datos y space planning para reforma de oficinas en Madrid" loading="lazy" />
+              <div class="fase-card-badge-num">
+                <span class="fase-card-num">01</span>
+                <span class="fase-card-step-tag">TOMA DE DATOS</span>
+              </div>
+              <div class="fase-card-duration">
+                <i class="ri-time-line text-[12px] text-teal-light"></i> 48 h
+              </div>
             </div>
-            <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-time-line text-[16px] text-[#E2C48F]"></i> 48 h
-              </span>
+            <div class="fase-card-body">
+              <div>
+                <span class="fase-card-subtitle">Fase 01 · Consultoría Espacial</span>
+                <h3 class="fase-card-title">
+                  Estudio preliminar y análisis de necesidades
+                </h3>
+                <p class="fase-card-desc">
+                  Analizamos la densidad de puestos, flujos de trabajo, requerimientos de salas de videoconferencia, puntos de red Cat 6A y trazados de climatización en falso techo para maximizar la productividad.
+                </p>
+                <ul class="fase-card-checklist">
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Levantamiento milimétrico con distanciómetro láser y termografía</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Análisis de luz natural y cálculo de puestos según normativa PRL</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Comprobación de capacidad de suelo técnico y bandejas portacables</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="fase-card-footer">
+                <span class="fase-card-footer-meta">Estudio inicial en 48 h</span>
+                <a href="#contacto" class="fase-card-cta">
+                  Solicitar visita <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="pt-5 flex flex-col flex-1 justify-between">
-            <div>
-              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 01 · Consultoría Espacial</span>
-              <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
-                Estudio preliminar y análisis de necesidades
-              </h3>
-              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
-                Analizamos la densidad de puestos, flujos de trabajo, requerimientos de salas de videoconferencia, puntos de red Cat 6A y trazados de climatización en falso techo para maximizar la productividad.
-              </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Levantamiento milimétrico con distanciómetro láser y termografía</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Análisis de luz natural y cálculo de puestos según normativa PRL</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Comprobación de capacidad de suelo técnico y bandejas portacables</span>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
-              <span class="font-semibold text-ink/65">Estudio inicial en 48 h</span>
-              <a href="#contacto" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Solicitar visita <i class="ri-arrow-right-line text-[16px]"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        </article>
 
         <!-- PASO 02: PLANIMETRÍA 3D & DISTRIBUCIÓN -->
-        <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-          <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
-            <img src="images/oficinas-fase-02-diseno3d.webp" alt="Planimetría 3D y distribución modular de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='images/oficinas-fase-02-diseno3d.jpg';" />
-            <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-              <span class="step-badge">Paso 02</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">PLANO 3D</span>
+        <article class="fase-card group">
+          <div>
+            <div class="fase-card-media">
+              <img src="images/oficinas-fase-02-diseno3d.webp" alt="Planimetría 3D y distribución modular de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='images/oficinas-fase-02-diseno3d.jpg';" />
+              <div class="fase-card-badge-num">
+                <span class="fase-card-num">02</span>
+                <span class="fase-card-step-tag">PLANO 3D</span>
+              </div>
+              <div class="fase-card-duration">
+                <i class="ri-time-line text-[12px] text-teal-light"></i> 3–5 días
+              </div>
             </div>
-            <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-time-line text-[16px] text-[#E2C48F]"></i> 3–5 días
-              </span>
+            <div class="fase-card-body">
+              <div>
+                <span class="fase-card-subtitle">Fase 02 · Proyecto Arquitectónico</span>
+                <h3 class="fase-card-title">
+                  Open space flexible, acústica y salas de juntas
+                </h3>
+                <p class="fase-card-desc">
+                  Modelado 3D fotorrealista de la sede con particiones acristaladas, áreas de descanso (coffee corner), cabinas fonoabsorbentes y zonas de concentración individual con simulación lumínica.
+                </p>
+                <ul class="fase-card-checklist">
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Zonificación acústica diferenciada (áreas colaborativas vs. silencio)</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Estudio luminotécnico para cumplimiento de 500 lux en plano de trabajo</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Muestrarios de acabados fonoabsorbentes Clase A y moquetas modulares</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="fase-card-footer">
+                <span class="fase-card-footer-meta">Propuesta en 3 a 5 días</span>
+                <a href="#proyectos" class="fase-card-cta">
+                  Ver proyectos 3D <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="pt-5 flex flex-col flex-1 justify-between">
-            <div>
-              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 02 · Proyecto Arquitectónico</span>
-              <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
-                Open space flexible, acústica y salas de juntas
-              </h3>
-              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
-                Modelado 3D fotorrealista de la sede con particiones acristaladas, áreas de descanso (coffee corner), cabinas fonoabsorbentes y zonas de concentración individual con simulación lumínica.
-              </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Zonificación acústica diferenciada (áreas colaborativas vs. silencio)</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Estudio luminotécnico para cumplimiento de 500 lux en plano de trabajo</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Muestrarios de acabados fonoabsorbentes Clase A y moquetas modulares</span>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
-              <span class="font-semibold text-ink/65">Propuesta en 3 a 5 días</span>
-              <a href="#proyectos" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Ver proyectos 3D <i class="ri-arrow-right-line text-[16px]"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        </article>
 
         <!-- PASO 03: CONTRATO Y PLAN DE IMPLANTACIÓN -->
-        <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-          <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
-            <img src="images/oficinas-fase-03-contrato-gantt.webp" alt="Cronograma Gantt cerrado y contrato para reforma de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-            <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-              <span class="step-badge">Paso 03</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">CONTRATO</span>
+        <article class="fase-card group">
+          <div>
+            <div class="fase-card-media">
+              <img src="images/oficinas-fase-03-contrato-gantt.webp" alt="Cronograma Gantt cerrado y contrato para reforma de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              <div class="fase-card-badge-num">
+                <span class="fase-card-num">03</span>
+                <span class="fase-card-step-tag">CONTRATO</span>
+              </div>
+              <div class="fase-card-duration">
+                <i class="ri-shield-check-line text-[12px] text-teal-light"></i> Precio Cerrado
+              </div>
             </div>
-            <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-shield-check-line text-[16px] text-[#E2C48F]"></i> Precio Cerrado
-              </span>
+            <div class="fase-card-body">
+              <div>
+                <span class="fase-card-subtitle">Fase 03 · Plan de Implantación</span>
+                <h3 class="fase-card-title">
+                  Cronograma Gantt cerrado y fases sectorizadas
+                </h3>
+                <p class="fase-card-desc">
+                  Planificamos la intervención por plantas, sectores o fines de semana si tu empresa continúa operando, con precios unitarios cerrados por metro cuadrado y penalización estricta por día de retraso.
+                </p>
+                <ul class="fase-card-checklist">
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Precio cerrado por m² sin extras imprevistos ni desviaciones</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Plan de seguridad y salud visado con coordinación de actividades (CAE)</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Calendario de hitos semanales y turnos especiales sin interferir tu trabajo</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="fase-card-footer">
+                <span class="fase-card-footer-meta">Firma vinculante en 24 h</span>
+                <a href="#tarifas" class="fase-card-cta">
+                  Calcular presupuesto <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="pt-5 flex flex-col flex-1 justify-between">
-            <div>
-              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 03 · Plan de Implantación</span>
-              <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
-                Cronograma Gantt cerrado y fases sectorizadas
-              </h3>
-              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
-                Planificamos la intervención por plantas, sectores o fines de semana si tu empresa continúa operando, con precios unitarios cerrados por metro cuadrado y penalización estricta por día de retraso.
-              </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Precio cerrado por m² sin extras imprevistos ni desviaciones</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Plan de seguridad y salud visado con coordinación de actividades (CAE)</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Calendario de hitos semanales y turnos especiales sin interferir tu trabajo</span>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
-              <span class="font-semibold text-ink/65">Firma vinculante en 24 h</span>
-              <a href="#tarifas" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Calcular presupuesto <i class="ri-arrow-right-line text-[16px]"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        </article>
 
       </div>
 
-      <!-- FILA INFERIOR: FASE DE EJECUCIÓN Y RECEPCIÓN (PASOS 04 Y 05 - CENTRADAS CON IDÉNTICA GEOMETRÍA) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto mt-6" style="max-width: 752px !important;">
+      <!-- FILA INFERIOR: FASE DE EJECUCIÓN Y RECEPCIÓN (PASOS 04 Y 05 - CENTRADAS EN DESKTOP) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-[960px] mx-auto w-full">
 
         <!-- PASO 04: OBRA TÉCNICA MODULAR -->
-        <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-          <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
-            <img src="images/oficinas-fase-04-ejecucion.webp" alt="Ejecución de suelo técnico y mamparas acústicas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-            <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-              <span class="step-badge">Paso 04</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">EJECUCIÓN</span>
+        <article class="fase-card group">
+          <div>
+            <div class="fase-card-media">
+              <img src="images/oficinas-fase-04-ejecucion.webp" alt="Ejecución de suelo técnico y mamparas acústicas en Madrid" loading="lazy" />
+              <div class="fase-card-badge-num">
+                <span class="fase-card-num">04</span>
+                <span class="fase-card-step-tag">EJECUCIÓN</span>
+              </div>
+              <div class="fase-card-duration">
+                <i class="ri-time-line text-[12px] text-teal-light"></i> 2–5 semanas
+              </div>
             </div>
-            <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-time-line text-[16px] text-[#E2C48F]"></i> 2–5 semanas
-              </span>
+            <div class="fase-card-body">
+              <div>
+                <span class="fase-card-subtitle">Fase 04 · Obra Técnica Modular</span>
+                <h3 class="fase-card-title">
+                  Suelo técnico, mamparas fónicas y redes Cat 6A
+                </h3>
+                <p class="fase-card-desc">
+                  Montaje de pavimento elevado 60×60 registrable, mamparas dobles de vidrio con aislamiento de 42 dB, cableado estructurado certificado y climatización VRF zonificada bajo dirección facultativa diaria.
+                </p>
+                <ul class="fase-card-checklist">
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Certificación punto a punto con analizador Fluke Networks</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Mamparas divisorias modulares desmontables con perfilería oculta</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Sectorización antipolvo y trabajos ruidosos fuera de jornada</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="fase-card-footer">
+                <span class="fase-card-footer-meta">Supervisión diaria colegiada</span>
+                <a href="#contacto" class="fase-card-cta">
+                  Consultar ejecución <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="pt-5 flex flex-col flex-1 justify-between">
-            <div>
-              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 04 · Obra Técnica Modular</span>
-              <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
-                Suelo técnico, mamparas fónicas y redes Cat 6A
-              </h3>
-              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
-                Montaje de pavimento elevado 60×60 registrable, mamparas dobles de vidrio con aislamiento de 42 dB, cableado estructurado certificado y climatización VRF zonificada bajo dirección facultativa diaria.
-              </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Certificación punto a punto con analizador Fluke Networks</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Mamparas divisorias modulares desmontables con perfilería oculta</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Sectorización antipolvo y trabajos ruidosos fuera de jornada</span>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
-              <span class="font-semibold text-ink/65">Supervisión diaria colegiada</span>
-              <a href="#contacto" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Consultar ejecución <i class="ri-arrow-right-line text-[16px]"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        </article>
 
         <!-- PASO 05: ENTREGA LLAVE EN MANO -->
-        <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
-          <div class="paso-img-frame relative w-full h-[200px] overflow-hidden rounded-[18px] bg-slate-100 border border-black/5">
-            <img src="images/oficinas-sala-juntas.webp" alt="Entrega de oficina corporativa llave en mano en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
-            <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
-              <span class="step-badge">Paso 05</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">ENTREGA</span>
+        <article class="fase-card group">
+          <div>
+            <div class="fase-card-media">
+              <img src="images/oficinas-sala-juntas.webp" alt="Entrega de oficina corporativa llave en mano en Madrid" loading="lazy" />
+              <div class="fase-card-badge-num">
+                <span class="fase-card-num fase-card-num-gold">05</span>
+                <span class="fase-card-step-tag">ENTREGA</span>
+              </div>
+              <div class="fase-card-duration">
+                <i class="ri-shield-check-line text-[12px] text-teal-light"></i> 2 Años Garantía
+              </div>
             </div>
-            <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-shield-check-line text-[16px] text-[#E2C48F]"></i> 2 Años Garantía
-              </span>
+            <div class="fase-card-body">
+              <div>
+                <span class="fase-card-subtitle">Fase 05 · Entrega Llave en Mano</span>
+                <h3 class="fase-card-title">
+                  Puesta en marcha, esquemas CIE/RITE y garantía
+                </h3>
+                <p class="fase-card-desc">
+                  Entregamos la sede con todos los puestos de trabajo conectados, racks testeados y etiquetados, equilibrado de climatización, boletines oficiales visados y limpieza técnica exhaustiva para incorporación inmediata.
+                </p>
+                <ul class="fase-card-checklist">
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Entrega de Libro del Edificio, boletín CIE y legalización RITE</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Pruebas de sistemas contra incendios y control de accesos</span>
+                  </li>
+                  <li>
+                    <i class="ri-checkbox-circle-fill"></i>
+                    <span>Limpieza técnica integral de moquetas y 2 años de garantía por escrito</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="fase-card-footer">
+                <span class="fase-card-footer-meta">Recepción en 48 h</span>
+                <a href="#contacto" class="fase-card-cta">
+                  Pedir presupuesto <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="pt-5 flex flex-col flex-1 justify-between">
-            <div>
-              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 05 · Entrega Llave en Mano</span>
-              <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
-                Puesta en marcha, esquemas CIE/RITE y garantía
-              </h3>
-              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
-                Entregamos la sede con todos los puestos de trabajo conectados, racks testeados y etiquetados, equilibrado de climatización, boletines oficiales visados y limpieza técnica exhaustiva para incorporación inmediata.
-              </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Entrega de Libro del Edificio, boletín CIE y legalización RITE</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Pruebas de sistemas contra incendios y control de accesos</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
-                  <span>Limpieza técnica integral de moquetas y 2 años de garantía por escrito</span>
-                </li>
-              </ul>
-            </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
-              <span class="font-semibold text-ink/65">Recepción en 48 h</span>
-              <a href="#contacto" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Pedir presupuesto <i class="ri-arrow-right-line text-[16px]"></i>
-              </a>
-            </div>
-          </div>
-        </div>
+        </article>
 
       </div>
     </div>
