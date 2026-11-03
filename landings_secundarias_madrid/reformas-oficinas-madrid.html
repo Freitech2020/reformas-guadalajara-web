@@ -133,6 +133,9 @@
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
+    max-width: 1140px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   @media (min-width: 1024px) {
     .banner-direccion-tecnica {
@@ -798,6 +801,9 @@
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
+    max-width: 1140px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     box-sizing: border-box !important;
   }
   @media (max-width: 1023px) {
@@ -889,14 +895,32 @@
     }
   }
 
-  /* ESPACIADO ESPECÍFICO BANNER DIRECCIÓN TÉCNICA */
+  
+  /* BLINDAJE GEOMÉTRICO Y CENTRADO DE FASES (TOKEN DESIGN 2026) */
+  #fases-grid {
+    max-width: 1140px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #fases-grid > div:first-child {
+    max-width: 1140px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  #fases-grid > div:last-child {
+    max-width: 752px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* ESPACIADO ESPECÍFICO BANNER DIRECCIÓN TÉCNICA (SEPARACIÓN EXACTA DE 15PX RESPECTO A CARDS) */
   .banner-direccion-tecnica {
-    margin-top: 4.5rem !important;
+    margin-top: 15px !important;
     margin-bottom: 1.5rem !important;
   }
   @media (min-width: 768px) {
     .banner-direccion-tecnica {
-      margin-top: 6rem !important;
+      margin-top: 15px !important;
       margin-bottom: 2rem !important;
     }
   }
@@ -1572,7 +1596,7 @@
     </div>
 
         <!-- GRID PANORÁMICO DE 5 FASES EQUILIBRADAS (ESTRUCTURA LUXURY SEOLIFE TD 2026) -->
-    <div class="mt-12 text-left max-w-[1360px] mx-auto" id="fases-grid">
+    <div class="mt-12 text-left max-w-[1140px] mx-auto" id="fases-grid">
       <!-- FILA SUPERIOR: FASE DE CONSULTORÍA Y PROYECTO (PASOS 01, 02, 03) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -1720,7 +1744,7 @@
       </div>
 
       <!-- FILA INFERIOR: FASE DE EJECUCIÓN Y RECEPCIÓN (PASOS 04 Y 05 - CENTRADAS CON IDÉNTICA GEOMETRÍA) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto mt-6" style="max-width: 920px !important;">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto mt-6" style="max-width: 752px !important;">
 
         <!-- PASO 04: OBRA TÉCNICA MODULAR -->
         <div class="card-paso-luxury group flex flex-col justify-start rounded-[24px] border border-[#E8E2D5] bg-white p-5 sm:p-6 shadow-[0_4px_20px_-2px_rgba(14,27,46,0.05)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#A87E34]/60 hover:shadow-[0_16px_36px_-6px_rgba(14,27,46,0.11)]">
@@ -1820,7 +1844,7 @@
     </div>
 
     <!-- BANNER DIRECCIÓN TÉCNICA -->
-    <div class="banner-direccion-tecnica mt-12 w-full overflow-hidden rounded-[20px] border border-line bg-white shadow-sm flex flex-col lg:flex-row items-stretch" style="width: 100% !important;">
+    <div class="banner-direccion-tecnica mt-[15px] w-full max-w-[1140px] mx-auto overflow-hidden rounded-[20px] border border-line bg-white shadow-sm flex flex-col lg:flex-row items-stretch" style="margin-top: 15px !important; max-width: 1140px !important;">
       <div class="flex-1 p-6 md:p-8 flex flex-col justify-center gap-4 order-2 lg:order-1 min-w-0">
         <div class="flex flex-wrap items-center gap-3">
           <span class="text-[16px] font-bold uppercase tracking-[0.16em] text-teal">Dirección Facultativa Propia</span>
