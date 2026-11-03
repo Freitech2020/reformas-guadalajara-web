@@ -171,7 +171,7 @@
 
 
   /* ==========================================================================
-     CLUSTER GLASS GRID SYSTEM - GUADALAJARA 2026 (INFORMATIVO SIN CTA)
+     CLUSTER GLASS GRID SYSTEM - GUADALAJARA 2026 (CANONICAL MADRID REPLICATION)
      ========================================================================== */
   .cluster-card {
     position: relative;
@@ -203,14 +203,42 @@
   .cluster-card:hover .cluster-card-img {
     transform: scale(1.05);
   }
+
+  /* HIGH-CONTRAST LUMINOUS PILLS (DISTINCT OVER LIGHT AND DARK PHOTOS) */
+  .cluster-badge-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 6px 14px !important;
+    border-radius: 9999px !important;
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+    color: #ffffff !important;
+    background: rgba(15, 23, 42, 0.72) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35) !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+  }
+  .cluster-badge-pill.is-location {
+    background: rgba(168, 126, 52, 0.85) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.5) !important;
+    font-weight: 700 !important;
+    text-transform: none !important;
+  }
+
+  /* REFINED GRADIENT SCRIM: PRESERVES PHOTO LUMINOSITY (ONLY 40% HEIGHT, SOFT TRANSITION) */
   .cluster-scrim-base {
     position: absolute !important;
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
     width: 100% !important;
-    height: 52% !important;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.65) 60%, transparent 100%) !important;
+    height: 42% !important;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.45) 55%, transparent 100%) !important;
     pointer-events: none !important;
     z-index: 2 !important;
     transition: opacity 0.35s ease !important;
@@ -281,7 +309,10 @@
     }
   }
 
-  /* Mobile and Tablet Responsive Shield: Clean, Unobtrusive & Informative */
+  /* Mobile and Tablet Responsive Shield: Clean, Unobtrusive & Breathable */
+  .cluster-mobile-only-btn {
+    display: none !important;
+  }
   @media (max-width: 1023px) {
     .cluster-glass-wrapper {
       display: none !important; /* Removes the heavy floating box on mobile & tablet */
@@ -297,20 +328,24 @@
     .cluster-scrim-base {
       display: block !important;
       opacity: 1 !important;
-      height: 58% !important;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.65) 65%, transparent 100%) !important;
+      height: 48% !important;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.55) 65%, transparent 100%) !important;
     }
     .cluster-card {
-      min-height: 450px !important;
+      min-height: 440px !important;
+    }
+    .cluster-mobile-only-btn {
+      display: flex !important;
+      margin-top: 12px !important;
     }
   }
 
   .cluster-glass-card {
-    background: rgba(15, 20, 30, 0.85) !important;
+    background: rgba(15, 20, 30, 0.65) !important;
     backdrop-filter: blur(20px) saturate(190%) !important;
     -webkit-backdrop-filter: blur(20px) saturate(190%) !important;
-    border: 1px solid rgba(255, 255, 255, 0.18) !important;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.22) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
     border-radius: 16px !important;
     color: #ffffff !important;
   }
@@ -351,16 +386,42 @@
     line-height: 1.2 !important;
   }
   .cluster-metric-val-white {
-    font-size: 13.5px !important;
+    font-size: 16px !important;
     font-weight: 700 !important;
     color: #ffffff !important;
-    line-height: 1.2 !important;
+    line-height: 1.25 !important;
   }
   .cluster-metric-val-gold {
-    font-size: 13.5px !important;
+    font-size: 16px !important;
     font-weight: 700 !important;
     color: #F5D084 !important;
-    line-height: 1.2 !important;
+    line-height: 1.25 !important;
+  }
+  .cluster-cta-gold {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    background: linear-gradient(135deg, #c59b27 0%, #a87e34 50%, #8c6424 100%) !important;
+    color: #ffffff !important;
+    padding: 12px 20px !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 16px rgba(168, 126, 52, 0.45) !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    cursor: pointer !important;
+    margin-top: 14px !important;
+  }
+  .cluster-cta-gold:hover {
+    background: linear-gradient(135deg, #d4af37 0%, #b8860b 50%, #996515 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 22px rgba(168, 126, 52, 0.65) !important;
+    transform: translateY(-2px) !important;
   }
 
   /* FORCE ELIMINATION OF OLD ESTANCIAS ACCORDIONS AND SINGLE VISOR */
@@ -1698,38 +1759,37 @@
 <div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div><div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-center px-4 pt-[110px] pb-14 md:px-8 md:pt-[120px] md:pb-16 lg:min-h-[90vh] lg:px-12 lg:pt-[110px] lg:pb-16"><div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12 w-full"><div class="lg:col-span-7 flex flex-col items-center text-center md:items-start md:text-left"><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><h1 class="font-editorial max-w-[700px] mx-auto md:mx-0 text-[34px] leading-[1.06] tracking-[-0.022em] text-white [text-shadow:0_2px_6px_rgba(14,27,46,0.55),0_4px_32px_rgba(14,27,46,0.7)] sm:text-[42px] md:text-[50px] lg:text-[58px]">Reformas integrales<span class="mt-1 block italic text-teal-light">a tu medida.</span></h1></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 90ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 90ms; will-change: transform, opacity;"><p class="mt-5 max-w-[520px] mx-auto md:mx-0 text-[15px] leading-[1.65] text-white/90 [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)] md:mt-6 md:text-[18px]">Acabados de alta gama, presupuesto cerrado y dirección técnica diaria para renovar tu piso o chalet en Guadalajara sin sorpresas.</p></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 170ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 170ms; will-change: transform, opacity;"><div class="mt-7 flex w-full justify-center md:justify-start"><a class="inline-flex items-center justify-center gap-2.5 rounded-md bg-teal text-[16px] font-semibold text-white transition-all hover:bg-teal-hover cursor-pointer whitespace-nowrap shadow-md text-center" style="padding: 18px 44px !important;" href="#contacto">Pedir Visita Gratuita</a></div></div><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 240ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 240ms; will-change: transform, opacity;"><dl class="mt-9 grid max-w-[460px] w-full mx-auto md:mx-0 grid-cols-3 gap-4 border-t border-white/20 pt-6 text-center md:text-left"><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">15+</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">años en Guadalajara</dd></div><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">280</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">viviendas entregadas</dd></div><div><dt class="text-[20px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[26px]">2 años</dt><dd class="mt-2 text-[11px] leading-[1.4] text-white/70 md:text-[11.5px]">garantía legal</dd></div></dl></div></div><div class="hidden lg:col-span-5 lg:block"><div style="opacity: 1; transform: translate3d(0px, 0px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1) 150ms, transform 800ms cubic-bezier(0.22, 1, 0.36, 1) 150ms; will-change: transform, opacity;"><div class="hero-zonas-card ml-auto w-full max-w-[440px] rounded-2xl border border-white/25 bg-ink/45 p-6 md:p-7 backdrop-blur-md"><div class="zonas-header flex items-center gap-2.5 mb-4"><i class="ri-shield-check-line text-[20px] w-5 h-5 flex items-center justify-center text-teal-light"></i><span class="zonas-header-title text-[17px] font-bold uppercase tracking-[0.14em] text-white/90">Zonas de actuación</span></div><ul class="flex flex-col gap-4"><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-building-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Pisos céntricos</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Casco histórico y Aguas Vivas</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-home-4-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Chalets</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Cabanillas y Marchamalo</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-restaurant-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Cocinas con isla</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Muebles a medida</div></div></li></ul><div class="mt-6 flex items-center gap-3 border-t border-white/15 pt-4"><span class="live-status-dot"><span class="live-status-pulse"></span><span class="live-status-core"></span></span><span class="zonas-footer text-[17px] font-medium text-white/90">Equipo disponible esta semana</span></div></div></div></div></div><div class="hero-zonas-card mt-8 mx-auto rounded-2xl border border-white/25 bg-ink/45 p-6 backdrop-blur-md lg:hidden"><div class="zonas-header flex items-center gap-2.5 mb-4"><i class="ri-shield-check-line text-[20px] w-5 h-5 flex items-center justify-center text-teal-light"></i><span class="zonas-header-title text-[17px] font-bold uppercase tracking-[0.14em] text-white/90">Zonas de actuación</span></div><ul class="flex flex-col gap-4"><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-building-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Pisos céntricos</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Casco histórico y Aguas Vivas</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-home-4-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Chalets</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Cabanillas y Marchamalo</div></div></li><li class="flex items-center gap-3.5"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-restaurant-2-line text-[20px]"></i></span><div><div class="zonas-item-title text-[19px] font-bold leading-tight text-white">Cocinas con isla</div><div class="zonas-item-subtitle text-[17px] leading-snug text-white/85">Muebles a medida</div></div></li></ul><div class="mt-5 flex items-center gap-3 border-t border-white/15 pt-4"><span class="live-status-dot"><span class="live-status-pulse"></span><span class="live-status-core"></span></span><span class="zonas-footer text-[17px] font-medium text-white/90">Equipo disponible esta semana</span></div></div></div></section><section class="w-full border-t border-line bg-white py-24 md:py-32" id="estancias"><div class="mx-auto w-full max-w-[1440px] px-4 md:px-6 lg:px-6 xl:px-12"><div style="opacity: 0; transform: translate3d(0px, 16px, 0px); transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1); will-change: transform, opacity;"><div class="max-w-[860px] mx-auto text-center mb-10 md:mb-14"><h2 class="font-editorial text-[30px] sm:text-[38px] md:text-[44px] font-bold text-ink leading-tight tracking-tight">¿Qué espacio deseas transformar en Guadalajara?</h2><p class="text-[16px] sm:text-[18px] text-ink/80 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">Selecciona una estancia y verás el alcance técnico, el plazo real y un caso ejecutado.</p></div></div><div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 w-full" id="estancias-cluster-grid"><!-- CLUSTER_CONTAINER_START -->
   <!-- CARD 1: COCINAS -->
   <article class="cluster-card group">
-    <img src="images/florin-cluster-02-cocina.webp" alt="Reforma de Cocina en Guadalajara" class="cluster-card-img" loading="lazy" />
+    <img src="images/florin-cluster-02-cocina.webp" alt="Reformas de Cocinas en Guadalajara" class="cluster-card-img" loading="lazy" />
     <div class="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none">
-      <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11.5px] font-bold uppercase tracking-wider border border-white/25 shadow-md" style="color: #ffffff !important;">Cocinas</span>
-      <span class="px-3.5 py-1.5 rounded-full bg-[#a87e34]/85 backdrop-blur-md text-white text-[11.5px] font-semibold border border-white/30 shadow-md" style="color: #ffffff !important;">Aguas Vivas</span>
+      <span class="cluster-badge-pill">Cocinas</span>
+      <span class="cluster-badge-pill is-location">Aguas Vivas</span>
     </div>
     <div class="cluster-scrim-base" aria-hidden="true"></div>
     <div class="cluster-card-idle">
-      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reforma de Cocina</h3>
-      <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Isla central y muebles a medida.</p>
-      <!-- Informative micro-tags on mobile (No CTA) -->
-      <div class="flex lg:hidden flex-wrap gap-1.5 mt-3 pt-2.5 border-t border-white/20">
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-white/15 text-white backdrop-blur-sm border border-white/20">⏱️ 12 a 18 Días</span>
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-[#a87e34]/80 text-white backdrop-blur-sm border border-white/20">🛡️ 100% Cerrado</span>
-      </div>
+      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reformas de Cocinas en Guadalajara</h3>
+      <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Islas porcelánicas y muebles a medida.</p>
+      <a href="#tarifas" class="cluster-cta-gold cluster-mobile-only-btn" style="color: #ffffff !important;">
+        <span style="color: #ffffff !important;">Ver reformas de cocinas</span>
+        <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+      </a>
     </div>
     <div class="cluster-glass-wrapper">
       <div class="cluster-glass-card p-4 sm:p-5 text-white" style="color: #ffffff !important;">
         <div class="flex items-center justify-between border-b border-white/20 pb-2.5 mb-2.5 gap-2">
           <div class="flex items-center gap-1.5 min-w-0">
             <span class="cluster-live-dot"></span>
-            <span class="cluster-status-text truncate" style="color: #ffffff !important;">ALCANCE TÉCNICO</span>
+            <span class="cluster-status-text truncate" style="color: #ffffff !important;">EQUIPO DISPONIBLE</span>
           </div>
-          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Aguas Vivas</span>
+          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Visita en 24/48h</span>
         </div>
-        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2.5 text-left">
+        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2 text-left">
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PLAZO OBRA</div>
             <div class="cluster-metric-val-white" style="color: #ffffff !important;">12 a 18 Días</div>
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">MOBILIARIO</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Muebles a Medida</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">10 Años Blum</div>
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PRESUPUESTO</div>
@@ -1740,91 +1800,91 @@
             <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Incluido Gratis</div>
           </div>
         </div>
-        <p class="text-[13px] leading-relaxed text-white/95 border-t border-white/20 pt-2.5 font-normal" style="color: #ffffff !important; text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;">
-          Muebles a medida, encimera porcelánica y redistribución de instalaciones para crear un espacio abierto, funcional y luminoso.
-        </p>
+        <a href="#tarifas" class="cluster-cta-gold" style="color: #ffffff !important;">
+          <span style="color: #ffffff !important;">Ver reformas de cocinas</span>
+          <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+        </a>
       </div>
     </div>
   </article>
 
   <!-- CARD 2: BAÑOS -->
   <article class="cluster-card group">
-    <img src="images/florin-cluster-03-bano.webp" alt="Reforma de Baños en Guadalajara" class="cluster-card-img" loading="lazy" />
+    <img src="images/florin-cluster-03-bano.webp" alt="Reformas de Baños en Guadalajara" class="cluster-card-img" loading="lazy" />
     <div class="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none">
-      <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11.5px] font-bold uppercase tracking-wider border border-white/25 shadow-md" style="color: #ffffff !important;">Baños</span>
-      <span class="px-3.5 py-1.5 rounded-full bg-[#a87e34]/85 backdrop-blur-md text-white text-[11.5px] font-semibold border border-white/30 shadow-md" style="color: #ffffff !important;">Piso Centro</span>
+      <span class="cluster-badge-pill">Baños</span>
+      <span class="cluster-badge-pill is-location">Piso Centro</span>
     </div>
     <div class="cluster-scrim-base" aria-hidden="true"></div>
     <div class="cluster-card-idle">
-      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reforma de Baños</h3>
-      <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Sustitución de bañera por ducha a ras de suelo.</p>
-      <!-- Informative micro-tags on mobile (No CTA) -->
-      <div class="flex lg:hidden flex-wrap gap-1.5 mt-3 pt-2.5 border-t border-white/20">
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-white/15 text-white backdrop-blur-sm border border-white/20">⏱️ 4 a 6 Días</span>
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-[#a87e34]/80 text-white backdrop-blur-sm border border-white/20">🛡️ 100% Cerrado</span>
-      </div>
+      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reformas de Baños en Guadalajara</h3>
+      <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Duchas a ras de suelo y mamparas fijas.</p>
+      <a href="#tarifas" class="cluster-cta-gold cluster-mobile-only-btn" style="color: #ffffff !important;">
+        <span style="color: #ffffff !important;">Ver reformas de baños</span>
+        <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+      </a>
     </div>
     <div class="cluster-glass-wrapper">
       <div class="cluster-glass-card p-4 sm:p-5 text-white" style="color: #ffffff !important;">
         <div class="flex items-center justify-between border-b border-white/20 pb-2.5 mb-2.5 gap-2">
           <div class="flex items-center gap-1.5 min-w-0">
             <span class="cluster-live-dot"></span>
-            <span class="cluster-status-text truncate" style="color: #ffffff !important;">ALCANCE TÉCNICO</span>
+            <span class="cluster-status-text truncate" style="color: #ffffff !important;">EQUIPO DISPONIBLE</span>
           </div>
-          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Guadalajara Centro</span>
+          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Visita en 24/48h</span>
         </div>
-        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2.5 text-left">
+        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2 text-left">
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PLAZO OBRA</div>
             <div class="cluster-metric-val-white" style="color: #ffffff !important;">4 a 6 Días</div>
           </div>
           <div>
-            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">DUCHA</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Enrasada C3</div>
+            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">GARANTÍA</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Bicapa 100%</div>
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PRESUPUESTO</div>
             <div class="cluster-metric-val-white" style="color: #ffffff !important;">100% Cerrado</div>
           </div>
           <div>
-            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">GARANTÍA</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Bicapa 100%</div>
+            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">GRIFERÍA</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Termostática Ahorro</div>
           </div>
         </div>
-        <p class="text-[13px] leading-relaxed text-white/95 border-t border-white/20 pt-2.5 font-normal" style="color: #ffffff !important; text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;">
-          Ducha a ras de suelo con impermeabilización certificada, mampara fija de vidrio templado y sanitarios suspendidos de alta gama.
-        </p>
+        <a href="#tarifas" class="cluster-cta-gold" style="color: #ffffff !important;">
+          <span style="color: #ffffff !important;">Ver reformas de baños</span>
+          <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+        </a>
       </div>
     </div>
   </article>
 
   <!-- CARD 3: CHALETS -->
   <article class="cluster-card group">
-    <img src="images/florin-cluster-06-chalet.webp" alt="Chalet Unifamiliar en Guadalajara" class="cluster-card-img" loading="lazy" />
+    <img src="images/florin-cluster-06-chalet.webp" alt="Reformas de Chalets en Guadalajara" class="cluster-card-img" loading="lazy" />
     <div class="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none">
-      <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11.5px] font-bold uppercase tracking-wider border border-white/25 shadow-md" style="color: #ffffff !important;">Chalets</span>
-      <span class="px-3.5 py-1.5 rounded-full bg-[#a87e34]/85 backdrop-blur-md text-white text-[11.5px] font-semibold border border-white/30 shadow-md" style="color: #ffffff !important;">Cabanillas</span>
+      <span class="cluster-badge-pill">Chalets</span>
+      <span class="cluster-badge-pill is-location">Cabanillas</span>
     </div>
     <div class="cluster-scrim-base" aria-hidden="true"></div>
     <div class="cluster-card-idle">
-      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Chalet Unifamiliar</h3>
+      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reformas de Chalets en Guadalajara</h3>
       <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Fachada SATE y aislamiento térmico.</p>
-      <!-- Informative micro-tags on mobile (No CTA) -->
-      <div class="flex lg:hidden flex-wrap gap-1.5 mt-3 pt-2.5 border-t border-white/20">
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-white/15 text-white backdrop-blur-sm border border-white/20">⏱️ 4 a 8 Semanas</span>
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-[#a87e34]/80 text-white backdrop-blur-sm border border-white/20">🛡️ 100% Cerrado</span>
-      </div>
+      <a href="#tarifas" class="cluster-cta-gold cluster-mobile-only-btn" style="color: #ffffff !important;">
+        <span style="color: #ffffff !important;">Ver reformas de chalets</span>
+        <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+      </a>
     </div>
     <div class="cluster-glass-wrapper">
       <div class="cluster-glass-card p-4 sm:p-5 text-white" style="color: #ffffff !important;">
         <div class="flex items-center justify-between border-b border-white/20 pb-2.5 mb-2.5 gap-2">
           <div class="flex items-center gap-1.5 min-w-0">
             <span class="cluster-live-dot"></span>
-            <span class="cluster-status-text truncate" style="color: #ffffff !important;">ALCANCE TÉCNICO</span>
+            <span class="cluster-status-text truncate" style="color: #ffffff !important;">EQUIPO DISPONIBLE</span>
           </div>
-          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Cabanillas / Chiloeches</span>
+          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Visita en 24/48h</span>
         </div>
-        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2.5 text-left">
+        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2 text-left">
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PLAZO OBRA</div>
             <div class="cluster-metric-val-white" style="color: #ffffff !important;">4 a 8 Semanas</div>
@@ -1842,98 +1902,98 @@
             <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Aerotermia A+++</div>
           </div>
         </div>
-        <p class="text-[13px] leading-relaxed text-white/95 border-t border-white/20 pt-2.5 font-normal" style="color: #ffffff !important; text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;">
-          Rehabilitación de envolvente térmica con sistema SATE, climatización por aerotermia y apertura de grandes ventanales al jardín.
-        </p>
+        <a href="#tarifas" class="cluster-cta-gold" style="color: #ffffff !important;">
+          <span style="color: #ffffff !important;">Ver reformas de chalets</span>
+          <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+        </a>
       </div>
     </div>
   </article>
 
   <!-- CARD 4: CLIMATIZACIÓN -->
   <article class="cluster-card group">
-    <img src="images/florin-room-aerotermia.webp" alt="Climatización Eficiente en Guadalajara" class="cluster-card-img" loading="lazy" />
+    <img src="images/florin-room-aerotermia.webp" alt="Aire Acondicionado y Climatización en Guadalajara" class="cluster-card-img" loading="lazy" />
     <div class="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none">
-      <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11.5px] font-bold uppercase tracking-wider border border-white/25 shadow-md" style="color: #ffffff !important;">Climatización</span>
-      <span class="px-3.5 py-1.5 rounded-full bg-[#a87e34]/85 backdrop-blur-md text-white text-[11.5px] font-semibold border border-white/30 shadow-md" style="color: #ffffff !important;">Henares</span>
+      <span class="cluster-badge-pill">Climatización</span>
+      <span class="cluster-badge-pill is-location">Henares</span>
     </div>
     <div class="cluster-scrim-base" aria-hidden="true"></div>
     <div class="cluster-card-idle">
-      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Climatización Eficiente</h3>
-      <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Aerotermia y suelo radiante.</p>
-      <!-- Informative micro-tags on mobile (No CTA) -->
-      <div class="flex lg:hidden flex-wrap gap-1.5 mt-3 pt-2.5 border-t border-white/20">
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-white/15 text-white backdrop-blur-sm border border-white/20">⚡ Ahorro hasta 70%</span>
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-[#a87e34]/80 text-white backdrop-blur-sm border border-white/20">🛡️ 100% Cerrado</span>
-      </div>
+      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Aire Acondicionado y Climatización</h3>
+      <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Aerotermia y climatización por conductos.</p>
+      <a href="#tarifas" class="cluster-cta-gold cluster-mobile-only-btn" style="color: #ffffff !important;">
+        <span style="color: #ffffff !important;">Ver climatización</span>
+        <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+      </a>
     </div>
     <div class="cluster-glass-wrapper">
       <div class="cluster-glass-card p-4 sm:p-5 text-white" style="color: #ffffff !important;">
         <div class="flex items-center justify-between border-b border-white/20 pb-2.5 mb-2.5 gap-2">
           <div class="flex items-center gap-1.5 min-w-0">
             <span class="cluster-live-dot"></span>
-            <span class="cluster-status-text truncate" style="color: #ffffff !important;">ALCANCE TÉCNICO</span>
+            <span class="cluster-status-text truncate" style="color: #ffffff !important;">EQUIPO DISPONIBLE</span>
           </div>
-          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Guadalajara & Henares</span>
+          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Visita en 24/48h</span>
         </div>
-        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2.5 text-left">
+        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2 text-left">
+          <div>
+            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PLAZO OBRA</div>
+            <div class="cluster-metric-val-white" style="color: #ffffff !important;">2 a 4 Días</div>
+          </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">AHORRO</div>
-            <div class="cluster-metric-val-white" style="color: #ffffff !important;">Hasta 70% Menos</div>
-          </div>
-          <div>
-            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">EMISIÓN</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Suelo Radiante</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Hasta 70% A+++</div>
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PRESUPUESTO</div>
             <div class="cluster-metric-val-white" style="color: #ffffff !important;">100% Cerrado</div>
           </div>
           <div>
-            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">CONFORT</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Frío / Calor Anual</div>
+            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">SISTEMA</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Airzone Inteligente</div>
           </div>
         </div>
-        <p class="text-[13px] leading-relaxed text-white/95 border-t border-white/20 pt-2.5 font-normal" style="color: #ffffff !important; text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;">
-          Sistemas de aerotermia de alta eficiencia combinados con suelo radiante y refrescante, reduciendo el consumo energético hasta un 70%.
-        </p>
+        <a href="#tarifas" class="cluster-cta-gold" style="color: #ffffff !important;">
+          <span style="color: #ffffff !important;">Ver climatización</span>
+          <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+        </a>
       </div>
     </div>
   </article>
 
   <!-- CARD 5: LOCALES COMERCIALES -->
   <article class="cluster-card group">
-    <img src="images/florin-cluster-04-locales.webp" alt="Locales Comerciales en Guadalajara" class="cluster-card-img" loading="lazy" />
+    <img src="images/florin-cluster-04-locales.webp" alt="Reformas de Locales Comerciales en Guadalajara" class="cluster-card-img" loading="lazy" />
     <div class="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none">
-      <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11.5px] font-bold uppercase tracking-wider border border-white/25 shadow-md" style="color: #ffffff !important;">Locales</span>
-      <span class="px-3.5 py-1.5 rounded-full bg-[#a87e34]/85 backdrop-blur-md text-white text-[11.5px] font-semibold border border-white/30 shadow-md" style="color: #ffffff !important;">Marchamalo</span>
+      <span class="cluster-badge-pill">Locales</span>
+      <span class="cluster-badge-pill is-location">Marchamalo</span>
     </div>
     <div class="cluster-scrim-base" aria-hidden="true"></div>
     <div class="cluster-card-idle">
-      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Locales Comerciales</h3>
+      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reformas de Locales Comerciales</h3>
       <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Adecuación exprés y licencias de actividad.</p>
-      <!-- Informative micro-tags on mobile (No CTA) -->
-      <div class="flex lg:hidden flex-wrap gap-1.5 mt-3 pt-2.5 border-t border-white/20">
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-white/15 text-white backdrop-blur-sm border border-white/20">⚡ Obra Exprés</span>
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-[#a87e34]/80 text-white backdrop-blur-sm border border-white/20">🛡️ 100% Cerrado</span>
-      </div>
+      <a href="#tarifas" class="cluster-cta-gold cluster-mobile-only-btn" style="color: #ffffff !important;">
+        <span style="color: #ffffff !important;">Ver locales comerciales</span>
+        <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+      </a>
     </div>
     <div class="cluster-glass-wrapper">
       <div class="cluster-glass-card p-4 sm:p-5 text-white" style="color: #ffffff !important;">
         <div class="flex items-center justify-between border-b border-white/20 pb-2.5 mb-2.5 gap-2">
           <div class="flex items-center gap-1.5 min-w-0">
             <span class="cluster-live-dot"></span>
-            <span class="cluster-status-text truncate" style="color: #ffffff !important;">ALCANCE TÉCNICO</span>
+            <span class="cluster-status-text truncate" style="color: #ffffff !important;">EQUIPO DISPONIBLE</span>
           </div>
-          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Marchamalo & Capital</span>
+          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Visita en 24/48h</span>
         </div>
-        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2.5 text-left">
+        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2 text-left">
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PLAZO OBRA</div>
             <div class="cluster-metric-val-white" style="color: #ffffff !important;">Adecuación Exprés</div>
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">LICENCIAS</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Gestión Integral</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Gestión 100%</div>
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PRESUPUESTO</div>
@@ -1941,12 +2001,13 @@
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">NORMATIVA</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">CTE y Accesibilidad</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Accesibilidad CTE</div>
           </div>
         </div>
-        <p class="text-[13px] leading-relaxed text-white/95 border-t border-white/20 pt-2.5 font-normal" style="color: #ffffff !important; text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;">
-          Transformación de locales para hostelería, retail y clínicas cumpliendo normativa de accesibilidad, insonorización e imagen de marca corporativa.
-        </p>
+        <a href="#tarifas" class="cluster-cta-gold" style="color: #ffffff !important;">
+          <span style="color: #ffffff !important;">Ver locales comerciales</span>
+          <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+        </a>
       </div>
     </div>
   </article>
@@ -1955,49 +2016,49 @@
   <article class="cluster-card group">
     <img src="images/florin-cluster-05-oficinas.webp" alt="Reformas de Oficinas en Guadalajara" class="cluster-card-img" loading="lazy" />
     <div class="absolute top-4 left-4 right-4 z-10 flex items-center justify-between pointer-events-none">
-      <span class="px-3.5 py-1.5 rounded-full bg-slate-900/80 backdrop-blur-md text-white text-[11.5px] font-bold uppercase tracking-wider border border-white/25 shadow-md" style="color: #ffffff !important;">Oficinas</span>
-      <span class="px-3.5 py-1.5 rounded-full bg-[#a87e34]/85 backdrop-blur-md text-white text-[11.5px] font-semibold border border-white/30 shadow-md" style="color: #ffffff !important;">Alovera</span>
+      <span class="cluster-badge-pill">Oficinas</span>
+      <span class="cluster-badge-pill is-location">Alovera</span>
     </div>
     <div class="cluster-scrim-base" aria-hidden="true"></div>
     <div class="cluster-card-idle">
-      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reformas de Oficinas</h3>
+      <h3 class="font-editorial text-[20px] sm:text-[22px] md:text-[24px] font-bold text-white leading-tight" style="color: #ffffff !important; text-shadow: 0 2px 8px rgba(0,0,0,0.95) !important;">Reformas de Oficinas en Guadalajara</h3>
       <p class="cluster-card-desc" style="color: #ffffff !important; font-size: 14.5px !important; font-weight: 500 !important; margin-top: 4px !important; text-shadow: 0 1px 5px rgba(0,0,0,0.95) !important; opacity: 1 !important;">Espacios de trabajo acústicos y cableado.</p>
-      <!-- Informative micro-tags on mobile (No CTA) -->
-      <div class="flex lg:hidden flex-wrap gap-1.5 mt-3 pt-2.5 border-t border-white/20">
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-white/15 text-white backdrop-blur-sm border border-white/20">🔇 Acústica & Mamparas</span>
-        <span class="px-2.5 py-1 rounded-md text-[11.5px] font-semibold bg-[#a87e34]/80 text-white backdrop-blur-sm border border-white/20">🛡️ 100% Cerrado</span>
-      </div>
+      <a href="#tarifas" class="cluster-cta-gold cluster-mobile-only-btn" style="color: #ffffff !important;">
+        <span style="color: #ffffff !important;">Ver reformas de oficinas</span>
+        <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+      </a>
     </div>
     <div class="cluster-glass-wrapper">
       <div class="cluster-glass-card p-4 sm:p-5 text-white" style="color: #ffffff !important;">
         <div class="flex items-center justify-between border-b border-white/20 pb-2.5 mb-2.5 gap-2">
           <div class="flex items-center gap-1.5 min-w-0">
             <span class="cluster-live-dot"></span>
-            <span class="cluster-status-text truncate" style="color: #ffffff !important;">ALCANCE TÉCNICO</span>
+            <span class="cluster-status-text truncate" style="color: #ffffff !important;">EQUIPO DISPONIBLE</span>
           </div>
-          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Alovera & Polígonos</span>
+          <span class="cluster-pill-badge shrink-0" style="color: #ffffff !important;">Visita en 24/48h</span>
         </div>
-        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2.5 text-left">
+        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 mb-2 text-left">
+          <div>
+            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PLAZO OBRA</div>
+            <div class="cluster-metric-val-white" style="color: #ffffff !important;">10 a 20 Días</div>
+          </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">AISLAMIENTO</div>
-            <div class="cluster-metric-val-white" style="color: #ffffff !important;">Mamparas Acústicas</div>
-          </div>
-          <div>
-            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">ILUMINACIÓN</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">LED UGR &lt; 19</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Mamparas Acústicas</div>
           </div>
           <div>
             <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">PRESUPUESTO</div>
             <div class="cluster-metric-val-white" style="color: #ffffff !important;">100% Cerrado</div>
           </div>
           <div>
-            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">CONECTIVIDAD</div>
-            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">Cableado Cat 6A</div>
+            <div class="cluster-metric-label" style="color: rgba(255, 255, 255, 0.85) !important;">ILUMINACIÓN</div>
+            <div class="cluster-metric-val-gold" style="color: #F5D084 !important;">LED UGR &lt; 19</div>
           </div>
         </div>
-        <p class="text-[13px] leading-relaxed text-white/95 border-t border-white/20 pt-2.5 font-normal" style="color: #ffffff !important; text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;">
-          Mamparas divisorias acústicas, iluminación LED de bajo deslumbramiento (UGR&lt;19), suelo técnico y climatización eficiente para empresas.
-        </p>
+        <a href="#tarifas" class="cluster-cta-gold" style="color: #ffffff !important;">
+          <span style="color: #ffffff !important;">Ver reformas de oficinas</span>
+          <i class="ri-arrow-right-line text-[15px]" style="color: #ffffff !important;"></i>
+        </a>
       </div>
     </div>
   </article>
