@@ -673,12 +673,95 @@
     text-transform: uppercase !important;
     letter-spacing: 0.03em !important;
   }
+
+/* =======================================================================
+   BLINDAJE DE ANCHO CONTENIDO Y MÁRGENES LATERALES REALES (SEOLIFE 2026)
+   Evita que el layout se estire horizontalmente y asegura márgenes amplios
+   ======================================================================= */
+.contacto-page-canvas {
+  background-color: #F8F9FA !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* CONTENEDOR MAESTRO PARA SECCIONES CON MÁRGENES LATERALES */
+.contacto-box {
+  width: 100% !important;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  box-sizing: border-box !important;
+}
+@media (min-width: 1440px) {
+  .contacto-box {
+    max-width: 1140px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .contacto-box {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+/* HERO ISLA CONTENIDO CON MÁRGENES */
+.contacto-hero-island {
+  width: 100% !important;
+  max-width: 1120px !important;
+  margin-top: 96px !important;
+  margin-bottom: 36px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 24px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 0 20px 40px -15px rgba(14, 27, 46, 0.25) !important;
+  box-sizing: border-box !important;
+}
+@media (min-width: 1440px) {
+  .contacto-hero-island {
+    max-width: 1140px !important;
+  }
+}
+@media (max-width: 1160px) {
+  .contacto-hero-island {
+    width: calc(100% - 32px) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+}
+@media (max-width: 640px) {
+  .contacto-hero-island {
+    margin-top: 80px !important;
+    margin-bottom: 24px !important;
+    border-radius: 20px !important;
+    width: calc(100% - 24px) !important;
+    margin-left: 12px !important;
+    margin-right: 12px !important;
+  }
+}
+
+/* FAQ CONTENIDA A ANCHO EDITORIAL ÓPTIMO */
+.contacto-faq-box {
+  width: 100% !important;
+  max-width: 820px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+}
+
 </style>
 </head>
 <body>
 <div id="root">
 <div class="page-enter">
-<div class="min-h-screen bg-[#F8F9FA] text-ink">
+<div class="min-h-screen contacto-page-canvas text-ink">
 
 <!-- HEADER NAVEGACIÓN -->
 <header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-[#0E1B2E]/95 backdrop-blur-md border-b border-white/10 shadow-sm">
@@ -823,7 +906,7 @@
 
 <main>
 <!-- HERO CONTACTO: ALTA CONVERSIÓN Y CLARIDAD EDITORIAL -->
-<section class="relative max-w-[1240px] mx-auto mt-[92px] md:mt-[100px] mb-8 md:mb-10 rounded-[24px] isolate overflow-hidden bg-ink text-white py-16 md:py-20 border border-white/10 shadow-lg" id="inicio">
+<section class="relative contacto-hero-island isolate overflow-hidden bg-ink text-white py-16 md:py-20" id="inicio">
   <img class="absolute inset-0 h-full w-full object-cover object-center" src="images/madrid-estudio-fachada.webp" alt="Estudio técnico y showroom de Reformas Madrid"/>
   <!-- CAPA DE OSCURECIMIENTO MAESTRA DEL HERO -->
   <div aria-hidden="true" class="hero-master-scrim"></div>
@@ -855,7 +938,7 @@
 </section>
 
 <!-- SECCIÓN 1: 4 CANALES DIRECTOS DE COMUNICACIÓN -->
-<section class="max-w-[1240px] mx-auto py-6 md:py-8 px-4 sm:px-6 lg:px-8" id="canales">
+<section class="contacto-box my-8 md:my-10" id="canales">
   <div class="w-full">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
       
@@ -907,7 +990,7 @@
 </section>
 
 <!-- SECCIÓN 2: FORMULARIO INTERACTIVO + TIMELINE (GRID 7 / 5) -->
-<section class="max-w-[1240px] mx-auto py-8 md:py-12 px-4 sm:px-6 lg:px-8" id="solicitud-visita">
+<section class="contacto-box my-10 md:my-14" id="solicitud-visita">
   <div class="w-full">
     
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
@@ -1100,7 +1183,7 @@
 </section>
 
 <!-- SECCIÓN 3: PREGUNTAS FRECUENTES SOBRE LA VISITA Y PRESUPUESTO -->
-<section class="max-w-[1240px] mx-auto py-10 md:py-14 px-4 sm:px-6 lg:px-8" id="faq">
+<section class="contacto-faq-box my-12 md:my-16" id="faq">
   <div class="w-full">
     
     <div class="max-w-[760px] mx-auto text-center" style="margin-bottom: 56px !important;">
