@@ -756,6 +756,100 @@
   box-sizing: border-box !important;
 }
 
+
+/* =======================================================================
+   BLINDAJE DE HERO ANCHO COMPLETO + ESPACIADO GENEROSO ENTRE SECCIONES (SEOLIFE 2026)
+   ======================================================================= */
+.contacto-page-canvas {
+  background-color: #F8F9FA !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* HERO EN ANCHO COMPLETO (100% VIEWPORT) */
+.contacto-hero-fullwidth {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: none !important;
+  padding-top: 140px !important;
+  padding-bottom: 72px !important;
+  position: relative !important;
+}
+@media (min-width: 768px) {
+  .contacto-hero-fullwidth {
+    padding-top: 160px !important;
+    padding-bottom: 88px !important;
+  }
+}
+
+/* CONTENEDOR BOXED CON MÁRGENES LATERALES PARA EL CONTENIDO */
+.contacto-box {
+  width: 100% !important;
+  max-width: 1140px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  box-sizing: border-box !important;
+}
+@media (max-width: 768px) {
+  .contacto-box {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+/* FAQ A ANCHO EDITORIAL CONFORTABLE */
+.contacto-faq-box {
+  width: 100% !important;
+  max-width: 820px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box !important;
+}
+
+/* ESPACIADO GENEROSO Y REAL ENTRE SECCIONES (ANTI-PEGADO) */
+.contacto-section-spacing {
+  margin-top: 72px !important;
+  margin-bottom: 72px !important;
+}
+@media (min-width: 768px) {
+  .contacto-section-spacing {
+    margin-top: 96px !important;
+    margin-bottom: 96px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto-section-spacing {
+    margin-top: 112px !important;
+    margin-bottom: 112px !important;
+  }
+}
+
+.contacto-faq-spacing {
+  margin-top: 72px !important;
+  margin-bottom: 96px !important;
+}
+@media (min-width: 768px) {
+  .contacto-faq-spacing {
+    margin-top: 96px !important;
+    margin-bottom: 120px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .contacto-faq-spacing {
+    margin-top: 112px !important;
+    margin-bottom: 136px !important;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -764,7 +858,7 @@
 <div class="min-h-screen contacto-page-canvas text-ink">
 
 <!-- HEADER NAVEGACIÓN -->
-<header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 bg-[#0E1B2E]/95 backdrop-blur-md border-b border-white/10 shadow-sm">
+<header class="header-scrim fixed inset-x-0 top-0 z-50 transition-all duration-500 border-b border-transparent">
   <div class="w-full">
     <nav class="flex h-[68px] md:h-[76px] items-center justify-between gap-4 xl:gap-6">
       <a aria-label="Reformas Madrid, inicio" class="flex items-center gap-1.5 cursor-pointer whitespace-nowrap" href="index.html">
@@ -906,7 +1000,7 @@
 
 <main>
 <!-- HERO CONTACTO: ALTA CONVERSIÓN Y CLARIDAD EDITORIAL -->
-<section class="relative contacto-hero-island isolate overflow-hidden bg-ink text-white py-16 md:py-20" id="inicio">
+<section class="relative contacto-hero-fullwidth isolate overflow-hidden bg-ink text-white" id="inicio">
   <img class="absolute inset-0 h-full w-full object-cover object-center" src="images/madrid-estudio-fachada.webp" alt="Estudio técnico y showroom de Reformas Madrid"/>
   <!-- CAPA DE OSCURECIMIENTO MAESTRA DEL HERO -->
   <div aria-hidden="true" class="hero-master-scrim"></div>
@@ -938,7 +1032,7 @@
 </section>
 
 <!-- SECCIÓN 1: 4 CANALES DIRECTOS DE COMUNICACIÓN -->
-<section class="contacto-box my-8 md:my-10" id="canales">
+<section class="contacto-box contacto-section-spacing" id="canales">
   <div class="w-full">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
       
@@ -990,7 +1084,7 @@
 </section>
 
 <!-- SECCIÓN 2: FORMULARIO INTERACTIVO + TIMELINE (GRID 7 / 5) -->
-<section class="contacto-box my-10 md:my-14" id="solicitud-visita">
+<section class="contacto-box contacto-section-spacing" id="solicitud-visita">
   <div class="w-full">
     
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
@@ -1183,7 +1277,7 @@
 </section>
 
 <!-- SECCIÓN 3: PREGUNTAS FRECUENTES SOBRE LA VISITA Y PRESUPUESTO -->
-<section class="contacto-faq-box my-12 md:my-16" id="faq">
+<section class="contacto-faq-box contacto-faq-spacing" id="faq">
   <div class="w-full">
     
     <div class="max-w-[760px] mx-auto text-center" style="margin-bottom: 56px !important;">
