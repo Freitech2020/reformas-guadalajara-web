@@ -990,6 +990,108 @@
     }
   }
 
+
+  /* ==========================================================================
+     BEFORE / AFTER BADGES & TYPOGRAPHY SHIELD (TOKEN DESIGN FREITECH 2026)
+     ========================================================================== */
+  .ba-badge-antes {
+    position: absolute !important;
+    top: 14px !important;
+    right: 14px !important;
+    left: auto !important;
+    z-index: 10 !important;
+    background: rgba(14, 27, 46, 0.82) !important;
+    color: #FFFFFF !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    padding: 6px 14px !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+    pointer-events: none !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+  }
+  .ba-badge-despues {
+    position: absolute !important;
+    top: 14px !important;
+    left: 14px !important;
+    right: auto !important;
+    z-index: 20 !important;
+    background: #A87E34 !important;
+    color: #FFFFFF !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+    padding: 6px 14px !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 4px 12px rgba(168, 126, 52, 0.35) !important;
+    pointer-events: none !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+  }
+
+  /* MANDATORY TYPOGRAPHY FLOOR: NO TEXT UNDER 16PX IN CARDS, PARAGRAPHS OR METADATA */
+  #estancias p, #fases p, #proyectos p, #tarifas p, #contacto p,
+  .estancia-item, .fase-card, .estancia-mobile-panel p,
+  .estancia-item-sub, .fase-time, .tarifas-subtitle,
+  label, input, select, textarea {
+    font-size: 16px !important;
+  }
+  @media (min-width: 768px) {
+    main p, #inicio p, #estancias p, #fases p, #proyectos p, #tarifas p, #contacto p {
+      font-size: 18px !important;
+      line-height: 1.65 !important;
+    }
+  }
+
+
+  /* HERO H1 MAJESTIC RESPONSIVE TYPOGRAPHY (IDENTICAL TO REFORMAS MADRID) */
+  .hero-h1-title {
+    font-size: 42px !important;
+    line-height: 1.06 !important;
+    letter-spacing: -0.025em !important;
+    text-shadow: 0 2px 14px rgba(14, 27, 46, 0.75), 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+  }
+  @media (min-width: 640px) {
+    .hero-h1-title {
+      font-size: 52px !important;
+      line-height: 1.05 !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .hero-h1-title {
+      font-size: 62px !important;
+      line-height: 1.04 !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero-h1-title {
+      font-size: 74px !important;
+      line-height: 1.03 !important;
+    }
+  }
+  @media (min-width: 1280px) {
+    .hero-h1-title {
+      font-size: 86px !important;
+      line-height: 1.02 !important;
+    }
+  }
+  @media (min-width: 1536px) {
+    .hero-h1-title {
+      font-size: 94px !important;
+      line-height: 1.01 !important;
+    }
+  }
+
 </style>
 </head>
 <body>
@@ -1117,61 +1219,61 @@
             <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
             <span>Reformas integrales en Guadalajara</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../readdy_captured_complete/index.html#oficios">
-            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+          <a class="flex items-center gap-2 py-1.5 text-[16px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="../readdy_captured_complete/index.html#oficios">
+            <i class="ri-arrow-right-s-line text-teal text-[16px]"></i>
             <span>Instalación de aire acondicionado en Guadalajara</span>
           </a>
         </div>
       </div>
       <div class="mobile-nav-item border-b border-line/60 pb-3">
-        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors cursor-pointer" type="button" aria-expanded="false">
+        <button class="mobile-accordion-btn flex w-full items-center justify-between py-2 text-left text-[16px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors cursor-pointer" type="button" aria-expanded="false">
           <span>REFORMAS EN MADRID</span>
           <i class="ri-arrow-down-s-line text-[18px] transition-transform duration-300"></i>
         </button>
         <div class="mobile-accordion-panel hidden pl-3 pt-2 flex-col gap-2">
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">
-            <i class="ri-arrow-right-s-line text-teal text-[14px]"></i>
+          <a class="flex items-center gap-2 py-1.5 text-[16px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">
+            <i class="ri-arrow-right-s-line text-teal text-[16px]"></i>
             <span>Reformas de cocinas en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">
+          <a class="flex items-center gap-2 py-1.5 text-[16px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">
             <i class="ri-drop-line text-[16px] shrink-0"></i>
             <span>Reformas de baños en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">
+          <a class="flex items-center gap-2 py-1.5 text-[16px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-locales-comerciales-madrid.html">
             <i class="ri-store-2-line text-[16px] shrink-0"></i>
             <span>Reformas de locales comerciales en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">
+          <a class="flex items-center gap-2 py-1.5 text-[16px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="reformas-oficinas-madrid.html">
             <i class="ri-building-line text-[16px] shrink-0"></i>
             <span>Reformas de oficinas en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">
+          <a class="flex items-center gap-2 py-1.5 text-[16px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">
             <i class="ri-contrast-drop-line text-[16px] shrink-0"></i>
             <span>Cambio de bañera por plato de ducha en Madrid</span>
           </a>
-          <a class="flex items-center gap-2 py-1.5 text-[13.5px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="instalacion-aire-acondicionado-madrid.html">
+          <a class="flex items-center gap-2 py-1.5 text-[16px] font-medium text-ink/80 hover:text-[#8C6424] transition-colors" href="instalacion-aire-acondicionado-madrid.html">
             <i class="ri-temp-cold-line text-[16px] shrink-0"></i>
             <span>Instalación de aire acondicionado en Madrid</span>
           </a>
         </div>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
+        <a class="block py-2 text-[16px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/nosotros.html">NOSOTROS</a>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/contacto.html">CONTACTO</a>
+        <a class="block py-2 text-[16px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/contacto.html">CONTACTO</a>
       </div>
       <div class="border-b border-line/60 pb-3">
-        <a class="block py-2 text-[14px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/blog.html">BLOG</a>
+        <a class="block py-2 text-[16px] font-bold uppercase tracking-wider text-ink hover:text-[#8C6424] transition-colors" href="../reformas_madrid/blog.html">BLOG</a>
       </div>
       <div class="pt-4">
-        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal w-full flex items-center justify-center gap-2 rounded-md px-5 py-3 text-[14px] font-bold uppercase tracking-wider text-white transition-colors shadow-md text-center cursor-pointer" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
+        <button type="button" class="btn-open-popup-presupuesto btn-gold bg-teal w-full flex items-center justify-center gap-2 rounded-md px-5 py-3 text-[16px] font-bold uppercase tracking-wider text-white transition-colors shadow-md text-center cursor-pointer" style="background-color: #A87E34 !important; border: 1px solid rgba(226, 196, 143, 0.65) !important; color: #FFFFFF !important; box-shadow: 0 4px 14px rgba(78, 52, 23, 0.35) !important;" aria-label="Pedir Presupuesto">
           <span>PEDIR PRESUPUESTO</span>
           <i class="ri-arrow-right-line text-[16px]"></i>
         </button>
       </div>
       <div class="mt-auto pt-6 text-center">
-        <a class="inline-flex items-center gap-2 text-[15px] font-bold text-ink hover:text-[#8C6424] transition-colors" href="tel:+34910000000">
+        <a class="inline-flex items-center gap-2 text-[16.5px] font-bold text-ink hover:text-[#8C6424] transition-colors" href="tel:+34910000000">
           <i class="ri-phone-line text-[#A87E34]"></i> +34 910 00 00 00
         </a>
       </div>
@@ -1182,62 +1284,78 @@
 <main>
 <!-- HERO -->
 <section class="relative w-full isolate overflow-hidden bg-ink" id="inicio">
-  <img alt="Reforma integral de oficina moderna y tecnológica en Paseo de la Castellana Madrid" class="absolute inset-0 h-full w-full object-cover object-center" src="images/oficinas-hero.webp"/>
+  <img alt="Reforma integral de oficina moderna y funcional en Madrid para pymes y empresas" class="absolute inset-0 h-full w-full object-cover object-center" src="images/oficinas-hero.webp"/>
   <div aria-hidden="true" class="hero-master-scrim"></div>
   <div aria-hidden="true" class="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-black/60 to-transparent pointer-events-none z-[1]"></div>
-  <div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-center px-4 pt-[90px] pb-12 md:px-8 md:pt-[100px] md:pb-14 lg:min-h-[78vh] lg:px-12 lg:pt-[85px] lg:pb-12">
-    <div class="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12 w-full">
+  <div class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-col justify-end px-4 pb-12 pt-[160px] md:px-8 md:pb-20 md:pt-[150px] lg:min-h-[90vh] lg:px-12 lg:pb-24">
+    <div class="grid grid-cols-1 items-end gap-10 lg:grid-cols-12 lg:gap-12">
       <div class="lg:col-span-7 flex flex-col items-center text-center md:items-start md:text-left">
         <div>
-          <h1 class="font-editorial max-w-[720px] mx-auto md:mx-0 text-[34px] leading-[1.06] tracking-[-0.022em] text-white [text-shadow:0_2px_6px_rgba(14,27,46,0.55),0_4px_32px_rgba(14,27,46,0.7)] sm:text-[44px] md:text-[52px] lg:text-[60px]">
-            Reformas de Oficinas en Madrid<span class="mt-1 block italic text-teal-light">espacios de trabajo que atraen y retienen talento.</span>
+          <h1 class="hero-h1-title font-editorial text-[44px] leading-[1.04] tracking-tight text-white sm:text-[60px] md:text-[72px] lg:text-[84px] xl:text-[92px] mx-auto md:mx-0">
+            Reformas de Oficinas en Madrid<br><span class="italic font-light text-teal-light">a su medida.</span>
           </h1>
         </div>
         <div>
-          <p class="mt-5 max-w-[540px] mx-auto md:mx-0 text-[15px] leading-[1.65] text-white/90 [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)] md:mt-6 md:text-[18px]">
-            Diseño ergonómico, suelo técnico registrable, mamparas de vidrio acústicas y climatización VRF. Planificamos la ejecución por fases o fuera de horario comercial para que tu operativa empresarial no se detenga ni un solo día.
+          <p class="hero-subtitle mt-5 max-w-[560px] mx-auto md:mx-0 text-[18px] md:text-[20px] leading-[1.65] text-white/90 [text-shadow:0_1px_4px_rgba(14,27,46,0.55),0_2px_18px_rgba(14,27,46,0.6)] md:mt-6">
+            Espacios de trabajo funcionales para pymes y empresas medianas en Madrid. Suelo técnico, mamparas divisorias acústicas, climatización y presupuesto cerrado firmado por contrato.
           </p>
         </div>
         <div>
-          <div class="mt-7 flex w-full justify-center md:justify-start gap-4">
-            <a class="inline-flex items-center justify-center gap-2.5 rounded-md bg-teal text-[16px] font-semibold text-white transition-all hover:bg-teal-hover cursor-pointer whitespace-nowrap shadow-md text-center" href="#contacto" style="padding: 18px 40px !important;">
-              Solicitar Plan de Implantación y Presupuesto
-              <i class="ri-arrow-right-line text-[18px]"></i>
+          <div class="mt-7 flex w-full justify-center md:justify-start">
+            <a class="inline-flex items-center justify-center gap-2.5 rounded-md bg-teal text-[17px] font-semibold text-white transition-all hover:bg-teal-hover cursor-pointer whitespace-nowrap shadow-md text-center" style="padding: 18px 44px !important;" href="#contacto">
+              Pedir Visita Técnica Gratuita
             </a>
           </div>
         </div>
-      </div>
-      <div class="lg:col-span-5">
         <div>
-          <div class="rounded-xl border border-white/20 bg-white/10 p-5 backdrop-blur-md text-white shadow-2xl">
-            <div class="flex items-center justify-between border-b border-white/15 pb-4">
-              <div class="flex items-center gap-2">
-                <span class="live-status-dot">
-                  <span class="live-status-pulse"></span>
-                  <span class="live-status-core"></span>
-                </span>
-                <span class="text-[13px] font-semibold tracking-wide uppercase text-white/90">División de Obras Corporativas</span>
-              </div>
-              <span class="text-[11px] font-bold text-teal-light bg-black/40 px-2 py-0.5 rounded">Sedes en Madrid</span>
+          <dl class="mt-9 grid max-w-[480px] w-full mx-auto md:mx-0 grid-cols-3 gap-4 border-t border-white/20 pt-6 text-center md:text-left">
+            <div>
+              <dt class="text-[22px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[28px]">15+</dt>
+              <dd class="mt-2 text-[16px] leading-[1.4] text-white/80">años en Madrid</dd>
             </div>
-            <div class="mt-4 grid grid-cols-2 gap-4">
-              <div>
-                <p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Ejecución Modular</p>
-                <p class="text-[20px] font-bold text-white mt-0.5">Sin Parar Actividad</p>
-              </div>
-              <div>
-                <p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Aislamiento Fónico</p>
-                <p class="text-[20px] font-bold text-teal-light mt-0.5">Vidrio Rw 48 dB</p>
-              </div>
-              <div>
-                <p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Redes y CPD</p>
-                <p class="text-[20px] font-bold text-white mt-0.5">Cat 6A / Fibra</p>
-              </div>
-              <div>
-                <p class="text-[11px] font-medium uppercase tracking-wider text-white/70">Garantía Escrita</p>
-                <p class="text-[20px] font-bold text-teal-light mt-0.5">2 Años Integral</p>
-              </div>
+            <div>
+              <dt class="text-[22px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[28px]">120+</dt>
+              <dd class="mt-2 text-[16px] leading-[1.4] text-white/80">oficinas entregadas</dd>
             </div>
+            <div>
+              <dt class="text-[22px] font-semibold leading-none tracking-[-0.02em] text-white md:text-[28px]">2 años</dt>
+              <dd class="mt-2 text-[16px] leading-[1.4] text-white/80">garantía por contrato</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div class="hidden lg:col-span-5 lg:block">
+        <div class="hero-zonas-card ml-auto w-full max-w-[440px] rounded-2xl border border-white/25 bg-ink/45 p-6 md:p-7 backdrop-blur-md">
+          <div class="zonas-header flex items-center gap-2.5 mb-4">
+            <i class="ri-shield-check-line text-[22px] w-6 h-6 flex items-center justify-center text-teal-light"></i>
+            <span class="zonas-header-title text-[17px] font-bold uppercase tracking-[0.14em] text-white/90">División Obras Corporativas</span>
+          </div>
+          <ul class="flex flex-col gap-4">
+            <li class="flex items-center gap-3.5">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-building-2-line text-[20px]"></i></span>
+              <div>
+                <div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Oficinas y Despachos</div>
+                <div class="zonas-item-subtitle text-[16.5px] leading-snug text-white/85">Pymes, despachos y agencias</div>
+              </div>
+            </li>
+            <li class="flex items-center gap-3.5">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-sound-module-line text-[20px]"></i></span>
+              <div>
+                <div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Aislamiento Acústico</div>
+                <div class="zonas-item-subtitle text-[16.5px] leading-snug text-white/85">Mamparas de vidrio Rw 48 dB</div>
+              </div>
+            </li>
+            <li class="flex items-center gap-3.5">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white/15 text-teal-light"><i class="ri-calendar-check-line text-[20px]"></i></span>
+              <div>
+                <div class="zonas-item-title text-[20px] font-bold leading-tight text-white">Sin Parar Actividad</div>
+                <div class="zonas-item-subtitle text-[16.5px] leading-snug text-white/85">Ejecución modular o por fases</div>
+              </div>
+            </li>
+          </ul>
+          <div class="mt-5 flex items-center gap-3 border-t border-white/15 pt-4">
+            <span class="live-status-dot"><span class="live-status-pulse"></span><span class="live-status-core"></span></span>
+            <span class="zonas-footer text-[16.5px] font-medium text-white/90">Equipo técnico disponible en Madrid</span>
           </div>
         </div>
       </div>
@@ -1268,26 +1386,26 @@
           <div class="estancia-glass-wrapper absolute inset-x-6 bottom-6">
             <div class="estancia-glass-card rounded-xl p-6 text-white">
               <div class="flex items-center justify-between mb-2">
-                <span class="text-[11px] font-bold uppercase tracking-widest text-teal-light bg-teal/30 px-3 py-1 rounded-full border border-teal/40" id="estancias-desktop-badge">
+                <span class="text-[16px] font-bold uppercase tracking-widest text-teal-light bg-teal/30 px-3 py-1 rounded-full border border-teal/40" id="estancias-desktop-badge">
                   Tipología 01 · Paseo de la Castellana
                 </span>
-                <span class="text-[12px] font-semibold text-white/80" id="estancias-desktop-time">
+                <span class="text-[16px] font-semibold text-white/80" id="estancias-desktop-time">
                   <i class="ri-time-line text-teal-light mr-1"></i> Plazo: 20 Días
                 </span>
               </div>
               <h3 class="estancia-title text-[22px] font-bold text-white mb-2 font-editorial" data-estancia-title="true" id="estancias-desktop-title">
                 Open Space Tecnológico &amp; Puestos Flex
               </h3>
-              <p class="text-[14px] text-white/90 leading-relaxed mb-4" id="estancias-desktop-desc">
+              <p class="text-[16px] text-white/90 leading-relaxed mb-4" id="estancias-desktop-desc">
                 Distribución flexible sin columnas que maximiza la entrada de luz natural. Pavimento técnico elevado con cajas de conexión escamoteables, falso techo acústico continuo Armstrong que reduce la reverberación y luminarias lineales LED con regulación DALI.
               </p>
               <div class="flex items-center justify-between pt-3 border-t border-white/15">
-                <div class="flex items-center gap-4 text-[13px] text-white/80">
+                <div class="flex items-center gap-4 text-[16px] text-white/80">
                   <span><i class="ri-check-line text-teal-light mr-1"></i>Suelo Técnico 60x60</span>
                   <span><i class="ri-check-line text-teal-light mr-1"></i>Mamparas Rw 48dB</span>
                   <span><i class="ri-check-line text-teal-light mr-1"></i>Certificación BREEAM</span>
                 </div>
-                <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded text-[13px] font-bold bg-teal text-white hover:bg-teal-hover transition-colors" href="#contacto" id="estancia-cta-btn">
+                <a class="inline-flex items-center gap-1.5 px-4 py-2 rounded text-[16px] font-bold bg-teal text-white hover:bg-teal-hover transition-colors" href="#contacto" id="estancia-cta-btn">
                   Consultar Proyecto <i class="ri-arrow-right-line"></i>
                 </a>
               </div>
@@ -1306,17 +1424,17 @@
             </span>
             <div class="min-w-0 flex-1">
               <span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-teal">Open Space Tecnológico &amp; Puestos Flex</span>
-              <span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Paseo de la Castellana · Suelo Técnico y Techo Fonoabsorbente</span>
+              <span class="estancia-item-sub block text-[16px] md:text-[16px] leading-snug text-ink/80 mt-0.5">Paseo de la Castellana · Suelo Técnico y Techo Fonoabsorbente</span>
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
             <img alt="Open Space Tecnológico en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-open-space-madrid.webp"/>
-            <p class="text-[14px] text-muted leading-relaxed">
+            <p class="text-[16px] text-muted leading-relaxed">
               Distribución flexible sin columnas que maximiza la entrada de luz natural. Pavimento técnico elevado con cajas de conexión escamoteables, falso techo acústico continuo Armstrong que reduce la reverberación y luminarias lineales LED con regulación DALI.
             </p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="text-[12px] font-bold text-teal">Plazo: 20 Días</span>
-              <a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+              <span class="text-[16px] font-bold text-teal">Plazo: 20 Días</span>
+              <a class="text-[16px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
             </div>
           </div>
         </div>
@@ -1329,17 +1447,17 @@
             </span>
             <div class="min-w-0 flex-1">
               <span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Sala de Juntas con Vidrio Acústico</span>
-              <span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Azca / Nuevos Ministerios · Doble Vidrio 5+5 mm y Butiral Fónico</span>
+              <span class="estancia-item-sub block text-[16px] md:text-[16px] leading-snug text-ink/80 mt-0.5">Azca / Nuevos Ministerios · Doble Vidrio 5+5 mm y Butiral Fónico</span>
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
             <img alt="Sala de juntas con mampara de cristal en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-sala-juntas.webp"/>
-            <p class="text-[14px] text-muted leading-relaxed">
+            <p class="text-[16px] text-muted leading-relaxed">
               Privacidad acústica total para videoconferencias y consejos de administración. Tabique divisorio con perfilería de aluminio oculta, puertas enrasadas con guillotina hermética de suelo y estores técnicos screen motorizados.
             </p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="text-[12px] font-bold text-teal">Plazo: 14 Días</span>
-              <a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+              <span class="text-[16px] font-bold text-teal">Plazo: 14 Días</span>
+              <a class="text-[16px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
             </div>
           </div>
         </div>
@@ -1352,17 +1470,17 @@
             </span>
             <div class="min-w-0 flex-1">
               <span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Despachos Ejecutivos &amp; Paneles Alistonados</span>
-              <span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Barrio de Salamanca · Madera de Nogal, Moqueta Modular y Clima Airzone</span>
+              <span class="estancia-item-sub block text-[16px] md:text-[16px] leading-snug text-ink/80 mt-0.5">Barrio de Salamanca · Madera de Nogal, Moqueta Modular y Clima Airzone</span>
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
             <img alt="Despacho de dirección ejecutivo en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-despachos-ejecutivos.webp"/>
-            <p class="text-[14px] text-muted leading-relaxed">
+            <p class="text-[16px] text-muted leading-relaxed">
               Elegancia corporativa con revestimientos murales de lamas de madera natural fonoabsorbente. Suelo de moqueta en losetas de alta densidad con fibra antiestática y control de climatización independiente.
             </p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="text-[12px] font-bold text-teal">Plazo: 18 Días</span>
-              <a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+              <span class="text-[16px] font-bold text-teal">Plazo: 18 Días</span>
+              <a class="text-[16px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
             </div>
           </div>
         </div>
@@ -1375,17 +1493,17 @@
             </span>
             <div class="min-w-0 flex-1">
               <span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Área Coworking &amp; Cabinas Insonorizadas</span>
-              <span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Méndez Álvaro · Zonas Ágiles y Phone Booths Individuales</span>
+              <span class="estancia-item-sub block text-[16px] md:text-[16px] leading-snug text-ink/80 mt-0.5">Méndez Álvaro · Zonas Ágiles y Phone Booths Individuales</span>
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
             <img alt="Espacio coworking y cabinas telefónicas en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-coworking-cabinas.webp"/>
-            <p class="text-[14px] text-muted leading-relaxed">
+            <p class="text-[16px] text-muted leading-relaxed">
               Módulos prefabricados fonoabsorbentes con ventilación forzada y tomas integradas para realizar llamadas o reuniones confidenciales breves sin saturar las salas principales.
             </p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="text-[12px] font-bold text-teal">Plazo: 15 Días</span>
-              <a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+              <span class="text-[16px] font-bold text-teal">Plazo: 15 Días</span>
+              <a class="text-[16px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
             </div>
           </div>
         </div>
@@ -1398,17 +1516,17 @@
             </span>
             <div class="min-w-0 flex-1">
               <span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Office Comedor &amp; Zona Coffee Break</span>
-              <span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Las Tablas / Alcobendas · Cocina Equipada y Pavimento Vinílico</span>
+              <span class="estancia-item-sub block text-[16px] md:text-[16px] leading-snug text-ink/80 mt-0.5">Las Tablas / Alcobendas · Cocina Equipada y Pavimento Vinílico</span>
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
             <img alt="Office comedor y cocina corporativa en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-office-comedor.webp"/>
-            <p class="text-[14px] text-muted leading-relaxed">
+            <p class="text-[16px] text-muted leading-relaxed">
               Espacio social y comedor para el equipo: bancadas corridas, isla de café con tomas empotradas, electrodomésticos integrados silenciosos y suelo continuo vinílico de fácil limpieza.
             </p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="text-[12px] font-bold text-teal">Plazo: 12 Días</span>
-              <a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+              <span class="text-[16px] font-bold text-teal">Plazo: 12 Días</span>
+              <a class="text-[16px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
             </div>
           </div>
         </div>
@@ -1421,17 +1539,17 @@
             </span>
             <div class="min-w-0 flex-1">
               <span class="estancia-item-title block text-[17px] md:text-[18.5px] font-bold leading-snug text-ink">Recepción Corporativa &amp; Control de Accesos</span>
-              <span class="estancia-item-sub block text-[13.5px] md:text-[14px] leading-snug text-ink/80 mt-0.5">Campo de las Naciones · Mostrador Corian, Tornos y Rótulo LED</span>
+              <span class="estancia-item-sub block text-[16px] md:text-[16px] leading-snug text-ink/80 mt-0.5">Campo de las Naciones · Mostrador Corian, Tornos y Rótulo LED</span>
             </div>
           </button>
           <div class="estancia-mobile-panel lg:hidden px-4 pb-5 border-t border-sand/40">
             <img alt="Recepción corporativa de oficinas en Madrid" class="w-full h-56 object-cover rounded-lg mt-3 mb-3 shadow" loading="lazy" src="images/oficinas-recepcion-corporativa.webp"/>
-            <p class="text-[14px] text-muted leading-relaxed">
+            <p class="text-[16px] text-muted leading-relaxed">
               La primera impresión de tu marca: mostrador a medida en Solid Surface con iluminación rasante, pared de fondo retroiluminada con logotipo fresado y tornos de paso rápido con tarjeta RFID.
             </p>
             <div class="mt-3 flex items-center justify-between">
-              <span class="text-[12px] font-bold text-teal">Plazo: 16 Días</span>
-              <a class="text-[12px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
+              <span class="text-[16px] font-bold text-teal">Plazo: 16 Días</span>
+              <a class="text-[16px] font-bold bg-teal text-white px-3 py-1.5 rounded" href="#tarifas">Ver Tarifas</a>
             </div>
           </div>
         </div>
@@ -1464,42 +1582,42 @@
             <img src="images/oficinas-fase-01-medicion.webp" alt="Toma de datos y space planning para reforma de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
             <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
               <span class="step-badge">Paso 01</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">TOMA DE DATOS</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">TOMA DE DATOS</span>
             </div>
             <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-time-line text-[11px] text-[#E2C48F]"></i> 48 h
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
+                <i class="ri-time-line text-[16px] text-[#E2C48F]"></i> 48 h
               </span>
             </div>
           </div>
           <div class="pt-5 flex flex-col flex-1 justify-between">
             <div>
-              <span class="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 01 · Consultoría Espacial</span>
+              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 01 · Consultoría Espacial</span>
               <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
                 Estudio preliminar y análisis de necesidades
               </h3>
-              <p class="text-[15px] text-ink/75 leading-[1.65] mt-1">
+              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
                 Analizamos la densidad de puestos, flujos de trabajo, requerimientos de salas de videoconferencia, puntos de red Cat 6A y trazados de climatización en falso techo para maximizar la productividad.
               </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[13px] text-ink/85">
+              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Levantamiento milimétrico con distanciómetro láser y termografía</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Análisis de luz natural y cálculo de puestos según normativa PRL</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Comprobación de capacidad de suelo técnico y bandejas portacables</span>
                 </li>
               </ul>
             </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[13px]">
+            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
               <span class="font-semibold text-ink/65">Estudio inicial en 48 h</span>
               <a href="#contacto" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Solicitar visita <i class="ri-arrow-right-line text-[14px]"></i>
+                Solicitar visita <i class="ri-arrow-right-line text-[16px]"></i>
               </a>
             </div>
           </div>
@@ -1511,42 +1629,42 @@
             <img src="images/oficinas-fase-02-diseno3d.webp" alt="Planimetría 3D y distribución modular de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" onerror="this.onerror=null; this.src='images/oficinas-fase-02-diseno3d.jpg';" />
             <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
               <span class="step-badge">Paso 02</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">PLANO 3D</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">PLANO 3D</span>
             </div>
             <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-time-line text-[11px] text-[#E2C48F]"></i> 3–5 días
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
+                <i class="ri-time-line text-[16px] text-[#E2C48F]"></i> 3–5 días
               </span>
             </div>
           </div>
           <div class="pt-5 flex flex-col flex-1 justify-between">
             <div>
-              <span class="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 02 · Proyecto Arquitectónico</span>
+              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 02 · Proyecto Arquitectónico</span>
               <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
                 Open space flexible, acústica y salas de juntas
               </h3>
-              <p class="text-[15px] text-ink/75 leading-[1.65] mt-1">
+              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
                 Modelado 3D fotorrealista de la sede con particiones acristaladas, áreas de descanso (coffee corner), cabinas fonoabsorbentes y zonas de concentración individual con simulación lumínica.
               </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[13px] text-ink/85">
+              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Zonificación acústica diferenciada (áreas colaborativas vs. silencio)</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Estudio luminotécnico para cumplimiento de 500 lux en plano de trabajo</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Muestrarios de acabados fonoabsorbentes Clase A y moquetas modulares</span>
                 </li>
               </ul>
             </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[13px]">
+            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
               <span class="font-semibold text-ink/65">Propuesta en 3 a 5 días</span>
               <a href="#proyectos" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Ver proyectos 3D <i class="ri-arrow-right-line text-[14px]"></i>
+                Ver proyectos 3D <i class="ri-arrow-right-line text-[16px]"></i>
               </a>
             </div>
           </div>
@@ -1558,42 +1676,42 @@
             <img src="images/oficinas-fase-03-contrato-gantt.webp" alt="Cronograma Gantt cerrado y contrato para reforma de oficinas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
             <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
               <span class="step-badge">Paso 03</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">CONTRATO</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">CONTRATO</span>
             </div>
             <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-shield-check-line text-[11px] text-[#E2C48F]"></i> Precio Cerrado
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
+                <i class="ri-shield-check-line text-[16px] text-[#E2C48F]"></i> Precio Cerrado
               </span>
             </div>
           </div>
           <div class="pt-5 flex flex-col flex-1 justify-between">
             <div>
-              <span class="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 03 · Plan de Implantación</span>
+              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 03 · Plan de Implantación</span>
               <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
                 Cronograma Gantt cerrado y fases sectorizadas
               </h3>
-              <p class="text-[15px] text-ink/75 leading-[1.65] mt-1">
+              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
                 Planificamos la intervención por plantas, sectores o fines de semana si tu empresa continúa operando, con precios unitarios cerrados por metro cuadrado y penalización estricta por día de retraso.
               </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[13px] text-ink/85">
+              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Precio cerrado por m² sin extras imprevistos ni desviaciones</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Plan de seguridad y salud visado con coordinación de actividades (CAE)</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Calendario de hitos semanales y turnos especiales sin interferir tu trabajo</span>
                 </li>
               </ul>
             </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[13px]">
+            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
               <span class="font-semibold text-ink/65">Firma vinculante en 24 h</span>
               <a href="#tarifas" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Calcular presupuesto <i class="ri-arrow-right-line text-[14px]"></i>
+                Calcular presupuesto <i class="ri-arrow-right-line text-[16px]"></i>
               </a>
             </div>
           </div>
@@ -1610,42 +1728,42 @@
             <img src="images/oficinas-fase-04-ejecucion.webp" alt="Ejecución de suelo técnico y mamparas acústicas en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
             <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
               <span class="step-badge">Paso 04</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">EJECUCIÓN</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">EJECUCIÓN</span>
             </div>
             <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-time-line text-[11px] text-[#E2C48F]"></i> 2–5 semanas
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
+                <i class="ri-time-line text-[16px] text-[#E2C48F]"></i> 2–5 semanas
               </span>
             </div>
           </div>
           <div class="pt-5 flex flex-col flex-1 justify-between">
             <div>
-              <span class="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 04 · Obra Técnica Modular</span>
+              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 04 · Obra Técnica Modular</span>
               <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
                 Suelo técnico, mamparas fónicas y redes Cat 6A
               </h3>
-              <p class="text-[15px] text-ink/75 leading-[1.65] mt-1">
+              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
                 Montaje de pavimento elevado 60×60 registrable, mamparas dobles de vidrio con aislamiento de 42 dB, cableado estructurado certificado y climatización VRF zonificada bajo dirección facultativa diaria.
               </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[13px] text-ink/85">
+              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Certificación punto a punto con analizador Fluke Networks</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Mamparas divisorias modulares desmontables con perfilería oculta</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Sectorización antipolvo y trabajos ruidosos fuera de jornada</span>
                 </li>
               </ul>
             </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[13px]">
+            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
               <span class="font-semibold text-ink/65">Supervisión diaria colegiada</span>
               <a href="#contacto" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Consultar ejecución <i class="ri-arrow-right-line text-[14px]"></i>
+                Consultar ejecución <i class="ri-arrow-right-line text-[16px]"></i>
               </a>
             </div>
           </div>
@@ -1657,42 +1775,42 @@
             <img src="images/oficinas-sala-juntas.webp" alt="Entrega de oficina corporativa llave en mano en Madrid" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
             <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
               <span class="step-badge">Paso 05</span>
-              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">ENTREGA</span>
+              <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[16px] font-bold bg-white/90 text-[#A87E34] shadow-sm backdrop-blur-sm">ENTREGA</span>
             </div>
             <div class="absolute top-3 right-3 z-10">
-              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
-                <i class="ri-shield-check-line text-[11px] text-[#E2C48F]"></i> 2 Años Garantía
+              <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[16px] font-bold bg-[#0E1B2E]/80 text-white shadow-sm backdrop-blur-sm">
+                <i class="ri-shield-check-line text-[16px] text-[#E2C48F]"></i> 2 Años Garantía
               </span>
             </div>
           </div>
           <div class="pt-5 flex flex-col flex-1 justify-between">
             <div>
-              <span class="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 05 · Entrega Llave en Mano</span>
+              <span class="text-[16px] font-bold uppercase tracking-[0.14em] text-[#A87E34]">Fase 05 · Entrega Llave en Mano</span>
               <h3 class="font-editorial text-[20px] sm:text-[22px] font-bold text-ink mb-3 mt-1 leading-[1.25]">
                 Puesta en marcha, esquemas CIE/RITE y garantía
               </h3>
-              <p class="text-[15px] text-ink/75 leading-[1.65] mt-1">
+              <p class="text-[16.5px] text-ink/75 leading-[1.65] mt-1">
                 Entregamos la sede con todos los puestos de trabajo conectados, racks testeados y etiquetados, equilibrado de climatización, boletines oficiales visados y limpieza técnica exhaustiva para incorporación inmediata.
               </p>
-              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[13px] text-ink/85">
+              <ul class="mt-4 pt-4 border-t border-[#E8E2D5]/70 space-y-2 text-[16px] text-ink/85">
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Entrega de Libro del Edificio, boletín CIE y legalización RITE</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Pruebas de sistemas contra incendios y control de accesos</span>
                 </li>
                 <li class="flex items-start gap-2">
-                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[15px] shrink-0 mt-0.5"></i>
+                  <i class="ri-checkbox-circle-fill text-[#A87E34] text-[16.5px] shrink-0 mt-0.5"></i>
                   <span>Limpieza técnica integral de moquetas y 2 años de garantía por escrito</span>
                 </li>
               </ul>
             </div>
-            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[13px]">
+            <div class="mt-5 pt-4 border-t border-[#E8E2D5]/70 flex items-center justify-between text-[16px]">
               <span class="font-semibold text-ink/65">Recepción en 48 h</span>
               <a href="#contacto" class="font-bold text-[#A87E34] hover:text-[#8F6A29] inline-flex items-center gap-1 transition-colors">
-                Pedir presupuesto <i class="ri-arrow-right-line text-[14px]"></i>
+                Pedir presupuesto <i class="ri-arrow-right-line text-[16px]"></i>
               </a>
             </div>
           </div>
@@ -1705,15 +1823,15 @@
     <div class="banner-direccion-tecnica mt-12 w-full overflow-hidden rounded-[20px] border border-line bg-white shadow-sm flex flex-col lg:flex-row items-stretch" style="width: 100% !important;">
       <div class="flex-1 p-6 md:p-8 flex flex-col justify-center gap-4 order-2 lg:order-1 min-w-0">
         <div class="flex flex-wrap items-center gap-3">
-          <span class="text-[11.5px] font-bold uppercase tracking-[0.16em] text-teal">Dirección Facultativa Propia</span>
-          <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[11px] font-bold text-okgreen"><i class="ri-shield-check-line text-[13px]"></i>2 Años de Garantía Escrita</span>
+          <span class="text-[16px] font-bold uppercase tracking-[0.16em] text-teal">Dirección Facultativa Propia</span>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-3 py-1 text-[16px] font-bold text-okgreen"><i class="ri-shield-check-line text-[16px]"></i>2 Años de Garantía Escrita</span>
         </div>
         <blockquote class="font-editorial text-[19px] leading-[1.45] text-ink md:text-[22px]">
           «El mayor reto de una reforma de oficinas es mantener a los empleados concentrados y productivos. Sectorizamos los trabajos con tabiques antipolvo y concentramos el tendido de cables y pruebas de climatización fuera de la jornada laboral.»
         </blockquote>
         <div>
-          <div class="text-[14px] font-bold text-ink">Dirección Facultativa Colegiada</div>
-          <div class="text-[12.5px] font-medium text-ink/75">Ingeniero Técnico de Edificación · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
+          <div class="text-[16px] font-bold text-ink">Dirección Facultativa Colegiada</div>
+          <div class="text-[16px] font-medium text-ink/75">Ingeniero Técnico de Edificación · Colegio Oficial de Aparejadores y Arquitectos Técnicos de Madrid</div>
         </div>
       </div>
       <div class="order-1 lg:order-2 w-full lg:w-[340px] xl:w-[380px] shrink-0 bg-ice">
@@ -1734,90 +1852,98 @@
         De espacios compartimentados a sedes modernas y colaborativas
       </h2>
       <p class="text-[16px] sm:text-[18px] text-ink/80 max-w-[760px] mx-auto leading-[1.65] mt-3 font-normal">
-        Comprueba cómo reconfiguramos oficinas obsoletas en espacios corporativos luminosos, acústicamente aislados y con cableado oculto.
+        Comprueba cómo reconfiguramos oficinas obsoletas en espacios de trabajo luminosos, acústicamente aislados y adaptados a la realidad de pymes en Madrid.
       </p>
     </div>
 
     <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- PROYECTO 1 -->
+      <!-- PROYECTO 1: AGENCIA / ESTUDIO CREATIVO PYME EN CHAMBERÍ -->
       <div class="h-full">
-        <article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white">
+        <article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white shadow-sm hover:shadow-md transition-shadow">
           <div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
-            <img alt="Oficina obsoleta antes de la reforma en Paseo de la Castellana" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/oficinas-castellana-antes.webp"/>
-            <span class="absolute top-3 right-3 z-10 rounded-md bg-black/70 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Antes</span>
+            <!-- IMAGEN ANTES (FONDO) -->
+            <img alt="Oficina compartimentada antigua en Chamberí antes de la reforma" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/oficinas-antes.webp"/>
+            <span class="ba-badge-antes">Antes</span>
+            
+            <!-- CAPA SUPERPUESTA DESPUÉS -->
             <div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
-              <img alt="Sede corporativa tecnológica moderna en Paseo de la Castellana" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/oficinas-castellana-despues.webp"/>
-              <span class="absolute top-3 left-3 z-10 rounded-md bg-teal px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Después</span>
+              <img alt="Estudio creativo y oficina digital moderna en Chamberí después de la reforma" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/oficinas-despues.webp"/>
+              <span class="ba-badge-despues">Después</span>
             </div>
             <div class="ba-divider" style="left: 50%;"></div>
           </div>
-          <div class="p-5 md:p-6 flex flex-col flex-1">
-            <div class="flex items-center justify-between text-[12px] font-bold text-teal uppercase tracking-wider mb-2">
-              <span>Castellana · Madrid</span>
-              <span>Superficie: 420 m²</span>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between text-[16px] font-bold text-teal uppercase tracking-wider mb-2">
+              <span>Chamberí · Madrid</span>
+              <span>Superficie: 160 m²</span>
             </div>
-            <h3 class="font-editorial text-[20px] font-bold text-ink leading-snug mb-2">Sede Fintech Internacional</h3>
-            <p class="text-[14px] text-muted leading-relaxed flex-1">
-              Demolición de tabiques ciegos para crear un open space con suelo técnico elevado, 4 salas de reuniones con mampara de vidrio acústica y área de café central.
+            <h3 class="font-editorial text-[22px] font-bold text-ink leading-snug mb-2">Estudio Creativo &amp; Agencia Digital</h3>
+            <p class="text-[16.5px] text-muted leading-relaxed flex-1">
+              Transformación integral de una planta compartimentada clásica en un espacio diáfano y acogedor: mampara de vidrio acústico para sala de reuniones, falso techo continuo con luminarias lineales y suelo técnico con cableado 100% oculto.
             </p>
-            <div class="mt-4 pt-3 border-t border-line/60 flex items-center justify-between text-[12.5px] font-medium text-ink/80">
-              <span>Ejecución en 4 semanas</span>
+            <div class="mt-5 pt-4 border-t border-line/60 flex items-center justify-between text-[16px] font-medium text-ink/80">
+              <span>Ejecución en 3 semanas</span>
               <span class="text-teal font-bold">2 años garantía</span>
             </div>
           </div>
         </article>
       </div>
-      <!-- PROYECTO 2 -->
+
+      <!-- PROYECTO 2: CONSULTORÍA & DESPACHO PROFESIONAL EN NUEVOS MINISTERIOS -->
       <div class="h-full">
-        <article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white">
+        <article class="group flex h-full flex-col overflow-hidden rounded-[20px] border border-line bg-white shadow-sm hover:shadow-md transition-shadow">
           <div class="ba-slider relative w-full overflow-hidden select-none cursor-ew-resize group/ba" style="aspect-ratio: 4 / 3; --split: 50%;">
-            <img alt="Despacho tradicional oscuro antes en Barrio de Salamanca" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/oficinas-castellana-antes.webp"/>
-            <span class="absolute top-3 right-3 z-10 rounded-md bg-black/70 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Antes</span>
+            <!-- IMAGEN ANTES (FONDO) -->
+            <img alt="Despacho profesional oscuro y obsoleto en Nuevos Ministerios antes de la reforma" class="absolute inset-0 h-full w-full object-cover pointer-events-none" loading="lazy" src="images/oficinas-consultoria-antes.webp"/>
+            <span class="ba-badge-antes">Antes</span>
+            
+            <!-- CAPA SUPERPUESTA DESPUÉS -->
             <div class="ba-overlay absolute inset-0 h-full w-full overflow-hidden pointer-events-none" style="clip-path: inset(0 calc(100% - var(--split, 50%)) 0 0);">
-              <img alt="Oficina de representación moderna después en Barrio de Salamanca" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/oficinas-castellana-despues.webp"/>
-              <span class="absolute top-3 left-3 z-10 rounded-md bg-teal px-2.5 py-1 text-[11px] font-bold uppercase tracking-wider text-white backdrop-blur-md pointer-events-none opacity-100">Después</span>
+              <img alt="Despacho de consultoría moderno y luminoso con mamparas de vidrio después de la reforma" class="absolute inset-0 h-full w-full object-cover" loading="lazy" src="images/oficinas-consultoria-despues.webp"/>
+              <span class="ba-badge-despues">Después</span>
             </div>
             <div class="ba-divider" style="left: 50%;"></div>
           </div>
-          <div class="p-5 md:p-6 flex flex-col flex-1">
-            <div class="flex items-center justify-between text-[12px] font-bold text-teal uppercase tracking-wider mb-2">
-              <span>Salamanca · Madrid</span>
-              <span>Superficie: 280 m²</span>
+          <div class="p-6 flex flex-col flex-1">
+            <div class="flex items-center justify-between text-[16px] font-bold text-teal uppercase tracking-wider mb-2">
+              <span>Nuevos Ministerios · Madrid</span>
+              <span>Superficie: 140 m²</span>
             </div>
-            <h3 class="font-editorial text-[20px] font-bold text-ink leading-snug mb-2">Bufete Jurídico &amp; Consultoría</h3>
-            <p class="text-[14px] text-muted leading-relaxed flex-1">
-              Rehabilitación premium combinando paneles alistonados de nogal, moqueta modular de alto tránsito, climatización oculta y luminarias circadianas regulables.
+            <h3 class="font-editorial text-[22px] font-bold text-ink leading-snug mb-2">Consultoría &amp; Despacho Profesional</h3>
+            <p class="text-[16.5px] text-muted leading-relaxed flex-1">
+              Rehabilitación para firma de servicios profesionales: sustitución de tabiques ciegos por mamparas acústicas de cristal con perfilería negra, tarima de roble fonoabsorbente, climatización VRF zonificada e iluminación LED cálida.
             </p>
-            <div class="mt-4 pt-3 border-t border-line/60 flex items-center justify-between text-[12.5px] font-medium text-ink/80">
+            <div class="mt-5 pt-4 border-t border-line/60 flex items-center justify-between text-[16px] font-medium text-ink/80">
               <span>Ejecución por fases sectorizadas</span>
               <span class="text-teal font-bold">2 años garantía</span>
             </div>
           </div>
         </article>
       </div>
-      <!-- PROYECTO 3 (AUTORIDAD) -->
+
+      <!-- PROYECTO 3 (TARJETA DE AUTORIDAD Y GARANTÍAS) -->
       <div class="h-full">
-        <article class="flex h-full flex-col justify-between rounded-[20px] bg-ink p-6 md:p-8 text-white card-obras-certificadas">
+        <article class="flex h-full flex-col justify-between rounded-[20px] bg-ink p-6 md:p-8 text-white card-obras-certificadas shadow-md">
           <div>
             <div class="flex items-center justify-between border-b border-white/15 pb-4">
-              <span class="obras-badge text-[12px] font-bold uppercase tracking-widest text-teal-light">Obras Corporativas Certificadas</span>
-              <span class="flex h-2 w-2 rounded-full bg-emerald-400"></span>
+              <span class="obras-badge text-[16px] font-bold uppercase tracking-widest text-teal-light">Obras Corporativas Certificadas</span>
+              <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
             </div>
-            <h3 class="font-editorial text-[22px] md:text-[24px] font-bold text-white mt-4 leading-snug">
+            <h3 class="font-editorial text-[24px] font-bold text-white mt-4 leading-snug">
               Más de 65.000 m² de oficinas transformadas en la Comunidad de Madrid
             </h3>
-            <p class="text-[14px] text-white/80 mt-3 leading-relaxed">
+            <p class="text-[16.5px] text-white/80 mt-3 leading-relaxed">
               Cumplimiento estricto del CTE, RITE y normativas de prevención de riesgos laborales. Póliza de responsabilidad civil de hasta 600.000 € y penalización contractual por día de retraso.
             </p>
-            <ul class="mt-4 space-y-2 text-[13px] text-white/90">
-              <li class="flex items-center gap-2"><i class="ri-check-line text-emerald-400 font-bold"></i> Certificación Cat 6A con equipo Fluke Networks</li>
-              <li class="flex items-center gap-2"><i class="ri-check-line text-emerald-400 font-bold"></i> Boletín oficial CIE de baja tensión visado</li>
-              <li class="flex items-center gap-2"><i class="ri-check-line text-emerald-400 font-bold"></i> Certificado de estanqueidad y caudales RITE</li>
+            <ul class="mt-5 space-y-3 text-[16px] text-white/90">
+              <li class="flex items-center gap-2.5"><i class="ri-check-line text-emerald-400 font-bold text-[18px]"></i> Certificación Cat 6A con equipo Fluke Networks</li>
+              <li class="flex items-center gap-2.5"><i class="ri-check-line text-emerald-400 font-bold text-[18px]"></i> Boletín oficial CIE de baja tensión visado</li>
+              <li class="flex items-center gap-2.5"><i class="ri-check-line text-emerald-400 font-bold text-[18px]"></i> Certificado de estanqueidad y caudales RITE</li>
             </ul>
           </div>
-          <div class="mt-6 pt-4 border-t border-white/15">
-            <a class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-teal py-3.5 text-[14px] font-bold text-white hover:bg-teal-hover transition-colors shadow-md cursor-pointer" href="#contacto">
-              Consultar Proyecto Corporativo <i class="ri-arrow-right-line text-[14px]"></i>
+          <div class="mt-6 pt-5 border-t border-white/15">
+            <a class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-teal py-4 text-[16.5px] font-bold text-white hover:bg-teal-hover transition-colors shadow-md cursor-pointer" href="#contacto">
+              Consultar Proyecto Corporativo <i class="ri-arrow-right-line text-[16px]"></i>
             </a>
           </div>
         </article>
@@ -1844,8 +1970,8 @@
       <div class="lg:col-span-6">
         <div class="flex h-full flex-col rounded-[20px] border border-line bg-white p-6 md:p-8 shadow-md">
           <div class="flex items-center justify-between gap-4 border-b border-line pb-4">
-            <h3 class="text-[13px] font-semibold uppercase tracking-[0.14em] text-ink">Planes Corporativos Madrid 2026</h3>
-            <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-2.5 py-1 text-[10.5px] font-semibold text-okgreen">
+            <h3 class="text-[16px] font-semibold uppercase tracking-[0.14em] text-ink">Planes Corporativos Madrid 2026</h3>
+            <span class="inline-flex items-center gap-1.5 rounded-full bg-okgreen/10 px-2.5 py-1 text-[16px] font-semibold text-okgreen">
               <span class="h-1.5 w-1.5 rounded-full bg-okgreen"></span>
               Presupuesto Cerrado
             </span>
@@ -1853,37 +1979,37 @@
           <ul class="mt-2 flex-1">
             <li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
               <div>
-                <div class="text-[15px] font-semibold text-ink">Visita Técnica y Estudio de Space Planning</div>
-                <div class="text-[12px] text-muted">Medición láser de superficies, cálculo de aforos y memoria de calidades</div>
+                <div class="text-[16.5px] font-semibold text-ink">Visita Técnica y Estudio de Space Planning</div>
+                <div class="text-[16px] text-muted">Medición láser de superficies, cálculo de aforos y memoria de calidades</div>
               </div>
               <span class="text-[16px] font-bold text-okgreen">0 €</span>
             </li>
             <li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
               <div>
-                <div class="text-[15px] font-semibold text-ink">Actualización y Restyling de Sede</div>
-                <div class="text-[12px] text-muted">Pintura plástica lavable, renovación de iluminación LED y falso techo</div>
+                <div class="text-[16.5px] font-semibold text-ink">Actualización y Restyling de Sede</div>
+                <div class="text-[16px] text-muted">Pintura plástica lavable, renovación de iluminación LED y falso techo</div>
               </div>
               <span class="text-[16px] font-bold text-teal">desde 120 €/m²</span>
             </li>
             <li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
               <div>
-                <div class="text-[15px] font-semibold text-ink">Reforma Integral de Oficina Corporativa</div>
-                <div class="text-[12px] text-muted">Suelo técnico registrable, mamparas de vidrio acústicas y clima VRF</div>
+                <div class="text-[16.5px] font-semibold text-ink">Reforma Integral de Oficina Corporativa</div>
+                <div class="text-[16px] text-muted">Suelo técnico registrable, mamparas de vidrio acústicas y clima VRF</div>
               </div>
               <span class="text-[16px] font-bold text-teal">desde 280 €/m²</span>
             </li>
             <li class="flex items-start justify-between gap-4 border-b border-line/70 py-4">
               <div>
-                <div class="text-[15px] font-semibold text-ink">Sede Tecnológica y Alta Representación</div>
-                <div class="text-[12px] text-muted">Phone booths acústicos, racks CPD, madera noble y certificación BREEAM</div>
+                <div class="text-[16.5px] font-semibold text-ink">Sede Tecnológica y Alta Representación</div>
+                <div class="text-[16px] text-muted">Phone booths acústicos, racks CPD, madera noble y certificación BREEAM</div>
               </div>
               <span class="text-[16px] font-bold text-teal">desde 420 €/m²</span>
             </li>
           </ul>
           <div class="mt-5 flex flex-col gap-3 rounded-lg bg-sand/30 p-4 sm:flex-row sm:items-center sm:justify-between">
-            <span class="text-[13px] font-medium text-ink">Partidas desglosadas con plazo garantizado por contrato.</span>
-            <a class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-teal px-4 py-2.5 text-[12.5px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm" href="#contacto">
-              Calcular Proyecto <i class="ri-arrow-right-line text-[14px]"></i>
+            <span class="text-[16px] font-medium text-ink">Partidas desglosadas con plazo garantizado por contrato.</span>
+            <a class="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-teal px-4 py-2.5 text-[16px] font-semibold text-white hover:bg-teal-hover transition-colors shadow-sm" href="#contacto">
+              Calcular Proyecto <i class="ri-arrow-right-line text-[16px]"></i>
             </a>
           </div>
         </div>
@@ -1900,7 +2026,7 @@
                 <i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
               </button>
               <div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
-                <div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">Sí. Es nuestra operativa habitual en sedes corporativas. Diseñamos un plan de obra por fases sectorizadas aislando herméticamente las áreas en ejecución con mamparas estancas antipolvo. Además, los trabajos ruidosos se programan obligatoriamente fuera del horario laboral o en fin de semana.</p></div>
+                <div class="min-h-0"><p class="pb-4 pr-6 text-[16.5px] leading-[1.75] text-ink/85">Sí. Es nuestra operativa habitual en sedes corporativas. Diseñamos un plan de obra por fases sectorizadas aislando herméticamente las áreas en ejecución con mamparas estancas antipolvo. Además, los trabajos ruidosos se programan obligatoriamente fuera del horario laboral o en fin de semana.</p></div>
               </div>
             </div>
             <!-- FAQ 2 -->
@@ -1910,7 +2036,7 @@
                 <i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
               </button>
               <div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
-                <div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">El suelo técnico crea un plenum registrable de 10 a 25 cm bajo las losetas. Permite reconfigurar las mesas y puestos en cualquier momento sin rozas ni obras invasivas, llevando enchufes, tomas Cat 6A o fibra directamente al pie de cada escritorio en minutos.</p></div>
+                <div class="min-h-0"><p class="pb-4 pr-6 text-[16.5px] leading-[1.75] text-ink/85">El suelo técnico crea un plenum registrable de 10 a 25 cm bajo las losetas. Permite reconfigurar las mesas y puestos en cualquier momento sin rozas ni obras invasivas, llevando enchufes, tomas Cat 6A o fibra directamente al pie de cada escritorio en minutos.</p></div>
               </div>
             </div>
             <!-- FAQ 3 -->
@@ -1920,7 +2046,7 @@
                 <i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
               </button>
               <div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
-                <div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">Tratamos el espacio de forma tridimensional: techos fonoabsorbentes con coeficiente alfa w superior a 0,90, moqueta modular con base fonoamortiguadora en suelos y paneles tapizados en paredes y biombos de separación. Reducimos la reverberación por debajo de 0,6 segundos para garantizar confort acústico.</p></div>
+                <div class="min-h-0"><p class="pb-4 pr-6 text-[16.5px] leading-[1.75] text-ink/85">Tratamos el espacio de forma tridimensional: techos fonoabsorbentes con coeficiente alfa w superior a 0,90, moqueta modular con base fonoamortiguadora en suelos y paneles tapizados en paredes y biombos de separación. Reducimos la reverberación por debajo de 0,6 segundos para garantizar confort acústico.</p></div>
               </div>
             </div>
             <!-- FAQ 4 -->
@@ -1930,7 +2056,7 @@
                 <i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
               </button>
               <div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
-                <div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">Sí. Ofrecemos servicio corporativo integral llave en mano. Embalamos, transportamos y custodiamos equipos informáticos en guardamuebles si es necesario, y gestionamos la retirada y reciclaje medioambiental certificado de mobiliario obsoleto.</p></div>
+                <div class="min-h-0"><p class="pb-4 pr-6 text-[16.5px] leading-[1.75] text-ink/85">Sí. Ofrecemos servicio corporativo integral llave en mano. Embalamos, transportamos y custodiamos equipos informáticos en guardamuebles si es necesario, y gestionamos la retirada y reciclaje medioambiental certificado de mobiliario obsoleto.</p></div>
               </div>
             </div>
             <!-- FAQ 5 -->
@@ -1940,7 +2066,7 @@
                 <i class="ri-arrow-down-s-line mt-[2px] block w-5 h-5 shrink-0 text-[20px] text-muted group-hover:text-teal transition-transform duration-300"></i>
               </button>
               <div class="faq-panel grid overflow-hidden transition-all duration-400 ease-out" role="region" style="grid-template-rows: 0fr; opacity: 0;">
-                <div class="min-h-0"><p class="pb-4 pr-6 text-[15.5px] leading-[1.75] text-ink/85">Emitimos boletines oficiales visados por instaladores autorizados (CIE en baja tensión y certificado RITE en climatización). Respaldamos todas las obras con 2 años de garantía legal por escrito y póliza de responsabilidad civil de hasta 600.000 €.</p></div>
+                <div class="min-h-0"><p class="pb-4 pr-6 text-[16.5px] leading-[1.75] text-ink/85">Emitimos boletines oficiales visados por instaladores autorizados (CIE en baja tensión y certificado RITE en climatización). Respaldamos todas las obras con 2 años de garantía legal por escrito y póliza de responsabilidad civil de hasta 600.000 €.</p></div>
               </div>
             </div>
           </div>
@@ -1967,7 +2093,7 @@
               <i class="ri-phone-line text-[18px]"></i>
             </div>
             <div>
-              <p class="text-[12px] text-muted uppercase font-bold">Atención corporativa telefónica</p>
+              <p class="text-[16px] text-muted uppercase font-bold">Atención corporativa telefónica</p>
               <a class="text-[17px] font-bold text-ink hover:text-teal" href="tel:+34910000000">+34 910 000 000</a>
             </div>
           </div>
@@ -1976,7 +2102,7 @@
               <i class="ri-whatsapp-line text-[20px]"></i>
             </div>
             <div>
-              <p class="text-[12px] text-muted uppercase font-bold">Canal directo WhatsApp para empresas</p>
+              <p class="text-[16px] text-muted uppercase font-bold">Canal directo WhatsApp para empresas</p>
               <a class="text-[17px] font-bold text-emerald-600 hover:text-emerald-700" href="https://wa.me/34600000000?text=Hola,%20solicito%20información%20para%20la%20reforma%20de%20nuestras%20oficinas%20en%20Madrid" target="_blank">
                 Contactar por WhatsApp
               </a>
@@ -1987,8 +2113,8 @@
               <i class="ri-map-pin-line text-[18px]"></i>
             </div>
             <div>
-              <p class="text-[12px] text-muted uppercase font-bold">Sede Central</p>
-              <p class="text-[15px] font-bold text-ink">Paseo de la Castellana 95, 28046 Madrid · Actuación en toda la CAM</p>
+              <p class="text-[16px] text-muted uppercase font-bold">Sede Central</p>
+              <p class="text-[16.5px] font-bold text-ink">Paseo de la Castellana 95, 28046 Madrid · Actuación en toda la CAM</p>
             </div>
           </div>
         </div>
@@ -1997,26 +2123,26 @@
       <div class="lg:col-span-6">
         <form class="rounded-2xl border border-sand bg-surface-warm p-6 md:p-8 shadow-sm">
           <h3 class="font-editorial text-[22px] font-bold text-ink mb-1">Cuéntanos sobre tu espacio</h3>
-          <p class="text-[13px] text-muted mb-6">Recibe un estudio preliminar y estimación económica en menos de 24 horas.</p>
+          <p class="text-[16px] text-muted mb-6">Recibe un estudio preliminar y estimación económica en menos de 24 horas.</p>
           <div class="space-y-4">
             <div>
-              <label class="block text-[13px] font-semibold text-ink mb-1">Nombre y Empresa *</label>
-              <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[14px] text-ink focus:border-teal focus:outline-none" placeholder="Ej. Roberto Gómez · Tech Solutions SL" required="" type="text"/>
+              <label class="block text-[16px] font-semibold text-ink mb-1">Nombre y Empresa *</label>
+              <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[16px] text-ink focus:border-teal focus:outline-none" placeholder="Ej. Roberto Gómez · Tech Solutions SL" required="" type="text"/>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1">Teléfono Directo *</label>
-                <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[14px] text-ink focus:border-teal focus:outline-none" placeholder="600 000 000" required="" type="tel"/>
+                <label class="block text-[16px] font-semibold text-ink mb-1">Teléfono Directo *</label>
+                <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[16px] text-ink focus:border-teal focus:outline-none" placeholder="600 000 000" required="" type="tel"/>
               </div>
               <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1">Email Corporativo *</label>
-                <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[14px] text-ink focus:border-teal focus:outline-none" placeholder="contacto@empresa.com" required="" type="email"/>
+                <label class="block text-[16px] font-semibold text-ink mb-1">Email Corporativo *</label>
+                <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[16px] text-ink focus:border-teal focus:outline-none" placeholder="contacto@empresa.com" required="" type="email"/>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1">Superficie aproximada</label>
-                <select class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[14px] text-ink focus:border-teal focus:outline-none">
+                <label class="block text-[16px] font-semibold text-ink mb-1">Superficie aproximada</label>
+                <select class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[16px] text-ink focus:border-teal focus:outline-none">
                   <option>Menos de 150 m²</option>
                   <option selected="">150 a 300 m²</option>
                   <option>300 a 600 m²</option>
@@ -2024,18 +2150,18 @@
                 </select>
               </div>
               <div>
-                <label class="block text-[13px] font-semibold text-ink mb-1">Distrito / Municipio</label>
-                <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[14px] text-ink focus:border-teal focus:outline-none" placeholder="Ej. Chamartín / Alcobendas" type="text"/>
+                <label class="block text-[16px] font-semibold text-ink mb-1">Distrito / Municipio</label>
+                <input class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[16px] text-ink focus:border-teal focus:outline-none" placeholder="Ej. Chamartín / Alcobendas" type="text"/>
               </div>
             </div>
             <div>
-              <label class="block text-[13px] font-semibold text-ink mb-1">Alcance y necesidades prioritarias</label>
-              <textarea class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[14px] text-ink focus:border-teal focus:outline-none h-24" placeholder="Indícanos si requieres suelo técnico, salas acústicas, obra por fases o trabajos en fin de semana..."></textarea>
+              <label class="block text-[16px] font-semibold text-ink mb-1">Alcance y necesidades prioritarias</label>
+              <textarea class="w-full rounded-lg border border-sand bg-white px-4 py-3 text-[16px] text-ink focus:border-teal focus:outline-none h-24" placeholder="Indícanos si requieres suelo técnico, salas acústicas, obra por fases o trabajos en fin de semana..."></textarea>
             </div>
-            <button class="w-full rounded-lg bg-teal py-4 text-[15px] font-bold text-white hover:bg-teal-hover transition-colors shadow-md cursor-pointer" type="submit">
+            <button class="w-full rounded-lg bg-teal py-4 text-[16.5px] font-bold text-white hover:bg-teal-hover transition-colors shadow-md cursor-pointer" type="submit">
               Solicitar Estudio y Visita Gratuita
             </button>
-            <p class="text-center text-[11px] text-muted mt-2">
+            <p class="text-center text-[16px] text-muted mt-2">
               Tus datos están protegidos. Cumplimiento estricto RGPD. Cero spam comercial.
             </p>
           </div>
@@ -2055,17 +2181,17 @@
           <span class="text-[18px] font-bold tracking-[-0.01em] text-black">REFORMAS</span>
           <span class="text-[18px] font-bold tracking-[-0.01em] text-[#8C6424]">MADRID</span>
         </div>
-        <p class="mt-4 max-w-[360px] text-[15px] md:text-[16px] leading-[1.65] text-black font-normal">
+        <p class="mt-4 max-w-[360px] text-[16.5px] md:text-[16px] leading-[1.65] text-black font-normal">
           Reformas en Madrid, cocinas, baños y climatización en Madrid capital y Comunidad de Madrid. Presupuesto cerrado y dirección técnica propia.
         </p>
-        <div class="mt-5 flex flex-col gap-2 text-[15px] text-black font-medium">
+        <div class="mt-5 flex flex-col gap-2 text-[16.5px] text-black font-medium">
           <a class="hover:text-[#8C6424] transition-colors cursor-pointer whitespace-nowrap text-black font-semibold" href="tel:+34910000000">+34 910 00 00 00</a>
           <span class="text-black">Calle Mayor 42, 28013 Madrid</span>
         </div>
       </div>
       <div class="md:col-span-3">
-        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black">Servicios en Madrid</h4>
-        <ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-black font-medium">
+        <h4 class="text-[16px] font-bold uppercase tracking-[0.16em] text-black">Servicios en Madrid</h4>
+        <ul class="mt-4 flex flex-col gap-2.5 text-[16px] text-black font-medium">
           <li><a class="hover:text-[#8C6424] transition-colors" href="reformas-cocinas-madrid.html">Reformas de Cocinas</a></li>
           <li><a class="hover:text-[#8C6424] transition-colors" href="reformas-banos-madrid.html">Reformas de Baños</a></li>
           <li><a class="hover:text-[#8C6424] transition-colors" href="cambio-banera-por-plato-ducha-madrid.html">Cambio de Bañera por Ducha</a></li>
@@ -2077,8 +2203,8 @@
         </ul>
       </div>
       <div class="md:col-span-4">
-        <h4 class="text-[14px] font-bold uppercase tracking-[0.16em] text-black">Contacto Directo</h4>
-        <ul class="mt-4 flex flex-col gap-2.5 text-[14.5px] text-black font-medium">
+        <h4 class="text-[16px] font-bold uppercase tracking-[0.16em] text-black">Contacto Directo</h4>
+        <ul class="mt-4 flex flex-col gap-2.5 text-[16px] text-black font-medium">
           <li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="https://wa.me/34600000000" rel="noopener noreferrer" target="_blank"><i class="ri-whatsapp-line text-[17px] text-okgreen mr-1.5 inline-block"></i>WhatsApp · respuesta en 24 h</a></li>
           <li><a class="hover:text-[#8C6424] transition-colors cursor-pointer text-black" href="mailto:contacto@reformasmadrid.es"><i class="ri-mail-line text-[16px] text-teal mr-1.5 inline-block"></i>contacto@reformasmadrid.es</a></li>
           <li class="text-black"><i class="ri-time-line text-[16px] text-muted mr-1.5 inline-block"></i>Lun–Vie 8:30–19:00 · Sábado con cita previa</li>
@@ -2087,13 +2213,13 @@
       </div>
     </div>
     <div class="border-t border-black/15 py-6">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[13.5px] text-black font-medium text-center md:text-left">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-[16px] text-black font-medium text-center md:text-left">
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
           <span class="text-black font-medium">Reformas Madrid · © 2026 Todos los derechos reservados.</span>
           <span class="hidden sm:inline text-black/30">|</span>
           <span class="text-black/80 font-medium">Diseñado por <strong class="text-black font-semibold">SEOLife</strong></span>
         </div>
-        <div class="flex flex-wrap items-center justify-center gap-y-2 text-[13px]">
+        <div class="flex flex-wrap items-center justify-center gap-y-2 text-[16px]">
           <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/aviso-legal/">Aviso Legal</a>
           <span class="text-black/40 select-none px-2 sm:px-3">·</span>
           <a class="text-black hover:text-[#8C6424] transition-colors cursor-pointer underline-offset-2 hover:underline" href="https://reformasmadrid.seolifeteam.com/politica-de-privacidad/">Política de Privacidad</a>
@@ -2112,7 +2238,7 @@
     <span class="relative inline-flex h-2 w-2 rounded-full bg-okgreen"></span>
   </span>
   <i class="ri-chat-3-line text-[16px] text-teal"></i>
-  <span class="text-[12.5px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span>
+  <span class="text-[16px] font-semibold text-ink whitespace-nowrap">Consulta Rápida Madrid</span>
 </button>
 
 <!-- BACKDROP & MODAL POPUP DRAWER (CONSULTA RÁPIDA / PEDIR PRESUPUESTO) -->
@@ -2121,7 +2247,7 @@
   <div class="flex min-h-full flex-col">
     <div class="flex items-start justify-between gap-4 border-b border-line px-5 py-5 md:px-6">
       <div>
-        <span class="text-[10.5px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span>
+        <span class="text-[16px] font-semibold uppercase tracking-[0.18em] text-teal">Respuesta en 24 h</span>
         <h2 class="font-editorial mt-2 text-[22px] leading-[1.15] text-ink">Consulta rápida en Madrid</h2>
       </div>
       <button id="btn-close-consulta-modal" aria-label="Cerrar consulta" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink hover:border-teal hover:text-teal transition-colors cursor-pointer" type="button">
@@ -2129,45 +2255,45 @@
       </button>
     </div>
     <form action="https://readdy.ai/api/form/dbankn39uihupc2pc6bg" class="flex flex-1 flex-col gap-5 px-5 py-6 md:px-6" data-readdy-form="true" id="florin-consulta-rapida" method="post">
-      <p class="text-[13px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p>
+      <p class="text-[16px] leading-[1.65] text-muted">Elige el tipo de reforma y déjanos tus datos. Un técnico de Reformas Madrid te contacta para valorar tu caso.</p>
       <fieldset>
-        <legend class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend>
+        <legend class="text-[16px] font-semibold uppercase tracking-[0.16em] text-muted">Tipo de reforma</legend>
         <input name="tipo_reforma" readonly="" type="hidden" value="Reforma completa"/>
         <div class="mt-2.5 flex flex-wrap gap-2 modal-chips-container">
-          <button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button>
-          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button>
+          <button aria-pressed="true" class="rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white" type="button">Reforma completa</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Cocina</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Baño</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Chalet / fachada</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Climatización</button>
+          <button aria-pressed="false" class="rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal" type="button">Otro</button>
         </div>
       </fieldset>
       <div>
-        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label>
-        <input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/>
+        <label class="text-[16px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-nombre">Nombre y apellidos</label>
+        <input autocomplete="name" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[16px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-nombre" name="nombre" placeholder="María García" required="" type="text"/>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
-          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label>
-          <input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/>
+          <label class="text-[16px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-email">Correo electrónico</label>
+          <input autocomplete="email" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[16px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-email" name="email" placeholder="maria@correo.es" required="" type="email"/>
         </div>
         <div>
-          <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label>
-          <input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[14px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/>
+          <label class="text-[16px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-telefono">Teléfono</label>
+          <input autocomplete="tel" class="mt-2 w-full rounded-md border border-line bg-card px-3.5 py-3 text-[16px] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-telefono" name="telefono" placeholder="600 000 000" required="" type="tel"/>
         </div>
       </div>
       <div>
-        <label class="text-[10.5px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label>
-        <textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[14px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Oficina de 250 m² en Castellana, queremos redistribuir puestos, suelo técnico y mamparas acústicas..." required="" rows="4"></textarea>
-        <div class="mt-1 text-right text-[10.5px] text-muted">Máximo 500 caracteres</div>
+        <label class="text-[16px] font-semibold uppercase tracking-[0.16em] text-muted" for="florin-mensaje">Cuéntanos tu caso</label>
+        <textarea class="mt-2 w-full resize-none rounded-md border border-line bg-card px-3.5 py-3 text-[16px] leading-[1.6] text-ink placeholder:text-muted/60 focus:border-teal focus:outline-none" id="florin-mensaje" maxlength="500" name="mensaje" placeholder="Oficina de 250 m² en Castellana, queremos redistribuir puestos, suelo técnico y mamparas acústicas..." required="" rows="4"></textarea>
+        <div class="mt-1 text-right text-[16px] text-muted">Máximo 500 caracteres</div>
       </div>
       <div class="fl-hp"><label for="florin-contact-alt">No rellenar</label><input aria-hidden="true" autocomplete="off" id="florin-contact-alt" name="contact_alt" readonly="" tabindex="-1" type="text"/></div>
       <div class="mt-auto flex flex-col gap-3 border-t border-line pt-5">
-        <button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[13.5px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">
+        <button class="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-[16px] font-semibold text-white hover:bg-teal-hover transition-colors cursor-pointer whitespace-nowrap disabled:cursor-wait disabled:opacity-70" type="submit">
           Solicitar visita gratuita
-          <i class="ri-arrow-right-line text-[15px] w-4 h-4 flex items-center justify-center"></i>
+          <i class="ri-arrow-right-line text-[16.5px] w-4 h-4 flex items-center justify-center"></i>
         </button>
-        <p class="text-[10.5px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
+        <p class="text-[16px] leading-[1.5] text-muted">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
       </div>
     </form>
   </div>
@@ -2572,10 +2698,10 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         modalChipsContainer.querySelectorAll('button').forEach(b => {
           b.setAttribute('aria-pressed', 'false');
-          b.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal';
+          b.className = 'rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-line bg-card text-ink hover:border-teal/40 hover:text-teal';
         });
         this.setAttribute('aria-pressed', 'true');
-        this.className = 'rounded-full border px-3.5 py-2 text-[12px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white';
+        this.className = 'rounded-full border px-3.5 py-2 text-[16px] font-medium transition-colors cursor-pointer whitespace-nowrap border-teal bg-teal text-white';
         if (hiddenInput) hiddenInput.value = this.innerText.trim();
       });
     });
